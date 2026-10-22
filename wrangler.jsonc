@@ -2,14 +2,18 @@
   // Cloudflare Workers + Assets 配置 —— PickWorth 静态站
   // 部署：npx wrangler deploy
   "name": "pickworth",
+  // Worker 入口：apex (pickworth.top) 301 → www.pickworth.top，规范统一为 www 版
+  // （与游戏站 prismarcade.top 同一套模式）
+  "main": "src/index.ts",
   "compatibility_date": "2025-10-01",
   "assets": {
     // 静态资源目录 = 仓库根（index.html / about / blog / lists / tools / 404.html 都在这里）
     "directory": "./",
-    // 请求不匹配任何静态文件时，返回根目录的 404.html 并带 404 状态码
-    // （避免 AI 引擎 / 搜索引擎误判死链，保住 sitemap 一致性）
+    // 绑定名 ASSETS：src/index.ts 中通过 env.ASSETS.fetch(request) 取静态资源
+    "binding": "ASSETS",
+    // 关键：每个请求先经 Worker（在返回静态文件前检查 host 并 301）
+    "run_worker_first": true,
+    // 未命中静态文件时，返回根目录 404.html 并带 404 状态码
     "not_found_handling": "404-page"
-    // 如需自定义边缘逻辑（中间件 / 重定向 / 缓存策略），再加：
-    // "main": "./worker.js"
   }
 }

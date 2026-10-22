@@ -191,8 +191,8 @@ def _org_ld_dict() -> dict:
     return {
         "@type": "Organization",
         "name": "PickWorth",
-        "url": "https://pickworth.top/",
-        "logo": "https://pickworth.top/assets/img/og-cover.png",
+        "url": "https://www.pickworth.top/",
+        "logo": "https://www.pickworth.top/assets/img/og-cover.png",
     }
 
 
@@ -256,7 +256,7 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
     # so it is computed here instead of stored per-draft.
     section = draft.get("section", "tools")
     slug = draft.get("slug", "")
-    canonical = f"https://pickworth.top/{section}/{slug}/" if slug else ""
+    canonical = f"https://www.pickworth.top/{section}/{slug}/" if slug else ""
     out = out.replace("{{CANONICAL}}", canonical)
 
     # ---- simple head/meta placeholders ----
@@ -303,13 +303,13 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
                 jl_obj.setdefault("mainEntityOfPage", {
                     "@type": "WebPage", "@id": canonical})
             jl_obj.setdefault("image",
-                              "https://pickworth.top/assets/img/og-cover.png")
+                              "https://www.pickworth.top/assets/img/og-cover.png")
             jl_obj.setdefault("publisher", _org_ld_dict())
             # author: keep the draft's author if present, otherwise the org
             if "author" not in jl_obj:
                 jl_obj["author"] = {"@type": "Organization",
                                     "name": "PickWorth Editorial",
-                                    "url": "https://pickworth.top/about/"}
+                                    "url": "https://www.pickworth.top/about/"}
         # ---- Review: publisher (the vendor) is already in the draft; ensure
         #      the review URL + image + dateModified are present.
         elif base_type == "Review":
@@ -320,7 +320,7 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
             if canonical:
                 jl_obj.setdefault("url", canonical)
             jl_obj.setdefault("image",
-                              "https://pickworth.top/assets/img/og-cover.png")
+                              "https://www.pickworth.top/assets/img/og-cover.png")
         # ---- ItemList: give every ListItem a url when the draft provides
         #      "items": [{"name","url"}] alongside the JSON-LD.
         elif base_type == "ItemList":
@@ -344,9 +344,9 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
     head_label = (head.get("name") or head.get("h1") or section_name).strip()
     crumb = [
         {"@type": "ListItem", "position": 1, "name": "Home",
-         "item": "https://pickworth.top/"},
+         "item": "https://www.pickworth.top/"},
         {"@type": "ListItem", "position": 2, "name": section_name,
-         "item": f"https://pickworth.top/{section}/"},
+         "item": f"https://www.pickworth.top/{section}/"},
     ]
     if head_label and head_label != section_name:
         crumb.append({"@type": "ListItem", "position": 3, "name": head_label,
@@ -369,15 +369,15 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "PickWorth",
-        "url": "https://pickworth.top/",
-        "logo": "https://pickworth.top/assets/img/og-cover.png",
+        "url": "https://www.pickworth.top/",
+        "logo": "https://www.pickworth.top/assets/img/og-cover.png",
         "description": ("Honest, hands-on reviews and head-to-head "
                          "comparisons of AI tools — what each is genuinely "
                          "good at, where it falls short, and what it really "
                          "costs."),
         "sameAs": [
-            "https://pickworth.top/about/",
-            "https://pickworth.top/contact/",
+            "https://www.pickworth.top/about/",
+            "https://www.pickworth.top/contact/",
         ],
         "contactPoint": [{
             "@type": "ContactPoint",
@@ -510,7 +510,7 @@ def _validate_sources(draft: dict) -> None:
 
     Two entry types are allowed:
       1. 'text — http(s)://...'   -> link (preferred; external citation)
-      2. 'text — https://pickworth.top/...' -> link (internal self-ref)
+      2. 'text — https://www.pickworth.top/...' -> link (internal self-ref)
     Anything else (list pair, or a string with no trailing http URL) is a
     data error and aborts the render, pointing at the offending line.
 
@@ -619,7 +619,7 @@ def _sources_list(sources: list[str], root: str = "") -> str:
             # prefixed with the page's relative root so it works at any depth.
             # External citation -> new tab + rel=noopener (safety + UX).
             if "pickworth.top" in url:
-                path = url.replace("https://pickworth.top", "").rstrip("/") + "/"
+                path = url.replace("https://www.pickworth.top", "").rstrip("/") + "/"
                 rel_url = path.lstrip("/")
                 lis.append(
                     f'        <li>{i}. <a href="{root}{rel_url}">{text}</a></li>')
