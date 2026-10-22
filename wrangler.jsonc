@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers + Assets 配置 —— PickWorth 静态站
+  // 部署：npx wrangler deploy
+  "name": "pickworth",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    // 静态资源目录 = 仓库根（index.html / about / blog / lists / tools / 404.html 都在这里）
+    "directory": "./",
+    // 请求不匹配任何静态文件时，返回根目录的 404.html 并带 404 状态码
+    // （避免 AI 引擎 / 搜索引擎误判死链，保住 sitemap 一致性）
+    "not_found_handling": "404-page"
+    // 如需自定义边缘逻辑（中间件 / 重定向 / 缓存策略），再加：
+    // "main": "./worker.js"
+  }
+}

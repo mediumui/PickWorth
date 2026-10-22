@@ -1,0 +1,33 @@
+# .assetsignore —— 控制 wrangler deploy 上传到 Cloudflare 的文件（语法同 .gitignore）
+# 原则：线上只保留「纯站点」，本地开发 / 内部数据 / 非面向访客的产物一律不公开。
+
+# === 绝不公开：git 仓库（含提交历史）===
+.git
+.gitignore
+
+# === 本地开发 / 构建（仅开发期用，线上不需要）===
+# 内容流水线：L0-L4 脚本 + 草稿 JSON + 已发布中间产物
+# （最终静态页已同步到顶层 about/blog/lists/tools/comparisons，不依赖 content/）
+content
+src
+tools
+out
+
+# 部署 / 构建配置（本身不属于站点，避免出现在线上）
+wrangler.jsonc
+assets.json
+.assetsignore
+
+# === 架构 / 审计 / 报告（内部文档，非站点内容）===
+ARCHITECTURE.md
+geo_audit_report.md
+
+# === 工作区运行时 / 缓存 / 系统垃圾 ===
+.workbuddy
+__pycache__
+*.pyc
+node_modules
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
