@@ -1,0 +1,3 @@
+# AdSense: replace with your publisher line after account is issued.
+# Format: <publisher-id>, <label>,_relationship, <network-id>
+google.com, pub-0000000000000000, DIRECT, f084cb161a20a47b

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300" width="340" height="300" role="img" aria-labelledby="hcTitle">
+  <title id="hcTitle">Choosing one tool from many candidates</title>
+  <defs>
+    <style>
+      .l{fill:none;stroke:#d8d1c1;stroke-width:1.3;stroke-linecap:round}
+      .card{fill:#ffffff;stroke:#d8d1c1;stroke-width:1.3}
+      .dim{fill:#e4ded1}
+      .ac{fill:#b8503a}
+      .acS{fill:none;stroke:#b8503a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <!-- background grid texture -->
+  <g stroke="#efeade" stroke-width="1">
+    <line x1="40" y1="60"  x2="300" y2="60"/>
+    <line x1="40" y1="100" x2="300" y2="100"/>
+    <line x1="40" y1="140" x2="300" y2="140"/>
+    <line x1="40" y1="180" x2="300" y2="180"/>
+    <line x1="40" y1="220" x2="300" y2="220"/>
+    <line x1="40" y1="260" x2="300" y2="260"/>
+  </g>
+
+  <!-- candidate stack (left) -->
+  <g>
+    <rect class="card" x="46" y="72"  width="86" height="30" rx="3"/>
+    <rect class="dim"  x="58" y="84"  width="44" height="2.6"/>
+    <rect class="card" x="46" y="112" width="86" height="30" rx="3"/>
+    <rect class="dim"  x="58" y="124" width="34" height="2.6"/>
+    <rect class="card" x="46" y="152" width="86" height="30" rx="3"/>
+    <rect class="dim"  x="58" y="164" width="50" height="2.6"/>
+    <rect class="card" x="46" y="192" width="86" height="30" rx="3"/>
+    <rect class="dim"  x="58" y="204" width="28" height="2.6"/>
+  </g>
+  <text x="46" y="242" font-family="SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#b6afa3" letter-spacing="1.6">CANDIDATES</text>
+
+  <!-- evaluation marks between columns -->
+  <g>
+    <text x="152" y="88"  font-family="SFMono-Regular,Consolas,monospace" font-size="10" fill="#b6afa3">01</text>
+    <text x="152" y="128" font-family="SFMono-Regular,Consolas,monospace" font-size="10" fill="#b6afa3">02</text>
+    <text x="152" y="168" font-family="SFMono-Regular,Consolas,monospace" font-size="10" fill="#b6afa3">03</text>
+    <text x="152" y="208" font-family="SFMono-Regular,Consolas,monospace" font-size="10" fill="#b6afa3">04</text>
+  </g>
+  <g stroke="#e4ded1" stroke-width="1.2">
+    <line x1="178" y1="86"  x2="196" y2="86"/>
+    <line x1="178" y1="126" x2="196" y2="126"/>
+    <line x1="178" y1="166" x2="196" y2="166"/>
+    <line x1="178" y1="206" x2="206" y2="206"/>
+  </g>
+
+  <!-- selected card (right, highlighted) -->
+  <rect class="card" x="212" y="132" width="106" height="70" rx="4"/>
+  <rect x="212" y="132" width="106" height="70" rx="4" fill="none" stroke="#b8503a" stroke-width="1.6"/>
+  <rect class="ac" x="226" y="146" width="52" height="3" opacity=".7"/>
+  <rect class="dim" x="226" y="158" width="70" height="2.6"/>
+  <rect class="dim" x="226" y="168" width="44" height="2.6"/>
+
+  <!-- check badge on selected -->
+  <circle cx="304" cy="128" r="12" fill="#ffffff" stroke="#b8503a" stroke-width="1.5"/>
+  <path class="acS" d="M298.5 128 L302.5 132.2 L309.6 124.2"/>
+
+  <!-- connector from stack to selected -->
+  <path class="l" d="M132 191 C160 191 178 181 196 172"/>
+  <path class="l" d="M132 191 C162 191 180 178 196 170"/>
+
+  <!-- axis + ticks bottom -->
+  <line x1="46" y1="268" x2="318" y2="268" stroke="#d8d1c1" stroke-width="1.3"/>
+  <g stroke="#c9c2b4" stroke-width="1.2">
+    <line x1="46"  y1="264" x2="46"  y2="272"/>
+    <line x1="114" y1="264" x2="114" y2="272"/>
+    <line x1="182" y1="264" x2="182" y2="272"/>
+    <line x1="250" y1="264" x2="250" y2="272"/>
+    <line x1="318" y1="264" x2="318" y2="272"/>
+  </g>
+  <text x="212" y="288" font-family="SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#b6afa3" letter-spacing="1.6">WORTH IT</text>
+
+  <!-- small red ticks for texture -->
+  <g>
+    <rect class="ac" x="46" y="52" width="16" height="2" opacity=".45"/>
+    <rect class="ac" x="318" y="52" width="0" height="0"/>
+  </g>
+</svg>

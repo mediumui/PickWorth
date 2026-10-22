@@ -1,0 +1,145 @@
+{
+  "slug": "best-ai-coding-tools",
+  "type": "list",
+  "section": "lists",
+  "answer": "Most developers should start with one $20 subscription — either ChatGPT Plus or Claude Pro — and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, that is where a dedicated agent earns its cost; for open-weights cost, DeepSeek is the move.",
+  "key_answers": [
+    [
+      "What are the best AI coding tools in 2026?",
+      "A $20 assistant (ChatGPT Plus or Claude Pro) for most work; a dedicated agent for real refactors; an open-weights option (DeepSeek) when cost or data rules."
+    ],
+    [
+      "Is a dedicated coding agent worth it?",
+      "Only for repository-scale refactors: a dedicated agent earns its cost there. For everyday work, the $20 general assistant is enough."
+    ],
+    [
+      "Which open-weights tool should I pick?",
+      "DeepSeek: open-weights, an order of magnitude cheaper at the API, and the cost move when you are routing high-volume calls."
+    ],
+    [
+      "How much should I be paying?",
+      "Start at $20. A second tool earns its place only when a specific kind of work starts hurting — see the $20 rule."
+    ],
+    [
+      "What is PickWorth's overall score for the category?",
+      "Good (3.8-4.5 band): strong tools exist, but most people should start with one $20 subscription and add on, not buy a stack."
+    ],
+    [
+      "Which should I pick first?",
+      "Start with one $20 assistant. Add a dedicated agent for repository-scale refactors, or DeepSeek for cost-sensitive routing."
+    ],
+    [
+      "Does PickWorth take money from OpenAI, Anthropic, or DeepSeek?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Best AI Coding Tools in 2026, Ranked by the Job You Do",
+    "desc": "The best AI coding tools in 2026: a $20 assistant for most work, dedicated agents for real refactors, and the open-weights option when cost or data rules.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Coding Tools, 2026",
+      "url": "https://pickworthhq.com/lists/best-ai-coding-tools/",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "The $20 general assistants (ChatGPT Plus / Claude Pro)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dedicated coding agents (Claude Code, Codex)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Open-source alternatives (Cline, Zed, OpenHands)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Open-weights API models (DeepSeek)"
+        }
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "The AI coding tools worth paying for in 2026",
+    "lead": "The coding category is not a ranked list of products — it is four different jobs with four different price points. The $20 assistant covers most of what most developers need. The dedicated agents earn a second subscription when the work is real refactors. The open-source options earn their keep when the model has to live inside your own network. Here is where each one actually belongs.",
+    "date": "22 October 2026",
+    "name": "AI coding tools",
+    "score": "4.2",
+    "score_class": "good",
+    "score_label": "Category score"
+  },
+  "toc": [
+    [
+      "landscape",
+      "Four jobs, not one list"
+    ],
+    [
+      "assistants",
+      "The $20 assistants: start here"
+    ],
+    [
+      "agents",
+      "Dedicated agents: the real refactors"
+    ],
+    [
+      "oss",
+      "Open source: when data rules"
+    ],
+    [
+      "api",
+      "Open-weights API: the price floor"
+    ],
+    [
+      "picks",
+      "The picks, by scenario"
+    ]
+  ],
+  "verdict": "<p>Most developers should start with one $20 subscription — either ChatGPT Plus or Claude Pro — and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, the dedicated agents (Claude Code, Codex) are the tier that earns a real subscription. If the model has to run inside your own perimeter for compliance, the open-source tools (Cline, Zed, OpenHands) are the answer and the operational weight is the price. And if you are metering by token, DeepSeek's open weights keep the floor an order of magnitude below the frontier. Pick by the job, not by the leaderboard.</p>",
+  "body": "<h2 id=\"landscape\">Four jobs, not one list</h2>\n    <p>The mistake this category invites is treating every tool as a candidate for the same slot. They are not. A general assistant answers questions, drafts functions and reviews snippets. A dedicated agent operates on a whole repository. An open-source editor keeps your code inside your network. An API model is a cost line in a product you are building. Comparing them on a single leaderboard produces a ranking that is true for none of the jobs.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th>Tier</th>\n          <th>What it costs</th>\n          <th>Best at</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td><strong>General assistants</strong></td><td>$20 / month</td><td>Questions, snippets, reviews, docs</td></tr>\n        <tr><td><strong>Dedicated agents</strong></td><td>$20–200 / month</td><td>Repo-scale refactors, multi-file work</td></tr>\n        <tr><td><strong>Open-source editors / agents</strong></td><td>$0 + your own model bill</td><td>Self-hosted, auditable workflows</td></tr>\n        <tr><td><strong>Open-weights API</strong></td><td>~$0.27 / M tokens</td><td>Building product features at margin</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"assistants\">The $20 assistants: start here</h2>\n    <p>ChatGPT Plus and Claude Pro are the default answer, and for most developers that is not a compromise — it is the right tier. Both answer language questions well, write and review functions, explain unfamiliar code, and draft tests and documentation. The difference between them matters at the edges: Claude is stronger on long-context reasoning and instruction-following, ChatGPT on breadth of integrations and the multimodal surface. Pick one, use it for a month, and notice which specific task makes you want a second tool.</p>\n\n    <h2 id=\"agents\">Dedicated agents: the real refactors</h2>\n    <p>When the job is \"rename this across forty files and fix everything that breaks\" or \"here is a vague bug in a codebase you have not seen\", the assistant chat window is the wrong shape. The dedicated agents — Claude Code and Codex being the strongest — work on the repository directly, read the surrounding code, run the tests and iterate. This is the tier that turns an afternoon into a coffee break, and it is also the tier where the bill can run to the top subscription tier. Worth it when the work is real; wasteful when it is not.</p>\n\n    <h2 id=\"oss\">Open source: when data rules</h2>\n    <p>Cline, Zed and OpenHands are the answer when the model cannot leave the building — a contract clause, a compliance officer, or a simple preference for not sending the codebase to a third party. All three are permissively licensed, all accept a local model, and all put every edit in front of you before it lands. The cost is operational: someone has to run the thing, and model spend moves onto your invoice. Check the maintenance history before you commit — in this category, a repository that has stopped moving is a real risk, and we have written about three projects whose commits quietly stalled.</p>\n\n    <h2 id=\"api\">Open-weights API: the price floor</h2>\n    <p>DeepSeek is the option for building, not for working interactively. Its open weights and roughly order-of-magnitude lower token price change what you can afford to spend a model call on, and on well-scoped tasks the quality is close enough that the price decides it. The gap shows up on long, ambiguous, agentic work — which is exactly the work the paid frontier models still do better. The practical setup is a router, not a choice: cheap model for the easy 80%, frontier model for the hard 20%.</p>\n\n    <h2 id=\"picks\">The picks, by scenario</h2>\n    <p>If you write code a few hours a week, one $20 assistant is the whole answer. If you do daily repository-scale work, add a dedicated agent and let the subscription tier follow your usage. If your codebase cannot leave your network, start with Cline and accept the operational weight. If you are building a product on an API, start with DeepSeek and keep the frontier model for the tasks that fail. The field rewards people who match the tool to the job instead of chasing the single best one.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/open-source-cursor-alternatives/index.html",
+      "title": "Open-source Cursor alternatives",
+      "blurb": "Eight projects, judged on licence and maintenance.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/deepseek-vs-claude/index.html",
+      "title": "DeepSeek vs Claude",
+      "blurb": "The price argument, settled per dimension.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/index.html",
+      "title": "All buying guides",
+      "blurb": "Every list we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "best ai coding tool",
+    "ai coding tools 2026",
+    "best ai code editor",
+    "ai coding assistant",
+    "best ai for coding",
+    "ai coding subscription",
+    "cursor alternative"
+  ]
+}

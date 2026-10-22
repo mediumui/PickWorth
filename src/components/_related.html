@@ -1,0 +1,20 @@
+<!-- =======================================================================
+  _related.html — the "Related" rule + 3-card grid. {{RELATED_CARDS}} is
+  replaced by the renderer with three <article class="card"> blocks.
+  Card template (fill per card):
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-ICONEVENT"></use></svg>
+          <span class="tag [teal|plain]">LABEL</span>
+        </div>
+        <h3><a href="TARGET">TITLE</a></h3>
+        <p>BLURB</p>
+        <a class="more" href="TARGET">LINK TEXT</a>
+      </article>
+  Icons available: i-sources, i-compare, i-verdict, i-method, i-pick, i-spark, i-cite.
+  ======================================================================= -->
+
+<div class="rule">Related</div>
+<section class="grid-3">
+  {{RELATED_CARDS}}
+</section>

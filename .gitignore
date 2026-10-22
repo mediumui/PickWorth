@@ -1,0 +1,35 @@
+# ===== OS / editor junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+
+# ===== Python (tools/*.py) =====
+__pycache__/
+*.py[cod]
+*$py.exe
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+env/
+
+# ===== WorkBuddy 运行时/会话数据（个人、非项目产物）=====
+# .workbuddy/ 是工作区运行时目录：会话记忆、临时脚本、缓存。
+# 不入库，避免把个人记忆与临时文件推到 GitHub。
+.workbuddy/
+
+# 临时生成物（若后续脚本落地缓存/抓取快照）
+.cache/
+*.cache
+build/
+dist/
+
+# ===== 凭据 / 环境变量（保险：脚本本身已走 env，不硬编码）=====
+.env
+.env.*
+!/.env.example
+*.pem
+*.key

@@ -1,0 +1,149 @@
+{
+  "slug": "gemini",
+  "type": "review",
+  "section": "tools",
+  "answer": "Gemini is Google's general-purpose assistant, and its defining strength is the stack behind it: a free tier that already includes Deep Research and image generation, native integration with Gmail, Docs, Drive, and YouTube, and a 1M-token context window on the paid tiers. It is strongest at research, long documents, and anything that lives in the Google ecosystem; it is weakest on pure coding consistency, where Claude still has the edge. The free plan is real and generous, but it is capped at a 32,000-token window and metered limits that refresh on a rolling window rather than a fixed daily count.",
+  "key_answers": [
+    [
+      "What is Google Gemini?",
+      "Google's general-purpose assistant, available as a web app and mobile app and through the Google AI plans. It runs on the Gemini 3 model family (Flash-Lite, Flash, and Pro) and is the only mainstream assistant that is natively wired into Gmail, Docs, Drive, Calendar, Maps and YouTube, so it can work on your actual files rather than just pasted-in text."
+    ],
+    [
+      "Is Gemini free?",
+      "Yes. The no-plan free tier includes Gemini 3 Flash-Lite, Flash and Pro, plus Deep Research, Canvas, Gems, Live and image generation, with 15 GB of storage. What the free tier caps is not the model but the volume: a 32,000-token context window and metered limits that refresh on a rolling window."
+    ],
+    [
+      "What is Gemini best at?",
+      "Research and long documents. The combination of a large context window, Deep Research, and grounding in Google Search makes it the strongest tool in the category for reading a big body of material and synthesizing it, and for anything that already lives inside Google's apps."
+    ],
+    [
+      "Where does Gemini fall short?",
+      "Pure coding consistency. The independent reviews we read are consistent that on complex multi-step code it is less reliable than Claude and that it tends to over-edit and drift; and the free tier's 32,000-token window is small for long documents, which is exactly the capability the paid tiers unlock."
+    ],
+    [
+      "How much does Gemini cost?",
+      "Free is $0. Google AI Plus is the cheap step at about $5 a month (2x limits, 128K window, video generation), Google AI Pro at $19.99 a month (4x limits, 1M window, Deep Research, 5 TB, a bundled YouTube Premium Lite), and Google AI Ultra from $99.99 a month for the highest limits and Deep Think. The Gemini API is billed separately per token for developers."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "Two readings. For research, fact-checking and working across your Google apps, the independent hands-on reviews describe it as the default recommendation, especially on AI Pro. For serious coding, the same readers consistently point to Claude or a dedicated coding tool as the more reliable choice, and several flag a default privacy setting, Keep Activity is on by default, so chats can be reviewed and used for model improvement unless you switch it off."
+    ],
+    [
+      "What score does PickWorth give Gemini?",
+      "4.0 out of 5, a strong, broadly useful assistant that leads on research and Google-ecosystem work, with real caps on the free tier and a coding-consistency gap behind the top paid tiers."
+    ],
+    [
+      "Does PickWorth take money from Google?",
+      "No. Reviews are written by a single editorial team; pricing is verified from Google's official plans page. See our method."
+    ]
+  ],
+  "meta": {
+    "title": "Google Gemini Review 2026: What It Is Good At, Where It Slips, and the Plans",
+    "desc": "Google Gemini review, where it leads on research, long documents and the Google ecosystem, where the free tier caps you, and which of the four plans is actually worth paying for.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Gemini",
+        "applicationCategory": "BusinessApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google"
+        }
+      },
+      "url": "https://pickworthhq.com/tools/gemini/",
+      "datePublished": "2026-10-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Gemini review",
+    "lead": "<p class=\"lead\">Google's assistant, and the reason to reach for it is the stack behind it: a free tier that already does Deep Research, native access to your own Google apps, and a million-token window on the paid plans. Where the research leads, where coding slips, and which of the four tiers is worth the money.</p>",
+    "date": "22 October 2026",
+    "name": "Gemini",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Gemini is the assistant you reach for when the work is research or when it already lives inside Google's apps, and the reason is structural: it is the only major assistant that can read your Gmail, your Docs and your Drive and act on them in one place. It is genuinely strong on that, long-document synthesis, deep research grounded in current search, and multimodal input. It is least reliable on the two things the category now turns on: pure coding consistency, where the independent reviews put it behind Claude, and the free tier's 32,000-token window, which is a real cap on exactly the long-document strength that is the point. For the research and productivity user, Google AI Pro at $19.99 is the baseline; for the coding-dominant user, pair it with a dedicated tool rather than make it the only one. The free plan is the most generous in the category, and that is the honest reason to start there.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Gemini is Google's general-purpose assistant: chat, writing, coding help, image understanding and generation, and a Deep Research mode that plans a search, works through sources, and returns a cited report. It is available as a web app and a mobile app, and, more importantly for most users, it is the assistant that can see your own Google account. Ask it to summarize your unread email and draft a reply, or to work over a document in Drive, and it does so against your actual data rather than a pasted-in copy. That is the structural difference from every other tool in this category, and it is the reason a Google user is the default audience.</p>\n    <p>Under the hood it runs on the Gemini 3 model family, split across a fast Flash-Lite, a Flash, and a Pro model. The consumer product wraps those models with a research layer, an image and video layer, and the ecosystem access. The model generation moves fast, and the free tier's experience is the entry-level view of that generation; the paid tiers are where the deeper models and the long window open up.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Research and long documents</h3>\n    <p>This is where the independent reviews are most consistent and the one the product is built for. A large context window, a Deep Research mode, and grounding in Google Search combine into the strongest tool in the category for reading a big body of material and synthesizing it. The free tier already gives you a slice of this; the paid tiers are where the window goes from 32,000 tokens to a million, which is the difference between a contract and a book.</p>\n    <h3>Working inside the Google apps</h3>\n    <p>For a user who lives in Gmail, Docs and Drive, this is not a bonus, it is the product. The hands-on reports describe the difference concretely: a single request that reads the email, pulls the detail from the document, and drafts the reply in one pass. No connector, no export, no separate login. The cost of that convenience is that the value is largely locked to the Google ecosystem, which is the right trade for a Google user and the wrong one for anyone on Slack and Notion.</p>\n    <h3>Multimodal input</h3>\n    <p>Image, audio and video come in on one call, and the video understanding in particular is ahead of where most competitors have arrived: a short clip gets summarized and time-stamped. It is the capability that makes the free tier feel more than a text box, and the reason the creative and analysis use cases show up so often in the reviews.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>The limits fall at two ends and one default setting. On the coding end, the independent reviews we read are consistent that on complex, multi-step code Gemini is less reliable than Claude, that it tends to start editing when you are asking a conceptual question, and that it can drift across a long agentic run. It is the tool to do research and front-end scaffolding with, and the tool to hand the hardening pass to a dedicated coding engine. On the volume end, the free tier is capped at a 32,000-token window and metered limits that refresh on a rolling window rather than a fixed daily count, so a heavy session can hit the wall and the next window opens hours later, not at midnight. The paid tiers open the window to a million tokens; that is the number that matters for the long-document strength, not the price.</p>\n    <p>The default setting is the one worth naming because it sits in the privacy panel, not the billing flow: activity tracking is on by default, so unless you turn it off your chats can be reviewed and used for model improvement. The independent reviews flag it explicitly, and it is the kind of thing the marketing never names.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <p>The plans are priced as a base plus a usage multiplier, so the number to read is the window and the model, not the sticker. Free is the entry point; Plus is the cheap step for anyone who wants video generation and a bigger window; Pro is where the million-token window and Deep Research open up, and it bundles a YouTube Premium subscription that offsets part of the cost; Ultra is for the people whose work is sustained research and the top Deep Think model, and it is the tier where the price jumps are steep. The paid limits are stated as multiples of the free allowance rather than fixed numbers, so the exact ceiling shifts with Google's usage policy.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>Context window</th><th>What it unlocks</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>32K tokens</td><td>Flash-Lite / Flash / Pro, Deep Research, Canvas, Gems, Live, image gen, 15 GB</td></tr>\n        <tr><td>AI Plus</td><td>~$5 / mo</td><td>128K tokens</td><td>2x limits, video generation, 400 GB, Flow credits</td></tr>\n        <tr><td>AI Pro</td><td>$19.99 / mo</td><td>1M tokens</td><td>4x limits, Deep Think access, 5 TB, bundled YouTube Premium Lite</td></tr>\n        <tr><td>AI Ultra</td><td>from $99.99 / mo</td><td>1M tokens</td><td>Highest limits, Deep Think, Project Genie, up to 20-30 TB</td></tr>\n      </tbody>\n    </table>\n    <p>Two lines bend that table. For eligible students, AI Pro is free for a year with annual re-verification, which is a legitimate saving and not a trial. And the Gemini API is a separate product, billed per token for developers, so the consumer plans and the developer API are two different products with two different free tiers. The US pricing above is the baseline; Google charges local equivalents elsewhere and has changed the Ultra pricing within the last year, so the top-tier number is the one to re-check.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Gemini earns a 4.0. It is the broadest general-purpose assistant in the category because it is the only one that can act on your actual Google account, and it is genuinely strong at the research and long-document work that is most of a knowledge worker's day. The deduction is for the two gaps the spec sheet does not name: the free tier's 32,000-token cap on exactly the long-document strength, and the coding-consistency gap that the independent reviews keep putting behind Claude. Pick the free tier to see how far it goes, move to AI Pro at $19.99 when you outgrow the window, and if your work is coding-dominant, keep a dedicated tool for the hardening pass. Pricing and the free-group offers were read from Google's official plans page as of October 2026, and the metered free-tier limits and the top-tier pricing can change without a version bump, so re-check before you commit.</p>\n",
+  "sources": [
+    "Google, Gemini plans and pricing, https://gemini.google/subscriptions"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-gemini/index.html",
+      "title": "ChatGPT vs Gemini",
+      "blurb": "Reasoning, coding, cost and context, side by side.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The all-rounder Gemini is the free-to-start alternative to.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/claude/index.html",
+      "title": "Claude review",
+      "blurb": "The model Gemini trails on coding consistency.",
+      "link": "Read"
+    }
+  ],
+  "search_terms": [
+    "gemini review",
+    "is gemini worth it",
+    "google gemini free",
+    "gemini free tier",
+    "gemini ai pro worth it",
+    "gemini pricing 2026",
+    "gemini deep research",
+    "gemini context window",
+    "gemini for coding",
+    "google ai pro vs ultra",
+    "is gemini free for students",
+    "gemini vs chatgpt",
+    "gemini pros cons"
+  ]
+}

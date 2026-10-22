@@ -1,0 +1,139 @@
+{
+  "slug": "best-image-generation-tools",
+  "type": "list",
+  "section": "lists",
+  "answer": "Midjourney is still the dedicated tool for serious, styled image work — the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's Imagen, OpenAI's DALL-E) and the free tier cover most people. Pick by what you are actually making.",
+  "key_answers": [
+    [
+      "What are the best AI image tools in 2026?",
+      "Midjourney for serious, styled work; the assistant image tools (Google's Imagen, OpenAI's DALL-E) for everyday; the free tier that covers most people."
+    ],
+    [
+      "Is Midjourney worth a subscription?",
+      "Yes, for serious, styled image work: it is the purpose-built system, not a feature, and it earns a real subscription on that."
+    ],
+    [
+      "Do I need a dedicated tool?",
+      "For most people, no: the free tier and the assistant image tools cover everyday use. A dedicated tool earns its place only for a specific kind of image work."
+    ],
+    [
+      "How much should I be paying?",
+      "Start free. A dedicated tool earns its place only when the specific kind of image work (styled, serious) starts hurting — see the $20 rule."
+    ],
+    [
+      "What is PickWorth's overall score for the category?",
+      "Good (3.8-4.5 band): a clear dedicated leader (Midjourney) but the right pick depends on what you are making."
+    ],
+    [
+      "Which should I pick first?",
+      "Start free. Add Midjourney only for serious, styled image work; the assistant tools cover everything else."
+    ],
+    [
+      "Does PickWorth take money from Midjourney, OpenAI, or Google?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Best AI Image Generation Tools in 2026: Midjourney, Nano Banana and the Free Options",
+    "desc": "The honest 2026 take on AI image tools: when Midjourney's subscription is worth it, when the free tier does the job, and how to pick by what you're making.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Image Generation Tools, 2026",
+      "url": "https://pickworthhq.com/lists/best-image-generation-tools/",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Midjourney"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nano Banana / assistant image tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Free assistant tiers"
+        }
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "The AI image tools that are actually worth it in 2026",
+    "lead": "The image category split in two: serious production work has a dedicated tool that earns its subscription, and everything casual is already inside the $20 assistant you probably have. Here is the honest breakdown, with the prices and the trade-offs that decide it.",
+    "date": "22 October 2026",
+    "name": "Image generation",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Category score"
+  },
+  "toc": [
+    [
+      "pricing",
+      "The real prices"
+    ],
+    [
+      "midjourney",
+      "Midjourney: the dedicated tool"
+    ],
+    [
+      "assistant",
+      "The assistant image tools"
+    ],
+    [
+      "free",
+      "The free tier that covers most people"
+    ],
+    [
+      "scenarios",
+      "Pick by what you are making"
+    ],
+    [
+      "sources",
+      "Sources"
+    ]
+  ],
+  "verdict": "<p>Midjourney is still the dedicated tool for serious, styled image work — the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's image generation, the Nano Banana line, and the image features in ChatGPT and the rest) now cover the casual need at the price of the assistant you already pay. For most people the answer is: use the free or paid assistant tier for everything except the moment you need the consistency and style control that only the dedicated tool gives. The question is not \"which is best\" but \"how often is the dedicated tool actually doing the job.\"</p>",
+  "body": "<h2 id=\"pricing\">The real prices, this week</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th>Tool</th>\n          <th>Entry paid tier</th>\n          <th>What it is for</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td><strong>Midjourney</strong></td><td>~$10 / month (Basic)</td><td>Dedicated, styled production image work</td></tr>\n        <tr><td><strong>Assistant image tools</strong></td><td>$0–$20 / month (with the assistant)</td><td>Everything casual, embedded in a chat you already have</td></tr>\n        <tr><td><strong>Free tiers</strong></td><td>$0 (metered)</td><td>The occasional image, no subscription</td></tr>\n      </tbody>\n    </table>\n    <p class=\"fineprint\">Midjourney's Basic tier is priced around $10 a month on the current subscription ladder; the assistant-side tools are bundled into the assistant subscription you are likely already paying, so the incremental cost of the image feature is often zero. Treat these as the order of magnitude — the exact Midjourney tiers and the assistant credit rules both move with the release cycle.</p>\n\n    <h2 id=\"midjourney\">Midjourney: the dedicated tool</h2>\n    <p>Midjourney is the only major image tool that is a purpose-built system rather than a feature. The web interface, style libraries, consistent-identity controls and the model's strength on stylised, art-directed output are the part you pay for. It has a long, documented history with the art world — the company maintains a public list of the artists whose work was used in training, and the copyright disputes over that practice are still a real part of the category's record.</p>\n    <p>That history is not a quality claim, but it is a trust question. For commercial work that could land in a takedown, read the licensing terms before you rely on the output. For a solo creative who values the style control above all, it is the tool that matches the shape of the work and the entry tier is the cheapest way in.</p>\n\n    <h2 id=\"assistant\">The assistant image tools</h2>\n    <p>On the assistant side, Google's image-generation line (the Nano Banana model) and the image features inside the general assistants now cover the casual need. The deciding factor is that you are not paying for a new tool — the image feature is inside the $20 assistant you already have, so the incremental cost is zero and the workflow is one window instead of two. Quality on everyday images is close to the dedicated tool, and the gap only opens on the specific jobs that need style consistency, a strong art direction, or the dedicated tool's feature set.</p>\n\n    <h2 id=\"free\">The free tier that covers most people</h2>\n    <p>For the occasional image — a quick illustration, a social post, a concept test — the free tiers of the assistants are enough and the dedicated subscription is overpaying. The moment that stops being true is the moment you are making the same kind of image more than a few times a week and the assistant's output is not good enough for the job. That is the exact line between \"use the free tier\" and \"buy the tool you are reaching for.\"</p>\n\n    <h2 id=\"scenarios\">Pick by what you are making</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>If you are making…</th><th>Buy this</th><th>Skip this</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>The occasional illustration or social image</td><td><strong>A free assistant tier</strong></td><td>Any paid tool</td></tr>\n        <tr><td>Daily creative work with strong style</td><td><strong>Midjourney</strong></td><td>The assistant feature</td></tr>\n        <tr><td>Images inside a workflow you already run</td><td><strong>The assistant's image feature</strong></td><td>A second subscription</td></tr>\n        <tr><td>Commercial work you need to license cleanly</td><td><strong>Read the terms first</strong></td><td>Assume it is fine</td></tr>\n      </tbody>\n    </table>\n\n    <div class=\"callout\">\n      <h3>The one test that settles it</h3>\n      <p>Run your three most common image jobs through a free assistant tier for a week. If the dedicated tool is the one you keep reaching for because the assistant output is not good enough, buy it. If the free tier is doing the job, the dedicated subscription is the cost you do not have to pay.</p>\n    </div>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "",
+      "blurb": "The assistant whose image feature covers most casual work.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/ai-writing-tools/index.html",
+      "title": "",
+      "blurb": "The same category logic, applied to writing.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/index.html",
+      "title": "All buying guides",
+      "blurb": "Every list we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "best ai image tool",
+    "ai image generation 2026",
+    "midjourney worth it",
+    "best ai image generator",
+    "ai image tool subscription",
+    "ai image free"
+  ]
+}

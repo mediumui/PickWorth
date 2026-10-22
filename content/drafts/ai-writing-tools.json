@@ -1,0 +1,140 @@
+{
+  "slug": "ai-writing-tools",
+  "type": "list",
+  "section": "lists",
+  "answer": "The category splits in two: marketing writers pay for a brand system (Jasper, from $59), fiction writers pay for a story system (Sudowrite, $10–$44), and everyone else is better off with the $20 general assistant. Pick by who is writing, not by the loudest marketing.",
+  "key_answers": [
+    [
+      "What are the best AI writing tools in 2026?",
+      "Marketing teams: Jasper. Fiction writers: Sudowrite. Everyone else: the $20 general assistant (ChatGPT Plus or Claude Pro)."
+    ],
+    [
+      "Is Jasper worth it?",
+      "Only for marketing teams that need on-brand output at scale: from $59/month, about five times the general assistants. For most people, no."
+    ],
+    [
+      "Is Sudowrite worth it?",
+      "Yes, for fiction writers: $10–$44/month, the only tool in the category that is purpose-built for the story system rather than a general assistant."
+    ],
+    [
+      "Do I even need a dedicated writing tool?",
+      "For most people, no: the $20 general assistant covers the job. A dedicated tool earns its place only for a specific kind of writing work."
+    ],
+    [
+      "What is PickWorth's overall score for the category?",
+      "4.0 / 5 (good) — strong dedicated tools exist, but the $20 general assistant is the better first buy for most people."
+    ],
+    [
+      "Which should I pick first?",
+      "Start with the $20 general assistant. Add a dedicated tool only when the specific kind of work (brand-scale marketing, or fiction) starts hurting."
+    ],
+    [
+      "Does PickWorth take money from Jasper, Sudowrite, or OpenAI?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Best AI Writing Tools in 2026: Jasper, Sudowrite and the General Assistants, Compared",
+    "desc": "The honest 2026 take on AI writing tools: when Jasper's $59 tool earns its price, when a $20 assistant does the job, and which to pick by who is writing.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "AI Writing Tools Compared, 2026",
+      "url": "https://pickworthhq.com/lists/ai-writing-tools/",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Jasper"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sudowrite"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "General assistants (ChatGPT, Claude)"
+        }
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "The AI writing tools that are actually worth it in 2026",
+    "lead": "The category split in two: marketing writers pay for a brand system, fiction writers pay for a story system, and everyone else is better off with the $20 general assistant. Here is the honest breakdown, with prices verified from the official pages this week.",
+    "date": "22 October 2026",
+    "name": "AI writing tools",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Category score"
+  },
+  "toc": [
+    [
+      "pricing",
+      "The real prices"
+    ],
+    [
+      "jasper",
+      "Jasper: the brand system"
+    ],
+    [
+      "sudowrite",
+      "Sudowrite: the story system"
+    ],
+    [
+      "general",
+      "The $20 general assistant"
+    ],
+    [
+      "scenarios",
+      "Pick by who is writing"
+    ],
+    [
+      "sources",
+      "Sources"
+    ]
+  ],
+  "verdict": "<p>Jasper (from $59 a month) is for marketing teams that need on-brand output at scale, and it costs five times the general assistants for the privilege. Sudowrite ($10–$44 a month) is the only tool built specifically for fiction and long-form narrative, and it is worth it if you write that genre. For everyone doing marketing copy, email and blog drafts, the $20 a month tier of ChatGPT or Claude does the job and leaves most of the money in your pocket. The question is not \"which is best\" but \"who is doing the writing.\"</p>",
+  "body": "<h2 id=\"pricing\">The real prices, this week</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th>Tool</th>\n          <th>Entry paid tier</th>\n          <th>Top tier</th>\n          <th>What it is for</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td><strong>Jasper</strong></td><td>$59 / seat / month (Pro)</td><td>Business (custom)</td><td>Marketing teams, on-brand scale</td></tr>\n        <tr><td><strong>Sudowrite</strong></td><td>$10 / month (Hobby)</td><td>$44 / month (Max)</td><td>Fiction and long-form narrative</td></tr>\n        <tr><td><strong>ChatGPT / Claude</strong></td><td>$20 / month</td><td>$200 / month</td><td>Everything, generalist</td></tr>\n      </tbody>\n    </table>\n    <p class=\"fineprint\">Jasper prices from jasper.ai/pricing and Sudowrite prices from sudowrite.com/pricing, both verified 22 October 2026. Jasper's Pro tier shows an annual rate of $59 and a $69 list price for a discount-eligible configuration; treat the lower figure as the effective monthly cost when paid annually.</p>\n\n    <h2 id=\"jasper\">Jasper: the brand system</h2>\n    <p>Jasper is not a writing tool in the sense you are thinking of. It is a marketing content system: a canvas built around your brand, a library of marketing agents, a plagiarism check and image tooling, and governance for a team. The Pro tier at $59 a month buys two brand voices, five knowledge assets and three audiences. Business is custom-priced and adds the deep-research and translation agents, a no-code agent builder and API access.</p>\n    <p>That is a real system, and the price is the price of the system. For a solo marketer the $59 is more than the task needs. For a team producing on-brand content at volume, the agents and the governance are the part that justifies it, and the general assistants will not give you the same thing.</p>\n\n    <h2 id=\"sudowrite\">Sudowrite: the story system</h2>\n    <p>Sudowrite is the only major tool built for narrative. It runs on story-specific models plus the general ones, and its features are named for the craft: write, rewrite, describe, expand, plus developmental edits, line edits and beta reads on the upper tiers. The Hobby tier at $10 a month (billed yearly) is the entry point; Professional at $22 adds the long-work context; Max at $44 adds the editing suite and a twelve-month credit rollover.</p>\n    <p>If you write fiction or screenplays, this is the tool that matches the shape of the work and the $10 entry is the cheapest place to start. If you do not write narrative, the system has nothing to do for you, and a general assistant is the better spend.</p>\n\n    <h2 id=\"general\">The $20 general assistant</h2>\n    <p>Here is the uncomfortable part of the category: for a solo writer doing marketing copy, email and blog drafts, a $20 a month tier of ChatGPT or Claude is the better purchase. It writes, it edits, it rewrites across tone and length, and it is a fifth to a quarter of the cost of the dedicated tools. The dedicated tools earn their price only when the requirement is a system — a brand library, a team workspace, a narrative continuity engine — and not a better version of the same basic drafting.</p>\n    <p>The honest test is to run your three most common writing tasks through a general assistant first. If the gap between that and the dedicated tool is workflow, you are buying the system. If the gap is that the assistant writes badly, you are buying a better model, and the $20 tier covers it.</p>\n\n    <h2 id=\"scenarios\">Pick by who is writing</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>If you are…</th><th>Buy this</th><th>Skip this</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>A marketing team needing on-brand scale</td><td><strong>Jasper</strong></td><td>Anything general</td></tr>\n        <tr><td>A solo marketer writing copy and email</td><td><strong>A $20 general assistant</strong></td><td>Jasper Pro</td></tr>\n        <tr><td>A fiction or screenwriter</td><td><strong>Sudowrite</strong></td><td>Both general and Jasper</td></tr>\n        <tr><td>A content lead who will not buy a tool</td><td><strong>Nothing yet</strong> — the free tiers first</td><td>—</td></tr>\n      </tbody>\n    </table>\n\n    <div class=\"callout\">\n      <h3>The one test that settles it</h3>\n      <p>Run your real workload through a free tier for a week. The moment the free version is not enough, that is the tool to buy, and the moment it is enough, that is the one not to buy. The category's prices are honest; your volume is the deciding variable.</p>\n    </div>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The general assistant, in full.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "title": "ChatGPT vs Claude",
+      "blurb": "The two general assistants, side by side.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/index.html",
+      "title": "All buying guides",
+      "blurb": "Every list we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "best ai writing tool",
+    "ai writing tools 2026",
+    "jasper worth it",
+    "sudowrite worth it",
+    "best ai writing software",
+    "ai writing tool for marketing",
+    "ai writing tool for fiction"
+  ]
+}

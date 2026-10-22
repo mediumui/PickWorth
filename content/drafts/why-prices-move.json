@@ -1,0 +1,114 @@
+{
+  "slug": "why-prices-move",
+  "type": "blog",
+  "section": "blog",
+  "answer": "AI pricing follows a recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder. None of this is a bug; it is the playbook. The move that protects you is to buy on the second move, not the first.",
+  "key_answers": [
+    [
+      "Why do AI tool prices move?",
+      "A recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder."
+    ],
+    [
+      "When is the right time to buy a subscription?",
+      "On the second move (the tightening), not the first (the generous launch). The launch tier is the bait; the tightening is where the real price starts."
+    ],
+    [
+      "How do I not get caught when the ladder resets?",
+      "Keep the subscription on a monthly, not annual, plan until the restructure passes. A restructure that resets the ladder is the signal to re-evaluate."
+    ],
+    [
+      "Is this a sign of a real price increase?",
+      "No — it is the playbook, not a market signal. The move is predictable and it is what you are buying against."
+    ],
+    [
+      "What is the one move that protects me?",
+      "Buy on the second move, not the first. Keep it monthly, not annual, until the restructure passes."
+    ],
+    [
+      "Does PickWorth take money from any vendor?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Why AI Tool Prices Move (and the Pattern Behind Every Change)",
+    "desc": "The repricing pattern in AI tools: a generous launch, a quiet tightening, then a restructured tier. How to buy without getting caught.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why AI Tool Prices Move (and the Pattern Behind Every Change)",
+      "url": "https://pickworthhq.com/blog/why-prices-move/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "Why AI tool prices move",
+    "lead": "<p class=\"lead\">Every AI tool reprices eventually, and almost always along the same arc. Knowing the arc tells you which tier to buy today and which promise not to believe.</p>",
+    "date": "22 October 2026",
+    "name": "Why prices move"
+  },
+  "toc": [
+    [
+      "arc",
+      "The three-stage arc"
+    ],
+    [
+      "stage1",
+      "Stage one: the generous launch"
+    ],
+    [
+      "stage2",
+      "Stage two: the quiet tightening"
+    ],
+    [
+      "stage3",
+      "Stage three: the restructure"
+    ],
+    [
+      "what-to-do",
+      "What this means for your subscription"
+    ]
+  ],
+  "verdict": "<p>AI pricing follows a recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder. None of this is a scandal — it is how a category finds its price. But it means the free tier you are evaluating today is the one the vendor has the least incentive to keep, and the tier that survives the restructure is the one worth committing to.</p>",
+  "body": "<h2 id=\"arc\">The three-stage arc</h2>\n    <p>Watch any AI tool long enough and you see the same sequence. It is not unique to one vendor and it is not evidence of bad faith — it is a category working out what its product is actually worth. The useful part is that once you can name the stage a tool is in, you know what the next twelve months probably hold.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th>Stage</th>\n          <th>What you see</th>\n          <th>What it means</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td><strong>Launch</strong></td><td>Generous free tier, low entry price</td><td class=\"good\">Best time to adopt — worst time to commit annually</td></tr>\n        <tr><td><strong>Tightening</strong></td><td>Same price, fewer messages, metered models</td><td>The price rose; the number did not</td></tr>\n        <tr><td><strong>Restructure</strong></td><td>New tier ladder, old plans retired</td><td>Grandfathered plans are the thing to hold</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"stage1\">Stage one: the generous launch</h2>\n    <p>A new tool needs users more than it needs revenue, so the launch tier is priced for adoption, not for margin. Free limits are high, the strong model is available to everyone, and the entry paid tier is cheap. This is the best moment to adopt a tool — and the worst moment to commit to an annual plan, because you are buying the launch pricing on the assumption it survives, which it usually does not.</p>\n\n    <h2 id=\"stage2\">Stage two: the quiet tightening</h2>\n    <p>Once usage is habitual, the metering starts. The headline price stays the same, which is what makes this stage easy to miss: the number you agreed to is still the number you pay. What changes is the allowance behind it — fewer messages before the cap, the strong model moved behind the paid tier, slower responses at peak hours. The effective price has risen and nothing on the pricing page says so. If a tool you rely on has quietly changed its limits, that is this stage, and it is the moment to re-run the arithmetic.</p>\n\n    <h2 id=\"stage3\">Stage three: the restructure</h2>\n    <p>Eventually the ladder gets rebuilt: new tiers, new names, old plans retired or grandfathered. The restructure is the honest moment in the arc, because the new pricing page finally reflects the cost the vendor has been carrying. It is also when the thing worth having becomes visible — a grandfathered plan at the old allowance. Users who bought early and never left are the ones the restructure rewards.</p>\n\n    <h2 id=\"what-to-do\">What this means for your subscription</h2>\n    <p>Three practical rules follow from the arc. Buy monthly during the launch stage, because the price is a hypothesis. Watch the allowance rather than the price, because the tightening is where the cost actually moves. And when a restructure lands, read what happens to your current plan before you read what the new tiers offer — the grandfathered line is often the best deal on the page. None of this requires predicting the future; it only requires knowing which stage you are looking at.</p>",
+  "related": [
+    {
+      "icon": "i-method",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/the-20-dollar-rule/index.html",
+      "title": "The $20 rule",
+      "blurb": "How to spend on AI tools without a spreadsheet.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-method",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/how-we-test-ai-tools/index.html",
+      "title": "How we test",
+      "blurb": "The method behind every number we publish.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/index.html",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "why ai tool prices change",
+    "ai subscription price increase",
+    "ai tool pricing pattern",
+    "ai price cut",
+    "ai subscription cost"
+  ]
+}

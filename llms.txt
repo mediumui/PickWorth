@@ -1,0 +1,47 @@
+# PickWorth
+
+> PickWorth is an independent review site that hands-on tests AI tools (ChatGPT, Claude, DeepSeek, Grok, Perplexity and more).
+> Honest, price-verified verdicts, head-to-head comparisons, and best-of lists, written by a single editorial team.
+> No ads in reviews, no paid placement. Method: https://pickworthhq.com/blog/how-we-test-ai-tools/
+
+## Core Pages
+- [Home](https://pickworthhq.com/): Know which AI tools are actually worth paying for.
+- [Tool Reviews](https://pickworthhq.com/tools/): Reviews of ChatGPT, Claude, DeepSeek, Grok, and Perplexity with verified prices and our 0-5 score.
+- [Comparisons](https://pickworthhq.com/comparisons/): Head-to-head matchups scored per dimension, with the cost question answered.
+- [Best-Of Lists](https://pickworthhq.com/lists/): Buyer's guides that pick the right tool by your actual job, not the loudest marketing.
+- [Journal](https://pickworthhq.com/blog/): Essays on how we test, why prices move, and when open source matters.
+- [About](https://pickworthhq.com/about/): Editorial standards, who funds the site, and why funding never touches the verdicts.
+- [Contact](https://pickworthhq.com/contact/): Report an error or request a comparison.
+
+## Tool Reviews
+- [Agnes AI Review 2026: A Free, Uncapped API for Text, Image, and Video]: https://pickworthhq.com/tools/agnes/ - Agnes AI review a free, uncapped, OpenAI-compatible API covering text, image and video models. Where the front-end and image work leads, where reasoning slips, and why the benchmarks are self-reported.
+- [ChatGPT Review: What It Is Good At and Where It Slips (2026)]: https://pickworthhq.com/tools/chatgpt/ - ChatGPT review where it leads on everyday tasks and multimodal input, where it trips on long documents, and which plan is actually worth paying for.
+- [Claude Review: Where It Pulls Ahead and Where It Doesn't (2026)]: https://pickworthhq.com/tools/claude/ - Claude review where it beats other assistants on long documents and instruction-following, where the ecosystem gap is real, and what the tiers cost.
+- [DeepSeek Review: The Open-Weight Model That Keeps the Price Floor Low (2026)]: https://pickworthhq.com/tools/deepseek/ - DeepSeek review where the open-weights model earns its cost, where the free chat tier actually runs out, and what the API pricing means for production.
+- [ElevenLabs Review 2026: Where It Leads on Voice, and What the Free Plan Actually Gives]: https://pickworthhq.com/tools/elevenlabs/ - ElevenLabs review, the most realistic text-to-speech and voice cloning in the category, the per-character credit system, and what the free plan truly unlocks before you pay.
+- [Google Gemini Review 2026: What It Is Good At, Where It Slips, and the Plans]: https://pickworthhq.com/tools/gemini/ - Google Gemini review, where it leads on research, long documents and the Google ecosystem, where the free tier caps you, and which of the four plans is actually worth paying for.
+- [GitHub Copilot Review 2026: What It Is Good At, Where It Slips, and the Plans]: https://pickworthhq.com/tools/github-copilot/ - GitHub Copilot review where it leads on inline completion and in-editor help, where the free tier caps out, and which plan is actually worth paying for, including the student and open-source routes.
+- [Grok Review: xAI's Assistant for the Whole X Firehose (2026)]: https://pickworthhq.com/tools/grok/ - Grok review what the live-X knowledge actually buys, where the open-weights and coding tools are going, and the trust questions a buyer should ask.
+- [Perplexity Review: The AI Search Engine That Cites Its Sources (2026)]: https://pickworthhq.com/tools/perplexity/ - Perplexity review where the AI search engine beats a normal search box, where its free tier actually runs out, and what the Pro tier is worth.
+
+## Head-to-Head Comparisons
+- [ChatGPT vs Claude (2026): The Full Breakdown]: https://pickworthhq.com/comparisons/chatgpt-vs-claude/ - ChatGPT vs Claude, compared on capability, cost, context window and the two tasks where one clearly wins. Which one to pick for your workflow.
+- [ChatGPT vs Gemini (2026): The Full Breakdown]: https://pickworthhq.com/comparisons/chatgpt-vs-gemini/ - ChatGPT vs Gemini, scored on everyday ability, the free tier, image and code, and cost. The two strongest consumer assistants, judged per dimension.
+- [DeepSeek vs Claude (2026): Coding, Cost and Open Weights]: https://pickworthhq.com/comparisons/deepseek-vs-claude/ - DeepSeek vs Claude for coding: the open-weights challenger that keeps the price floor low, against the paid tool with the stronger agent story.
+- [Grok vs ChatGPT (2026): Live Knowledge and the Rest]: https://pickworthhq.com/comparisons/grok-vs-chatgpt/ - Grok vs ChatGPT, scored on live X knowledge, the free tier, coding and general ability. Where Grok wins, and where the general assistant still wins.
+- [Perplexity vs ChatGPT (2026): Search, Sources and the Right Job]: https://pickworthhq.com/comparisons/perplexity-vs-chatgpt/ - Perplexity vs ChatGPT: the answer engine that cites its sources against the general assistant that does the rest. Where each wins, and what each costs.
+
+## Best-Of Lists
+- [Best AI Writing Tools in 2026: Jasper, Sudowrite and the General Assistants, Compared]: https://pickworthhq.com/lists/ai-writing-tools/ - The honest 2026 take on AI writing tools: when Jasper's $59 tool earns its price, when a $20 assistant does the job, and which to pick by who is writing.
+- [Best AI Coding Tools in 2026, Ranked by the Job You Do]: https://pickworthhq.com/lists/best-ai-coding-tools/ - The best AI coding tools in 2026: a $20 assistant for most work, dedicated agents for real refactors, and the open-weights option when cost or data rules.
+- [Best AI Research Tools in 2026, Ranked by How You Work]: https://pickworthhq.com/lists/best-ai-research-tools/ - The best AI research tools in 2026: the answer engine that cites everything, the general assistant with search, and document tools for reading a lot.
+- [Best AI Image Generation Tools in 2026: Midjourney, Nano Banana and the Free Options]: https://pickworthhq.com/lists/best-image-generation-tools/ - The honest 2026 take on AI image tools: when Midjourney's subscription is worth it, when the free tier does the job, and how to pick by what you're making.
+- [Open-Source Alternatives to Cursor, Compared (2026)]: https://pickworthhq.com/lists/open-source-cursor-alternatives/ - Eight open-source Cursor alternatives compared on licence, activity and workflow fit including three whose GitHub commits have quietly stalled.
+
+## Journal & Analysis
+- [Context Windows, Explained Without the Headline Numbers]: https://pickworthhq.com/blog/context-windows-explained/ - What a context window actually does, why a bigger one is not automatically better, and the two questions that decide whether it matters for your work.
+- [Getting GitHub Copilot Pro for Free: The Student, Teacher, and Open-Source Route]: https://pickworthhq.com/blog/get-github-copilot-pro-free/ - The free tier is not the only free option: verified students, teachers, and maintainers of popular open-source projects get the full Pro plan at $0. How to check eligibility and claim it, and what the free grant actually covers.
+- [How We Test AI Tools (and Why the Answer Keeps Changing)]: https://pickworthhq.com/blog/how-we-test-ai-tools/ - Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat.
+- [The $20 Rule: How Much to Spend on AI Tools]: https://pickworthhq.com/blog/the-20-dollar-rule/ - One $20 subscription covers most people's AI needs; a second earns its place only for a specific job. The rule we use to decide when to add a tool.
+- [When Open Source Actually Matters (and When It Is Just a Label)]: https://pickworthhq.com/blog/when-open-source-matters/ - Open weights are not automatically better. The four conditions under which open source genuinely changes the decision and when it is just preference.
+- [Why AI Tool Prices Move (and the Pattern Behind Every Change)]: https://pickworthhq.com/blog/why-prices-move/ - The repricing pattern in AI tools: a generous launch, a quiet tightening, then a restructured tier. How to buy without getting caught.

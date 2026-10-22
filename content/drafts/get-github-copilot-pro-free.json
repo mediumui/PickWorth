@@ -1,0 +1,112 @@
+{
+  "slug": "get-github-copilot-pro-free",
+  "type": "blog",
+  "section": "blog",
+  "answer": "If you are a verified student, teacher, or a maintainer of a popular open-source project, GitHub Copilot Pro is free for you, not just the 2,000-completion free tier. It is a standing benefit, not a trial. The one thing that trips people is that it requires a verified account, so the first step is the eligibility link, not the checkout.",
+  "key_answers": [
+    [
+      "Can I use GitHub Copilot Pro for free?",
+      "Yes, if you qualify: verified students get the Copilot Student plan at no cost, and verified teachers and maintainers of popular open-source projects get the full Pro tier free. Everyone else gets the 2,000-completion free plan or pays."
+    ],
+    [
+      "Is the free access a trial or permanent?",
+      "It is a standing benefit, not a trial: it lasts for as long as you remain in the program and renews on schedule, so it does not lapse after 30 days the way a paid trial does."
+    ],
+    [
+      "What exactly does the free Pro give me?",
+      "The Pro tier: unlimited completions and next-edit suggestions, 1,500 monthly AI credits, access to mid-complexity models, and the third-party coding agents. The same features a $10 subscriber gets."
+    ],
+    [
+      "How do I claim it?",
+      "Sign in with your GitHub account, go to your Copilot settings, and use the eligibility link for your category (student, teacher, or open-source maintainer). If you see a price instead of a free button, you are not currently verified as eligible."
+    ],
+    [
+      "What if I already have a paid subscription?",
+      "You need to cancel the paid plan or trial before the free eligibility can be applied; a paid seat and a free eligibility grant do not stack on the same account."
+    ],
+    [
+      "Does PickWorth take money from GitHub?",
+      "No. This is a factual guide; the free-group offers are verified from GitHub's official plans and documentation pages."
+    ]
+  ],
+  "meta": {
+    "title": "Getting GitHub Copilot Pro for Free: The Student, Teacher, and Open-Source Route",
+    "desc": "The free tier is not the only free option: verified students, teachers, and maintainers of popular open-source projects get the full Pro plan at $0. How to check eligibility and claim it, and what the free grant actually covers.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Getting GitHub Copilot Pro for Free: The Student, Teacher, and Open-Source Route",
+      "url": "https://pickworthhq.com/blog/get-github-copilot-pro-free/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "How-to",
+    "h1": "Getting GitHub Copilot Pro for free",
+    "lead": "<p class=\"lead\">Most people who want a free Copilot stop at the 2,000-completion tier and assume that is all that exists for $0. It is not: three groups of people get the full Pro plan at no cost, and the offer is so far down the page that it is easy to pay before you find it.</p>",
+    "date": "22 October 2026",
+    "name": "Getting Copilot Pro for free"
+  },
+  "toc": [
+    [
+      "who",
+      "Who gets Pro for $0"
+    ],
+    [
+      "what",
+      "What the free grant actually covers"
+    ],
+    [
+      "how",
+      "How to claim it"
+    ],
+    [
+      "caveats",
+      "The two things that trip people up"
+    ]
+  ],
+  "body": "<h2 id=\"who\">Who gets Pro for $0</h2>\n    <p>The free tier that ships with any GitHub account — 2,000 completions a month, entry-level models, no card — is the floor, not the ceiling. Above it, GitHub offers the paid Pro features at no cost to three specific groups: verified students, through a dedicated Copilot Student plan; verified teachers; and maintainers of popular open-source projects. The third one is the least obvious, because it is not a student benefit at all: if you have write or admin access to a widely used public repository, GitHub evaluates the project's popularity and contribution metrics and can extend the full Pro tier to you at $0. That is the long-tail case this whole note exists to surface.</p>\n\n    <h2 id=\"what\">What the free grant actually covers</h2>\n    <p>The grant is the Pro tier, not a weaker clone of it. That means unlimited code completions and next-edit suggestions rather than the 2,000 monthly cap, 1,500 AI credits a month, access to the mid-complexity model set, and the third-party coding agents. It is the same feature row a paying subscriber gets at $10 a month, just billed to the program instead of a card. For a student training in an editor all day, that is a clean and legitimate saving; it is not a two-week trial that quietly expires.</p>\n\n    <h2 id=\"how\">How to claim it</h2>\n    <p>The path is short and the first step is not the checkout. Sign in with the GitHub account that carries your student, teacher, or maintainer status, open your Copilot settings, and use the eligibility link for your category. If the button reads free, you are verified and can activate immediately. If it shows a price, the account is not currently recognised as eligible, and the fix is to complete the verification for that category rather than to hunt for a discount. The two are different problems, and people usually attempt the second one first.</p>\n\n    <h2 id=\"caveats\">The two things that trip people up</h2>\n    <p>The first is that the grant is tied to a verified account and is rechecked on a schedule: it is a standing benefit that renews while you remain eligible, not a one-time credit you bank forever, so the status can change under you. The second is that it does not stack with a paid seat: if you already have a paid Pro subscription or an active trial on the same account, you have to cancel it before the free eligibility can apply. Both of these are small, and both are the reason the offer stays underused — it disappears the moment someone treats it as a coupon instead of an account state.</p>\n    <p>The eligibility routes and the Pro feature set were read from GitHub's official plans page and documentation as of October 2026; the credit allowance and model access in Pro can change without a version bump, so confirm the current numbers on the plans page before relying on them.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/github-copilot/index.html",
+      "title": "GitHub Copilot review",
+      "blurb": "What it is good at, where it slips, and which plan is worth paying for.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Guide",
+      "tag_class": "teal",
+      "href": "lists/best-ai-coding-tools/index.html",
+      "title": "The AI coding tools worth paying for",
+      "blurb": "The wider field, ranked by the job you are doing.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/index.html",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "github copilot pro free",
+    "github copilot free for students",
+    "github copilot free for teachers",
+    "github copilot open source maintainer free",
+    "github copilot student plan",
+    "github copilot free eligibility",
+    "how to get github copilot for free",
+    "github copilot free without paying"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "best-ai-research-tools",
+  "type": "list",
+  "section": "lists",
+  "answer": "If you do research regularly, start with Perplexity's free tier — it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable. The general assistants with search are the runner-up; document tools are for when you are reading a lot at once.",
+  "key_answers": [
+    [
+      "What are the best AI research tools in 2026?",
+      "Perplexity (cited research) as the lead, the general assistants with search as the runner-up, and document tools for reading a lot at once. Picked by how you research."
+    ],
+    [
+      "Is Perplexity worth it for research?",
+      "Yes: it is the only tool in the category whose free tier is a complete research instrument, and the citations are what make an answer checkable."
+    ],
+    [
+      "When is a general assistant better for research?",
+      "When the work is light and mixed (not deep research): a general assistant with search is enough. For cited, checkable research, Perplexity is the lead."
+    ],
+    [
+      "How much should I be paying?",
+      "Start free. Perplexity's Pro tier is the one worth paying for; a second tool earns its place only when a specific kind of work starts hurting — see the $20 rule."
+    ],
+    [
+      "What is PickWorth's overall score for the category?",
+      "Good (3.8-4.5 band): a clear leader (Perplexity for cited research) but the right pick depends on how you research."
+    ],
+    [
+      "Which should I pick first?",
+      "Start with Perplexity's free tier. Add a general assistant only when the specific work (not deep research) starts hurting."
+    ],
+    [
+      "Does PickWorth take money from Perplexity or OpenAI?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Best AI Research Tools in 2026, Ranked by How You Work",
+    "desc": "The best AI research tools in 2026: the answer engine that cites everything, the general assistant with search, and document tools for reading a lot.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Research Tools, 2026",
+      "url": "https://pickworthhq.com/lists/best-ai-research-tools/",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Perplexity — the cited answer engine"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "General assistants with search (ChatGPT, Gemini)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Long-context document readers (Claude)"
+        }
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "The AI research tools worth using in 2026",
+    "lead": "Research is three different jobs, and the tools have split along those lines. Finding out what is true is a search problem. Reading a lot at once is a context problem. Turning what you read into something is a writing problem. The best setup is usually one tool from each column — and the cheapest of the three is the one most people underuse.",
+    "date": "22 October 2026",
+    "name": "AI research tools",
+    "score": "4.1",
+    "score_class": "good",
+    "score_label": "Category score"
+  },
+  "toc": [
+    [
+      "jobs",
+      "Three jobs, three tools"
+    ],
+    [
+      "cited",
+      "Perplexity: the cited answer engine"
+    ],
+    [
+      "assistants",
+      "The general assistants, when search is enough"
+    ],
+    [
+      "readers",
+      "Long-context readers: a lot at once"
+    ],
+    [
+      "setup",
+      "The setup that actually works"
+    ]
+  ],
+  "verdict": "<p>If you do research regularly, start with Perplexity's free tier — it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable rather than merely confident. Add a general assistant when the job turns from finding out to producing. Add a long-context reader when the input is a pile of documents rather than a question. Most people need the first two; almost nobody needs all three at the paid tier.</p>",
+  "body": "<h2 id=\"jobs\">Three jobs, three tools</h2>\n    <p>\"Research\" in an AI tool usually means one of three things, and they are not interchangeable. <strong>Finding out</strong> — what is true, what happened, what the current number is — is a search problem, and the right tool searches by default and cites what it found. <strong>Reading</strong> — a stack of PDFs, a long report, a transcript — is a context problem, and the right tool holds a large document set without losing the thread. <strong>Writing</strong> — turning what you read into a summary or an argument — is a generation problem, and that is the general assistant's home ground. The mistake is buying one tool for all three jobs and being mediocre at each.</p>\n\n    <h2 id=\"cited\">Perplexity: the cited answer engine</h2>\n    <p>Perplexity is the tool whose free tier is a complete product, which in this category is the single most important fact. Every answer arrives with its sources attached, which means you can verify a claim instead of trusting the model's confidence — and for research, verifiability is the whole point. It searches by default, it collapses the twelve-tabs-and-a-scratchpad loop into one window, and the paid tier mostly buys you more of the same at higher limits and on the stronger models. If your week is heavy on finding out, this is the subscription that earns its place first.</p>\n\n    <h2 id=\"assistants\">The general assistants, when search is enough</h2>\n    <p>ChatGPT and Gemini both search, and both are adequate when the question is simple and you are already inside the assistant doing something else. Neither is source-first: the search happens when the model decides it is needed, and the answer does not arrive with a citation list you can audit. That is fine for the second half of research — drafting the summary, restructuring the notes, writing the email — and it is the wrong shape for the first half. Use them for the writing job, not the finding-out job.</p>\n\n    <h2 id=\"readers\">Long-context readers: a lot at once</h2>\n    <p>When the input is not a question but a pile — forty pages of filings, a set of transcripts, a long technical document plus its comments — the job is context, not search. This is where Claude's long-context handling earns its tier: it holds structure across a very large input and degrades more gracefully than the rest when the document set gets big. If your research is reading-heavy rather than question-heavy, this is the tier that pays for itself, and it is the one most researchers underuse because they default to the search tool out of habit.</p>\n\n    <h2 id=\"setup\">The setup that actually works</h2>\n    <p>The practical answer is a chain, not a single winner. Perplexity (free is fine) to find out what is true and to get the sources in one click. A long-context reader when the input is a document pile rather than a question. A general assistant to turn the result into something you can hand to someone else. Run in that order, each tool does the one job it is best at, and the total cost is one free tier plus whichever paid tier matches your volume.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/perplexity/index.html",
+      "title": "Perplexity review",
+      "blurb": "The cited answer engine, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/perplexity-vs-chatgpt/index.html",
+      "title": "Perplexity vs ChatGPT",
+      "blurb": "Search against production, per dimension.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/index.html",
+      "title": "All buying guides",
+      "blurb": "Every list we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "best ai research tool",
+    "ai research tools 2026",
+    "best ai for research",
+    "ai research assistant",
+    "perplexity research",
+    "ai research citation"
+  ]
+}

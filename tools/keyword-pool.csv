@@ -1,0 +1,31 @@
+tier,keyword,tokens,intent,matched,score,via
+B,gemini alternative for image generation free,6,9,alternative,39.0,+alternative
+B,gemini vs chatgpt for image generation,6,9,vs,39.0,+vs
+B,gemini vs chatgpt vs claude vs grok,7,9,vs,39.0,+vs
+B,gemini vs chatgpt vs copilot vs claude,7,9,vs,39.0,+vs
+B,grok alternative for image generation free,6,9,alternative,39.0,+alternative
+B,grok alternative for video generation free,6,9,alternative,39.0,+alternative
+B,grok vs chatgpt vs gemini vs claude,7,9,vs,39.0,+vs
+B,grok vs chatgpt vs gemini vs claude vs deepseek,9,9,vs,39.0,+vs
+B,grok vs chatgpt vs gemini vs claude vs deepseek vs perplexity,11,9,vs,39.0,+vs
+B,midjourney vs chatgpt for image generation,6,9,vs,39.0,+vs
+B,midjourney vs nano banana vs chatgpt,6,9,vs,39.0,+vs
+B,notion ai vs chatgpt,4,9,vs,38.0,seed
+B,deepseek alternative to claude code,5,9,alternative,37.5,+alternative
+B,deepseek vs claude for coding,5,9,vs,37.5,+vs
+B,gemini alternative for image generation,5,9,alternative,37.5,+alternative
+B,gemini alternative for video generation,5,9,alternative,37.5,+alternative
+B,gemini alternative to claude code,5,9,alternative,37.5,+alternative
+B,gemini alternative to claude cowork,5,9,alternative,37.5,+alternative
+B,gemini vs claude vs chatgpt,5,9,vs,37.5,+vs
+B,grok alternative for image editing,5,9,alternative,37.5,+alternative
+B,grok alternative for image generation,5,9,alternative,37.5,+alternative
+B,grok alternative for video generation,5,9,alternative,37.5,+alternative
+B,grok alternative image to video,5,9,alternative,37.5,+alternative
+B,grok vs chatgpt vs gemini,5,9,vs,37.5,+vs
+B,grok vs claude vs chatgpt,5,9,vs,37.5,+vs
+B,notion ai alternative open source,5,9,alternative,37.5,+alternative
+B,notion ai better than chatgpt,5,9,better than,37.5,+best
+B,notion ai meeting notes alternative,5,9,alternative,37.5,+alternative
+B,notion ai vs claude cowork,5,9,vs,37.5,+vs
+B,notion ai vs claude mcp,5,9,vs,37.5,+vs

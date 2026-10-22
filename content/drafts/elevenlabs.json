@@ -1,0 +1,149 @@
+{
+  "slug": "elevenlabs",
+  "type": "review",
+  "section": "tools",
+  "answer": "ElevenLabs is the text-to-speech and voice platform most creators reach for because the audio quality and voice cloning are the best in the category. It bills by the character you turn into speech, wrapped in a credit system, and the free plan gives 10,000 credits a month, about ten minutes of audio, for personal non-commercial use with attribution. The ceiling on what the free plan does is real: no commercial rights, no professional cloning, and a character count that is enough for a prototype but not for production.",
+  "key_answers": [
+    [
+      "What is ElevenLabs?",
+      "A text-to-speech and voice AI platform: it turns written text into realistic spoken audio, and it can clone a voice from a short recording. The product spans narration, dubbing into other languages, music, sound effects, and a conversational voice-agent platform, all sharing one credit system."
+    ],
+    [
+      "How much is ElevenLabs free?",
+      "The free plan is 10,000 credits a month, about ten minutes of audio at the standard per-character rate. It is for personal, non-commercial use only, it requires you to credit ElevenLabs in your output, and it does not include the professional voice cloning or the commercial license that the paid plans unlock."
+    ],
+    [
+      "What is ElevenLabs good at?",
+      "Voice quality and cloning. The independent reviews we read are consistent that the output is the most realistic in the category, that the instant clone from a short clip is usable, and that the emotional control on the newest model is the reason a creator picks it over the cheaper options."
+    ],
+    [
+      "Where does ElevenLabs fall short?",
+      "Three places. The free plan's ten-minute ceiling is enough to prototype and not enough to produce. The credit system bills per character and regenerations burn the balance faster than the headline price implies. And professional cloning, the quality tier that matters for commercial work, is the paid plans, not the free one."
+    ],
+    [
+      "How much does ElevenLabs cost?",
+      "Free is $0. Starter is about $6 a month for 30,000 credits and the commercial license, Creator at $22 for professional cloning and a larger allowance, and Pro at $99 for the quality and concurrency of production use. The exact credit-to-minute math shifts by model, so read the model, not just the plan."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The independent hands-on reports are a clear two-signal split. The recurring praise is the voice quality and the cloning, and the recurring friction is the credit burn and the long support response on the lower tiers. The voice quality is why people stay; the credit math is why they budget for a higher tier than the free one."
+    ],
+    [
+      "What score does PickWorth give ElevenLabs?",
+      "4.0 out of 5, a strong, category-leading voice platform, with a genuinely limited free plan, per-character credit billing that rewards planning, and the professional cloning work sitting behind the paid tiers."
+    ],
+    [
+      "Does PickWorth take money from ElevenLabs?",
+      "No. Reviews are written by a single editorial team; pricing is verified from ElevenLabs's official pricing page. See our method."
+    ]
+  ],
+  "meta": {
+    "title": "ElevenLabs Review 2026: Where It Leads on Voice, and What the Free Plan Actually Gives",
+    "desc": "ElevenLabs review, the most realistic text-to-speech and voice cloning in the category, the per-character credit system, and what the free plan truly unlocks before you pay.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "ElevenLabs",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ElevenLabs"
+        }
+      },
+      "url": "https://pickworthhq.com/tools/elevenlabs/",
+      "datePublished": "2026-10-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "ElevenLabs review",
+    "lead": "<p class=\"lead\">The text-to-speech platform most creators pick because the audio quality and voice cloning are the best in the category. Where it leads on the voice itself, how the per-character credit system actually costs you, and what the free plan unlocks before you pay anything.</p>",
+    "date": "22 October 2026",
+    "name": "ElevenLabs",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>ElevenLabs is the voice platform you reach for when the audio quality is the point, and the reason is that it is the most realistic in the category. The voice, the cloning, and the emotional control on the newest model are the things that make it the default for creators, and the independent reviews say so. The deduction is for the free plan, which is a real allowance but a learning one, ten minutes of audio a month, non-commercial, with attribution, and without the professional cloning that the commercial work needs. It is the tool to produce the voice your content is built on, the free tier to test that the quality holds up for your use, and the paid tier to remove the ceiling once it does.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>ElevenLabs is a text-to-speech and voice AI platform. It turns written text into spoken audio that is, on the newest models, hard to tell apart from a recorded human, and it can build a voice from a short audio sample. Around that core it now spans narration, dubbing into dozens of languages, music, sound effects, and a conversational voice-agent platform, with every capability sharing one credit pool and one API.</p>\n    <p>The unit of account is the character. The thing you are buying is not a fixed number of minutes but a running of text through a model, and the model costs a fixed number of credits per character. That framing matters for the free plan and the paid plans alike, because the ceiling is expressed in characters, not in the time it takes to read them.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Voice realism</h3>\n    <p>This is the single most consistent point across the independent hands-on reviews. On long-form narration, the audio is the most natural in the category, and the difference from the cloud giants is something a listener notices within the first line. For a creator who is putting their name on the output, that is the reason the platform wins over the cheaper per-character options.</p>\n    <h3>Voice cloning</h3>\n    <p>The instant clone from a short, clean sample is usable on the lower tiers, and the professional clone, trained on longer material, is the version that holds up for commercial work. The capability is the one that separates ElevenLabs from the competitors that do not clone at the same level, and it is the reason a YouTuber or a studio stays on it.</p>\n    <h3>Emotional control</h3>\n    <p>The newest model layer adds expressivity that the cheaper options do not: delivery, pacing, and the kind of emotional inflection that makes a voiceover feel produced rather than generated. It is the capability that the independent reviewers keep naming as the reason to pay for the model rather than the plan.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>The limits are at the top end and in the fine print. At the top, the free plan is ten thousand credits a month, roughly ten minutes of audio at the standard rate, and it is non-commercial with attribution. It is enough to hear the quality and to build a proof of concept, and not enough to produce anything you sell. The professional cloning, the commercial license, and the higher concurrency are the paid tiers, not the free one. In the fine print, the credit system bills per character and a regeneration burns the balance, so the independent hands-on reports consistently flag that the real cost is well above the headline of the text you intended to turn into speech. The support queue on the lower tiers is email-only, and the response time is the one operational complaint that shows up across the reviews.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <p>ElevenLabs prices the tiers as a monthly credit allowance, and the number to read is the credit line plus the model, not the sticker. The free plan is the entry point, with the commercial license, the professional cloning, and the concurrency added at the paid tiers. The cheapest step removes the non-commercial terms and is the minimum for anything you ship, and the higher tiers are for the people whose month of production is measured in hours of audio rather than minutes.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>Credits / month</th><th>What it unlocks</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>10,000</td><td>Personal, non-commercial, attribution, instant cloning</td></tr>\n        <tr><td>Starter</td><td>~$6 / mo</td><td>30,000</td><td>Commercial license, voice cloning, more projects</td></tr>\n        <tr><td>Creator</td><td>~$22 / mo</td><td>~121,000</td><td>Professional cloning, higher audio quality, concurrency</td></tr>\n        <tr><td>Pro</td><td>~$99 / mo</td><td>~600,000</td><td>Production quality, 44.1 kHz PCM, concurrency, priority</td></tr>\n      </tbody>\n    </table>\n    <p>Two lines bend that table. A developer building voice into an app uses the API, which is billed separately per character and is the product to reach for when the free plan is the prototype stage, and the higher tiers are the steady-state bill. And the credit-to-minute math shifts by model, the cheaper model halves the per-character cost, so the plan is the floor and the model choice is the lever that moves the real cost of a given month. The free-plan allowance and the per-plan credit lines were read from ElevenLabs's official pricing page as of October 2026, and the per-model cost and the credit rollover rules can change without a version bump.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>ElevenLabs earns a 4.0, and the number comes from a specific shape of value rather than a broad one. The value is that the voice, the cloning, and the expressivity are the best in the category, and the independent reviews are the most consistent about it of any platform we have tested. The deduction is for the free plan, a real but learning allowance that stops at ten minutes, non-commercial, with attribution, and without the professional cloning, and for the per-character billing that rewards planning over assumption. Use the free plan to confirm the quality holds up for your content, move to the starter plan for the first commercial work, and only take the higher tiers when the production volume is measured in hours. The free-plan allowance and the per-plan credit lines were verified from ElevenLabs's official pricing page as of October 2026, and the per-model cost and the credit rollover rules can change without a version bump, so re-check before you build on them.</p>\n",
+  "sources": [
+    "ElevenLabs, Pricing and plans, https://elevenlabs.io/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/gemini/index.html",
+      "title": "Gemini review",
+      "blurb": "The general assistant that competes on a different layer.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/agnes/index.html",
+      "title": "Agnes review",
+      "blurb": "The free, uncapped API that is the budget alternative for creative work.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/index.html",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "elevenlabs review",
+    "elevenlabs free",
+    "elevenlabs free 10 minutes",
+    "elevenlabs pricing",
+    "elevenlabs credits how it works",
+    "elevenlabs voice cloning",
+    "elevenlabs vs openai tts",
+    "elevenlabs commercial use",
+    "is elevenlabs worth it",
+    "elevenlabs for youtube",
+    "elevenlabs api pricing",
+    "elevenlabs pros cons",
+    "elevenlabs student free"
+  ]
+}

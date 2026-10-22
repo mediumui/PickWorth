@@ -1,0 +1,122 @@
+{
+  "slug": "how-we-test-ai-tools",
+  "type": "blog",
+  "section": "blog",
+  "answer": "Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full. If a review here says something, this is how it was checked.",
+  "key_answers": [
+    [
+      "How does PickWorth test AI tools?",
+      "A fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full."
+    ],
+    [
+      "Why do you repeat the same prompts?",
+      "To make the test reproducible: the same fixed set run the same way across tools is the only way a comparison is checkable."
+    ],
+    [
+      "What do you refuse to repeat?",
+      "Claims we cannot verify from a fixed run, vendor marketing numbers, and benchmarks we have not reproduced ourselves."
+    ],
+    [
+      "How are scores calculated?",
+      "On a 0-5 scale anchored on 'will you spend money on it,' not on raw benchmarks. See the scoring standard in this post."
+    ],
+    [
+      "Does PickWorth take money from the vendors it reviews?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages. See our method and ethics."
+    ],
+    [
+      "What is the point of writing out the method?",
+      "An unauditable review is just an opinion with a new layout: the method is written out so a reader can check whether a claim is backed by the tests we actually ran."
+    ],
+    [
+      "Where can I see the actual numbers?",
+      "Each review carries a verified-price note and a key-answers block; the raw prompt set and the scoring standard live in this post."
+    ]
+  ],
+  "meta": {
+    "title": "How We Test AI Tools (and Why the Answer Keeps Changing)",
+    "desc": "Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How We Test AI Tools (and Why the Answer Keeps Changing)",
+      "url": "https://pickworthhq.com/blog/how-we-test-ai-tools/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "How we test AI tools",
+    "lead": "<p class=\"lead\">A review you cannot audit is just an opinion with better formatting. Here is the method behind every review on this site — what we run, how many times we run it, and which vendor claims we refuse to repeat.</p>",
+    "date": "22 October 2026",
+    "name": "How we test"
+  },
+  "toc": [
+    [
+      "fixed-set",
+      "The fixed prompt set"
+    ],
+    [
+      "repetition",
+      "Why one run proves nothing"
+    ],
+    [
+      "limits",
+      "Measuring the limits, not the demo"
+    ],
+    [
+      "claims",
+      "The claims we refuse to repeat"
+    ],
+    [
+      "scoring",
+      "The score, and what it is allowed to say"
+    ],
+    [
+      "dating",
+      "Why our answers keep changing"
+    ]
+  ],
+  "verdict": "<p>Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and limits measured deliberately rather than discovered by accident. It is not fast and it is not exotic — it is the minimum that lets us put our name on a number.</p>",
+  "body": "<h2 id=\"fixed-set\">The fixed prompt set</h2>\n    <p>Every tool in a category gets the same prompts, in the same order, on the same day. Not prompts chosen to flatter a favourite — prompts chosen before we knew which tool we were testing next, and written to fail. If a tool is good at reasoning, the set contains a reasoning task that breaks the obvious approach. If it is good at code, there is a task with a deliberately ambiguous specification. The point is comparability: a prompt set that changes per tool produces reviews that cannot be compared with each other, and comparison is the only reason to read two reviews instead of one.</p>\n\n    <h2 id=\"repetition\">Why one run proves nothing</h2>\n    <p>The single most common failure in AI tool reviews is the sample size of one. Run any model once on a hard task and you are measuring its luck that day, not its ability. We run each test multiple times and report the shape of the result, not the best run: how often it succeeded, how the failures clustered, and whether the failure was the interesting kind (wrong but confident) or the boring kind (refused and said so). A tool that succeeds four times out of five is a different product from one that succeeds every time, and a review that hides that difference is hiding the most useful number on the page.</p>\n\n    <h2 id=\"limits\">Measuring the limits, not the demo</h2>\n    <p>Vendors demo the middle of the distribution. We test the edges, because the edges are where you live when the tool is part of real work. That means the longest input the tool will actually accept, the point where the free tier starts metering, what happens when you ask for a specific output format and the model improvises, and how the tool behaves when the context is genuinely full rather than marketing-full. These are the numbers that decide whether a tool survives contact with your Tuesday.</p>\n\n    <h2 id=\"claims\">The claims we refuse to repeat</h2>\n    <p>Three categories of vendor claim never make it into a review as fact. Benchmark results, unless we ran the same benchmark ourselves — a leaderboard position is a claim about a benchmark, not about your work. \"Coming soon\" features, which are not features. And any capability demonstrated only in a curated demo, which is a claim about a prompt the vendor chose, not about the model. Where we cannot verify something, the review says so, in those words.</p>\n\n    <h2 id=\"scoring\">The score, and what it is allowed to say</h2>\n    <p>Every review and comparison on this site carries a number from 0 to 5. That number is not a product rating the way a star score on a store page is a product rating. It is a spending decision, expressed as a number: how strongly we would defend you paying for this tool, at its current price, for the kind of work this site is about. The scale is anchored to money, not to benchmarks:</p>\n    <table class=\"compare\">\n      <thead><tr><th>Score</th><th>What it means</th><th>What it never means</th></tr></thead>\n      <tbody>\n        <tr><td><strong>4.5 — 5.0</strong></td><td class=\"good\">Worth the money for most people in this category. The free tier is not the real product.</td><td>It will never fail you. It will, on the hard tasks; that is the 0.5 gap between 5.0 and 4.5, not a failure of the tool but of every tool, including the best one we know of.</td></tr>\n        <tr><td><strong>4.0 — 4.4</strong></td><td class=\"good\">Genuinely good, with a real caveat. We would still recommend it — to the person who fits the case where it is good.</td><td>That the caveat does not apply to you. It is listed, and it applies to somebody.</td></tr>\n        <tr><td><strong>3.0 — 3.9</strong></td><td>Fine, at a price that most people should not be paying for it. There is usually a cheaper tool that does the same job well enough.</td><td>That you are wrong to use it if it fits your specific workflow. The score is about the default buyer, not about you.</td></tr>\n        <tr><td><strong>2.0 — 2.9</strong></td><td class=\"bad\">Do not pay for this. The free tier or a cheaper tool covers the job.</td><td>That the tool is bad. Some of them are fine at zero dollars; the score is about the paid product.</td></tr>\n        <tr><td><strong>0 — 1.9</strong></td><td class=\"bad\">We would not point a friend at this one. Listed for completeness, not for recommendation.</td><td>A personal dislike. The reasoning is in the review, in writing.</td></tr>\n      </tbody>\n    </table>\n    <p>Two rules keep the number honest. First, it is a weighted average of five dimensions — output quality on tasks we have run ourselves, reliability across repeated runs, value at the current price, usability for the workflow the tool claims to serve, and limits we have actually hit — and the weights are chosen per category, not globally, because a value score that is right for a research tool is wrong for an image tool. Second, the number moves only when one of three things moves: a price change, a model update that changes outputs on our fixed prompt set, or new evidence about a limit we have already written about. A new vendor announcement does not move it. Neither does a new competitor, until we have tested the competitor on the same prompt set. That is why the score on a review dated last spring can differ from the score on today's review of the same product — the date on the page is part of the number.</p>\n    <h2 id=\"dating\">Why our answers keep changing</h2>\n    <p>This is the part readers find most disorienting: a tool we recommended in March can be a different product in October. Model updates land without notice, free tiers tighten, and a capability that was a paid differentiator becomes a table stake. We date every review for exactly this reason, and we re-run the fixed prompt set on the tools we have already written about rather than assuming the old conclusion still holds. If a review here has not been refreshed, treat it as a claim about the date on the page — not about today.</p>",
+  "related": [
+    {
+      "icon": "i-method",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/why-prices-move/index.html",
+      "title": "Why AI tool prices move",
+      "blurb": "The repricing pattern behind every price change.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-verdict",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/the-20-dollar-rule/index.html",
+      "title": "The $20 rule",
+      "blurb": "How to spend on AI tools without a spreadsheet.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/index.html",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "how to test ai tools",
+    "ai tool testing method",
+    "pickworth method",
+    "ai review methodology",
+    "how ai tools are scored"
+  ]
+}

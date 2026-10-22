@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{PAGE_TITLE}} | PickWorth</title>
+<meta name="description" content="{{META_DESC}}" />
+<meta name="robots" content="index, follow" />
+<meta name="search-terms" content="{{SEARCH_TERMS}}" />
+<meta property="og:site_name" content="PickWorth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{CANONICAL}}" />
+<meta property="og:title" content="{{PAGE_TITLE}}" />
+<meta property="og:description" content="{{META_DESC}}" />
+<meta property="og:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{PAGE_TITLE}}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pickworthhq" />
+<meta name="twitter:title" content="{{PAGE_TITLE}}" />
+<meta name="twitter:description" content="{{META_DESC}}" />
+<meta name="twitter:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+<script type="application/ld+json">
+{{BREADCRUMB_LD}}
+</script>
+<script type="application/ld+json">
+{{ORG_LD}}
+</script>
+<script type="application/ld+json">
+{{FAQ_LD}}
+</script>
+
+<link rel="canonical" href="{{CANONICAL}}" />
+<link rel="stylesheet" href="{{ROOT}}assets/css/site.css" />
+<link rel="icon" type="image/svg+xml" href="{{ROOT}}assets/img/favicon.svg" />
+<script src="{{ROOT}}assets/js/device-ui.js" defer></script>
+</head>
+<body>
+{{CHROME_ICONS}}
+{{CHROME_HEADER}}
+
+<main class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ROOT}}index.html">Home</a><span class="sep"></span><a href="{{ROOT}}tools/index.html">Tools</a><span class="sep"></span>{{TOOL_NAME}}
+  </nav>
+
+  <article class="post">
+    <header class="article-head">
+      <p class="kicker">Tool review</p>
+      <h1>{{H1}}</h1>
+      <div class="meta">
+        <span>Reviewed {{DATE}}</span>
+        <span>Updated {{DATE}}</span>
+        <span>PickWorth Editorial</span>
+      </div>
+    </header>
+
+    <div class="verdict-grid">
+      <div class="score {{SCORE_CLASS}}"><strong>{{SCORE}}</strong><span>Our score</span></div>
+      <div class="verdict">
+        <h3>The short version</h3>
+        {{VERDICT}}
+      </div>
+    </div>
+
+    <section class="key-answers" aria-label="Key answers">
+      {{KEY_ANSWERS}}
+    </section>
+
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>
+        {{TOC_ITEMS}}
+      </ol>
+    </nav>
+
+    {{BODY}}
+
+    {{SOURCES}}
+
+    {{RELATED}}
+  </article>
+</main>
+
+{{CHROME_FOOTER}}
+{{CHROME_MTAB}}
+
+</body>
+</html>

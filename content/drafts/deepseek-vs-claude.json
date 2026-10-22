@@ -1,0 +1,138 @@
+{
+  "slug": "deepseek-vs-claude",
+  "type": "compare",
+  "section": "comparisons",
+  "answer": "This is a pricing argument wearing a capability costume: DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the capability gap is smaller than the price gap. Claude is the stronger general assistant; DeepSeek is the cost move.",
+  "key_answers": [
+    [
+      "DeepSeek or Claude for coding?",
+      "If cost is the binding constraint and the work is well-scoped: DeepSeek. If you need a stronger general agent story: Claude."
+    ],
+    [
+      "Which is cheaper?",
+      "DeepSeek by a wide margin: open-weights, an order of magnitude cheaper at the API. Claude's top tier costs more."
+    ],
+    [
+      "Which is more capable?",
+      "Claude for general assistant work; DeepSeek closes the gap on well-scoped coding tasks."
+    ],
+    [
+      "Which should I use in production?",
+      "Route high-volume, well-scoped calls through DeepSeek's Flash model; keep the hardest calls on Claude."
+    ],
+    [
+      "What is PickWorth's call?",
+      "The cost question is the real one: DeepSeek earns the open-weights price floor, Claude earns the stronger agent story. Score per dimension, not by benchmark alone."
+    ],
+    [
+      "Do I need both?",
+      "For most people, route by task: cheap high-volume work → DeepSeek; hardest calls → Claude. See the $20 rule."
+    ],
+    [
+      "Does PickWorth take money from DeepSeek or Anthropic?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "DeepSeek vs Claude (2026): Coding, Cost and Open Weights",
+    "desc": "DeepSeek vs Claude for coding: the open-weights challenger that keeps the price floor low, against the paid tool with the stronger agent story.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DeepSeek vs Claude (2026): Coding, Cost and Open Weights",
+      "url": "https://pickworthhq.com/comparisons/deepseek-vs-claude/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "DeepSeek vs Claude",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "DeepSeek"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Claude"
+          }
+        ]
+      }
+    }
+  },
+  "head": {
+    "kicker": "Head-to-head",
+    "h1": "DeepSeek vs Claude",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "DeepSeek vs Claude",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Claude score"
+  },
+  "toc": [
+    [
+      "compare",
+      "Side-by-side"
+    ],
+    [
+      "win",
+      "Where DeepSeek wins"
+    ],
+    [
+      "lose",
+      "Where Claude wins"
+    ],
+    [
+      "cost",
+      "The cost question"
+    ],
+    [
+      "scenarios",
+      "Pick by scenario"
+    ]
+  ],
+  "verdict": "<p>This is a pricing argument wearing a capability costume. DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the gap in raw output is smaller than the price gap suggests. Claude is the better tool where the work is long, agentic and ambiguous — the codebase-wide reasoning and the instruction-following under many constraints still pull it ahead, and that is what the premium buys. Pick DeepSeek if you are cost-sensitive and can scope work tightly; pick Claude if the task is \"read this repo and change it correctly\" and you are paying by the hour of developer time, not by the token.</p>",
+  "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>DeepSeek</th>\n          <th>Claude (Anthropic)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Weights</td><td class=\"good\">Open weights, self-hostable</td><td>Closed, API only</td></tr>\n        <tr><td>API cost (approx.)</td><td class=\"good\">~$0.27 / M input tokens, low output</td><td>~$3 / M input, $15 / M output (top tier)</td></tr>\n        <tr><td>Consumer app</td><td>Free web chat, generous</td><td>Free tier, metered; $20 / month Pro</td></tr>\n        <tr><td>Top consumer tier</td><td>n/a — API-first</td><td>$100–200 / month (Max)</td></tr>\n        <tr><td>Coding agents</td><td>Strong single-shot; fewer agent tools</td><td class=\"good\">Claude Code is the strongest in the set</td></tr>\n        <tr><td>Long context</td><td class=\"good\">Large window, holds up well</td><td class=\"good\">Largest in class, holds structure best</td></tr>\n        <tr><td>Reasoning depth</td><td>Very strong for the price</td><td class=\"good\">Deeper on ambiguous, multi-step work</td></tr>\n        <tr><td>Privacy posture</td><td class=\"good\">Run it yourself, nothing leaves</td><td>API with retention settings</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where DeepSeek wins</h2>\n    <p>On cost and on ownership, DeepSeek is in a different category. The weights are open, so a team with a compliance requirement can run the model inside its own perimeter and answer the data-retention question with a deployment diagram instead of a contract clause. At the API the price is roughly an order of magnitude below the frontier paid tiers, which changes what you are willing to spend a model call on: you can afford to be wasteful in a way you never would at the top tier. For tight, well-scoped coding tasks the output quality is close enough that the price difference decides it.</p>\n\n    <h2 id=\"lose\">Where Claude wins</h2>\n    <p>On agentic work and on the hardest reasoning, Claude is still the stronger tool. When the job is \"here is a repository, here is a vague bug, find it and fix it\" — where the model has to hold a large codebase in its head and follow many constraints at once — the top paid model does better, and it does it with less babysitting. The tooling around it is more mature: the coding agent is not just a chat window with a file picker, and the long-context handling degrades more gracefully on very large inputs. If developer hours are the expensive line item, the premium pays for itself.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>Compare the actual number you would pay, not the headline rate. DeepSeek's API pricing is so far below the frontier that at typical volumes a month of moderate coding work runs in single digits. Claude at the top tier, used the same way, is a different order of magnitude — and the consumer subscription caps the bill but also caps the usage. The honest framing: DeepSeek is the choice when you are metering by token, Claude when you are buying back developer hours and the tokens are the rounding error.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <p>If you are building a product on an API and margin is the constraint, DeepSeek. If the model has to live inside your own network, DeepSeek. If the work is long-horizon agentic coding and a wrong answer costs more than the bill, Claude. And if you are still scoping the problem, the practical answer is to run DeepSeek on the easy 80% and keep the paid frontier model for the hard 20% — the two are complements more often than they are substitutes.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/deepseek/index.html",
+      "title": "DeepSeek review",
+      "blurb": "The open-weights challenger, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/claude/index.html",
+      "title": "Claude review",
+      "blurb": "The full breakdown, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/best-ai-coding-tools/index.html",
+      "title": "Best AI coding tools",
+      "blurb": "The whole field, ranked by the job.",
+      "link": "Read"
+    }
+  ],
+  "search_terms": [
+    "deepseek vs claude",
+    "deepseek or claude",
+    "deepseek claude coding",
+    "deepseek claude cost",
+    "deepseek claude api",
+    "which is cheaper deepseek claude"
+  ]
+}

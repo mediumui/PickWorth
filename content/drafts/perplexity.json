@@ -1,0 +1,146 @@
+{
+  "slug": "perplexity",
+  "type": "review",
+  "section": "tools",
+  "answer": "Perplexity is an AI search engine that cites its sources — the category is now genuinely useful in a way a plain search box stopped being in 2024. The Pro tier is the one worth paying for, and it is priced the way the top tiers of the competing assistants are.",
+  "key_answers": [
+    [
+      "Is Perplexity worth paying for?",
+      "Yes, if you do research regularly: the Pro tier is the one worth paying for, and it is priced the way the top tiers of the competing assistants are."
+    ],
+    [
+      "What is Perplexity best at?",
+      "Citation: every answer links back to the source it was drawn from, so a research question that takes five tabs becomes one page."
+    ],
+    [
+      "Where does Perplexity fall short?",
+      "The free tier runs out of credits on a working day — the most-used models are metered."
+    ],
+    [
+      "How much does Perplexity cost?",
+      "Free tier is metered; Pro is the paid tier, priced in line with the top tiers of the competing assistants."
+    ],
+    [
+      "What is PickWorth's overall score for Perplexity?",
+      "4.2 / 5 (good) — the category leader for cited research; the free tier is the bottleneck."
+    ],
+    [
+      "Perplexity vs ChatGPT — which one?",
+      "Cited research: Perplexity. General assistant work: ChatGPT. They are not the same kind of tool. See the head-to-head."
+    ],
+    [
+      "Does PickWorth take money from Perplexity?",
+      "No. Reviews are written by a single editorial team; pricing is verified from Perplexity's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Perplexity Review: The AI Search Engine That Cites Its Sources (2026)",
+    "desc": "Perplexity review — where the AI search engine beats a normal search box, where its free tier actually runs out, and what the Pro tier is worth.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Perplexity",
+        "applicationCategory": "SearchEngine",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Perplexity AI"
+        }
+      },
+      "url": "https://pickworthhq.com/tools/perplexity/",
+      "datePublished": "2026-10-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.2",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Perplexity review",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "Perplexity",
+    "score": "4.2",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans &amp; what each unlocks"
+    ],
+    [
+      "legal",
+      "The legal backdrop"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Perplexity is an AI search engine, and that category is now genuinely useful in a way a plain search box stopped being in 2024. The core value is citation: every answer links back to the source it was drawn from, so a research question that would take five tabs becomes one page. The catch is the free tier — the most-used models are metered and the free version runs out of credits on a working day. The Pro tier is the one worth paying for, and it is priced the way the top tiers of the competing assistants are.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Perplexity is a web search engine that answers questions in prose and shows the sources it used to do it. It was founded in August 2022 by four engineers and launched its main search product in December of that year. As of the September 2025 valuation mark, the company had raised $500 million in a single round and was valued at $14 billion — a figure the Wikipedia entry cites as of that date, with a later reported figure around $20 billion.</p>\n    <p>The product is a search box that returns a synthesized answer rather than a list of links. That is the whole pitch, and it is the reason it is a different category from the competing chat assistants: Perplexity starts from the web and the answer is a second step, not the first.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Research that needs a source</h3>\n    <p>For any question where the answer has to be traceable — a specification, a statistic, a recent announcement — the citation layer is the actual product. The competing assistants give you an answer you then have to verify; Perplexity gives you the answer and the source in one step. For professional research work that is the single most consistent reason people keep it open.</p>\n    <h3>Freshness</h3>\n    <p>Because it is built on live web search, the answer reflects the current state of the web rather than a training cutoff. For anything that changes — a product launch, a price, a policy — that is a real advantage over the assistants whose models were trained on an older corpus.</p>\n    <h3>A focused answer, not a chat</h3>\n    <p>Where the assistants are open-ended, Perplexity is task-shaped: a question in, a sourced answer out. That makes it better for the research loop than for a long-running working session, and that is a feature, not a flaw.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <h3>The free tier is metered</h3>\n    <p>The most capable models are credit-metered and the free version runs out on a working day of real use. If you use it the way a researcher would, the free tier is a trial, not a plan, and Pro is the entry point for it to be useful.</p>\n    <h3>It is not a general assistant</h3>\n    <p>Perplexity is a search product, not a working partner. It does not maintain a long conversation the way the assistants do, and the tool ecosystem around it is thinner. If you want one window for everything, this is the tool you open for the research step and close after.</p>\n    <h3>Source quality varies</h3>\n    <p>The answer is only as good as the sources it pulls. On a well-covered topic the citations are solid; on a thin topic the synthesized answer can be under-sourced in a way that is easy to miss. The fix is the same as with any search product: read the links it gives you.</p>\n\n    <h2 id=\"pricing\">Plans &amp; what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Plan</th><th>Price</th><th>What changes vs the tier below</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>Standard model with metered daily credits; top models are credit-limited</td></tr>\n        <tr><td>Pro</td><td>$20 / month</td><td>Higher limits, access to the most capable model, more searches per day</td></tr>\n        <tr><td>Enterprise</td><td>custom</td><td>Team controls, data handling, dedicated support</td></tr>\n      </tbody>\n    </table>\n    <p class=\"fineprint\">Prices from Perplexity's plans page, verified 22 October 2026. The exact credit allowance shifts with model demand, so treat the free tier's headroom as approximate.</p>\n\n    <h2 id=\"legal\">The legal backdrop</h2>\n    <p>The Wikipedia entry for Perplexity records that the company has faced copyright and trademark scrutiny from several major media organizations, and that separate analyses by Wired and Cloudflare found it using web crawlers with altered identifiers to fetch content from sites that block scraping. That is a background fact, not a quality claim about the answers, but it is worth knowing: the source layer it sells has a non-trivial legal position, and a team evaluating it for sensitive work should read the terms.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Perplexity is the tool to keep open for the research step of any project. The citation layer is the real value, the freshness is the reason it is not redundant, and the free tier is a trial you will outgrow. Pay for it when you are doing research daily; if you only need it a few times a month, the free version plus the free tiers of the assistants is enough, and Pro is overpaying.</p>\n\n    <div class=\"callout\">\n      <h3>Before you pay</h3>\n      <p>Use the free tier for a week of real research questions. If the credit ceiling is hitting you mid-question, Pro is the answer; if the free tier is enough for your volume, there is no case for paying.</p>\n    </div>",
+  "sources": [
+    "Perplexity — Pro pricing and plans — https://www.perplexity.ai/pro"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "title": "ChatGPT vs Claude",
+      "blurb": "The two assistants it is usually used alongside.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The assistant side of the same workflow.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/index.html",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "is perplexity worth it",
+    "perplexity pro worth it",
+    "perplexity 2026",
+    "perplexity pro subscription",
+    "perplexity cost",
+    "perplexity pricing",
+    "perplexity free tier",
+    "perplexity review",
+    "perplexity citations",
+    "perplexity vs chatgpt"
+  ]
+}

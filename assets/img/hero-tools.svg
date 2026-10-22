@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300" width="340" height="300" role="img" aria-labelledby="htTitle">
+  <title id="htTitle">A single tool, tested and scored</title>
+  <defs>
+    <style>
+      .l{fill:none;stroke:#d8d1c1;stroke-width:1.3;stroke-linecap:round}
+      .card{fill:#ffffff;stroke:#d8d1c1;stroke-width:1.3}
+      .dim{fill:#e4ded1}
+      .ac{fill:#b8503a}
+      .acS{fill:none;stroke:#b8503a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+      .mono{font-family:SFMono-Regular,Consolas,monospace;font-size:9.5px;letter-spacing:1.6px;fill:#b6afa3}
+    </style>
+  </defs>
+
+  <!-- background grid -->
+  <g stroke="#efeade" stroke-width="1">
+    <line x1="40" y1="70"  x2="300" y2="70"/>
+    <line x1="40" y1="110" x2="300" y2="110"/>
+    <line x1="40" y1="150" x2="300" y2="150"/>
+    <line x1="40" y1="190" x2="300" y2="190"/>
+    <line x1="40" y1="230" x2="300" y2="230"/>
+  </g>
+
+  <!-- tool card -->
+  <rect class="card" x="60" y="62" width="176" height="128" rx="5"/>
+  <rect x="60" y="62" width="176" height="128" rx="5" fill="none" stroke="#b8503a" stroke-width="1.4" opacity=".35"/>
+  <!-- card header -->
+  <rect class="ac" x="78" y="80" width="64" height="4" opacity=".7"/>
+  <rect class="dim" x="78" y="92" width="96" height="3"/>
+  <!-- body lines -->
+  <rect class="dim" x="78" y="116" width="140" height="3"/>
+  <rect class="dim" x="78" y="126" width="120" height="3"/>
+  <rect class="dim" x="78" y="136" width="140" height="3"/>
+  <rect class="dim" x="78" y="146" width="84"  height="3"/>
+  <!-- verdict check badge -->
+  <circle cx="214" cy="80" r="13" fill="#ffffff" stroke="#b8503a" stroke-width="1.5"/>
+  <path class="acS" d="M208 80 L212 84.2 L220 76.2"/>
+
+  <!-- score dial bottom-right -->
+  <g>
+    <circle cx="262" cy="228" r="34" fill="#ffffff" stroke="#d8d1c1" stroke-width="1.3"/>
+    <path d="M262 194 A34 34 0 0 1 296 228" fill="none" stroke="#b8503a" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="262" y="232" text-anchor="middle" font-family="SFMono-Regular,Consolas,monospace" font-size="15" fill="#1c1a17">4.4</text>
+    <text class="mono" x="230" y="272">SCORE</text>
+  </g>
+
+  <!-- connector -->
+  <path class="l" d="M236 190 C248 198 256 210 262 222"/>
+
+  <!-- baseline -->
+  <line x1="60" y1="288" x2="296" y2="288" stroke="#d8d1c1" stroke-width="1.3"/>
+  <g stroke="#c9c2b4" stroke-width="1.2">
+    <line x1="60"  y1="284" x2="60"  y2="292"/>
+    <line x1="140" y1="284" x2="140" y2="292"/>
+    <line x1="220" y1="284" x2="220" y2="292"/>
+    <line x1="296" y1="284" x2="296" y2="292"/>
+  </g>
+  <text class="mono" x="60" y="278">TESTED</text>
+
+  <!-- red accent tick -->
+  <rect class="ac" x="60" y="52" width="18" height="2" opacity=".45"/>
+</svg>

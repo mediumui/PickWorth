@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DeepSeek Review: The Open-Weight Model That Keeps the Price Floor Low (2026) | PickWorth</title>
+<meta name="description" content="DeepSeek review — where the open-weights model earns its cost, where the free chat tier actually runs out, and what the API pricing means for production." />
+<meta name="robots" content="index, follow" />
+<meta name="search-terms" content="is deepseek worth it,deepseek 2026,deepseek api pricing,deepseek cost per million tokens,deepseek flash pro,deepseek open weights,deepseek review,deepseek free tier,deepseek r1,deepseek vs claude" />
+<meta property="og:site_name" content="PickWorth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pickworthhq.com/tools/deepseek/" />
+<meta property="og:title" content="DeepSeek Review: The Open-Weight Model That Keeps the Price Floor Low (2026)" />
+<meta property="og:description" content="DeepSeek review — where the open-weights model earns its cost, where the free chat tier actually runs out, and what the API pricing means for production." />
+<meta property="og:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="DeepSeek Review: The Open-Weight Model That Keeps the Price Floor Low (2026)" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pickworthhq" />
+<meta name="twitter:title" content="DeepSeek Review: The Open-Weight Model That Keeps the Price Floor Low (2026)" />
+<meta name="twitter:description" content="DeepSeek review — where the open-weights model earns its cost, where the free chat tier actually runs out, and what the API pricing means for production." />
+<meta name="twitter:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "DeepSeek",
+    "applicationCategory": "DeveloperKit",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DeepSeek"
+    }
+  },
+  "url": "https://pickworthhq.com/tools/deepseek/",
+  "datePublished": "2026-10-22",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.4",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+  },
+  "dateModified": "2026-10-22",
+  "image": "https://pickworthhq.com/assets/img/og-cover.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pickworthhq.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://pickworthhq.com/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "DeepSeek",
+      "item": "https://pickworthhq.com/tools/deepseek/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PickWorth",
+  "url": "https://pickworthhq.com/",
+  "logo": "https://pickworthhq.com/assets/img/og-cover.png",
+  "description": "Honest, hands-on reviews and head-to-head comparisons of AI tools — what each is genuinely good at, where it falls short, and what it really costs.",
+  "sameAs": [
+    "https://pickworthhq.com/about/",
+    "https://pickworthhq.com/contact/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "hello@pickworthhq.com",
+      "contactType": "customer support"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is DeepSeek worth paying for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The product you buy is the API, not a consumer subscription: a free chat tier for trying it, and paid API pricing that keeps the frontier price floor low."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is DeepSeek best at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open-weights cost-performance: Flash (the workhorse model) and Pro (the hard calls), and the fact that half of the production AI stack quietly routes volume through it because the numbers are the story."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does DeepSeek fall short?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The free tier is a trial, not a plan — it runs out quickly under real usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does the DeepSeek API cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Off-peak: Flash cache-miss input around $0.15 per million tokens, output around $0.60 per million; Pro sits roughly three to four times that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is PickWorth's overall score for DeepSeek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "4.4 / 5 (good) — the open-weights challenger that keeps the price floor low, with a trial-only free tier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "DeepSeek vs Claude for coding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DeepSeek is open-weights and an order of magnitude cheaper at the API; on well-scoped coding tasks the capability gap is smaller than the price gap. See the head-to-head."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PickWorth take money from DeepSeek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Reviews are written by a single editorial team; pricing is verified from the official API docs."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="canonical" href="https://pickworthhq.com/tools/deepseek/" />
+<link rel="stylesheet" href="../../assets/css/site.css" />
+<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
+<script src="../../assets/js/device-ui.js" defer></script>
+</head>
+<body>
+<!-- chrome:icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-logo" viewBox="0 0 32 32">
+      <path d="M8 24 L16 8 L24 24 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="16" cy="19.5" r="1.7" fill="currentColor"/>
+    </symbol><symbol id="i-sources" viewBox="0 0 24 24">
+      <rect x="7" y="5" width="12" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M4 8v9a2 2 0 0 0 2 2h9" fill="none" stroke="currentColor" stroke-width="1.7" opacity=".45"/>
+      <path d="M10 9.5h6M10 13h6M10 16.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol><symbol id="i-compare" viewBox="0 0 24 24">
+      <rect x="3.5" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <rect x="13" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M6.7 9v6M16.3 9v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+      <circle cx="7.5" cy="12" r="0.9" fill="currentColor"/>
+      <circle cx="16.5" cy="12" r="0.9" fill="currentColor"/>
+    </symbol><symbol id="i-verdict" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M8 12.2 L11 15.2 L16 9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol><symbol id="i-method" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="18" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="7" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8 7 L16 11M16 13.5 L9 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+    </symbol><symbol id="i-pick" viewBox="0 0 24 24">
+      <circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M15 15 L20 20" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </symbol><symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="M12 4 L13.8 10.2 L20 12 L13.8 13.8 L12 20 L10.2 13.8 L4 12 L10.2 10.2 Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol><symbol id="i-cite" viewBox="0 0 24 24">
+      <path d="M5 13v4a2 2 0 0 0 2 2h4v-7H7a2 2 0 0 1-2-2V9h4V4H7a2 2 0 0 0-2 2v2a2 2 0 0 0 0 0ZM13 13v4a2 2 0 0 0 2 2h4v-7h-4a2 2 0 0 1-2-2V9h4V4h-4a2 2 0 0 0-2 2v2Z"
+            fill="currentColor" opacity=".55"/>
+    </symbol></svg>
+<!-- /chrome:icons -->
+
+<!-- chrome:header -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg>
+      <span>PickWorth</span>
+    </a>
+    <nav class="menu">
+      <a href="../../tools/index.html">Tools</a>
+      <a href="../../comparisons/index.html">Comparisons</a>
+      <a href="../../lists/index.html">Lists</a>
+      <a href="../../blog/index.html">Journal</a>
+      <a href="../../about/index.html">About</a>
+      <a href="../../contact/index.html" class="ghost">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- /chrome:header -->
+
+
+<main class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span class="sep"></span><a href="../../tools/index.html">Tools</a><span class="sep"></span>DeepSeek
+  </nav>
+
+  <article class="post">
+    <header class="article-head">
+      <p class="kicker">Tool review</p>
+      <h1>DeepSeek review</h1>
+      <div class="meta">
+        <span>Reviewed 22 October 2026</span>
+        <span>Updated 22 October 2026</span>
+        <span>PickWorth Editorial</span>
+      </div>
+    </header>
+
+    <div class="verdict-grid">
+      <div class="score good"><strong>4.4</strong><span>Our score</span></div>
+      <div class="verdict">
+        <h3>The short version</h3>
+        <p>DeepSeek is the open-weights model that has kept the frontier price floor low since its R1 reasoning model in early 2025. The product you actually buy is the API: a free chat tier for experimentation, and a paid API where the Flash model is the workhorse and the Pro model is where you route the hardest calls. The numbers are the story — at off-peak rates the Flash model's cache-miss input is around $0.15 per million tokens and output is around $0.60 per million, with Pro sitting roughly three to four times that. That is the reason half of the production AI stack quietly routes its volume through DeepSeek. The catch is the free tier: it is a trial, not a plan.</p>
+      </div>
+    </div>
+
+    <section class="key-answers" aria-label="Key answers">
+      <p class="key-answer"><strong>The short answer.</strong> DeepSeek is the open-weights model that has kept the frontier price floor low since R1 in early 2025: a free chat tier for experimentation, and a paid API where Flash (the workhorse) and Pro (the hardest calls) are the two models you actually route to.</p>
+    <div class="qa-list">
+        <div class="qa"><dt>Is DeepSeek worth paying for?</dt><dd>The product you buy is the API, not a consumer subscription: a free chat tier for trying it, and paid API pricing that keeps the frontier price floor low.</dd></div>
+        <div class="qa"><dt>What is DeepSeek best at?</dt><dd>Open-weights cost-performance: Flash (the workhorse model) and Pro (the hard calls), and the fact that half of the production AI stack quietly routes volume through it because the numbers are the story.</dd></div>
+        <div class="qa"><dt>Where does DeepSeek fall short?</dt><dd>The free tier is a trial, not a plan — it runs out quickly under real usage.</dd></div>
+        <div class="qa"><dt>How much does the DeepSeek API cost?</dt><dd>Off-peak: Flash cache-miss input around $0.15 per million tokens, output around $0.60 per million; Pro sits roughly three to four times that.</dd></div>
+        <div class="qa"><dt>What is PickWorth's overall score for DeepSeek?</dt><dd>4.4 / 5 (good) — the open-weights challenger that keeps the price floor low, with a trial-only free tier.</dd></div>
+        <div class="qa"><dt>DeepSeek vs Claude for coding?</dt><dd>DeepSeek is open-weights and an order of magnitude cheaper at the API; on well-scoped coding tasks the capability gap is smaller than the price gap. See the head-to-head.</dd></div>
+        <div class="qa"><dt>Does PickWorth take money from DeepSeek?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from the official API docs.</dd></div>
+    </div>
+    </section>
+
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>
+                <li><a href="#what">What it is</a></li>
+        <li><a href="#good">What it is good at</a></li>
+        <li><a href="#limits">Where it slips</a></li>
+        <li><a href="#pricing">The tiers and what each costs</a></li>
+        <li><a href="#verdict">Verdict</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="what">What it is</h2>
+<p>DeepSeek is a family of open-weights large language models built by a Hangzhou research lab and backed by a quantitative-trading firm. The models are open-weight — the parameters are published and can be self-hosted — but the training data is not openly licensed. Since early 2025 the company has released its models under free, open-source licences, which is the single fact that changed the pricing of the whole category: anyone can run a frontier-class model locally or on their own hardware.</p>
+<p>The consumer face is a free chat product. The serious product is the API, which is what this review prices. Two models matter: <strong>Flash</strong>, the default workhorse built for high-volume chat, extraction, classification and agent loops, and <strong>Pro</strong>, the frontier tier for the hardest reasoning and coding calls. Both carry a one-million-token context window and support thinking mode.</p>
+
+<h2 id="good">What it is good at</h2>
+<h3>Cost per task</h3>
+<p>This is the whole reason the model exists. Because it is open-weights and the API is priced aggressively, a task that would cost several dollars on a closed frontier model can cost a few cents on DeepSeek. For high-volume production work — classification, extraction, summarisation, agentic loops that fire thousands of calls a day — the math is the reason to route through it at all.</p>
+<h3>Reasoning on the cheap</h3>
+<p>The reasoning capability that made R1 famous in 2025 has carried forward. A task that needs a think-first response can be run on Flash for a fraction of the closed-model price, and the quality on everyday reasoning is comfortably inside the frontier band.</p>
+<h3>Self-hosting and sovereignty</h3>
+<p>Because the weights are open, a team that needs data to stay on its own hardware has a realistic option that the closed APIs cannot offer. That is a capability, not a quality claim, but for regulated or security-sensitive workloads it is the deciding factor.</p>
+
+<h2 id="limits">Where it slips</h2>
+<h3>The free tier is a trial</h3>
+<p>The consumer chat product is generous for a week of exploration and then metered. For a real workload the free tier is not a plan; the API is where the product actually lives, and that is pay-per-token.</p>
+<h3>Peak and off-peak pricing is a trap</h3>
+<p>Since mid-2026 the API uses peak / off-peak billing, with peak hours around $0.30 per million cache-miss input on Flash and double the off-peak rate. A workload that lands in peak hours pays more for the same tokens. If your traffic is concentrated in US daytime, the off-peak headline numbers understate your actual bill.</p>
+<h3>Tool ecosystem is thinner</h3>
+<p>For a raw model it is excellent. For a consumer assistant with a deep tool and integration story it is narrower than the closed products. The value is in the model, not in the product layer around it.</p>
+
+<h2 id="pricing">The tiers and what each costs</h2>
+<table class="compare">
+  <thead><tr><th>Model</th><th>Off-peak</th><th>Peak</th><th>When to use it</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Flash</strong> input (cache miss)</td><td class="good">~$0.15 / 1M</td><td>~$0.30 / 1M</td><td>Default for volume work</td></tr>
+    <tr><td><strong>Flash</strong> output</td><td>~$0.60 / 1M</td><td>~$1.20 / 1M</td><td>High-volume generation</td></tr>
+    <tr><td><strong>Pro</strong> input (cache miss)</td><td>~$0.66 / 1M</td><td>~$1.32 / 1M</td><td>Hardest reasoning / coding</td></tr>
+    <tr><td><strong>Pro</strong> output</td><td>~$1.98 / 1M</td><td>~$3.96 / 1M</td><td>Route only the hard calls</td></tr>
+  </tbody>
+</table>
+<p class="fineprint">Rates from DeepSeek's API pricing page, verified 22 October 2026. Peak hours are Monday to Friday, 01:00–04:00 and 06:00–10:00 UTC; off-peak is the rest of the week including weekends. Cache-hit input is roughly a tenth of the cache-miss rate, so a stable system prompt pushes the effective input cost down sharply. The exact figures move — treat these as the order of magnitude.</p>
+
+<h2 id="verdict">Verdict</h2>
+<p>DeepSeek is the price floor of the category, and it earns that floor. For high-volume production work, route the bulk of calls through Flash and keep Pro for the minority that genuinely needs it; the three-to-four-times spread between the two is the entire bill-management strategy. If you need self-hosting, the open weights are the only option that is also frontier-capable. If your traffic is concentrated in peak hours, budget accordingly — the off-peak headline is not your number. The one thing it is not is a closed-product experience, and nobody buys it for that.</p>
+
+<div class="callout">
+  <h3>Before you wire it in</h3>
+  <p>Run your real workload through the Flash model for a week and log the token count. Then do the bill twice — once at off-peak and once at peak rates — and build your budget on the peak number. The difference is the margin you get to make or lose on the model.</p>
+</div>
+
+    
+
+<h2 id="sources">Sources</h2>
+<section class="sources">
+  <ol>
+            <li>1. <a href="https://www.deepseek.com/" rel="noopener" target="_blank">DeepSeek — official API pricing and model docs</a></li>
+  </ol>
+</section>
+
+
+    
+
+<div class="rule">Related</div>
+<section class="grid-3">
+        <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-compare"></use></svg>
+          <span class="tag teal">Comparison</span>
+        </div>
+        <h3><a href="../../comparisons/chatgpt-vs-claude/index.html">ChatGPT vs Claude</a></h3>
+        <p>The closed products it competes against on price.</p>
+        <a class="more" href="../../comparisons/chatgpt-vs-claude/index.html">Compare</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-sources"></use></svg>
+          <span class="tag">Review</span>
+        </div>
+        <h3><a href="../../tools/chatgpt/index.html">ChatGPT review</a></h3>
+        <p>The all-round consumer assistant it is usually compared to.</p>
+        <a class="more" href="../../tools/chatgpt/index.html">Read</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-pick"></use></svg>
+          <span class="tag plain">Index</span>
+        </div>
+        <h3><a href="../../tools/index.html">All tool reviews</a></h3>
+        <p>Everything we have tested so far.</p>
+        <a class="more" href="../../tools/index.html">Browse</a>
+      </article>
+</section>
+
+  </article>
+</main>
+
+<!-- chrome:footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="disclosure">Some outbound links are affiliate links. They never influence which tool we recommend.</p>
+    <p class="fineprint">© 2026 PickWorth · <a href="../../about/index.html">About</a> · <a href="../../contact/index.html">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+  </div>
+</footer>
+<!-- /chrome:footer -->
+
+<!-- chrome:mtab -->
+<nav class="mtab" aria-label="Primary">
+  <a href="../../index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg><span>Home</span></a>
+  <a href="../../tools/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sources"></use></svg><span>Tools</span></a>
+  <a href="../../comparisons/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-compare"></use></svg><span>Compare</span></a>
+  <a href="../../lists/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pick"></use></svg><span>Lists</span></a>
+  <a href="../../about/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cite"></use></svg><span>About</span></a>
+</nav>
+<!-- /chrome:mtab -->
+
+
+</body>
+</html>

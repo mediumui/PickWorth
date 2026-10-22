@@ -1,0 +1,115 @@
+{
+  "slug": "when-open-source-matters",
+  "type": "blog",
+  "section": "blog",
+  "answer": "Open source changes the decision under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or the cost of the hosted version stops adding up. In every other case it is a preference dressed up as a requirement.",
+  "key_answers": [
+    [
+      "When does open source actually matter?",
+      "Under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or the cost of the hosted version stops adding up."
+    ],
+    [
+      "When is 'open source' just a preference?",
+      "When the data can leave, the token arithmetic does not change the work, you do not need to modify the tool, and the hosted version is cheap enough. In those cases it is a preference dressed up as a requirement."
+    ],
+    [
+      "What is the four-condition test?",
+      "Data stays on your network? Token arithmetic changes the work? Do you need to modify the tool? Does the hosted cost stop adding up? If none, the open-weights version is not the right pick."
+    ],
+    [
+      "Does open source automatically mean better?",
+      "No. It means more control and a different cost structure, not necessarily better output for your job. The four conditions decide."
+    ],
+    [
+      "Where do I see the open-source tools we covered?",
+      "The open-source Cursor alternatives list: Cline, Zed, Aider, Continue, Tabby, Void. Each picked by scenario and by whether the project is still being maintained."
+    ],
+    [
+      "Does PickWorth take money from any vendor or project?",
+      "No. Reviews are written by a single editorial team; GitHub data (stars, licence, last push) is verified from each repository."
+    ]
+  ],
+  "meta": {
+    "title": "When Open Source Actually Matters (and When It Is Just a Label)",
+    "desc": "Open weights are not automatically better. The four conditions under which open source genuinely changes the decision — and when it is just preference.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "When Open Source Actually Matters (and When It Is Just a Label)",
+      "url": "https://pickworthhq.com/blog/when-open-source-matters/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "When open source actually matters",
+    "lead": "<p class=\"lead\">Open weights sound like a pure win, and a lot of the argument for them is aesthetic. Here are the four conditions under which open source genuinely changes the decision — and how to tell them apart from the ones that do not.</p>",
+    "date": "22 October 2026",
+    "name": "Open source"
+  },
+  "toc": [
+    [
+      "four-conditions",
+      "The four conditions"
+    ],
+    [
+      "data",
+      "When the data cannot leave"
+    ],
+    [
+      "cost",
+      "When the arithmetic changes"
+    ],
+    [
+      "control",
+      "When you need to change it"
+    ],
+    [
+      "when-not",
+      "When it is just a label"
+    ]
+  ],
+  "verdict": "<p>Open source changes the decision under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or you need the tool to outlive the vendor's interest in it. Outside those four, open weights are a preference — and a legitimate one, but not the deciding factor. Tell the four apart from the preference, because the operational weight of self-hosting is real and not always worth paying.</p>",
+  "body": "<h2 id=\"four-conditions\">The four conditions</h2>\n    <p>Almost every serious argument for open weights reduces to one of four conditions. They are worth naming separately, because the first two are usually decisive and the second two are often not — and mixing them up is how people end up running infrastructure for a preference.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th>Condition</th>\n          <th>Test</th>\n          <th>Usually decisive?</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td><strong>Data cannot leave</strong></td><td>Is there a contract or compliance clause saying so?</td><td class=\"good\">Yes — settles it outright</td></tr>\n        <tr><td><strong>Cost arithmetic</strong></td><td>Does the token price change what you can build?</td><td class=\"good\">Yes, at volume</td></tr>\n        <tr><td><strong>You need to modify it</strong></td><td>Is there a change the vendor will not make for you?</td><td>Sometimes</td></tr>\n        <tr><td><strong>Longevity</strong></td><td>Must this still work in five years?</td><td>Sometimes</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"data\">When the data cannot leave</h2>\n    <p>This is the condition that settles arguments, and it is the one people reach for last. If a contract, a compliance requirement or a client's security review says the codebase does not leave the network, then the question of whether the closed tool is better is simply not on the table — you are choosing among the open options. The thing that makes this condition powerful is that it converts a preference into a constraint, and constraints are what end debates. If you genuinely have this constraint, you already know, because someone has told you in writing.</p>\n\n    <h2 id=\"cost\">When the arithmetic changes</h2>\n    <p>The second real condition is volume. An open-weights model at roughly an order of magnitude below frontier token pricing is not a small discount — it changes what you can afford to spend a model call on, which changes what you can build. At low volume this is a rounding error and the closed tool's quality edge wins. At real volume it is the whole decision, and the answer is usually a router rather than a choice: the cheap model for the easy majority, the frontier model for the hard minority, and the quality gap absorbed by the split rather than argued about.</p>\n\n    <h2 id=\"control\">When you need to change it</h2>\n    <p>The third condition is real but narrower than it looks. If there is a specific modification you need — a behaviour the vendor will not add, an integration into a system they do not support, a fine-tune on your own data — then access to the weights is the only path, and the operational weight is the price of the requirement. But \"we could modify it if we wanted to\" is not a requirement. Almost nobody modifies their tools; the option is what people value, and the option has a running cost that is paid every month whether or not it is ever exercised.</p>\n\n    <h2 id=\"when-not\">When it is just a label</h2>\n    <p>Which brings us to the fourth condition, and the one most often overstated. Longevity is a genuine argument for open weights — a tool with open weights cannot be taken away the way a service can — but it only bites when you have decided to bet your workflow on a tool surviving years. For most work, the honest horizon is months, and a paid service that you can leave is a smaller risk than infrastructure you have to maintain. The tell that you are in preference territory rather than requirement territory is simple: if the same argument would still feel right with the words \"it just feels better\" substituted in, it is a preference. That is allowed. It is just not the same thing as a decision.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/open-source-cursor-alternatives/index.html",
+      "title": "Open-source Cursor alternatives",
+      "blurb": "Eight projects, judged on licence and maintenance.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-method",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/the-20-dollar-rule/index.html",
+      "title": "The $20 rule",
+      "blurb": "How to spend on AI tools without a spreadsheet.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/index.html",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "when open source matters",
+    "open source ai",
+    "open weights ai",
+    "open source vs closed ai",
+    "open source matters when",
+    "open source ai tools"
+  ]
+}

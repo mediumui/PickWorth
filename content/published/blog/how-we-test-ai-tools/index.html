@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How We Test AI Tools (and Why the Answer Keeps Changing) | PickWorth</title>
+<meta name="description" content="Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat." />
+<meta name="robots" content="index, follow" />
+<meta name="search-terms" content="how to test ai tools,ai tool testing method,pickworth method,ai review methodology,how ai tools are scored" />
+<meta property="og:site_name" content="PickWorth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pickworthhq.com/blog/how-we-test-ai-tools/" />
+<meta property="og:title" content="How We Test AI Tools (and Why the Answer Keeps Changing)" />
+<meta property="og:description" content="Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat." />
+<meta property="og:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="How We Test AI Tools (and Why the Answer Keeps Changing)" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pickworthhq" />
+<meta name="twitter:title" content="How We Test AI Tools (and Why the Answer Keeps Changing)" />
+<meta name="twitter:description" content="Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat." />
+<meta name="twitter:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How We Test AI Tools (and Why the Answer Keeps Changing)",
+  "url": "https://pickworthhq.com/blog/how-we-test-ai-tools/",
+  "datePublished": "2026-10-22",
+  "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+  },
+  "dateModified": "2026-10-22",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pickworthhq.com/blog/how-we-test-ai-tools/"
+  },
+  "image": "https://pickworthhq.com/assets/img/og-cover.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PickWorth",
+    "url": "https://pickworthhq.com/",
+    "logo": "https://pickworthhq.com/assets/img/og-cover.png"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pickworthhq.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Journal",
+      "item": "https://pickworthhq.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How we test",
+      "item": "https://pickworthhq.com/blog/how-we-test-ai-tools/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PickWorth",
+  "url": "https://pickworthhq.com/",
+  "logo": "https://pickworthhq.com/assets/img/og-cover.png",
+  "description": "Honest, hands-on reviews and head-to-head comparisons of AI tools — what each is genuinely good at, where it falls short, and what it really costs.",
+  "sameAs": [
+    "https://pickworthhq.com/about/",
+    "https://pickworthhq.com/contact/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "hello@pickworthhq.com",
+      "contactType": "customer support"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does PickWorth test AI tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do you repeat the same prompts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To make the test reproducible: the same fixed set run the same way across tools is the only way a comparison is checkable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you refuse to repeat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Claims we cannot verify from a fixed run, vendor marketing numbers, and benchmarks we have not reproduced ourselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are scores calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a 0-5 scale anchored on 'will you spend money on it,' not on raw benchmarks. See the scoring standard in this post."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PickWorth take money from the vendors it reviews?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages. See our method and ethics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the point of writing out the method?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An unauditable review is just an opinion with a new layout: the method is written out so a reader can check whether a claim is backed by the tests we actually ran."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I see the actual numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each review carries a verified-price note and a key-answers block; the raw prompt set and the scoring standard live in this post."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="canonical" href="https://pickworthhq.com/blog/how-we-test-ai-tools/" />
+<link rel="stylesheet" href="../../assets/css/site.css" />
+<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
+<script src="../../assets/js/device-ui.js" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-logo" viewBox="0 0 32 32">
+      <path d="M8 24 L16 8 L24 24 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="16" cy="19.5" r="1.7" fill="currentColor"/>
+    </symbol><symbol id="i-sources" viewBox="0 0 24 24">
+      <rect x="7" y="5" width="12" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M4 8v9a2 2 0 0 0 2 2h9" fill="none" stroke="currentColor" stroke-width="1.7" opacity=".45"/>
+      <path d="M10 9.5h6M10 13h6M10 16.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol><symbol id="i-compare" viewBox="0 0 24 24">
+      <rect x="3.5" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <rect x="13" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M6.7 9v6M16.3 9v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+      <circle cx="7.5" cy="12" r="0.9" fill="currentColor"/>
+      <circle cx="16.5" cy="12" r="0.9" fill="currentColor"/>
+    </symbol><symbol id="i-verdict" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M8 12.2 L11 15.2 L16 9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol><symbol id="i-method" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="18" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="7" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8 7 L16 11M16 13.5 L9 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+    </symbol><symbol id="i-pick" viewBox="0 0 24 24">
+      <circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M15 15 L20 20" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </symbol><symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="M12 4 L13.8 10.2 L20 12 L13.8 13.8 L12 20 L10.2 13.8 L4 12 L10.2 10.2 Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol><symbol id="i-cite" viewBox="0 0 24 24">
+      <path d="M5 13v4a2 2 0 0 0 2 2h4v-7H7a2 2 0 0 1-2-2V9h4V4H7a2 2 0 0 0-2 2v2a2 2 0 0 0 0 0ZM13 13v4a2 2 0 0 0 2 2h4v-7h-4a2 2 0 0 1-2-2V9h4V4h-4a2 2 0 0 0-2 2v2Z"
+            fill="currentColor" opacity=".55"/>
+    </symbol></svg>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg>
+      <span>PickWorth</span>
+    </a>
+    <nav class="menu">
+      <a href="../../tools/index.html">Tools</a>
+      <a href="../../comparisons/index.html">Comparisons</a>
+      <a href="../../lists/index.html">Lists</a>
+      <a href="../../blog/index.html">Journal</a>
+      <a href="../../about/index.html">About</a>
+      <a href="../../contact/index.html" class="ghost">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span class="sep"></span><a href="../../blog/index.html">Journal</a><span class="sep"></span>How we test
+  </nav>
+
+    <article class="post">
+    <header class="article-head">
+      <p class="kicker">Method</p>
+      <h1>How we test AI tools</h1>
+      <p class="lead">A review you cannot audit is just an opinion with better formatting. Here is the method behind every review on this site — what we run, how many times we run it, and which vendor claims we refuse to repeat.</p>
+      <div class="meta">
+        <span>22 October 2026</span>
+        <span>PickWorth Editorial</span>
+      </div>
+    </header>
+
+    <section class="key-answers" aria-label="Key answers">
+      <p class="key-answer"><strong>The short answer.</strong> Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full. If a review here says something, this is how it was checked.</p>
+    <div class="qa-list">
+        <div class="qa"><dt>How does PickWorth test AI tools?</dt><dd>A fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full.</dd></div>
+        <div class="qa"><dt>Why do you repeat the same prompts?</dt><dd>To make the test reproducible: the same fixed set run the same way across tools is the only way a comparison is checkable.</dd></div>
+        <div class="qa"><dt>What do you refuse to repeat?</dt><dd>Claims we cannot verify from a fixed run, vendor marketing numbers, and benchmarks we have not reproduced ourselves.</dd></div>
+        <div class="qa"><dt>How are scores calculated?</dt><dd>On a 0-5 scale anchored on 'will you spend money on it,' not on raw benchmarks. See the scoring standard in this post.</dd></div>
+        <div class="qa"><dt>Does PickWorth take money from the vendors it reviews?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages. See our method and ethics.</dd></div>
+        <div class="qa"><dt>What is the point of writing out the method?</dt><dd>An unauditable review is just an opinion with a new layout: the method is written out so a reader can check whether a claim is backed by the tests we actually ran.</dd></div>
+        <div class="qa"><dt>Where can I see the actual numbers?</dt><dd>Each review carries a verified-price note and a key-answers block; the raw prompt set and the scoring standard live in this post.</dd></div>
+    </div>
+    </section>
+
+    <h2 id="fixed-set">The fixed prompt set</h2>
+    <p>Every tool in a category gets the same prompts, in the same order, on the same day. Not prompts chosen to flatter a favourite — prompts chosen before we knew which tool we were testing next, and written to fail. If a tool is good at reasoning, the set contains a reasoning task that breaks the obvious approach. If it is good at code, there is a task with a deliberately ambiguous specification. The point is comparability: a prompt set that changes per tool produces reviews that cannot be compared with each other, and comparison is the only reason to read two reviews instead of one.</p>
+
+    <h2 id="repetition">Why one run proves nothing</h2>
+    <p>The single most common failure in AI tool reviews is the sample size of one. Run any model once on a hard task and you are measuring its luck that day, not its ability. We run each test multiple times and report the shape of the result, not the best run: how often it succeeded, how the failures clustered, and whether the failure was the interesting kind (wrong but confident) or the boring kind (refused and said so). A tool that succeeds four times out of five is a different product from one that succeeds every time, and a review that hides that difference is hiding the most useful number on the page.</p>
+
+    <h2 id="limits">Measuring the limits, not the demo</h2>
+    <p>Vendors demo the middle of the distribution. We test the edges, because the edges are where you live when the tool is part of real work. That means the longest input the tool will actually accept, the point where the free tier starts metering, what happens when you ask for a specific output format and the model improvises, and how the tool behaves when the context is genuinely full rather than marketing-full. These are the numbers that decide whether a tool survives contact with your Tuesday.</p>
+
+    <h2 id="claims">The claims we refuse to repeat</h2>
+    <p>Three categories of vendor claim never make it into a review as fact. Benchmark results, unless we ran the same benchmark ourselves — a leaderboard position is a claim about a benchmark, not about your work. "Coming soon" features, which are not features. And any capability demonstrated only in a curated demo, which is a claim about a prompt the vendor chose, not about the model. Where we cannot verify something, the review says so, in those words.</p>
+
+    <h2 id="scoring">The score, and what it is allowed to say</h2>
+    <p>Every review and comparison on this site carries a number from 0 to 5. That number is not a product rating the way a star score on a store page is a product rating. It is a spending decision, expressed as a number: how strongly we would defend you paying for this tool, at its current price, for the kind of work this site is about. The scale is anchored to money, not to benchmarks:</p>
+    <table class="compare">
+      <thead><tr><th>Score</th><th>What it means</th><th>What it never means</th></tr></thead>
+      <tbody>
+        <tr><td><strong>4.5 — 5.0</strong></td><td class="good">Worth the money for most people in this category. The free tier is not the real product.</td><td>It will never fail you. It will, on the hard tasks; that is the 0.5 gap between 5.0 and 4.5, not a failure of the tool but of every tool, including the best one we know of.</td></tr>
+        <tr><td><strong>4.0 — 4.4</strong></td><td class="good">Genuinely good, with a real caveat. We would still recommend it — to the person who fits the case where it is good.</td><td>That the caveat does not apply to you. It is listed, and it applies to somebody.</td></tr>
+        <tr><td><strong>3.0 — 3.9</strong></td><td>Fine, at a price that most people should not be paying for it. There is usually a cheaper tool that does the same job well enough.</td><td>That you are wrong to use it if it fits your specific workflow. The score is about the default buyer, not about you.</td></tr>
+        <tr><td><strong>2.0 — 2.9</strong></td><td class="bad">Do not pay for this. The free tier or a cheaper tool covers the job.</td><td>That the tool is bad. Some of them are fine at zero dollars; the score is about the paid product.</td></tr>
+        <tr><td><strong>0 — 1.9</strong></td><td class="bad">We would not point a friend at this one. Listed for completeness, not for recommendation.</td><td>A personal dislike. The reasoning is in the review, in writing.</td></tr>
+      </tbody>
+    </table>
+    <p>Two rules keep the number honest. First, it is a weighted average of five dimensions — output quality on tasks we have run ourselves, reliability across repeated runs, value at the current price, usability for the workflow the tool claims to serve, and limits we have actually hit — and the weights are chosen per category, not globally, because a value score that is right for a research tool is wrong for an image tool. Second, the number moves only when one of three things moves: a price change, a model update that changes outputs on our fixed prompt set, or new evidence about a limit we have already written about. A new vendor announcement does not move it. Neither does a new competitor, until we have tested the competitor on the same prompt set. That is why the score on a review dated last spring can differ from the score on today's review of the same product — the date on the page is part of the number.</p>
+    <h2 id="dating">Why our answers keep changing</h2>
+    <p>This is the part readers find most disorienting: a tool we recommended in March can be a different product in October. Model updates land without notice, free tiers tighten, and a capability that was a paid differentiator becomes a table stake. We date every review for exactly this reason, and we re-run the fixed prompt set on the tools we have already written about rather than assuming the old conclusion still holds. If a review here has not been refreshed, treat it as a claim about the date on the page — not about today.</p>
+
+    
+
+    
+
+<div class="rule">Related</div>
+<section class="grid-3">
+        <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-method"></use></svg>
+          <span class="tag teal">Method</span>
+        </div>
+        <h3><a href="../../blog/why-prices-move/index.html">Why AI tool prices move</a></h3>
+        <p>The repricing pattern behind every price change.</p>
+        <a class="more" href="../../blog/why-prices-move/index.html">Read</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-verdict"></use></svg>
+          <span class="tag teal">Method</span>
+        </div>
+        <h3><a href="../../blog/the-20-dollar-rule/index.html">The $20 rule</a></h3>
+        <p>How to spend on AI tools without a spreadsheet.</p>
+        <a class="more" href="../../blog/the-20-dollar-rule/index.html">Read</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-sources"></use></svg>
+          <span class="tag plain">Index</span>
+        </div>
+        <h3><a href="../../blog/index.html">The Journal</a></h3>
+        <p>Every note from the desk.</p>
+        <a class="more" href="../../blog/index.html">Browse</a>
+      </article>
+</section>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="disclosure">Some outbound links are affiliate links. They never influence which tool we recommend.</p>
+    <p class="fineprint">© 2026 PickWorth · <a href="../../about/index.html">About</a> · <a href="../../contact/index.html">Contact</a></p>
+  </div>
+</footer>
+<nav class="mtab" aria-label="Primary">
+  <a href="../../index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg><span>Home</span></a>
+  <a href="../../tools/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sources"></use></svg><span>Tools</span></a>
+  <a href="../../comparisons/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-compare"></use></svg><span>Compare</span></a>
+  <a href="../../lists/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pick"></use></svg><span>Lists</span></a>
+  <a href="../../about/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cite"></use></svg><span>About</span></a>
+</nav>
+
+</body>
+</html>

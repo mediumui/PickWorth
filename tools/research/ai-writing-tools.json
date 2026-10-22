@@ -1,0 +1,59 @@
+{
+  "slug": "ai-writing-tools",
+  "fetched_at": "2026-10-22T05:11:20+00:00",
+  "github": [
+    {
+      "repo": "continuedev/continue",
+      "homepage": "https://continue.dev",
+      "description": "open-source coding agent",
+      "stars": 36289,
+      "forks": 5503,
+      "open_issues": 864,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2023-05-24",
+      "pushed_at": "2026-10-20",
+      "topics": "agent, ai, cli, developer-tools, open-source",
+      "archived": false,
+      "url": "https://github.com/continuedev/continue",
+      "months_since_push": 0
+    }
+  ],
+  "wikipedia": {
+    "title": "Large language model",
+    "extract": "A large language model (LLM) is a machine learning model (typically a neural network) trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, Qwen and DeepSeek.\nLLMs are typically based on the transformer neural network architecture. Generative pre-trained transformers (GPTs) are a type of LLM that is pre-trained to predict the next word. GPTs are then often fine-tuned to follow instructions and to behave as assistants.\nBiased or inaccurate training data can make an LLM's output less reliable. A software harness can provide LLMs with memory and access to tools such as web search. Benchmark evaluations for LLMs attempt to measure model reasoning, factual accuracy, alignment, and safety.\n\n\n== History ==\n\nBefore the emergence of transformer-based models in 2017, some language models were considered large relative to the computational and data constraints of their time. In the early 1990s, IBM's statistical models pioneered word alignment techniques for machine translation, laying the groundwork for corpus-based language modeling. In 2001, a smoothed n-gram model, such as those employing Kneser–Ney smoothing, trained on 300 million words, achieved state-of-the-art perplexity on benchmark tests. During the 2000s, with the rise of widespread internet access, researchers began compiling massive text datasets from the web (\"web as corpus\") to train statistical language models.\n\nMoving beyond n-gram models, researchers started in 2000 to use neural networks as language models. Following the breakthrough of deep neural networks in image classification around 2012, similar architectures were adapted for language tasks. This shift was marked by the development of word embeddings (e.g., Word2Vec by Mikolov in 2013) and sequence-to-sequence (seq2seq) models using LSTM. In 2016, Google transitioned its translation service to neural machine translation (NMT), replacing statistical phrase-based models with deep recurrent neural networks. These early NMT systems used LSTM-based encoder-decoder architectures, as they preceded the invention of transformers. \nAt the 2017 NeurIPS conference, Google researchers introduced the transformer architecture in their landmark paper \"Attention Is All You Need\". This paper's goal was to improve upon 2014 seq2seq technology, and was based mainly on the attention mechanism developed by Bahdanau et al. in 2014. The following year in 2018, BERT was introduced and quickly became \"ubiquitous\". Though the original transformer has both encoder and decoder blocks, BERT is an encoder-only model. Academic and research usage of BERT began to decline in 2023, following rapid improvements in the abilities of decoder-only models (such as GPT) to solve tasks via prompting.\nAlthough decoder-only GPT-1 was introduced in 2018, it was GPT-2 in 2019 that caught widespread attention because OpenAI claimed to have initially deemed it too powerful to release publicly, out of fear of malicious use. GPT-3 in 2020 went a step further and as of 2025 is available only via API with no offering of downloading the model to execute locally. But it was the consumer-facing chatbot ChatGPT in late 2022 that received extensive media coverage and public attention by 2023. The 2023 GPT-4 was praised for its increased accuracy and as a \"holy grail\" for its multimodal capabilities. OpenAI did not reveal the high-level architecture and the number of parameters of GPT-4. The release of ChatGPT led to an uptick in LLM usage across several research subfields of computer science, including robotics, software engineering, and societal impact work. In 2024, OpenAI released the reasoning model OpenAI o1, which generates long chains of thought before returning a final answer. Many LLMs with parameter counts comparable to those of OpenAI's GPT s",
+    "url": "https://en.wikipedia.org/wiki/Large%20language%20model"
+  },
+  "hackernews": [
+    {
+      "query": "AI writing tool",
+      "title": "NaNoWriMo is in disarray after organizers defend AI writing tools",
+      "points": 38,
+      "comments": 56,
+      "date": "2024-09-03",
+      "url": "https://www.theverge.com/2024/9/3/24234811/nanowrimo-ai-stance-classist-ableist-criticism",
+      "hn_url": "https://news.ycombinator.com/item?id=41435760",
+      "text": ""
+    },
+    {
+      "query": "AI writing tool",
+      "title": "Show HN: I'm building an AI-proof writing tool. How would you defeat it?",
+      "points": 24,
+      "comments": 30,
+      "date": "2026-01-28",
+      "url": "https://auth-auth.vercel.app/",
+      "hn_url": "https://news.ycombinator.com/item?id=46799402",
+      "text": ""
+    },
+    {
+      "query": "AI writing tool",
+      "title": "Meta launches own AI code-writing tool: Code Llama",
+      "points": 15,
+      "comments": 1,
+      "date": "2023-08-24",
+      "url": "https://www.theverge.com/2023/8/24/23843487/meta-llama-code-generation-generative-ai-llm",
+      "hn_url": "https://news.ycombinator.com/item?id=37248900",
+      "text": ""
+    }
+  ]
+}

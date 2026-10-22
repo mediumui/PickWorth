@@ -1,0 +1,150 @@
+{
+  "slug": "agnes",
+  "type": "review",
+  "section": "tools",
+  "answer": "Agnes is a Singapore-based AI lab (Sapiens AI's product) that makes its three core model families — text, image and video — available through one OpenAI-compatible API that is free to call indefinitely. You need an API key, but there is no token or request cap, only a per-minute rate limit. It is strongest on front-end and prototyping work and on image/video generation, and weakest on high-complexity pure-logic reasoning; its published benchmark numbers are the lab's own internal evaluations, not independent ones.",
+  "key_answers": [
+    [
+      "What is Agnes AI?",
+      "Agnes is a model suite from Sapiens AI (a Singapore company, founded 2025): text (Agnes-2.0-Flash, agnes-2.5-flash), image (Agnes-Image-2.0-Flash) and video (Agnes-Video-V2.0) models, all reached through a single OpenAI-compatible API. It is one of the few places where text, image and video are on one gateway and all three are free."
+    ],
+    [
+      "Is Agnes actually free?",
+      "The three core models are free to call indefinitely, with no token limit and no per-month quota. The only limit is a per-minute request cap (RPM), which is the thing to watch under load. You do need an API key — you sign up and generate one from the dashboard; it is not a no-key service."
+    ],
+    [
+      "How do I call Agnes?",
+      "It is OpenAI-compatible, so existing OpenAI code mostly just needs a base-URL swap and the model name. The international endpoint is apihub.agnes-ai.com/v1; since late July 2026 a domestic (China) station is agnes-ai.cn with endpoint api.agnes-ai.cn/v1, and existing keys carry over."
+    ],
+    [
+      "What is Agnes good at?",
+      "Front-end and prototype work: from a single description it produces a working landing page, a small interactive game, or a calculator. Its image model leads on instruction-based editing (swap a background, replace an object, change style, fix text in one call), and its video model generates synchronized audio-visual output. Both sit in the top tiers of international independent image/video leaderboards."
+    ],
+    [
+      "Where does Agnes fall short?",
+      "Three honest limits. First, on high-complexity pure-logic reasoning — dense math or hard algorithm design — it is below the largest frontier models. Second, past roughly a million tokens of context its understanding slowly degrades. Third, the published SWE-bench / Claw-Eval figures are the lab's own internal evaluations, not independent scores, so treat them as a signal rather than a verdict."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The independent hands-on reports we sampled split along one line. For front-end and prototyping they call it reliable from a single prompt — a playable web game, a landing page, a small app. For anything that needs sustained multi-step debugging or strict instruction-following across many files, they report the code is less stable and it can drift on long agentic runs. It reads as: great for the prototyping stage, use a stronger engine for production hardening."
+    ],
+    [
+      "What score does PickWorth give Agnes?",
+      "4.0 out of 5. The value is exceptional — three modalities on one free, uncapped, OpenAI-compatible API. The deductions are that the top benchmarks are self-reported, that pure-logic reasoning lags the largest models, and that the free tier is a real allowance but a learning one."
+    ],
+    [
+      "Does PickWorth take money from Agnes?",
+      "No. Reviews are written by a single editorial team; the free-usage policy is verified from Agnes's official documentation. See our method."
+    ]
+  ],
+  "meta": {
+    "title": "Agnes AI Review 2026: A Free, Uncapped API for Text, Image, and Video",
+    "desc": "Agnes AI review — a free, uncapped, OpenAI-compatible API covering text, image and video models. Where the front-end and image work leads, where reasoning slips, and why the benchmarks are self-reported.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Agnes",
+        "applicationCategory": "DeveloperApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sapiens AI (Agnes)"
+        }
+      },
+      "url": "https://pickworthhq.com/tools/agnes/",
+      "datePublished": "2026-10-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Agnes AI review",
+    "lead": "<p class=\"lead\">One of the few AI suites where text, image and video are all on a single OpenAI-compatible API — and where that API is free to call without a token cap. Where the front-end and creative work genuinely leads, where pure reasoning does not, and the one asterisk the marketing leaves out: the top benchmark numbers are the lab's own.</p>",
+    "date": "22 October 2026",
+    "name": "Agnes AI",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "free",
+      "How the free, uncapped API works"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Agnes is the rare free offering that does not cap you: its three core model families — text, image and video — are all reachable through one OpenAI-compatible API that you can call indefinitely with no token limit, gated only by a per-minute request ceiling. It is genuinely strong at the stage of work most people actually use AI for, prototyping: front-end pages, small interactive tools, instruction-based image editing and fast video. It is weakest at the two ends — high-complexity pure-logic reasoning and very-long-context stability — and the strongest benchmark numbers it advertises are the lab's own internal evaluations rather than independent scores. For the majority of use, that is a 4.0: exceptional value at the price point of free, with real caps on the top-end reasoning work that frontier models still own.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Agnes is the model suite of Sapiens AI, a Singapore company founded in 2025. It ships three model families on a single gateway: text (Agnes-2.0-Flash and the newer agnes-2.5-flash), image (Agnes-Image-2.0-Flash) and video (Agnes-Video-V2.0), all exposed through one OpenAI-compatible API. The point of the product is that the three are not three separate signups or three different integration specs; they are one base URL, one key, one set of model names, so a task can move from a description to a generated image to a short video without leaving the call shape you already wrote.</p>\n    <p>The text model is built around a Recurrent Depth Transformer architecture that, in the lab's framing, adapts how many internal reasoning loops it runs to the task at hand. In practice that is what makes it fast and cheap per request rather than a step-change in raw reasoning power, and it is worth keeping in mind when reading the benchmarks below.</p>\n\n    <h2 id=\"free\">How the free, uncapped API works</h2>\n    <p>The defining feature, and the reason this review exists, is the free tier: the three core models are available indefinitely, with no token limit and no monthly quota. The only throttle is a per-minute request limit, so the constraint is concurrency and frequency rather than volume. You do need a key — you register, generate an API key in the dashboard, and call the endpoint with a Bearer header — but the \"free\" here is not a trial or a credit balance; it is a standing allowance.</p>\n    <p>Because the API is OpenAI-compatible, most existing code ports with a base-URL and model-name swap. The international station is <code>apihub.agnes-ai.com/v1</code>. A domestic (China) station went live in late July 2026 at <code>agnes-ai.cn</code> with endpoint <code>api.agnes-ai.cn/v1</code>; existing keys carry over and only the endpoint changes. Two caveats the spec sheet does not surface: the 1M context window is throttled toward about 512K in peak periods, and the top Pro model (Agnes-2.5-Pro-Alpha) is not part of the free allowance — it is metered separately.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Front-end and prototype work</h3>\n    <p>This is where the independent hands-on reports are most consistent. From a single plain-language description, the text model produces a working front-end: a playable web game, a landing page with its sections and interactions wired, or a small utility like a calculator. The independent reviews we read describe the output as close to a usable first build rather than a broken skeleton, which is what matters at the prototyping stage where most of the real work happens.</p>\n    <h3>Instruction-based image editing</h3>\n    <p>The image model is built for \"edit by instruction\": hand it an image and one line of intent, and it swaps a background, adds or removes an object, changes the style, fixes in-image text, or blends multiple sources in a single call. That replaces a multi-step Photoshop pipeline (crop, mask, segment, inpaint, restyle) with one request, and it is the capability that put the model in the top tiers of an independent image-editing leaderboard that uses blind human review.</p>\n    <h3>Fast video with synchronized audio</h3>\n    <p>The video model generates short clips with synchronized audio-visual output. It is not a long-form film tool; it is the fast-turnaround kind of clip that a content pipeline needs, and it is the third modality that rounds out the \"one gateway\" pitch.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>The limits fall at two ends and one asterisk. On the reasoning end, the architecture is tuned for cost and speed over raw logical depth: on dense pure-math or hard algorithm-design work it sits below the largest frontier models, and the longer the context the more slowly its understanding degrades past about a million tokens. On the agentic end, the hands-on reports are split: it is reliable for the front-end and single-surface tasks above, but for sustained multi-file debugging and strict instruction-following across a long run, users report the code is less stable and it can drift — so it reads as the right tool for the build stage and the wrong one for production hardening.</p>\n    <p>The asterisk is the most important one. The headline SWE-bench and Claw-Eval figures that get quoted in the coverage are Agnes's own internal evaluations, not independent runs. They are a strong signal, not a final scoreboard, and a few of the numbers sit just below the top frontier model on the hardest coding cuts. The image and video placements, by contrast, come from an independent blind-review leaderboard and are the more defensible of the rankings.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Agnes earns a 4.0, and the number comes from a specific shape of value rather than a broad one. The value is that three modalities — text, image and video — are on a single, OpenAI-compatible, genuinely free and uncapped API, which no major competitor matches at that price point. The deductions are concentrated: the top coding benchmarks are self-reported, pure-logic reasoning and very-long-context stability trail the largest models, and the free tier, though generous, is a learning allowance with a per-minute ceiling. Use it where it leads — prototyping, front-end generation, instruction-based image editing, fast video — and keep a stronger engine for the hardening pass. The free-usage policy was verified from Agnes's official documentation as of October 2026, and the free-tier RPM and the peak-hour context throttling can change without notice, so re-check before you build on it.</p>\n",
+  "sources": [
+    "Agnes — Official documentation and FAQs — https://agnes-ai.com/en/docs/faqs"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/github-copilot/index.html",
+      "title": "GitHub Copilot review",
+      "blurb": "The paid in-editor coding assistant, with its own free tier.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The general-purpose assistant Agnes is a free alternative to.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/index.html",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "agnes ai review",
+    "agnes ai free api",
+    "agnes-2.0-flash",
+    "agnes ai text image video free",
+    "agnes ai api key",
+    "agnes ai openai compatible",
+    "agnes ai coding",
+    "agnes ai image editing",
+    "agnes ai video generation",
+    "is agnes ai free",
+    "agnes ai vs deepseek",
+    "agnes ai benchmarks",
+    "agnes ai cn api",
+    "agnes 2.5 flash"
+  ]
+}

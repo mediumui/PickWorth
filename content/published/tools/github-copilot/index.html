@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GitHub Copilot Review 2026: What It Is Good At, Where It Slips, and the Plans | PickWorth</title>
+<meta name="description" content="GitHub Copilot review — where it leads on inline completion and in-editor help, where the free tier caps out, and which plan is actually worth paying for, including the student and open-source routes." />
+<meta name="robots" content="index, follow" />
+<meta name="search-terms" content="github copilot review,github copilot worth it,github copilot pricing 2026,github copilot free tier,github copilot pro,github copilot completions per month,is github copilot good,github copilot agents,github copilot plans,github copilot free for students,github copilot vs cursor" />
+<meta property="og:site_name" content="PickWorth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pickworthhq.com/tools/github-copilot/" />
+<meta property="og:title" content="GitHub Copilot Review 2026: What It Is Good At, Where It Slips, and the Plans" />
+<meta property="og:description" content="GitHub Copilot review — where it leads on inline completion and in-editor help, where the free tier caps out, and which plan is actually worth paying for, including the student and open-source routes." />
+<meta property="og:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="GitHub Copilot Review 2026: What It Is Good At, Where It Slips, and the Plans" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pickworthhq" />
+<meta name="twitter:title" content="GitHub Copilot Review 2026: What It Is Good At, Where It Slips, and the Plans" />
+<meta name="twitter:description" content="GitHub Copilot review — where it leads on inline completion and in-editor help, where the free tier caps out, and which plan is actually worth paying for, including the student and open-source routes." />
+<meta name="twitter:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "GitHub Copilot",
+    "applicationCategory": "DeveloperApplication",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GitHub (Microsoft)"
+    }
+  },
+  "url": "https://pickworthhq.com/tools/github-copilot/",
+  "datePublished": "2026-10-22",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.0",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+  },
+  "dateModified": "2026-10-22",
+  "image": "https://pickworthhq.com/assets/img/og-cover.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pickworthhq.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://pickworthhq.com/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GitHub Copilot",
+      "item": "https://pickworthhq.com/tools/github-copilot/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PickWorth",
+  "url": "https://pickworthhq.com/",
+  "logo": "https://pickworthhq.com/assets/img/og-cover.png",
+  "description": "Honest, hands-on reviews and head-to-head comparisons of AI tools — what each is genuinely good at, where it falls short, and what it really costs.",
+  "sameAs": [
+    "https://pickworthhq.com/about/",
+    "https://pickworthhq.com/contact/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "hello@pickworthhq.com",
+      "contactType": "customer support"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is GitHub Copilot best at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inline code completion and in-editor help: suggesting code as you type, explaining a block you are stuck on, and small refactors. It is the fastest tool for the day-to-day, syntax-and-signature stage of coding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which editors does it work in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VS Code, Visual Studio, JetBrains IDEs, Xcode, Neovim, Eclipse, Raycast and Zed, plus the CLI and github.com itself. One license covers all of them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the free tier include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2,000 completions a month, entry-level model access, and chat with metered (not unlimited) usage, with no card required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does it fall short?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sustained, multi-file agent work and the frontier-model quality of the top tiers. The free plan's monthly cap and entry-level models are the wall that pushes daily users to Pro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to be genuinely useful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pro at $10 a month removes the completion cap and adds 1,500 AI credits. Verified students, teachers, and open-source maintainers get Pro at $0."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do hands-on users actually report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Across the third-party reviews we sampled — tooling sites and developer forums, roughly 2025-2026 — the consensus is consistent with our read: the day-to-day completion and IDE breadth win. The recurring friction points are the cloud agent's slow spin-up on fresh sessions, premium-request quotas that reset on the first of the month rather than the billing anniversary, and in 2026 a default where Copilot trains on your interaction data unless you opt out. Heavy users on Pro report running low on credits mid-month, which is why some have moved to Pro+ or a Cursor/Cline alternative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What score does PickWorth give GitHub Copilot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "4.0 out of 5 — a strong, broadly useful coding assistant, with real caps on the free tier and the top-model features reserved for higher paid tiers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PickWorth take money from GitHub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Reviews are written by a single editorial team; pricing is verified from GitHub's official plans page. See our method."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="canonical" href="https://pickworthhq.com/tools/github-copilot/" />
+<link rel="stylesheet" href="../../assets/css/site.css" />
+<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
+<script src="../../assets/js/device-ui.js" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-logo" viewBox="0 0 32 32">
+      <path d="M8 24 L16 8 L24 24 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="16" cy="19.5" r="1.7" fill="currentColor"/>
+    </symbol><symbol id="i-sources" viewBox="0 0 24 24">
+      <rect x="7" y="5" width="12" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M4 8v9a2 2 0 0 0 2 2h9" fill="none" stroke="currentColor" stroke-width="1.7" opacity=".45"/>
+      <path d="M10 9.5h6M10 13h6M10 16.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol><symbol id="i-compare" viewBox="0 0 24 24">
+      <rect x="3.5" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <rect x="13" y="5" width="7.5" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M6.7 9v6M16.3 9v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+      <circle cx="7.5" cy="12" r="0.9" fill="currentColor"/>
+      <circle cx="16.5" cy="12" r="0.9" fill="currentColor"/>
+    </symbol><symbol id="i-verdict" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M8 12.2 L11 15.2 L16 9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol><symbol id="i-method" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="18" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="7" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8 7 L16 11M16 13.5 L9 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+    </symbol><symbol id="i-pick" viewBox="0 0 24 24">
+      <circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M15 15 L20 20" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </symbol><symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="M12 4 L13.8 10.2 L20 12 L13.8 13.8 L12 20 L10.2 13.8 L4 12 L10.2 10.2 Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol><symbol id="i-cite" viewBox="0 0 24 24">
+      <path d="M5 13v4a2 2 0 0 0 2 2h4v-7H7a2 2 0 0 1-2-2V9h4V4H7a2 2 0 0 0-2 2v2a2 2 0 0 0 0 0ZM13 13v4a2 2 0 0 0 2 2h4v-7h-4a2 2 0 0 1-2-2V9h4V4h-4a2 2 0 0 0-2 2v2Z"
+            fill="currentColor" opacity=".55"/>
+    </symbol></svg>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../../index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg>
+      <span>PickWorth</span>
+    </a>
+    <nav class="menu">
+      <a href="../../tools/index.html">Tools</a>
+      <a href="../../comparisons/index.html">Comparisons</a>
+      <a href="../../lists/index.html">Lists</a>
+      <a href="../../blog/index.html">Journal</a>
+      <a href="../../about/index.html">About</a>
+      <a href="../../contact/index.html" class="ghost">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span class="sep"></span><a href="../../tools/index.html">Tools</a><span class="sep"></span>GitHub Copilot
+  </nav>
+
+  <article class="post">
+    <header class="article-head">
+      <p class="kicker">Tool review</p>
+      <h1>GitHub Copilot review</h1>
+      <div class="meta">
+        <span>Reviewed 22 October 2026</span>
+        <span>Updated 22 October 2026</span>
+        <span>PickWorth Editorial</span>
+      </div>
+    </header>
+
+    <div class="verdict-grid">
+      <div class="score good"><strong>4.0</strong><span>Our score</span></div>
+      <div class="verdict">
+        <h3>The short version</h3>
+        <p>GitHub Copilot is the most accessible of the coding assistants, and the reason is structural: it is built into the editors people already have, and one license spans all of them. It is genuinely good at the day-to-day, in-editor stage of coding, and its free tier is one of the more honest in the category. It slips on the two things that matter for professional, all-day use, plus three quiet frictions that independent reviews keep flagging: a slow cloud-agent cold start, a monthly credit reset that does not track your billing anniversary, and a default since mid-2026 where your interaction data trains the model unless you opt out. For the majority of developers, Pro at $10 is the baseline; verified students, teachers, and open-source maintainers get it free.</p>
+      </div>
+    </div>
+
+    <section class="key-answers" aria-label="Key answers">
+      <p class="key-answer"><strong>The short answer.</strong> GitHub Copilot is the coding assistant most developers already have access to: inline completions, chat, and agent mode across the editors you already use, with a real free tier and paid plans that remove the cap. It is strongest on everyday completion and in-editor help, and weakest when you need sustained multi-file agent work or the highest-tier models.</p>
+    <div class="qa-list">
+        <div class="qa"><dt>What is GitHub Copilot best at?</dt><dd>Inline code completion and in-editor help: suggesting code as you type, explaining a block you are stuck on, and small refactors. It is the fastest tool for the day-to-day, syntax-and-signature stage of coding.</dd></div>
+        <div class="qa"><dt>Which editors does it work in?</dt><dd>VS Code, Visual Studio, JetBrains IDEs, Xcode, Neovim, Eclipse, Raycast and Zed, plus the CLI and github.com itself. One license covers all of them.</dd></div>
+        <div class="qa"><dt>What does the free tier include?</dt><dd>2,000 completions a month, entry-level model access, and chat with metered (not unlimited) usage, with no card required.</dd></div>
+        <div class="qa"><dt>Where does it fall short?</dt><dd>Sustained, multi-file agent work and the frontier-model quality of the top tiers. The free plan's monthly cap and entry-level models are the wall that pushes daily users to Pro.</dd></div>
+        <div class="qa"><dt>How much does it cost to be genuinely useful?</dt><dd>Pro at $10 a month removes the completion cap and adds 1,500 AI credits. Verified students, teachers, and open-source maintainers get Pro at $0.</dd></div>
+        <div class="qa"><dt>What do hands-on users actually report?</dt><dd>Across the third-party reviews we sampled — tooling sites and developer forums, roughly 2025-2026 — the consensus is consistent with our read: the day-to-day completion and IDE breadth win. The recurring friction points are the cloud agent's slow spin-up on fresh sessions, premium-request quotas that reset on the first of the month rather than the billing anniversary, and in 2026 a default where Copilot trains on your interaction data unless you opt out. Heavy users on Pro report running low on credits mid-month, which is why some have moved to Pro+ or a Cursor/Cline alternative.</dd></div>
+        <div class="qa"><dt>What score does PickWorth give GitHub Copilot?</dt><dd>4.0 out of 5 — a strong, broadly useful coding assistant, with real caps on the free tier and the top-model features reserved for higher paid tiers.</dd></div>
+        <div class="qa"><dt>Does PickWorth take money from GitHub?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from GitHub's official plans page. See our method.</dd></div>
+    </div>
+    </section>
+
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>
+                <li><a href="#what">What it is</a></li>
+        <li><a href="#good">What it is good at</a></li>
+        <li><a href="#limits">Where it slips</a></li>
+        <li><a href="#pricing">Plans and what each unlocks</a></li>
+        <li><a href="#verdict">Verdict</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="what">What it is</h2>
+    <p>GitHub Copilot is an AI coding assistant that lives inside the editor rather than in a separate tab: it suggests code as you type, answers questions about your own codebase, reviews your changes, and can be handed a task to carry across multiple steps. Because it is part of GitHub, it has the context a standalone tool cannot — your repositories, your issues, your pull requests — and a change can start as an issue, be picked up by the agent, and come back as a reviewed PR without leaving the tool.</p>
+    <p>It works across the editors you are already using: VS Code, Visual Studio, the JetBrains line, Xcode, Neovim, Eclipse, Raycast and Zed, plus the CLI and github.com itself. That breadth is not a minor detail; it is the main reason it is the default choice, because there is no second tool to install and a separate login to manage.</p>
+
+    <h2 id="good">What it is good at</h2>
+    <h3>Inline completion</h3>
+    <p>On the everyday stage of coding — completing a function, remembering an API signature, or extending a block half-way through — Copilot is fast and, more importantly, sits exactly where the cursor is. The value is not that every suggestion is brilliant; it is that the friction of the next step is collapsed. For a developer in a familiar codebase, that is the majority of the working day.</p>
+    <h3>Explaining and onboarding</h3>
+    <p>Pointing at an unfamiliar function and getting a plain-language explanation, or generating a set of test cases for a module you have to maintain, is where it saves real time onboarding. This is a job the free tier already does well enough to justify using it without paying.</p>
+    <h3>In-editor agent work</h3>
+    <p>The agent mode, available down to the free plan, can research a repository, propose a plan, and edit files across a small task. For the kind of work that is more than a line but less than a project — a bug fix touching two files, a refactor with a clear target — it is the right tool and beats copy-pasting between a chat window and the editor.</p>
+
+    <h2 id="limits">Where it slips</h2>
+    <p>The honest limits are at the two ends of the task size. On the small end, the free plan is real but capped: two thousand completions a month, entry-level models, and chat and agent usage that is metered rather than unlimited, so a heavy day will hit the wall before the month does. On the large end, the sustained, multi-file agent work that defines professional use runs on the higher tiers, and the frontier-model quality that those tasks actually need is not what the free or the base Pro plan is tuned for.</p>
+    <p>The independent hands-on reviews we sampled add three frictions the spec sheet does not surface. First, the cloud agent on a fresh session takes well over a minute to spin up, so the small-task agent work that the marketing frames as instant is, in practice, batched in your head while the cloud is warming. Second, the monthly AI-credit quota resets on the first of the calendar month, not on your billing anniversary, so a user who signs up mid-month has a shorter first credit window than the sticker implies. Third, and worth flagging because it sits in the per-user privacy panel rather than in the billing flow: since mid-2026 the default for the paid tiers is that your interaction data trains the model, unless you explicitly opt out. None of those is a deal-breaker; each is a small wall you learn to work around.</p>
+    <p>There is also a narrower, practical one: Copilot is strongest when the codebase is well-structured and the conventions are clear. In a legacy or poorly-documented project, the suggestions are less reliable and the explanation work is more, and the tool starts to feel like a smart autocomplete rather than the assistant the marketing implies. That is the single most-consistent complaint across the independent reviews we read, and the one that most often leads a developer to trial a dedicated agentic IDE.</p>
+
+    <h2 id="pricing">Plans and what each unlocks</h2>
+    <p>GitHub prices the tiers as a base seat plus a monthly allowance of AI credits, so the number to read is the credit line, not the sticker. The free plan is the entry point; Pro removes the completion cap and adds 1,500 credits (about $15 of model spend); Pro+ and Max are for the people whose day is sustained agent work, and they buy a larger credit allowance and access to the frontier models rather than new features. The one line that bends that table: for verified students, teachers, and maintainers of popular open-source projects, the Pro column reads $0 instead of $10, with the same unlimited completions and credits. That is a legitimate saving, not a trial, and it is the subject of a dedicated note in the Journal. In the independent reviews we sampled, the heavy agent users who hit the Pro credit line most often describe it as "$15 gets you through the light weeks and then you are on pay-as-you-go" — a fair framing of the metered tail that the sticker price hides.</p>
+    <table class="compare">
+      <thead>
+        <tr><th>Tier</th><th>Price</th><th>Completions</th><th>Monthly credits</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Free</td><td>$0</td><td>2,000 / month</td><td>Limited chat &amp; agent</td></tr>
+        <tr><td>Pro</td><td>$10 / mo</td><td>Unlimited</td><td>1,500 ($15)</td></tr>
+        <tr><td>Pro+</td><td>$39 / mo</td><td>Unlimited</td><td>Higher allowance</td></tr>
+        <tr><td>Max</td><td>$100 / mo</td><td>Unlimited</td><td>Highest allowance</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="verdict">Verdict</h2>
+    <p>GitHub Copilot earns a 4.0. It is the most broadly usable coding assistant in the category because it is where developers already are, and it is genuinely good at the in-editor stage that is most of a working day. The deduction is for the caps and the quiet friction points that the spec sheet does not name: the metered free-tier limits, the agent's slow cold start, the credit reset on the first of the month, and the default training-on-interaction-data since mid-2026. Pick Pro as the baseline for daily use, move up only when the agent workload justifies it, and if you are a student, teacher, or open-source maintainer, check the free-eligibility route before you pay anything at all. Pricing, the free-group offers, and the credit numbers were read from GitHub's official plans page as of October 2026; the cold-start, reset-cycle, and training-data caveats are drawn from the independent hands-on reports we sampled and will outlive a pricing change on the plans page. The metered free-tier limits can shift without a version bump, so re-check before you commit.</p>
+
+    
+
+<h2 id="sources">Sources</h2>
+<section class="sources">
+  <ol>
+            <li>1. <a href="https://github.com/features/copilot/plans" rel="noopener" target="_blank">GitHub — Copilot plans and pricing</a></li>
+  </ol>
+</section>
+
+
+    
+
+<div class="rule">Related</div>
+<section class="grid-3">
+        <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-sources"></use></svg>
+          <span class="tag teal">Journal</span>
+        </div>
+        <h3><a href="../../blog/get-github-copilot-pro-free/index.html">Getting Copilot Pro for free</a></h3>
+        <p>The student, teacher, and open-source routes to $0, step by step.</p>
+        <a class="more" href="../../blog/get-github-copilot-pro-free/index.html">Read</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-sources"></use></svg>
+          <span class="tag">Review</span>
+        </div>
+        <h3><a href="../../tools/claude/index.html">Claude review</a></h3>
+        <p>The model Copilot routes through — where it pulls ahead and where it doesn't.</p>
+        <a class="more" href="../../tools/claude/index.html">Read</a>
+      </article>
+      <article class="card">
+        <div class="card-top">
+          <svg class="card-icon" aria-hidden="true"><use href="#i-sources"></use></svg>
+          <span class="tag plain">Index</span>
+        </div>
+        <h3><a href="../../tools/index.html">All tool reviews</a></h3>
+        <p>Everything we have tested so far.</p>
+        <a class="more" href="../../tools/index.html">Browse</a>
+      </article>
+</section>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="disclosure">Some outbound links are affiliate links. They never influence which tool we recommend.</p>
+    <p class="fineprint">© 2026 PickWorth · <a href="../../about/index.html">About</a> · <a href="../../contact/index.html">Contact</a></p>
+  </div>
+</footer>
+<nav class="mtab" aria-label="Primary">
+  <a href="../../index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-logo"></use></svg><span>Home</span></a>
+  <a href="../../tools/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sources"></use></svg><span>Tools</span></a>
+  <a href="../../comparisons/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-compare"></use></svg><span>Compare</span></a>
+  <a href="../../lists/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pick"></use></svg><span>Lists</span></a>
+  <a href="../../about/index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cite"></use></svg><span>About</span></a>
+</nav>
+
+</body>
+</html>

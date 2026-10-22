@@ -1,0 +1,172 @@
+{
+  "slug": "grok-review",
+  "fetched_at": "2026-10-22T05:37:18+00:00",
+  "github": [],
+  "wikipedia": {
+    "title": "Grok (chatbot)",
+    "extract": "Grok is a series of generative AI large language models developed by SpaceXSI. It was launched in November 2023 by Elon Musk as an initiative based on the large language model (LLM) of the same name. Grok has apps for iOS and Android and is integrated with the X social network and Tesla's Optimus robot where it has chatbot functionality. Grok is named after the verb to grok, created by the American science fiction author Robert A. Heinlein to convey a form of deep, intuitive understanding.\nSpaceXSI has released several Grok models. Grok-1 was open-sourced in 2024, followed by Grok-2, Grok 3, and Grok 4 model families, with Grok 4.5 released in 2026. Different versions added capabilities including image generation, web search, \"Think\" mode to simulate reasoning,, agentic coding tool called Grok Build, and AI teammates called Grok Bot. Musk admitted in 2026 that Grok was partially distilled from OpenAI's GPT models. Starting with Grok 4.5, the models are co-developed with incoming SpaceXSI subsidiary Cursor.\nThe bot has received criticism for promoting conspiracy theories, praising Adolf Hitler, using antisemitic tropes, and creating nonconsensual, sexualized images of undressed women and children.\n\nGrok generates articles for the encyclopedia website Grokipedia, launched in October 2025 by Musk as an alternative to Wikipedia, which he described as \"woke\" and politically biased.\n\n\n== Background ==\n\n\n=== OpenAI ===\nMusk was one of the 11 co-founders of OpenAI, and initially co-chaired it with Sam Altman. He left the company's board in 2018, saying of his decision that he \"didn't agree with some of what OpenAI team wanted to do\". OpenAI went on to launch ChatGPT in the end of 2022, and GPT-4 in March 2023. The same month, Musk was one of the individuals to sign the \"Pause Giant AI Experiments: An Open Letter\" from the Future of Life Institute, which called for a six-month pause in the development of any AI software more powerful than GPT-4.\n\n\n=== TruthGPT ===\nIn April 2023, Musk said in an interview on Tucker Carlson Tonight that he intended to develop an AI chatbot called \"TruthGPT\", which he described as \"a maximum truth-seeking AI that tries to understand the nature of the universe\". He expressed concern to Carlson that ChatGPT was being \"trained to be politically correct\".\n\n\n=== Grok ===\nTruthGPT would later be renamed after grok, a verb coined by American author Robert A. Heinlein in his 1961 science fiction novel Stranger in a Strange Land to describe a deeper-than-human form of understanding.\n\n\n== History ==\n\n\n=== Grok-1 ===\n \nIn November 2023, SpaceXSI began previewing Grok as a chatbot to select users, with participation in the early access program being limited to paid X Premium users. It was announced that once the bot was out of early beta, it would only be available to higher tier X Premium subscribers. At the time of the preview, SpaceXSI described the chatbot as \"a very early beta product – the best we could do with 2 months of training\" that could \"improve rapidly with each passing week\".\nOn March 11, 2024, Musk posted on X that the language model would go open source within a week. Six days later, on March 17, Grok-1 was open sourced under the Apache-2.0 license. Disclosed were the network's architecture and its weight parameters. On March 26, 2024, Musk announced that Grok would be enabled for X Premium subscribers, in addition to those on Premium+.\n\n\n=== Grok-1.5 ===\n \nOn March 29, 2024, Grok-1.5 was announced, with \"improved reasoning capabilities\" and a context length of 128,000 tokens. Grok-1.5 was released to all X Premium users on May 15, 2024. On April 4, 2024, an update to X's \"Explore\" page included summaries of breaking news stories written by Grok, a task previously assigned to a human curation team.\nOn April 12, 2024, Grok-1.5 Vision (Grok-1.5V) was announced, which SpaceXSI claimed could \"process a wide variety of visual information, including documents, diagrams, graphs, screenshots, and photographs",
+    "url": "https://en.wikipedia.org/wiki/Grok%20%28chatbot%29"
+  },
+  "hackernews": [
+    {
+      "query": "Grok",
+      "title": "Grok",
+      "points": 1170,
+      "comments": 419,
+      "date": "2024-03-17",
+      "url": "https://github.com/xai-org/grok",
+      "hn_url": "https://news.ycombinator.com/item?id=39737281",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grok 4.5",
+      "points": 776,
+      "comments": 1501,
+      "date": "2026-07-08",
+      "url": "https://x.ai/news/grok-4-5",
+      "hn_url": "https://news.ycombinator.com/item?id=48835111",
+      "text": "<a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;grok-4-5\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;grok-4-5</a>"
+    },
+    {
+      "query": "Grok",
+      "title": "Grok: Searching X for \"From:Elonmusk (Israel or Palestine or Hamas or Gaza)\"",
+      "points": 734,
+      "comments": 546,
+      "date": "2025-07-11",
+      "url": "https://simonwillison.net/2025/Jul/11/grok-musk/",
+      "hn_url": "https://news.ycombinator.com/item?id=44527190",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Groklaw legal site shuts over fears of NSA email snooping",
+      "points": 706,
+      "comments": 233,
+      "date": "2013-08-20",
+      "url": "http://www.theguardian.com/technology/2013/aug/20/groklaw-shuts-nsa-surveillance",
+      "hn_url": "https://news.ycombinator.com/item?id=6243081",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grok3 Launch [video]",
+      "points": 632,
+      "comments": 1354,
+      "date": "2025-02-18",
+      "url": "https://x.com/xai/status/1891699715298730482",
+      "hn_url": "https://news.ycombinator.com/item?id=43085957",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grok 4.6",
+      "points": 632,
+      "comments": 613,
+      "date": "2026-08-12",
+      "url": "https://x.ai/news/grok-4-6",
+      "hn_url": "https://news.ycombinator.com/item?id=49274027",
+      "text": "<a href=\"https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;articles&#x2F;grok-4-6-benchmarks-and-analysis\" rel=\"nofollow\">https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;articles&#x2F;grok-4-6-benchmarks-a...</a>"
+    },
+    {
+      "query": "Grok",
+      "title": "Grok 4.7",
+      "points": 609,
+      "comments": 540,
+      "date": "2026-09-21",
+      "url": "https://x.ai/news/grok-4-7",
+      "hn_url": "https://news.ycombinator.com/item?id=49788838",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "X offices raided in France as UK opens fresh investigation into Grok",
+      "points": 596,
+      "comments": 1107,
+      "date": "2026-02-03",
+      "url": "https://www.bbc.com/news/articles/ce3ex92557jo",
+      "hn_url": "https://news.ycombinator.com/item?id=46868998",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grok Build is open source",
+      "points": 590,
+      "comments": 643,
+      "date": "2026-07-15",
+      "url": "https://github.com/xai-org/grok-build",
+      "hn_url": "https://news.ycombinator.com/item?id=48926590",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "What xAI's Grok build CLI sends to xAI: A wire-level analysis",
+      "points": 539,
+      "comments": 228,
+      "date": "2026-07-12",
+      "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "hn_url": "https://news.ycombinator.com/item?id=48877371",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grokking Deep Learning",
+      "points": 530,
+      "comments": 112,
+      "date": "2016-08-18",
+      "url": "https://iamtrask.github.io/2016/08/17/grokking-deep-learning/",
+      "hn_url": "https://news.ycombinator.com/item?id=12309777",
+      "text": ""
+    },
+    {
+      "query": "Grok",
+      "title": "Grok Code Fast 1",
+      "points": 512,
+      "comments": 477,
+      "date": "2025-08-29",
+      "url": "https://x.ai/news/grok-code-fast-1",
+      "hn_url": "https://news.ycombinator.com/item?id=45063559",
+      "text": ""
+    },
+    {
+      "query": "xAI Grok",
+      "title": "XAI's Grok suddenly can't stop bringing up \"white genocide\" in South Africa",
+      "points": 224,
+      "comments": 73,
+      "date": "2025-05-15",
+      "url": "https://arstechnica.com/ai/2025/05/xais-grok-suddenly-cant-stop-bringing-up-white-genocide-in-south-africa/",
+      "hn_url": "https://news.ycombinator.com/item?id=43993332",
+      "text": ""
+    },
+    {
+      "query": "xAI Grok",
+      "title": "xAI's Grok 3 comes to Microsoft Azure",
+      "points": 162,
+      "comments": 193,
+      "date": "2025-05-19",
+      "url": "https://techcrunch.com/2025/05/19/xais-grok-3-comes-to-microsoft-azure/",
+      "hn_url": "https://news.ycombinator.com/item?id=44031387",
+      "text": ""
+    },
+    {
+      "query": "xAI Grok",
+      "title": "Teens sue xAI over Grok's pornographic images of them",
+      "points": 146,
+      "comments": 48,
+      "date": "2026-03-16",
+      "url": "https://www.bbc.com/news/articles/cgk2lzmm22eo",
+      "hn_url": "https://news.ycombinator.com/item?id=47406721",
+      "text": ""
+    },
+    {
+      "query": "xAI Grok",
+      "title": "xAI's Grok Build CLI Uploads Git Repositories to a Google Cloud Bucket",
+      "points": 100,
+      "comments": 2,
+      "date": "2026-07-13",
+      "url": "https://www.internationalcyberdigest.com/xais-grok-build-cli-uploads-entire-git-repositories-to-a-google-cloud-bucket/",
+      "hn_url": "https://news.ycombinator.com/item?id=48896493",
+      "text": ""
+    }
+  ]
+}

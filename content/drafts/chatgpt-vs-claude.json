@@ -1,0 +1,136 @@
+{
+  "slug": "chatgpt-vs-claude",
+  "type": "compare",
+  "section": "comparisons",
+  "answer": "Neither is the other's better version: ChatGPT is the wider, more consumer-friendly product (multimodal, deeper integrations, a useful free tier) and Claude is the stronger choice for long-form work and strict instruction-following, with its top tier costing more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.",
+  "key_answers": [
+    [
+      "ChatGPT or Claude — which should I pick?",
+      "Match the work: everyday mixed work and multimodal input → ChatGPT. Long-form, precise instruction-following, or sensitive material → Claude."
+    ],
+    [
+      "Which is better at coding?",
+      "Claude holds the edge on long-form coding and refactors; ChatGPT's ecosystem and the free tier make it the better everyday tool."
+    ],
+    [
+      "Which has the bigger context window?",
+      "Claude's long-context tier is the differentiator; ChatGPT's varies by model tier and is the limit where Claude still wins."
+    ],
+    [
+      "Which is cheaper?",
+      "Both start at the $20/month tier. Claude's top tier costs more; ChatGPT's free tier is the more useful one."
+    ],
+    [
+      "What is PickWorth's call?",
+      "ChatGPT: the wider product. Claude: the stronger long-form choice. Score the two per dimension, not by benchmark alone."
+    ],
+    [
+      "Do I need both?",
+      "For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule."
+    ],
+    [
+      "Does PickWorth take money from OpenAI or Anthropic?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "ChatGPT vs Claude (2026): The Full Breakdown",
+    "desc": "ChatGPT vs Claude, compared on capability, cost, context window and the two tasks where one clearly wins. Which one to pick for your workflow.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ChatGPT vs Claude (2026): The Full Breakdown",
+      "url": "https://pickworthhq.com/comparisons/chatgpt-vs-claude/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "ChatGPT vs Claude",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ChatGPT"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Claude"
+          }
+        ]
+      }
+    }
+  },
+  "head": {
+    "kicker": "Head-to-head",
+    "h1": "ChatGPT vs Claude",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "ChatGPT vs Claude",
+    "score": "4.5",
+    "score_class": "good",
+    "score_label": "ChatGPT score"
+  },
+  "toc": [
+    [
+      "compare",
+      "Side-by-side"
+    ],
+    [
+      "win",
+      "Where ChatGPT wins"
+    ],
+    [
+      "lose",
+      "Where Claude wins"
+    ],
+    [
+      "cost",
+      "The cost question"
+    ],
+    [
+      "scenarios",
+      "Pick by scenario"
+    ]
+  ],
+  "verdict": "<p>Neither is the other's better version. ChatGPT is the wider, more consumer-friendly product: stronger multimodal input, a deeper integration story, and a free tier that is actually useful. Claude is the stronger choice for long-form work and for strict instruction-following, and its top tier costs more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.</p>",
+  "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>ChatGPT (OpenAI)</th>\n          <th>Claude (Anthropic)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Free tier</td><td class=\"good\">Yes, genuinely usable</td><td class=\"good\">Yes, lighter limits</td></tr>\n        <tr><td>Consumer paid tier</td><td>$20 / month (Plus)</td><td>$20 / month (Pro)</td></tr>\n        <tr><td>Top consumer tier</td><td>$200 / month (Pro)</td><td>$100–200 / month (Max)</td></tr>\n        <tr><td>Context window</td><td>Strong, degrades on very long inputs</td><td class=\"good\">Largest in class, holds structure</td></tr>\n        <tr><td>Multimodal input</td><td class=\"good\">Text, audio, image in one conversation</td><td>Text and image; no consumer voice</td></tr>\n        <tr><td>Instruction-following</td><td>Strong on everyday tasks</td><td class=\"good\">Most literal on multi-step constraints</td></tr>\n        <tr><td>Coding agents</td><td>Integrated assistant</td><td class=\"good\">Claude Code / Cowork are the strongest in the set</td></tr>\n        <tr><td>Ecosystem depth</td><td class=\"good\">Deeper: more integrations, wider tool set</td><td>Narrower, more focused</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where ChatGPT wins</h2>\n    <p>On everyday speed and on the sheer breadth of what you can do without leaving the window, ChatGPT still leads. Its multimodal input — voice plus image in one conversation — is the most complete in the consumer set, and its integration story is deeper: a wider tool set and more add-ons. If your work is a mix of quick drafts, image-understanding and the occasional coding task, it is the better all-rounder.</p>\n\n    <h2 id=\"lose\">Where Claude wins</h2>\n    <p>On long-form work and on instruction-following, Claude is the stronger tool. The context window is larger and holds structure better, which is the reason many developers migrate specifically to stop hitting the ceiling. And on the agentic side — Claude Code and Claude Cowork — it is the most capable in-ecosystem coding and task-delegation set on the market. If your dominant task is a long document or a strict multi-step constraint, this is the one to pick.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>At the entry point the two are tied at $20 a month. They diverge at the top tier: ChatGPT's $200 Pro tier is a single step, while Claude splits its upper range across a $100 and a $200 Max. For a heavy daily user the Claude Max is the more flexible option, but you pay more for it. The honest answer is to stay on Pro on either side until it genuinely bottlenecks you, and only then move up.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>If your main work is…</th><th>Pick</th><th>Why</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>A mix of quick drafts, image questions and short coding</td><td><strong>ChatGPT</strong></td><td>The wider all-rounder with the better free tier</td></tr>\n        <tr><td>Long documents, transcripts or a large codebase</td><td><strong>Claude</strong></td><td>The context window holds structure that the other one loses</td></tr>\n        <tr><td>Strict multi-step instructions with hard constraints</td><td><strong>Claude</strong></td><td>Most literal on the constraints</td></tr>\n        <tr><td>Terminal-based coding or task delegation</td><td><strong>Claude</strong></td><td>The strongest in-ecosystem agent set</td></tr>\n        <tr><td>A team that wants the most integrations</td><td><strong>ChatGPT</strong></td><td>Deeper ecosystem and wider tool set</td></tr>\n      </tbody>\n    </table>\n\n    <div class=\"callout\">\n      <h3>Running both is a legitimate strategy</h3>\n      <p>A lot of professional users keep one for everyday work and the other for the long-form task that justifies the second subscription. The cost of doing that is roughly $40 a month — less than one day of a consultant, and less than the cost of using the wrong tool on the wrong task.</p>\n    </div>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The full breakdown, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/claude/index.html",
+      "title": "Claude review",
+      "blurb": "The full breakdown, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "comparisons/index.html",
+      "title": "All comparisons",
+      "blurb": "Every head-to-head we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "claude vs chatgpt coding",
+    "chatgpt or claude coding",
+    "which is better for coding claude chatgpt",
+    "claude chatgpt coding comparison"
+  ]
+}

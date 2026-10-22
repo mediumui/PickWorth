@@ -1,0 +1,48 @@
+{
+  "slug": "notion-ai-vs-chatgpt",
+  "fetched_at": "2026-10-22T05:37:52+00:00",
+  "github": [],
+  "wikipedia": null,
+  "hackernews": [
+    {
+      "query": "Notion vs ChatGPT",
+      "title": "Show HN: Khoj – Chat offline with your second brain using Llama 2",
+      "points": 565,
+      "comments": 150,
+      "date": "2023-07-30",
+      "url": "https://github.com/khoj-ai/khoj",
+      "hn_url": "https://news.ycombinator.com/item?id=36933452",
+      "text": "Hi folks, we&#x27;re Debanjum and Saba. We created Khoj as a hobby project 2+ years ago because: (1) Search on the desktop sucked; we just had keyword search on the desktop vs google for the internet; and (2) Natural language search models had become good and easy to run on consumer hardware by this point.<p>Once we made Khoj search incremental, I completely stopped using the default incremental s"
+    },
+    {
+      "query": "Notion AI",
+      "title": "Notion AI – waiting list signup",
+      "points": 361,
+      "comments": 321,
+      "date": "2022-11-16",
+      "url": "https://www.notion.so/ai",
+      "hn_url": "https://news.ycombinator.com/item?id=33623201",
+      "text": ""
+    },
+    {
+      "query": "Notion AI",
+      "title": "Reverse-engineering the source prompts of Notion AI",
+      "points": 327,
+      "comments": 80,
+      "date": "2022-12-28",
+      "url": "https://lspace.swyx.io/p/reverse-prompt-eng",
+      "hn_url": "https://news.ycombinator.com/item?id=34165522",
+      "text": ""
+    },
+    {
+      "query": "Notion AI",
+      "title": "Notion AI: Unpatched data exfiltration",
+      "points": 206,
+      "comments": 39,
+      "date": "2026-01-07",
+      "url": "https://www.promptarmor.com/resources/notion-ai-unpatched-data-exfiltration",
+      "hn_url": "https://news.ycombinator.com/item?id=46531565",
+      "text": ""
+    }
+  ]
+}

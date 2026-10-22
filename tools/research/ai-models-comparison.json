@@ -1,0 +1,28 @@
+{
+  "slug": "ai-models-comparison",
+  "fetched_at": "2026-10-22T05:37:41+00:00",
+  "github": [],
+  "wikipedia": null,
+  "hackernews": [
+    {
+      "query": "GPT Claude Gemini DeepSeek comparison",
+      "title": "Show HN: Training a model to identify AI web content from structure alone",
+      "points": 74,
+      "comments": 28,
+      "date": "2026-09-22",
+      "url": "https://arxiv.org/abs/2609.15369",
+      "hn_url": "https://news.ycombinator.com/item?id=49800566",
+      "text": "Hey HN! We’re Vincent and Jochen from Sitefire (<a href=\"https:&#x2F;&#x2F;sitefire.ai\">https:&#x2F;&#x2F;sitefire.ai</a>). We have been working together for years, with backgrounds in RL&#x2F;optimization at Stanford and software engineering from Technical University Munich (TUM).<p>With Sitefire (YC W26), we help marketing teams get recommended by AI Search (ChatGPT, Google AI Overviews, AI Mode"
+    },
+    {
+      "query": "best LLM 2026",
+      "title": "Mini PC for local LLMs in 2026",
+      "points": 31,
+      "comments": 34,
+      "date": "2026-05-02",
+      "url": "https://terminalbytes.com/best-mini-pc-for-local-llm-2026/",
+      "hn_url": "https://news.ycombinator.com/item?id=47986578",
+      "text": ""
+    }
+  ]
+}

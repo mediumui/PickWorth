@@ -1,0 +1,136 @@
+{
+  "slug": "chatgpt-vs-gemini",
+  "type": "compare",
+  "section": "comparisons",
+  "answer": "ChatGPT and Gemini are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a useful free tier, and a stronger everyday story. Gemini wins inside Google's own ecosystem.",
+  "key_answers": [
+    [
+      "ChatGPT or Gemini — which should I pick?",
+      "Mixed daily work, multimodal, and a useful free tier → ChatGPT. Deep inside Google Workspace (Docs, Gmail, Drive) → Gemini."
+    ],
+    [
+      "Which is better at coding?",
+      "ChatGPT holds the edge in most everyday coding workflows; Gemini's strength is inside the Google ecosystem."
+    ],
+    [
+      "Which has the bigger context window?",
+      "Gemini's window is a real differentiator for very long single-pass work; ChatGPT's varies by model tier."
+    ],
+    [
+      "Which is cheaper?",
+      "Both are available on free tiers; paid tiers are in the same price band. ChatGPT's free tier is the more useful one."
+    ],
+    [
+      "What is PickWorth's call?",
+      "ChatGPT: the wider all-rounder. Gemini: the ecosystem play. Score per dimension, not by benchmark alone."
+    ],
+    [
+      "Do I need both?",
+      "For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule."
+    ],
+    [
+      "Does PickWorth take money from OpenAI or Google?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "ChatGPT vs Gemini (2026): The Full Breakdown",
+    "desc": "ChatGPT vs Gemini, scored on everyday ability, the free tier, image and code, and cost. The two strongest consumer assistants, judged per dimension.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ChatGPT vs Gemini (2026): The Full Breakdown",
+      "url": "https://pickworthhq.com/comparisons/chatgpt-vs-gemini/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "ChatGPT vs Gemini",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ChatGPT"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Gemini"
+          }
+        ]
+      }
+    }
+  },
+  "head": {
+    "kicker": "Head-to-head",
+    "h1": "ChatGPT vs Gemini",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "ChatGPT vs Gemini",
+    "score": "4.5",
+    "score_class": "good",
+    "score_label": "ChatGPT score"
+  },
+  "toc": [
+    [
+      "compare",
+      "Side-by-side"
+    ],
+    [
+      "win",
+      "Where ChatGPT wins"
+    ],
+    [
+      "lose",
+      "Where Gemini wins"
+    ],
+    [
+      "cost",
+      "The cost question"
+    ],
+    [
+      "scenarios",
+      "Pick by scenario"
+    ]
+  ],
+  "verdict": "<p>Both are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a bigger add-on and integration surface, and the strongest coding agent story. Gemini is the stronger pick when your work lives inside Google's stack — the free tier is genuinely usable at higher limits, and it folds into the phone, the search box and the documents you already work in. Choose the one that matches where your work already happens, not the one with the louder benchmarks.</p>",
+  "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>ChatGPT (OpenAI)</th>\n          <th>Gemini (Google)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Free tier</td><td class=\"good\">Yes, useful but metered</td><td class=\"good\">Yes, higher daily allowance on most models</td></tr>\n        <tr><td>Consumer paid tier</td><td>$20 / month (Plus)</td><td>$20 / month (Google AI Pro)</td></tr>\n        <tr><td>Top consumer tier</td><td>$200 / month</td><td>$250 / month (Google AI Ultra)</td></tr>\n        <tr><td>Native integration</td><td>Standalone app + web</td><td class=\"good\">Search, Android, Docs, Workspace</td></tr>\n        <tr><td>Multimodal input</td><td class=\"good\">Text, audio, image in one conversation</td><td>Text, image; tight audio/video on some tiers</td></tr>\n        <tr><td>Coding agents</td><td class=\"good\">Deeper agent set (Codex, Code interpreter)</td><td>Strong coding, narrower agent tooling</td></tr>\n        <tr><td>Image generation</td><td class=\"good\">Built-in, widely available</td><td>Strong, plus Nano Banana line</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where ChatGPT wins</h2>\n    <p>On the width of what you can do without leaving the window, ChatGPT still leads. Its add-on and integration surface is deeper, the multimodal input is the most complete in the consumer set, and the coding agent lineup is more mature. For a day that mixes drafting, image-understanding, quick code and a bit of analysis, it is the safer all-rounder.</p>\n\n    <h2 id=\"lose\">Where Gemini wins</h2>\n    <p>On the free tier and on ecosystem depth inside Google, Gemini is the stronger tool. The free allowance is generous enough that a large share of users never need to pay, and the assistant is woven into the search box, the phone and the document suite — so the \"context\" you bring to it is often the stuff you already have. For teams that live in Workspace, that integration is the single biggest reason to choose it.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>At the $20 level the two are priced almost identically, so cost is not what separates them at the consumer entry. The difference shows up in two places: how far you get on free (Gemini, by a wide margin), and where the top tier lands (ChatGPT's upper consumer tier is cheaper than Google's Ultra). For most people the paid tier is a wash; for the price-sensitive half, the free tier decides it.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <p>If your work already runs on Google search, Android and the office suite, take Gemini and the integration is doing real work for you. If your day is a mix of casual drafting, image work and the occasional coding task outside of Google's stack, take ChatGPT. If you are choosing for a team that uses both, run the one that matches the majority of the work and keep the other as a second opinion on the hard problems.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The full breakdown, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "title": "ChatGPT vs Claude",
+      "blurb": "The reasoning and long-form winner.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "comparisons/index.html",
+      "title": "All comparisons",
+      "blurb": "Every head-to-head we have published.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "gemini vs chatgpt coding",
+    "chatgpt or gemini coding",
+    "which is better for coding gemini chatgpt",
+    "gemini chatgpt coding comparison"
+  ]
+}

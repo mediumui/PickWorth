@@ -1,0 +1,153 @@
+{
+  "slug": "claude",
+  "type": "review",
+  "section": "tools",
+  "answer": "Claude is the strongest assistant for long-form work, precise instruction-following, and sensitive material that needs an explicit safety stance. It trails ChatGPT on ecosystem depth.",
+  "key_answers": [
+    [
+      "Is Claude worth paying for?",
+      "Yes for long-document work: the $20/month Pro tier unlocks higher model limits, and it is the better pick when the work is long-form or needs strict instruction-following."
+    ],
+    [
+      "What is Claude best at?",
+      "Long-context reasoning, precise instruction-following, and a strong, explicit safety stance — ideal for sensitive material."
+    ],
+    [
+      "Where does Claude fall short?",
+      "Ecosystem depth: fewer integrations, no mobile voice, and a thinner plugin story than ChatGPT."
+    ],
+    [
+      "How much does Claude cost?",
+      "Free tier for light use; Pro at $20/month; Team and Enterprise on top."
+    ],
+    [
+      "What is PickWorth's overall score for Claude?",
+      "4.3 / 5 (good) — strongest for long-form, but the ecosystem gap is real."
+    ],
+    [
+      "Claude vs ChatGPT — which one?",
+      "Long documents and precise instructions: Claude. Everyday mixed work and multimodal: ChatGPT. See the head-to-head."
+    ],
+    [
+      "Does PickWorth take money from Anthropic?",
+      "No. Reviews are written by a single editorial team; pricing is verified from Anthropic's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Claude Review: Where It Pulls Ahead and Where It Doesn't (2026)",
+    "desc": "Claude review — where it beats other assistants on long documents and instruction-following, where the ecosystem gap is real, and what the tiers cost.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Claude",
+        "applicationCategory": "BusinessApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Anthropic"
+        }
+      },
+      "url": "https://pickworthhq.com/tools/claude/",
+      "datePublished": "2026-10-22",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.3",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Claude review",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "Claude",
+    "score": "4.3",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans &amp; what each unlocks"
+    ],
+    [
+      "cost",
+      "Real-world cost"
+    ],
+    [
+      "testing",
+      "Our testing notes"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Claude is the strongest general-purpose assistant when the work is long-form, when it needs to follow instructions precisely, or when you are dealing with material that is sensitive enough that you want a model with an explicit safety stance. It trails ChatGPT on ecosystem depth — fewer integrations, no mobile voice, a thinner plugin story. The enterprise adoption signal is strong: Ramp's card-spend data recorded the share of businesses paying for Anthropic products rise to 24.4 percent in February 2026, its largest single-month gain ever recorded for the company.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Claude is Anthropic's general-purpose assistant, available as a web app, a desktop app and through an API. Each generation of the underlying model family ships in three sizes named Haiku, Sonnet and Opus, with Opus being the most capable and Haiku the cheapest. The current top-tier model released to the public is named Fable, a variant of the company's more capable Mythos line; Mythos itself has only been rolled out to a small number of partner organizations as of late 2026.</p>\n    <p>The product is built around a long context window and a set of agentic companions: Claude Code is a terminal-based coding agent, Claude Cowork is a similar tool aimed at non-programmers, and an \"artifacts\" feature lets the assistant generate and interact with code snippets and documents inside the conversation.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Long-form work</h3>\n    <p>Claude is the assistant to reach for when the input is longer than a single message. The larger context window means a research document, a long codebase, or a full transcript stays usable rather than being cut. In our reading of the user threads, developers who migrate from a competitor usually do so specifically to stop hitting the context ceiling, and that is the single most consistent reason given.</p>\n    <h3>Instruction-following</h3>\n    <p>On a multi-step task where the constraints matter — \"do not invent a citation,\" \"keep every section under three hundred words,\" \"return JSON only\" — Claude is the most reliably literal assistant we tested. That is a narrow but real advantage, and it is the reason a lot of professional writing workflows run on it.</p>\n    <h3>The agentic tooling</h3>\n    <p>Claude Code and Claude Cowork are the strongest in-ecosystem agents currently on the market for terminal-based coding and task delegation respectively. They are the reason a lot of teams run both assistants in parallel and pick one per task rather than committing to a single tool.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <h3>Ecosystem depth</h3>\n    <p>There is no voice assistant in the mobile app at the level of the competing service, and the integration story is thinner. If your workflow depends on a wide set of add-ons, the ChatGPT side has more to work with.</p>\n    <h3>Cost on the top tier</h3>\n    <p>The highest-capability model is the most expensive per token of any of the major consumer offerings, and on a heavy daily load the difference against a tier one level down becomes a real line item. The tier structure means paying a lot more for a small capability gain past the middle tier.</p>\n    <h3>Confident but wrong</h3>\n    <p>Same failure mode as every other large model, and the same honest caveat: when the model is uncertain, it does not always say so. The safety stance makes it less likely to do something harmful, but it is not a substitute for verifying factual claims against a source.</p>\n\n    <h2 id=\"pricing\">Plans &amp; what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Plan</th><th>Price</th><th>What changes vs the tier below</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>Access to the Sonnet-tier model with standard limits</td></tr>\n        <tr><td>Pro</td><td>$20 / month</td><td>Higher limits, access to the best consumer model</td></tr>\n        <tr><td>Max</td><td>$100–200 / month</td><td>Several times the Pro limits; for heavy daily use</td></tr>\n        <tr><td>Team</td><td>from $30 / seat / month</td><td>Shared workspace, admin controls, data handling options</td></tr>\n      </tbody>\n    </table>\n    <p class=\"fineprint\">Prices from Anthropic's consumer pricing page, verified 22 October 2026. Max is billed in two tiers; Team is per-seat and billed annually.</p>\n\n    <h2 id=\"cost\">What it actually costs you</h2>\n    <p>For most people the free tier covers light use, and Pro is the natural first paid step. The Max tier is a different story: it is priced for a professional who runs the assistant all day, and the $100–$200 monthly is the price of not hitting a wall. If you only use the tool a handful of times a day, Pro is enough, and paying for Max is overpaying for capacity you will not use.</p>\n    <p>The hidden cost is the workflow migration. Moving from a competitor means re-learning a slightly different set of prompts and a different set of integrations. That is not a one-time cost if the long-context gain is real, but it is a real one if the gain is mostly the brand.</p>\n\n    <h2 id=\"testing\">Our testing notes</h2>\n    <p>We tested Claude on the Pro tier over a two-week window with the same three workloads we ran against ChatGPT: a first-draft email, a 40-page document summary, and a small JavaScript refactor. The email was finished in about a minute. The summary held the structure across the full document without the section-dropping we saw on the competitor. The refactor was clean within a file but the agent-style handoff was less polished than the dedicated coding tools.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Claude is the right assistant if your dominant task is long-form work or strict instruction-following, or if you want a model with an explicit safety posture for material that touches sensitive material. It is not the right tool if your workflow depends on a wide ecosystem of integrations, or if you want the most consumer-friendly all-around product. The two reasons to pick it are specific and worth acting on only if they match your actual work.</p>\n\n    <div class=\"callout\">\n      <h3>Before you pay</h3>\n      <p>Try the free tier for a week with your real workloads first. If the long-context gain is real, Pro is the next step; Max is only worth it once Pro is actually bottlenecking you. The difference between the two is usage ceiling, not capability.</p>\n    </div>",
+  "sources": [
+    "Anthropic — Claude pricing and plans — https://www.anthropic.com/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "title": "ChatGPT vs Claude",
+      "blurb": "Reasoning, coding, cost and context — side by side.",
+      "link": "Compare"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "Where it sets the pace, and where it falls short.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/index.html",
+      "title": "All tool reviews",
+      "blurb": "Everything we've tested so far.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "is claude worth it",
+    "claude worth paying for",
+    "claude 2026",
+    "claude pro worth it",
+    "claude cost",
+    "claude subscription price",
+    "claude pricing",
+    "claude free tier",
+    "claude review",
+    "claude pros cons",
+    "anthropic claude",
+    "claude vs chatgpt",
+    "claude vs deepseek"
+  ]
+}

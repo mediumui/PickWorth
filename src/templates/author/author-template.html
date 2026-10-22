@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{PAGE_TITLE}} | PickWorth</title>
+<meta name="description" content="{{META_DESC}}" />
+<meta name="robots" content="index, follow" />
+<meta property="og:site_name" content="PickWorth" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{PAGE_TITLE}}" />
+<meta property="og:description" content="{{META_DESC}}" />
+<meta property="og:image" content="https://pickworthhq.com/assets/img/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+
+<link rel="canonical" href="{{CANONICAL}}" />
+<link rel="stylesheet" href="{{ROOT}}assets/css/site.css" />
+<link rel="icon" type="image/svg+xml" href="{{ROOT}}assets/img/favicon.svg" />
+<script src="{{ROOT}}assets/js/device-ui.js" defer></script>
+</head>
+<body>
+{{CHROME_ICONS}}
+{{CHROME_HEADER}}
+
+<main class="wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ROOT}}index.html">Home</a><span class="sep"></span><a href="{{ROOT}}about/index.html">About</a><span class="sep"></span>{{AUTHOR_NAME}}
+  </nav>
+
+  <article class="post">
+    <header class="article-head">
+      <p class="kicker">{{KICKER}}</p>
+      <h1>{{H1}}</h1>
+      {{LEAD}}
+      <div class="meta">
+        <span>PickWorth Editorial</span>
+      </div>
+    </header>
+
+    {{BODY}}
+
+    {{RELATED}}
+  </article>
+</main>
+
+{{CHROME_FOOTER}}
+{{CHROME_MTAB}}
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+{
+  "slug": "the-20-dollar-rule",
+  "type": "blog",
+  "section": "blog",
+  "answer": "One $20 subscription covers most people's AI needs, a second earns its place only when it does a job the first one cannot, and anything beyond that needs a reason you can write in one sentence. The rule is the filter that stops the stack from turning into a subscription you never use.",
+  "key_answers": [
+    [
+      "What is the $20 rule?",
+      "One $20 subscription covers most people's AI needs. A second earns its place only when it does a job the first one cannot. Anything beyond that needs a reason you can write in one sentence."
+    ],
+    [
+      "How many AI subscriptions do I actually need?",
+      "For most people: one. A second only when a specific kind of work starts hurting — not a habit, a job you cannot do with the first one."
+    ],
+    [
+      "When does a second subscription earn its place?",
+      "When it does a job the first one cannot: a dedicated coding agent for refactors, a dedicated research tool for cited work, a dedicated image tool for styled work. Not a duplicate."
+    ],
+    [
+      "What should I do if I already have three?",
+      "Audit them: if two of them do the same job, drop the one you use less. The third should only stay if it does a job the other two cannot."
+    ],
+    [
+      "Does PickWorth take money from any vendor?",
+      "No. Reviews are written by a single editorial team; the rule is a filter, not a recommendation for a specific stack."
+    ]
+  ],
+  "meta": {
+    "title": "The $20 Rule: How Much to Spend on AI Tools",
+    "desc": "One $20 subscription covers most people's AI needs; a second earns its place only for a specific job. The rule we use to decide when to add a tool.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The $20 Rule: How Much to Spend on AI Tools",
+      "url": "https://pickworthhq.com/blog/the-20-dollar-rule/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "The $20 rule",
+    "lead": "<p class=\"lead\">A rule of thumb for AI tool spending that we use ourselves: one $20 subscription is the baseline, a second needs a job, and a third needs a reason that survives being written down.</p>",
+    "date": "22 October 2026",
+    "name": "The $20 rule"
+  },
+  "toc": [
+    [
+      "the-rule",
+      "The rule, stated plainly"
+    ],
+    [
+      "first",
+      "The first subscription"
+    ],
+    [
+      "second",
+      "The second needs a job"
+    ],
+    [
+      "third",
+      "The third needs a written reason"
+    ],
+    [
+      "exceptions",
+      "Where the rule does not apply"
+    ]
+  ],
+  "verdict": "<p>The rule: one $20 subscription covers most people's AI needs, a second earns its place only when it does a job the first one cannot, and anything beyond that needs a reason you can write in one sentence without using the word \"just\". Most people who think they need four tools need one, plus a free tier they are already underusing.</p>",
+  "body": "<h2 id=\"the-rule\">The rule, stated plainly</h2>\n    <p>AI tool spending has a failure mode, and it is not overspending — it is over-collecting. The tools are cheap enough that adding a subscription feels free, and each one is genuinely good at something, so the collection grows until the monthly total is a real number and the usage is spread so thin that no tool is doing a job well. The rule is a guard against that: one baseline, one job-specific addition, and after that the burden of proof moves to you.</p>\n\n    <h2 id=\"first\">The first subscription</h2>\n    <p>Pick one general assistant — ChatGPT Plus or Claude Pro — and pay for it. This is the baseline, and for most people it is also most of the answer: drafting, questions, code snippets, summaries, image understanding, the daily mix. Which of the two matters less than people spend time agonising over; both are strong, and the difference only becomes visible once you have real usage patterns to compare. Pick the one whose free tier you already drifted toward and move on.</p>\n\n    <h2 id=\"second\">The second needs a job</h2>\n    <p>The second subscription has to do something the first one demonstrably cannot, and \"it also does X\" is not a job — the first tool also does X. A real second-tool case sounds like: \"I spend two hours a week doing research and the answer engine's citations save most of it,\" or \"repository-scale refactors are a weekly thing and the dedicated agent turns an afternoon into a coffee break.\" Those are jobs. If you cannot name the job in a sentence, the second subscription is a hobby, not a tool.</p>\n\n    <h2 id=\"third\">The third needs a written reason</h2>\n    <p>Past two, the honest test is whether the reason survives being written down. Most do not: the third tool is usually the one that was impressive in a demo and has not been opened in three weeks. The free tiers are where this shows up most clearly, because the most underused tool in most people's stack is the free tier of something they already have — Perplexity's free level is a complete research instrument, and a surprising share of people paying for a second assistant have never run a week of real research through it.</p>\n\n    <h2 id=\"exceptions\">Where the rule does not apply</h2>\n    <p>Two honest exceptions. If you are building a product, the spending is not a subscription — it is a cost of goods, and the arithmetic is margin, not habit; start at the open-weights price floor and move up only where the quality gap costs you more than the tokens. And if the model has to live inside your own network, the tool choice is made by your compliance requirement, not by this rule — the operational weight is the price, and it is worth paying when the contract says so. Outside those two cases, the rule holds: one baseline, one job, and a strong preference for using what you already have.</p>",
+  "related": [
+    {
+      "icon": "i-method",
+      "tag": "Method",
+      "tag_class": "teal",
+      "href": "blog/why-prices-move/index.html",
+      "title": "Why prices move",
+      "blurb": "The repricing arc behind every price change.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/best-ai-research-tools/index.html",
+      "title": "Best AI research tools",
+      "blurb": "The research field, ranked by how you work.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/index.html",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "20 dollar ai rule",
+    "how much ai subscription",
+    "ai budget rule",
+    "ai subscription cost",
+    "how much for ai tools",
+    "ai tool subscription price"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "slug": "perplexity-vs-chatgpt",
+  "type": "compare",
+  "section": "comparisons",
+  "answer": "These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have your answer. ChatGPT is a general assistant: it does the rest. Pick by what you are doing, not by which one has the bigger model.",
+  "key_answers": [
+    [
+      "Perplexity or ChatGPT — which should I pick?",
+      "Cited research (you need the source): Perplexity. General assistant work: ChatGPT. They are not the same kind of tool."
+    ],
+    [
+      "What is Perplexity's one real advantage?",
+      "Citation: every answer links back to the source it was drawn from, so a research question that takes five tabs becomes one page."
+    ],
+    [
+      "Where does Perplexity fall short?",
+      "The free tier runs out of credits on a working day; the most-used models are metered."
+    ],
+    [
+      "Where does ChatGPT fall short?",
+      "It does not cite the way a research instrument should; you have to verify claims yourself."
+    ],
+    [
+      "Which is cheaper?",
+      "Both are available on free tiers; Perplexity's Pro tier is priced in line with the top tiers of the competing assistants."
+    ],
+    [
+      "What is PickWorth's call?",
+      "Route by the job: research → Perplexity; general assistant work → ChatGPT. Score per dimension, not by benchmark alone."
+    ],
+    [
+      "Do I need both?",
+      "For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule."
+    ],
+    [
+      "Does PickWorth take money from Perplexity or OpenAI?",
+      "No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages."
+    ]
+  ],
+  "meta": {
+    "title": "Perplexity vs ChatGPT (2026): Search, Sources and the Right Job",
+    "desc": "Perplexity vs ChatGPT: the answer engine that cites its sources against the general assistant that does the rest. Where each wins, and what each costs.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Perplexity vs ChatGPT (2026): Search, Sources and the Right Job",
+      "url": "https://pickworthhq.com/comparisons/perplexity-vs-chatgpt/",
+      "datePublished": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Perplexity vs ChatGPT",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Perplexity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ChatGPT"
+          }
+        ]
+      }
+    }
+  },
+  "head": {
+    "kicker": "Head-to-head",
+    "h1": "Perplexity vs ChatGPT",
+    "lead": "",
+    "date": "22 October 2026",
+    "name": "Perplexity vs ChatGPT",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Perplexity score"
+  },
+  "toc": [
+    [
+      "compare",
+      "Side-by-side"
+    ],
+    [
+      "win",
+      "Where Perplexity wins"
+    ],
+    [
+      "lose",
+      "Where ChatGPT wins"
+    ],
+    [
+      "cost",
+      "The cost question"
+    ],
+    [
+      "scenarios",
+      "Pick by scenario"
+    ]
+  ],
+  "verdict": "<p>These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have a sourced answer and a list of where that answer came from. ChatGPT is a general assistant that can also search, and its job is usually to produce something — a draft, a table, a script, a plan. If your day is mostly finding out what is true, Perplexity earns its tier. If your day is mostly making things, the answer is the general assistant and the search feature is a bonus, not the point.</p>",
+  "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>Perplexity</th>\n          <th>ChatGPT (OpenAI)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Core job</td><td class=\"good\">Answer a question with sources</td><td class=\"good\">Produce things: drafts, code, plans</td></tr>\n        <tr><td>Citations</td><td class=\"good\">Every answer links its sources</td><td>Searches when it chooses to; not source-first</td></tr>\n        <tr><td>Web search</td><td class=\"good\">Always on, the default mode</td><td>On when enabled or needed</td></tr>\n        <tr><td>Free tier</td><td class=\"good\">Quick searches, generous for research</td><td>Yes, but metered on the strong models</td></tr>\n        <tr><td>Paid tier</td><td>~$20 / month (Pro)</td><td>$20 / month (Plus)</td></tr>\n        <tr><td>Long documents</td><td>Good for research, not for writing them</td><td class=\"good\">Stronger on long-form generation</td></tr>\n        <tr><td>Coding</td><td>Weak — not the tool for it</td><td class=\"good\">The better of the two by a wide margin</td></tr>\n        <tr><td>Data retention</td><td class=\"good\">Incognito mode on free tier</td><td>Settings; retention is a config question</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where Perplexity wins</h2>\n    <p>On anything that starts with \"what is\" or \"which is\", Perplexity is the faster path. The answer arrives with its sources attached, which means you can check the claim instead of trusting the model's confidence, and the free tier is generous enough that a research-heavy month costs nothing. For reading around a topic — the kind of work that used to mean twelve tabs and a scratchpad — it collapses the loop into one window. That is a genuinely different job from what the assistants do, and it does it better than either of them.</p>\n\n    <h2 id=\"lose\">Where ChatGPT wins</h2>\n    <p>On everything after the research. Once you know what is true, the work is usually to make something from it — a summary, a table, a script, an email — and the general assistant is materially better at the making. It also holds a much larger context for long documents, and its coding ability is not close. The practical pattern is to use Perplexity to find out and ChatGPT to act on it; running the whole job through either one alone leaves you doing the other half by hand.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>Both sit at the same $20 consumer tier, so the decision is rarely about the price. The difference is in what the free tier gives you: Perplexity's free tier is a usable research tool on its own, while ChatGPT's free tier meters you off the strong models quickly. If you are choosing one subscription, the honest question is whether you need a research instrument or a production tool — and if you need both, the two together cost less than one top-tier assistant subscription.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <p>Choose Perplexity if your week is heavy on reading, fact-checking, and keeping up with a fast-moving field, and if you value being able to check a source in one click. Choose ChatGPT if your week is heavy on writing, coding and working from documents you already have. If you are a student, a researcher or an analyst, Perplexity is the one that earns its subscription first. If you are a writer, a developer or an operator, the general assistant is the one you would keep if you could only keep one.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/perplexity/index.html",
+      "title": "Perplexity review",
+      "blurb": "The answer engine, alone.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Guide",
+      "tag_class": "",
+      "href": "lists/best-ai-research-tools/index.html",
+      "title": "Best AI research tools",
+      "blurb": "The research field, ranked by the job.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "teal",
+      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "title": "ChatGPT vs Claude",
+      "blurb": "The other half of the assistant argument.",
+      "link": "Compare"
+    }
+  ],
+  "search_terms": [
+    "perplexity vs chatgpt",
+    "perplexity or chatgpt",
+    "perplexity chatgpt comparison",
+    "which is better perplexity chatgpt",
+    "perplexity chatgpt research"
+  ]
+}
