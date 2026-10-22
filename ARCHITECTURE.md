@@ -1,6 +1,6 @@
 # PickWorth — 网站架构
 
-> 英文 AI 工具测评 + 对比站（`pickworthhq.com`）。静态站，零构建，Cloudflare Pages 自动部署。
+> 英文 AI 工具测评 + 对比站（`pickworth.top`）。静态站，零构建，Cloudflare Pages 自动部署。
 > 本文是项目的"架构说明书"，落地目录即 `D:\WorkBuddy\pickworthhq\`。
 
 ---
@@ -217,7 +217,7 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 - **动笔前先搜满 5 篇第三方，提炼完再写**，避免"满篇官网腔"。
 
 ### 9.3 Sources 引用策略（少而精）
-- `sources` 只留**第一方 / 厂商官网** URL（产品自身价格页 / 文档页）；**不写** pickworthhq.com 站内自引用；**不用**裸 API 端点。
+- `sources` 只留**第一方 / 厂商官网** URL（产品自身价格页 / 文档页）；**不写** pickworth.top 站内自引用；**不用**裸 API 端点。
 - **非 tools 页**（comparisons / lists / blog）一般**不带** `sources` → 渲染器自动省略 Sources 区块。
 - 每条 source 必须是 `Label — https://url`（末位 token 为合法绝对 URL），否则 `_validate_sources` 渲染前 `SystemExit`。
 

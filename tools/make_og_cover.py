@@ -78,7 +78,7 @@ def main() -> None:
            font=font("georgia", 30), fill=INK2)
 
     # --- footer ---
-    d.text((MARGIN, 500), "pickworthhq.com",
+    d.text((MARGIN, 500), "pickworth.top",
            font=font("georgia", 26), fill=INK2)
     d.rectangle([MARGIN, H - 74, MARGIN + 120, H - 68], fill=ACCENT)
 

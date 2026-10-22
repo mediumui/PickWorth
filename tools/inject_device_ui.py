@@ -17,7 +17,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://pickworthhq.com"
+BASE = "https://pickworth.top"
 
 def depth_of(p: Path) -> int:
     return len(p.relative_to(ROOT).parts) - 1  # 0 for root

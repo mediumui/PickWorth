@@ -13,13 +13,13 @@ Output:
 
 Placement: drop both files at the site ROOT (D:/WorkBuddy/pickworthhq).
 Serving: Cloudflare Pages serves any file at / as-is; AI crawlers fetch
-https://pickworthhq.com/llms.txt directly. No robots change needed
+https://pickworth.top/llms.txt directly. No robots change needed
 (llms.txt is an open convention; leave robots.txt allowing /).
 """
 import json, glob, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://pickworthhq.com"
+BASE = "https://pickworth.top"
 
 SECTION_TITLE = {
     "tools": "Tool Reviews",
@@ -67,7 +67,7 @@ def build_llms(rows):
         "> Honest, price-verified verdicts, head-to-head comparisons, and best-of "
         "lists, written by a single editorial team.",
         "> No ads in reviews, no paid placement. Method: "
-        "https://pickworthhq.com/blog/how-we-test-ai-tools/",
+        "https://pickworth.top/blog/how-we-test-ai-tools/",
         "",
         "## Core Pages",
         f"- [Home]({BASE}/): Know which AI tools are actually worth paying for.",

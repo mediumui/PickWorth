@@ -1,6 +1,6 @@
 # PickWorth GEO 审计诊断（生成式引擎优化）
 
-- 站点：https://pickworthhq.com（AI 工具评测独立站，Cloudflare Pages 零构建，全站 28 个索引页）
+- 站点：https://pickworth.top（AI 工具评测独立站，Cloudflare Pages 零构建，全站 28 个索引页）
 - 审计日期：2026-10-22
 - 审计对象：20 篇内容页（tools 5 / comparisons 5 / lists 5 / blog 5）+ 7 个手写页 + 404
 - 结论一句话：**结构化数据与 OG/Twitter 卡片已到位（上轮 SEO 完成），但 GEO（被 AI 答案引擎"看到并被引用"）的核心信号几乎全部缺失——最致命的是"权威外部引用"与"FAQ/QA 结构"两条主线，整站 0 页触发。**
