@@ -1,0 +1,34 @@
+<!--
+_ANALYTICS.html — site-wide Google Analytics (gtag.js) snippet.
+
+This file is the SINGLE SOURCE OF TRUTH for the analytics code on every
+page of the site. Edit the measurement ID here, then run:
+
+    python tools/sync_analytics.py
+
+which replaces the fixed GA block in the <head> of every live page
+(index pages + 404.html + content/published + src/templates). It is
+idempotent: re-running produces byte-identical files, and the block is
+matched on the gtag.js <script src> line, so a later ID change here
+re-syncs cleanly without ever drifting.
+
+WHY THIS IS A SEPARATE COMPONENT FROM _chrome.html
+----------------------------------------------------
+sync_chrome.py (and l4_render.py) treat _chrome.html as the only source
+of truth for the four *body* chrome regions (icon sprite, header,
+footer, mobile tab bar) and run `--check` to fail on drift. GA lives in
+the <head>, which sync_chrome.py deliberately never touches. Keeping the
+analytics block in its own file + its own sync tool means:
+  * sync_chrome.py --check stays green (its 4 regions are unchanged);
+  * the site keeps its "edit one place, every page updates" convention;
+  * a GA ID/flag change is one edit + one command, not 30 files.
+-->
+<!-- analytics:start -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WV775YD52J');
+</script>
+<!-- analytics:end -->

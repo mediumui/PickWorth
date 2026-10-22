@@ -474,6 +474,19 @@ def fill(tpl: str, draft: dict, root: str, chrome: dict) -> str:
             frag = _strip_comments((ROOT / path).read_text(encoding="utf-8"))
             out = out.replace(marker, frag)
 
+    # ---- analytics: the GA snippet is a site-wide constant kept in
+    #      src/components/_analytics.html (single source of truth). It is
+    #      injected into every rendered page's <head> here, and into the
+    #      hand-written pages by tools/sync_analytics.py, so a GA ID change
+    #      is one edit + one command. The block carries no {{ROOT}}-relative
+    #      paths (it loads from googletagmanager.com), so it is identical at
+    #      any page depth. ----
+    if "{{ANALYTICS}}" in out:
+        out = out.replace("{{ANALYTICS}}",
+                          _strip_comments((ROOT / "src/components/_analytics.html").read_text(encoding="utf-8")).strip())
+    else:
+        out = out.replace("{{ANALYTICS}}", "")
+
     # ---- fill the component slots now that the fragments are in place ----
     out = out.replace("{{SOURCES_LIST}}", _sources_list(draft.get("sources", []), root))
     out = out.replace("{{RELATED_CARDS}}", _related_cards(draft.get("related", []), root))
