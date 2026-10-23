@@ -61,20 +61,20 @@
 
 ## 4. 内容数据流：从关键词到静态页
 
-整条流水线（`tools/` 里的脚本）产出**关键词与素材**，**我（本子 agent）负责把素材写成英文正文**，
+整条流水线（`site/scripts/` 里的脚本）产出**关键词与素材**，**我（本子 agent）负责把素材写成英文正文**，
 再渲染成静态页。分工如下：
 
 ```
-L0  动态种子     l0_seed_fetch.py   HF 新模型 + PH 新工具  →  tools/seed-pool.json
+L0  动态种子     site/scripts/l0_seed_fetch.py   HF 新模型 + PH 新工具  →  site/data/seed-pool.json
                       │ （免费源，天天有新词）
-L1  扩词+打分   l1_kwinside_scorer.py  用 Kwinside 拉相关词+月搜索量，
-                      │                按 量/长尾/商业意图 打分排序  →  tools/keyword-pool.csv
+L1  扩词+打分   site/scripts/l1_kwinside_scorer.py  用 Kwinside 拉相关词+月搜索量，
+                      │                按 量/长尾/商业意图 打分排序  →  site/data/keyword-pool.csv
 L2  素材可写性  门槛：该词对应的工具/模型 要有 官方 docs + ≥5 篇第三方测评
                       │                （越多越好）；不满足则换词
 L3  写正文       我  提炼 20+ 素材 → 优点/缺点/对比表/结论/配图清单/内链（英文）
                       │                落到  content/drafts/{slug}.json 或 .md
 L4  合规+渲染   合规自检（合成非拼贴、配图官方/自制、出处标注）
-                       渲染成  content/published/{slug}/index.html
+                       site/scripts/l4_render.py 渲染成  content/published/{slug}/index.html
                        Cloudflare Pages 自动部署
 ```
 
@@ -101,10 +101,17 @@ pickworthhq/
 ├── src/
 │   ├── templates/{reviews,compare,lists,blog,author}/   各类页面模板
 │   └── components/            可复用 HTML 片段（对比表、来源列表、广告位…）
-├── tools/
-│   ├── l0_seed_fetch.py       L0 动态种子（HF + PH）
-│   ├── l1_kwinside_scorer.py  L1 Kwinside 扩词打分（key 已按要求写死在脚本内）
-│   └── (未来) l2_material_gate.py / l4_render.py
+├── tools/                          栏目页（线上）+ 各评测页
+│   ├── index.html                 /tools/ 栏目索引
+│   └── {slug}/index.html          /tools/{slug}/ 单工具测评页
+├── site/                           脚本与数据（不上线，本地构建用）
+│   ├── scripts/                   全部 .py 构建/运维脚本
+│   │   ├── l0_seed_fetch.py       L0 动态种子（HF + PH）
+│   │   ├── l1_kwinside_scorer.py  L1 Kwinside 扩词打分（key 已按要求写死在脚本内）
+│   │   ├── l4_render.py           L4 合规+渲染（见 §5）
+│   │   └── (sync_chrome / verify_refs / gen_llms_txt 等)
+│   ├── data/                      keyword-pool / citation_monitor / probe_queries / research/
+│   └── docs/                      citation_probe / rag_recall_report 等报告
 ├── sitemap.xml
 ├── robots.txt
 └── ads.txt
@@ -118,9 +125,9 @@ L4 把 `content/drafts/` 里的正文 + 对比数据填进模板 → 生成 `con
 > - `src/components/_chrome.html`（图标 sprite + header + footer + 移动端底部 tab，四块命名片段）
 > - `src/components/_ad-slot.html` / `_compare-table.html` / `_sources.html` / `_related.html`
 > - 六类模板 `src/templates/{reviews,compare,lists,blog,author}/`，用 `{{...}}` 占位 + `{{CHROME_*}}` / `{{AD_SLOT_*}}` / `{{SOURCES}}` / `{{RELATED}}` 插槽
-> - `tools/l4_render.py`：读 `content/drafts/{slug}.json` → 填模板 → 写 `content/published/{section}/{slug}/index.html` 并同步到线上目录树。`{{ROOT}}` 前缀按目标深度自动补 `../`。
-> - `tools/draft_from_page.py`：把已写好的线上页反向抽回 draft JSON，让旧文章也能走新流水线。
-> - `tools/sync_chrome.py`：让 `_chrome.html` 成为**全站** chrome 的唯一来源（见 §5.1）。
+> - `site/scripts/l4_render.py`：读 `content/drafts/{slug}.json` → 填模板 → 写 `content/published/{section}/{slug}/index.html` 并同步到线上目录树。`{{ROOT}}` 前缀按目标深度自动补 `../`。
+> - `site/scripts/draft_from_page.py`：把已写好的线上页反向抽回 draft JSON，让旧文章也能走新流水线。
+> - `site/scripts/sync_chrome.py`：让 `_chrome.html` 成为**全站** chrome 的唯一来源（见 §5.1）。
 > 全站 28 页由模板/同步产出（`verify_refs` 28 页全过、0 中文、0 emoji、`robots=index`）。
 
 ---
@@ -132,9 +139,9 @@ L4 把 `content/drafts/` 里的正文 + 对比数据填进模板 → 生成 `con
 
 ```
 编辑 src/components/_chrome.html
-python tools/sync_chrome.py          # 全站页内替换
-python tools/sync_chrome.py --check  # CI / 提交前用：有页过期就 exit 1
-python tools/sync_chrome.py --dry-run # 只看会动哪些文件，不落盘
+python site/scripts/sync_chrome.py          # 全站页内替换
+python site/scripts/sync_chrome.py --check  # CI / 提交前用：有页过期就 exit 1
+python site/scripts/sync_chrome.py --dry-run # 只看会动哪些文件，不落盘
 ```
 
 **机制**：每个页面在四块 chrome 区域外侧带标记注释，脚本把标记之间的内容替换成
@@ -181,7 +188,7 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 ## 7. 部署与变现
 
 - **部署**：Cloudflare Pages，根目录 = 站点根。push 到 Git 仓库即自动重新部署（静态、零构建）。
-  仓库可只放**生成产物 + 静态页**，`tools/` 的挖词脚本与 key 留在本地（不进公开仓库）。
+  仓库只放**生成产物 + 静态页**，`site/`（脚本 + 数据 + 报告）不上线；挖词 key 留在 `site/scripts/` 内（不进公开仓库）。
 - **广告**：`ads.txt` 声明 AdSense 域；上线稳定流量后把 `.ad-slot` 占位换成 AdSense 代码。
 - **联盟**：footer 已写披露；工具链接优先指**免费档**，付费/联盟链接做 `rel="sponsored"` 并就近披露。
 
@@ -223,16 +230,16 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 
 ### 9.4 新增工具页 7 步清单（一次做齐，别漏）
 1. 写 draft → `content/drafts/{slug}.json`
-2. `python tools/l4_render.py --slug {slug}`（出 live 页 + published）
+2. `python site/scripts/l4_render.py --slug {slug}`（出 live 页 + published）
 3. `tools/index.html` 加 "Covered so far" 入口行（Journal 篇改 `blog/index.html` 加 "Latest notes" 行）。**排序约定：栏目"Covered/Latest"列表一律最新在前**——新页插在列表最顶端（`tools/index.html` 是 `div.rowlist` 第一个 `<a>`，`blog/index.html` 同理）。新会话加页时把入口行放到最上面，不要追加到底部。
 4. `sitemap.xml` 加 `<url>` 条目
-5. `python tools/sync_chrome.py`（`--check` 归 0 漂移）
-6. `python tools/verify_refs.py`（0 断链）
-7. `python tools/gen_llms_txt.py --full`（默认只写 llms.txt，**必须带 `--full`** 才写 llms-full.txt）
+5. `python site/scripts/sync_chrome.py`（`--check` 归 0 漂移）
+6. `python site/scripts/verify_refs.py`（0 断链）
+7. `python site/scripts/gen_llms_txt.py --full`（默认只写 llms.txt，**必须带 `--full`** 才写 llms-full.txt）
 
 ### 9.5 标题与配图
 - 标题**逐篇手写**，不套公式、不夸大、保持站调性（带判断的陈述 + 反转钩子），核心词只进 H1 一次不堆砌。
-- 配图**按需不硬塞**：数据 / 文字 / 排版图（额度表、能力阶梯）→ 本地 SVG/HTML 手绘（与 `hero-*.svg` 同风格，数字可控）；纯氛围 og 图才用 AI 生图（帧刻 `tools/vidshell_image_gen.py`，Bearer 走 `VIDSHELL_VK` 运行时注入，不落盘）。
+- 配图**按需不硬塞**：数据 / 文字 / 排版图（额度表、能力阶梯）→ 本地 SVG/HTML 手绘（与 `hero-*.svg` 同风格，数字可控）；纯氛围 og 图才用 AI 生图（帧刻 `site/scripts/vidshell_image_gen.py`，Bearer 走 `VIDSHELL_VK` 运行时注入，不落盘）。
 
 ### 9.6 平台免费政策快照（2026-10-22 官网核实，易变，写前复查）
 - **Agnes**（agnes-ai.cn / agnes-ai.com）：**需 API key**（注册后 dashboard 生成 Bearer key，OpenAI 兼容）；三大核心模型（agnes-2.0-flash 文本 / agnes-image-2.0+flash 图像 / agnes-video-v2.0 视频）**API 无限期免费、无 Token/配额上限，仅限 RPM**；1M 上下文高峰限速至 512K；Pro 模型（Agnes-2.5-Pro-Alpha）付费（$0.45/$0.90 每百万 Token）。国内站 2026-07-29 启用 `agnes-ai.cn`，端点 `api.agnes-ai.cn/v1`；国际站 `apihub.agnes-ai.com/v1`。免费本身即卖点，**不拆 Journal**。

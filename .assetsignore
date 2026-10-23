@@ -12,15 +12,11 @@ content
 src
 out
 
-# tools/ 目录下既有线上栏目页（tools/index.html + tools/{slug}/index.html，10 个），
-# 也有内部挖词脚本 / 关键词池 / 草稿研究。站点页要上线，脚本与数据一律排除。
-# 先排除 tools/ 下所有非 index.html 的内部产物：
-tools/**/*.py
-tools/**/*.csv
-tools/**/*.md
-tools/**/*.json
-tools/research/
-tools/probe_queries.txt
+# 内部脚本 / 数据 / 报告 已全部迁到 site/（2026-10-23 拆分）：
+#   site/scripts/*.py  site/data/  site/docs/
+# 整目录排除，绝不随 Cloudflare 部署上线（含 l1 写死的 Kwinside API key 等敏感信息）。
+# 线上 10 个工具页现在全在根 tools/（纯 HTML，不匹配下面规则，照常上线）。
+site/
 
 # 部署 / 构建配置（本身不属于站点，避免出现在线上）
 wrangler.jsonc
