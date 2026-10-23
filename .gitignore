@@ -5,6 +5,12 @@ desktop.ini
 *.tmp
 ~$*
 
+# ===== 内部脚本 / 数据 / 报告（不上 git，含 API key 等敏感信息）=====
+# 构建/运维流水线：l4_render、sync_chrome、verify_refs、gen_llms_txt、l0~l2、
+# rag_recall、vidshell_image_gen 等 + 关键词池 / 引用监控 / L2 素材 / 报告。
+# 本地保留（脚本要跑），但绝不进 GitHub。部署侧由 .assetsignore 同步排除。
+site/
+
 # ===== Python (tools/*.py) =====
 __pycache__/
 *.py[cod]
