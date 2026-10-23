@@ -10,8 +10,17 @@
 # （最终静态页已同步到顶层 about/blog/lists/tools/comparisons，不依赖 content/）
 content
 src
-tools
 out
+
+# tools/ 目录下既有线上栏目页（tools/index.html + tools/{slug}/index.html，10 个），
+# 也有内部挖词脚本 / 关键词池 / 草稿研究。站点页要上线，脚本与数据一律排除。
+# 先排除 tools/ 下所有非 index.html 的内部产物：
+tools/**/*.py
+tools/**/*.csv
+tools/**/*.md
+tools/**/*.json
+tools/research/
+tools/probe_queries.txt
 
 # 部署 / 构建配置（本身不属于站点，避免出现在线上）
 wrangler.jsonc
