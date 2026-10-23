@@ -17,7 +17,11 @@ for p in sorted(pages):
     for r in refs:
         if r.startswith("mailto:") or r.startswith("http"):
             continue
-        target = (p.parent / r).resolve()
+        # site-root absolute refs ("/assets/...") resolve against the site root,
+        # not the page's parent dir; CF Pages serves assets.directory (./) as
+        # the web root, so "/x" -> ROOT/"x".
+        base = ROOT if r.startswith("/") else p.parent
+        target = (base / r.lstrip("/")).resolve()
         if not target.exists():
             print("MISSING:", p.relative_to(ROOT), "->", r)
             bad += 1
