@@ -13,7 +13,7 @@ Usage:
 """
 import argparse, glob, html, json, math, os, re, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def extract_text(path):

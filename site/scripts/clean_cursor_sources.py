@@ -8,7 +8,7 @@
 """
 import json, os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path = os.path.join(ROOT, "content", "drafts", "open-source-cursor-alternatives.json")
 d = json.load(open(path, encoding="utf-8"))
 

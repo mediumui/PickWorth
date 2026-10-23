@@ -63,7 +63,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 COMPONENTS = ROOT / "src" / "components" / "_chrome.html"
 TEMPLATES = ROOT / "src" / "templates"
 DRAFTS = ROOT / "content" / "drafts"

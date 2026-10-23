@@ -54,7 +54,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 CHROME_SRC = ROOT / "src" / "components" / "_chrome.html"
 
 # region name -> (block opening tag, block closing tag)

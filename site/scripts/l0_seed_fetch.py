@@ -171,7 +171,7 @@ def main() -> None:
     ap.add_argument("--hf-newest", type=int, default=40, help="newest HF models to pull")
     ap.add_argument("--hf-trending", type=int, default=40, help="trending HF models to pull")
     ap.add_argument("--ph-days", type=int, default=7, help="Product Hunt lookback window (days)")
-    ap.add_argument("--out", default="tools/seed-pool.json")
+    ap.add_argument("--out", default="site/data/seed-pool.json")
     args = ap.parse_args()
 
     now = datetime.now(timezone.utc)
@@ -197,10 +197,12 @@ def main() -> None:
         "count": len(pool),
         "seeds": pool,
     }
-    out_path = Path(__file__).parent / args.out
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2))
-    print(f"\nWrote {out_path.resolve()} with {len(pool)} unique seed candidates.")
+    out_p = Path(args.out)
+    if not out_p.is_absolute():
+        out_p = ROOT / out_p
+    out_p.parent.mkdir(parents=True, exist_ok=True)
+    out_p.write_text(json.dumps(out, ensure_ascii=False, indent=2))
+    print(f"\nWrote {out_p.resolve()} with {len(pool)} unique seed candidates.")
     print("\nTop 15 seeds (by source, most recent first):")
     for s in pool[:15]:
         print(f"  [{s['kind']:<6}] {s['name'][:48]:<48} src={s['source']:<16} pub={str(s.get('published',''))[:10]}")

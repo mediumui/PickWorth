@@ -188,7 +188,7 @@ def main() -> None:
 
     out_path = Path(args.out)
     if not out_path.is_absolute():
-        out_path = (Path(__file__).parent / out_path)
+        out_path = ROOT / out_path
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)

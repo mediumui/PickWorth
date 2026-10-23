@@ -12,7 +12,7 @@ Run from the site root:  python tools/make_og_cover.py
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "assets" / "img" / "og-cover.png"
 
 PAPER = (250, 248, 243)      # --paper   #faf8f3

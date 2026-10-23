@@ -20,7 +20,7 @@ Mapping (tool -> its official pricing/docs page):
 """
 import json, os, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 D = os.path.join(ROOT, "content", "drafts")
 
 VENDOR = {

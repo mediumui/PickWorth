@@ -18,7 +18,7 @@ https://www.pickworth.top/llms.txt directly. No robots change needed
 """
 import json, glob, os, re, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BASE = "https://www.pickworth.top"
 
 SECTION_TITLE = {

@@ -27,8 +27,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_OUT = "tools/keyword-pool.csv"
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUT = "site/data/keyword-pool.csv"  # relative to site root
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")

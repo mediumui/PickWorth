@@ -4,7 +4,7 @@ into clean 'Name - GitHub - url' citation strings (one authoritative repo URL
 per tool). Replaces the messy intermediate from clean_cursor_sources.py."""
 import json, os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path = os.path.join(ROOT, "content", "drafts", "open-source-cursor-alternatives.json")
 d = json.load(open(path, encoding="utf-8"))
 

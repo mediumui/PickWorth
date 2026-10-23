@@ -5,7 +5,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 pages = [p for p in ROOT.rglob("*.html")
          if p.name in ("index.html", "404.html")
          and "content" not in p.parts and "src" not in p.parts

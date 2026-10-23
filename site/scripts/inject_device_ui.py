@@ -16,7 +16,7 @@ Run from site root:  python tools/inject_device_ui.py
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 BASE = "https://www.pickworth.top"
 
 def depth_of(p: Path) -> int:

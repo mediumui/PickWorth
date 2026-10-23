@@ -27,8 +27,8 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-RESEARCH = ROOT / "tools" / "research"
+ROOT = Path(__file__).resolve().parents[2]
+RESEARCH = ROOT / "site" / "data" / "research"
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
