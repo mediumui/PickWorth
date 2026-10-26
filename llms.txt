@@ -11,6 +11,7 @@
 - [Best-Of Lists](https://www.pickworth.top/lists/): Buyer's guides that pick the right tool by your actual job, not the loudest marketing.
 - [Journal](https://www.pickworth.top/blog/): Essays on how we test, why prices move, and when open source matters.
 - [About](https://www.pickworth.top/about/): Editorial standards, who funds the site, and why funding never touches the verdicts.
+- [Privacy](https://www.pickworth.top/privacy/): What we collect, how cookies and advertising work, and your privacy rights.
 - [Contact](https://www.pickworth.top/contact/): Report an error or request a comparison.
 
 ## Tool Reviews
