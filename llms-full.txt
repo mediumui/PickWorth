@@ -5,122 +5,122 @@
 ## Tool Reviews
 
 ### Agnes: Text, Image and Video Through One API, Free
-URL: https://www.pickworth.top/tools/agnes/index.html
+URL: https://www.pickworth.top/tools/agnes/
 Updated: 22 October 2026
 Answer: Agnes is a Singapore-based AI lab (Sapiens AI's product) that makes its three core model families text, image and video available through one OpenAI-compatible API that is free to call indefinitely. You need an API key, but there is no token or request cap, only a per-minute rate limit. It is strongest on front-end and prototyping work and on image/video generation, and weakest on high-complexity pure-logic reasoning; its published benchmark numbers are the lab's own internal evaluations, not independent ones.
 Citation: Agnes is the rare free offering that does not cap you: its three core model families text, image and video are all reachable through one OpenAI-compatible API that you can call indefinitely with no token limit, gated only by a per-minute request ceiling. It is genuinely strong at the stage of work most people actually use AI for, prototyping: front-end pages, small interactive tools, instruction-based image editing and fast video. It is weakest at the two ends high-complexity pure-logic reasoning and very-long-context stability and the strongest benchmark numbers it advertises are the lab's own internal evaluations rather than independent scores. For the majority of use, that is a 4.0: exceptional value at the price point of free, with real caps on the top-end reasoning work that frontier models still own.
 
 ### ChatGPT: the Default, With the Free Tier That Actually Ends
-URL: https://www.pickworth.top/tools/chatgpt/index.html
+URL: https://www.pickworth.top/tools/chatgpt/
 Updated: 22 October 2026
 Answer: ChatGPT is the most broadly useful general-purpose AI assistant on the consumer market: it leads on multimodal input, ecosystem depth, and everyday writing, and the $20 Plus tier is worth it for most individual users.
 Citation: ChatGPT is the most broadly useful general-purpose AI assistant on the consumer market, and it is not close. It leads on multimodal input, on integration depth with the wider OpenAI ecosystem, and on everyday writing. It lags on long-document reasoning, where Claude has the edge, and peak-hour usage caps on the free tier are the most consistent complaint across the user base we read.
 
 ### Claude Wins Long-Form and Loses the Daily Quick Job
-URL: https://www.pickworth.top/tools/claude/index.html
+URL: https://www.pickworth.top/tools/claude/
 Updated: 22 October 2026
 Answer: Claude is the strongest assistant for long-form work, precise instruction-following, and sensitive material that needs an explicit safety stance. It trails ChatGPT on ecosystem depth.
 Citation: Claude is the strongest general-purpose assistant when the work is long-form, when it needs to follow instructions precisely, or when you are dealing with material that is sensitive enough that you want a model with an explicit safety stance. It trails ChatGPT on ecosystem depth fewer integrations, no mobile voice, a thinner plugin story. The enterprise adoption signal is strong: Ramp's card-spend data recorded the share of businesses paying for Anthropic products rise to 24.4 percent in February 2026, its largest single-month gain ever recorded for the company.
 
 ### Cursor Review 2026: Best for Daily Coding, Until the Credits Run Out
-URL: https://www.pickworth.top/tools/cursor/index.html
+URL: https://www.pickworth.top/tools/cursor/
 Updated: 26 October 2026
 Answer: Cursor is a VS Code-based AI editor that leads on Tab autocomplete, whole-codebase context, and model choice, but its credit-based billing and the need to verify the agent's output mean it pays off most for working developers who code across many files.
 Citation: Cursor is the AI coding editor to use in 2026 if you write code for a living and your work lives across many files, because nothing else in the IDE class matches its Tab completion, its Composer multi-file diffs, or its read of the whole repository. The score is 4.2 rather than higher for one reason that comes up in every source we read: the billing. The 2025 move to credits cut effective capacity sharply, overages bill on demand, and the vendor's own recommendation of a $60 tier for daily users tells you the $20 Pro plan is thin for heavy agent work. Pair that with the fact that the agent is confident but not correct, that code leaves your machine for third-party models, and that there is no offline mode, and the tool demands an adult in the chair. Our call: start on the free Hobby tier for a real two-week test, move to Pro when Composer earns it, and keep an eye on the usage dashboard so a heavy week does not become a surprise invoice. It is the best all-round editor for daily coding, not a replacement for judgment, and not the tool to hand unsupervised work on a regulated or security-sensitive codebase.
 Key numbers: $60; $20
 
 ### DeepSeek: the Price Floor of AI Coding
-URL: https://www.pickworth.top/tools/deepseek/index.html
+URL: https://www.pickworth.top/tools/deepseek/
 Updated: 22 October 2026
 Answer: DeepSeek is the open-weights model that has kept the frontier price floor low since R1 in early 2025: a free chat tier for experimentation, and a paid API where Flash (the workhorse) and Pro (the hardest calls) are the two models you actually route to.
 Citation: DeepSeek is the open-weights model that has kept the frontier price floor low since its R1 reasoning model in early 2025. The product you actually buy is the API: a free chat tier for experimentation, and a paid API where the Flash model is the workhorse and the Pro model is where you route the hardest calls. The numbers are the story at off-peak rates the Flash model's cache-miss input is around $0.15 per million tokens and output is around $0.60 per million, with Pro sitting roughly three to four times that. That is the reason half of the production AI stack quietly routes its volume through DeepSeek. The catch is the free tier: it is a trial, not a plan.
 Key numbers: $0.15; $0.60
 
 ### ElevenLabs: the Best Voice, the Smallest Free
-URL: https://www.pickworth.top/tools/elevenlabs/index.html
+URL: https://www.pickworth.top/tools/elevenlabs/
 Updated: 22 October 2026
 Answer: ElevenLabs is the text-to-speech and voice platform most creators reach for because the audio quality and voice cloning are the best in the category. It bills by the character you turn into speech, wrapped in a credit system, and the free plan gives 10,000 credits a month, about ten minutes of audio, for personal non-commercial use with attribution. The ceiling on what the free plan does is real: no commercial rights, no professional cloning, and a character count that is enough for a prototype but not for production.
 Citation: ElevenLabs is the voice platform you reach for when the audio quality is the point, and the reason is that it is the most realistic in the category. The voice, the cloning, and the emotional control on the newest model are the things that make it the default for creators, and the independent reviews say so. The deduction is for the free plan, which is a real allowance but a learning one, ten minutes of audio a month, non-commercial, with attribution, and without the professional cloning that the commercial work needs. It is the tool to produce the voice your content is built on, the free tier to test that the quality holds up for your use, and the paid tier to remove the ceiling once it does.
 
 ### Google Gemini: the Only Assistant That Reads Your Mail
-URL: https://www.pickworth.top/tools/gemini/index.html
+URL: https://www.pickworth.top/tools/gemini/
 Updated: 22 October 2026
 Answer: Gemini is Google's general-purpose assistant, and its defining strength is the stack behind it: a free tier that already includes Deep Research and image generation, native integration with Gmail, Docs, Drive, and YouTube, and a 1M-token context window on the paid tiers. It is strongest at research, long documents, and anything that lives in the Google ecosystem; it is weakest on pure coding consistency, where Claude still has the edge. The free plan is real and generous, but it is capped at a 32,000-token window and metered limits that refresh on a rolling window rather than a fixed daily count.
 Citation: Gemini is the assistant you reach for when the work is research or when it already lives inside Google's apps, and the reason is structural: it is the only major assistant that can read your Gmail, your Docs and your Drive and act on them in one place. It is genuinely strong on that, long-document synthesis, deep research grounded in current search, and multimodal input. It is least reliable on the two things the category now turns on: pure coding consistency, where the independent reviews put it behind Claude, and the free tier's 32,000-token window, which is a real cap on exactly the long-document strength that is the point. For the research and productivity user, Google AI Pro at $19.99 is the baseline; for the coding-dominant user, pair it with a dedicated tool rather than make it the only one. The free plan is the most generous in the category, and that is the honest reason to start there.
 Key numbers: $19.99
 
 ### GitHub Copilot: Most Accessible, Most Underused
-URL: https://www.pickworth.top/tools/github-copilot/index.html
+URL: https://www.pickworth.top/tools/github-copilot/
 Updated: 22 October 2026
 Answer: GitHub Copilot is the coding assistant most developers already have access to: inline completions, chat, and agent mode across the editors you already use, with a real free tier and paid plans that remove the cap. It is strongest on everyday completion and in-editor help, and weakest when you need sustained multi-file agent work or the highest-tier models.
 Citation: GitHub Copilot is the most accessible of the coding assistants, and the reason is structural: it is built into the editors people already have, and one license spans all of them. It is genuinely good at the day-to-day, in-editor stage of coding, and its free tier is one of the more honest in the category. It slips on the two things that matter for professional, all-day use, plus three quiet frictions that independent reviews keep flagging: a slow cloud-agent cold start, a monthly credit reset that does not track your billing anniversary, and a default since mid-2026 where your interaction data trains the model unless you opt out. For the majority of developers, Pro at $10 is the baseline; verified students, teachers, and open-source maintainers get it free.
 Key numbers: $10
 
 ### Grok Knows What Just Happened. That Is Its Whole Job
-URL: https://www.pickworth.top/tools/grok/index.html
+URL: https://www.pickworth.top/tools/grok/
 Updated: 22 October 2026
 Answer: Grok is the assistant that knows what happened on X in the last hour a real differentiator for live social and real-time news, but the subscription is priced at the top of the category and the trust layer (a documented history of safety lapses and a disclosed distillation from a competitor) needs reading before you wire it into anything sensitive.
 Citation: Grok is the assistant that knows what happened on X in the last hour. That is its whole differentiator, and it is a real one: for live social, real-time news and anything where the firehose of the platform is the source of truth, it beats a model trained on a fixed corpus. The rest is the standard assistant story, with a coding tool that has gone open-source and a consumer subscription priced at the top of the category. The thing to weigh carefully is the trust layer: a documented history of safety lapses and a disclosed distillation from a competitor. Neither is a defect in the model, but both are the reason a team should read the terms before wiring it into anything sensitive.
 
 ### Kimi Review 2026: Reads a Whole Book, Free, With a Metering Catch
-URL: https://www.pickworth.top/tools/kimi/index.html
+URL: https://www.pickworth.top/tools/kimi/
 Updated: 26 October 2026
 Answer: Kimi is Moonshot AI's long-context assistant that puts a near-frontier, open-weight model on the free plan and a million-token window on paid tiers, and it is the right pick when your work is measured in whole documents rather than quick chat.
 Citation: Kimi is the assistant to reach for when the job is measured in documents, not sentences. Its million-token window and free flagship model make it the cheapest way to analyse a whole book, a 200-page filing, or a legacy codebase in one pass, and the open weights mean you can self-host when data cannot leave your walls. The deductions are real but specific: English creative prose trails the US frontier, the free tier is metered rather than unlimited, and the consumer app's prompt-training policy closes it off to confidential work. Use it if your week is built on long documents, Chinese-language work, or cheap agentic research. Keep a Western assistant for voice, polish, and the larger tooling ecosystem. Score 3.9 of 5.
 
 ### Kling AI Review 2026: Best Free Motion Video, Until the Credits Run Out
-URL: https://www.pickworth.top/tools/kling/index.html
+URL: https://www.pickworth.top/tools/kling/
 Updated: 26 October 2026
 Answer: Kling AI is Kuaishou's text- and image-to-video model that leads on realistic motion and long clips, and it gives you a free tier of daily credits before any paid plan.
 Citation: Kling AI is the video model we point budget-conscious and high-volume creators to first, because the motion realism and the free daily credits are real and the native audio is a feature no Western rival matches yet. The deduction is not the quality, it is the economy around it: credits drain on every retry, the free tier queues and watermarks, and the renewal prices sit above the promo figures Kling leads with. Score it 4.0 out of 5. Use the free tier to confirm the motion holds for your prompts, then move to Standard the moment you need unwatermarked, commercial-ready clips or a shorter queue.
 
 ### Luma Review 2026: The Best Camera Control, Weaker on Free
-URL: https://www.pickworth.top/tools/luma/index.html
+URL: https://www.pickworth.top/tools/luma/
 Updated: 26 October 2026
 Answer: Luma Dream Machine is the US lab's text- and image-to-video tool that leads on keyframe camera control and cinematic image-to-video but ships a thin free tier and bills credits on every submit, so the paid plans are where it actually works.
 Citation: Luma Dream Machine is the tool you reach for when the shot is a planned camera move, because its keyframing is the finest control in the category at the price and its image-to-video is the smoothest around. The deduction is not the quality, it is the economics: a free tier too thin to ship on, and a credit system that bills on submit rather than on a usable take, so the real cost per finished clip is several times the headline rate. Score it 3.9, good. It is the best camera-operator's tool of the three leaders for B-roll and transitions, the paid Plus plan the floor for anything commercial, and the wrong first pick for long physical takes or face-driven narrative where Kling and Runway hold steadier. Use the free tier to confirm the look, then pay for the meter.
 
 ### Midjourney Review 2026: Still the Best for Art, But Costs More Than the Hype
-URL: https://www.pickworth.top/tools/midjourney/index.html
+URL: https://www.pickworth.top/tools/midjourney/
 Updated: 26 October 2026
 Answer: Midjourney is the subscription-only AI image generator that leads the field on aesthetic quality and community prompting, costs from $10 a month with no free tier, and reserves private generation for the $60 Pro plan.
 Citation: Midjourney is the image generator to buy when the look is the product. The quality lead is real and the reference tooling makes it usable for client work, which is why it keeps the top slot in every 2026 comparison we read. The deductions are structural, not cosmetic: there is no free tier to sample on the main app, private generation is a $60 plan, text in images is still unreliable, and the GPU-hour billing hides how fast a heavy month adds up. Pick Standard at $30 as the floor for real work, keep a typography tool alongside it for anything with words, and you get the best aesthetic engine in the category without overpaying for a tier you do not need.
 Key numbers: $60; $30; $10
 
 ### Mistral Le Chat Review 2026: Cheapest Premium Plan, Holds Up on Speed
-URL: https://www.pickworth.top/tools/mistral/index.html
+URL: https://www.pickworth.top/tools/mistral/
 Updated: 26 October 2026
 Answer: Mistral's Le Chat is the European, EU-hosted answer to ChatGPT, and it is worth using if you want a genuinely generous free tier, fast responses, self-hostable open-weight models, and data that stays inside EU jurisdiction. It trails the US frontier on the hardest reasoning and on polished English creative writing, and its ecosystem is thinner, but at $14.99 for Pro it undercuts every American rival on price while holding its own on speed and privacy.
 Citation: Le Chat is the assistant to pick when jurisdiction, speed and price sit at the top of your list, and that is a real, defensible position rather than a consolation prize. The free tier is a workspace you can actually do work in, Pro is the cheapest premium plan from any major lab at $14.99, Flash Answers make the thing feel quicker than almost everything else on the market, and the open-weight, EU-hosted story is one no American rival can replicate. We rate it 3.9 out of 5. The deduction is earned, not arbitrary: on the hardest reasoning, the most polished English prose, and the deepest custom-assistant ecosystem, the US frontier still leads, and the consumer app picked up rough edges after its 2026 rebrand. None of that stops Le Chat from being the smart default for EU and privacy-minded users, for budget buyers who want a paid plan without the $20 tax, and for developers who would rather self-host or fine-tune than rent a black box. If your work lives at the absolute frontier of difficulty, pair it with or switch to one of the leaders. For everyone else, it is hard to beat for the price.
 Key numbers: $14.99; $20
 
 ### Notion AI Review 2026: Best in Notion, Weak Everywhere Else
-URL: https://www.pickworth.top/tools/notion-ai/index.html
+URL: https://www.pickworth.top/tools/notion-ai/
 Updated: 26 October 2026
 Answer: Notion AI is the AI layer built into your Notion workspace that handles writing, summaries, meeting transcription and Q&A across your own docs, and in 2026 its serious features are bundled into the $20-per-seat Business plan rather than sold as a cheap add-on.
 Citation: Notion AI is the best AI you can run without leaving your notes, and that is both its strength and its ceiling. The workspace Q&A, the meeting notes that file themselves, and the database autofill are things a separate chatbot cannot do, because they depend on context that already lives in Notion. On raw writing, though, it is a step behind ChatGPT and Claude, and the 2025 pricing restructure means the number on the invoice is a $20 Business seat, not the old $10 add-on most older reviews still quote. The honest verdict is audience-shaped: if Notion is already your second brain and you have hundreds of pages of real content, the integration pays for itself and the score holds. If you are not a Notion user, or you mainly want the strongest writing model, the same money buys a better standalone assistant. Treat the free trial as a real look at the features and a real wall on volume, then decide by where your work already lives.
 Key numbers: $20; $10
 
 ### Perplexity: One Page Instead of Five Tabs
-URL: https://www.pickworth.top/tools/perplexity/index.html
+URL: https://www.pickworth.top/tools/perplexity/
 Updated: 22 October 2026
 Answer: Perplexity is an AI search engine that cites its sources the category is now genuinely useful in a way a plain search box stopped being in 2024. The Pro tier is the one worth paying for, and it is priced the way the top tiers of the competing assistants are.
 Citation: Perplexity is an AI search engine, and that category is now genuinely useful in a way a plain search box stopped being in 2024. The core value is citation: every answer links back to the source it was drawn from, so a research question that would take five tabs becomes one page. The catch is the free tier the most-used models are metered and the free version runs out of credits on a working day. The Pro tier is the one worth paying for, and it is priced the way the top tiers of the competing assistants are.
 
 ### Qwen Review 2026: Free and Open, But Not What You'd Use for English Prose
-URL: https://www.pickworth.top/tools/qwen/index.html
+URL: https://www.pickworth.top/tools/qwen/
 Updated: 26 October 2026
 Answer: Qwen is Alibaba's open-weight model family with a free Qwen Chat, strong coding and multilingual reach, a 256K-token context, and paid API tiers through Alibaba Cloud, and it is worth using if you need open, self-hostable, or multilingual AI rather than polished English prose.
 Citation: Qwen is the model family to use when open weights, multilingual reach, or a free high-context chat are the priority, and it is less obviously the right pick when the deliverable is polished English prose or when Western enterprise data handling is non-negotiable. The 4.1 score reflects a genuine leader of the open-weight field: a free chat that is one of the better playgrounds available, coding and Chinese-language depth that beat most peers, and the rare continuity of running the same model locally or in the cloud. The deductions are real but bounded, a thinner ecosystem than GPT or Claude, privacy perception tied to Alibaba hosting, and English creative writing that lags the US frontier. Use it if you build multilingual or code-heavy products, or if you want frontier-class capability you can self-host; skip it as your only assistant if native English fluency and enterprise trust are the whole job.
 
 ### Runway Review 2026: Best for Finished Video, 125-Credit Free Taste
-URL: https://www.pickworth.top/tools/runway/index.html
+URL: https://www.pickworth.top/tools/runway/
 Updated: 26 October 2026
 Answer: Runway is the New York company that turned AI video into a working editor, not just a generator, and the honest read is that its free tier is a one-time taste while the paid plans are where the real tool lives, with credit burn as the price of admission and Kling beating it on raw physical motion.
 Citation: Runway earns its 4.0 because it is the most complete creative video suite in the category, and the reason is that it treats generation as one step in an edit, not the whole job. Gen-4.5 holds a character's identity across frames better than most, Aleph 2.0 lets you restyle footage you already shot, and the Motion Brush and Camera Controls plus the Premiere and Resolve plugins are what make a director stay. The deduction is not quality, it is access and accounting: the free tier is 125 one-time credits with the newest models locked away, so it proves the tool and nothing more, and the paid math bills per second, which means Standard's 625 credits buy less than a minute of top-quality video a month. Against Kling it loses the physics and human-motion crown, and against Luma it loses the cleanest keyframed camera move, but no rival packages the same end-to-end editor. Pay for Pro or Max once the control is the point; start free only to confirm the look is yours.
 
 ### Suno Review 2026: Best for Fast Songs, Free Layer Has No Downloads
-URL: https://www.pickworth.top/tools/suno/index.html
+URL: https://www.pickworth.top/tools/suno/
 Updated: 26 October 2026
 Answer: Suno is the text-to-song generator most people reach for because it turns a plain prompt into a finished track with vocals and instruments in under a minute, the free tier gives 50 credits a day for non-commercial tinkering, and the Pro plan at $8 a month is what unlocks commercial rights and downloads.
 Citation: Suno is the AI music tool to reach for when the point is a finished song fast, and the reason is that nothing else in the category makes a complete, voiced track from a single prompt with less friction. The vocal clarity, the genre reach, and the community library are why casual creators and YouTubers land here first, and the independent reviews back that up. The deduction is not the quality, it is the fence around it: the free tier is a genuine taster but a non-commercial dead end with no downloads on current terms, and the commercial rights are tied to the plan that was active when you generated, never retroactive. For a creator who publishes, Pro at eight dollars a month is the real entry price, not zero, and Premier only earns its twenty-four if you open Studio weekly. Treat the free plan as the test drive, pay the moment you make something you want to keep, and do not expect to park on a model you liked once a newer one ships.
@@ -129,49 +129,49 @@ Citation: Suno is the AI music tool to reach for when the point is a finished so
 ## Head-to-Head Comparisons
 
 ### ChatGPT vs Claude in 2026: Pick the Shape of Your Work, Not the Benchmark
-URL: https://www.pickworth.top/comparisons/chatgpt-vs-claude/index.html
+URL: https://www.pickworth.top/comparisons/chatgpt-vs-claude/
 Updated: 22 October 2026
 Answer: Neither is the other's better version: ChatGPT is the wider, more consumer-friendly product (multimodal, deeper integrations, a useful free tier) and Claude is the stronger choice for long-form work and strict instruction-following, with its top tier costing more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.
 Citation: Neither is the other's better version. ChatGPT is the wider, more consumer-friendly product: stronger multimodal input, a deeper integration story, and a free tier that is actually useful. Claude is the stronger choice for long-form work and for strict instruction-following, and its top tier costs more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.
 
 ### ChatGPT vs Gemini: One All-Rounder, One Google-Native
-URL: https://www.pickworth.top/comparisons/chatgpt-vs-gemini/index.html
+URL: https://www.pickworth.top/comparisons/chatgpt-vs-gemini/
 Updated: 22 October 2026
 Answer: ChatGPT and Gemini are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a useful free tier, and a stronger everyday story. Gemini wins inside Google's own ecosystem.
 Citation: Both are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a bigger add-on and integration surface, and the strongest coding agent story. Gemini is the stronger pick when your work lives inside Google's stack the free tier is genuinely usable at higher limits, and it folds into the phone, the search box and the documents you already work in. Choose the one that matches where your work already happens, not the one with the louder benchmarks.
 
 ### Cursor vs Claude Code in 2026: Daily Coding vs Autonomy
-URL: https://www.pickworth.top/comparisons/cursor-vs-claude-code/index.html
+URL: https://www.pickworth.top/comparisons/cursor-vs-claude-code/
 Updated: 26 October 2026
 Answer: Cursor is the better everyday home for most developers because it lives inside an editor you already use, while Claude Code is the stronger tool for handing off large, autonomous jobs to a terminal agent that runs commands and tests on its own.
 Citation: Cursor takes the higher score because it meets more developers where they already are: inside an editor, with completions appearing as they type and a chat that already knows the repo. For the daily loop of write, ask, edit, it is the lower-friction pick and the free tier makes it the obvious first step. Claude Code is not worse, it is aimed elsewhere. It is a terminal agent built to take a task, run the commands, fix the tests and come back with a pull request, and on that kind of autonomous, cross-file work it is the stronger tool. The honest call is that they are complements, not rivals: Cursor for the session, Claude Code for the hand-off. If you must own one today and you spend your day in an editor, buy Cursor; if you already run your work from a shell and want to delegate whole jobs, Claude Code is the better single purchase.
 
 ### DeepSeek vs Claude: a Pricing Argument in a Capability Costume
-URL: https://www.pickworth.top/comparisons/deepseek-vs-claude/index.html
+URL: https://www.pickworth.top/comparisons/deepseek-vs-claude/
 Updated: 22 October 2026
 Answer: This is a pricing argument wearing a capability costume: DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the capability gap is smaller than the price gap. Claude is the stronger general assistant; DeepSeek is the cost move.
 Citation: This is a pricing argument wearing a capability costume. DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the gap in raw output is smaller than the price gap suggests. Claude is the better tool where the work is long, agentic and ambiguous the codebase-wide reasoning and the instruction-following under many constraints still pull it ahead, and that is what the premium buys. Pick DeepSeek if you are cost-sensitive and can scope work tightly; pick Claude if the task is "read this repo and change it correctly" and you are paying by the hour of developer time, not by the token.
 
 ### DeepSeek vs Qwen in 2026: Cheaper Reasoning vs Wider Coverage
-URL: https://www.pickworth.top/comparisons/deepseek-vs-qwen/index.html
+URL: https://www.pickworth.top/comparisons/deepseek-vs-qwen/
 Updated: 26 October 2026
 Answer: DeepSeek wins on price and raw reasoning-and-code value: its V4 API is several times cheaper than Qwen's flagship and ships under a clean MIT license, while Qwen wins on breadth, documented multilingual reach and laptop-friendly open weights. Pick DeepSeek for cheap, heavy reasoning and coding at scale; pick Qwen when you need many model sizes, 200-plus languages, or a model you can run on one machine.
 Citation: Neither is the other's replacement. DeepSeek is the better default for anyone who mostly wants to call a strong reasoning-and-coding model through an API without watching the meter: its V4 pricing is a fraction of Qwen's flagship, the licence is plain MIT, and the coding scores are a hair ahead. Qwen is the better pick when the job is broader than one endpoint when you need a 201-language model, a small Apache-2.0 checkpoint for on-premise work, or a single vendor that also covers vision, audio and video. Score the pairing 4.2 and call DeepSeek the higher-rated tool, but only because most comparison readers are shopping for an API, not a model zoo.
 
 ### Grok vs ChatGPT: Live Firehose vs Everything Else
-URL: https://www.pickworth.top/comparisons/grok-vs-chatgpt/index.html
+URL: https://www.pickworth.top/comparisons/grok-vs-chatgpt/
 Updated: 22 October 2026
 Answer: Grok's whole case rests on one real advantage: it sees the live firehose from X. For breaking stories, live market reaction, or a trend that is forming right now, Grok beats a model trained on a fixed corpus. Everything else general assistant work, everyday writing, deep integrations ChatGPT still wins.
 Citation: Grok's whole case rests on one real advantage: it sees the live firehose from X, and for questions that are about what is happening right now a breaking story, a live market reaction, a trend that started this morning that is a genuine difference, not a demo. Everything else is a close-to-even fight that ChatGPT usually edges on tooling and depth. Take Grok if your work is time-sensitive and social-signal-driven. Take ChatGPT for everything else, and use Grok as the second opinion when recency is the question.
 
 ### Midjourney vs ChatGPT for Images in 2026: Better Art vs Words That Stick
-URL: https://www.pickworth.top/comparisons/midjourney-vs-chatgpt/index.html
+URL: https://www.pickworth.top/comparisons/midjourney-vs-chatgpt/
 Updated: 26 October 2026
 Answer: For AI image generation, Midjourney is the sharper artist and ChatGPT the more practical tool: pick Midjourney when the picture is the product and ChatGPT when you need free access, in-chat edits, or text in the frame.
 Citation: Neither tool is the other's replacement. Midjourney is the better artist: it wins on the thing that matters most in image generation, which is how the result looks, and its web app plus Edit Model make it far more practical than the Discord-only tool of two years ago. ChatGPT is the better everyday tool: free to start, conversational to edit, and reliable with text and precise instructions. If the image is the product, pay Midjourney. If the image is a step in a larger job, or you need words inside it, ChatGPT is the faster path. Our rating leans to Midjourney because in a head-to-head on image generation, quality is the tiebreaker but the honest answer is that plenty of people will end up using both.
 
 ### Perplexity vs ChatGPT: Not the Same Kind of Tool
-URL: https://www.pickworth.top/comparisons/perplexity-vs-chatgpt/index.html
+URL: https://www.pickworth.top/comparisons/perplexity-vs-chatgpt/
 Updated: 22 October 2026
 Answer: These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have your answer. ChatGPT is a general assistant: it does the rest. Pick by what you are doing, not by which one has the bigger model.
 Citation: These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have a sourced answer and a list of where that answer came from. ChatGPT is a general assistant that can also search, and its job is usually to produce something a draft, a table, a script, a plan. If your day is mostly finding out what is true, Perplexity earns its tier. If your day is mostly making things, the answer is the general assistant and the search feature is a bonus, not the point.
@@ -180,46 +180,46 @@ Citation: These are not the same kind of tool, and most of the confusion comes f
 ## Best-Of Lists
 
 ### Jasper Is Five Times the Price. Most People Do Not Need It
-URL: https://www.pickworth.top/lists/ai-writing-tools/index.html
+URL: https://www.pickworth.top/lists/ai-writing-tools/
 Updated: 22 October 2026
 Answer: The category splits in two: marketing writers pay for a brand system (Jasper, from $59), fiction writers pay for a story system (Sudowrite, $10–$44), and everyone else is better off with the $20 general assistant. Pick by who is writing, not by the loudest marketing.
 Citation: Jasper (from $59 a month) is for marketing teams that need on-brand output at scale, and it costs five times the general assistants for the privilege. Sudowrite ($10–$44 a month) is the only tool built specifically for fiction and long-form narrative, and it is worth it if you write that genre. For everyone doing marketing copy, email and blog drafts, the $20 a month tier of ChatGPT or Claude does the job and leaves most of the money in your pocket. The question is not "which is best" but "who is doing the writing."
 Key numbers: $59; $10; $44; $20
 
 ### Start With One $20 Tool. Most People Need Only One More
-URL: https://www.pickworth.top/lists/best-ai-coding-tools/index.html
+URL: https://www.pickworth.top/lists/best-ai-coding-tools/
 Updated: 22 October 2026
 Answer: Most developers should start with one $20 subscription either ChatGPT Plus or Claude Pro and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, that is where a dedicated agent earns its cost; for open-weights cost, DeepSeek is the move.
 Citation: Most developers should start with one $20 subscription either ChatGPT Plus or Claude Pro and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, the dedicated agents (Claude Code, Codex) are the tier that earns a real subscription. If the model has to run inside your own perimeter for compliance, the open-source tools (Cline, Zed, OpenHands) are the answer and the operational weight is the price. And if you are metering by token, DeepSeek's open weights keep the floor an order of magnitude below the frontier. Pick by the job, not by the leaderboard.
 Key numbers: $20
 
 ### Best AI Music Generators 2026: Start Here, but Two Aren't Worth Paying For
-URL: https://www.pickworth.top/lists/best-ai-music-generators/index.html
+URL: https://www.pickworth.top/lists/best-ai-music-generators/
 Updated: 26 October 2026
 Answer: For most people Suno is the right first stop because it ships complete, downloadable songs fastest, but pick Udio when vocal realism matters, Google's Lyria or MusicFX when your budget is zero, Stable Audio for sound effects and commercial instrumentals, and Riffusion when you want to tinker for free.
 Citation: Start with Suno unless you already know why you would not. It is the only front-runner that gives a beginner a complete, downloadable, commercially licensable song in under a minute, and its free tier is generous enough to decide without paying. Move to Udio when the singing has to fool a musician, accept that you are renting the listening experience rather than owning the file. Reach for Google's Lyria or MusicFX when the budget is zero and the watermark is acceptable. Choose Stable Audio when the deliverable is a sound effect bed or an instrumental you plan to clear for client work, and keep Riffusion in your back pocket as the free, open sandbox. The category is good, not great: the song factories sound convincing but the licensing and export stories are still settling, so treat any paid plan as a subscription you can leave rather than a studio you have built.
 
 ### Almost Nobody Needs a Third. Start Here
-URL: https://www.pickworth.top/lists/best-ai-research-tools/index.html
+URL: https://www.pickworth.top/lists/best-ai-research-tools/
 Updated: 22 October 2026
 Answer: If you do research regularly, start with Perplexity's free tier it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable. The general assistants with search are the runner-up; document tools are for when you are reading a lot at once.
 Citation: If you do research regularly, start with Perplexity's free tier it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable rather than merely confident. Add a general assistant when the job turns from finding out to producing. Add a long-context reader when the input is a pile of documents rather than a question. Most people need the first two; almost nobody needs all three at the paid tier.
 
 ### Best AI Video Generators 2026: One Picks Your Use Case, the Rest Lose
-URL: https://www.pickworth.top/lists/best-ai-video-generators/index.html
+URL: https://www.pickworth.top/lists/best-ai-video-generators/
 Updated: 26 October 2026
 Answer: Start with Google Veo 3.1 if you need the best-looking clip with sound, Runway if the video has to be edited into something finished, and Kling if you want the most video per dollar including a generous free tier; Sora is retired, so migrate elsewhere.
 Citation: Pick by the job, not by the leaderboard. Google Veo 3.1 is the quality default and the only model that ships lip-synced audio in the same pass, so it wins for talking-head and product footage. Runway is the pick when the deliverable is a finished, edited video rather than one clip, because its timeline, motion brush, and masking are unmatched here. Kling is the value and free-tier winner: 66 credits refill daily, physics and on-screen text hold up, and cost per second is the lowest in the group. Luma is the image-to-video and long-clip specialist with the best lighting realism but no native audio. Pika is the cheap, playful effects option for social shorts. Sora is gone, and its disappearance is the real lesson: a model's quality is a snapshot, a platform's survival is the investment. Start free on Kling or Veo, then pay only when watermark, commercial rights, or resolution force the upgrade.
 
 ### The Free Assistant Tier Does 90% of What You Think You Need
-URL: https://www.pickworth.top/lists/best-image-generation-tools/index.html
+URL: https://www.pickworth.top/lists/best-image-generation-tools/
 Updated: 22 October 2026
 Answer: Midjourney is still the dedicated tool for serious, styled image work the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's Imagen, OpenAI's DALL-E) and the free tier cover most people. Pick by what you are actually making.
 Citation: Midjourney is still the dedicated tool for serious, styled image work the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's image generation, the Nano Banana line, and the image features in ChatGPT and the rest) now cover the casual need at the price of the assistant you already pay. For most people the answer is: use the free or paid assistant tier for everything except the moment you need the consistency and style control that only the dedicated tool gives. The question is not "which is best" but "how often is the dedicated tool actually doing the job."
 Key numbers: $20
 
 ### Eight Cursor Alternatives, Compared Three We Would Not Build On
-URL: https://www.pickworth.top/lists/open-source-cursor-alternatives/index.html
+URL: https://www.pickworth.top/lists/open-source-cursor-alternatives/
 Updated: 22 October 2026
 Answer: If you want to keep VS Code, Cline is the one to install first it is actively maintained, permissively licensed, and shows you every edit before it lands. If you want the fastest native experience, Zed is the pick. The maintenance check is the one nobody does: half of the options have quietly stalled.
 Citation: If you want to keep VS Code, Cline is the one to install first it is actively maintained, permissively licensed, and shows you every edit before it lands. If you want the fastest native editor and do not mind vetting a licence yourself, Zed . If you want agents working unattended, OpenHands (MIT, the most permissive of the group). Three projects we would not build new work on today: Aider , Void and Roo Code have all gone months without a commit.
@@ -228,39 +228,39 @@ Citation: If you want to keep VS Code, Cline is the one to install first it is a
 ## Journal & Analysis
 
 ### The Headline Number Is Marketing
-URL: https://www.pickworth.top/blog/context-windows-explained/index.html
+URL: https://www.pickworth.top/blog/context-windows-explained/
 Updated: 22 October 2026
 Answer: A context window is the model's working memory for a single conversation everything it can hold at once. A larger window is genuinely useful for two jobs: reading a lot at once, and long agentic work. The two questions that decide whether a tool's window matters for your work: how long is the input you are actually feeding, and how much of it does the model have to hold while it acts?
 Citation: A context window is the model's working memory for a single conversation everything it can hold at once. A larger window is genuinely useful for two jobs: reading a lot at once, and long agentic work where the model has to remember what it already did. For everything else the headline number is marketing. Ask whether your work ever fills the window, and how the tool behaves when it does those two answers tell you more than the spec sheet.
 
 ### The Student Route Costs Nothing, and It Is Not a Trial
-URL: https://www.pickworth.top/blog/get-github-copilot-pro-free/index.html
+URL: https://www.pickworth.top/blog/get-github-copilot-pro-free/
 Updated: 22 October 2026
 Answer: If you are a verified student, teacher, or a maintainer of a popular open-source project, GitHub Copilot Pro is free for you, not just the 2,000-completion free tier. It is a standing benefit, not a trial. The one thing that trips people is that it requires a verified account, so the first step is the eligibility link, not the checkout.
 Citation: Most people who want a free Copilot stop at the 2,000-completion tier and assume that is all that exists for $0. It is not: three groups of people get the full Pro plan at no cost, and the offer is so far down the page that it is easy to pay before you find it.
 Key numbers: $0
 
 ### Three Prompts, Repeated Until a Lucky Run Cannot Win
-URL: https://www.pickworth.top/blog/how-we-test-ai-tools/index.html
+URL: https://www.pickworth.top/blog/how-we-test-ai-tools/
 Updated: 22 October 2026
 Answer: Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full. If a review here says something, this is how it was checked.
 Citation: Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and limits measured deliberately rather than discovered by accident. It is not fast and it is not exotic it is the minimum that lets us put our name on a number.
 
 ### One Subscription Covers Most People. Here Is the Test
-URL: https://www.pickworth.top/blog/the-20-dollar-rule/index.html
+URL: https://www.pickworth.top/blog/the-20-dollar-rule/
 Updated: 22 October 2026
 Answer: One $20 subscription covers most people's AI needs, a second earns its place only when it does a job the first one cannot, and anything beyond that needs a reason you can write in one sentence. The rule is the filter that stops the stack from turning into a subscription you never use.
 Citation: The rule: one $20 subscription covers most people's AI needs, a second earns its place only when it does a job the first one cannot, and anything beyond that needs a reason you can write in one sentence without using the word "just". Most people who think they need four tools need one, plus a free tier they are already underusing.
 Key numbers: $20
 
 ### Four Conditions Matter. The Label Does Not
-URL: https://www.pickworth.top/blog/when-open-source-matters/index.html
+URL: https://www.pickworth.top/blog/when-open-source-matters/
 Updated: 22 October 2026
 Answer: Open source changes the decision under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or the cost of the hosted version stops adding up. In every other case it is a preference dressed up as a requirement.
 Citation: Open source changes the decision under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or you need the tool to outlive the vendor's interest in it. Outside those four, open weights are a preference and a legitimate one, but not the deciding factor. Tell the four apart from the preference, because the operational weight of self-hosting is real and not always worth paying.
 
 ### The Free Tier Is the One the Vendor Will Cut
-URL: https://www.pickworth.top/blog/why-prices-move/index.html
+URL: https://www.pickworth.top/blog/why-prices-move/
 Updated: 22 October 2026
 Answer: AI pricing follows a recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder. None of this is a bug; it is the playbook. The move that protects you is to buy on the second move, not the first.
 Citation: AI pricing follows a recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder. None of this is a scandal it is how a category finds its price. But it means the free tier you are evaluating today is the one the vendor has the least incentive to keep, and the tier that survives the restructure is the one worth committing to.
