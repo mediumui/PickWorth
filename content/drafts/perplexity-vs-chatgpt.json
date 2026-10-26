@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/perplexity/index.html",
+      "href": "tools/perplexity/",
       "title": "Perplexity review",
       "blurb": "The answer engine, alone.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/best-ai-research-tools/index.html",
+      "href": "lists/best-ai-research-tools/",
       "title": "Best AI research tools in 2026",
       "blurb": "The research field, ranked by the job.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "href": "comparisons/chatgpt-vs-claude/",
       "title": "ChatGPT vs Claude",
       "blurb": "The other half of the assistant argument.",
       "link": "Compare"

@@ -115,7 +115,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/deepseek/index.html",
+      "href": "tools/deepseek/",
       "title": "DeepSeek review",
       "blurb": "The full breakdown, alone.",
       "link": "Read"
@@ -124,7 +124,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/qwen/index.html",
+      "href": "tools/qwen/",
       "title": "Qwen review: free and open",
       "blurb": "The full breakdown, alone.",
       "link": "Read"
@@ -133,7 +133,7 @@
       "icon": "i-compare",
       "tag": "List",
       "tag_class": "plain",
-      "href": "lists/best-ai-coding-tools/index.html",
+      "href": "lists/best-ai-coding-tools/",
       "title": "Best AI coding tools in 2026",
       "blurb": "Every coding model we rate, ranked.",
       "link": "Browse"

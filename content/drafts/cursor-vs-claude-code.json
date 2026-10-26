@@ -115,7 +115,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/cursor/index.html",
+      "href": "tools/cursor/",
       "title": "Cursor review: the Best AI Editor, With a Billing Catch",
       "blurb": "The full breakdown, on its own.",
       "link": "Read"
@@ -124,7 +124,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/claude/index.html",
+      "href": "tools/claude/",
       "title": "Claude review",
       "blurb": "The full breakdown, on its own.",
       "link": "Read"
@@ -133,7 +133,7 @@
       "icon": "i-compare",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-ai-coding-tools/index.html",
+      "href": "lists/best-ai-coding-tools/",
       "title": "Best AI coding tools in 2026",
       "blurb": "Every tool we have rated, ranked.",
       "link": "Browse"

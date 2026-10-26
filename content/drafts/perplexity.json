@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "href": "comparisons/chatgpt-vs-claude/",
       "title": "ChatGPT vs Claude",
       "blurb": "The two assistants it is usually used alongside.",
       "link": "Compare"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The assistant side of the same workflow.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

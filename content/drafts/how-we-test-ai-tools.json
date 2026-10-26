@@ -88,7 +88,7 @@
       "icon": "i-method",
       "tag": "Method",
       "tag_class": "teal",
-      "href": "blog/why-prices-move/index.html",
+      "href": "blog/why-prices-move/",
       "title": "Why AI tool prices move",
       "blurb": "The repricing pattern behind every price change.",
       "link": "Read"
@@ -97,7 +97,7 @@
       "icon": "i-verdict",
       "tag": "Method",
       "tag_class": "teal",
-      "href": "blog/the-20-dollar-rule/index.html",
+      "href": "blog/the-20-dollar-rule/",
       "title": "The $20 rule",
       "blurb": "How to spend on AI tools without a spreadsheet.",
       "link": "Read"
@@ -106,7 +106,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "blog/index.html",
+      "href": "blog/",
       "title": "The Journal",
       "blurb": "Every note from the desk.",
       "link": "Browse"

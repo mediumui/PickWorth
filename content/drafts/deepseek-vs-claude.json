@@ -103,7 +103,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/deepseek/index.html",
+      "href": "tools/deepseek/",
       "title": "DeepSeek review",
       "blurb": "The open-weights challenger, alone.",
       "link": "Read"
@@ -112,7 +112,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/claude/index.html",
+      "href": "tools/claude/",
       "title": "Claude review",
       "blurb": "The full breakdown, alone.",
       "link": "Read"
@@ -121,7 +121,7 @@
       "icon": "i-sources",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/best-ai-coding-tools/index.html",
+      "href": "lists/best-ai-coding-tools/",
       "title": "Best AI coding tools in 2026",
       "blurb": "The whole field, ranked by the job.",
       "link": "Read"

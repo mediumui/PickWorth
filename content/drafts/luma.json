@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/kling/index.html",
+      "href": "tools/kling/",
       "title": "Kling AI review: free and nearly realistic",
       "blurb": "The duration and physics leader that outlasts Luma on long, hard-motion takes.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/gemini/index.html",
+      "href": "tools/gemini/",
       "title": "Gemini review",
       "blurb": "The general assistant that also generates video through a different model stack.",
       "link": "Read"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-ai-video-generators/index.html",
+      "href": "lists/best-ai-video-generators/",
       "title": "The best AI video generators in 2026",
       "blurb": "The full ranked field, with where each model actually wins.",
       "link": "Browse"

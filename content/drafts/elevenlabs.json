@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/gemini/index.html",
+      "href": "tools/gemini/",
       "title": "Gemini review",
       "blurb": "The general assistant that competes on a different layer.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/agnes/index.html",
+      "href": "tools/agnes/",
       "title": "Agnes AI review",
       "blurb": "The free, uncapped API that is the budget alternative for creative work.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

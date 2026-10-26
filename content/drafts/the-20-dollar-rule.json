@@ -76,7 +76,7 @@
       "icon": "i-method",
       "tag": "Method",
       "tag_class": "teal",
-      "href": "blog/why-prices-move/index.html",
+      "href": "blog/why-prices-move/",
       "title": "Why AI tool prices move",
       "blurb": "The repricing arc behind every price change.",
       "link": "Read"
@@ -85,7 +85,7 @@
       "icon": "i-pick",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/best-ai-research-tools/index.html",
+      "href": "lists/best-ai-research-tools/",
       "title": "Best AI research tools in 2026",
       "blurb": "The research field, ranked by how you work.",
       "link": "Read"
@@ -94,7 +94,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "blog/index.html",
+      "href": "blog/",
       "title": "The Journal",
       "blurb": "Every note from the desk.",
       "link": "Browse"

@@ -104,7 +104,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The general assistant, in full.",
       "link": "Read"
@@ -113,7 +113,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "href": "comparisons/chatgpt-vs-claude/",
       "title": "ChatGPT vs Claude",
       "blurb": "The two general assistants, side by side.",
       "link": "Compare"
@@ -122,7 +122,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/index.html",
+      "href": "lists/",
       "title": "All buying guides",
       "blurb": "Every list we have published.",
       "link": "Browse"

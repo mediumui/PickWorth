@@ -80,7 +80,7 @@
       "icon": "i-sources",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/open-source-cursor-alternatives/index.html",
+      "href": "lists/open-source-cursor-alternatives/",
       "title": "Open-source alternatives to Cursor",
       "blurb": "Eight projects, judged on licence and maintenance.",
       "link": "Read"
@@ -89,7 +89,7 @@
       "icon": "i-method",
       "tag": "Method",
       "tag_class": "teal",
-      "href": "blog/the-20-dollar-rule/index.html",
+      "href": "blog/the-20-dollar-rule/",
       "title": "The $20 rule",
       "blurb": "How to spend on AI tools without a spreadsheet.",
       "link": "Read"
@@ -98,7 +98,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "blog/index.html",
+      "href": "blog/",
       "title": "The Journal",
       "blurb": "Every note from the desk.",
       "link": "Browse"

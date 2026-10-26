@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/github-copilot/index.html",
+      "href": "tools/github-copilot/",
       "title": "GitHub Copilot review",
       "blurb": "The paid in-editor coding assistant, with its own free tier.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The general-purpose assistant Agnes is a free alternative to.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

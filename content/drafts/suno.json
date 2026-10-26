@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far, scored and dated.",
       "link": "Browse"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "List",
       "tag_class": "",
-      "href": "lists/best-ai-music-generators/index.html",
+      "href": "lists/best-ai-music-generators/",
       "title": "The best AI music generators in 2026",
       "blurb": "The full field ranked, with the free-tier and rights fine print.",
       "link": "Browse"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/elevenlabs/index.html",
+      "href": "tools/elevenlabs/",
       "title": "ElevenLabs review",
       "blurb": "The voice and audio companion when you need vocals or narration.",
       "link": "Read"

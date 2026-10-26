@@ -122,7 +122,7 @@
       "icon": "i-pick",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/suno/index.html",
+      "href": "tools/suno/",
       "title": "Suno review: a full song in a minute",
       "blurb": "Full test of the song factory: pricing, stems, and where the vocals crack.",
       "link": "Read"
@@ -131,7 +131,7 @@
       "icon": "i-pick",
       "tag": "Review",
       "tag_class": "teal",
-      "href": "tools/elevenlabs/index.html",
+      "href": "tools/elevenlabs/",
       "title": "ElevenLabs review",
       "blurb": "The licensed, commercially safe alternative for brand and client work.",
       "link": "Read"
@@ -140,7 +140,7 @@
       "icon": "i-pick",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Every tool we have reviewed, in one place.",
       "link": "Browse"

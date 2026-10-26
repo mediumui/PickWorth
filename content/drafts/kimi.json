@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/qwen/index.html",
+      "href": "tools/qwen/",
       "title": "Qwen review: free and open",
       "blurb": "The Alibaba open-weight family that competes with Kimi on the China side.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The general assistant that still leads on English and the ecosystem.",
       "link": "Read"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

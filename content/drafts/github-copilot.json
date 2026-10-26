@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Journal",
       "tag_class": "teal",
-      "href": "blog/get-github-copilot-pro-free/index.html",
+      "href": "blog/get-github-copilot-pro-free/",
       "title": "Getting GitHub Copilot Pro for free",
       "blurb": "The student, teacher, and open-source routes to $0, step by step.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/claude/index.html",
+      "href": "tools/claude/",
       "title": "Claude review",
       "blurb": "The model Copilot routes through — where it pulls ahead and where it doesn't.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

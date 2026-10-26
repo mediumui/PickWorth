@@ -123,7 +123,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/claude/index.html",
+      "href": "tools/claude/",
       "title": "Claude review",
       "blurb": "The model family behind much of Cursor's agent and the terminal alternative.",
       "link": "Read"
@@ -132,7 +132,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/github-copilot/index.html",
+      "href": "tools/github-copilot/",
       "title": "GitHub Copilot review",
       "blurb": "The cheaper, wider-reach autocomplete that competes on price and IDE support.",
       "link": "Read"
@@ -141,7 +141,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-ai-coding-tools/index.html",
+      "href": "lists/best-ai-coding-tools/",
       "title": "Best AI coding tools in 2026",
       "blurb": "How Cursor stacks up against the rest of the field in one place.",
       "link": "Browse"

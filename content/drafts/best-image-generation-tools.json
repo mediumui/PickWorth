@@ -104,7 +104,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "",
       "blurb": "The assistant whose image feature covers most casual work.",
       "link": "Read"
@@ -113,7 +113,7 @@
       "icon": "i-sources",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/ai-writing-tools/index.html",
+      "href": "lists/ai-writing-tools/",
       "title": "",
       "blurb": "The same category logic, applied to writing.",
       "link": "Read"
@@ -122,7 +122,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/index.html",
+      "href": "lists/",
       "title": "All buying guides",
       "blurb": "Every list we have published.",
       "link": "Browse"

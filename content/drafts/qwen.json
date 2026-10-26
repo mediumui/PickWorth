@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/deepseek/index.html",
+      "href": "tools/deepseek/",
       "title": "DeepSeek review",
       "blurb": "The close peer on open weights and raw reasoning benchmarks.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The Western frontier product Qwen trails on English prose and trust.",
       "link": "Read"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "",
-      "href": "comparisons/deepseek-vs-qwen/index.html",
+      "href": "comparisons/deepseek-vs-qwen/",
       "title": "DeepSeek vs Qwen",
       "blurb": "Reasoning lead against multilingual and coding breadth, head to head.",
       "link": "Compare"

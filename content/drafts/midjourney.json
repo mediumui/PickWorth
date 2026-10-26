@@ -112,7 +112,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/gemini/index.html",
+      "href": "tools/gemini/",
       "title": "Gemini review",
       "blurb": "The general assistant that competes on a different layer.",
       "link": "Read"
@@ -121,7 +121,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The image rival that wins on text and prompt accuracy.",
       "link": "Read"
@@ -130,7 +130,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-image-generation-tools/index.html",
+      "href": "lists/best-image-generation-tools/",
       "title": "Best AI image generation tools in 2026",
       "blurb": "Where Midjourney ranks against every rival we tested.",
       "link": "Browse"

@@ -100,7 +100,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/perplexity/index.html",
+      "href": "tools/perplexity/",
       "title": "Perplexity review",
       "blurb": "The cited answer engine, alone.",
       "link": "Read"
@@ -109,7 +109,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/perplexity-vs-chatgpt/index.html",
+      "href": "comparisons/perplexity-vs-chatgpt/",
       "title": "Perplexity vs ChatGPT",
       "blurb": "Search against production, per dimension.",
       "link": "Compare"
@@ -118,7 +118,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/index.html",
+      "href": "lists/",
       "title": "All buying guides",
       "blurb": "Every list we have published.",
       "link": "Browse"

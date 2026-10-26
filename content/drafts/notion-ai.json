@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The general assistant that writes better and does more outside the notes app.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "List",
       "tag_class": "",
-      "href": "lists/ai-writing-tools/index.html",
+      "href": "lists/ai-writing-tools/",
       "title": "Best AI writing tools in 2026",
       "blurb": "Where Notion AI ranks against the dedicated writing apps.",
       "link": "Browse"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

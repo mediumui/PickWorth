@@ -101,7 +101,7 @@
       "icon": "i-compare",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "href": "comparisons/chatgpt-vs-claude/",
       "title": "ChatGPT vs Claude",
       "blurb": "The closed products it competes against on price.",
       "link": "Compare"
@@ -110,7 +110,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The all-round consumer assistant it is usually compared to.",
       "link": "Read"
@@ -119,7 +119,7 @@
       "icon": "i-pick",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

@@ -107,7 +107,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/midjourney/index.html",
+      "href": "tools/midjourney/",
       "title": "Midjourney review: the Quality King, at a Price",
       "blurb": "The full breakdown, alone.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-compare",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The full breakdown, alone.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-compare",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-image-generation-tools/index.html",
+      "href": "lists/best-image-generation-tools/",
       "title": "Best AI image generation tools in 2026",
       "blurb": "Every image model we have rated.",
       "link": "Browse"

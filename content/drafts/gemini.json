@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-gemini/index.html",
+      "href": "comparisons/chatgpt-vs-gemini/",
       "title": "ChatGPT vs Gemini",
       "blurb": "Reasoning, coding, cost and context, side by side.",
       "link": "Compare"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The all-rounder Gemini is the free-to-start alternative to.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/claude/index.html",
+      "href": "tools/claude/",
       "title": "Claude review",
       "blurb": "The model Gemini trails on coding consistency.",
       "link": "Read"

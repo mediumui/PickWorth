@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-claude/index.html",
+      "href": "comparisons/chatgpt-vs-claude/",
       "title": "ChatGPT vs Claude",
       "blurb": "The two closed assistants it usually gets measured against.",
       "link": "Compare"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/deepseek/index.html",
+      "href": "tools/deepseek/",
       "title": "",
       "blurb": "The other open-weights challenger, priced on a different logic.",
       "link": "Read"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Everything we have tested so far.",
       "link": "Browse"

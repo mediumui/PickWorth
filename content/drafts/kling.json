@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/luma/index.html",
+      "href": "tools/luma/",
       "title": "Luma Dream Machine review: cinematic, thinner free",
       "blurb": "The physics and HDR export that beat Kling on graded B-roll.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/gemini/index.html",
+      "href": "tools/gemini/",
       "title": "Gemini review",
       "blurb": "The general assistant that competes on a different layer.",
       "link": "Read"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-ai-video-generators/index.html",
+      "href": "lists/best-ai-video-generators/",
       "title": "The best AI video generators in 2026",
       "blurb": "How Kling ranks against the rest of the field.",
       "link": "Browse"

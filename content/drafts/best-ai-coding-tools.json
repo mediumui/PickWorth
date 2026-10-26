@@ -109,7 +109,7 @@
       "icon": "i-sources",
       "tag": "Guide",
       "tag_class": "",
-      "href": "lists/open-source-cursor-alternatives/index.html",
+      "href": "lists/open-source-cursor-alternatives/",
       "title": "Open-source alternatives to Cursor",
       "blurb": "Eight projects, judged on licence and maintenance.",
       "link": "Read"
@@ -118,7 +118,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/deepseek-vs-claude/index.html",
+      "href": "comparisons/deepseek-vs-claude/",
       "title": "DeepSeek vs Claude",
       "blurb": "The price argument, settled per dimension.",
       "link": "Compare"
@@ -127,7 +127,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/index.html",
+      "href": "lists/",
       "title": "All buying guides",
       "blurb": "Every list we have published.",
       "link": "Browse"

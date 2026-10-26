@@ -107,7 +107,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/grok/index.html",
+      "href": "tools/grok/",
       "title": "Grok review",
       "blurb": "The live-knowledge assistant, alone.",
       "link": "Read"
@@ -116,7 +116,7 @@
       "icon": "i-sources",
       "tag": "Comparison",
       "tag_class": "teal",
-      "href": "comparisons/chatgpt-vs-gemini/index.html",
+      "href": "comparisons/chatgpt-vs-gemini/",
       "title": "ChatGPT vs Gemini",
       "blurb": "The two strongest consumer assistants.",
       "link": "Compare"
@@ -125,7 +125,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "comparisons/index.html",
+      "href": "comparisons/",
       "title": "All comparisons",
       "blurb": "Every head-to-head we have published.",
       "link": "Browse"

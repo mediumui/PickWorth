@@ -111,7 +111,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/qwen/index.html",
+      "href": "tools/qwen/",
       "title": "Qwen review: free and open",
       "blurb": "The Chinese open-weight challenger that competes on the same value-and-control axis.",
       "link": "Read"
@@ -120,7 +120,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/chatgpt/index.html",
+      "href": "tools/chatgpt/",
       "title": "ChatGPT review",
       "blurb": "The ecosystem leader Le Chat is measured against on reasoning and features.",
       "link": "Read"
@@ -129,7 +129,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "tools/index.html",
+      "href": "tools/",
       "title": "All tool reviews",
       "blurb": "Every assistant and model we have tested so far.",
       "link": "Browse"

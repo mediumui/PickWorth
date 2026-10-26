@@ -75,7 +75,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/github-copilot/index.html",
+      "href": "tools/github-copilot/",
       "title": "GitHub Copilot review",
       "blurb": "What it is good at, where it slips, and which plan is worth paying for.",
       "link": "Read"
@@ -84,7 +84,7 @@
       "icon": "i-pick",
       "tag": "Guide",
       "tag_class": "teal",
-      "href": "lists/best-ai-coding-tools/index.html",
+      "href": "lists/best-ai-coding-tools/",
       "title": "Best AI coding tools in 2026",
       "blurb": "The wider field, ranked by the job you are doing.",
       "link": "Read"
@@ -93,7 +93,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "blog/index.html",
+      "href": "blog/",
       "title": "The Journal",
       "blurb": "Every note from the desk.",
       "link": "Browse"

@@ -115,7 +115,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/kling/index.html",
+      "href": "tools/kling/",
       "title": "Kling AI review: free and nearly realistic",
       "blurb": "The physics-first rival that beats Runway on human motion and clip length.",
       "link": "Read"
@@ -124,7 +124,7 @@
       "icon": "i-sources",
       "tag": "Review",
       "tag_class": "",
-      "href": "tools/luma/index.html",
+      "href": "tools/luma/",
       "title": "Luma Dream Machine review: cinematic, thinner free",
       "blurb": "The camera-operator's pick for keyframed moves and atmospheric B-roll.",
       "link": "Read"
@@ -133,7 +133,7 @@
       "icon": "i-sources",
       "tag": "Index",
       "tag_class": "plain",
-      "href": "lists/best-ai-video-generators/index.html",
+      "href": "lists/best-ai-video-generators/",
       "title": "The best AI video generators in 2026",
       "blurb": "The full field, scored and ranked across every leading model.",
       "link": "Browse"
