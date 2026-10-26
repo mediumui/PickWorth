@@ -133,7 +133,7 @@
       "tag": "Review",
       "tag_class": "",
       "href": "tools/runway/index.html",
-      "title": "Runway",
+      "title": "Runway review: the real video suite",
       "blurb": "Gen-4 editing suite and motion brush, judged on price per finished clip.",
       "link": "Read"
     },
@@ -142,7 +142,7 @@
       "tag": "Review",
       "tag_class": "",
       "href": "tools/kling/index.html",
-      "title": "Kling",
+      "title": "Kling AI review: free and nearly realistic",
       "blurb": "Kuaishou's model, scored on free tier and cost per second.",
       "link": "Read"
     },
@@ -151,7 +151,7 @@
       "tag": "Review",
       "tag_class": "",
       "href": "tools/luma/index.html",
-      "title": "Luma Dream Machine",
+      "title": "Luma Dream Machine review: cinematic, thinner free",
       "blurb": "Ray 3.14 image-to-video and HDR, rated for long clips.",
       "link": "Read"
     }

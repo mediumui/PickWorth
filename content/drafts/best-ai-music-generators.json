@@ -123,7 +123,7 @@
       "tag": "Review",
       "tag_class": "",
       "href": "tools/suno/index.html",
-      "title": "Suno review",
+      "title": "Suno review: a full song in a minute",
       "blurb": "Full test of the song factory: pricing, stems, and where the vocals crack.",
       "link": "Read"
     },
@@ -132,7 +132,7 @@
       "tag": "Review",
       "tag_class": "teal",
       "href": "tools/elevenlabs/index.html",
-      "title": "ElevenLabs Music",
+      "title": "ElevenLabs review",
       "blurb": "The licensed, commercially safe alternative for brand and client work.",
       "link": "Read"
     },
@@ -141,7 +141,7 @@
       "tag": "Index",
       "tag_class": "plain",
       "href": "tools/index.html",
-      "title": "All tools",
+      "title": "All tool reviews",
       "blurb": "Every tool we have reviewed, in one place.",
       "link": "Browse"
     }
