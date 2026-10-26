@@ -1,0 +1,158 @@
+{
+  "slug": "runway",
+  "type": "review",
+  "section": "tools",
+  "answer": "Runway is the New York company that turned AI video into a working editor, not just a generator, and the honest read is that its free tier is a one-time taste while the paid plans are where the real tool lives, with credit burn as the price of admission and Kling beating it on raw physical motion.",
+  "key_answers": [
+    [
+      "What is Runway?",
+      "A browser-based AI video suite from New York that pairs the Gen series of generative models with a full editor. You can generate from text or images, restyle existing footage with the Aleph editing model, and finish in tool with background removal, inpainting, motion tracking, lip sync, and audio generation. The unit of account is the credit, spent per second of video or per image, inside one shared workspace pool."
+    ],
+    [
+      "How much is Runway free?",
+      "The free tier gives 125 one-time credits that do not expire, 5GB of storage, and access to a limited set of models, with watermarks on export. The key catch is that the allowance is a single deposit, not a recurring monthly grant, and the newest models like Gen-4.5 and Aleph 2.0 are not on the free plan. It is enough to decide whether the quality is for you, not enough to produce."
+    ],
+    [
+      "What is Runway good at?",
+      "Direction. Independent reviews repeatedly single out Motion Brush and Camera Controls as the reason a filmmaker picks Runway over a one-prompt generator. Video-to-video editing through Aleph 2.0 is its real moat, and the integrated editor plus Premiere, Resolve, and Photoshop plugins mean you finish shots in Runway rather than exporting to a traditional NLE for every fix."
+    ],
+    [
+      "Where does Runway slip?",
+      "Three things. The credit math is tighter than the headline plan price suggests, because generation bills per second and a single top-quality clip eats a slice of your monthly pool. Single clips still cap around 10 to 16 seconds, so longer work means stitching. And on raw physical motion and human realism, Kling 3.0 holds up better in hands-on reports, while Runway leans on a smoother, more stylized default."
+    ],
+    [
+      "How much does Runway cost?",
+      "Free is $0 with 125 one-time credits. Standard runs $15 a month, or $12 billed annually, for 625 credits. Pro is $35, or $28 annual, for 2,250 credits and a custom voice clone. Max, which replaced the old Unlimited tier for new subscribers, is $95, or $76 annual, for 9,500 credits with one-month rollover. Numbers move, so check the pricing page before you commit."
+    ],
+    [
+      "How does Runway compare to Kling and Luma?",
+      "Runway wins on directed narrative, camera optics, and editing integration; Kling wins on physics, human motion, and clip length up to roughly two minutes; Luma wins on keyframed camera moves and atmospheric B-roll. The practical move for a working creator is to route each shot to the model that does it best rather than pledge to one."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The reports split cleanly. The praise is consistent: quality, creative control, and an editor that fits a production pipeline. The friction is equally consistent: credits burn faster than expected, lower-tier support is slow, peak-hour render queues wait five to fifteen minutes, and some prompts need several re-rolls to land. People stay for the control and budget for a higher tier than the free one."
+    ],
+    [
+      "What score does PickWorth give Runway?",
+      "4.0 out of 5, a good, category-leading creative suite, carried by its editing control and ecosystem, docked for a stingy free tier, per-second credit burn, and motion realism that Kling edges on."
+    ]
+  ],
+  "meta": {
+    "title": "Runway Review 2026: Editor-Class AI Video, Stingy Free Tier",
+    "desc": "Runway review, the US pioneer's Gen-4.5 and Aleph editing, where its control and editor lead, why the free tier and credit burn hold it back, and how it stacks against Kling and Luma.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Runway",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Runway"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/runway/",
+      "datePublished": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Runway review",
+    "lead": "<p class=\"lead\">The New York company that turned AI video from a demo into a working editor, not just a generator. Where it leads on creative control and an edit-in-place pipeline, why the free tier is a one-time taste, and how the per-second credit burn and Kling's motion realism shape the paid decision.</p>",
+    "date": "26 October 2026",
+    "name": "Runway",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "Where it leads"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "compare",
+      "Runway vs Kling vs Luma"
+    ],
+    [
+      "hands-on",
+      "What hands-on users actually report"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Runway earns its 4.0 because it is the most complete creative video suite in the category, and the reason is that it treats generation as one step in an edit, not the whole job. Gen-4.5 holds a character's identity across frames better than most, Aleph 2.0 lets you restyle footage you already shot, and the Motion Brush and Camera Controls plus the Premiere and Resolve plugins are what make a director stay. The deduction is not quality, it is access and accounting: the free tier is 125 one-time credits with the newest models locked away, so it proves the tool and nothing more, and the paid math bills per second, which means Standard's 625 credits buy less than a minute of top-quality video a month. Against Kling it loses the physics and human-motion crown, and against Luma it loses the cleanest keyframed camera move, but no rival packages the same end-to-end editor. Pay for Pro or Max once the control is the point; start free only to confirm the look is yours.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Runway is the New York company that pulled generative video out of the research lab and into a creative workflow. It shipped Gen-2 in 2023 and has pushed the Gen series steadily since, through Gen-3, Gen-3 Alpha, Gen-4, Gen-4.5, and now the Aleph 2.0 editing model. Calling it a video generator undersells it. Around those models sits a browser editor that handles text-to-video, image-to-video, and video-to-video, plus image generation, background removal, inpainting, motion tracking, lip sync, and music and voice tools.</p>\n    <p>The thing you are actually buying is compute measured in credits. Every generation or edit draws from one shared workspace pool, and the rate depends on the model, the length, and the resolution. That framing matters for the free tier and the paid plans alike, because the ceiling is expressed in credits, not in the minutes of footage they happen to buy on your favorite model.</p>\n\n    <h2 id=\"good\">Where it leads</h2>\n    <h3>Creative control</h3>\n    <p>This is the most repeated point across independent reviews, and it is the reason a filmmaker reaches for Runway instead of a one-prompt generator. Where most tools give you a single dial, the text prompt, Runway hands you Motion Brush and Camera Controls: pan, tilt, zoom, tracking, focus shifts, all directed in language rather than keyframes. For storyboard-to-shot work the control panel is the feature that makes the tool viable rather than a toy.</p>\n    <h3>Video-to-video is the moat</h3>\n    <p>Aleph 2.0 starts from footage you already have and applies a targeted change: swap a product, change the weather, relight a shot, drop in a VFX concept. It is not a text-to-video model, and that is the point. Reworking existing clips is where Runway materially outperforms the pure generators, because you keep the structure and only pay for the change. The cost is real, 28 credits per edited second with a 56-credit floor, and it sits behind the paid plans, but for production it is the most practical thing in the suite.</p>\n    <h3>The editor ecosystem</h3>\n    <p>The integrated masking, compositing, and keyframing mean you refine an output in Runway instead of bouncing to Premiere or After Effects for every fix. Act-One and Act-Two capture performance from a webcam and drive a generated character, a genuine timeline unlock for animation and explainer work. Premiere Pro, DaVinci Resolve, and Photoshop plugins signal a tool built to slot into a pipeline, not replace it.</p>\n    <h3>Consistency and enterprise fit</h3>\n    <p>Gen-4.5 holds character proportions and identity across frames better than most rivals when you seed from a locked frame, which is why agencies and studios lean on it for commercial and pre-vis work. Temporal stability, the old weakness of generative video, is now a Runway strength, and that is what separates a usable shot from a random one.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <h3>Credit cost</h3>\n    <p>The deduction most reviewers land on is the accounting. Standard's 625 credits translate to roughly 52 seconds of Gen-4.5 video a month, or about 104 seconds on the faster Gen-4 Turbo, and a single 10-second clip at top quality can eat 100-plus credits. The realistic starting tier for someone doing real work is Pro, not Standard, and users who underestimate their burn rate get stuck mid-project. The Unlimited plan's lower-priority Explore Mode softens this for heavy users, but it is throttled, not instant.</p>\n    <h3>Clip length ceiling</h3>\n    <p>Single clips still top out around 10 to 16 seconds depending on the model. Longer narrative work means generating segments and stitching them, which introduces continuity challenges that no vendor has fully solved. This is shared across the category, but it shapes how you plan a piece on Runway.</p>\n    <h3>Motion realism versus Kling</h3>\n    <p>On physics and human movement, Kling 3.0 leads in hands-on reports. Runway tends toward a smooth, stylized default motion, while Kling tracks the physical consequences of an action frame by frame, pouring water, cloth in wind, a caught object. Runway wins the camera optics and close-up identity; Kling wins material behavior and convincing humans. You feel the difference most on action and talent-driven shots.</p>\n    <h3>Learning curve and missing audio</h3>\n    <p>A first-time user produces worse output on Runway than on a simpler tool for at least the first week, because the controls reward investment. Runway also exports silent video, so dialogue, music, and sound effects are a separate step. During US business hours the render queue can wait five to fifteen minutes even on Pro, and generated hands and faces still drift into the uncanny on fast motion and profile views.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <p>Runway meters everything through credits, and the plans differ mostly in the monthly pool, storage, and a few production features. The newest models and Aleph are paid-only. Figures below reflect the official pricing page as of late 2026 and the vendor moves them, so verify before subscribing.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Plan</th><th>Price (monthly / annual)</th><th>Credits</th><th>What it unlocks</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>125 one-time, non-expiring</td><td>Limited models, watermarked export, 5GB storage, no Gen-4.5 or Aleph</td></tr>\n        <tr><td>Standard</td><td>$15 / $12</td><td>625 per month</td><td>All models, no watermark, 4K upscaling, up to 3 projects, 20GB</td></tr>\n        <tr><td>Pro</td><td>$35 / $28</td><td>2,250 per month</td><td>Custom voice clone, brand kit, 5 projects, 100GB, higher parallel renders</td></tr>\n        <tr><td>Max</td><td>$95 / $76</td><td>9,500 per month</td><td>One-month credit rollover, 10 projects, ProRes and PNG export, 500GB</td></tr>\n      </tbody>\n    </table>\n    <p>The old Unlimited tier, with its relaxed-queue Explore Mode, has been replaced by Max for new subscribers, so do not be surprised if older reviews cite Unlimited. On every paid tier, monthly credits expire on the billing date except Max, which rolls over up to one month of unused balance.</p>\n\n    <h2 id=\"compare\">Runway vs Kling vs Luma</h2>\n    <p>The three leaders have split into distinct strengths, and the honest answer to which is best is that it depends on the shot. Runway directs, Kling moves, Luma frames.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Criterion</th><th>Runway</th><th>Kling</th><th>Luma</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Best at</td><td>Directed narrative, camera optics, editing</td><td>Physics, human motion, long clips</td><td>Keyframed camera, atmospheric B-roll</td></tr>\n        <tr><td>Max clip</td><td>~10 to 16 seconds</td><td>Up to ~2 minutes</td><td>~5 to 30 seconds with extend</td></tr>\n        <tr><td>Entry price</td><td>$15 / month</td><td>From ~$7 / month</td><td>From ~$10 / month</td></tr>\n        <tr><td>Weak spot</td><td>Credit burn, stylized motion</td><td>Rigid camera paths</td><td>Softens on fast motion</td></tr>\n      </tbody>\n    </table>\n    <p>The working pattern the comparisons converge on is hybrid: generate core motion plates on Kling, refine camera and edits on Runway, pull mood variants from Luma, then unify in one post pass. Runway's value is that it is the refinement and finishing bench, not necessarily the place you generate every frame.</p>\n\n    <h2 id=\"hands-on\">What hands-on users actually report</h2>\n    <p>The independent hands-on reports are a clean two-signal split. The praise is consistent and specific: the output quality, the Motion Brush and camera direction, and an editor that fits a production pipeline rather than sitting alongside it. The friction is just as consistent: credits burn faster than the plan price implies, support response on the lower tiers is slow, peak-hour queues wait minutes, and some prompts need several re-rolls before they land. The voice quality of the tool is why people stay; the credit math is why they budget for Pro or Max instead of stopping at free.</p>\n    <p>One note on the free tier that multiple reviews flag: it is a trial, not a recurring allowance. The 125 credits are a single deposit, and the models worth using are behind the paywall, so the free plan answers can I use this, not can I ship on this.</p>",
+  "sources": [
+    "Runway, Pricing, https://runwayml.com/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/kling/index.html",
+      "title": "Kling review",
+      "blurb": "The physics-first rival that beats Runway on human motion and clip length.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/luma/index.html",
+      "title": "Luma review",
+      "blurb": "The camera-operator's pick for keyframed moves and atmospheric B-roll.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/best-ai-video-generators/index.html",
+      "title": "Best AI video generators",
+      "blurb": "The full field, scored and ranked across every leading model.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "runway review",
+    "runway ml pricing",
+    "runway free",
+    "runway gen-4 gen-4.5",
+    "runway aleph 2.0",
+    "best ai video generator",
+    "runway vs kling",
+    "runway vs luma",
+    "runway credits how it works",
+    "runway gen-3 alpha",
+    "is runway worth it",
+    "runway pros cons",
+    "runway vs sora veo",
+    "runway motion brush camera controls"
+  ]
+}

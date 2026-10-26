@@ -1,0 +1,155 @@
+{
+  "slug": "midjourney",
+  "type": "review",
+  "section": "tools",
+  "answer": "Midjourney is the subscription-only AI image generator that leads the field on aesthetic quality and community prompting, costs from $10 a month with no free tier, and reserves private generation for the $60 Pro plan.",
+  "key_answers": [
+    [
+      "What is Midjourney?",
+      "An AI image generator: you describe a picture in words and it returns four variations to upscale, re-roll, or edit. It runs through a web app and a Discord bot, ships the V8.2 model with native 2K output and an inpainting edit model, and has no public API on the consumer plans, so every image moves through Midjourney's own interface."
+    ],
+    [
+      "How much does Midjourney cost?",
+      "Basic is $10 a month, Standard $30, Pro $60, and Mega $120, with annual billing taking 20 percent off each. You are buying GPU time in Fast hours, not a fixed number of pictures: Basic gives 3.3 hours, Standard 15, Pro 30, Mega 60, and any plan can buy extra Fast time at $4 per GPU hour."
+    ],
+    [
+      "Is there a Midjourney free trial?",
+      "No free tier on the core product, and no trial on the main app. A short trial exists only inside the separate niji mobile app. You pay before you learn whether the look fits your work, which is the most common reason budget-constrained designers try a free alternative first."
+    ],
+    [
+      "What is Midjourney good at?",
+      "Aesthetic quality first: lighting, composition, color grading, and a consistent cinematic grade that every 2026 comparison we read ranks at the top. Its style-reference and character-reference systems let a team lock a visual identity into reusable codes on a $30 plan, and the public gallery plus Discord feed are a free education in the tool's range."
+    ],
+    [
+      "Where does Midjourney fall short?",
+      "Four structural gaps. No free tier or trial on the main app. Text in images is unreliable past a couple of words, with independent testers logging roughly a one-in-ten keeper rate on the shipping model. Privacy is paid: Basic and Standard images land in the public gallery by default, and Stealth Mode is locked to the $60 Pro plan. And there is no native API for pipeline work."
+    ],
+    [
+      "Midjourney vs ChatGPT image generation?",
+      "ChatGPT wins on prompt accuracy and text rendering, and it is free to try, so it leads for precise briefs and copy inside the frame. Midjourney wins on look and on holding a visual series together across dozens of frames through personalization and reference tools. Most working designers run both rather than pick one."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The recurring praise is the quality and the reference workflows paying for themselves in client work. The recurring friction is the billing reality: Basic's 200 minutes collapse into 40 to 60 usable images after re-rolls, so users recommend starting on Standard. Stealth locked to Pro draws steady complaint from anyone doing confidential client work, and billing-support response times are a repeated sore point on the lower tiers."
+    ],
+    [
+      "Is Midjourney worth it, and what score does PickWorth give it?",
+      "Yes for concept art, editorial imagery, and hero visuals; no for text-heavy design, strict privacy on a budget, or anyone unwilling to commit before testing. PickWorth scores it 4.0 out of 5: the quality lead is real and the tooling makes it repeatable, but the missing free tier, paid privacy, and GPU-hour billing hold it back from a top mark."
+    ]
+  ],
+  "meta": {
+    "title": "Midjourney Review 2026: Still the Quality King, but at a Price",
+    "desc": "Midjourney review: the AI image quality leader, subscription-only with no free tier, from $10 a month, and private generation locked behind the $60 Pro plan.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Midjourney",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Midjourney"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/midjourney/",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Midjourney review",
+    "lead": "<p class=\"lead\">The AI image generator most professionals reach for because nothing else matches its look, sold as a $10-and-up subscription with no free tier and privacy reserved for the priciest plan. Where it leads, where it slips, and whether the monthly bill is worth it.</p>",
+    "date": "26 October 2026",
+    "name": "Midjourney",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it leads on"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "vs",
+      "Midjourney vs ChatGPT images"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Midjourney is the image generator to buy when the look is the product. The quality lead is real and the reference tooling makes it usable for client work, which is why it keeps the top slot in every 2026 comparison we read. The deductions are structural, not cosmetic: there is no free tier to sample on the main app, private generation is a $60 plan, text in images is still unreliable, and the GPU-hour billing hides how fast a heavy month adds up. Pick Standard at $30 as the floor for real work, keep a typography tool alongside it for anything with words, and you get the best aesthetic engine in the category without overpaying for a tier you do not need.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n<p>Midjourney is an AI image generator. You type a description and it returns four variations, which you upscale, re-roll, or edit. For most of its life the only entrance was a Discord bot; in 2026 there is a standalone web app that runs the same jobs, and Discord stays open for people who like the public feed and the prompt-sharing culture. There is no public API on the consumer plans, so every picture moves through Midjourney's own interface rather than your pipeline.</p>\n<p>The product is a subscription, not a per-image purchase. What you actually buy is GPU time measured in Fast hours, plus an unlimited but slower Relax queue on the higher tiers. That framing causes most of the pricing confusion below, because the sticker price buys a time budget, not a fixed stack of pictures, and upscaling eats that budget faster than a first-time buyer expects.</p>\n<p>The current shipping model is V8.2, which generates native 2K frames in seconds and brought an edit model for inpainting and outpainting. A separate Thinking mode entered alpha in 2026, aimed at the tool's oldest weakness: following long, specific prompts and rendering text. Judge the product you can buy today on V8.2; treat Thinking mode as a promise, not a feature.</p>\n\n<h2 id=\"good\">What it leads on</h2>\n<h3>Aesthetic quality</h3>\n<p>This is the one finding every independent review we read agrees on. On lighting, composition, color grading, and the harder-to-name feeling that a human art director made a decision, Midjourney sits a step above the field. The 2026 comparison roundups rank it first on photorealism and artistic coherence, and the gap is widest when you ask for a mood rather than a literal object. The quality is not something a leaderboard captures, and the competitors have not closed it.</p>\n<h3>Reference and personalization tooling</h3>\n<p>Midjourney's style-reference and character-reference systems are the reason studios stay loyal. A creative director can encode a visual identity into a stack of reference codes and hand that recipe to a team, producing on-brand imagery on a $30 plan without training any model. Personalization learns your taste from the ratings you leave, so the default output drifts toward what you actually like. The public gallery and Discord feed are a free education in the tool's range, a community the API-first rivals do not offer.</p>\n<h3>Speed and refinement</h3>\n<p>The V8-era speed and the web editor turned a rough grid into a finished frame without leaving the app. Several reviewers noted inpainting and outpainting are now good enough to skip Photoshop for quick fixes, and the edit model handles local changes that used to mean a full re-prompt. For iteration speed on a mood board, that matters as much as raw quality.</p>\n\n<h2 id=\"limits\">Where it slips</h2>\n<h3>No free tier, and no trial on the main app</h3>\n<p>Every competitor in the comparison set gives some free access. Midjourney gives none on its core product; a short trial lives only in the separate niji mobile app. You pay before you learn whether the look fits your work, and that upfront commitment is the most repeated reason designers say they tried something else first. It is a real barrier for anyone evaluating a new style direction on a tight budget.</p>\n<h3>Text inside images</h3>\n<p>Ask Midjourney to render more than a couple of words and the error rate climbs. Independent testers logged keeper rates near one in ten for accurate text on the shipping model, with the alpha branch improving but not fixing it. If your brief needs legible signage, a product label, or a poster headline, a typography-built tool will waste less of your time. This is the single biggest gap against ChatGPT's image model.</p>\n<h3>Privacy is a paid feature</h3>\n<p>Every generation on Basic and Standard appears in the public gallery by default. Stealth Mode, which keeps your images off the public feed, is locked to the $60 Pro plan. For anyone making unreleased client work or anything under an NDA, that default is a practical problem. A reported 2024 case where a moderator accessed a Stealth image also left questions about internal access guarantees regardless of plan, and a privacy watchdog scored the company's data practices low.</p>\n<h3>Ownership and content-filter friction</h3>\n<p>Paid subscribers get commercial usage rights, but those rights cover your use of the output, not the unresolved question of what the model trained on. Active litigation from major studios over training and output infringement is before the courts as of 2026, so the ownership story is weaker than Adobe Firefly's licensed-data position. Separately, the content filters throw false positives on ordinary fashion, fine-art, and photography vocabulary, blocking legitimate prompts with no fast appeal path.</p>\n<h3>UI friction and no native API</h3>\n<p>The web app closed most of the Discord gap, but it remains a generate-and-regenerate loop rather than a pixel editor, and there is no public API to drop Midjourney into a workflow. Teams needing programmatic volume run a different tool or a middleware layer, which is a real limit for ecommerce and catalog work.</p>\n\n<h2 id=\"vs\">Midjourney vs ChatGPT images</h2>\n<p>The comparison that decides most 2026 purchases is Midjourney against ChatGPT's image model. ChatGPT wins on prompt accuracy and text: a multi-sentence brief is followed, and words in the picture actually render, which is why it leads the public image leaderboards on those axes and is free to try through a standard account. Midjourney wins on look. Its outputs carry a consistent cinematic grade ChatGPT lacks, and its personalization and reference systems hold a series together across dozens of frames where ChatGPT drifts apart.</p>\n<p>The practical split: reach for ChatGPT when the image must obey a precise brief or carry copy, and reach for Midjourney when the image must feel like a deliberate creative decision. Many working designers run both, using Midjourney as the hero-image engine and a specialist tool for type and vectors. Neither replaces the other; they cover different parts of the same job.</p>\n\n<h2 id=\"pricing\">Plans and what each unlocks</h2>\n<p>The figures below are the official rates we verified on Midjourney's plan documentation in October 2026. They move, so treat this as a snapshot, and annual billing takes 20 percent off every tier.</p>\n<table class=\"compare\">\n<thead><tr><th>Plan</th><th>Monthly</th><th>Annual (per mo)</th><th>Fast GPU</th><th>Relax</th><th>Stealth</th></tr></thead>\n<tbody>\n<tr><td>Basic</td><td>$10</td><td>$8</td><td>3.3 hr (200 min)</td><td>No</td><td>No</td></tr>\n<tr><td>Standard</td><td>$30</td><td>$24</td><td>15 hr</td><td>Unlimited images</td><td>No</td></tr>\n<tr><td>Pro</td><td>$60</td><td>$48</td><td>30 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>\n<tr><td>Mega</td><td>$120</td><td>$96</td><td>60 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>\n</tbody>\n</table>\n<p>Two rules the fine print hides. Extra Fast time costs $4 per GPU hour on any plan, so a heavy upscaling habit drains the budget faster than the headline implies, and Basic's 200 minutes collapse inside a week of real iteration once you factor re-rolls. And if your company clears more than $1 million a year in gross revenue, the terms require Pro or Mega regardless of how little you generate. For individuals, Standard at $30 is the plan that makes sense: Basic is too thin, and Standard's unlimited Relax queue absorbs the overflow you would otherwise pay to rush.</p>\n\n<h2 id=\"verdict\">Verdict</h2>\n<p>Midjourney earns its subscription because the output quality has no free equivalent, and its reference systems make that quality repeatable for a team. Pay the $30 Standard floor, not the $10 Basic, and keep a typography tool alongside it for anything with words. It is the right buy for concept art, editorial imagery, and hero visuals; it is the wrong buy for text-heavy design, strict privacy on a budget, or anyone who will not commit before testing.</p>",
+  "sources": [
+    "Midjourney, Comparing Plans, https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/gemini/index.html",
+      "title": "Gemini review",
+      "blurb": "The general assistant that competes on a different layer.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The image rival that wins on text and prompt accuracy.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/best-image-generation-tools/index.html",
+      "title": "Best AI image generators 2026",
+      "blurb": "Where Midjourney ranks against every rival we tested.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "midjourney review",
+    "midjourney pricing",
+    "is midjourney worth it",
+    "midjourney free trial",
+    "midjourney vs chatgpt image generation",
+    "best ai image generator 2026",
+    "midjourney alternatives",
+    "midjourney for beginners",
+    "midjourney plans explained",
+    "midjourney api",
+    "midjourney stealth mode",
+    "midjourney text in images",
+    "midjourney pro plan",
+    "midjourney standard plan"
+  ]
+}

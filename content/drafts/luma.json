@@ -1,0 +1,154 @@
+{
+  "slug": "luma",
+  "type": "review",
+  "section": "tools",
+  "answer": "Luma Dream Machine is the US lab's text- and image-to-video tool that leads on keyframe camera control and cinematic image-to-video but ships a thin free tier and bills credits on every submit, so the paid plans are where it actually works.",
+  "key_answers": [
+    [
+      "What is Luma Dream Machine?",
+      "A text- and image-to-video generator from Luma Labs, a Palo Alto research lab that builds its own models. You prompt or drop in a still and it returns a short clip with camera motion, lighting, and physics, built on the Ray video family and the Uni-1 image model, with keyframing as the signature control."
+    ],
+    [
+      "How much is Luma free?",
+      "There is a free tier, but its size is not listed on the current pricing page and independent reviews put it at roughly 10 to 30 generations a month, on a monthly reset, watermarked and non-commercial. It is a look at the quality, not a workflow you can ship on."
+    ],
+    [
+      "What is Luma good at?",
+      "Keyframe camera control and image-to-video. You set a start frame and an end frame and Luma interpolates the move, which beats the prompt lottery of most tools for product shots and transitions. Its image-to-video is consistently rated the smoothest in the category for temporal stability and source fidelity."
+    ],
+    [
+      "Where does Luma slip?",
+      "Three places. Base clips are short, about five to ten seconds, so longer scenes need chaining in post. Credits are charged on submit, not success, so bad takes still cost you. And on hard physics and faces, Kling and Runway hold up better in the comparison reviews."
+    ],
+    [
+      "How much does Luma cost?",
+      "Per the official pricing page, Plus is $30 a month for 10,000 credits, Pro is $90 for 40,000, and Ultra is $300 for 150,000, all with commercial use. A 1080p Ray 3.2 ten-second clip runs 1,200 credits, so Plus is about eight top-tier clips before re-rolls. Legacy plan names still appear in old reviews, so confirm live."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The recurring praise is camera control, fast short-clip generation, and clean image-to-video. The recurring friction is credit burn: multiple reports describe losing a month of credits in one fixing session, plus complaints that monthly credits expire and cannot be bought à la carte. The quality is why people stay; the meter is why they budget."
+    ],
+    [
+      "Luma vs Kling vs Runway, which wins?",
+      "No single winner in the comparison reviews. Luma wins planned camera moves and atmospheric B-roll, Kling wins long takes and physical realism, Runway wins directed narrative and faces. The practical call is to route each shot to the model that does it best and unify in post."
+    ],
+    [
+      "What score does PickWorth give Luma?",
+      "3.9 out of 5, good. The camera control and image-to-video are genuinely best-in-class for the price, but the thin free tier and a credit system that punishes iteration keep it just under the leaders."
+    ]
+  ],
+  "meta": {
+    "title": "Luma Review 2026: Great Camera Work, a Weak Free Tier",
+    "desc": "Luma Dream Machine review: keyframe camera control and cinematic image-to-video lead the category, but the free plan is thin and credits burn on re-rolls.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Luma (Dream Machine)",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Luma Labs"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/luma/",
+      "datePublished": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Luma Dream Machine review",
+    "lead": "<p class=\"lead\">The US lab whose keyframe camera control and cinematic image-to-video lead the category, and the thin free tier plus a credit meter that punishes iteration that you only escape on the paid plans.</p>",
+    "date": "26 October 2026",
+    "name": "Luma",
+    "score": "3.9",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "compare",
+      "Luma vs Kling vs Runway"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Luma Dream Machine is the tool you reach for when the shot is a planned camera move, because its keyframing is the finest control in the category at the price and its image-to-video is the smoothest around. The deduction is not the quality, it is the economics: a free tier too thin to ship on, and a credit system that bills on submit rather than on a usable take, so the real cost per finished clip is several times the headline rate. Score it 3.9, good. It is the best camera-operator's tool of the three leaders for B-roll and transitions, the paid Plus plan the floor for anything commercial, and the wrong first pick for long physical takes or face-driven narrative where Kling and Runway hold steadier. Use the free tier to confirm the look, then pay for the meter.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n    <p>Luma is the creative platform from Luma Labs, a Palo Alto research lab that trains its own generative models rather than wrapping a competitor's. The headline product is Dream Machine: type a sentence or drop in a still image and it returns a short video clip with camera movement, lighting, and physical motion. Around Dream Machine sits Ray, the video model family now at Ray 3.2, and Uni-1, an image model that does reference-guided generation and carries brand style into outputs. Through 2026 Luma also pushed Luma Agents and a Skills system that chains research, generation, and refinement into repeatable workflows, so the same account now spans video, image, audio, and text.</p>\n    <p>Luma's pitch is steerability. Most text-to-video tools hand you one unsteerable take and call it done. Luma lets you set a start frame and an end frame and interpolate the motion between them, which is why it appears on shortlists next to Runway and Kling even though the three pull in clearly different directions. It is a US-based lab, which matters for teams with data-residency clauses that rule out the China-based alternative.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Keyframe camera control</h3>\n    <p>This is the feature the independent reviews keep returning to, and it is the one thing Luma does that the others do not match at the price. You define two states, a bottle facing front and the same bottle rotated to show the label, and the model connects them with a planned, repeatable move. For product shots, transitions, and storyboarded sequences it removes the prompt lottery that makes text-to-video feel like gambling. The aivideotoolsguide comparison calls Luma the camera-operator's tool and rates its keyframing the finest control of the three leaders, ahead of Runway's coarse whole-clip motion slider and Kling's aggressive vector paths.</p>\n    <h3>Image-to-video</h3>\n    <p>Multiple hands-on reviews rank Luma's image-to-video as the smoothest in the category. Feed it a still and it adds motion that respects the source composition, with the temporal consistency that minimizes the flicker and jitter plaguing weaker models. Photographers and B-roll makers get the most out of this: a single hero shot becomes a moving clip without re-litigating the framing on every generation. Buildfastwithai's testing singles out Ray's temporal stability as the reason Luma beats Pika and most budget tools for turning photography into video.</p>\n    <h3>Model quality and iteration speed</h3>\n    <p>The Ray 3.2 model ships cinematic image quality and holds continuity across cuts, while the older Ray 3.14 is cheap enough for rapid iteration at four credits a second at base resolution. Generation is fast on short clips, frequently under two minutes, which counts when you are burning through attempts. Tooliverse's aggregated read praises physics, lighting, and reflective surfaces that reviewers compare to high-budget footage, and the mobile app earns a separate line of praise for on-the-go creation.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <h3>Short clips and a credit meter that punishes iteration</h3>\n    <p>Base generations start around five seconds and top out near ten, so longer scenes mean chaining takes in post rather than generating one clean long shot. The deeper problem is the billing model. Luma charges credits on submit, not on success. A clip that comes back as a slow static zoom, or where the hands turn rubbery, still costs you. On the official cost table a 1080p Ray 3.2 ten-second clip is 1,200 credits, so the 10,000-credit Plus plan is roughly eight top-tier clips before you count the re-rolls that real work requires. The effective cost per usable clip is several times the headline, and that gap is where most complaints live.</p>\n    <h3>Realism lags Kling and Runway on some shots</h3>\n    <p>The comparison sources are consistent that Kling holds the most convincing physics and object permanence, keeping cause and effect where the others let objects pass through each other, and that Runway keeps faces and directed narrative more reliable from a locked frame. Luma is praised for beautiful atmospheric B-roll but reported to soften under fast or complex motion, with occasional morphing and limb artifacts on multi-subject scenes. If your brief is a person doing something physically hard, this is not the first tool the reviewers reach for.</p>\n    <h3>The free tier is thin</h3>\n    <p>Luma runs a free tier, but its size is not listed on the current pricing page and independent reviews put it at roughly 10 to 30 generations a month, on a monthly reset, watermarked and non-commercial. Reddit users single out the monthly rather than daily reset as the biggest frustration: spend your credits by day five and you wait until the next cycle. Toolixlab notes the free exports are watermarked and below the quality of Veo 3.1 and Seedance. Treat the free plan as a look at the quality, not a workflow.</p>\n    <h3>What hands-on users actually report</h3>\n    <p>The recurring praise across reviews and community reports is camera control, fast short-clip generation, and clean image-to-video. The recurring friction is credit burn. Costbench aggregates reports of users losing a month of credits in a single fixing session, and of Luma charging for failed and misinterpreted generations. Two structural gripes show up repeatedly: monthly subscription credits expire and do not roll over, and there is no à la carte credit purchase on the consumer plans, only a $4 top-up pack of 1,200 credits that survives cancellation for a year. The quality is why people stay; the meter is why they budget for a higher tier than they expected.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <p>Luma's current individual ladder, per the official pricing page, is credit-based with commercial use from the first paid plan. A legacy Dream Machine ladder with Lite, Plus, and Unlimited names still appears in older reviews, so trust the live page over stale screenshots.</p>\n    <table class=\"compare\">\n        <thead>\n            <tr>\n                <th>Plan</th>\n                <th>Monthly</th>\n                <th>Credits</th>\n                <th>Commercial use</th>\n                <th>Notes</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td>Free</td>\n                <td>$0</td>\n                <td>Limited monthly generations</td>\n                <td>No</td>\n                <td>Watermarked, non-commercial, monthly reset</td>\n            </tr>\n            <tr>\n                <td>Plus</td>\n                <td>$30</td>\n                <td>10,000</td>\n                <td>Yes</td>\n                <td>Luma and third-party models, guest edit access</td>\n            </tr>\n            <tr>\n                <td>Pro</td>\n                <td>$90</td>\n                <td>40,000</td>\n                <td>Yes</td>\n                <td>4x Luma Agents usage</td>\n            </tr>\n            <tr>\n                <td>Ultra</td>\n                <td>$300</td>\n                <td>150,000</td>\n                <td>Yes</td>\n                <td>15x Luma Agents usage</td>\n            </tr>\n        </tbody>\n    </table>\n    <p>The official cost table also lays out per-generation pricing across many models, since Luma now resells third-party video inside one credit pool. Ray 3.2 at 1080p is 400 credits per five seconds and 1,200 per ten; cheaper Ray 3.14 sits at 80 credits per second at 1080p. Yearly billing saves about 17 percent on the new ladder. For bursty workloads the $4 top-up pack is the valve to know about, because subscription credits themselves do not roll over.</p>\n\n    <h2 id=\"compare\">Luma vs Kling vs Runway</h2>\n    <p>The honest framing from the comparison reviews is that there is no single winner, only a best tool per job. Luma is the camera-operator's tool, Kling the stunt-and-duration tool, Runway the director's tool.</p>\n    <table class=\"compare\">\n        <thead>\n            <tr>\n                <th>Use case</th>\n                <th>Luma</th>\n                <th>Kling</th>\n                <th>Runway</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td>Planned camera moves, transitions</td>\n                <td>Best, keyframes</td>\n                <td>Vector paths</td>\n                <td>Motion slider</td>\n            </tr>\n            <tr>\n                <td>Long takes, hard physics</td>\n                <td>Softens under fast motion</td>\n                <td>Best</td>\n                <td>Solid</td>\n            </tr>\n            <tr>\n                <td>Directed narrative, faces</td>\n                <td>Mood over literal</td>\n                <td>Strong</td>\n                <td>Best</td>\n            </tr>\n            <tr>\n                <td>Entry price</td>\n                <td>$30 Plus</td>\n                <td>from about $7</td>\n                <td>from about $12</td>\n            </tr>\n            <tr>\n                <td>API-first building</td>\n                <td>Strongest</td>\n                <td>Higher tier</td>\n                <td>Capable</td>\n            </tr>\n        </tbody>\n    </table>\n    <p>The practical move the reviewers land on is routing each shot to the model that does it best and unifying everything in a single post-production pass, rather than pledging to one lab for the whole project.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Luma Dream Machine earns its place as the camera-control specialist of the 2026 video field. The keyframing and image-to-video are real differentiators, the generation is quick, and the US base keeps it on the shortlist for client work that Kling's China residency rules out. The free tier is a test drive, not a tool, and the credit-on-submit model means the paid Plus plan is the honest floor for anyone shipping. Score it 3.9, good, a hair below the leaders on economics rather than on output.</p>",
+  "sources": [
+    "Luma, Pricing, https://lumalabs.ai/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/kling/index.html",
+      "title": "Kling review",
+      "blurb": "The duration and physics leader that outlasts Luma on long, hard-motion takes.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/gemini/index.html",
+      "title": "Gemini review",
+      "blurb": "The general assistant that also generates video through a different model stack.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/best-ai-video-generators/index.html",
+      "title": "Best AI video generators",
+      "blurb": "The full ranked field, with where each model actually wins.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "luma dream machine review",
+    "luma ai free",
+    "luma vs kling",
+    "luma ai pricing",
+    "luma ray 3",
+    "luma labs video",
+    "best ai video generator free",
+    "luma dream machine vs runway",
+    "luma keyframe video",
+    "luma image to video",
+    "luma dream machine credits",
+    "luma dream machine api",
+    "luma ray3.2",
+    "is luma dream machine worth it"
+  ]
+}

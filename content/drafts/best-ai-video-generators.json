@@ -1,0 +1,173 @@
+{
+  "slug": "best-ai-video-generators",
+  "type": "list",
+  "section": "lists",
+  "answer": "Start with Google Veo 3.1 if you need the best-looking clip with sound, Runway if the video has to be edited into something finished, and Kling if you want the most video per dollar including a generous free tier; Sora is retired, so migrate elsewhere.",
+  "key_answers": [
+    [
+      "What are the best AI video generators in 2026?",
+      "Google Veo 3.1 for quality with sound, Runway for editing, Kling for free tier and value, Luma for image-to-video, and Pika for cheap effects. Sora is retired and no longer a live option."
+    ],
+    [
+      "What is the best free AI video generator?",
+      "Kling: its free plan refills 66 credits every day, enough for several short clips. Google Flow's 50 daily credits also cover Veo 3.1 Lite tests, but Kling's allowance is the most usable for regular work."
+    ],
+    [
+      "Runway vs Kling vs Luma: which should I pick?",
+      "Runway if the clip must become an edited video; Kling if you want the most footage per dollar and a strong free tier; Luma if you are animating a still image or need clips near a minute long."
+    ],
+    [
+      "Which AI video generator has the best quality?",
+      "Google Veo 3.1 leads on prompt adherence and is the only model here that generates lip-synced audio in the same pass. It is the quality replacement for anyone leaving Sora."
+    ],
+    [
+      "Which is best for YouTube and social video?",
+      "Kling for high-volume vertical content and value; Runway when the piece needs real editing; Pika for stylized shorts. Veo when you need dialogue or product polish."
+    ],
+    [
+      "How much should I pay for an AI video generator?",
+      "Start free. Kling and Luma give recurring free credits and Veo gives 50 a day. Paid tiers start at $10-12 a month and only make sense once you need watermark-free, commercial, or higher-resolution output."
+    ],
+    [
+      "What happened to OpenAI Sora?",
+      "Retired. The app closed on 26 April 2026 and the API on 24 September 2026 per OpenAI's help center. Migrate to Veo for quality, Kling for value, or Runway for control; ChatGPT no longer offers Sora video."
+    ]
+  ],
+  "meta": {
+    "title": "Best AI Video Generators 2026: Ranked for the Job You Do",
+    "desc": "Six AI video generators ranked by job in 2026: Veo for quality, Runway for editing, Kling for value, Luma for image-to-video, Pika for effects. Sora is gone.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Video Generators, 2026",
+      "url": "https://www.pickworth.top/lists/best-ai-video-generators/",
+      "datePublished": "2026-10-26",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Google Veo 3.1"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Runway (Gen-4)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kling 3.0"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Luma Dream Machine (Ray 3.14)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Pika"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "OpenAI Sora (discontinued)"
+        }
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "The best AI video generators to pay for in 2026",
+    "lead": "<p class=\"lead\">The video category is not one leaderboard but five different jobs at five different price points. Google Veo 3.1 makes the best clip with sound, Runway is the only tool here with a real editing timeline, Kling gives the most generous free tier and the lowest cost per second, Luma is the image-to-video specialist, and Pika is the cheap effects toy. Pick by the limit you will never hit.</p>",
+    "date": "26 October 2026",
+    "name": "AI video generators",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "landscape",
+      "Six tools, one job"
+    ],
+    [
+      "ranking",
+      "The ranking at a glance"
+    ],
+    [
+      "runway",
+      "Runway: best for editing"
+    ],
+    [
+      "kling",
+      "Kling: best free and value"
+    ],
+    [
+      "luma",
+      "Luma: best image-to-video"
+    ],
+    [
+      "veo",
+      "Google Veo: best quality"
+    ],
+    [
+      "pika",
+      "Pika: best for effects"
+    ],
+    [
+      "sora",
+      "Sora is retired"
+    ],
+    [
+      "picks",
+      "The picks, by scenario"
+    ]
+  ],
+  "verdict": "<p>Pick by the job, not by the leaderboard. Google Veo 3.1 is the quality default and the only model that ships lip-synced audio in the same pass, so it wins for talking-head and product footage. Runway is the pick when the deliverable is a finished, edited video rather than one clip, because its timeline, motion brush, and masking are unmatched here. Kling is the value and free-tier winner: 66 credits refill daily, physics and on-screen text hold up, and cost per second is the lowest in the group. Luma is the image-to-video and long-clip specialist with the best lighting realism but no native audio. Pika is the cheap, playful effects option for social shorts. Sora is gone, and its disappearance is the real lesson: a model's quality is a snapshot, a platform's survival is the investment. Start free on Kling or Veo, then pay only when watermark, commercial rights, or resolution force the upgrade.</p>",
+  "body": "<h2 id=\"landscape\">Six tools, one question: what is the job?</h2>\n<p>The video category is not a single leaderboard. Each tool below is built for a different step of the work: some generate a good clip from a prompt, some animate a still image, some hand you an editor so the clip becomes a finished video, and some win on price so you can render a hundred variants. Asking which is \"best\" without naming the job produces a ranking that fits nobody. The short version: Google Veo 3.1 makes the best-looking clip with sound, Runway is the only one here with a real editing timeline, Kling gives the most generous free tier and the lowest cost per second, Luma is the image-to-video and long-clip specialist, and Pika is the cheap, playful effects toy. Sora, the name everyone searched a year ago, no longer exists.</p>\n\n<h2 id=\"ranking\">The ranking at a glance</h2>\n<p>Prices are monthly list rates from each vendor's own pricing page as of October 2026; free tiers are recurring unless noted. Veo and Kling lead on value, Runway leads on control, Luma on motion realism, Pika on entry price.</p>\n<table class=\"compare\">\n<thead><tr><th>Tool</th><th>From (paid)</th><th>Free tier</th><th>Best at</th><th>Hard limit</th></tr></thead>\n<tbody>\n<tr><td><strong>Google Veo 3.1</strong></td><td>$4.99/mo (Flow)</td><td>50 credits/day</td><td>Quality + native audio</td><td>App video now Omni, not Veo</td></tr>\n<tr><td><strong>Runway</strong></td><td>$12/mo</td><td>125 credits, one-time</td><td>Editing, motion brush</td><td>~10s per clip</td></tr>\n<tr><td><strong>Kling 3.0</strong></td><td>~$10/mo</td><td>66 credits/day</td><td>Value, physics, text</td><td>15s clips</td></tr>\n<tr><td><strong>Luma Dream Machine</strong></td><td>$9.99/mo</td><td>~30 gen/mo</td><td>Image-to-video, HDR</td><td>No native audio</td></tr>\n<tr><td><strong>Pika</strong></td><td>$10/mo</td><td>Packs only</td><td>Effects, cheap clips</td><td>480p on free</td></tr>\n</tbody>\n</table>\n\n<h2 id=\"runway\">Runway: best when the video has to be edited</h2>\n<p>Runway is the only tool in this list that behaves like a post-production suite rather than a clip vending machine. Its Gen-4 and Gen-4.5 models feed a browser timeline where you cut, mask, track motion, paint out objects, and drive camera moves with the motion brush. If your deliverable is a finished 30-second ad rather than one pretty shot, that editor is worth more than a marginally better raw model. Character consistency from a reference image is genuinely strong, which is why agencies keep coming back.</p>\n<p>The cost is twofold. Paid plans start at $12 a month for 625 credits and remove the watermark at 1080p; Pro at $28 adds 4K upscale and 2,250 credits; Unlimited at $76 drops the counter but throttles speed at peak. Credits burn fast: a 10-second 1080p Gen-4.5 clip can cost around 100 credits, so Standard covers roughly six to twelve clips a month. And every generation caps near 10 seconds, so longer pieces are stitch jobs. The free tier is 125 credits total and never refills, so treat it as a trial, not a plan.</p>\n\n<h2 id=\"kling\">Kling: best free tier and best value</h2>\n<p>Kling, from Kuaishou, is the value pick and the free-tier winner. The free plan drops 66 credits into your account every day, enough for several five-second clips, though free output carries a watermark, blocks commercial use, and sits at the back of the queue. Paid Standard runs about $10 a month for 660 credits and Pro about $37 for 3,000. Where Kling earns its rank is physics: hair, fabric, liquid, and camera motion hold up better than most rivals, and on-screen text (logos, signs, labels) stays legible instead of melting, a real advantage for product and e-commerce shots. Kling 3.0 also adds a multi-shot storyboard mode with native audio synced across cuts.</p>\n<p>Two caveats. High-quality generations queue slowly even on paid tiers during peak hours, and the longest single clip is about 15 seconds. Sign-up friction varies by region, with the mainland site reported to ask for a Chinese phone number in some cases, though international access has widened. For most creators balancing quality against budget, Kling is the sweet spot, and its daily free credits make it the safest first stop.</p>\n\n<h2 id=\"luma\">Luma Dream Machine: best for image-to-video and long clips</h2>\n<p>Luma's Ray 3.14 model is the specialist for turning a still into motion. Its lighting physics, HDR output, and smooth camera moves are the most convincing in this group for atmospheric, cinematic shots, and it supports start-and-end keyframes so you can control exactly how a scene resolves. Clip length is the differentiator: Luma stretches to roughly 60 seconds, far beyond Runway's 10 or Kling's 15, which matters if you are animating a product hero shot or a slow landscape.</p>\n<p>The free plan gives around 30 generations a month, watermarked and personal-use only, so it is a sandbox rather than a production line; the Lite plan at $9.99 unlocks watermark-free output, and Plus at $29.99 adds commercial rights and HDR. The gap is audio: Luma generates video only, no native sound, so any voice or score is a separate step. Peak-hour queues on free and Lite tiers can stretch to many minutes. If your work starts from an image and you want it to breathe, Luma is the call; if you need dialogue, look at Veo.</p>\n\n<h2 id=\"veo\">Google Veo 3.1 and Gemini Flow: best raw quality, with audio</h2>\n<p>Veo 3.1 is the quality leader and the only model here that generates lip-synced audio in the same pass as the video. For talking-head explainers, product demos, or any clip where flat \"AI demo\" sound breaks the illusion, that native audio is the feature that justifies the pick. Google ships it through Flow, a filmmaking studio with scene building and object insert or remove tools. The free tier is 50 Flow credits a day for any Google account, which covers a few Veo 3.1 Lite or Fast clips; Quality costs 100 credits and is out of reach on free. Paid access runs through Google AI plans: Plus at $4.99 adds 200 monthly credits, Pro at $19.99 adds 1,000, and the Ultra tiers scale to 25,000.</p>\n<p>The catches are real. In the Gemini app, video generation now uses Gemini Omni rather than Veo and requires a paid plan, so free Veo inside a chatbot is not a thing. Flow's editing tools are blocked in the EEA, Switzerland, and the UK. Daily credits never roll over, and peak hours (roughly 2 to 5 PM UTC) can refuse generation without a subscription. At the API, Veo 3.1 Standard runs about $0.40 per second, Fast about $0.10 to 0.12, Lite about $0.05 to 0.08. For enterprise compliance work, Vertex AI is the cleanest landing spot.</p>\n\n<h2 id=\"pika\">Pika: best for playful effects and the cheapest paid entry</h2>\n<p>Pika is the lightweight, consumer-facing option, and it owns the \"make something fun fast\" corner. Its strengths are video-to-video effects: Pikaffects can melt, inflate, or explode objects, Pikaswaps swap elements, and Pikaframes chains longer sequences. The interface is the friendliest here, and on cost per second it is the cheapest in the category: Standard at $10 a month works out to roughly $0.057 per second at 720p, about a fifth of Runway's rate on a lower-tier model.</p>\n<p>The free plan is packs-only with zero monthly credits, though downloads are watermark-free; commercial rights require a paid plan (Standard $10, Creator $35, Fancy $95). Free and Standard cap at 480p, so 720p or 1080p pushes you up a tier. Rendering realism trails Veo and Runway, and clips stay short. Use Pika when the brief is a stylized social clip or a quick effect, not a photorealistic scene.</p>\n\n<h2 id=\"sora\">Sora is gone: what that means for you</h2>\n<p>OpenAI retired Sora. The app and web experience shut down on 26 April 2026, and the API followed on 24 September 2026; OpenAI's own help center confirms both dates and tells users to export before access ends. If you built a workflow on Sora, migrate now. The closest replacements by job: Veo 3.1 for raw quality and audio, Kling 3.0 for value and iteration, Runway for editing and control. ChatGPT no longer offers Sora as a video feature, and the Gemini app's video now defaults to Gemini Omni rather than Veo, so do not assume your chatbot still makes the clip you remember. The lesson is vendor commitment: a model's quality is a snapshot, a platform's survival is the investment.</p>\n\n<h2 id=\"picks\">The picks, by scenario</h2>\n<p>Best quality with sound: Google Veo 3.1. Best free tier: Kling, with 66 daily credits. Best value per second: Kling again, or Pika at the very bottom of the price ladder. Best for editing a finished video: Runway. Best for animating a still image and for the longest single clip: Luma Dream Machine. Best for playful social effects on the cheap: Pika. Replacing Sora: Veo for quality, Kling for value, Runway for control. None of these is \"the best\" in a vacuum; pick the one whose limit you will never hit.</p>",
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/runway/index.html",
+      "title": "Runway",
+      "blurb": "Gen-4 editing suite and motion brush, judged on price per finished clip.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/kling/index.html",
+      "title": "Kling",
+      "blurb": "Kuaishou's model, scored on free tier and cost per second.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/luma/index.html",
+      "title": "Luma Dream Machine",
+      "blurb": "Ray 3.14 image-to-video and HDR, rated for long clips.",
+      "link": "Read"
+    }
+  ],
+  "search_terms": [
+    "best ai video generator",
+    "best free ai video generator",
+    "runway vs kling vs luma",
+    "ai video generator 2026",
+    "text to video ai free",
+    "best ai video generator for youtube",
+    "kling vs runway vs luma",
+    "google veo 3.1",
+    "luma dream machine",
+    "runway gen-4",
+    "pika ai video",
+    "best ai video generator for editing"
+  ]
+}

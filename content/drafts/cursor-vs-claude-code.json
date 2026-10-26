@@ -1,0 +1,137 @@
+{
+  "slug": "cursor-vs-claude-code",
+  "type": "compare",
+  "section": "comparisons",
+  "answer": "Cursor is the better everyday home for most developers because it lives inside an editor you already use, while Claude Code is the stronger tool for handing off large, autonomous jobs to a terminal agent that runs commands and tests on its own.",
+  "key_answers": [
+    [
+      "Is Cursor better than Claude Code?",
+      "For daily editing, yes: inline completions and a familiar IDE beat a terminal. For autonomous, multi-file work you delegate and walk away from, Claude Code wins."
+    ],
+    [
+      "What is the real difference in interface?",
+      "Cursor is a VS Code fork with AI stitched into the editing surface: tab completion, Cmd+K, codebase chat. Claude Code is a CLI agent that runs at the filesystem level and works next to any editor."
+    ],
+    [
+      "Which handles bigger refactors across a repo?",
+      "Claude Code. It plans, edits across files, runs the build and tests, and opens a PR without you babysitting it. Cursor's Composer does multi-file edits but leans on you for the loop."
+    ],
+    [
+      "Can Cursor use Claude models?",
+      "Yes. Cursor routes to GPT, Claude, Gemini and Grok, so you can run Claude inside Cursor. Claude Code is locked to Anthropic models but is tuned deeper for them."
+    ],
+    [
+      "Which is cheaper?",
+      "Entry price is the same at $20/month. Cursor is a flat subscription with a free tier; Claude Code has no standalone free plan and draws from your shared Claude usage pool, which caps heavy days."
+    ],
+    [
+      "Do I need both?",
+      "Not to start. Most people pick one. Developers doing serious agentic work often run Cursor for editing and Claude Code for the heavy lifting, about $40/month combined."
+    ],
+    [
+      "Which one should I learn first?",
+      "If you live in an editor, learn Cursor. If you already script from a terminal and want to delegate whole tasks, start with Claude Code."
+    ],
+    [
+      "Does PickWorth take money from either vendor?",
+      "No. This comparison is written by one editorial team; pricing is checked against each vendor's official page."
+    ]
+  ],
+  "meta": {
+    "title": "Cursor vs Claude Code (2026): Which One Should You Pick?",
+    "desc": "Cursor and Claude Code compared on interface, agent power, model choice and cost. We rate the AI-first editor against Anthropic's terminal agent and say who should use each.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Cursor vs Claude Code (2026): Which One Should You Pick?",
+      "url": "https://www.pickworth.top/comparisons/cursor-vs-claude-code/",
+      "datePublished": "2026-10-26",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Cursor vs Claude Code",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Cursor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Claude Code"
+          }
+        ]
+      }
+    }
+  },
+  "head": {
+    "kicker": "Head-to-head",
+    "h1": "Cursor vs Claude Code",
+    "lead": "<p class=\"lead\">Two different shapes of AI coding tool: Cursor is an editor you work inside, Claude Code is an agent you hand work to. Here is who should actually use each.</p>",
+    "date": "26 October 2026",
+    "name": "Cursor vs Claude Code",
+    "score": "4.2",
+    "score_class": "good",
+    "score_label": "Cursor score"
+  },
+  "toc": [
+    ["compare", "Side-by-side"],
+    ["interface", "Interface: editor vs terminal"],
+    ["agent", "Agent power and repo-scale refactors"],
+    ["models", "Model choice"],
+    ["context", "Context and large codebases"],
+    ["cost", "Cost and the usage-limit catch"],
+    ["scenarios", "Pick by scenario"]
+  ],
+  "verdict": "<p>Cursor takes the higher score because it meets more developers where they already are: inside an editor, with completions appearing as they type and a chat that already knows the repo. For the daily loop of write, ask, edit, it is the lower-friction pick and the free tier makes it the obvious first step. Claude Code is not worse, it is aimed elsewhere. It is a terminal agent built to take a task, run the commands, fix the tests and come back with a pull request, and on that kind of autonomous, cross-file work it is the stronger tool. The honest call is that they are complements, not rivals: Cursor for the session, Claude Code for the hand-off. If you must own one today and you spend your day in an editor, buy Cursor; if you already run your work from a shell and want to delegate whole jobs, Claude Code is the better single purchase.</p>",
+  "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>Cursor (Anysphere)</th>\n          <th>Claude Code (Anthropic)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Product type</td><td>AI-first IDE (VS Code fork)</td><td class=\"good\">Terminal/CLI agent, also in IDE, web, Slack</td></tr>\n        <tr><td>Free tier</td><td class=\"good\">Yes, Hobby (limited Agent + completions)</td><td>None standalone; needs a paid Claude plan</td></tr>\n        <tr><td>Entry paid</td><td>$20 / month (Pro)</td><td>$20 / month (Claude Pro, $17 annual)</td></tr>\n        <tr><td>Top tier</td><td>Teams $40 / user / month</td><td class=\"good\">Max $100 or $200 / month</td></tr>\n        <tr><td>Inline completion</td><td class=\"good\">Tab completion, Cmd+K, whole-repo index</td><td>No (terminal tool, not an editor)</td></tr>\n        <tr><td>Autonomous agent</td><td>Composer / agent, mostly guided</td><td class=\"good\">Runs commands, tests, opens PRs</td></tr>\n        <tr><td>Model choice</td><td class=\"good\">GPT, Claude, Gemini, Grok</td><td>Anthropic only (Opus, Sonnet, Haiku, Fable)</td></tr>\n        <tr><td>Works without an IDE</td><td>No (lives in the editor)</td><td class=\"good\">Yes, filesystem-level</td></tr>\n        <tr><td>Repo-scale refactor</td><td>Guided multi-file edits</td><td class=\"good\">Autonomous cross-file plans</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"interface\">Interface: editor vs terminal</h2>\n    <p>Cursor is a VS Code fork with AI woven into the editing surface. Tab completion predicts the next edit as you type. Cmd+K rewrites a highlighted block. The chat sidebar has indexed the whole repo, so you can ask what a module does and get an answer grounded in your actual code. That is the appeal: you do not change how you work, you just get help inline. Reviewers consistently rate Cursor's completion as the best in the class, and for someone who already lives in an editor, the switch cost is near zero.</p>\n    <p>Claude Code takes the opposite bet. It is a terminal application. You type a task, it reads files, writes code, runs bash, runs the test suite and iterates until it is done or needs you. Because it operates at the filesystem level, it sits beside any editor you like, VS Code, JetBrains, Neovim, whatever, and it also runs in the web, Slack and on desktop and iOS. The trade is that there is no autocomplete and no inline ghost text. You are not editing with it; you are assigning to it.</p>\n\n    <h2 id=\"agent\">Agent power and repo-scale refactors</h2>\n    <p>On agentic execution, Claude Code leads. Tell it to resolve issue #123 and it will read the ticket, map the code, write the fix, run the tests and open a pull request. Auto mode, now the default on Pro, Max and Team, lets long tasks run while still flagging risky commands. That is the work most editors struggle with: a change that touches twenty files and needs the build to stay green.</p>\n    <p>Cursor is not helpless here. Composer plans multi-file changes and background agents can run while you keep coding, and cloud agents push work off your machine. But the loop is more guided: you steer, review diffs, approve. For cross-cutting refactors where you want to hand off and come back later, Claude Code does more of the driving. For edits where you want to stay in control, Cursor feels better. Third-party benchmark trackers put Claude Code at the top of the field on agentic coding accuracy, which lines up with how the tools are built rather than contradicting it.</p>\n\n    <h2 id=\"models\">Model choice</h2>\n    <p>This is where Cursor wins cleanly. It routes to OpenAI, Anthropic, Google and xAI models, so you can run Claude inside Cursor, or GPT, or Gemini, per task. If your judgment is that a different model fits a different job, Cursor lets you act on it without leaving the editor.</p>\n    <p>Claude Code is locked to Anthropic models, and that is a feature as much as a limit. It is tuned deep for them: tool-use protocol, Opus for hard reasoning, Sonnet for the everyday, Haiku for the cheap. You lose model shopping, but you gain a tool that knows its own models better than a router does. If you only ever wanted Claude for code anyway, the lock-in costs you nothing.</p>\n\n    <h2 id=\"context\">Context and large codebases</h2>\n    <p>Both tools are built to understand a whole repository, but they get there differently. Cursor builds a local index of the codebase so chat and edits stay aware of cross-file dependencies. Claude Code reads the repo at runtime and works inside a large context window with automatic compaction, so it can plan across hundreds of files and keep structure as the task grows.</p>\n    <p>For a focused feature in a repo you know, Cursor's index is plenty and faster to feel. For a task that spans the codebase and runs for hours, Claude Code's autonomous read-and-plan loop holds up better because it does not wait for you to feed it context. Neither will replace reading the code yourself, but the shapes fit different jobs.</p>\n\n    <h2 id=\"cost\">Cost and the usage-limit catch</h2>\n    <p>On the sticker, they look even. Cursor's Pro is $20 a month and Claude Code is included in Claude Pro at $20 a month, or $17 billed annually. Cursor adds a free Hobby tier and a Teams plan at $40 per user; Claude Code tops out at Max, $100 or $200 a month, which also bundles API credits.</p>\n    <p>The catch is the limit model. Cursor sells a flat subscription with a weekly usage pool; when it runs low you top up with credit, and the editor never quietly downgrades your output. Claude Code has no plan of its own. It shares one usage pool with your Claude chats, so terminal work draws down the same rolling five-hour and weekly limits as your conversations. A heavy agent day can throttled by chat usage you forgot about. That is the vendor-unstated limit worth knowing before you bet a sprint on it. The Max tiers fix it with headroom and API credits, but they cost real money.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <h3>You write code every day and want help inline</h3>\n    <p>Cursor. The completions and codebase chat pay back in the first session, and the free tier means you can try it without a card. This is the default recommendation for most solo developers and small teams.</p>\n    <h3>You want to delegate whole tasks and walk away</h3>\n    <p>Claude Code. Resolving issues, running tests, refactoring across files, opening PRs: that is the job it was built for, and it does it from a terminal you already use.</p>\n    <h3>You run both</h3>\n    <p>The power-user setup reviewers keep landing on is Cursor for the session and Claude Code for the heavy lifting, about $40 a month combined. You get inline help where it saves keystrokes and an agent where it saves hours. If you only buy one, buy the one that matches how you actually spend your day.</p>",
+  "related": [
+    {
+      "icon": "i-compare",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/cursor/index.html",
+      "title": "Cursor review",
+      "blurb": "The full breakdown, on its own.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-compare",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/claude/index.html",
+      "title": "Claude review",
+      "blurb": "The full breakdown, on its own.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-compare",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/best-ai-coding-tools/index.html",
+      "title": "Best AI coding tools",
+      "blurb": "Every tool we have rated, ranked.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "cursor vs claude code",
+    "claude code vs cursor",
+    "best ai coding agent",
+    "cursor alternative",
+    "claude code pricing",
+    "cursor vs github copilot",
+    "is cursor better than claude code",
+    "cursor agent vs claude code",
+    "cursor vs claude code 2026",
+    "claude code terminal agent",
+    "cursor ai editor review",
+    "anthropic claude code vs cursor",
+    "ai coding tool comparison",
+    "cursor pro vs claude pro"
+  ]
+}

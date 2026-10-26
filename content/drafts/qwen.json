@@ -1,0 +1,153 @@
+{
+  "slug": "qwen",
+  "type": "review",
+  "section": "tools",
+  "answer": "Qwen is Alibaba's open-weight model family with a free Qwen Chat, strong coding and multilingual reach, a 256K-token context, and paid API tiers through Alibaba Cloud, and it is worth using if you need open, self-hostable, or multilingual AI rather than polished English prose.",
+  "key_answers": [
+    [
+      "What is Qwen?",
+      "Alibaba Cloud's large language model family plus the free consumer chat that sits on top of it. Most Qwen releases ship as open weights under an Apache 2.0 licence, so you can download, self-host, and fine-tune them, while chat.qwen.ai gives anyone free access to the flagship in a browser or app."
+    ],
+    [
+      "Is Qwen free?",
+      "The chat at chat.qwen.ai is free with a sign-in and no published consumer price tier. The open weights are free to run locally. Paid usage is the Alibaba Cloud Model Studio API, billed per million tokens, and new accounts get a limited free token allowance before that kicks in."
+    ],
+    [
+      "What is Qwen good at?",
+      "Three things lead. The open weights are genuinely runnable, including on a laptop. Coding is strong for an open model, and multilingual depth, especially Chinese, Japanese, Korean, and Arabic, beats most Western peers. The free chat also hands you a 256K context with search, research, and image generation bundled in."
+    ],
+    [
+      "Where does Qwen fall short?",
+      "Pure English creative writing reads less native than GPT or Claude because of a Chinese-internet training skew. The hosted chat routes through Alibaba infrastructure, which bothers Western enterprises with strict data rules. And the API throttles low tiers while the third-party tooling ecosystem is thinner than OpenAI's or Anthropic's."
+    ],
+    [
+      "How much does the Qwen API cost?",
+      "Per million tokens through Alibaba Cloud Model Studio, and the numbers move. As of verification, Qwen3-Max runs roughly 2.5 yuan per million input and 10 yuan per million output for the first 32K window on the China deployment, rising for longer contexts, with cache-hit and batch discounts. Treat this as a snapshot and check live pricing."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The praise is steady: strong multilingual output, a free chat with a huge context, and the comfort of identical open weights for a local fallback. The friction is equally steady: sign-up can snag on phone verification in some regions, memory is opt-in and weaker than ChatGPT's, mixed-language prompts can drift replies into Mandarin, and speed dips at peak hours."
+    ],
+    [
+      "How does Qwen compare to DeepSeek and ChatGPT?",
+      "Against DeepSeek, the close peer, DeepSeek tends to lead on raw reasoning while Qwen leads on multilingual reach and coding breadth. Against ChatGPT and Claude, Qwen wins on price-to-capability for self-hosters and on Chinese depth, and loses on English creative polish, ecosystem maturity, and Western enterprise trust."
+    ],
+    [
+      "What score does PickWorth give Qwen?",
+      "4.1 out of 5, a good rating. Qwen is a genuine leader of the open-weight field with a free, high-context chat and strong coding and multilingual depth, held back by a thinner ecosystem, privacy perception tied to Alibaba hosting, and English writing that lags the US frontier."
+    ]
+  ],
+  "meta": {
+    "title": "Qwen Review 2026: Open Weights Make the Free Chat Worth It",
+    "desc": "Qwen review of Alibaba's open-weight models and free Qwen Chat: coding, multilingual strength, 256K context, API pricing, and where it trails ChatGPT and Claude.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Qwen (Qwen Chat)",
+        "applicationCategory": "BusinessApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Alibaba Cloud"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/qwen/",
+      "datePublished": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.1",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Qwen review",
+    "lead": "<p class=\"lead\">The open-weight model family behind a free Qwen Chat, strong on coding, Chinese and multilingual work, and long context, with a paid API for production.</p>",
+    "date": "26 October 2026",
+    "name": "Qwen",
+    "score": "4.1",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What Qwen leads on"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "compare",
+      "How it compares"
+    ],
+    [
+      "pricing",
+      "Plans and API pricing"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Qwen is the model family to use when open weights, multilingual reach, or a free high-context chat are the priority, and it is less obviously the right pick when the deliverable is polished English prose or when Western enterprise data handling is non-negotiable. The 4.1 score reflects a genuine leader of the open-weight field: a free chat that is one of the better playgrounds available, coding and Chinese-language depth that beat most peers, and the rare continuity of running the same model locally or in the cloud. The deductions are real but bounded, a thinner ecosystem than GPT or Claude, privacy perception tied to Alibaba hosting, and English creative writing that lags the US frontier. Use it if you build multilingual or code-heavy products, or if you want frontier-class capability you can self-host; skip it as your only assistant if native English fluency and enterprise trust are the whole job.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n<p>Qwen is Alibaba Cloud's large language model family and the consumer chat that rides on top of it. The model side is the part worth understanding: most Qwen releases ship as open weights under an Apache 2.0 licence, which means anyone can download, self-host, and fine-tune them without paying Alibaba a fee. The chat side, chat.qwen.ai, is a free web and desktop app front end that lets anyone talk to the latest flagship, Qwen3-Max and its siblings, with no credit card and no usage cap published for the consumer tier.</p>\n<p>The family is broad by design. There is a general flagship for conversation and reasoning, a dedicated coder variant in the Qwen-Coder line, a vision-language model in Qwen-VL, an omni model that takes text, image, audio, and video together, a standalone image generator, and a thinking mode that exposes the model's chain of thought before it answers. A useful property for builders is continuity: the same weights that answer in the free chat are the ones you can pull from Hugging Face and run locally, so a prototype in the browser becomes a private deployment without changing models.</p>\n<p>The current generation, the Qwen3 series, also introduced hybrid thinking, where a single set of weights can run in a fast quick mode for simple questions or a slower deep mode for math, code, and multi-step reasoning. That removes the old split between a chat model and a separate reasoning model, and it is one of the design choices independent reviewers keep praising.</p>\n\n<h2 id=\"good\">What Qwen leads on</h2>\n<h3>Open weights you can actually run</h3>\n<p>This is the headline advantage and the one that separates Qwen from ChatGPT and Claude. Very few frontier-tier chat products also hand you the model. Qwen's Apache 2.0 release means a startup, a research lab, or a privacy-sensitive enterprise can host the weights in its own region and sidestep the data-routing question completely. The smaller sizes, 7B and 14B, run on a well-specced laptop or an Apple Silicon machine, and the hands-on community repeatedly names that local fallback as the reason Qwen stays in its daily rotation. When the network drops or the task is sensitive, the same model is one command away on the laptop.</p>\n<h3>Coding strength</h3>\n<p>Independent coding benchmarks place the Qwen flagship in the strong second tier: behind Claude Opus and the GPT-5-class models, but ahead of most other open-weight peers. A 2026 coding leaderboard ranks Qwen3.6-Plus near 69 percent on SWE-bench Verified, with the dedicated Qwen-Coder line scoring well on HumanEval-style generation tasks. For everyday code writing, refactoring, and debugging, the hands-on reports line up: it is a genuinely strong, free option, and the coder variant is the one to reach for when the job is real engineering rather than a demo.</p>\n<h3>Multilingual, and not only English</h3>\n<p>Qwen advertises support for well over a hundred languages, and the depth is real where it counts most: Chinese, Japanese, Korean, and Arabic. Several reviewers single out Chinese-to-English translation and cross-lingual nuance as better than the Western models they tested, which is precisely the gap a global product team hits. For an audience that works across CJK languages daily, this is the clearest place Qwen beats ChatGPT and Claude, and it is the reason many non-Western users name it their default assistant.</p>\n<h3>Long context and a generous free chat</h3>\n<p>The hosted Qwen3-Max exposes a 256,000-token context window through the chat interface at no cost, which is a great deal of document for zero dollars. On top of that window the free chat bundles web search, deep research with cited reports, image generation, and runnable code artifacts. Hands-on users describe the free tier as one of the better model playgrounds on the market, exactly because the same weights are also open and the ceiling is high before any payment appears.</p>\n\n<h2 id=\"limits\">Where it slips</h2>\n<h3>English creative writing trails the US frontier</h3>\n<p>The most repeated critique across independent reviews is that, for purely English creative or subtly nuanced prose, Qwen can read as less natural than GPT or Claude. The training data carries a Chinese-internet skew that occasionally surfaces as slightly unusual phrasing in English output. It is not broken, and it is often fine; it is simply not the model to grab when the writing itself is the deliverable and the register has to be native.</p>\n<h3>Data residency and privacy perception</h3>\n<p>Qwen Chat routes through Alibaba infrastructure. For Western enterprises with SOC2-grade or EU data-handling obligations, that routing is the single largest objection, and the hosted terms of service are separate from the open-weight licence. The answer is also the sales pitch: self-host the weights and the data never leaves your environment. But the chat product by itself does not resolve that concern, and buyers should not pretend it does.</p>\n<h3>API rate limits and a thinner tooling ecosystem</h3>\n<p>The chat is free, but the paid API through Alibaba Cloud's Model Studio bills per token and enforces rate and quota tiers. Throughput at the free or low tier is throttled, which is acceptable for prototyping and awkward for production traffic. Compared with GPT and Claude, the third-party tooling, plugin ecosystem, and Western developer mindshare are lighter, so integrations take more assembly work and there are fewer ready-made connectors to lean on.</p>\n<h3>What hands-on users actually report</h3>\n<p>The lived experience splits into steady signals. The praise is consistent: strong multilingual output, a genuinely free chat with a large context, and the comfort of identical open weights for a local fallback. The friction is equally consistent: sign-up can snag on phone-number verification in some regions, cross-session memory is opt-in and weaker than ChatGPT's, mixed-language prompts can drift the reply into Mandarin, and response speed dips at peak hours. None of it is fatal, and all of it shapes who should adopt Qwen first rather than last.</p>\n\n<h2 id=\"compare\">How it compares</h2>\n<p>Against DeepSeek, the close peer, the rough split is that DeepSeek tends to lead on raw reasoning benchmarks while Qwen tends to lead on multilingual reach and coding breadth. Against ChatGPT and Claude, Qwen wins on price-to-capability for self-hosters and on Chinese-language depth, and loses on English creative polish, ecosystem maturity, and Western enterprise trust. The table below frames the practical choice.</p>\n<table class=\"compare\">\n<thead><tr><th>Need</th><th>Qwen</th><th>DeepSeek</th><th>ChatGPT / Claude</th></tr></thead>\n<tbody>\n<tr><td>Open weights to self-host</td><td>Yes</td><td>Yes</td><td>No</td></tr>\n<tr><td>Best at Chinese and multilingual</td><td>Strong</td><td>Good</td><td>Good</td></tr>\n<tr><td>English creative writing</td><td>Mid</td><td>Mid</td><td>Strong</td></tr>\n<tr><td>Free chat, no card</td><td>Yes</td><td>Yes</td><td>Limited</td></tr>\n<tr><td>Western enterprise trust</td><td>Weak</td><td>Weak</td><td>Strong</td></tr>\n</tbody>\n</table>\n\n<h2 id=\"pricing\">Plans and API pricing</h2>\n<p>The consumer chat at chat.qwen.ai is free with a sign-in and has no published consumer price tier. Paid usage lives on the Alibaba Cloud Model Studio API, billed per million tokens, with pricing that moves and that varies by region and model. As of verification, the Qwen3-Max flagship runs roughly 2.5 yuan per million input tokens and 10 yuan per million output tokens for the first 32K window on the China deployment, stepping higher for longer contexts; the top Qwen3-Max tier lists around 12 yuan input and 36 yuan output per million, with cache-hit and batch discounts. New accounts receive a free token allowance for a limited window. Treat these as a snapshot: the numbers shift, so check the live pricing page before you commit a budget.</p>\n<table class=\"compare\">\n<thead><tr><th>Path</th><th>Cost</th><th>Best for</th></tr></thead>\n<tbody>\n<tr><td>Qwen Chat (chat.qwen.ai)</td><td>Free, sign-in</td><td>Prototyping, multilingual work, long documents</td></tr>\n<tr><td>Open weights (Hugging Face or Ollama)</td><td>Free, Apache 2.0</td><td>Self-hosting, privacy, fine-tuning</td></tr>\n<tr><td>API via Model Studio</td><td>Per million tokens, tiered</td><td>Production calls, agents, batch jobs</td></tr>\n</tbody>\n</table>\n<p>For most readers the path is simple: use the free chat to test whether Qwen's strengths match your tasks, self-host the weights if data residency is the blocker, and move to the API only once you have a workload that justifies the bill.</p>",
+  "sources": [
+    "Qwen, Official site, https://chat.qwen.ai/"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/deepseek/index.html",
+      "title": "DeepSeek review",
+      "blurb": "The close peer on open weights and raw reasoning benchmarks.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The Western frontier product Qwen trails on English prose and trust.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Comparison",
+      "tag_class": "",
+      "href": "comparisons/deepseek-vs-qwen/index.html",
+      "title": "DeepSeek vs Qwen",
+      "blurb": "Reasoning lead against multilingual and coding breadth, head to head.",
+      "link": "Compare"
+    }
+  ],
+  "search_terms": [
+    "qwen review",
+    "qwen free",
+    "qwen vs deepseek",
+    "qwen chat",
+    "alibaba qwen",
+    "qwen3",
+    "qwen coding",
+    "qwen vs chatgpt",
+    "best open source llm",
+    "qwen long context",
+    "qwen3 max",
+    "qwen api pricing",
+    "qwen multilingual"
+  ]
+}

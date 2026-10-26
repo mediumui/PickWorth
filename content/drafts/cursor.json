@@ -1,0 +1,166 @@
+{
+  "slug": "cursor",
+  "type": "review",
+  "section": "tools",
+  "answer": "Cursor is a VS Code-based AI editor that leads on Tab autocomplete, whole-codebase context, and model choice, but its credit-based billing and the need to verify the agent's output mean it pays off most for working developers who code across many files.",
+  "key_answers": [
+    [
+      "What is Cursor?",
+      "An AI-first code editor built as a fork of VS Code, so your settings, extensions, and keybindings import on first launch. AI is wired into every surface: Tab predicts the next several edits, Cmd-K rewrites a selection inline, Chat answers grounded in your repo through @-mentions, and Agent mode plans and executes multi-file changes with terminal and test loops."
+    ],
+    [
+      "How much does Cursor cost?",
+      "Hobby is free with limited agent and Tab usage. Pro is $20 a month with extended agent limits, all frontier models, MCPs, cloud agents, and a roughly $20 usage pool. Pro+ is about $60 for roughly 3x the usage, Teams is $40 per user, and Ultra is $200 for about 20x throughput. Prices have moved repeatedly and should be read as an October 2026 snapshot."
+    ],
+    [
+      "What is Cursor good at?",
+      "Three things repeat across every review. Tab completion is the best inline suggester in the category and users call it telepathy. Whole-codebase context beats file-level assistants on multi-file refactors and unfamiliar code. And the ability to swap Claude, GPT, Gemini, or Grok per request, inside one editor, is a control the terminal-only agents do not match ergonomically."
+    ],
+    [
+      "Where does Cursor fall short?",
+      "The credit billing is the loudest, most durable complaint: the 2025 switch from 500 requests to a usage pool cut effective capacity by 40 to 55 percent, overages bill on demand, and heavy users report $40 to $60 months. The agent is confident but not infallible and can loop on tasks it does not understand. Code goes to third-party model providers, there is no offline mode, and the experience is a VS Code fork, not your current IDE."
+    ],
+    [
+      "Cursor vs Claude Code vs GitHub Copilot?",
+      "They answer different questions. Copilot layers cheap autocomplete onto your existing editor at $10 a month. Claude Code delegates whole tasks in the terminal and wins on long-horizon refactors and full-codebase reads. Cursor edits files inside an IDE with the best inline completion and multi-file Composer. The common 2026 stack is two tools: Cursor for daily coding, Claude Code for large delegated work."
+    ],
+    [
+      "Is the Cursor free plan usable?",
+      "Yes as a real trial, not as a daily driver. Hobby gives limited agent and Tab usage plus basic models, enough to evaluate for a week or two but not enough for full-time work. Most developers who test it seriously either upgrade to Pro within days or decide the tool does not fit, which is exactly what the free tier is for."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "Across r/cursor, r/webdev, Hacker News, and G2 (around 4.7 of 5), the steady praise is Tab and Composer plus codebase context Copilot cannot match, with 20 to 40 percent faster routine coding. The steady friction is billing surprises and hallucination on niche stacks, and a shared warning that every diff must be reviewed. The consensus: worth paying for if you code across many files for a living."
+    ],
+    [
+      "Does PickWorth take money from Cursor?",
+      "No. This review is written by one editorial team and the pricing is checked against Cursor's official pricing page and corroborated across independent reviews. See our method."
+    ]
+  ],
+  "meta": {
+    "title": "Cursor Review 2026: The Best AI Editor, With a Billing Catch",
+    "desc": "Cursor review 2026: best AI-native editor for multi-file work and codebase context, with agent mode and model choice. Slips on billing, autonomy, privacy.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Cursor",
+        "applicationCategory": "DeveloperApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Anysphere"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/cursor/",
+      "datePublished": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.2",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Cursor review",
+    "lead": "<p class='lead'>The AI-native code editor most working developers reach for because Tab completion and whole-codebase context are the best in the category. Where it leads on the in-editor experience, how the credit billing actually costs you, and who should pay for it.</p>",
+    "date": "26 October 2026",
+    "name": "Cursor",
+    "score": "4.2",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "agent",
+      "Agent mode and background agents"
+    ],
+    [
+      "models",
+      "Model choice"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "vs",
+      "Cursor vs Claude Code vs Copilot"
+    ],
+    [
+      "users",
+      "What hands-on users report"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Cursor is the AI coding editor to use in 2026 if you write code for a living and your work lives across many files, because nothing else in the IDE class matches its Tab completion, its Composer multi-file diffs, or its read of the whole repository. The score is 4.2 rather than higher for one reason that comes up in every source we read: the billing. The 2025 move to credits cut effective capacity sharply, overages bill on demand, and the vendor's own recommendation of a $60 tier for daily users tells you the $20 Pro plan is thin for heavy agent work. Pair that with the fact that the agent is confident but not correct, that code leaves your machine for third-party models, and that there is no offline mode, and the tool demands an adult in the chair. Our call: start on the free Hobby tier for a real two-week test, move to Pro when Composer earns it, and keep an eye on the usage dashboard so a heavy week does not become a surprise invoice. It is the best all-round editor for daily coding, not a replacement for judgment, and not the tool to hand unsupervised work on a regulated or security-sensitive codebase.</p>",
+  "body": "<h2 id='what'>What Cursor is</h2>\n    <p>Cursor is an AI-first code editor built as a fork of VS Code, which is why the move from it is close to frictionless: your settings, extensions, and keybindings import on first launch. The difference is that AI is wired into every surface of the editor rather than bolted on as a sidebar you toggle. You get a chat that knows your repository, an inline editor that takes a plain-language instruction, and a Tab key that predicts the next several edits across files instead of finishing a single line.</p>\n    <p>The core interactions are Tab, Cmd-K, and Chat. Tab is predictive multi-line completion that follows your cursor and often lands whole blocks at once. Cmd-K opens an inline prompt to rewrite or generate the selected code in place. Chat and the @-mention system let you point the model at specific files, symbols, or docs so the answer is grounded in your actual code rather than generic training data. Underneath, the editor indexes your codebase locally so context retrieval stays fast and stays on your machine until a request is sent to a model.</p>\n\n    <h2 id='agent'>Agent mode and background agents</h2>\n    <h3>What the agent does</h3>\n    <p>Agent mode is where Cursor moved past autocomplete. Give it a task and it plans the change across files, runs your terminal, executes tests, reads the failures, and iterates until the task passes or it asks you to step in. Composer handles the multi-file edit with a diff view, so you accept or reject each chunk instead of trusting a wall of generated code. Since the 3.0 release in early 2026, Cursor also ships background agents: you hand off a scoped task, a cloud VM clones the repo, works a branch, and opens a pull request while you keep coding. Bugbot, the automated PR reviewer, was repriced in 2026 to roughly a dollar a run, cheap enough to run on every change, and reviewers call this combination of async capability something no competitor packages in one place.</p>\n    <h3>Where the agent slips</h3>\n    <p>The agent is confident, not infallible. Independent testers and Reddit users report it overwriting files with fixes that look right and break two other things, and it can enter looping re-fix cycles on tasks it does not actually understand. On niche or older stacks (Elixir, Zig, OCaml, legacy enterprise code) it hallucinates dependencies and APIs that do not exist, then builds on the mistake. The honest framing is that the agent behaves like a fast junior engineer who never tires of boilerplate: you still read every diff and you still own the result, especially on anything that touches auth, payments, or data.</p>\n\n    <h2 id='models'>Model choice and routing</h2>\n    <p>Cursor lets you pick the model per request, or let Auto route to whatever fits the task. The roster spans Claude (Opus and Sonnet), GPT-5.x, Gemini, Grok, and smaller specialty models, and reviewers consistently call the ability to swap models mid-session within one editor a genuine differentiator. The catch is cost: frontier models draw from your usage pool at the provider's API rate plus a markup, so the model you choose directly sets how fast your plan drains. Auto is still the cheaper option, but it is no longer the free one, because Cursor now prices it per million tokens at the rate of whatever model it selects.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Tab completion</h3>\n    <p>This is the most repeated praise in every review and on G2, where Cursor sits around 4.7 out of 5 across hundreds of ratings. Users describe it as telepathy. It is the single feature most often cited as justifying the subscription on its own, because it accelerates the moment-to-moment act of writing code better than any competitor's inline suggestion, and it keeps improving the longer you use it.</p>\n    <h3>Whole-codebase context</h3>\n    <p>Where GitHub Copilot reasons mostly at the file level, Cursor reads the repository. That difference shows up most on multi-file refactors, navigating an unfamiliar codebase, and answering questions about how pieces fit together. It is the advantage reviewers name when they say Cursor beats Copilot for real engineering work, and it is the reason daily developers stay after the trial ends. For solo builders and small teams it turns large refactors from a dreaded chore into a manageable session.</p>\n    <h3>Model flexibility</h3>\n    <p>The freedom to run a reasoning-heavy model for a hard refactor, a fast model for iteration, and a cheap model for boilerplate, all without leaving the editor, is the kind of control the terminal-only agents do not offer in the same ergonomic package. It also future-proofs the tool: when a new frontier model ships, you can route to it the same afternoon rather than waiting for a vendor to wire it in.</p>\n    <h3>Familiar base</h3>\n    <p>Because it is a VS Code fork, the learning curve is shallow for anyone already in that ecosystem. Extensions, themes, and keybindings carry over, and the AI features sit on top of an editor you already know rather than replacing your muscle memory. That lowers the risk of switching enough that many developers try it on a Friday and never go back.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <h3>The credit billing problem</h3>\n    <p>This is the loudest, most durable complaint. In June 2025 Anysphere swapped Cursor's 500 fast requests model for a credit system, and effective capacity dropped by roughly 40 to 55 percent overnight. Reddit ran weeks of angry threads, the CEO apologized, and the trust hit lingers into 2026. The mechanics still trip people: Pro's headline $20 is not $20 of arbitrary AI. Frontier-model requests deplete a pool at the provider's rate, roughly 225 Sonnet or 550 Gemini calls for that $20, and Opus can burn it in 100 to 150 requests. Overages bill on demand, and until alerts landed, users reported month-end invoices of $40 to $60 with no warning. The vendor itself recommends the $60 Pro+ tier for daily users, which tells you Pro alone is thin for heavy agent work.</p>\n    <h3>Autonomy and the review burden</h3>\n    <p>Cursor is not a set-and-forget coder. Every agent diff needs reading, every multi-file change needs understanding before acceptance, and running Agent unattended on a dirty tree is a known way to wreck a branch. It accelerates development; it does not replace judgment, and treating it as a fire-and-forget generator accumulates technical debt that compounds until a production incident forces a reckoning. The speed is pointless if the output ships broken.</p>\n    <h3>Privacy and the cloud</h3>\n    <p>Code context is sent to third-party model providers for AI features. Privacy Mode stops storage and training, and Business enables it org-wide by default, but it is a setting, not a guarantee, and regulated teams should validate the data flow themselves. One reviewed security gap: Workspace Trust ships disabled, so a malicious repo can run code on open. There is also no offline mode; without a connection you are left with a heavier VS Code fork and none of the AI, a point developers raise constantly about flights and trains.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <p>Prices below are USD as of October 2026, taken from Cursor's pricing page and corroborated across multiple independent reviews. Anysphere has changed them several times and will likely do so again, so treat them as a snapshot rather than a commitment. Annual billing trims roughly 20 percent across paid tiers.</p>\n    <table class='compare'>\n        <thead><tr><th>Plan</th><th>Monthly</th><th>What you get</th></tr></thead>\n        <tbody>\n            <tr><td>Hobby</td><td>$0</td><td>Limited agent and Tab usage, basic models, full evaluation</td></tr>\n            <tr><td>Pro</td><td>$20</td><td>Extended agent limits, all frontier models, MCPs, hooks, cloud agents, Bugbot, roughly $20 usage pool</td></tr>\n            <tr><td>Pro+</td><td>$60</td><td>About 3x Pro usage, same feature set, vendor-recommended for daily agents</td></tr>\n            <tr><td>Teams</td><td>$40/user</td><td>Central billing, SSO, shared rules, team-wide Privacy Mode, analytics, agentic reviews</td></tr>\n            <tr><td>Ultra</td><td>$200</td><td>About 20x Pro throughput, priority routing, earliest model access</td></tr>\n            <tr><td>Enterprise</td><td>Custom</td><td>Pooled usage, SCIM, audit logs, repo/model/MCP controls</td></tr>\n        </tbody>\n    </table>\n    <p>The free Hobby tier is the right way to start: two weeks of real use tells you more than any comparison article. Move to Pro when Composer earns it, and only consider Pro+ or Ultra once you are consistently hitting the Pro pool. Watch the usage dashboard from day one so the bill stays predictable.</p>\n\n    <h2 id='vs'>Cursor vs Claude Code vs GitHub Copilot</h2>\n    <p>These three answer different questions, which is why most professionals in 2026 run at least two of them. Copilot asks what to type next and layers onto your existing editor at $10 a month, with the widest IDE support of the three. Claude Code asks you to delegate a whole task and runs it in the terminal, strongest on long-horizon refactors and reading the full codebase. Cursor asks how to edit these files, inside an IDE, with the best inline completion and multi-file Composer. The common stack is Cursor for daily in-flow coding and Claude Code for large delegated refactors; Copilot wins on price and IDE reach for teams already inside GitHub.</p>\n    <table class='compare'>\n        <thead><tr><th>Tool</th><th>Shape</th><th>Starts at</th><th>Best at</th></tr></thead>\n        <tbody>\n            <tr><td>Cursor</td><td>AI-native VS Code fork</td><td>$20/mo</td><td>Inline completion, multi-file Composer, model choice</td></tr>\n            <tr><td>GitHub Copilot</td><td>IDE extension</td><td>$10/mo</td><td>Cheap autocomplete, widest IDE support</td></tr>\n            <tr><td>Claude Code</td><td>Terminal agent</td><td>$20/mo (with Claude Pro)</td><td>Large delegated refactors, full-codebase reads</td></tr>\n        </tbody>\n    </table>\n\n    <h2 id='users'>What hands-on users actually report</h2>\n    <p>The signal across r/cursor (180,000-plus members), r/webdev, Hacker News, and G2 is a clear split between what people love and what they resent. The steady praise is Tab completion and Composer, with users calling whole-codebase context something Copilot cannot match and reporting 20 to 40 percent faster routine coding once they learn the shortcuts. The steady friction is billing: threads titled in the spirit of 'think Cursor Pro is $20 a month? Nope' run dozens of posts deep, and solo developers document real bills of $40 to $60 in heavy weeks, sometimes more on long agent loops against frontier models.</p>\n    <p>A recurring theme is that the tool is magic for React, Next.js, TypeScript, and Python, but weaker and hallucination-prone on niche stacks, and that you must review everything it produces or you will ship a confident bug. Non-coders who hoped to build without learning to code report getting trapped in cascading fix loops they cannot audit, which is a fair warning about who this tool is for. The practical consensus is that Cursor is worth paying for if you code across many files for a living, the free tier is a genuine trial rather than a trap, and the bill stays reasonable only if you watch the meter.</p>",
+  "sources": [
+    "Cursor, Pricing, https://cursor.com/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/claude/index.html",
+      "title": "Claude review",
+      "blurb": "The model family behind much of Cursor's agent and the terminal alternative.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/github-copilot/index.html",
+      "title": "GitHub Copilot review",
+      "blurb": "The cheaper, wider-reach autocomplete that competes on price and IDE support.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "lists/best-ai-coding-tools/index.html",
+      "title": "Best AI coding tools",
+      "blurb": "How Cursor stacks up against the rest of the field in one place.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "cursor review",
+    "cursor pricing",
+    "cursor free",
+    "cursor vs claude code",
+    "cursor vs github copilot",
+    "best ai coding editor",
+    "is cursor worth it",
+    "cursor pro vs business",
+    "cursor background agent",
+    "cursor agent mode",
+    "cursor credit billing",
+    "cursor pro plus 60",
+    "cursor ultra 200",
+    "cursor code privacy"
+  ]
+}

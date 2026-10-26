@@ -1,0 +1,154 @@
+{
+  "slug": "mistral",
+  "type": "review",
+  "section": "tools",
+  "answer": "Mistral's Le Chat is the European, EU-hosted answer to ChatGPT, and it is worth using if you want a genuinely generous free tier, fast responses, self-hostable open-weight models, and data that stays inside EU jurisdiction. It trails the US frontier on the hardest reasoning and on polished English creative writing, and its ecosystem is thinner, but at $14.99 for Pro it undercuts every American rival on price while holding its own on speed and privacy.",
+  "key_answers": [
+    [
+      "What is Mistral and Le Chat?",
+      "Mistral AI is a Paris-based lab that builds open-weight large language models; Le Chat is its consumer assistant, the European counterpart to ChatGPT. It runs Mistral's own models, including the Mistral Large flagship, the Medium and Small tiers, the Pixtral vision model, the Magistral reasoning line, and Codestral for code, and it wraps them in chat with web search, document analysis, image generation via a partner model, a code interpreter, and a growing set of enterprise connectors."
+    ],
+    [
+      "Is Le Chat free?",
+      "Yes, and unlike most rivals the free tier is a real workspace rather than a teaser. As of late 2026 it includes access to current Mistral models, image generation, limited coding sessions, more than 100 connectors, and a monthly slice of API credits for testing, with usage limits on messages and web searches rather than a hard feature lock. Mistral no longer publishes a clean daily message number, so treat any specific figure you see quoted elsewhere as unsourced. Verified students get the Pro plan at $5.99 a month."
+    ],
+    [
+      "What is Le Chat good at?",
+      "Four things recur across every review we read: speed, price, European data sovereignty, and open weights. Its Flash Answers feature streams at roughly 1,000 words per second, well ahead of ChatGPT in head-to-head timing tests. The Pro plan sits at $14.99, below the $20 norm at OpenAI, Google and Anthropic. And because Mistral is French and EU-hosted, its no-telemetry option and data-residency story are a genuine draw for regulated buyers."
+    ],
+    [
+      "Where does Mistral fall short?",
+      "The honest gap is at the top. On the hardest reasoning, the most nuanced long-form English writing, and the trickiest multi-file coding, the leading American models keep a visible edge. The ecosystem of plugins, custom assistants, tutorials and community answers is smaller than ChatGPT's, image generation leans on a third-party partner rather than a first-party model, and several of the most interesting features, such as agentic Work Mode, were still in preview as of our review. A few hands-on reports also flag interface bugs and rate-limit errors on the newer app."
+    ],
+    [
+      "How much does Le Chat cost?",
+      "Free is $0. Pro is $14.99 a month with higher message and search ceilings, all-day coding in the CLI and IDE, a personal library, No Telemetry Mode, and a larger API credit allowance. Team is $24.99 per user a month, or $19.99 billed annually with a minimum spend, adding shared workspaces, storage per user, and domain verification. Enterprise is custom. The developer API is priced per million tokens and is among the cheapest on the market, with Mistral Large around $0.50 in and $1.50 out. Numbers move, so confirm against the official page before you buy."
+    ],
+    [
+      "How does Le Chat compare to ChatGPT?",
+      "Le Chat wins on cost, raw response speed, EU data residency, and the ability to self-host or fine-tune open weights. ChatGPT wins on top-end reasoning, the breadth of its plugin and Custom GPT marketplace, native image and voice quality, and brand familiarity outside Europe. For most everyday work the two are close enough that the deciding factor is often who sees your prompt and where it rests, not which one is smarter."
+    ],
+    [
+      "What do hands-on users actually report?",
+      "The field splits. Independent reviewers and multilingual users praise the speed, the clean interface, the EU-privacy angle, and natural French, German and Spanish output. Developer reports on Codestral are favorable for single-turn code and fill-in-the-middle completion but more mixed on multi-file refactors and ambiguous prompts. On the consumer app, a recurring thread of user complaints points to occasional slowness, scroll and freeze glitches after a mid-2026 rebrand, and sporadic 429 rate-limit errors that interrupt longer sessions. Most people who stay do so for price and sovereignty, not because it out-reasons the frontier."
+    ],
+    [
+      "What score does PickWorth give Mistral?",
+      "3.9 out of 5, a good score. It earns the rating on a generous free tier, class-leading speed, aggressive pricing, open weights you can run yourself, and a credible European privacy stance. It is held just below the top tier by models that trail the US frontier on the hardest tasks, a smaller ecosystem, and rough edges in the newer app."
+    ]
+  ],
+  "meta": {
+    "title": "Mistral Le Chat Review 2026: Fast, Cheap, European, a Bit Behind the Frontier",
+    "desc": "Mistral Le Chat review: the EU-hosted ChatGPT alternative with a generous free tier, Flash Answers speed, open weights, and GDPR appeal, plus where it trails US rivals.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Le Chat (Mistral)",
+        "applicationCategory": "BusinessApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Mistral AI"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/mistral/",
+      "datePublished": "2026-10-26",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Mistral Le Chat review",
+    "lead": "<p class=\"lead\">The Paris-built assistant that is the closest thing Europe has to a homegrown ChatGPT. We look at where Le Chat leads on speed, price and data sovereignty, where it trails the US frontier, what the plans actually unlock, and who should reach for it.</p>",
+    "date": "26 October 2026",
+    "name": "Mistral (Le Chat)",
+    "score": "3.9",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "Where Le Chat leads"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "users",
+      "What hands-on users report"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Le Chat is the assistant to pick when jurisdiction, speed and price sit at the top of your list, and that is a real, defensible position rather than a consolation prize. The free tier is a workspace you can actually do work in, Pro is the cheapest premium plan from any major lab at $14.99, Flash Answers make the thing feel quicker than almost everything else on the market, and the open-weight, EU-hosted story is one no American rival can replicate. We rate it 3.9 out of 5. The deduction is earned, not arbitrary: on the hardest reasoning, the most polished English prose, and the deepest custom-assistant ecosystem, the US frontier still leads, and the consumer app picked up rough edges after its 2026 rebrand. None of that stops Le Chat from being the smart default for EU and privacy-minded users, for budget buyers who want a paid plan without the $20 tax, and for developers who would rather self-host or fine-tune than rent a black box. If your work lives at the absolute frontier of difficulty, pair it with or switch to one of the leaders. For everyone else, it is hard to beat for the price.</p>",
+  "body": "<h2 id=\"what\">What it is</h2>\n<p>Mistral AI is a Paris-founded lab that made its name by releasing capable models with open weights, the kind you can download, self-host and fine-tune instead of renting from a closed provider. Le Chat is the company's consumer assistant, the European sibling of ChatGPT, and the surface most people meet Mistral through. You can use it in the browser at chat.mistral.ai or through native apps on every major desktop and mobile platform.</p>\n<p>Under the hood it is a model family, not a single brain. The flagship is Mistral Large, with Mistral Medium and Small beneath it for cheaper, faster work, Pixtral for vision, the Magistral line for step-by-step reasoning, and Codestral built specifically for code. Around chat, Le Chat bundles web search with citations, document and image analysis, image generation through a partner model, a code interpreter that runs Python in a sandbox, Deep Research mode for sourced reports, and a connector library that links the assistant to tools like Gmail, GitHub and SharePoint. The pitch is not that it is the smartest model alive, but that it is fast, affordable, multilingual, and keeps your data inside European jurisdiction.</p>\n\n<h2 id=\"good\">Where Le Chat leads</h2>\n<h3>Speed that changes the feel</h3>\n<p>The single most consistent point across independent reviews is responsiveness. Le Chat's Flash Answers mode streams at roughly 1,000 words per second, and in published timing tests it landed about 74% faster than ChatGPT on comparable prompts. If you fire off dozens of queries a day, that gap stops being a spec sheet number and becomes the reason the tool feels good to use. Speed is Mistral's signature, and it is the one advantage reviewers named without qualification.</p>\n<h3>A free tier that is a workspace, not a teaser</h3>\n<p>Most free chat tiers are a few messages behind a paywall. Le Chat's free plan instead gives you current Mistral models, image generation, limited coding sessions, well over 100 connectors, and a monthly allowance of API credits to test the developer platform. The limit is volume, not crippled features. Mistral stopped publishing a precise daily message count, so the only honest thing to say is that casual and moderate use is covered and heavy daily use will bump you toward Pro. For a free plan, that is unusually complete.</p>\n<h3>Open weights and European data sovereignty</h3>\n<p>This is the part no US rival can copy. Mistral is French, hosts in the EU, and offers a No Telemetry Mode on paid plans that keeps your prompts out of training. Several of its models ship under permissive Apache 2.0 or modified licenses, so a business can self-host on its own hardware or fine-tune on proprietary data. For EU companies with GDPR obligations, healthcare and legal teams handling sensitive documents, and anyone who simply does not want prompts landing on US servers, that combination of legal framework and infrastructure is the real product. Reviewers repeated it as the deciding factor for European buyers.</p>\n<h3>Coding with Codestral</h3>\n<p>Codestral is the model developers actually test, and the practitioner signal is nuanced but mostly positive. On single-turn generation, fill-in-the-middle completion, and Python or TypeScript boilerplate it draws repeated favorable comparisons to Copilot-class and Qwen-Coder-class tools, and the API price undercuts OpenAI and Anthropic by a wide margin. The softer spots are multi-file refactors and ambiguous prompts, where it behaves more like a strong autocompleter than a reliable pair programmer.</p>\n\n<h2 id=\"limits\">Where it slips</h2>\n<h3>English creative writing sits a step back</h3>\n<p>The recurring criticism, stated plainly by multiple reviewers, is that Mistral's models trail the American frontier on the hardest reasoning and on the most nuanced long-form English prose. If your job is frontier-level research synthesis, subtle editorial voice, or the trickiest coding architecture, you will notice the gap. For the large majority of everyday tasks you will not, and you will get them faster and cheaper, but the ceiling is real and it is lower than GPT or Claude at their best.</p>\n<h3>A smaller ecosystem</h3>\n<p>ChatGPT's advantage is not just model quality. It is the marketplace of Custom GPTs, the depth of third-party integrations, the volume of tutorials, and the size of the community answering your questions. Mistral's connector library is growing but shallower, there is no equivalent app marketplace, and outside Europe the brand is simply less familiar. A solo user or small team will feel this most when they go looking for a ready-made assistant or a documented workaround.</p>\n<h3>Rough edges in the newer app</h3>\n<p>After a mid-2026 rebrand of the consumer product, a thread of hands-on user reports flagged slowness, poor scrolling, occasional freezes, and sporadic 429 rate-limit errors that interrupt longer sessions. These are not universal, and several users on Linux reported smooth performance, but they are frequent enough that we would not call the app polished to ChatGPT's standard. Image generation also depends on a partner model rather than something Mistral builds itself, and agentic features like Work Mode were still in preview at review time.</p>\n\n<h2 id=\"pricing\">Plans and what each unlocks</h2>\n<p>Pricing below is read from Mistral's official plans page and verified against multiple third-party trackers as of late 2026. Vendor prices move, so confirm before you commit. The pattern is consistent: Mistral prices its paid tier below the $20 norm and makes the free tier genuinely useful.</p>\n<table class=\"compare\">\n<thead><tr><th>Plan</th><th>Price</th><th>What you get</th><th>Best for</th></tr></thead>\n<tbody>\n<tr><td>Free</td><td>$0</td><td>Current models, image generation, limited coding, 100+ connectors, monthly API credit slice, usage limits on messages and searches</td><td>Casual users, testing Mistral</td></tr>\n<tr><td>Student</td><td>$5.99/mo</td><td>Pro features for verified students, up to 12 months</td><td>Students at accredited institutions</td></tr>\n<tr><td>Pro</td><td>$14.99/mo</td><td>Higher message and search ceilings, all-day CLI/IDE coding, personal library, No Telemetry Mode, larger API credits</td><td>Power users, privacy-minded professionals</td></tr>\n<tr><td>Team</td><td>$24.99/user/mo ($19.99 annual)</td><td>Shared workspace, storage per user, domain verification, data export</td><td>Small teams</td></tr>\n<tr><td>Enterprise</td><td>Custom</td><td>Private deployment, custom models, SAML SSO, audit logs</td><td>Larger organisations</td></tr>\n<tr><td>API</td><td>Per million tokens</td><td>Mistral Large about $0.50 in / $1.50 out, among the cheapest on the market</td><td>Developers, high-volume automation</td></tr>\n</tbody>\n</table>\n<p>The developer API deserves its own line. Priced per million tokens and far below OpenAI and Anthropic on comparable models, it is one of the best value-per-token deals available, and the open-weight option means you can drop to self-hosted inference entirely if your volume justifies the GPUs. Free weights are not free inference, but the escape hatch exists, and that matters for cost-sensitive builders.</p>\n\n<h2 id=\"users\">What hands-on users report</h2>\n<p>Pulling the independent signal together, the verdict from people who actually use it daily is a clear two-column ledger. On the credit side: speed everyone notices, a clean ad-free interface, natural output in French, German, Spanish and Italian that needs less post-editing than US models, and the peace of mind of EU hosting. On the debit side: model quality a step behind the frontier on the hardest prompts, a thinner ecosystem, and the app-level glitches and rate-limit errors some users hit after the rebrand. Developer sentiment on Codestral is warm for autocomplete and single-file work, cooler for large refactors. The people who stay are overwhelmingly there for price, speed and sovereignty rather than because it out-reasons the best American models, and that is a coherent reason to stay.</p>\n\n<h2 id=\"verdict\">Verdict</h2>\n<p>Le Chat earns its 3.9 because it does a specific job unusually well: fast, cheap, multilingual, private-by-design AI that you can also run yourself. It is not the most capable assistant in the world, and pretending otherwise would be the kind of overclaim this site exists to puncture. But for the European user, the privacy-conscious professional, the budget buyer refusing the $20 tax, and the developer who would rather own the weights, it is the strongest single option on the table. Choose it for where it leads; keep a frontier model in reach for the rare task where it slips.</p>",
+  "sources": [
+    "Mistral, Le Chat pricing and plans, https://mistral.ai/"
+  ],
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/qwen/index.html",
+      "title": "Qwen review",
+      "blurb": "The Chinese open-weight challenger that competes on the same value-and-control axis.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/chatgpt/index.html",
+      "title": "ChatGPT review",
+      "blurb": "The ecosystem leader Le Chat is measured against on reasoning and features.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/index.html",
+      "title": "All tool reviews",
+      "blurb": "Every assistant and model we have tested so far.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "mistral le chat review",
+    "le chat free",
+    "mistral ai",
+    "le chat vs chatgpt",
+    "mistral coding codestral",
+    "best european ai",
+    "mistral large review",
+    "le chat pro price",
+    "mistral open weights self host",
+    "mistral gdpr eu data",
+    "le chat flash answers speed",
+    "mistral api pricing",
+    "is le chat worth it",
+    "mistral vs chatgpt reasoning"
+  ]
+}
