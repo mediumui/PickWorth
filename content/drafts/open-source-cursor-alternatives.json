@@ -34,7 +34,7 @@
     ]
   ],
   "meta": {
-    "title": "Open-Source Alternatives to Cursor, Compared (2026)",
+    "title": "Eight Cursor Alternatives, Compared — Three We Would Not Build On",
     "desc": "Eight open-source Cursor alternatives compared on licence, activity and workflow fit — including three whose GitHub commits have quietly stalled.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -88,7 +88,7 @@
   },
   "head": {
     "kicker": "Buyer's guide",
-    "h1": "Eight open-source alternatives to Cursor, compared",
+    "h1": "Open-source alternatives to Cursor",
     "lead": "Cursor is excellent and it is not yours. Every keystroke, every indexed file, every prompt lives on someone else's terms — and its most capable features are closed source. These eight projects take a different position: auditable, self-hostable, and modifiable. They are not interchangeable, and three of them have quietly stopped moving.",
     "date": "22 October 2026",
     "name": "Cursor alternatives",

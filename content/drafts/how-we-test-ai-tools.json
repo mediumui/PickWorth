@@ -34,7 +34,7 @@
     ]
   ],
   "meta": {
-    "title": "How We Test AI Tools (and Why the Answer Keeps Changing)",
+    "title": "Three Prompts, Repeated Until a Lucky Run Cannot Win",
     "desc": "Our testing method, written out in full: the fixed prompt set, the repetition problem, the limits we measure and the claims we refuse to repeat.",
     "jsonld": {
       "@context": "https://schema.org",

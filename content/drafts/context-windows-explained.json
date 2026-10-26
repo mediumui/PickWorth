@@ -30,7 +30,7 @@
     ]
   ],
   "meta": {
-    "title": "Context Windows, Explained Without the Headline Numbers",
+    "title": "The Headline Number Is Marketing",
     "desc": "What a context window actually does, why a bigger one is not automatically better, and the two questions that decide whether it matters for your work.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -46,7 +46,7 @@
   },
   "head": {
     "kicker": "Method",
-    "h1": "Context windows, explained without the headline numbers",
+    "h1": "Context windows, explained",
     "lead": "<p class=\"lead\">Every vendor now advertises a very large number. The number is real and mostly beside the point. What matters is how the window behaves when it is full, and whether your work ever fills it.</p>",
     "date": "22 October 2026",
     "name": "Context windows"
