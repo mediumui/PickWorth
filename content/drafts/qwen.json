@@ -38,7 +38,7 @@
     ]
   ],
   "meta": {
-    "title": "Qwen Review 2026: Open Weights Make the Free Chat Worth It",
+    "title": "Qwen Review 2026: Free and Open, But Not What You'd Use for English Prose",
     "desc": "Qwen review of Alibaba's open-weight models and free Qwen Chat: coding, multilingual strength, 256K context, API pricing, and where it trails ChatGPT and Claude.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -67,7 +67,7 @@
   },
   "head": {
     "kicker": "Tool review",
-    "h1": "Qwen review",
+    "h1": "Qwen review: free and open",
     "lead": "<p class=\"lead\">The open-weight model family behind a free Qwen Chat, strong on coding, Chinese and multilingual work, and long context, with a paid API for production.</p>",
     "date": "26 October 2026",
     "name": "Qwen",

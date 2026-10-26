@@ -38,7 +38,7 @@
     ]
   ],
   "meta": {
-    "title": "DeepSeek vs Qwen (2026): Which Open Model Comes Out On Top",
+    "title": "DeepSeek vs Qwen in 2026: Cheaper Reasoning vs Wider Coverage",
     "desc": "Two open-weights Chinese LLM families face off on reasoning, coding, multilingual reach, API price and open-weight breadth. Our 2026 pick, with a side-by-side table.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -79,13 +79,34 @@
     "score_label": "DeepSeek score"
   },
   "toc": [
-    ["compare", "Side-by-side"],
-    ["reasoning", "Reasoning and thinking"],
-    ["coding", "Coding"],
-    ["language", "Multilingual and English"],
-    ["cost", "The cost question"],
-    ["open", "Open weights and breadth"],
-    ["scenarios", "Pick by scenario"]
+    [
+      "compare",
+      "Side-by-side"
+    ],
+    [
+      "reasoning",
+      "Reasoning and thinking"
+    ],
+    [
+      "coding",
+      "Coding"
+    ],
+    [
+      "language",
+      "Multilingual and English"
+    ],
+    [
+      "cost",
+      "The cost question"
+    ],
+    [
+      "open",
+      "Open weights and breadth"
+    ],
+    [
+      "scenarios",
+      "Pick by scenario"
+    ]
   ],
   "verdict": "<p>Neither is the other's replacement. DeepSeek is the better default for anyone who mostly wants to call a strong reasoning-and-coding model through an API without watching the meter: its V4 pricing is a fraction of Qwen's flagship, the licence is plain MIT, and the coding scores are a hair ahead. Qwen is the better pick when the job is broader than one endpoint — when you need a 201-language model, a small Apache-2.0 checkpoint for on-premise work, or a single vendor that also covers vision, audio and video. Score the pairing 4.2 and call DeepSeek the higher-rated tool, but only because most comparison readers are shopping for an API, not a model zoo.</p>",
   "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>DeepSeek (V4 family)</th>\n          <th>Qwen (Qwen3.8 family)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>Current flagship</td><td>DeepSeek-V4-Pro (1.65T / 49B active)</td><td>Qwen3.8-Max (2.4T / ~95B active)</td></tr>\n        <tr><td>Cheapest API per 1M</td><td class=\"good\">V4-Flash: $0.14 in / $0.28 out</td><td>Qwen3.8-Flash: $0.15 / $0.47</td></tr>\n        <tr><td>Flagship API per 1M</td><td class=\"good\">V4-Pro: $0.435 in / $0.87 out</td><td>Qwen3.8-Max: $2 / $6</td></tr>\n        <tr><td>Reasoning mode</td><td class=\"good\">Thinking on by default, effort knob</td><td>enable_thinking switch, keeps prior reasoning</td></tr>\n        <tr><td>Open-weight licence</td><td class=\"good\">Uniform MIT</td><td>Mixed: Apache 2.0 small, custom licence large</td></tr>\n        <tr><td>Context window</td><td>Up to 1M tokens</td><td>Up to 1M tokens</td></tr>\n        <tr><td>Multilingual</td><td>Not published</td><td class=\"good\">201 languages and dialects documented</td></tr>\n        <tr><td>Runs on one GPU</td><td>No, server-class weights</td><td class=\"good\">Qwen3.8-27B / 35B-A3B do</td></tr>\n        <tr><td>Coding (Terminal-Bench 2.1)</td><td class=\"good\">V4-Pro ~87.9, V4.1-Flash ~90.6</td><td>Qwen3.8-Max ~86.6</td></tr>\n        <tr><td>Best for</td><td>Cheap reasoning and code at scale</td><td>Breadth, languages, local hosting</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"reasoning\">Reasoning and thinking</h2>\n    <p>Both families treat reasoning as a mode, not a separate product, and that is the right call for a comparison: you are not choosing between a thinker and a chatterer, you are choosing how each lab exposes the thinking. DeepSeek switches thinking on by default and lets you dial it with a reasoning_effort setting of low, high or max; the API returns the chain alongside the answer. Qwen puts an enable_thinking flag on its hybrid models and adds preserve_thinking, which carries earlier reasoning into later turns and bills it as input. In practice DeepSeek's default-on stance means you get reasoning without thinking about it, while Qwen gives you finer control and a cleaner story for long agent sessions where prior steps matter.</p>\n    <p>The one caveat worth repeating: every score here is vendor-reported. Neither lab submits to a single independent harness with identical settings, so a 1.3-point Terminal-Bench gap between V4-Pro and Qwen3.8-Max is a rounding error next to the differences in your own prompts. Run the two on ten real tasks before you trust a benchmark.</p>\n\n    <h2 id=\"coding\">Coding</h2>\n    <p>On paper DeepSeek is ahead. Its own model cards put V4-Pro at about 87.9 on Terminal-Bench 2.1 and the smaller V4.1-Flash even higher at 90.6 under maximum reasoning effort, against Qwen3.8-Max at roughly 86.6. DeepSeek also has the longer open-reasoning pedigree, going back to the R1 release that made cheap inference famous. Qwen's answer is Qwen3-Coder and its agent tooling, plus first-party Qwen Code, which some teams prefer for the tighter Alibaba-hosted loop.</p>\n    <p>For fully local coding the picture flips. Qwen publishes a 27B dense model that fits an 18GB Ollama build on a single 24GB card; DeepSeek's current open weights run 160 to almost 900 gigabytes and are server-class. If the code has to stay on your machine, Qwen is the only one of the two with a current consumer-size build, and you give up little on everyday tasks.</p>\n\n    <h2 id=\"language\">Multilingual and English</h2>\n    <p>This is the clearest gap and the one Qwen wins outright. Alibaba documents 201 languages and dialects for the Qwen3.5 class, and that breadth carries into the newer family; DeepSeek has never published a comparable count. For English and Chinese both are fluent, and DeepSeek's English is strong enough that plenty of Western teams use it as their default open model. But if your product serves Arabic, Indonesian, Portuguese or any of the long tail, Qwen is the safer bet because the coverage is stated, not assumed. DeepSeek's silence on language count is not proof it is weak — it is just unstated, and in a comparison the stated number wins.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>DeepSeek's pricing is the headline. Straight from its platform page, V4-Flash is $0.0028 per 1M tokens on a cache hit, $0.14 on a miss and $0.28 out; V4-Pro is $0.003625 / $0.435 / $0.87. Qwen's flagship Qwen3.8-Max lists around $2 in / $6 out per 1M on Alibaba's Model Studio, with Qwen3.7-Plus at $0.40 / $1.60 and Qwen3.8-Flash at $0.15 / $0.47. So DeepSeek's cheap tier undercuts Qwen's cheap tier slightly and its flagship undercuts Qwen's flagship by roughly 4x on output. For high-volume RAG, agents and coding assistants the arithmetic is brutal: a million-call chatbot that costs a few hundred dollars on DeepSeek-Flash can cost over a thousand on Qwen's mid tier. The counter is that Qwen's Flash and DeepSeek's Flash land near the same price, so the cheap end of each is comparable and the real split shows up at the top.</p>\n\n    <h2 id=\"open\">Open weights and breadth</h2>\n    <p>Both publish weights, which is the whole point of the category, but the licences and the lineup tell the story. DeepSeek keeps it simple: every recent model, from V3.2 through the V4 family and the older R1, ships under MIT. You can fine-tune, host and resell without reading a clause twice. Qwen splits by size. The small checkpoints, Qwen3.8-27B and Qwen3.6-35B-A3B, are Apache 2.0 and genuinely friendly. The flagships carry a custom licence with extra terms once you pass about 100 million monthly users or $20 million in monthly revenue, and Qwen3.7-Plus is API-only with no open weights at all. Breadth is Qwen's real advantage: one vendor covers text, vision, audio and video, while DeepSeek stays text-first. If you want a model zoo from a single source, Qwen is the wider door; if you want one licence and one engine done well, DeepSeek is.</p>\n\n    <h2 id=\"scenarios\">Pick by scenario</h2>\n    <p>Choose DeepSeek when the work is a firehose of reasoning or code through an API and the bill matters. Chatbots, RAG, coding agents and any batch job that runs millions of calls will be dramatically cheaper, and the MIT licence removes the revenue-trigger worry. Choose Qwen when you need more than one shape of model: a small one for on-premise privacy, a flagship for hard tasks, and vision or audio without bolt-ons. Choose Qwen again if your users are outside English and Chinese, because the 201-language claim is the only one with a number behind it. And choose Qwen if you must self-host on modest hardware, since DeepSeek's current open weights simply will not fit. Most comparison readers are buying an API, which is why DeepSeek takes the higher score here, but the honest answer is that the two are complements more than rivals and a shop running both is not unusual.</p>",

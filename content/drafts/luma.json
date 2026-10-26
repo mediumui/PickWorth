@@ -38,7 +38,7 @@
     ]
   ],
   "meta": {
-    "title": "Luma Review 2026: Great Camera Work, a Weak Free Tier",
+    "title": "Luma Review 2026: The Best Camera Control, Weaker on Free",
     "desc": "Luma Dream Machine review: keyframe camera control and cinematic image-to-video lead the category, but the free plan is thin and credits burn on re-rolls.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -67,7 +67,7 @@
   },
   "head": {
     "kicker": "Tool review",
-    "h1": "Luma Dream Machine review",
+    "h1": "Luma Dream Machine review: cinematic, thinner free",
     "lead": "<p class=\"lead\">The US lab whose keyframe camera control and cinematic image-to-video lead the category, and the thin free tier plus a credit meter that punishes iteration that you only escape on the paid plans.</p>",
     "date": "26 October 2026",
     "name": "Luma",

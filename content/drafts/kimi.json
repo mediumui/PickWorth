@@ -38,7 +38,7 @@
     ]
   ],
   "meta": {
-    "title": "Kimi Review 2026: Long-Context Strength, the Gaps, Verdict",
+    "title": "Kimi Review 2026: Reads a Whole Book, Free, With a Metering Catch",
     "desc": "Kimi review: Moonshot AI's long-context assistant with a million-token window and a free flagship model. Where it leads, where it slips, and who should use it.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -67,7 +67,7 @@
   },
   "head": {
     "kicker": "Tool review",
-    "h1": "Kimi review",
+    "h1": "Kimi review: the $0 plan for long documents",
     "lead": "<p class=\"lead\">Moonshot AI's long-context assistant that puts a near-frontier, open-weight model on the free plan and a million-token window on paid tiers. Where its document handling leads, where English and privacy hold it back, and who should actually use it.</p>",
     "date": "26 October 2026",
     "name": "Kimi",

@@ -38,7 +38,7 @@
     ]
   ],
   "meta": {
-    "title": "Notion AI Review 2026: Strong in Notion, Weak Alone as a Writer",
+    "title": "Notion AI Review 2026: Best in Notion, Weak Everywhere Else",
     "desc": "Notion AI review: workspace Q&A, meeting notes and database autofill are genuinely useful, but writing trails ChatGPT and the free trial is thin. We score it 3.8 out of 5.",
     "jsonld": {
       "@context": "https://schema.org",
@@ -67,7 +67,7 @@
   },
   "head": {
     "kicker": "Tool review",
-    "h1": "Notion AI review",
+    "h1": "Notion AI review: great inside Notion",
     "lead": "<p class=\"lead\">The AI that lives inside your Notion workspace, handling writing, summaries, meeting notes and Q&A across your own docs. Where it leads because it already knows your notes, where it slips because the writing and the pricing both trail a dedicated tool, and what the free trial actually gives before you pay.</p>",
     "date": "26 October 2026",
     "name": "Notion AI",
@@ -76,12 +76,30 @@
     "score_label": "Our score"
   },
   "toc": [
-    ["what", "What it is"],
-    ["good", "What it is good at"],
-    ["limits", "Where it slips"],
-    ["pricing", "Plans and what each unlocks"],
-    ["hands", "What hands-on users report"],
-    ["verdict", "Verdict"]
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "hands",
+      "What hands-on users report"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
   ],
   "verdict": "<p>Notion AI is the best AI you can run without leaving your notes, and that is both its strength and its ceiling. The workspace Q&A, the meeting notes that file themselves, and the database autofill are things a separate chatbot cannot do, because they depend on context that already lives in Notion. On raw writing, though, it is a step behind ChatGPT and Claude, and the 2025 pricing restructure means the number on the invoice is a $20 Business seat, not the old $10 add-on most older reviews still quote. The honest verdict is audience-shaped: if Notion is already your second brain and you have hundreds of pages of real content, the integration pays for itself and the score holds. If you are not a Notion user, or you mainly want the strongest writing model, the same money buys a better standalone assistant. Treat the free trial as a real look at the features and a real wall on volume, then decide by where your work already lives.</p>",
   "body": "<h2 id=\"what\">What it is</h2>\n    <p>Notion AI is not a separate product you open. It is the model layer baked into the Notion editor, the databases, and the meeting capture, so the assistant is one keystroke from any line you are already writing. Instead of copying a page into a chat window and pasting the result back, you ask the question or issue the command where the content sits. That is the entire premise, and it is the reason the tool gets reviewed on integration rather than on model benchmarks.</p>\n    <p>The feature set has grown past simple autocomplete. You get inline writing and rewriting, page and meeting summarization, a Q&A mode that reads across your pages, databases and connected apps and returns cited answers, automatic meeting transcription with summaries, and Custom Agents that run recurring work on a schedule. Notion routes the work through third-party models, mainly OpenAI and Anthropic, under enterprise agreements, and it splits usage into two credit types: Standard credits where Notion picks the model, and Select credits where you choose the model or own a Custom Agent.</p>\n    <h3>The moving parts</h3>\n    <p>The headline capabilities are Notion Agent for chat, generation, translation and autofill; AI Meeting Notes for no-bot transcription; Enterprise Search across connected tools like Slack, GitHub and Google Drive; and Custom Agents for autonomous, repeatable tasks. For a team, the value is less any single output and more that all of it happens inside the workspace where the work already lives.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <h3>Q&amp;A across your own workspace</h3>\n    <p>This is the feature independent reviewers keep calling unique, and they are right. Ask \"what did we decide about pricing\" and you get an answer synthesized from your actual pages, with citations pointing back to the source. No external chatbot can do this out of the box, because none of them can see your notes. For a team with a large, accumulated documentation history, it turns a sprawling archive into something you can query. The catch, covered below, is that the answer quality depends heavily on how tidy the workspace is.</p>\n    <h3>Meeting notes that file themselves</h3>\n    <p>AI Meeting Notes transcribes a call, pulls action items and a summary, and drops the result next to the relevant project page without a bot joining the call. Hands-on reports consistently describe this as the most praised feature, with users saving 15 to 20 minutes of follow-up per meeting. For teams running many calls a week, that alone is a strong argument for the paid tier.</p>\n    <h3>Database autofill</h3>\n    <p>Notion AI can populate database properties on its own: a summary column, a tags column, a sentiment column across a content calendar or a support tracker. ChatGPT has no equivalent because it cannot see your databases. For ops, RevOps and anyone managing structured data inside Notion, this is genuine, code-free automation that justifies the plan for active users.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <h3>Writing is competent, not best-in-class</h3>\n    <p>The independent comparisons are consistent: on open-ended, long-form or tone-sensitive writing, ChatGPT and Claude produce more natural prose and reason through structure rather than just reformatting the page. Notion AI is excellent at tightening, reformatting and changing the tone of text you already have, and weaker at staring at a blank page and producing something well-crafted. It also has no brand-voice training and no SEO mode, so marketing teams that need house style or keyword coverage will hit a wall and fall back to a dedicated writing tool.</p>\n    <h3>Workspace Q&amp;A breaks on scale</h3>\n    <p>The killer feature is also the most complained-about. On r/Notion, repeated threads describe Q&amp;A failing to find information that is plainly sitting in the user's notes. The blunt diagnosis from users is that it searches the workspace rather than holding it in context, and it struggles with databases, their relationships, and anything inside an embed such as a PDF or a Google Doc, which stays invisible to the AI. On a small, tidy space it works; on a sprawling one with thousands of pages, the feature you most wanted is the one that misses. Search quality improved through 2025, but \"unreliable on large workspaces\" remains a real asterisk.</p>\n    <h3>Locked to the ecosystem</h3>\n    <p>Notion AI's strength is also its cage. Every benefit depends on your work being in Notion, and the moment you are outside the app the assistant is gone. It is text-only, with no image, voice or code execution, so a developer or a designer gets nothing here that a general assistant does not already do better. If you are evaluating Notion purely for the AI, the AI is not a reason to adopt the platform; the platform is the reason to use the AI.</p>\n    <h3>Privacy and the facts</h3>\n    <p>Notion states it does not train models on customer data and holds SOC 2 Type 2, ISO 27001, GDPR and CCPA alignment, with 30-day retention for non-Enterprise workspaces and zero retention for Enterprise. That is an adequate posture for most teams and a review-item for regulated ones. Separately, the model hallucinates specific facts and invented statistics show up in drafts, so every external-facing output needs a careful read before it ships.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <p>The pricing math changed in May 2025 and most older reviews have not caught up. The old $10-per-seat add-on, which could sit on any plan, was retired for new customers; legacy subscribers keep grandfathered access. Today the realistic choice is Plus at $10 a seat with only a trial of AI, or Business at $20 a seat with the full feature set and 1,500 Standard plus 500 Select credits per seat. Free and Plus users get a limited trial and then hit a wall. Enterprise is custom and adds zero data retention plus advanced controls.</p>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Plan</th><th>Price per seat / mo</th><th>Notion AI access</th><th>Best for</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>Limited trial</td><td>Sampling the features</td></tr>\n        <tr><td>Plus</td><td>$10</td><td>Limited trial</td><td>Teams not yet needing AI</td></tr>\n        <tr><td>Business</td><td>$20</td><td>Full, 1,500 Standard + 500 Select credits</td><td>Notion power users who want AI</td></tr>\n        <tr><td>Enterprise</td><td>Custom</td><td>Full, custom credits, zero retention</td><td>Regulated and large orgs</td></tr>\n      </tbody>\n    </table>\n    <p>The deduction is not the $20 itself. It is that you must buy the whole Business plan, SSO, 90-day history and private teamspaces included, to unlock the assistant. A solo user who once paid Plus plus a $10 add-on now faces a forced upgrade, and Reddit's reaction to that was bluntly negative. Admins can also buy extra Notion credits for heavy Agent use, which adds a variable cost on top of the seat price for teams leaning on automation.</p>\n\n    <h2 id=\"hands\">What hands-on users report</h2>\n    <p>The signal from r/Notion, Hacker News and hands-on review write-ups splits cleanly by use case. The praise is concentrated on meeting notes and workspace Q&A for people with a real content corpus: time saved per meeting, answers pulled from hundreds of pages, and database autofill that removes manual tagging. The friction is just as concentrated. Q&amp;A misses obvious information on large workspaces, the Android app is reported as less stable than iOS, and the most repeated criticism is that Notion AI is a wrapper that limits the underlying models to Notion-specific context, so it feels weaker than opening ChatGPT or Claude directly for general tasks.</p>\n    <p>The summed verdict across more than ten review outlets is narrow and consistent: worth it for existing Notion power users, skip it as a standalone writing tool. The pricing restructure pushed community sentiment negative, but the people who use it daily for in-Notion work mostly keep it. The pattern to take away is simple: use Notion AI for the work that already lives in Notion, and reach for a dedicated model when the writing has to be good rather than merely fast.</p>",
