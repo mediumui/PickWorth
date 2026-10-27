@@ -290,7 +290,7 @@ table.compare th[scope="row"]{font-weight:600;color:var(--ink)}
   border-radius:var(--radius);padding:18px 18px 18px 44px;margin:0;
 }
 .sources li{margin:.55em 0;font-size:.88rem;color:var(--ink-2)}
-.sources a{color:var(--accent)}
+.sources a{color:var(--accent-2)}
 
 /* ad slot placeholder */
 .ad-slot{
