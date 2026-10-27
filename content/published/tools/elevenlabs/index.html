@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>ElevenLabs is the voice platform you reach for when the audio quality is the point, and the reason is that it is the most realistic in the category. The voice, the cloning, and the emotional control on the newest model are the things that make it the default for creators, and the independent reviews say so. The deduction is for the free plan, which is a real allowance but a learning one, ten minutes of audio a month, non-commercial, with attribution, and without the professional cloning that the commercial work needs. It is the tool to produce the voice your content is built on, the free tier to test that the quality holds up for your use, and the paid tier to remove the ceiling once it does.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> ElevenLabs is the text-to-speech and voice platform most creators reach for because the audio quality and voice cloning are the best in the category. It bills by the character you turn into speech, wrapped in a credit system, and the free plan gives 10,000 credits a month, about ten minutes of audio, for personal non-commercial use with attribution. The ceiling on what the free plan does is real: no commercial rights, no professional cloning, and a character count that is enough for a prototype but not for production.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is ElevenLabs?</dt><dd>A text-to-speech and voice AI platform: it turns written text into realistic spoken audio, and it can clone a voice from a short recording. The product spans narration, dubbing into other languages, music, sound effects, and a conversational voice-agent platform, all sharing one credit system.</dd></div>
         <div class="qa"><dt>How much is ElevenLabs free?</dt><dd>The free plan is 10,000 credits a month, about ten minutes of audio at the standard per-character rate. It is for personal, non-commercial use only, it requires you to credit ElevenLabs in your output, and it does not include the professional voice cloning or the commercial license that the paid plans unlock.</dd></div>
         <div class="qa"><dt>What is ElevenLabs good at?</dt><dd>Voice quality and cloning. The independent reviews we read are consistent that the output is the most realistic in the category, that the instant clone from a short clip is usable, and that the emotional control on the newest model is the reason a creator picks it over the cheaper options.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The independent hands-on reports are a clear two-signal split. The recurring praise is the voice quality and the cloning, and the recurring friction is the credit burn and the long support response on the lower tiers. The voice quality is why people stay; the credit math is why they budget for a higher tier than the free one.</dd></div>
         <div class="qa"><dt>What score does PickWorth give ElevenLabs?</dt><dd>4.0 out of 5, a strong, category-leading voice platform, with a genuinely limited free plan, per-character credit billing that rewards planning, and the professional cloning work sitting behind the paid tiers.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from ElevenLabs?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from ElevenLabs's official pricing page. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -300,13 +317,13 @@ gtag('config', 'G-WV775YD52J');
     <p>ElevenLabs prices the tiers as a monthly credit allowance, and the number to read is the credit line plus the model, not the sticker. The free plan is the entry point, with the commercial license, the professional cloning, and the concurrency added at the paid tiers. The cheapest step removes the non-commercial terms and is the minimum for anything you ship, and the higher tiers are for the people whose month of production is measured in hours of audio rather than minutes.</p>
     <table class="compare">
       <thead>
-        <tr><th>Tier</th><th>Price</th><th>Credits / month</th><th>What it unlocks</th></tr>
+        <tr><th scope="col">Tier</th><th scope="col">Price</th><th scope="col">Credits / month</th><th scope="col">What it unlocks</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>10,000</td><td>Personal, non-commercial, attribution, instant cloning</td></tr>
-        <tr><td>Starter</td><td>~$6 / mo</td><td>30,000</td><td>Commercial license, voice cloning, more projects</td></tr>
-        <tr><td>Creator</td><td>~$22 / mo</td><td>~121,000</td><td>Professional cloning, higher audio quality, concurrency</td></tr>
-        <tr><td>Pro</td><td>~$99 / mo</td><td>~600,000</td><td>Production quality, 44.1 kHz PCM, concurrency, priority</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>10,000</td><td>Personal, non-commercial, attribution, instant cloning</td></tr>
+        <tr><th scope="row">Starter</th><td>~$6 / mo</td><td>30,000</td><td>Commercial license, voice cloning, more projects</td></tr>
+        <tr><th scope="row">Creator</th><td>~$22 / mo</td><td>~121,000</td><td>Professional cloning, higher audio quality, concurrency</td></tr>
+        <tr><th scope="row">Pro</th><td>~$99 / mo</td><td>~600,000</td><td>Production quality, 44.1 kHz PCM, concurrency, priority</td></tr>
       </tbody>
     </table>
     <p>Two lines bend that table. A developer building voice into an app uses the API, which is billed separately per character and is the product to reach for when the free plan is the prototype stage, and the higher tiers are the steady-state bill. And the credit-to-minute math shifts by model, the cheaper model halves the per-character cost, so the plan is the floor and the model choice is the lever that moves the real cost of a given month. The free-plan allowance and the per-plan credit lines were read from ElevenLabs's official pricing page as of October 2026, and the per-model cost and the credit rollover rules can change without a version bump.</p>
@@ -363,7 +380,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

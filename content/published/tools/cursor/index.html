@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.2</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Cursor is the AI coding editor to use in 2026 if you write code for a living and your work lives across many files, because nothing else in the IDE class matches its Tab completion, its Composer multi-file diffs, or its read of the whole repository. The score is 4.2 rather than higher for one reason that comes up in every source we read: the billing. The 2025 move to credits cut effective capacity sharply, overages bill on demand, and the vendor's own recommendation of a $60 tier for daily users tells you the $20 Pro plan is thin for heavy agent work. Pair that with the fact that the agent is confident but not correct, that code leaves your machine for third-party models, and that there is no offline mode, and the tool demands an adult in the chair. Our call: start on the free Hobby tier for a real two-week test, move to Pro when Composer earns it, and keep an eye on the usage dashboard so a heavy week does not become a surprise invoice. It is the best all-round editor for daily coding, not a replacement for judgment, and not the tool to hand unsupervised work on a regulated or security-sensitive codebase.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Cursor is a VS Code-based AI editor that leads on Tab autocomplete, whole-codebase context, and model choice, but its credit-based billing and the need to verify the agent's output mean it pays off most for working developers who code across many files.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Cursor?</dt><dd>An AI-first code editor built as a fork of VS Code, so your settings, extensions, and keybindings import on first launch. AI is wired into every surface: Tab predicts the next several edits, Cmd-K rewrites a selection inline, Chat answers grounded in your repo through @-mentions, and Agent mode plans and executes multi-file changes with terminal and test loops.</dd></div>
         <div class="qa"><dt>How much does Cursor cost?</dt><dd>Hobby is free with limited agent and Tab usage. Pro is $20 a month with extended agent limits, all frontier models, MCPs, cloud agents, and a roughly $20 usage pool. Pro+ is about $60 for roughly 3x the usage, Teams is $40 per user, and Ultra is $200 for about 20x throughput. Prices have moved repeatedly and should be read as an October 2026 snapshot.</dd></div>
         <div class="qa"><dt>What is Cursor good at?</dt><dd>Three things repeat across every review. Tab completion is the best inline suggester in the category and users call it telepathy. Whole-codebase context beats file-level assistants on multi-file refactors and unfamiliar code. And the ability to swap Claude, GPT, Gemini, or Grok per request, inside one editor, is a control the terminal-only agents do not match ergonomically.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Is the Cursor free plan usable?</dt><dd>Yes as a real trial, not as a daily driver. Hobby gives limited agent and Tab usage plus basic models, enough to evaluate for a week or two but not enough for full-time work. Most developers who test it seriously either upgrade to Pro within days or decide the tool does not fit, which is exactly what the free tier is for.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>Across r/cursor, r/webdev, Hacker News, and G2 (around 4.7 of 5), the steady praise is Tab and Composer plus codebase context Copilot cannot match, with 20 to 40 percent faster routine coding. The steady friction is billing surprises and hallucination on niche stacks, and a shared warning that every diff must be reviewed. The consensus: worth paying for if you code across many files for a living.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Cursor?</dt><dd>No. This review is written by one editorial team and the pricing is checked against Cursor's official pricing page and corroborated across independent reviews. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -319,14 +336,14 @@ gtag('config', 'G-WV775YD52J');
     <h2 id='pricing'>Plans and what each unlocks</h2>
     <p>Prices below are USD as of October 2026, taken from Cursor's pricing page and corroborated across multiple independent reviews. Anysphere has changed them several times and will likely do so again, so treat them as a snapshot rather than a commitment. Annual billing trims roughly 20 percent across paid tiers.</p>
     <table class='compare'>
-        <thead><tr><th>Plan</th><th>Monthly</th><th>What you get</th></tr></thead>
+        <thead><tr><th scope="col">Plan</th><th scope="col">Monthly</th><th scope="col">What you get</th></tr></thead>
         <tbody>
-            <tr><td>Hobby</td><td>$0</td><td>Limited agent and Tab usage, basic models, full evaluation</td></tr>
-            <tr><td>Pro</td><td>$20</td><td>Extended agent limits, all frontier models, MCPs, hooks, cloud agents, Bugbot, roughly $20 usage pool</td></tr>
-            <tr><td>Pro+</td><td>$60</td><td>About 3x Pro usage, same feature set, vendor-recommended for daily agents</td></tr>
-            <tr><td>Teams</td><td>$40/user</td><td>Central billing, SSO, shared rules, team-wide Privacy Mode, analytics, agentic reviews</td></tr>
-            <tr><td>Ultra</td><td>$200</td><td>About 20x Pro throughput, priority routing, earliest model access</td></tr>
-            <tr><td>Enterprise</td><td>Custom</td><td>Pooled usage, SCIM, audit logs, repo/model/MCP controls</td></tr>
+            <tr><th scope="row">Hobby</th><td>$0</td><td>Limited agent and Tab usage, basic models, full evaluation</td></tr>
+            <tr><th scope="row">Pro</th><td>$20</td><td>Extended agent limits, all frontier models, MCPs, hooks, cloud agents, Bugbot, roughly $20 usage pool</td></tr>
+            <tr><th scope="row">Pro+</th><td>$60</td><td>About 3x Pro usage, same feature set, vendor-recommended for daily agents</td></tr>
+            <tr><th scope="row">Teams</th><td>$40/user</td><td>Central billing, SSO, shared rules, team-wide Privacy Mode, analytics, agentic reviews</td></tr>
+            <tr><th scope="row">Ultra</th><td>$200</td><td>About 20x Pro throughput, priority routing, earliest model access</td></tr>
+            <tr><th scope="row">Enterprise</th><td>Custom</td><td>Pooled usage, SCIM, audit logs, repo/model/MCP controls</td></tr>
         </tbody>
     </table>
     <p>The free Hobby tier is the right way to start: two weeks of real use tells you more than any comparison article. Move to Pro when Composer earns it, and only consider Pro+ or Ultra once you are consistently hitting the Pro pool. Watch the usage dashboard from day one so the bill stays predictable.</p>
@@ -334,11 +351,11 @@ gtag('config', 'G-WV775YD52J');
     <h2 id='vs'>Cursor vs Claude Code vs GitHub Copilot</h2>
     <p>These three answer different questions, which is why most professionals in 2026 run at least two of them. Copilot asks what to type next and layers onto your existing editor at $10 a month, with the widest IDE support of the three. Claude Code asks you to delegate a whole task and runs it in the terminal, strongest on long-horizon refactors and reading the full codebase. Cursor asks how to edit these files, inside an IDE, with the best inline completion and multi-file Composer. The common stack is Cursor for daily in-flow coding and Claude Code for large delegated refactors; Copilot wins on price and IDE reach for teams already inside GitHub.</p>
     <table class='compare'>
-        <thead><tr><th>Tool</th><th>Shape</th><th>Starts at</th><th>Best at</th></tr></thead>
+        <thead><tr><th scope="col">Tool</th><th scope="col">Shape</th><th scope="col">Starts at</th><th scope="col">Best at</th></tr></thead>
         <tbody>
-            <tr><td>Cursor</td><td>AI-native VS Code fork</td><td>$20/mo</td><td>Inline completion, multi-file Composer, model choice</td></tr>
-            <tr><td>GitHub Copilot</td><td>IDE extension</td><td>$10/mo</td><td>Cheap autocomplete, widest IDE support</td></tr>
-            <tr><td>Claude Code</td><td>Terminal agent</td><td>$20/mo (with Claude Pro)</td><td>Large delegated refactors, full-codebase reads</td></tr>
+            <tr><th scope="row">Cursor</th><td>AI-native VS Code fork</td><td>$20/mo</td><td>Inline completion, multi-file Composer, model choice</td></tr>
+            <tr><th scope="row">GitHub Copilot</th><td>IDE extension</td><td>$10/mo</td><td>Cheap autocomplete, widest IDE support</td></tr>
+            <tr><th scope="row">Claude Code</th><td>Terminal agent</td><td>$20/mo (with Claude Pro)</td><td>Large delegated refactors, full-codebase reads</td></tr>
         </tbody>
     </table>
 
@@ -394,7 +411,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

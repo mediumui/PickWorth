@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -257,14 +274,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.9</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Luma Dream Machine is the tool you reach for when the shot is a planned camera move, because its keyframing is the finest control in the category at the price and its image-to-video is the smoothest around. The deduction is not the quality, it is the economics: a free tier too thin to ship on, and a credit system that bills on submit rather than on a usable take, so the real cost per finished clip is several times the headline rate. Score it 3.9, good. It is the best camera-operator's tool of the three leaders for B-roll and transitions, the paid Plus plan the floor for anything commercial, and the wrong first pick for long physical takes or face-driven narrative where Kling and Runway hold steadier. Use the free tier to confirm the look, then pay for the meter.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Luma Dream Machine is the US lab's text- and image-to-video tool that leads on keyframe camera control and cinematic image-to-video but ships a thin free tier and bills credits on every submit, so the paid plans are where it actually works.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Luma Dream Machine?</dt><dd>A text- and image-to-video generator from Luma Labs, a Palo Alto research lab that builds its own models. You prompt or drop in a still and it returns a short clip with camera motion, lighting, and physics, built on the Ray video family and the Uni-1 image model, with keyframing as the signature control.</dd></div>
         <div class="qa"><dt>How much is Luma free?</dt><dd>There is a free tier, but its size is not listed on the current pricing page and independent reviews put it at roughly 10 to 30 generations a month, on a monthly reset, watermarked and non-commercial. It is a look at the quality, not a workflow you can ship on.</dd></div>
         <div class="qa"><dt>What is Luma good at?</dt><dd>Keyframe camera control and image-to-video. You set a start frame and an end frame and Luma interpolates the move, which beats the prompt lottery of most tools for product shots and transitions. Its image-to-video is consistently rated the smoothest in the category for temporal stability and source fidelity.</dd></div>
@@ -273,7 +290,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The recurring praise is camera control, fast short-clip generation, and clean image-to-video. The recurring friction is credit burn: multiple reports describe losing a month of credits in one fixing session, plus complaints that monthly credits expire and cannot be bought à la carte. The quality is why people stay; the meter is why they budget.</dd></div>
         <div class="qa"><dt>Luma vs Kling vs Runway, which wins?</dt><dd>No single winner in the comparison reviews. Luma wins planned camera moves and atmospheric B-roll, Kling wins long takes and physical realism, Runway wins directed narrative and faces. The practical call is to route each shot to the model that does it best and unify in post.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Luma?</dt><dd>3.9 out of 5, good. The camera control and image-to-video are genuinely best-in-class for the price, but the thin free tier and a credit system that punishes iteration keep it just under the leaders.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -315,37 +332,37 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
         <thead>
             <tr>
-                <th>Plan</th>
-                <th>Monthly</th>
-                <th>Credits</th>
-                <th>Commercial use</th>
-                <th>Notes</th>
+                <th scope="col">Plan</th>
+                <th scope="col">Monthly</th>
+                <th scope="col">Credits</th>
+                <th scope="col">Commercial use</th>
+                <th scope="col">Notes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Free</td>
+                <th scope="row">Free</th>
                 <td>$0</td>
                 <td>Limited monthly generations</td>
                 <td>No</td>
                 <td>Watermarked, non-commercial, monthly reset</td>
             </tr>
             <tr>
-                <td>Plus</td>
+                <th scope="row">Plus</th>
                 <td>$30</td>
                 <td>10,000</td>
                 <td>Yes</td>
                 <td>Luma and third-party models, guest edit access</td>
             </tr>
             <tr>
-                <td>Pro</td>
+                <th scope="row">Pro</th>
                 <td>$90</td>
                 <td>40,000</td>
                 <td>Yes</td>
                 <td>4x Luma Agents usage</td>
             </tr>
             <tr>
-                <td>Ultra</td>
+                <th scope="row">Ultra</th>
                 <td>$300</td>
                 <td>150,000</td>
                 <td>Yes</td>
@@ -360,39 +377,39 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
         <thead>
             <tr>
-                <th>Use case</th>
-                <th>Luma</th>
-                <th>Kling</th>
-                <th>Runway</th>
+                <th scope="col">Use case</th>
+                <th scope="col">Luma</th>
+                <th scope="col">Kling</th>
+                <th scope="col">Runway</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Planned camera moves, transitions</td>
+                <th scope="row">Planned camera moves, transitions</th>
                 <td>Best, keyframes</td>
                 <td>Vector paths</td>
                 <td>Motion slider</td>
             </tr>
             <tr>
-                <td>Long takes, hard physics</td>
+                <th scope="row">Long takes, hard physics</th>
                 <td>Softens under fast motion</td>
                 <td>Best</td>
                 <td>Solid</td>
             </tr>
             <tr>
-                <td>Directed narrative, faces</td>
+                <th scope="row">Directed narrative, faces</th>
                 <td>Mood over literal</td>
                 <td>Strong</td>
                 <td>Best</td>
             </tr>
             <tr>
-                <td>Entry price</td>
+                <th scope="row">Entry price</th>
                 <td>$30 Plus</td>
                 <td>from about $7</td>
                 <td>from about $12</td>
             </tr>
             <tr>
-                <td>API-first building</td>
+                <th scope="row">API-first building</th>
                 <td>Strongest</td>
                 <td>Higher tier</td>
                 <td>Capable</td>

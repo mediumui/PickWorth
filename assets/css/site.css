@@ -13,8 +13,8 @@
   --panel:        #ffffff;
   --ink:          #1c1a17;
   --ink-2:        #433f3a;
-  --muted:        #8b8478;
-  --faint:        #b6afa3;
+  --muted:        #6f685c;
+  --faint:        #726a5d;
   --line:         #e4ded1;
   --line-2:       #d8d1c1;
 
@@ -258,7 +258,7 @@ figcaption{color:var(--muted);font-size:.82rem;margin-top:8px}
   border-left:3px solid var(--accent);border-radius:var(--radius);
   padding:20px 24px;margin:28px 0;
 }
-.verdict h3{margin:0 0 .4em;font-size:1.1rem}
+.verdict h2{margin:0 0 .4em;font-size:1.1rem}
 .callout{
   border-left:2px solid var(--accent);background:var(--panel);
   border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;margin:24px 0;
@@ -282,6 +282,7 @@ table.compare thead th{
 table.compare td.good{color:var(--good);font-weight:500}
 table.compare td.bad{color:var(--bad);font-weight:500}
 table.compare tr:last-child td{border-bottom:none}
+table.compare th[scope="row"]{font-weight:600;color:var(--ink)}
 
 /* sources */
 .sources ol{
@@ -575,7 +576,7 @@ body.is-desktop .mtab{display:none}        /* desktop: bottom tabs off, top menu
   font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;
   text-transform:uppercase;
 }
-.key-answers .qa-list{margin-top:12px}
+.key-answers .qa-list{margin:12px 0 0}
 .key-answers .qa-list .qa{padding:10px 0;border-bottom:1px solid var(--line)}
 .key-answers .qa-list .qa:last-child{border-bottom:none}
 .key-answers .qa-list dt{

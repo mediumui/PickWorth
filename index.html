@@ -62,12 +62,29 @@
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 <script src="assets/js/device-ui.js" defer></script>
 <!-- analytics:start -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 <!-- analytics:end -->
 </head>

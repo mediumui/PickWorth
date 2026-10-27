@@ -155,12 +155,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -231,14 +248,14 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> AI pricing follows a recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder. None of this is a bug; it is the playbook. The move that protects you is to buy on the second move, not the first.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Why do AI tool prices move?</dt><dd>A recognisable arc: a generous launch tier to buy adoption, a quiet tightening of the limits once usage is habitual, then a restructure that resets the ladder.</dd></div>
         <div class="qa"><dt>When is the right time to buy a subscription?</dt><dd>On the second move (the tightening), not the first (the generous launch). The launch tier is the bait; the tightening is where the real price starts.</dd></div>
         <div class="qa"><dt>How do I not get caught when the ladder resets?</dt><dd>Keep the subscription on a monthly, not annual, plan until the restructure passes. A restructure that resets the ladder is the signal to re-evaluate.</dd></div>
         <div class="qa"><dt>Is this a sign of a real price increase?</dt><dd>No — it is the playbook, not a market signal. The move is predictable and it is what you are buying against.</dd></div>
         <div class="qa"><dt>What is the one move that protects me?</dt><dd>Buy on the second move, not the first. Keep it monthly, not annual, until the restructure passes.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from any vendor?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="arc">The three-stage arc</h2>
@@ -246,15 +263,15 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Stage</th>
-          <th>What you see</th>
-          <th>What it means</th>
+          <th scope="col">Stage</th>
+          <th scope="col">What you see</th>
+          <th scope="col">What it means</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>Launch</strong></td><td>Generous free tier, low entry price</td><td class="good">Best time to adopt — worst time to commit annually</td></tr>
-        <tr><td><strong>Tightening</strong></td><td>Same price, fewer messages, metered models</td><td>The price rose; the number did not</td></tr>
-        <tr><td><strong>Restructure</strong></td><td>New tier ladder, old plans retired</td><td>Grandfathered plans are the thing to hold</td></tr>
+        <tr><th scope="row"><strong>Launch</strong></th><td>Generous free tier, low entry price</td><td class="good">Best time to adopt — worst time to commit annually</td></tr>
+        <tr><th scope="row"><strong>Tightening</strong></th><td>Same price, fewer messages, metered models</td><td>The price rose; the number did not</td></tr>
+        <tr><th scope="row"><strong>Restructure</strong></th><td>New tier ladder, old plans retired</td><td>Grandfathered plans are the thing to hold</td></tr>
       </tbody>
     </table>
 
@@ -310,7 +327,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

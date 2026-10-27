@@ -166,12 +166,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -249,14 +266,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Grok is the assistant that knows what happened on X in the last hour. That is its whole differentiator, and it is a real one: for live social, real-time news and anything where the firehose of the platform is the source of truth, it beats a model trained on a fixed corpus. The rest is the standard assistant story, with a coding tool that has gone open-source and a consumer subscription priced at the top of the category. The thing to weigh carefully is the trust layer: a documented history of safety lapses and a disclosed distillation from a competitor. Neither is a defect in the model, but both are the reason a team should read the terms before wiring it into anything sensitive.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Grok is the assistant that knows what happened on X in the last hour — a real differentiator for live social and real-time news, but the subscription is priced at the top of the category and the trust layer (a documented history of safety lapses and a disclosed distillation from a competitor) needs reading before you wire it into anything sensitive.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Is Grok worth paying for?</dt><dd>Only if live-X knowledge is your core need: the SuperGrok tier (xai) is priced at the top of the category, so it earns its cost for real-time work but not for everyday use.</dd></div>
         <div class="qa"><dt>What is Grok best at?</dt><dd>Live-X knowledge: it beats a model trained on a fixed corpus for breaking stories, live market reaction, and any question where the firehose of X is the source of truth.</dd></div>
         <div class="qa"><dt>Where does Grok fall short?</dt><dd>Trust layer: a documented history of safety lapses and a disclosed distillation from a competitor — read the terms before wiring it into anything sensitive.</dd></div>
@@ -264,7 +281,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for Grok?</dt><dd>4.0 / 5 (good) — one genuinely strong differentiator (live X) with trust caveats a careful buyer should weigh.</dd></div>
         <div class="qa"><dt>Grok vs ChatGPT — which one?</dt><dd>Live-X / breaking-news questions: Grok. Everything else (general assistant work): ChatGPT. See the head-to-head.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from xAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from xAI's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -302,13 +319,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="pricing">Plans &amp; what each unlocks</h2>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Price</th><th>What changes vs the tier below</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">What changes vs the tier below</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>Basic Grok access on X, lighter limits</td></tr>
-        <tr><td>SuperGrok (consumer)</td><td>~$30 / month</td><td>Higher limits, access to the most capable model, image and deep-research features</td></tr>
-        <tr><td>SuperGrok Heavy</td><td>~$300 / month</td><td>Maximum model access and the fullest feature set</td></tr>
-        <tr><td>API</td><td>per-token</td><td>The models on pay-as-you-go, including the coding tool</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>Basic Grok access on X, lighter limits</td></tr>
+        <tr><th scope="row">SuperGrok (consumer)</th><td>~$30 / month</td><td>Higher limits, access to the most capable model, image and deep-research features</td></tr>
+        <tr><th scope="row">SuperGrok Heavy</th><td>~$300 / month</td><td>Maximum model access and the fullest feature set</td></tr>
+        <tr><th scope="row">API</th><td>per-token</td><td>The models on pay-as-you-go, including the coding tool</td></tr>
       </tbody>
     </table>
     <p class="fineprint">Consumer SuperGrok pricing from xAI's subscription page, verified 22 October 2026. The exact tier names and price points move with releases; treat these as the shape of the ladder rather than a fixed quote.</p>

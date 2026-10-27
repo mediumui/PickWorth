@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Suno is the AI music tool to reach for when the point is a finished song fast, and the reason is that nothing else in the category makes a complete, voiced track from a single prompt with less friction. The vocal clarity, the genre reach, and the community library are why casual creators and YouTubers land here first, and the independent reviews back that up. The deduction is not the quality, it is the fence around it: the free tier is a genuine taster but a non-commercial dead end with no downloads on current terms, and the commercial rights are tied to the plan that was active when you generated, never retroactive. For a creator who publishes, Pro at eight dollars a month is the real entry price, not zero, and Premier only earns its twenty-four if you open Studio weekly. Treat the free plan as the test drive, pay the moment you make something you want to keep, and do not expect to park on a model you liked once a newer one ships.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Suno is the text-to-song generator most people reach for because it turns a plain prompt into a finished track with vocals and instruments in under a minute, the free tier gives 50 credits a day for non-commercial tinkering, and the Pro plan at $8 a month is what unlocks commercial rights and downloads.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Suno?</dt><dd>A text-to-song generator: you describe a genre, mood, and maybe a line of lyrics, and it returns a complete track with sung vocals, instruments, structure, and a mix, often in under a minute and sometimes two takes at a time. It is the most popular product in its category by community size, and the barrier to entry is close to zero: no instrument, no DAW, no music theory required.</dd></div>
         <div class="qa"><dt>How much is Suno free?</dt><dd>The free plan costs nothing and refills 50 credits a day, about ten songs. The catch is what it does not give you: it runs the older free model, grants no commercial rights, offers no downloads on the current terms, and sits your creations in a shared queue. Songs made here stay non-commercial forever, even if you upgrade later, so a creator who intends to publish has to pay from the first song they care about.</dd></div>
         <div class="qa"><dt>What is Suno good at?</dt><dd>Speed and completeness. Where older tools delivered loops or stems, Suno hands you a finished song with a verse, chorus, and a sung vocal that mostly sits in tune. The independent reviews consistently rate its pronunciation and vocal clarity above the pack for pop, hip-hop, rock, and electronic, and the Pro stem separation plus Premier Studio turn it from a toy into a real sketchpad for people who finish tracks.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Suno vs Udio: which should I use?</dt><dd>Suno wins on speed, ease, genre breadth, and community; Udio wins on audio fidelity, vocal nuance, and editing control, with inpainting that regenerates a section without disturbing the rest. Both cost about $10 at the entry paid tier, but Suno gives roughly 2,500 credits there against Udio's 1,200, so Suno is better value per generation while Udio is better per result. Start on Suno's free tier and add Udio if output polish becomes the bottleneck.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The signal splits. The recurring praise is the one-click completeness and the vocal clarity for mainstream genres. The friction clusters on two things: the v6 launch that a visible part of the paying base called muffled, generic, and soulless, blaming a smaller licensed training set, and the prompt-control gaps where gender tags and instrument cues get ignored, forcing credit-burning rerolls. A Grammy-voting engineer graded v6's mix as better but its feel as worse, so the argument is real, not just noise.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Suno?</dt><dd>No. This review is written by a single editorial team. Pricing and licensing claims are verified from Suno's official pricing page and help center, not from a reseller or promotional feed. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -308,17 +325,17 @@ gtag('config', 'G-WV775YD52J');
     <table class='compare'>
       <thead>
         <tr>
-          <th>Plan</th>
-          <th>Price (monthly)</th>
-          <th>Credits</th>
-          <th>Commercial rights</th>
-          <th>Downloads</th>
-          <th>Model</th>
+          <th scope="col">Plan</th>
+          <th scope="col">Price (monthly)</th>
+          <th scope="col">Credits</th>
+          <th scope="col">Commercial rights</th>
+          <th scope="col">Downloads</th>
+          <th scope="col">Model</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Free</td>
+          <th scope="row">Free</th>
           <td>$0</td>
           <td>50/day (~10 songs)</td>
           <td>No</td>
@@ -326,7 +343,7 @@ gtag('config', 'G-WV775YD52J');
           <td>Free model (v4.5-all)</td>
         </tr>
         <tr>
-          <td>Pro</td>
+          <th scope="row">Pro</th>
           <td>$8 ($6 billed yearly)</td>
           <td>2,500/month (~500 songs)</td>
           <td>Yes, for songs made while subscribed</td>
@@ -334,7 +351,7 @@ gtag('config', 'G-WV775YD52J');
           <td>Advanced (v6 and v6-wild)</td>
         </tr>
         <tr>
-          <td>Premier</td>
+          <th scope="row">Premier</th>
           <td>$24 ($18 billed yearly)</td>
           <td>10,000/month (~2,000 songs)</td>
           <td>Yes, for songs made while subscribed</td>

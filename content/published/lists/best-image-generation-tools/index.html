@@ -164,12 +164,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -241,14 +258,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Category score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Midjourney is still the dedicated tool for serious, styled image work — the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's image generation, the Nano Banana line, and the image features in ChatGPT and the rest) now cover the casual need at the price of the assistant you already pay. For most people the answer is: use the free or paid assistant tier for everything except the moment you need the consistency and style control that only the dedicated tool gives. The question is not "which is best" but "how often is the dedicated tool actually doing the job."</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Midjourney is still the dedicated tool for serious, styled image work — the one that earns a real subscription because it is a purpose-built system, not a feature. The assistant-side tools (Google's Imagen, OpenAI's DALL-E) and the free tier cover most people. Pick by what you are actually making.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best AI image tools in 2026?</dt><dd>Midjourney for serious, styled work; the assistant image tools (Google's Imagen, OpenAI's DALL-E) for everyday; the free tier that covers most people.</dd></div>
         <div class="qa"><dt>Is Midjourney worth a subscription?</dt><dd>Yes, for serious, styled image work: it is the purpose-built system, not a feature, and it earns a real subscription on that.</dd></div>
         <div class="qa"><dt>Do I need a dedicated tool?</dt><dd>For most people, no: the free tier and the assistant image tools cover everyday use. A dedicated tool earns its place only for a specific kind of image work.</dd></div>
@@ -256,7 +273,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for the category?</dt><dd>Good (3.8-4.5 band): a clear dedicated leader (Midjourney) but the right pick depends on what you are making.</dd></div>
         <div class="qa"><dt>Which should I pick first?</dt><dd>Start free. Add Midjourney only for serious, styled image work; the assistant tools cover everything else.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Midjourney, OpenAI, or Google?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -275,15 +292,15 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Tool</th>
-          <th>Entry paid tier</th>
-          <th>What it is for</th>
+          <th scope="col">Tool</th>
+          <th scope="col">Entry paid tier</th>
+          <th scope="col">What it is for</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>Midjourney</strong></td><td>~$10 / month (Basic)</td><td>Dedicated, styled production image work</td></tr>
-        <tr><td><strong>Assistant image tools</strong></td><td>$0–$20 / month (with the assistant)</td><td>Everything casual, embedded in a chat you already have</td></tr>
-        <tr><td><strong>Free tiers</strong></td><td>$0 (metered)</td><td>The occasional image, no subscription</td></tr>
+        <tr><th scope="row"><strong>Midjourney</strong></th><td>~$10 / month (Basic)</td><td>Dedicated, styled production image work</td></tr>
+        <tr><th scope="row"><strong>Assistant image tools</strong></th><td>$0–$20 / month (with the assistant)</td><td>Everything casual, embedded in a chat you already have</td></tr>
+        <tr><th scope="row"><strong>Free tiers</strong></th><td>$0 (metered)</td><td>The occasional image, no subscription</td></tr>
       </tbody>
     </table>
     <p class="fineprint">Midjourney's Basic tier is priced around $10 a month on the current subscription ladder; the assistant-side tools are bundled into the assistant subscription you are likely already paying, so the incremental cost of the image feature is often zero. Treat these as the order of magnitude — the exact Midjourney tiers and the assistant credit rules both move with the release cycle.</p>
@@ -301,13 +318,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="scenarios">Pick by what you are making</h2>
     <table class="compare">
       <thead>
-        <tr><th>If you are making…</th><th>Buy this</th><th>Skip this</th></tr>
+        <tr><th scope="col">If you are making…</th><th scope="col">Buy this</th><th scope="col">Skip this</th></tr>
       </thead>
       <tbody>
-        <tr><td>The occasional illustration or social image</td><td><strong>A free assistant tier</strong></td><td>Any paid tool</td></tr>
-        <tr><td>Daily creative work with strong style</td><td><strong>Midjourney</strong></td><td>The assistant feature</td></tr>
-        <tr><td>Images inside a workflow you already run</td><td><strong>The assistant's image feature</strong></td><td>A second subscription</td></tr>
-        <tr><td>Commercial work you need to license cleanly</td><td><strong>Read the terms first</strong></td><td>Assume it is fine</td></tr>
+        <tr><th scope="row">The occasional illustration or social image</th><td><strong>A free assistant tier</strong></td><td>Any paid tool</td></tr>
+        <tr><th scope="row">Daily creative work with strong style</th><td><strong>Midjourney</strong></td><td>The assistant feature</td></tr>
+        <tr><th scope="row">Images inside a workflow you already run</th><td><strong>The assistant's image feature</strong></td><td>A second subscription</td></tr>
+        <tr><th scope="row">Commercial work you need to license cleanly</th><td><strong>Read the terms first</strong></td><td>Assume it is fine</td></tr>
       </tbody>
     </table>
 
@@ -356,7 +373,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

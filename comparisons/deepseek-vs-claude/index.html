@@ -179,12 +179,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -261,14 +278,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Claude score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>This is a pricing argument wearing a capability costume. DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the gap in raw output is smaller than the price gap suggests. Claude is the better tool where the work is long, agentic and ambiguous — the codebase-wide reasoning and the instruction-following under many constraints still pull it ahead, and that is what the premium buys. Pick DeepSeek if you are cost-sensitive and can scope work tightly; pick Claude if the task is "read this repo and change it correctly" and you are paying by the hour of developer time, not by the token.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> This is a pricing argument wearing a capability costume: DeepSeek is open-weights and an order of magnitude cheaper at the API, and on well-scoped coding tasks the capability gap is smaller than the price gap. Claude is the stronger general assistant; DeepSeek is the cost move.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>DeepSeek or Claude for coding?</dt><dd>If cost is the binding constraint and the work is well-scoped: DeepSeek. If you need a stronger general agent story: Claude.</dd></div>
         <div class="qa"><dt>Which is cheaper?</dt><dd>DeepSeek by a wide margin: open-weights, an order of magnitude cheaper at the API. Claude's top tier costs more.</dd></div>
         <div class="qa"><dt>Which is more capable?</dt><dd>Claude for general assistant work; DeepSeek closes the gap on well-scoped coding tasks.</dd></div>
@@ -276,7 +293,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>The cost question is the real one: DeepSeek earns the open-weights price floor, Claude earns the stronger agent story. Score per dimension, not by benchmark alone.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>For most people, route by task: cheap high-volume work → DeepSeek; hardest calls → Claude. See the $20 rule.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from DeepSeek or Anthropic?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -294,20 +311,20 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>DeepSeek</th>
-          <th>Claude (Anthropic)</th>
+          <th scope="col"></th>
+          <th scope="col">DeepSeek</th>
+          <th scope="col">Claude (Anthropic)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Weights</td><td class="good">Open weights, self-hostable</td><td>Closed, API only</td></tr>
-        <tr><td>API cost (approx.)</td><td class="good">~$0.27 / M input tokens, low output</td><td>~$3 / M input, $15 / M output (top tier)</td></tr>
-        <tr><td>Consumer app</td><td>Free web chat, generous</td><td>Free tier, metered; $20 / month Pro</td></tr>
-        <tr><td>Top consumer tier</td><td>n/a — API-first</td><td>$100–200 / month (Max)</td></tr>
-        <tr><td>Coding agents</td><td>Strong single-shot; fewer agent tools</td><td class="good">Claude Code is the strongest in the set</td></tr>
-        <tr><td>Long context</td><td class="good">Large window, holds up well</td><td class="good">Largest in class, holds structure best</td></tr>
-        <tr><td>Reasoning depth</td><td>Very strong for the price</td><td class="good">Deeper on ambiguous, multi-step work</td></tr>
-        <tr><td>Privacy posture</td><td class="good">Run it yourself, nothing leaves</td><td>API with retention settings</td></tr>
+        <tr><th scope="row">Weights</th><td class="good">Open weights, self-hostable</td><td>Closed, API only</td></tr>
+        <tr><th scope="row">API cost (approx.)</th><td class="good">~$0.27 / M input tokens, low output</td><td>~$3 / M input, $15 / M output (top tier)</td></tr>
+        <tr><th scope="row">Consumer app</th><td>Free web chat, generous</td><td>Free tier, metered; $20 / month Pro</td></tr>
+        <tr><th scope="row">Top consumer tier</th><td>n/a — API-first</td><td>$100–200 / month (Max)</td></tr>
+        <tr><th scope="row">Coding agents</th><td>Strong single-shot; fewer agent tools</td><td class="good">Claude Code is the strongest in the set</td></tr>
+        <tr><th scope="row">Long context</th><td class="good">Large window, holds up well</td><td class="good">Largest in class, holds structure best</td></tr>
+        <tr><th scope="row">Reasoning depth</th><td>Very strong for the price</td><td class="good">Deeper on ambiguous, multi-step work</td></tr>
+        <tr><th scope="row">Privacy posture</th><td class="good">Run it yourself, nothing leaves</td><td>API with retention settings</td></tr>
       </tbody>
     </table>
 

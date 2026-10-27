@@ -179,12 +179,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -261,14 +278,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.5</strong><span>ChatGPT score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>Both are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a bigger add-on and integration surface, and the strongest coding agent story. Gemini is the stronger pick when your work lives inside Google's stack — the free tier is genuinely usable at higher limits, and it folds into the phone, the search box and the documents you already work in. Choose the one that matches where your work already happens, not the one with the louder benchmarks.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> ChatGPT and Gemini are the two strongest consumer assistants, and the gap is real but smaller than the marketing suggests. ChatGPT is the better all-rounder for mixed daily work: a deeper multimodal tool set, a useful free tier, and a stronger everyday story. Gemini wins inside Google's own ecosystem.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>ChatGPT or Gemini — which should I pick?</dt><dd>Mixed daily work, multimodal, and a useful free tier → ChatGPT. Deep inside Google Workspace (Docs, Gmail, Drive) → Gemini.</dd></div>
         <div class="qa"><dt>Which is better at coding?</dt><dd>ChatGPT holds the edge in most everyday coding workflows; Gemini's strength is inside the Google ecosystem.</dd></div>
         <div class="qa"><dt>Which has the bigger context window?</dt><dd>Gemini's window is a real differentiator for very long single-pass work; ChatGPT's varies by model tier.</dd></div>
@@ -276,7 +293,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>ChatGPT: the wider all-rounder. Gemini: the ecosystem play. Score per dimension, not by benchmark alone.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from OpenAI or Google?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -294,19 +311,19 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>ChatGPT (OpenAI)</th>
-          <th>Gemini (Google)</th>
+          <th scope="col"></th>
+          <th scope="col">ChatGPT (OpenAI)</th>
+          <th scope="col">Gemini (Google)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Free tier</td><td class="good">Yes, useful but metered</td><td class="good">Yes, higher daily allowance on most models</td></tr>
-        <tr><td>Consumer paid tier</td><td>$20 / month (Plus)</td><td>$20 / month (Google AI Pro)</td></tr>
-        <tr><td>Top consumer tier</td><td>$200 / month</td><td>$250 / month (Google AI Ultra)</td></tr>
-        <tr><td>Native integration</td><td>Standalone app + web</td><td class="good">Search, Android, Docs, Workspace</td></tr>
-        <tr><td>Multimodal input</td><td class="good">Text, audio, image in one conversation</td><td>Text, image; tight audio/video on some tiers</td></tr>
-        <tr><td>Coding agents</td><td class="good">Deeper agent set (Codex, Code interpreter)</td><td>Strong coding, narrower agent tooling</td></tr>
-        <tr><td>Image generation</td><td class="good">Built-in, widely available</td><td>Strong, plus Nano Banana line</td></tr>
+        <tr><th scope="row">Free tier</th><td class="good">Yes, useful but metered</td><td class="good">Yes, higher daily allowance on most models</td></tr>
+        <tr><th scope="row">Consumer paid tier</th><td>$20 / month (Plus)</td><td>$20 / month (Google AI Pro)</td></tr>
+        <tr><th scope="row">Top consumer tier</th><td>$200 / month</td><td>$250 / month (Google AI Ultra)</td></tr>
+        <tr><th scope="row">Native integration</th><td>Standalone app + web</td><td class="good">Search, Android, Docs, Workspace</td></tr>
+        <tr><th scope="row">Multimodal input</th><td class="good">Text, audio, image in one conversation</td><td>Text, image; tight audio/video on some tiers</td></tr>
+        <tr><th scope="row">Coding agents</th><td class="good">Deeper agent set (Codex, Code interpreter)</td><td>Strong coding, narrower agent tooling</td></tr>
+        <tr><th scope="row">Image generation</th><td class="good">Built-in, widely available</td><td>Strong, plus Nano Banana line</td></tr>
       </tbody>
     </table>
 

@@ -179,12 +179,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -261,14 +278,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.5</strong><span>ChatGPT score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>Neither is the other's better version. ChatGPT is the wider, more consumer-friendly product: stronger multimodal input, a deeper integration story, and a free tier that is actually useful. Claude is the stronger choice for long-form work and for strict instruction-following, and its top tier costs more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Neither is the other's better version: ChatGPT is the wider, more consumer-friendly product (multimodal, deeper integrations, a useful free tier) and Claude is the stronger choice for long-form work and strict instruction-following, with its top tier costing more. Pick the one that matches the shape of your daily work, not the one with the better benchmark.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>ChatGPT or Claude — which should I pick?</dt><dd>Match the work: everyday mixed work and multimodal input → ChatGPT. Long-form, precise instruction-following, or sensitive material → Claude.</dd></div>
         <div class="qa"><dt>Which is better at coding?</dt><dd>Claude holds the edge on long-form coding and refactors; ChatGPT's ecosystem and the free tier make it the better everyday tool.</dd></div>
         <div class="qa"><dt>Which has the bigger context window?</dt><dd>Claude's long-context tier is the differentiator; ChatGPT's varies by model tier and is the limit where Claude still wins.</dd></div>
@@ -276,7 +293,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>ChatGPT: the wider product. Claude: the stronger long-form choice. Score the two per dimension, not by benchmark alone.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from OpenAI or Anthropic?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -294,20 +311,20 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>ChatGPT (OpenAI)</th>
-          <th>Claude (Anthropic)</th>
+          <th scope="col"></th>
+          <th scope="col">ChatGPT (OpenAI)</th>
+          <th scope="col">Claude (Anthropic)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Free tier</td><td class="good">Yes, genuinely usable</td><td class="good">Yes, lighter limits</td></tr>
-        <tr><td>Consumer paid tier</td><td>$20 / month (Plus)</td><td>$20 / month (Pro)</td></tr>
-        <tr><td>Top consumer tier</td><td>$200 / month (Pro)</td><td>$100–200 / month (Max)</td></tr>
-        <tr><td>Context window</td><td>Strong, degrades on very long inputs</td><td class="good">Largest in class, holds structure</td></tr>
-        <tr><td>Multimodal input</td><td class="good">Text, audio, image in one conversation</td><td>Text and image; no consumer voice</td></tr>
-        <tr><td>Instruction-following</td><td>Strong on everyday tasks</td><td class="good">Most literal on multi-step constraints</td></tr>
-        <tr><td>Coding agents</td><td>Integrated assistant</td><td class="good">Claude Code / Cowork are the strongest in the set</td></tr>
-        <tr><td>Ecosystem depth</td><td class="good">Deeper: more integrations, wider tool set</td><td>Narrower, more focused</td></tr>
+        <tr><th scope="row">Free tier</th><td class="good">Yes, genuinely usable</td><td class="good">Yes, lighter limits</td></tr>
+        <tr><th scope="row">Consumer paid tier</th><td>$20 / month (Plus)</td><td>$20 / month (Pro)</td></tr>
+        <tr><th scope="row">Top consumer tier</th><td>$200 / month (Pro)</td><td>$100–200 / month (Max)</td></tr>
+        <tr><th scope="row">Context window</th><td>Strong, degrades on very long inputs</td><td class="good">Largest in class, holds structure</td></tr>
+        <tr><th scope="row">Multimodal input</th><td class="good">Text, audio, image in one conversation</td><td>Text and image; no consumer voice</td></tr>
+        <tr><th scope="row">Instruction-following</th><td>Strong on everyday tasks</td><td class="good">Most literal on multi-step constraints</td></tr>
+        <tr><th scope="row">Coding agents</th><td>Integrated assistant</td><td class="good">Claude Code / Cowork are the strongest in the set</td></tr>
+        <tr><th scope="row">Ecosystem depth</th><td class="good">Deeper: more integrations, wider tool set</td><td>Narrower, more focused</td></tr>
       </tbody>
     </table>
 
@@ -323,14 +340,14 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="scenarios">Pick by scenario</h2>
     <table class="compare">
       <thead>
-        <tr><th>If your main work is…</th><th>Pick</th><th>Why</th></tr>
+        <tr><th scope="col">If your main work is…</th><th scope="col">Pick</th><th scope="col">Why</th></tr>
       </thead>
       <tbody>
-        <tr><td>A mix of quick drafts, image questions and short coding</td><td><strong>ChatGPT</strong></td><td>The wider all-rounder with the better free tier</td></tr>
-        <tr><td>Long documents, transcripts or a large codebase</td><td><strong>Claude</strong></td><td>The context window holds structure that the other one loses</td></tr>
-        <tr><td>Strict multi-step instructions with hard constraints</td><td><strong>Claude</strong></td><td>Most literal on the constraints</td></tr>
-        <tr><td>Terminal-based coding or task delegation</td><td><strong>Claude</strong></td><td>The strongest in-ecosystem agent set</td></tr>
-        <tr><td>A team that wants the most integrations</td><td><strong>ChatGPT</strong></td><td>Deeper ecosystem and wider tool set</td></tr>
+        <tr><th scope="row">A mix of quick drafts, image questions and short coding</th><td><strong>ChatGPT</strong></td><td>The wider all-rounder with the better free tier</td></tr>
+        <tr><th scope="row">Long documents, transcripts or a large codebase</th><td><strong>Claude</strong></td><td>The context window holds structure that the other one loses</td></tr>
+        <tr><th scope="row">Strict multi-step instructions with hard constraints</th><td><strong>Claude</strong></td><td>Most literal on the constraints</td></tr>
+        <tr><th scope="row">Terminal-based coding or task delegation</th><td><strong>Claude</strong></td><td>The strongest in-ecosystem agent set</td></tr>
+        <tr><th scope="row">A team that wants the most integrations</th><td><strong>ChatGPT</strong></td><td>Deeper ecosystem and wider tool set</td></tr>
       </tbody>
     </table>
 

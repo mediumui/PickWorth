@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>GitHub Copilot is the most accessible of the coding assistants, and the reason is structural: it is built into the editors people already have, and one license spans all of them. It is genuinely good at the day-to-day, in-editor stage of coding, and its free tier is one of the more honest in the category. It slips on the two things that matter for professional, all-day use, plus three quiet frictions that independent reviews keep flagging: a slow cloud-agent cold start, a monthly credit reset that does not track your billing anniversary, and a default since mid-2026 where your interaction data trains the model unless you opt out. For the majority of developers, Pro at $10 is the baseline; verified students, teachers, and open-source maintainers get it free.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> GitHub Copilot is the coding assistant most developers already have access to: inline completions, chat, and agent mode across the editors you already use, with a real free tier and paid plans that remove the cap. It is strongest on everyday completion and in-editor help, and weakest when you need sustained multi-file agent work or the highest-tier models.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is GitHub Copilot best at?</dt><dd>Inline code completion and in-editor help: suggesting code as you type, explaining a block you are stuck on, and small refactors. It is the fastest tool for the day-to-day, syntax-and-signature stage of coding.</dd></div>
         <div class="qa"><dt>Which editors does it work in?</dt><dd>VS Code, Visual Studio, JetBrains IDEs, Xcode, Neovim, Eclipse, Raycast and Zed, plus the CLI and github.com itself. One license covers all of them.</dd></div>
         <div class="qa"><dt>What does the free tier include?</dt><dd>2,000 completions a month, entry-level model access, and chat with metered (not unlimited) usage, with no card required.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>Across the third-party reviews we sampled — tooling sites and developer forums, roughly 2025-2026 — the consensus is consistent with our read: the day-to-day completion and IDE breadth win. The recurring friction points are the cloud agent's slow spin-up on fresh sessions, premium-request quotas that reset on the first of the month rather than the billing anniversary, and in 2026 a default where Copilot trains on your interaction data unless you opt out. Heavy users on Pro report running low on credits mid-month, which is why some have moved to Pro+ or a Cursor/Cline alternative.</dd></div>
         <div class="qa"><dt>What score does PickWorth give GitHub Copilot?</dt><dd>4.0 out of 5 — a strong, broadly useful coding assistant, with real caps on the free tier and the top-model features reserved for higher paid tiers.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from GitHub?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from GitHub's official plans page. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -302,13 +319,13 @@ gtag('config', 'G-WV775YD52J');
     <p>GitHub prices the tiers as a base seat plus a monthly allowance of AI credits, so the number to read is the credit line, not the sticker. The free plan is the entry point; Pro removes the completion cap and adds 1,500 credits (about $15 of model spend); Pro+ and Max are for the people whose day is sustained agent work, and they buy a larger credit allowance and access to the frontier models rather than new features. The one line that bends that table: for verified students, teachers, and maintainers of popular open-source projects, the Pro column reads $0 instead of $10, with the same unlimited completions and credits. That is a legitimate saving, not a trial, and it is the subject of a dedicated note in the Journal. In the independent reviews we sampled, the heavy agent users who hit the Pro credit line most often describe it as "$15 gets you through the light weeks and then you are on pay-as-you-go" — a fair framing of the metered tail that the sticker price hides.</p>
     <table class="compare">
       <thead>
-        <tr><th>Tier</th><th>Price</th><th>Completions</th><th>Monthly credits</th></tr>
+        <tr><th scope="col">Tier</th><th scope="col">Price</th><th scope="col">Completions</th><th scope="col">Monthly credits</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>2,000 / month</td><td>Limited chat &amp; agent</td></tr>
-        <tr><td>Pro</td><td>$10 / mo</td><td>Unlimited</td><td>1,500 ($15)</td></tr>
-        <tr><td>Pro+</td><td>$39 / mo</td><td>Unlimited</td><td>Higher allowance</td></tr>
-        <tr><td>Max</td><td>$100 / mo</td><td>Unlimited</td><td>Highest allowance</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>2,000 / month</td><td>Limited chat &amp; agent</td></tr>
+        <tr><th scope="row">Pro</th><td>$10 / mo</td><td>Unlimited</td><td>1,500 ($15)</td></tr>
+        <tr><th scope="row">Pro+</th><td>$39 / mo</td><td>Unlimited</td><td>Higher allowance</td></tr>
+        <tr><th scope="row">Max</th><td>$100 / mo</td><td>Unlimited</td><td>Highest allowance</td></tr>
       </tbody>
     </table>
 
@@ -363,7 +380,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

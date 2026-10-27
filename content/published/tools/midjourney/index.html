@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Midjourney is the image generator to buy when the look is the product. The quality lead is real and the reference tooling makes it usable for client work, which is why it keeps the top slot in every 2026 comparison we read. The deductions are structural, not cosmetic: there is no free tier to sample on the main app, private generation is a $60 plan, text in images is still unreliable, and the GPU-hour billing hides how fast a heavy month adds up. Pick Standard at $30 as the floor for real work, keep a typography tool alongside it for anything with words, and you get the best aesthetic engine in the category without overpaying for a tier you do not need.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Midjourney is the subscription-only AI image generator that leads the field on aesthetic quality and community prompting, costs from $10 a month with no free tier, and reserves private generation for the $60 Pro plan.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Midjourney?</dt><dd>An AI image generator: you describe a picture in words and it returns four variations to upscale, re-roll, or edit. It runs through a web app and a Discord bot, ships the V8.2 model with native 2K output and an inpainting edit model, and has no public API on the consumer plans, so every image moves through Midjourney's own interface.</dd></div>
         <div class="qa"><dt>How much does Midjourney cost?</dt><dd>Basic is $10 a month, Standard $30, Pro $60, and Mega $120, with annual billing taking 20 percent off each. You are buying GPU time in Fast hours, not a fixed number of pictures: Basic gives 3.3 hours, Standard 15, Pro 30, Mega 60, and any plan can buy extra Fast time at $4 per GPU hour.</dd></div>
         <div class="qa"><dt>Is there a Midjourney free trial?</dt><dd>No free tier on the core product, and no trial on the main app. A short trial exists only inside the separate niji mobile app. You pay before you learn whether the look fits your work, which is the most common reason budget-constrained designers try a free alternative first.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Midjourney vs ChatGPT image generation?</dt><dd>ChatGPT wins on prompt accuracy and text rendering, and it is free to try, so it leads for precise briefs and copy inside the frame. Midjourney wins on look and on holding a visual series together across dozens of frames through personalization and reference tools. Most working designers run both rather than pick one.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The recurring praise is the quality and the reference workflows paying for themselves in client work. The recurring friction is the billing reality: Basic's 200 minutes collapse into 40 to 60 usable images after re-rolls, so users recommend starting on Standard. Stealth locked to Pro draws steady complaint from anyone doing confidential client work, and billing-support response times are a repeated sore point on the lower tiers.</dd></div>
         <div class="qa"><dt>Is Midjourney worth it, and what score does PickWorth give it?</dt><dd>Yes for concept art, editorial imagery, and hero visuals; no for text-heavy design, strict privacy on a budget, or anyone unwilling to commit before testing. PickWorth scores it 4.0 out of 5: the quality lead is real and the tooling makes it repeatable, but the missing free tier, paid privacy, and GPU-hour billing hold it back from a top mark.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -314,12 +331,12 @@ gtag('config', 'G-WV775YD52J');
 <h2 id="pricing">Plans and what each unlocks</h2>
 <p>The figures below are the official rates we verified on Midjourney's plan documentation in October 2026. They move, so treat this as a snapshot, and annual billing takes 20 percent off every tier.</p>
 <table class="compare">
-<thead><tr><th>Plan</th><th>Monthly</th><th>Annual (per mo)</th><th>Fast GPU</th><th>Relax</th><th>Stealth</th></tr></thead>
+<thead><tr><th scope="col">Plan</th><th scope="col">Monthly</th><th scope="col">Annual (per mo)</th><th scope="col">Fast GPU</th><th scope="col">Relax</th><th scope="col">Stealth</th></tr></thead>
 <tbody>
-<tr><td>Basic</td><td>$10</td><td>$8</td><td>3.3 hr (200 min)</td><td>No</td><td>No</td></tr>
-<tr><td>Standard</td><td>$30</td><td>$24</td><td>15 hr</td><td>Unlimited images</td><td>No</td></tr>
-<tr><td>Pro</td><td>$60</td><td>$48</td><td>30 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>
-<tr><td>Mega</td><td>$120</td><td>$96</td><td>60 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>
+<tr><th scope="row">Basic</th><td>$10</td><td>$8</td><td>3.3 hr (200 min)</td><td>No</td><td>No</td></tr>
+<tr><th scope="row">Standard</th><td>$30</td><td>$24</td><td>15 hr</td><td>Unlimited images</td><td>No</td></tr>
+<tr><th scope="row">Pro</th><td>$60</td><td>$48</td><td>30 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>
+<tr><th scope="row">Mega</th><td>$120</td><td>$96</td><td>60 hr</td><td>Unlimited images + SD video</td><td>Yes</td></tr>
 </tbody>
 </table>
 <p>Two rules the fine print hides. Extra Fast time costs $4 per GPU hour on any plan, so a heavy upscaling habit drains the budget faster than the headline implies, and Basic's 200 minutes collapse inside a week of real iteration once you factor re-rolls. And if your company clears more than $1 million a year in gross revenue, the terms require Pro or Mega regardless of how little you generate. For individuals, Standard at $30 is the plan that makes sense: Basic is too thin, and Standard's unlimited Relax queue absorbs the overflow you would otherwise pay to rush.</p>
@@ -375,7 +392,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

@@ -187,12 +187,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -263,14 +280,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.3</strong><span>Midjourney score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>Neither tool is the other's replacement. Midjourney is the better artist: it wins on the thing that matters most in image generation, which is how the result looks, and its web app plus Edit Model make it far more practical than the Discord-only tool of two years ago. ChatGPT is the better everyday tool: free to start, conversational to edit, and reliable with text and precise instructions. If the image is the product, pay Midjourney. If the image is a step in a larger job, or you need words inside it, ChatGPT is the faster path. Our rating leans to Midjourney because in a head-to-head on image generation, quality is the tiebreaker — but the honest answer is that plenty of people will end up using both.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> For AI image generation, Midjourney is the sharper artist and ChatGPT the more practical tool: pick Midjourney when the picture is the product and ChatGPT when you need free access, in-chat edits, or text in the frame.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Midjourney or ChatGPT — which should I pick for images?</dt><dd>Pick Midjourney when the image itself is the product: art, concept pieces, hero visuals. Pick ChatGPT when you need text in the image, fast in-chat edits, or a free place to start.</dd></div>
         <div class="qa"><dt>Who makes better-looking images?</dt><dd>Midjourney. It leads on composition, color grading and that hard-to-define finished look, out of the box. ChatGPT is cleaner and more literal but rarely as striking.</dd></div>
         <div class="qa"><dt>Can I use either for free?</dt><dd>ChatGPT yes — the Free tier generates images behind an unpublished monthly cap. Midjourney no; the only free taste is a limited trial inside the niji mobile app.</dd></div>
@@ -279,7 +296,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Which is cheaper to run?</dt><dd>Entry price is close: ChatGPT Go is $8/mo, Midjourney Basic $10/mo. Midjourney's value tier is $30/mo (unlimited Relax); ChatGPT's is $20/mo Plus, but its image limits are not published.</dd></div>
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>Midjourney rates higher for image quality and is our pick for art. ChatGPT wins on access, edits and text. Score each on what you actually ship.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>Most people need one. Add the second when your work splits: gallery-grade art from Midjourney, text-heavy or edited-in-chat work from ChatGPT.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -297,23 +314,23 @@ gtag('config', 'G-WV775YD52J');
     <table class='compare'>
       <thead>
         <tr>
-          <th></th>
-          <th>Midjourney</th>
-          <th>ChatGPT (GPT Image)</th>
+          <th scope="col"></th>
+          <th scope="col">Midjourney</th>
+          <th scope="col">ChatGPT (GPT Image)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Free tier</td><td class='bad'>No free plan; trial only in niji mobile app</td><td class='good'>Yes — Free tier creates images, capped</td></tr>
-        <tr><td>Cheapest paid</td><td>$10/mo Basic (3.3 hr Fast, no Relax)</td><td class='good'>$8/mo Go (higher image limits, unpublished)</td></tr>
-        <tr><td>Best-value paid</td><td class='good'>$30/mo Standard (unlimited Relax images)</td><td>$20/mo Plus (image limits unpublished)</td></tr>
-        <tr><td>Top tier</td><td>$120/mo Mega</td><td>$200/mo Pro</td></tr>
-        <tr><td>Output aesthetic</td><td class='good'>Class-leading style, composition, color</td><td>Correct and clean, less 'photographer's eye'</td></tr>
-        <tr><td>Text in image</td><td>Weak; Thinking mode (alpha) aims to fix</td><td class='good'>Strong; legible text, roughly 85–90%</td></tr>
-        <tr><td>Prompt adherence</td><td>Looser; artistic interpretation</td><td class='good'>Literal; follows long constraints</td></tr>
-        <tr><td>Editing</td><td>Vary / pan / zoom / inpaint, web app + Discord</td><td class='good'>Conversational in-chat edits, upload to edit</td></tr>
-        <tr><td>Style across a set</td><td>Drifts between renders</td><td class='good'>Holds a consistent visual language</td></tr>
-        <tr><td>Platform</td><td>Web app + Discord</td><td class='good'>ChatGPT app / web, any chat</td></tr>
-        <tr><td>Commercial use</td><td>All plans; over $1M revenue needs Pro/Mega</td><td class='good'>Bundled into ChatGPT subscription</td></tr>
+        <tr><th scope="row">Free tier</th><td class='bad'>No free plan; trial only in niji mobile app</td><td class='good'>Yes — Free tier creates images, capped</td></tr>
+        <tr><th scope="row">Cheapest paid</th><td>$10/mo Basic (3.3 hr Fast, no Relax)</td><td class='good'>$8/mo Go (higher image limits, unpublished)</td></tr>
+        <tr><th scope="row">Best-value paid</th><td class='good'>$30/mo Standard (unlimited Relax images)</td><td>$20/mo Plus (image limits unpublished)</td></tr>
+        <tr><th scope="row">Top tier</th><td>$120/mo Mega</td><td>$200/mo Pro</td></tr>
+        <tr><th scope="row">Output aesthetic</th><td class='good'>Class-leading style, composition, color</td><td>Correct and clean, less 'photographer's eye'</td></tr>
+        <tr><th scope="row">Text in image</th><td>Weak; Thinking mode (alpha) aims to fix</td><td class='good'>Strong; legible text, roughly 85–90%</td></tr>
+        <tr><th scope="row">Prompt adherence</th><td>Looser; artistic interpretation</td><td class='good'>Literal; follows long constraints</td></tr>
+        <tr><th scope="row">Editing</th><td>Vary / pan / zoom / inpaint, web app + Discord</td><td class='good'>Conversational in-chat edits, upload to edit</td></tr>
+        <tr><th scope="row">Style across a set</th><td>Drifts between renders</td><td class='good'>Holds a consistent visual language</td></tr>
+        <tr><th scope="row">Platform</th><td>Web app + Discord</td><td class='good'>ChatGPT app / web, any chat</td></tr>
+        <tr><th scope="row">Commercial use</th><td>All plans; over $1M revenue needs Pro/Mega</td><td class='good'>Bundled into ChatGPT subscription</td></tr>
       </tbody>
     </table>
 
@@ -385,7 +402,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

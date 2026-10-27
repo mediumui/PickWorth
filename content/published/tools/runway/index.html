@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Runway earns its 4.0 because it is the most complete creative video suite in the category, and the reason is that it treats generation as one step in an edit, not the whole job. Gen-4.5 holds a character's identity across frames better than most, Aleph 2.0 lets you restyle footage you already shot, and the Motion Brush and Camera Controls plus the Premiere and Resolve plugins are what make a director stay. The deduction is not quality, it is access and accounting: the free tier is 125 one-time credits with the newest models locked away, so it proves the tool and nothing more, and the paid math bills per second, which means Standard's 625 credits buy less than a minute of top-quality video a month. Against Kling it loses the physics and human-motion crown, and against Luma it loses the cleanest keyframed camera move, but no rival packages the same end-to-end editor. Pay for Pro or Max once the control is the point; start free only to confirm the look is yours.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Runway is the New York company that turned AI video into a working editor, not just a generator, and the honest read is that its free tier is a one-time taste while the paid plans are where the real tool lives, with credit burn as the price of admission and Kling beating it on raw physical motion.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Runway?</dt><dd>A browser-based AI video suite from New York that pairs the Gen series of generative models with a full editor. You can generate from text or images, restyle existing footage with the Aleph editing model, and finish in tool with background removal, inpainting, motion tracking, lip sync, and audio generation. The unit of account is the credit, spent per second of video or per image, inside one shared workspace pool.</dd></div>
         <div class="qa"><dt>How much is Runway free?</dt><dd>The free tier gives 125 one-time credits that do not expire, 5GB of storage, and access to a limited set of models, with watermarks on export. The key catch is that the allowance is a single deposit, not a recurring monthly grant, and the newest models like Gen-4.5 and Aleph 2.0 are not on the free plan. It is enough to decide whether the quality is for you, not enough to produce.</dd></div>
         <div class="qa"><dt>What is Runway good at?</dt><dd>Direction. Independent reviews repeatedly single out Motion Brush and Camera Controls as the reason a filmmaker picks Runway over a one-prompt generator. Video-to-video editing through Aleph 2.0 is its real moat, and the integrated editor plus Premiere, Resolve, and Photoshop plugins mean you finish shots in Runway rather than exporting to a traditional NLE for every fix.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>How does Runway compare to Kling and Luma?</dt><dd>Runway wins on directed narrative, camera optics, and editing integration; Kling wins on physics, human motion, and clip length up to roughly two minutes; Luma wins on keyframed camera moves and atmospheric B-roll. The practical move for a working creator is to route each shot to the model that does it best rather than pledge to one.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The reports split cleanly. The praise is consistent: quality, creative control, and an editor that fits a production pipeline. The friction is equally consistent: credits burn faster than expected, lower-tier support is slow, peak-hour render queues wait five to fifteen minutes, and some prompts need several re-rolls to land. People stay for the control and budget for a higher tier than the free one.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Runway?</dt><dd>4.0 out of 5, a good, category-leading creative suite, carried by its editing control and ecosystem, docked for a stingy free tier, per-second credit burn, and motion realism that Kling edges on.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -311,13 +328,13 @@ gtag('config', 'G-WV775YD52J');
     <p>Runway meters everything through credits, and the plans differ mostly in the monthly pool, storage, and a few production features. The newest models and Aleph are paid-only. Figures below reflect the official pricing page as of late 2026 and the vendor moves them, so verify before subscribing.</p>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Price (monthly / annual)</th><th>Credits</th><th>What it unlocks</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price (monthly / annual)</th><th scope="col">Credits</th><th scope="col">What it unlocks</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>125 one-time, non-expiring</td><td>Limited models, watermarked export, 5GB storage, no Gen-4.5 or Aleph</td></tr>
-        <tr><td>Standard</td><td>$15 / $12</td><td>625 per month</td><td>All models, no watermark, 4K upscaling, up to 3 projects, 20GB</td></tr>
-        <tr><td>Pro</td><td>$35 / $28</td><td>2,250 per month</td><td>Custom voice clone, brand kit, 5 projects, 100GB, higher parallel renders</td></tr>
-        <tr><td>Max</td><td>$95 / $76</td><td>9,500 per month</td><td>One-month credit rollover, 10 projects, ProRes and PNG export, 500GB</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>125 one-time, non-expiring</td><td>Limited models, watermarked export, 5GB storage, no Gen-4.5 or Aleph</td></tr>
+        <tr><th scope="row">Standard</th><td>$15 / $12</td><td>625 per month</td><td>All models, no watermark, 4K upscaling, up to 3 projects, 20GB</td></tr>
+        <tr><th scope="row">Pro</th><td>$35 / $28</td><td>2,250 per month</td><td>Custom voice clone, brand kit, 5 projects, 100GB, higher parallel renders</td></tr>
+        <tr><th scope="row">Max</th><td>$95 / $76</td><td>9,500 per month</td><td>One-month credit rollover, 10 projects, ProRes and PNG export, 500GB</td></tr>
       </tbody>
     </table>
     <p>The old Unlimited tier, with its relaxed-queue Explore Mode, has been replaced by Max for new subscribers, so do not be surprised if older reviews cite Unlimited. On every paid tier, monthly credits expire on the billing date except Max, which rolls over up to one month of unused balance.</p>
@@ -326,13 +343,13 @@ gtag('config', 'G-WV775YD52J');
     <p>The three leaders have split into distinct strengths, and the honest answer to which is best is that it depends on the shot. Runway directs, Kling moves, Luma frames.</p>
     <table class="compare">
       <thead>
-        <tr><th>Criterion</th><th>Runway</th><th>Kling</th><th>Luma</th></tr>
+        <tr><th scope="col">Criterion</th><th scope="col">Runway</th><th scope="col">Kling</th><th scope="col">Luma</th></tr>
       </thead>
       <tbody>
-        <tr><td>Best at</td><td>Directed narrative, camera optics, editing</td><td>Physics, human motion, long clips</td><td>Keyframed camera, atmospheric B-roll</td></tr>
-        <tr><td>Max clip</td><td>~10 to 16 seconds</td><td>Up to ~2 minutes</td><td>~5 to 30 seconds with extend</td></tr>
-        <tr><td>Entry price</td><td>$15 / month</td><td>From ~$7 / month</td><td>From ~$10 / month</td></tr>
-        <tr><td>Weak spot</td><td>Credit burn, stylized motion</td><td>Rigid camera paths</td><td>Softens on fast motion</td></tr>
+        <tr><th scope="row">Best at</th><td>Directed narrative, camera optics, editing</td><td>Physics, human motion, long clips</td><td>Keyframed camera, atmospheric B-roll</td></tr>
+        <tr><th scope="row">Max clip</th><td>~10 to 16 seconds</td><td>Up to ~2 minutes</td><td>~5 to 30 seconds with extend</td></tr>
+        <tr><th scope="row">Entry price</th><td>$15 / month</td><td>From ~$7 / month</td><td>From ~$10 / month</td></tr>
+        <tr><th scope="row">Weak spot</th><td>Credit burn, stylized motion</td><td>Rigid camera paths</td><td>Softens on fast motion</td></tr>
       </tbody>
     </table>
     <p>The working pattern the comparisons converge on is hybrid: generate core motion plates on Kling, refine camera and edits on Runway, pull mood variants from Luma, then unify in one post pass. Runway's value is that it is the refinement and finishing bench, not necessarily the place you generate every frame.</p>
@@ -389,7 +406,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

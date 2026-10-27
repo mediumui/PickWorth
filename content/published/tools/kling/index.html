@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Kling AI is the video model we point budget-conscious and high-volume creators to first, because the motion realism and the free daily credits are real and the native audio is a feature no Western rival matches yet. The deduction is not the quality, it is the economy around it: credits drain on every retry, the free tier queues and watermarks, and the renewal prices sit above the promo figures Kling leads with. Score it 4.0 out of 5. Use the free tier to confirm the motion holds for your prompts, then move to Standard the moment you need unwatermarked, commercial-ready clips or a shorter queue.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Kling AI is Kuaishou's text- and image-to-video model that leads on realistic motion and long clips, and it gives you a free tier of daily credits before any paid plan.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Kling AI?</dt><dd>Kling AI is a text-to-video and image-to-video generator built by Kuaishou, the Chinese short-video company. It takes a written prompt or a still image and returns a short clip with motion, camera movement, and, on recent versions, generated sound in the same pass. As of late 2026 it spans a family of models (Kling 2.x, the newer 3.x line, and the Kling 4.0 early-access tier) plus an image generator and a canvas-style editor.</dd></div>
         <div class="qa"><dt>How does Kling's free plan work?</dt><dd>The free Basic plan is the reason most people try Kling. Kuaishou gives non-paying users free credits that refresh on a schedule (reviewers consistently report roughly 66 credits a day, valid for a limited window), capped at 720p, watermarked, and licensed for non-commercial use only. That is enough to test prompts and make a handful of personal clips a day, but not to publish for money.</dd></div>
         <div class="qa"><dt>What is Kling good at?</dt><dd>Three things keep it at the front of the category. Realistic motion and believable physics are the most repeated praise across independent tests. Image-to-video is strong, with good subject and product preservation. And the free entry point plus the native audio feature, where dialogue and effects are rendered inside the video model rather than layered on after, are capabilities competitors like Luma still lack.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>How does Kling compare to Luma and Runway?</dt><dd>Runway Gen-4.5 scores well on benchmarks and character consistency and bundles editing, but outputs 720p and costs more per clip. Luma Ray scores high on physics, color depth, and HDR export for graded B-roll, but is silent and has no audio. Kling wins on cost-per-clip, daily free access, and built-in sound, which is why most comparison reviewers call it the practical default and run a second tool for specific needs.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The independent hands-on reports split into two clear signals. The praise is consistent: smooth, realistic motion, strong image-to-video, and the surprise of usable native audio. The friction is equally consistent: credit burn on retries, free-tier wait times, and occasional wobbly prompt adherence on busy scenes. The recurring pattern is that people stay for the motion quality and budget up a tier once they start generating daily.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Kling?</dt><dd>No. This review was written by a single editorial team using public sources and hands-on reports. Pricing figures were verified against Kling's own pricing page. We do not accept payment to change scores or rankings.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -306,14 +323,14 @@ gtag('config', 'G-WV775YD52J');
     <p>Kling sells monthly credits across a ladder of plans. The numbers below are what we verified against Kling's own pricing page and corroborating third-party trackers in October 2026; Kling revises prices often, so read the live page before paying. The figure to watch is the renewal price, not the first-month promo.</p>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Monthly (renewal)</th><th>Credits</th><th>What you get</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Monthly (renewal)</th><th scope="col">Credits</th><th scope="col">What you get</th></tr>
       </thead>
       <tbody>
-        <tr><td>Basic (free)</td><td>$0</td><td>Daily free allowance</td><td>720p, watermark, non-commercial, longer queue</td></tr>
-        <tr><td>Standard</td><td>~$8.80 (first mo ~$6.99)</td><td>660 / mo</td><td>1080p, no watermark, commercial rights</td></tr>
-        <tr><td>Pro</td><td>~$32.56 (first mo ~$25.99)</td><td>3,000 / mo</td><td>Priority queue, private mode, newer models</td></tr>
-        <tr><td>Premier</td><td>~$80.96 (first mo ~$64.99)</td><td>8,000 / mo</td><td>Early access to newest models</td></tr>
-        <tr><td>Ultra</td><td>~$159.99 (first mo ~$127.99)</td><td>26,000 / mo</td><td>Highest priority, beta feature access</td></tr>
+        <tr><th scope="row">Basic (free)</th><td>$0</td><td>Daily free allowance</td><td>720p, watermark, non-commercial, longer queue</td></tr>
+        <tr><th scope="row">Standard</th><td>~$8.80 (first mo ~$6.99)</td><td>660 / mo</td><td>1080p, no watermark, commercial rights</td></tr>
+        <tr><th scope="row">Pro</th><td>~$32.56 (first mo ~$25.99)</td><td>3,000 / mo</td><td>Priority queue, private mode, newer models</td></tr>
+        <tr><th scope="row">Premier</th><td>~$80.96 (first mo ~$64.99)</td><td>8,000 / mo</td><td>Early access to newest models</td></tr>
+        <tr><th scope="row">Ultra</th><td>~$159.99 (first mo ~$127.99)</td><td>26,000 / mo</td><td>Highest priority, beta feature access</td></tr>
       </tbody>
     </table>
     <p>The honest read: Basic covers testing, Standard is the first paid step most creators need, and the upper tiers only pay off once you generate daily at volume. Kling also sells one-time credit packs and team plans, so the ladder above is the subscription core, not the whole catalog.</p>
@@ -322,14 +339,14 @@ gtag('config', 'G-WV775YD52J');
     <p>The three are compared constantly because they sit in the same lane but optimize for different work. None publishes a benchmark we can verify end to end, so the useful move is to run the same prompt through two of them. Here is the shape of the trade-off as the independent comparison reviews describe it.</p>
     <table class="compare">
       <thead>
-        <tr><th></th><th>Kling</th><th>Luma Ray</th><th>Runway Gen-4.5</th></tr>
+        <tr><th scope="col"></th><th scope="col">Kling</th><th scope="col">Luma Ray</th><th scope="col">Runway Gen-4.5</th></tr>
       </thead>
       <tbody>
-        <tr><td>Motion realism</td><td>Strong</td><td>Strong on physics, HDR export</td><td>Strong, 720p output</td></tr>
-        <tr><td>Native audio</td><td>Yes, in-model</td><td>No</td><td>Separate tools</td></tr>
-        <tr><td>Character consistency</td><td>Good with reference</td><td>Weaker</td><td>Best in class</td></tr>
-        <tr><td>Cost per clip</td><td>Lowest of the three</td><td>Mid</td><td>Highest</td></tr>
-        <tr><td>Best for</td><td>Volume, free entry, sound</td><td>Graded B-roll</td><td>Directed, consistent ads</td></tr>
+        <tr><th scope="row">Motion realism</th><td>Strong</td><td>Strong on physics, HDR export</td><td>Strong, 720p output</td></tr>
+        <tr><th scope="row">Native audio</th><td>Yes, in-model</td><td>No</td><td>Separate tools</td></tr>
+        <tr><th scope="row">Character consistency</th><td>Good with reference</td><td>Weaker</td><td>Best in class</td></tr>
+        <tr><th scope="row">Cost per clip</th><td>Lowest of the three</td><td>Mid</td><td>Highest</td></tr>
+        <tr><th scope="row">Best for</th><td>Volume, free entry, sound</td><td>Graded B-roll</td><td>Directed, consistent ads</td></tr>
       </tbody>
     </table>
     <p>The pattern across reviewers is that there is no single winner. Runway leads when character consistency and directed camera control matter most. Luma earns its place in pipelines that end in professional color grading. Kling wins on cost per clip and daily free access, which is why it is the practical default and why serious creators tend to run a second tool alongside it rather than commit to one.</p>
@@ -385,7 +402,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

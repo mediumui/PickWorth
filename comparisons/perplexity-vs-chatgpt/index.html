@@ -187,12 +187,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -269,14 +286,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Perplexity score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have a sourced answer and a list of where that answer came from. ChatGPT is a general assistant that can also search, and its job is usually to produce something — a draft, a table, a script, a plan. If your day is mostly finding out what is true, Perplexity earns its tier. If your day is mostly making things, the answer is the general assistant and the search feature is a bonus, not the point.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> These are not the same kind of tool, and most of the confusion comes from pricing them against each other. Perplexity is a research instrument: it searches, it cites, and its job is done when you have your answer. ChatGPT is a general assistant: it does the rest. Pick by what you are doing, not by which one has the bigger model.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Perplexity or ChatGPT — which should I pick?</dt><dd>Cited research (you need the source): Perplexity. General assistant work: ChatGPT. They are not the same kind of tool.</dd></div>
         <div class="qa"><dt>What is Perplexity's one real advantage?</dt><dd>Citation: every answer links back to the source it was drawn from, so a research question that takes five tabs becomes one page.</dd></div>
         <div class="qa"><dt>Where does Perplexity fall short?</dt><dd>The free tier runs out of credits on a working day; the most-used models are metered.</dd></div>
@@ -285,7 +302,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>Route by the job: research → Perplexity; general assistant work → ChatGPT. Score per dimension, not by benchmark alone.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Perplexity or OpenAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -303,20 +320,20 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>Perplexity</th>
-          <th>ChatGPT (OpenAI)</th>
+          <th scope="col"></th>
+          <th scope="col">Perplexity</th>
+          <th scope="col">ChatGPT (OpenAI)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Core job</td><td class="good">Answer a question with sources</td><td class="good">Produce things: drafts, code, plans</td></tr>
-        <tr><td>Citations</td><td class="good">Every answer links its sources</td><td>Searches when it chooses to; not source-first</td></tr>
-        <tr><td>Web search</td><td class="good">Always on, the default mode</td><td>On when enabled or needed</td></tr>
-        <tr><td>Free tier</td><td class="good">Quick searches, generous for research</td><td>Yes, but metered on the strong models</td></tr>
-        <tr><td>Paid tier</td><td>~$20 / month (Pro)</td><td>$20 / month (Plus)</td></tr>
-        <tr><td>Long documents</td><td>Good for research, not for writing them</td><td class="good">Stronger on long-form generation</td></tr>
-        <tr><td>Coding</td><td>Weak — not the tool for it</td><td class="good">The better of the two by a wide margin</td></tr>
-        <tr><td>Data retention</td><td class="good">Incognito mode on free tier</td><td>Settings; retention is a config question</td></tr>
+        <tr><th scope="row">Core job</th><td class="good">Answer a question with sources</td><td class="good">Produce things: drafts, code, plans</td></tr>
+        <tr><th scope="row">Citations</th><td class="good">Every answer links its sources</td><td>Searches when it chooses to; not source-first</td></tr>
+        <tr><th scope="row">Web search</th><td class="good">Always on, the default mode</td><td>On when enabled or needed</td></tr>
+        <tr><th scope="row">Free tier</th><td class="good">Quick searches, generous for research</td><td>Yes, but metered on the strong models</td></tr>
+        <tr><th scope="row">Paid tier</th><td>~$20 / month (Pro)</td><td>$20 / month (Plus)</td></tr>
+        <tr><th scope="row">Long documents</th><td>Good for research, not for writing them</td><td class="good">Stronger on long-form generation</td></tr>
+        <tr><th scope="row">Coding</th><td>Weak — not the tool for it</td><td class="good">The better of the two by a wide margin</td></tr>
+        <tr><th scope="row">Data retention</th><td class="good">Incognito mode on free tier</td><td>Settings; retention is a config question</td></tr>
       </tbody>
     </table>
 

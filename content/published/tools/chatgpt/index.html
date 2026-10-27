@@ -182,12 +182,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -259,14 +276,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.5</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>ChatGPT is the most broadly useful general-purpose AI assistant on the consumer market, and it is not close. It leads on multimodal input, on integration depth with the wider OpenAI ecosystem, and on everyday writing. It lags on long-document reasoning, where Claude has the edge, and peak-hour usage caps on the free tier are the most consistent complaint across the user base we read.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> ChatGPT is the most broadly useful general-purpose AI assistant on the consumer market: it leads on multimodal input, ecosystem depth, and everyday writing, and the $20 Plus tier is worth it for most individual users.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Is ChatGPT worth paying for?</dt><dd>Yes, for most people: the $20/month Plus tier unlocks the models, file uploads, and image generation that make it useful daily. The free tier caps you at lower-volume access.</dd></div>
         <div class="qa"><dt>What is ChatGPT best at?</dt><dd>Multimodal input (text + image), integration depth with OpenAI's tools, and everyday writing. It is the widest all-rounder in the category.</dd></div>
         <div class="qa"><dt>Where does ChatGPT fall short?</dt><dd>Long-document reasoning — Claude holds the edge on very long context — and peak-hour usage caps on the free tier are the most common complaint.</dd></div>
@@ -276,7 +293,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Is the free tier enough?</dt><dd>Fine for occasional light use. For daily heavy use, the free tier's model access and caps are the bottleneck that Justifies the $20 upgrade.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from OpenAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from OpenAI's official pages. See our method.</dd></div>
         <div class="qa"><dt>What is the context window on ChatGPT?</dt><dd>Varies by model tier; long-document work is the limit Claude still beats it on. See our context windows explainer.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -315,13 +332,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="pricing">Plans &amp; what each unlocks</h2>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Price</th><th>What changes vs the tier below</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">What changes vs the tier below</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>Core assistant with standard usage caps; no priority access</td></tr>
-        <tr><td>Plus</td><td>$20 / month</td><td>Higher caps, priority access, latest model tiers</td></tr>
-        <tr><td>Pro</td><td>$200 / month</td><td>Higher limits than Plus, access to the newest model tier</td></tr>
-        <tr><td>Team</td><td>from $25 / seat / month</td><td>Shared workspaces, admin controls, data handling guarantees</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>Core assistant with standard usage caps; no priority access</td></tr>
+        <tr><th scope="row">Plus</th><td>$20 / month</td><td>Higher caps, priority access, latest model tiers</td></tr>
+        <tr><th scope="row">Pro</th><td>$200 / month</td><td>Higher limits than Plus, access to the newest model tier</td></tr>
+        <tr><th scope="row">Team</th><td>from $25 / seat / month</td><td>Shared workspaces, admin controls, data handling guarantees</td></tr>
       </tbody>
     </table>
     <p class="fineprint">Prices from OpenAI's consumer pricing page, verified 22 October 2026. Team pricing is per-seat and billed annually; monthly billing is priced higher.</p>
@@ -389,7 +406,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

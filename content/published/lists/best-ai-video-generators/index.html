@@ -180,12 +180,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -257,14 +274,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Pick by the job, not by the leaderboard. Google Veo 3.1 is the quality default and the only model that ships lip-synced audio in the same pass, so it wins for talking-head and product footage. Runway is the pick when the deliverable is a finished, edited video rather than one clip, because its timeline, motion brush, and masking are unmatched here. Kling is the value and free-tier winner: 66 credits refill daily, physics and on-screen text hold up, and cost per second is the lowest in the group. Luma is the image-to-video and long-clip specialist with the best lighting realism but no native audio. Pika is the cheap, playful effects option for social shorts. Sora is gone, and its disappearance is the real lesson: a model's quality is a snapshot, a platform's survival is the investment. Start free on Kling or Veo, then pay only when watermark, commercial rights, or resolution force the upgrade.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Start with Google Veo 3.1 if you need the best-looking clip with sound, Runway if the video has to be edited into something finished, and Kling if you want the most video per dollar including a generous free tier; Sora is retired, so migrate elsewhere.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best AI video generators in 2026?</dt><dd>Google Veo 3.1 for quality with sound, Runway for editing, Kling for free tier and value, Luma for image-to-video, and Pika for cheap effects. Sora is retired and no longer a live option.</dd></div>
         <div class="qa"><dt>What is the best free AI video generator?</dt><dd>Kling: its free plan refills 66 credits every day, enough for several short clips. Google Flow's 50 daily credits also cover Veo 3.1 Lite tests, but Kling's allowance is the most usable for regular work.</dd></div>
         <div class="qa"><dt>Runway vs Kling vs Luma: which should I pick?</dt><dd>Runway if the clip must become an edited video; Kling if you want the most footage per dollar and a strong free tier; Luma if you are animating a still image or need clips near a minute long.</dd></div>
@@ -272,7 +289,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Which is best for YouTube and social video?</dt><dd>Kling for high-volume vertical content and value; Runway when the piece needs real editing; Pika for stylized shorts. Veo when you need dialogue or product polish.</dd></div>
         <div class="qa"><dt>How much should I pay for an AI video generator?</dt><dd>Start free. Kling and Luma give recurring free credits and Veo gives 50 a day. Paid tiers start at $10-12 a month and only make sense once you need watermark-free, commercial, or higher-resolution output.</dd></div>
         <div class="qa"><dt>What happened to OpenAI Sora?</dt><dd>Retired. The app closed on 26 April 2026 and the API on 24 September 2026 per OpenAI's help center. Migrate to Veo for quality, Kling for value, or Runway for control; ChatGPT no longer offers Sora video.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -296,13 +313,13 @@ gtag('config', 'G-WV775YD52J');
 <h2 id="ranking">The ranking at a glance</h2>
 <p>Prices are monthly list rates from each vendor's own pricing page as of October 2026; free tiers are recurring unless noted. Veo and Kling lead on value, Runway leads on control, Luma on motion realism, Pika on entry price.</p>
 <table class="compare">
-<thead><tr><th>Tool</th><th>From (paid)</th><th>Free tier</th><th>Best at</th><th>Hard limit</th></tr></thead>
+<thead><tr><th scope="col">Tool</th><th scope="col">From (paid)</th><th scope="col">Free tier</th><th scope="col">Best at</th><th scope="col">Hard limit</th></tr></thead>
 <tbody>
-<tr><td><strong>Google Veo 3.1</strong></td><td>$4.99/mo (Flow)</td><td>50 credits/day</td><td>Quality + native audio</td><td>App video now Omni, not Veo</td></tr>
-<tr><td><strong>Runway</strong></td><td>$12/mo</td><td>125 credits, one-time</td><td>Editing, motion brush</td><td>~10s per clip</td></tr>
-<tr><td><strong>Kling 3.0</strong></td><td>~$10/mo</td><td>66 credits/day</td><td>Value, physics, text</td><td>15s clips</td></tr>
-<tr><td><strong>Luma Dream Machine</strong></td><td>$9.99/mo</td><td>~30 gen/mo</td><td>Image-to-video, HDR</td><td>No native audio</td></tr>
-<tr><td><strong>Pika</strong></td><td>$10/mo</td><td>Packs only</td><td>Effects, cheap clips</td><td>480p on free</td></tr>
+<tr><th scope="row"><strong>Google Veo 3.1</strong></th><td>$4.99/mo (Flow)</td><td>50 credits/day</td><td>Quality + native audio</td><td>App video now Omni, not Veo</td></tr>
+<tr><th scope="row"><strong>Runway</strong></th><td>$12/mo</td><td>125 credits, one-time</td><td>Editing, motion brush</td><td>~10s per clip</td></tr>
+<tr><th scope="row"><strong>Kling 3.0</strong></th><td>~$10/mo</td><td>66 credits/day</td><td>Value, physics, text</td><td>15s clips</td></tr>
+<tr><th scope="row"><strong>Luma Dream Machine</strong></th><td>$9.99/mo</td><td>~30 gen/mo</td><td>Image-to-video, HDR</td><td>No native audio</td></tr>
+<tr><th scope="row"><strong>Pika</strong></th><td>$10/mo</td><td>Packs only</td><td>Effects, cheap clips</td><td>480p on free</td></tr>
 </tbody>
 </table>
 
@@ -372,7 +389,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

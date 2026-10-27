@@ -187,12 +187,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -263,14 +280,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.8</strong><span>Grok score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>Grok's whole case rests on one real advantage: it sees the live firehose from X, and for questions that are about what is happening right now — a breaking story, a live market reaction, a trend that started this morning — that is a genuine difference, not a demo. Everything else is a close-to-even fight that ChatGPT usually edges on tooling and depth. Take Grok if your work is time-sensitive and social-signal-driven. Take ChatGPT for everything else, and use Grok as the second opinion when recency is the question.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Grok's whole case rests on one real advantage: it sees the live firehose from X. For breaking stories, live market reaction, or a trend that is forming right now, Grok beats a model trained on a fixed corpus. Everything else — general assistant work, everyday writing, deep integrations — ChatGPT still wins.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Grok or ChatGPT — which should I pick?</dt><dd>Live-X / breaking-news / real-time questions → Grok. Everything else (general assistant, everyday writing, deep integrations) → ChatGPT.</dd></div>
         <div class="qa"><dt>What is Grok's one real advantage?</dt><dd>Live-X knowledge: it sees what is happening on X right now, which a model trained on a fixed corpus cannot.</dd></div>
         <div class="qa"><dt>Where does Grok fall short?</dt><dd>General assistant work, everyday writing, and the deep integrations ChatGPT has. The trust layer (safety-lapse history, disclosed distillation) is also a caveat.</dd></div>
@@ -279,7 +296,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's call?</dt><dd>Score per dimension: Grok wins the live-X questions; ChatGPT wins the rest. Pick the one that matches your actual job.</dd></div>
         <div class="qa"><dt>Do I need both?</dt><dd>For most people, one is enough. Add a second only when a specific kind of work starts hurting — see the $20 rule.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from xAI or OpenAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -297,20 +314,20 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>Grok (xAI)</th>
-          <th>ChatGPT (OpenAI)</th>
+          <th scope="col"></th>
+          <th scope="col">Grok (xAI)</th>
+          <th scope="col">ChatGPT (OpenAI)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Live knowledge source</td><td class="good">Native access to X in real time</td><td>Web search when enabled; not real-time native</td></tr>
-        <tr><td>Recency on breaking topics</td><td class="good">Minutes, not hours</td><td>Depends on the search layer</td></tr>
-        <tr><td>Free tier</td><td class="good">Usable, metered on the top model</td><td>Yes, genuinely usable</td></tr>
-        <tr><td>Paid tier</td><td>~$30 / month (SuperGrok)</td><td>$20 / month (Plus)</td></tr>
-        <tr><td>Coding agents</td><td>Strong; fewer third-party tools</td><td class="good">Deeper agent and integration surface</td></tr>
-        <tr><td>Multimodal input</td><td>Text and image; strong on X content</td><td class="good">Text, audio, image in one conversation</td></tr>
-        <tr><td>Ecosystem / integrations</td><td>X-native, narrower outside it</td><td class="good">Much wider add-on surface</td></tr>
-        <tr><td>Tone / personality</td><td>Distinct, deliberately less filtered</td><td class="good">More predictable for work use</td></tr>
+        <tr><th scope="row">Live knowledge source</th><td class="good">Native access to X in real time</td><td>Web search when enabled; not real-time native</td></tr>
+        <tr><th scope="row">Recency on breaking topics</th><td class="good">Minutes, not hours</td><td>Depends on the search layer</td></tr>
+        <tr><th scope="row">Free tier</th><td class="good">Usable, metered on the top model</td><td>Yes, genuinely usable</td></tr>
+        <tr><th scope="row">Paid tier</th><td>~$30 / month (SuperGrok)</td><td>$20 / month (Plus)</td></tr>
+        <tr><th scope="row">Coding agents</th><td>Strong; fewer third-party tools</td><td class="good">Deeper agent and integration surface</td></tr>
+        <tr><th scope="row">Multimodal input</th><td>Text and image; strong on X content</td><td class="good">Text, audio, image in one conversation</td></tr>
+        <tr><th scope="row">Ecosystem / integrations</th><td>X-native, narrower outside it</td><td class="good">Much wider add-on surface</td></tr>
+        <tr><th scope="row">Tone / personality</th><td>Distinct, deliberately less filtered</td><td class="good">More predictable for work use</td></tr>
       </tbody>
     </table>
 
@@ -366,7 +383,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

@@ -155,12 +155,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -237,14 +254,14 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> If you are a verified student, teacher, or a maintainer of a popular open-source project, GitHub Copilot Pro is free for you, not just the 2,000-completion free tier. It is a standing benefit, not a trial. The one thing that trips people is that it requires a verified account, so the first step is the eligibility link, not the checkout.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Can I use GitHub Copilot Pro for free?</dt><dd>Yes, if you qualify: verified students get the Copilot Student plan at no cost, and verified teachers and maintainers of popular open-source projects get the full Pro tier free. Everyone else gets the 2,000-completion free plan or pays.</dd></div>
         <div class="qa"><dt>Is the free access a trial or permanent?</dt><dd>It is a standing benefit, not a trial: it lasts for as long as you remain in the program and renews on schedule, so it does not lapse after 30 days the way a paid trial does.</dd></div>
         <div class="qa"><dt>What exactly does the free Pro give me?</dt><dd>The Pro tier: unlimited completions and next-edit suggestions, 1,500 monthly AI credits, access to mid-complexity models, and the third-party coding agents. The same features a $10 subscriber gets.</dd></div>
         <div class="qa"><dt>How do I claim it?</dt><dd>Sign in with your GitHub account, go to your Copilot settings, and use the eligibility link for your category (student, teacher, or open-source maintainer). If you see a price instead of a free button, you are not currently verified as eligible.</dd></div>
         <div class="qa"><dt>What if I already have a paid subscription?</dt><dd>You need to cancel the paid plan or trial before the free eligibility can be applied; a paid seat and a free eligibility grant do not stack on the same account.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from GitHub?</dt><dd>No. This is a factual guide; the free-group offers are verified from GitHub's official plans and documentation pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="who">Who gets Pro for $0</h2>

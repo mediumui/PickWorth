@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Gemini is the assistant you reach for when the work is research or when it already lives inside Google's apps, and the reason is structural: it is the only major assistant that can read your Gmail, your Docs and your Drive and act on them in one place. It is genuinely strong on that, long-document synthesis, deep research grounded in current search, and multimodal input. It is least reliable on the two things the category now turns on: pure coding consistency, where the independent reviews put it behind Claude, and the free tier's 32,000-token window, which is a real cap on exactly the long-document strength that is the point. For the research and productivity user, Google AI Pro at $19.99 is the baseline; for the coding-dominant user, pair it with a dedicated tool rather than make it the only one. The free plan is the most generous in the category, and that is the honest reason to start there.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Gemini is Google's general-purpose assistant, and its defining strength is the stack behind it: a free tier that already includes Deep Research and image generation, native integration with Gmail, Docs, Drive, and YouTube, and a 1M-token context window on the paid tiers. It is strongest at research, long documents, and anything that lives in the Google ecosystem; it is weakest on pure coding consistency, where Claude still has the edge. The free plan is real and generous, but it is capped at a 32,000-token window and metered limits that refresh on a rolling window rather than a fixed daily count.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Google Gemini?</dt><dd>Google's general-purpose assistant, available as a web app and mobile app and through the Google AI plans. It runs on the Gemini 3 model family (Flash-Lite, Flash, and Pro) and is the only mainstream assistant that is natively wired into Gmail, Docs, Drive, Calendar, Maps and YouTube, so it can work on your actual files rather than just pasted-in text.</dd></div>
         <div class="qa"><dt>Is Gemini free?</dt><dd>Yes. The no-plan free tier includes Gemini 3 Flash-Lite, Flash and Pro, plus Deep Research, Canvas, Gems, Live and image generation, with 15 GB of storage. What the free tier caps is not the model but the volume: a 32,000-token context window and metered limits that refresh on a rolling window.</dd></div>
         <div class="qa"><dt>What is Gemini best at?</dt><dd>Research and long documents. The combination of a large context window, Deep Research, and grounding in Google Search makes it the strongest tool in the category for reading a big body of material and synthesizing it, and for anything that already lives inside Google's apps.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>Two readings. For research, fact-checking and working across your Google apps, the independent hands-on reviews describe it as the default recommendation, especially on AI Pro. For serious coding, the same readers consistently point to Claude or a dedicated coding tool as the more reliable choice, and several flag a default privacy setting, Keep Activity is on by default, so chats can be reviewed and used for model improvement unless you switch it off.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Gemini?</dt><dd>4.0 out of 5, a strong, broadly useful assistant that leads on research and Google-ecosystem work, with real caps on the free tier and a coding-consistency gap behind the top paid tiers.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Google?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from Google's official plans page. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -301,13 +318,13 @@ gtag('config', 'G-WV775YD52J');
     <p>The plans are priced as a base plus a usage multiplier, so the number to read is the window and the model, not the sticker. Free is the entry point; Plus is the cheap step for anyone who wants video generation and a bigger window; Pro is where the million-token window and Deep Research open up, and it bundles a YouTube Premium subscription that offsets part of the cost; Ultra is for the people whose work is sustained research and the top Deep Think model, and it is the tier where the price jumps are steep. The paid limits are stated as multiples of the free allowance rather than fixed numbers, so the exact ceiling shifts with Google's usage policy.</p>
     <table class="compare">
       <thead>
-        <tr><th>Tier</th><th>Price</th><th>Context window</th><th>What it unlocks</th></tr>
+        <tr><th scope="col">Tier</th><th scope="col">Price</th><th scope="col">Context window</th><th scope="col">What it unlocks</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>32K tokens</td><td>Flash-Lite / Flash / Pro, Deep Research, Canvas, Gems, Live, image gen, 15 GB</td></tr>
-        <tr><td>AI Plus</td><td>~$5 / mo</td><td>128K tokens</td><td>2x limits, video generation, 400 GB, Flow credits</td></tr>
-        <tr><td>AI Pro</td><td>$19.99 / mo</td><td>1M tokens</td><td>4x limits, Deep Think access, 5 TB, bundled YouTube Premium Lite</td></tr>
-        <tr><td>AI Ultra</td><td>from $99.99 / mo</td><td>1M tokens</td><td>Highest limits, Deep Think, Project Genie, up to 20-30 TB</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>32K tokens</td><td>Flash-Lite / Flash / Pro, Deep Research, Canvas, Gems, Live, image gen, 15 GB</td></tr>
+        <tr><th scope="row">AI Plus</th><td>~$5 / mo</td><td>128K tokens</td><td>2x limits, video generation, 400 GB, Flow credits</td></tr>
+        <tr><th scope="row">AI Pro</th><td>$19.99 / mo</td><td>1M tokens</td><td>4x limits, Deep Think access, 5 TB, bundled YouTube Premium Lite</td></tr>
+        <tr><th scope="row">AI Ultra</th><td>from $99.99 / mo</td><td>1M tokens</td><td>Highest limits, Deep Think, Project Genie, up to 20-30 TB</td></tr>
       </tbody>
     </table>
     <p>Two lines bend that table. For eligible students, AI Pro is free for a year with annual re-verification, which is a legitimate saving and not a trial. And the Gemini API is a separate product, billed per token for developers, so the consumer plans and the developer API are two different products with two different free tiers. The US pricing above is the baseline; Google charges local equivalents elsewhere and has changed the Ultra pricing within the last year, so the top-tier number is the one to re-check.</p>
@@ -364,7 +381,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

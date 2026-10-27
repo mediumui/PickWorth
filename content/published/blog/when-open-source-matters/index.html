@@ -155,12 +155,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -231,14 +248,14 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Open source changes the decision under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or the cost of the hosted version stops adding up. In every other case it is a preference dressed up as a requirement.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>When does open source actually matter?</dt><dd>Under four conditions: the data cannot leave your network, the token arithmetic changes what you can build, you need to modify the tool in a way the vendor will not, or the cost of the hosted version stops adding up.</dd></div>
         <div class="qa"><dt>When is 'open source' just a preference?</dt><dd>When the data can leave, the token arithmetic does not change the work, you do not need to modify the tool, and the hosted version is cheap enough. In those cases it is a preference dressed up as a requirement.</dd></div>
         <div class="qa"><dt>What is the four-condition test?</dt><dd>Data stays on your network? Token arithmetic changes the work? Do you need to modify the tool? Does the hosted cost stop adding up? If none, the open-weights version is not the right pick.</dd></div>
         <div class="qa"><dt>Does open source automatically mean better?</dt><dd>No. It means more control and a different cost structure, not necessarily better output for your job. The four conditions decide.</dd></div>
         <div class="qa"><dt>Where do I see the open-source tools we covered?</dt><dd>The open-source Cursor alternatives list: Cline, Zed, Aider, Continue, Tabby, Void. Each picked by scenario and by whether the project is still being maintained.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from any vendor or project?</dt><dd>No. Reviews are written by a single editorial team; GitHub data (stars, licence, last push) is verified from each repository.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="four-conditions">The four conditions</h2>
@@ -246,16 +263,16 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Condition</th>
-          <th>Test</th>
-          <th>Usually decisive?</th>
+          <th scope="col">Condition</th>
+          <th scope="col">Test</th>
+          <th scope="col">Usually decisive?</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>Data cannot leave</strong></td><td>Is there a contract or compliance clause saying so?</td><td class="good">Yes — settles it outright</td></tr>
-        <tr><td><strong>Cost arithmetic</strong></td><td>Does the token price change what you can build?</td><td class="good">Yes, at volume</td></tr>
-        <tr><td><strong>You need to modify it</strong></td><td>Is there a change the vendor will not make for you?</td><td>Sometimes</td></tr>
-        <tr><td><strong>Longevity</strong></td><td>Must this still work in five years?</td><td>Sometimes</td></tr>
+        <tr><th scope="row"><strong>Data cannot leave</strong></th><td>Is there a contract or compliance clause saying so?</td><td class="good">Yes — settles it outright</td></tr>
+        <tr><th scope="row"><strong>Cost arithmetic</strong></th><td>Does the token price change what you can build?</td><td class="good">Yes, at volume</td></tr>
+        <tr><th scope="row"><strong>You need to modify it</strong></th><td>Is there a change the vendor will not make for you?</td><td>Sometimes</td></tr>
+        <tr><th scope="row"><strong>Longevity</strong></th><td>Must this still work in five years?</td><td>Sometimes</td></tr>
       </tbody>
     </table>
 
@@ -311,7 +328,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

@@ -163,12 +163,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -239,7 +256,7 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Every review on this site comes from the same three-part method: a fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full. If a review here says something, this is how it was checked.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>How does PickWorth test AI tools?</dt><dd>A fixed prompt set run identically across tools, every test repeated enough times that a lucky run cannot carry the conclusion, and the limits we measure and the claims we refuse to repeat written out in full.</dd></div>
         <div class="qa"><dt>Why do you repeat the same prompts?</dt><dd>To make the test reproducible: the same fixed set run the same way across tools is the only way a comparison is checkable.</dd></div>
         <div class="qa"><dt>What do you refuse to repeat?</dt><dd>Claims we cannot verify from a fixed run, vendor marketing numbers, and benchmarks we have not reproduced ourselves.</dd></div>
@@ -247,7 +264,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Does PickWorth take money from the vendors it reviews?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages. See our method and ethics.</dd></div>
         <div class="qa"><dt>What is the point of writing out the method?</dt><dd>An unauditable review is just an opinion with a new layout: the method is written out so a reader can check whether a claim is backed by the tests we actually ran.</dd></div>
         <div class="qa"><dt>Where can I see the actual numbers?</dt><dd>Each review carries a verified-price note and a key-answers block; the raw prompt set and the scoring standard live in this post.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="fixed-set">The fixed prompt set</h2>
@@ -265,13 +282,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="scoring">The score, and what it is allowed to say</h2>
     <p>Every review and comparison on this site carries a number from 0 to 5. That number is not a product rating the way a star score on a store page is a product rating. It is a spending decision, expressed as a number: how strongly we would defend you paying for this tool, at its current price, for the kind of work this site is about. The scale is anchored to money, not to benchmarks:</p>
     <table class="compare">
-      <thead><tr><th>Score</th><th>What it means</th><th>What it never means</th></tr></thead>
+      <thead><tr><th scope="col">Score</th><th scope="col">What it means</th><th scope="col">What it never means</th></tr></thead>
       <tbody>
-        <tr><td><strong>4.5 — 5.0</strong></td><td class="good">Worth the money for most people in this category. The free tier is not the real product.</td><td>It will never fail you. It will, on the hard tasks; that is the 0.5 gap between 5.0 and 4.5, not a failure of the tool but of every tool, including the best one we know of.</td></tr>
-        <tr><td><strong>4.0 — 4.4</strong></td><td class="good">Genuinely good, with a real caveat. We would still recommend it — to the person who fits the case where it is good.</td><td>That the caveat does not apply to you. It is listed, and it applies to somebody.</td></tr>
-        <tr><td><strong>3.0 — 3.9</strong></td><td>Fine, at a price that most people should not be paying for it. There is usually a cheaper tool that does the same job well enough.</td><td>That you are wrong to use it if it fits your specific workflow. The score is about the default buyer, not about you.</td></tr>
-        <tr><td><strong>2.0 — 2.9</strong></td><td class="bad">Do not pay for this. The free tier or a cheaper tool covers the job.</td><td>That the tool is bad. Some of them are fine at zero dollars; the score is about the paid product.</td></tr>
-        <tr><td><strong>0 — 1.9</strong></td><td class="bad">We would not point a friend at this one. Listed for completeness, not for recommendation.</td><td>A personal dislike. The reasoning is in the review, in writing.</td></tr>
+        <tr><th scope="row"><strong>4.5 — 5.0</strong></th><td class="good">Worth the money for most people in this category. The free tier is not the real product.</td><td>It will never fail you. It will, on the hard tasks; that is the 0.5 gap between 5.0 and 4.5, not a failure of the tool but of every tool, including the best one we know of.</td></tr>
+        <tr><th scope="row"><strong>4.0 — 4.4</strong></th><td class="good">Genuinely good, with a real caveat. We would still recommend it — to the person who fits the case where it is good.</td><td>That the caveat does not apply to you. It is listed, and it applies to somebody.</td></tr>
+        <tr><th scope="row"><strong>3.0 — 3.9</strong></th><td>Fine, at a price that most people should not be paying for it. There is usually a cheaper tool that does the same job well enough.</td><td>That you are wrong to use it if it fits your specific workflow. The score is about the default buyer, not about you.</td></tr>
+        <tr><th scope="row"><strong>2.0 — 2.9</strong></th><td class="bad">Do not pay for this. The free tier or a cheaper tool covers the job.</td><td>That the tool is bad. Some of them are fine at zero dollars; the score is about the paid product.</td></tr>
+        <tr><th scope="row"><strong>0 — 1.9</strong></th><td class="bad">We would not point a friend at this one. Listed for completeness, not for recommendation.</td><td>A personal dislike. The reasoning is in the review, in writing.</td></tr>
       </tbody>
     </table>
     <p>Two rules keep the number honest. First, it is a weighted average of five dimensions — output quality on tasks we have run ourselves, reliability across repeated runs, value at the current price, usability for the workflow the tool claims to serve, and limits we have actually hit — and the weights are chosen per category, not globally, because a value score that is right for a research tool is wrong for an image tool. Second, the number moves only when one of three things moves: a price change, a model update that changes outputs on our fixed prompt set, or new evidence about a limit we have already written about. A new vendor announcement does not move it. Neither does a new competitor, until we have tested the competitor on the same prompt set. That is why the score on a review dated last spring can differ from the score on today's review of the same product — the date on the page is part of the number.</p>
@@ -318,7 +335,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

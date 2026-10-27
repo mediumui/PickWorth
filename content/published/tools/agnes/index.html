@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Agnes is the rare free offering that does not cap you: its three core model families — text, image and video — are all reachable through one OpenAI-compatible API that you can call indefinitely with no token limit, gated only by a per-minute request ceiling. It is genuinely strong at the stage of work most people actually use AI for, prototyping: front-end pages, small interactive tools, instruction-based image editing and fast video. It is weakest at the two ends — high-complexity pure-logic reasoning and very-long-context stability — and the strongest benchmark numbers it advertises are the lab's own internal evaluations rather than independent scores. For the majority of use, that is a 4.0: exceptional value at the price point of free, with real caps on the top-end reasoning work that frontier models still own.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Agnes is a Singapore-based AI lab (Sapiens AI's product) that makes its three core model families — text, image and video — available through one OpenAI-compatible API that is free to call indefinitely. You need an API key, but there is no token or request cap, only a per-minute rate limit. It is strongest on front-end and prototyping work and on image/video generation, and weakest on high-complexity pure-logic reasoning; its published benchmark numbers are the lab's own internal evaluations, not independent ones.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Agnes AI?</dt><dd>Agnes is a model suite from Sapiens AI (a Singapore company, founded 2025): text (Agnes-2.0-Flash, agnes-2.5-flash), image (Agnes-Image-2.0-Flash) and video (Agnes-Video-V2.0) models, all reached through a single OpenAI-compatible API. It is one of the few places where text, image and video are on one gateway and all three are free.</dd></div>
         <div class="qa"><dt>Is Agnes actually free?</dt><dd>The three core models are free to call indefinitely, with no token limit and no per-month quota. The only limit is a per-minute request cap (RPM), which is the thing to watch under load. You do need an API key — you sign up and generate one from the dashboard; it is not a no-key service.</dd></div>
         <div class="qa"><dt>How do I call Agnes?</dt><dd>It is OpenAI-compatible, so existing OpenAI code mostly just needs a base-URL swap and the model name. The international endpoint is apihub.agnes-ai.com/v1; since late July 2026 a domestic (China) station is agnes-ai.cn with endpoint api.agnes-ai.cn/v1, and existing keys carry over.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The independent hands-on reports we sampled split along one line. For front-end and prototyping they call it reliable from a single prompt — a playable web game, a landing page, a small app. For anything that needs sustained multi-step debugging or strict instruction-following across many files, they report the code is less stable and it can drift on long agentic runs. It reads as: great for the prototyping stage, use a stronger engine for production hardening.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Agnes?</dt><dd>4.0 out of 5. The value is exceptional — three modalities on one free, uncapped, OpenAI-compatible API. The deductions are that the top benchmarks are self-reported, that pure-logic reasoning lags the largest models, and that the free tier is a real allowance but a learning one.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Agnes?</dt><dd>No. Reviews are written by a single editorial team; the free-usage policy is verified from Agnes's official documentation. See our method.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -353,7 +370,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

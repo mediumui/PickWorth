@@ -166,12 +166,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -249,14 +266,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.4</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>DeepSeek is the open-weights model that has kept the frontier price floor low since its R1 reasoning model in early 2025. The product you actually buy is the API: a free chat tier for experimentation, and a paid API where the Flash model is the workhorse and the Pro model is where you route the hardest calls. The numbers are the story — at off-peak rates the Flash model's cache-miss input is around $0.15 per million tokens and output is around $0.60 per million, with Pro sitting roughly three to four times that. That is the reason half of the production AI stack quietly routes its volume through DeepSeek. The catch is the free tier: it is a trial, not a plan.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> DeepSeek is the open-weights model that has kept the frontier price floor low since R1 in early 2025: a free chat tier for experimentation, and a paid API where Flash (the workhorse) and Pro (the hardest calls) are the two models you actually route to.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Is DeepSeek worth paying for?</dt><dd>The product you buy is the API, not a consumer subscription: a free chat tier for trying it, and paid API pricing that keeps the frontier price floor low.</dd></div>
         <div class="qa"><dt>What is DeepSeek best at?</dt><dd>Open-weights cost-performance: Flash (the workhorse model) and Pro (the hard calls), and the fact that half of the production AI stack quietly routes volume through it because the numbers are the story.</dd></div>
         <div class="qa"><dt>Where does DeepSeek fall short?</dt><dd>The free tier is a trial, not a plan — it runs out quickly under real usage.</dd></div>
@@ -264,7 +281,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for DeepSeek?</dt><dd>4.4 / 5 (good) — the open-weights challenger that keeps the price floor low, with a trial-only free tier.</dd></div>
         <div class="qa"><dt>DeepSeek vs Claude for coding?</dt><dd>DeepSeek is open-weights and an order of magnitude cheaper at the API; on well-scoped coding tasks the capability gap is smaller than the price gap. See the head-to-head.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from DeepSeek?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from the official API docs.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -300,12 +317,12 @@ gtag('config', 'G-WV775YD52J');
 
 <h2 id="pricing">The tiers and what each costs</h2>
 <table class="compare">
-  <thead><tr><th>Model</th><th>Off-peak</th><th>Peak</th><th>When to use it</th></tr></thead>
+  <thead><tr><th scope="col">Model</th><th scope="col">Off-peak</th><th scope="col">Peak</th><th scope="col">When to use it</th></tr></thead>
   <tbody>
-    <tr><td><strong>Flash</strong> input (cache miss)</td><td class="good">~$0.15 / 1M</td><td>~$0.30 / 1M</td><td>Default for volume work</td></tr>
-    <tr><td><strong>Flash</strong> output</td><td>~$0.60 / 1M</td><td>~$1.20 / 1M</td><td>High-volume generation</td></tr>
-    <tr><td><strong>Pro</strong> input (cache miss)</td><td>~$0.66 / 1M</td><td>~$1.32 / 1M</td><td>Hardest reasoning / coding</td></tr>
-    <tr><td><strong>Pro</strong> output</td><td>~$1.98 / 1M</td><td>~$3.96 / 1M</td><td>Route only the hard calls</td></tr>
+    <tr><th scope="row"><strong>Flash</strong> input (cache miss)</th><td class="good">~$0.15 / 1M</td><td>~$0.30 / 1M</td><td>Default for volume work</td></tr>
+    <tr><th scope="row"><strong>Flash</strong> output</th><td>~$0.60 / 1M</td><td>~$1.20 / 1M</td><td>High-volume generation</td></tr>
+    <tr><th scope="row"><strong>Pro</strong> input (cache miss)</th><td>~$0.66 / 1M</td><td>~$1.32 / 1M</td><td>Hardest reasoning / coding</td></tr>
+    <tr><th scope="row"><strong>Pro</strong> output</th><td>~$1.98 / 1M</td><td>~$3.96 / 1M</td><td>Route only the hard calls</td></tr>
   </tbody>
 </table>
 <p class="fineprint">Rates from DeepSeek's API pricing page, verified 22 October 2026. Peak hours are Monday to Friday, 01:00–04:00 and 06:00–10:00 UTC; off-peak is the rest of the week including weekends. Cache-hit input is roughly a tenth of the cache-miss rate, so a stable system prompt pushes the effective input cost down sharply. The exact figures move — treat these as the order of magnitude.</p>

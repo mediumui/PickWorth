@@ -155,12 +155,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -231,14 +248,14 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> A context window is the model's working memory for a single conversation — everything it can hold at once. A larger window is genuinely useful for two jobs: reading a lot at once, and long agentic work. The two questions that decide whether a tool's window matters for your work: how long is the input you are actually feeding, and how much of it does the model have to hold while it acts?</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is a context window?</dt><dd>The model's working memory for a single conversation — everything it can hold at once: your prompt, the conversation so far, and the tools and files it is acting on.</dd></div>
         <div class="qa"><dt>Does a bigger window automatically mean better?</dt><dd>No. A bigger window is only useful for two jobs: reading a lot at once, and long agentic work. For short tasks, the window is not the constraint.</dd></div>
         <div class="qa"><dt>What are the two questions that decide whether the window matters?</dt><dd>How long is the input you are actually feeding, and how much of it does the model have to hold while it acts? If the answer is short, the window is not the constraint.</dd></div>
         <div class="qa"><dt>Why does a big window sometimes feel slow or inconsistent?</dt><dd>Longer input means more to hold, more to attend to, and more to compute: the quality-per-token drops as the window fills. This is why a big window is not automatically better.</dd></div>
         <div class="qa"><dt>What is the practical takeaway?</dt><dd>Buy the window for the work you actually do, not the spec you are impressed by. Read more at once, or run longer agentic loops — that is when the bigger window pays.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from any vendor?</dt><dd>No. Reviews are written by a single editorial team; the model docs and context limits are verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="what-it-is">What a context window is</h2>
@@ -293,7 +310,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

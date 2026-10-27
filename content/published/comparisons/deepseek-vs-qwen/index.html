@@ -187,12 +187,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -263,14 +280,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.2</strong><span>DeepSeek score</span></div>
       <div class="verdict">
-        <h3>Who wins</h3>
+        <h2>Who wins</h2>
         <p>Neither is the other's replacement. DeepSeek is the better default for anyone who mostly wants to call a strong reasoning-and-coding model through an API without watching the meter: its V4 pricing is a fraction of Qwen's flagship, the licence is plain MIT, and the coding scores are a hair ahead. Qwen is the better pick when the job is broader than one endpoint — when you need a 201-language model, a small Apache-2.0 checkpoint for on-premise work, or a single vendor that also covers vision, audio and video. Score the pairing 4.2 and call DeepSeek the higher-rated tool, but only because most comparison readers are shopping for an API, not a model zoo.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> DeepSeek wins on price and raw reasoning-and-code value: its V4 API is several times cheaper than Qwen's flagship and ships under a clean MIT license, while Qwen wins on breadth, documented multilingual reach and laptop-friendly open weights. Pick DeepSeek for cheap, heavy reasoning and coding at scale; pick Qwen when you need many model sizes, 200-plus languages, or a model you can run on one machine.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>DeepSeek or Qwen — which should I pick?</dt><dd>DeepSeek for the cheapest serious reasoning and coding at API scale; Qwen for model-size choice, 201-language coverage and small open weights you can host locally.</dd></div>
         <div class="qa"><dt>Which is cheaper on the API?</dt><dd>DeepSeek, clearly. V4-Flash lists about $0.14 in / $0.28 out per 1M tokens, while Qwen's flagship Qwen3.8-Max runs $2 / $6. Qwen's own Flash tier is close to DeepSeek on price but weaker on capability.</dd></div>
         <div class="qa"><dt>Which is better at coding?</dt><dd>DeepSeek edges the head-to-head on vendor-reported Terminal-Bench scores (V4-Pro near 87.9 vs Qwen3.8-Max near 86.6). Both are top open models; the gap is small and task-specific.</dd></div>
@@ -279,7 +296,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Can I run either locally?</dt><dd>Only Qwen at the small end. Qwen3.8-27B (Apache 2.0) and Qwen3.6-35B-A3B fit a single GPU; DeepSeek's current open weights are server-class, hundreds of gigabytes, needing multi-GPU rigs.</dd></div>
         <div class="qa"><dt>Do they both do reasoning?</dt><dd>Yes. DeepSeek turns thinking on by default with a reasoning_effort knob; Qwen uses an enable_thinking switch on its hybrid models, which also carries prior reasoning into later turns.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from either lab?</dt><dd>No. This comparison is written by one editorial team; pricing and model facts were checked against each vendor's official pages and independent model cards.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -299,22 +316,22 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th></th>
-          <th>DeepSeek (V4 family)</th>
-          <th>Qwen (Qwen3.8 family)</th>
+          <th scope="col"></th>
+          <th scope="col">DeepSeek (V4 family)</th>
+          <th scope="col">Qwen (Qwen3.8 family)</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Current flagship</td><td>DeepSeek-V4-Pro (1.65T / 49B active)</td><td>Qwen3.8-Max (2.4T / ~95B active)</td></tr>
-        <tr><td>Cheapest API per 1M</td><td class="good">V4-Flash: $0.14 in / $0.28 out</td><td>Qwen3.8-Flash: $0.15 / $0.47</td></tr>
-        <tr><td>Flagship API per 1M</td><td class="good">V4-Pro: $0.435 in / $0.87 out</td><td>Qwen3.8-Max: $2 / $6</td></tr>
-        <tr><td>Reasoning mode</td><td class="good">Thinking on by default, effort knob</td><td>enable_thinking switch, keeps prior reasoning</td></tr>
-        <tr><td>Open-weight licence</td><td class="good">Uniform MIT</td><td>Mixed: Apache 2.0 small, custom licence large</td></tr>
-        <tr><td>Context window</td><td>Up to 1M tokens</td><td>Up to 1M tokens</td></tr>
-        <tr><td>Multilingual</td><td>Not published</td><td class="good">201 languages and dialects documented</td></tr>
-        <tr><td>Runs on one GPU</td><td>No, server-class weights</td><td class="good">Qwen3.8-27B / 35B-A3B do</td></tr>
-        <tr><td>Coding (Terminal-Bench 2.1)</td><td class="good">V4-Pro ~87.9, V4.1-Flash ~90.6</td><td>Qwen3.8-Max ~86.6</td></tr>
-        <tr><td>Best for</td><td>Cheap reasoning and code at scale</td><td>Breadth, languages, local hosting</td></tr>
+        <tr><th scope="row">Current flagship</th><td>DeepSeek-V4-Pro (1.65T / 49B active)</td><td>Qwen3.8-Max (2.4T / ~95B active)</td></tr>
+        <tr><th scope="row">Cheapest API per 1M</th><td class="good">V4-Flash: $0.14 in / $0.28 out</td><td>Qwen3.8-Flash: $0.15 / $0.47</td></tr>
+        <tr><th scope="row">Flagship API per 1M</th><td class="good">V4-Pro: $0.435 in / $0.87 out</td><td>Qwen3.8-Max: $2 / $6</td></tr>
+        <tr><th scope="row">Reasoning mode</th><td class="good">Thinking on by default, effort knob</td><td>enable_thinking switch, keeps prior reasoning</td></tr>
+        <tr><th scope="row">Open-weight licence</th><td class="good">Uniform MIT</td><td>Mixed: Apache 2.0 small, custom licence large</td></tr>
+        <tr><th scope="row">Context window</th><td>Up to 1M tokens</td><td>Up to 1M tokens</td></tr>
+        <tr><th scope="row">Multilingual</th><td>Not published</td><td class="good">201 languages and dialects documented</td></tr>
+        <tr><th scope="row">Runs on one GPU</th><td>No, server-class weights</td><td class="good">Qwen3.8-27B / 35B-A3B do</td></tr>
+        <tr><th scope="row">Coding (Terminal-Bench 2.1)</th><td class="good">V4-Pro ~87.9, V4.1-Flash ~90.6</td><td>Qwen3.8-Max ~86.6</td></tr>
+        <tr><th scope="row">Best for</th><td>Cheap reasoning and code at scale</td><td>Breadth, languages, local hosting</td></tr>
       </tbody>
     </table>
 
@@ -378,7 +395,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

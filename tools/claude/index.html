@@ -166,12 +166,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -249,14 +266,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.3</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Claude is the strongest general-purpose assistant when the work is long-form, when it needs to follow instructions precisely, or when you are dealing with material that is sensitive enough that you want a model with an explicit safety stance. It trails ChatGPT on ecosystem depth — fewer integrations, no mobile voice, a thinner plugin story. The enterprise adoption signal is strong: Ramp's card-spend data recorded the share of businesses paying for Anthropic products rise to 24.4 percent in February 2026, its largest single-month gain ever recorded for the company.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Claude is the strongest assistant for long-form work, precise instruction-following, and sensitive material that needs an explicit safety stance. It trails ChatGPT on ecosystem depth.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>Is Claude worth paying for?</dt><dd>Yes for long-document work: the $20/month Pro tier unlocks higher model limits, and it is the better pick when the work is long-form or needs strict instruction-following.</dd></div>
         <div class="qa"><dt>What is Claude best at?</dt><dd>Long-context reasoning, precise instruction-following, and a strong, explicit safety stance — ideal for sensitive material.</dd></div>
         <div class="qa"><dt>Where does Claude fall short?</dt><dd>Ecosystem depth: fewer integrations, no mobile voice, and a thinner plugin story than ChatGPT.</dd></div>
@@ -264,7 +281,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for Claude?</dt><dd>4.3 / 5 (good) — strongest for long-form, but the ecosystem gap is real.</dd></div>
         <div class="qa"><dt>Claude vs ChatGPT — which one?</dt><dd>Long documents and precise instructions: Claude. Everyday mixed work and multimodal: ChatGPT. See the head-to-head.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Anthropic?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from Anthropic's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -303,13 +320,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="pricing">Plans &amp; what each unlocks</h2>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Price</th><th>What changes vs the tier below</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">What changes vs the tier below</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>Access to the Sonnet-tier model with standard limits</td></tr>
-        <tr><td>Pro</td><td>$20 / month</td><td>Higher limits, access to the best consumer model</td></tr>
-        <tr><td>Max</td><td>$100–200 / month</td><td>Several times the Pro limits; for heavy daily use</td></tr>
-        <tr><td>Team</td><td>from $30 / seat / month</td><td>Shared workspace, admin controls, data handling options</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>Access to the Sonnet-tier model with standard limits</td></tr>
+        <tr><th scope="row">Pro</th><td>$20 / month</td><td>Higher limits, access to the best consumer model</td></tr>
+        <tr><th scope="row">Max</th><td>$100–200 / month</td><td>Several times the Pro limits; for heavy daily use</td></tr>
+        <tr><th scope="row">Team</th><td>from $30 / seat / month</td><td>Shared workspace, admin controls, data handling options</td></tr>
       </tbody>
     </table>
     <p class="fineprint">Prices from Anthropic's consumer pricing page, verified 22 October 2026. Max is billed in two tiers; Team is per-seat and billed annually.</p>

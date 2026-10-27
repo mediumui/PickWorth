@@ -164,12 +164,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -247,14 +264,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.0</strong><span>Category score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Jasper (from $59 a month) is for marketing teams that need on-brand output at scale, and it costs five times the general assistants for the privilege. Sudowrite ($10–$44 a month) is the only tool built specifically for fiction and long-form narrative, and it is worth it if you write that genre. For everyone doing marketing copy, email and blog drafts, the $20 a month tier of ChatGPT or Claude does the job and leaves most of the money in your pocket. The question is not "which is best" but "who is doing the writing."</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> The category splits in two: marketing writers pay for a brand system (Jasper, from $59), fiction writers pay for a story system (Sudowrite, $10–$44), and everyone else is better off with the $20 general assistant. Pick by who is writing, not by the loudest marketing.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best AI writing tools in 2026?</dt><dd>Marketing teams: Jasper. Fiction writers: Sudowrite. Everyone else: the $20 general assistant (ChatGPT Plus or Claude Pro).</dd></div>
         <div class="qa"><dt>Is Jasper worth it?</dt><dd>Only for marketing teams that need on-brand output at scale: from $59/month, about five times the general assistants. For most people, no.</dd></div>
         <div class="qa"><dt>Is Sudowrite worth it?</dt><dd>Yes, for fiction writers: $10–$44/month, the only tool in the category that is purpose-built for the story system rather than a general assistant.</dd></div>
@@ -262,7 +279,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for the category?</dt><dd>4.0 / 5 (good) — strong dedicated tools exist, but the $20 general assistant is the better first buy for most people.</dd></div>
         <div class="qa"><dt>Which should I pick first?</dt><dd>Start with the $20 general assistant. Add a dedicated tool only when the specific kind of work (brand-scale marketing, or fiction) starts hurting.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Jasper, Sudowrite, or OpenAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -281,16 +298,16 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Tool</th>
-          <th>Entry paid tier</th>
-          <th>Top tier</th>
-          <th>What it is for</th>
+          <th scope="col">Tool</th>
+          <th scope="col">Entry paid tier</th>
+          <th scope="col">Top tier</th>
+          <th scope="col">What it is for</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>Jasper</strong></td><td>$59 / seat / month (Pro)</td><td>Business (custom)</td><td>Marketing teams, on-brand scale</td></tr>
-        <tr><td><strong>Sudowrite</strong></td><td>$10 / month (Hobby)</td><td>$44 / month (Max)</td><td>Fiction and long-form narrative</td></tr>
-        <tr><td><strong>ChatGPT / Claude</strong></td><td>$20 / month</td><td>$200 / month</td><td>Everything, generalist</td></tr>
+        <tr><th scope="row"><strong>Jasper</strong></th><td>$59 / seat / month (Pro)</td><td>Business (custom)</td><td>Marketing teams, on-brand scale</td></tr>
+        <tr><th scope="row"><strong>Sudowrite</strong></th><td>$10 / month (Hobby)</td><td>$44 / month (Max)</td><td>Fiction and long-form narrative</td></tr>
+        <tr><th scope="row"><strong>ChatGPT / Claude</strong></th><td>$20 / month</td><td>$200 / month</td><td>Everything, generalist</td></tr>
       </tbody>
     </table>
     <p class="fineprint">Jasper prices from jasper.ai/pricing and Sudowrite prices from sudowrite.com/pricing, both verified 22 October 2026. Jasper's Pro tier shows an annual rate of $59 and a $69 list price for a discount-eligible configuration; treat the lower figure as the effective monthly cost when paid annually.</p>
@@ -310,13 +327,13 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="scenarios">Pick by who is writing</h2>
     <table class="compare">
       <thead>
-        <tr><th>If you are…</th><th>Buy this</th><th>Skip this</th></tr>
+        <tr><th scope="col">If you are…</th><th scope="col">Buy this</th><th scope="col">Skip this</th></tr>
       </thead>
       <tbody>
-        <tr><td>A marketing team needing on-brand scale</td><td><strong>Jasper</strong></td><td>Anything general</td></tr>
-        <tr><td>A solo marketer writing copy and email</td><td><strong>A $20 general assistant</strong></td><td>Jasper Pro</td></tr>
-        <tr><td>A fiction or screenwriter</td><td><strong>Sudowrite</strong></td><td>Both general and Jasper</td></tr>
-        <tr><td>A content lead who will not buy a tool</td><td><strong>Nothing yet</strong> — the free tiers first</td><td>—</td></tr>
+        <tr><th scope="row">A marketing team needing on-brand scale</th><td><strong>Jasper</strong></td><td>Anything general</td></tr>
+        <tr><th scope="row">A solo marketer writing copy and email</th><td><strong>A $20 general assistant</strong></td><td>Jasper Pro</td></tr>
+        <tr><th scope="row">A fiction or screenwriter</th><td><strong>Sudowrite</strong></td><td>Both general and Jasper</td></tr>
+        <tr><th scope="row">A content lead who will not buy a tool</th><td><strong>Nothing yet</strong> — the free tiers first</td><td>—</td></tr>
       </tbody>
     </table>
 

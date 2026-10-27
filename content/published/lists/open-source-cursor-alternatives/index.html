@@ -189,12 +189,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -266,14 +283,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.9</strong><span>Category score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>If you want to keep VS Code, <strong>Cline</strong> is the one to install first — it is actively maintained, permissively licensed, and shows you every edit before it lands. If you want the fastest native editor and do not mind vetting a licence yourself, <strong>Zed</strong>. If you want agents working unattended, <strong>OpenHands</strong> (MIT, the most permissive of the group). Three projects we would not build new work on today: <strong>Aider</strong>, <strong>Void</strong> and <strong>Roo Code</strong> have all gone months without a commit.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> If you want to keep VS Code, Cline is the one to install first — it is actively maintained, permissively licensed, and shows you every edit before it lands. If you want the fastest native experience, Zed is the pick. The maintenance check is the one nobody does: half of the options have quietly stalled.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best open-source Cursor alternatives in 2026?</dt><dd>Cline (keep VS Code), Zed (fastest native), Aider (terminal pair programming), Continue, Tabby (self-hosted), and Void. Picked by scenario and by whether the project is still being maintained.</dd></div>
         <div class="qa"><dt>Should I keep VS Code or go native?</dt><dd>Keep VS Code: Cline. Want the fastest native experience: Zed. The choice is the workflow, not the tool.</dd></div>
         <div class="qa"><dt>Which one is actively maintained?</dt><dd>Cline and Zed are the active picks; the maintenance check is the one nobody does, and half of the options have quietly stalled. Read the last-push date before you commit.</dd></div>
@@ -281,7 +298,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for the list?</dt><dd>Good (3.8-4.5 band): strong picks exist, but the maintenance check is the real filter.</dd></div>
         <div class="qa"><dt>Which should I install first?</dt><dd>Cline for VS Code; Zed for native. Read the licence and the last-push date before you commit.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from any of these projects?</dt><dd>No. Reviews are written by a single editorial team; GitHub data (stars, licence, last push) is verified from each repository.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -306,65 +323,65 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Project</th>
-          <th>Stars</th>
-          <th>Licence</th>
-          <th>Last commit</th>
-          <th>How you use it</th>
+          <th scope="col">Project</th>
+          <th scope="col">Stars</th>
+          <th scope="col">Licence</th>
+          <th scope="col">Last commit</th>
+          <th scope="col">How you use it</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Zed</strong></td>
+          <th scope="row"><strong>Zed</strong></th>
           <td>92,017</td>
           <td>see note</td>
           <td class="good">22 Oct 2026</td>
           <td>Standalone editor (Rust)</td>
         </tr>
         <tr>
-          <td><strong>OpenHands</strong></td>
+          <th scope="row"><strong>OpenHands</strong></th>
           <td>91,517</td>
           <td>MIT</td>
           <td class="good">22 Oct 2026</td>
           <td>Agent platform, CLI &amp; web</td>
         </tr>
         <tr>
-          <td><strong>Cline</strong></td>
+          <th scope="row"><strong>Cline</strong></th>
           <td>70,698</td>
           <td>Apache-2.0</td>
           <td class="good">22 Oct 2026</td>
           <td>VS Code extension</td>
         </tr>
         <tr>
-          <td><strong>Aider</strong></td>
+          <th scope="row"><strong>Aider</strong></th>
           <td>49,690</td>
           <td>Apache-2.0</td>
           <td class="bad">22 May 2026</td>
           <td>Terminal CLI</td>
         </tr>
         <tr>
-          <td><strong>Continue</strong></td>
+          <th scope="row"><strong>Continue</strong></th>
           <td>36,289</td>
           <td>Apache-2.0</td>
           <td class="good">20 Oct 2026</td>
           <td>VS Code &amp; JetBrains extension</td>
         </tr>
         <tr>
-          <td><strong>Tabby</strong></td>
+          <th scope="row"><strong>Tabby</strong></th>
           <td>33,922</td>
           <td>see note</td>
           <td class="bad">30 Jun 2026</td>
           <td>Self-hosted server</td>
         </tr>
         <tr>
-          <td><strong>Void</strong></td>
+          <th scope="row"><strong>Void</strong></th>
           <td>28,742</td>
           <td>Apache-2.0</td>
           <td class="bad">2 Jun 2026</td>
           <td>VS Code fork (standalone)</td>
         </tr>
         <tr>
-          <td><strong>Roo Code</strong></td>
+          <th scope="row"><strong>Roo Code</strong></th>
           <td>24,271</td>
           <td>Apache-2.0</td>
           <td class="bad">15 May 2026</td>
@@ -414,16 +431,16 @@ gtag('config', 'G-WV775YD52J');
     <h2 id="scenarios">Pick by scenario</h2>
     <table class="compare">
       <thead>
-        <tr><th>If you…</th><th>Take this</th><th>Because</th></tr>
+        <tr><th scope="col">If you…</th><th scope="col">Take this</th><th scope="col">Because</th></tr>
       </thead>
       <tbody>
-        <tr><td>Want the lowest-friction switch from VS Code</td><td><strong>Cline</strong></td><td>Extension in an editor you already use, Apache-2.0, daily commits</td></tr>
-        <tr><td>Need air-gapped or on-premise everything</td><td><strong>Continue</strong> + local model</td><td>Local tab-autocomplete by design, no remote call required</td></tr>
-        <tr><td>Want models doing work while you sleep</td><td><strong>OpenHands</strong></td><td>Built for delegated tasks ending in a pull request; MIT</td></tr>
-        <tr><td>Hate waiting on your editor</td><td><strong>Zed</strong></td><td>Native Rust, fastest in the group — first check the licence</td></tr>
-        <tr><td>Run a team and need completion only</td><td><strong>Tabby</strong></td><td>Self-hosted container, small maintenance surface — check activity</td></tr>
-        <tr><td>Want Cursor's exact keybindings</td><td><strong>Void</strong></td><td>Deliberately familiar — but stalled since June 2026</td></tr>
-        <tr><td>Cannot accept vendor lock-in in a regulated environment</td><td><strong>Cline</strong> or <strong>Continue</strong></td><td>Permissive licences and a codebase you can audit end to end</td></tr>
+        <tr><th scope="row">Want the lowest-friction switch from VS Code</th><td><strong>Cline</strong></td><td>Extension in an editor you already use, Apache-2.0, daily commits</td></tr>
+        <tr><th scope="row">Need air-gapped or on-premise everything</th><td><strong>Continue</strong> + local model</td><td>Local tab-autocomplete by design, no remote call required</td></tr>
+        <tr><th scope="row">Want models doing work while you sleep</th><td><strong>OpenHands</strong></td><td>Built for delegated tasks ending in a pull request; MIT</td></tr>
+        <tr><th scope="row">Hate waiting on your editor</th><td><strong>Zed</strong></td><td>Native Rust, fastest in the group — first check the licence</td></tr>
+        <tr><th scope="row">Run a team and need completion only</th><td><strong>Tabby</strong></td><td>Self-hosted container, small maintenance surface — check activity</td></tr>
+        <tr><th scope="row">Want Cursor's exact keybindings</th><td><strong>Void</strong></td><td>Deliberately familiar — but stalled since June 2026</td></tr>
+        <tr><th scope="row">Cannot accept vendor lock-in in a regulated environment</th><td><strong>Cline</strong> or <strong>Continue</strong></td><td>Permissive licences and a codebase you can audit end to end</td></tr>
       </tbody>
     </table>
 
@@ -475,7 +492,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

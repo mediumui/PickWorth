@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.8</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Notion AI is the best AI you can run without leaving your notes, and that is both its strength and its ceiling. The workspace Q&A, the meeting notes that file themselves, and the database autofill are things a separate chatbot cannot do, because they depend on context that already lives in Notion. On raw writing, though, it is a step behind ChatGPT and Claude, and the 2025 pricing restructure means the number on the invoice is a $20 Business seat, not the old $10 add-on most older reviews still quote. The honest verdict is audience-shaped: if Notion is already your second brain and you have hundreds of pages of real content, the integration pays for itself and the score holds. If you are not a Notion user, or you mainly want the strongest writing model, the same money buys a better standalone assistant. Treat the free trial as a real look at the features and a real wall on volume, then decide by where your work already lives.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Notion AI is the AI layer built into your Notion workspace that handles writing, summaries, meeting transcription and Q&A across your own docs, and in 2026 its serious features are bundled into the $20-per-seat Business plan rather than sold as a cheap add-on.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Notion AI?</dt><dd>It is the set of model features built into the Notion workspace, not a separate app: inline writing and rewriting, page and meeting summarization, Q&A that reads across your pages, databases and connected apps, meeting transcription, and autonomous Custom Agents. The pitch is that the assistant already lives where your notes are, so you never paste context across a chat window.</dd></div>
         <div class="qa"><dt>Is Notion AI free?</dt><dd>Partly. The Free and Plus plans now get a limited trial of AI: some chat, doc generation, autofill, and a taste of Meeting Notes and workspace Q&A. It is enough to sample the product and not enough to run it daily. Full, ongoing access sits behind the Business plan.</dd></div>
         <div class="qa"><dt>How much does Notion AI cost in 2026?</dt><dd>The standalone $10-per-seat AI add-on that ran through early 2025 was retired for new customers. As of the official pricing page, Free is $0, Plus is $10 per seat a month with only a trial of AI, Business is $20 per seat a month and includes AI with 1,500 Standard plus 500 Select credits per seat, and Enterprise is custom. Numbers move, so verify before you buy.</dd></div>
@@ -267,7 +284,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Notion AI vs ChatGPT: which writes better?</dt><dd>ChatGPT, on most independent tests. It produces more natural prose, handles complex instructions and longer creative arcs, and reasons through structure rather than just reformatting what is on the page. Notion AI wins on convenience: inline edits and workspace-aware answers with zero copy-paste. Pick ChatGPT for the writing, Notion AI for the paperwork already in Notion.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The consistent praise is meeting notes saving 15 to 20 minutes of follow-up per call and Q&A that finds things buried in hundreds of pages. The consistent friction is Q&A missing information that is plainly in the notes on big workspaces, Android app instability, and a Reddit and Hacker News mood that turned sharply negative after the 2025 pricing restructure forced a Business upgrade.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Notion AI?</dt><dd>3.8 out of 5, a good score anchored on the integration rather than the model. It is the best AI that sits inside a notes app, but weaker than a dedicated assistant for real writing, and the price you actually pay is a $20 Business seat, not the old $10 add-on.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -310,13 +327,13 @@ gtag('config', 'G-WV775YD52J');
     <p>The pricing math changed in May 2025 and most older reviews have not caught up. The old $10-per-seat add-on, which could sit on any plan, was retired for new customers; legacy subscribers keep grandfathered access. Today the realistic choice is Plus at $10 a seat with only a trial of AI, or Business at $20 a seat with the full feature set and 1,500 Standard plus 500 Select credits per seat. Free and Plus users get a limited trial and then hit a wall. Enterprise is custom and adds zero data retention plus advanced controls.</p>
     <table class="compare">
       <thead>
-        <tr><th>Plan</th><th>Price per seat / mo</th><th>Notion AI access</th><th>Best for</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price per seat / mo</th><th scope="col">Notion AI access</th><th scope="col">Best for</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>Limited trial</td><td>Sampling the features</td></tr>
-        <tr><td>Plus</td><td>$10</td><td>Limited trial</td><td>Teams not yet needing AI</td></tr>
-        <tr><td>Business</td><td>$20</td><td>Full, 1,500 Standard + 500 Select credits</td><td>Notion power users who want AI</td></tr>
-        <tr><td>Enterprise</td><td>Custom</td><td>Full, custom credits, zero retention</td><td>Regulated and large orgs</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>Limited trial</td><td>Sampling the features</td></tr>
+        <tr><th scope="row">Plus</th><td>$10</td><td>Limited trial</td><td>Teams not yet needing AI</td></tr>
+        <tr><th scope="row">Business</th><td>$20</td><td>Full, 1,500 Standard + 500 Select credits</td><td>Notion power users who want AI</td></tr>
+        <tr><th scope="row">Enterprise</th><td>Custom</td><td>Full, custom credits, zero retention</td><td>Regulated and large orgs</td></tr>
       </tbody>
     </table>
     <p>The deduction is not the $20 itself. It is that you must buy the whole Business plan, SSO, 90-day history and private teamspaces included, to unlock the assistant. A solo user who once paid Plus plus a $10 add-on now faces a forced upgrade, and Reddit's reaction to that was bluntly negative. Admins can also buy extra Notion credits for heavy Agent use, which adds a variable cost on top of the seat price for teams leaning on automation.</p>
@@ -373,7 +390,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -251,14 +268,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.9</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Start with Suno unless you already know why you would not. It is the only front-runner that gives a beginner a complete, downloadable, commercially licensable song in under a minute, and its free tier is generous enough to decide without paying. Move to Udio when the singing has to fool a musician, accept that you are renting the listening experience rather than owning the file. Reach for Google's Lyria or MusicFX when the budget is zero and the watermark is acceptable. Choose Stable Audio when the deliverable is a sound effect bed or an instrumental you plan to clear for client work, and keep Riffusion in your back pocket as the free, open sandbox. The category is good, not great: the song factories sound convincing but the licensing and export stories are still settling, so treat any paid plan as a subscription you can leave rather than a studio you have built.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> For most people Suno is the right first stop because it ships complete, downloadable songs fastest, but pick Udio when vocal realism matters, Google's Lyria or MusicFX when your budget is zero, Stable Audio for sound effects and commercial instrumentals, and Riffusion when you want to tinker for free.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is the best AI music generator in 2026?</dt><dd>Suno for speed and complete songs; Udio for the cleanest vocals; Google Lyria or MusicFX for free use; Stable Audio for sound effects with commercial rights; Riffusion for free, open-source tinkering.</dd></div>
         <div class="qa"><dt>Which is the best free AI music generator?</dt><dd>Google's Lyria 3.5 inside Gemini and the separate MusicFX experiment in Google Labs are both free with no paywall, though output carries a SynthID watermark and has no clear commercial licence.</dd></div>
         <div class="qa"><dt>Suno vs Udio: which should I pick?</dt><dd>Suno wins on speed, ease and downloadable files; Udio wins on vocal realism and audio fidelity but currently runs as a streaming-only walled garden with no track or stem downloads on any tier.</dd></div>
@@ -266,7 +283,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>Which generator is best for vocals?</dt><dd>Udio produces the most natural, expressive AI vocals in blind listening, followed closely by Suno; Stable Audio and Riffusion are instrumental-only and do not sing.</dd></div>
         <div class="qa"><dt>What is best for experimentation and learning?</dt><dd>Riffusion is free and open-source with no hard usage cap and can be self-hosted, making it the cheapest way to learn the mechanics even though output quality trails the paid song factories.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from these vendors?</dt><dd>No. This guide was written by an independent editorial team; pricing and free-tier facts were checked against each vendor's official pages and corroborated by third-party reviews.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -290,20 +307,20 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Rank</th>
-          <th>Tool</th>
-          <th>Best for</th>
-          <th>Free tier</th>
-          <th>Paid from</th>
-          <th>Biggest catch</th>
+          <th scope="col">Rank</th>
+          <th scope="col">Tool</th>
+          <th scope="col">Best for</th>
+          <th scope="col">Free tier</th>
+          <th scope="col">Paid from</th>
+          <th scope="col">Biggest catch</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>1</td><td><strong>Suno</strong></td><td>Complete songs, fast</td><td>50 credits/day (~10 songs)</td><td>$8/mo (Pro)</td><td>Free songs stay non-commercial</td></tr>
-        <tr><td>2</td><td><strong>Udio</strong></td><td>Vocal realism, fidelity</td><td>10 credits/day + 100/mo</td><td>$10/mo (Standard)</td><td>No downloads or stems on any tier</td></tr>
-        <tr><td>3</td><td><strong>Google Lyria 3.5 / MusicFX</strong></td><td>Free, no-card creation</td><td>Unlimited (Gemini account)</td><td>$0</td><td>SynthID watermark, no commercial clarity</td></tr>
-        <tr><td>4</td><td><strong>Stable Audio</strong></td><td>SFX and instrumental, commercial</td><td>10 track gens/month</td><td>$11.99/mo (Pro)</td><td>Weak or absent vocals</td></tr>
-        <tr><td>5</td><td><strong>Riffusion</strong></td><td>Free, open-source tinkering</td><td>Free, no hard cap</td><td>$0 (open weights)</td><td>Instrumental only, short clips</td></tr>
+        <tr><th scope="row">1</th><td><strong>Suno</strong></td><td>Complete songs, fast</td><td>50 credits/day (~10 songs)</td><td>$8/mo (Pro)</td><td>Free songs stay non-commercial</td></tr>
+        <tr><th scope="row">2</th><td><strong>Udio</strong></td><td>Vocal realism, fidelity</td><td>10 credits/day + 100/mo</td><td>$10/mo (Standard)</td><td>No downloads or stems on any tier</td></tr>
+        <tr><th scope="row">3</th><td><strong>Google Lyria 3.5 / MusicFX</strong></td><td>Free, no-card creation</td><td>Unlimited (Gemini account)</td><td>$0</td><td>SynthID watermark, no commercial clarity</td></tr>
+        <tr><th scope="row">4</th><td><strong>Stable Audio</strong></td><td>SFX and instrumental, commercial</td><td>10 track gens/month</td><td>$11.99/mo (Pro)</td><td>Weak or absent vocals</td></tr>
+        <tr><th scope="row">5</th><td><strong>Riffusion</strong></td><td>Free, open-source tinkering</td><td>Free, no hard cap</td><td>$0 (open weights)</td><td>Instrumental only, short clips</td></tr>
       </tbody>
     </table>
 
@@ -385,7 +402,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

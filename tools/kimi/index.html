@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -257,14 +274,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.9</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Kimi is the assistant to reach for when the job is measured in documents, not sentences. Its million-token window and free flagship model make it the cheapest way to analyse a whole book, a 200-page filing, or a legacy codebase in one pass, and the open weights mean you can self-host when data cannot leave your walls. The deductions are real but specific: English creative prose trails the US frontier, the free tier is metered rather than unlimited, and the consumer app's prompt-training policy closes it off to confidential work. Use it if your week is built on long documents, Chinese-language work, or cheap agentic research. Keep a Western assistant for voice, polish, and the larger tooling ecosystem. Score 3.9 of 5.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Kimi is Moonshot AI's long-context assistant that puts a near-frontier, open-weight model on the free plan and a million-token window on paid tiers, and it is the right pick when your work is measured in whole documents rather than quick chat.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Kimi?</dt><dd>Kimi is the consumer assistant and developer platform from Moonshot AI, a Beijing lab founded in 2023. It is built around a very long context window: where most Western assistants cap a conversation at a few hundred thousand tokens, Kimi holds entire books, codebases, and legal filings in one window. The current flagship is K3.1 Pro, a 3-trillion-parameter open-weight model with a one-million-token context, reached through the web and mobile apps, the Kimi Work and Kimi Code surfaces, or the pay-as-you-go API.</dd></div>
         <div class="qa"><dt>How much is Kimi free?</dt><dd>The free plan costs $0 and includes K3.1 Pro at limited usage, basic agent credits, and 500MB of project storage. The catch is metering: every message, chat and agent run draws from one unpublished credit pool that paid plans refill each month, so free is usable for real research but not for all-day heavy use. The million-token extra-long chat is not on the free tier; it is reserved for the Max and Ultra plans.</dd></div>
         <div class="qa"><dt>What is Kimi good at?</dt><dd>Three things. The context window is the headline: independent testers load 300- to 400-page documents and get cited, cross-referenced answers the US frontier assistants refuse or truncate. The open-weight K2 and K3 families let you self-host and keep data local. And the API is cheap, with K3.1 Pro at $2.00 per million input tokens and $10.00 per million output tokens internationally, roughly a third below the prior K3 rates.</dd></div>
@@ -273,7 +290,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The independent hands-on reports split along the product's design. The consistent praise is whole-document and whole-repository recall no Western assistant matches at this price, plus a free tier that genuinely does research work. The consistent friction is the credit pool running down faster than expected on agent and research tasks, English answers that read like translations, slow long-context responses, and hesitation before pasting confidential material into the consumer app. People keep Kimi for the documents it can hold and a US assistant for the prose.</dd></div>
         <div class="qa"><dt>Is Kimi K2 open weights, and does that matter?</dt><dd>Yes. The K2 generation that built Kimi's reputation in 2025 was a roughly one-trillion-parameter open-weights mixture-of-experts model, and the K3 family shipped open weights too, published on Hugging Face under a permissive licence. That matters because any organisation with the hardware can run the model locally and keep data off a third-party API, which is the route regulated or privacy-bound teams actually take. At 2.8 to 3 trillion parameters, self-hosting is realistic only for serious GPU capacity.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Kimi?</dt><dd>3.9 out of 5, a good score. Kimi leads on long-context document work and gives a near-frontier open-weight model away on the free plan, but it slips on English creative quality, metered free limits, and a consumer privacy posture that closes it to confidential use. It is worth using for document-heavy, Chinese-language, or cheap agentic research work, not as a default general chat replacement.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -317,34 +334,34 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Plan</th>
-          <th>Effective monthly</th>
-          <th>What changes</th>
+          <th scope="col">Plan</th>
+          <th scope="col">Effective monthly</th>
+          <th scope="col">What changes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Free</td>
+          <th scope="row">Free</th>
           <td>$0</td>
           <td>K3.1 Pro at limited usage, basic agent credits, 500MB storage</td>
         </tr>
         <tr>
-          <td>Plus</td>
+          <th scope="row">Plus</th>
           <td>$15</td>
           <td>Kimi Code, more agent credits, 20GB storage, 4x queue speed</td>
         </tr>
         <tr>
-          <td>Pro</td>
+          <th scope="row">Pro</th>
           <td>$31</td>
           <td>K3.1 Pro Highspeed, Goal mode, 2x agent credits</td>
         </tr>
         <tr>
-          <td>Max</td>
+          <th scope="row">Max</th>
           <td>$79</td>
           <td>1M-token extra-long chat, 5x agent credits, 50GB storage</td>
         </tr>
         <tr>
-          <td>Ultra</td>
+          <th scope="row">Ultra</th>
           <td>$159</td>
           <td>10x agent credits, 4 concurrent agent tasks, top allowances</td>
         </tr>

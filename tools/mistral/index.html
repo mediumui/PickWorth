@@ -174,12 +174,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -257,14 +274,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>3.9</strong><span>Our score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Le Chat is the assistant to pick when jurisdiction, speed and price sit at the top of your list, and that is a real, defensible position rather than a consolation prize. The free tier is a workspace you can actually do work in, Pro is the cheapest premium plan from any major lab at $14.99, Flash Answers make the thing feel quicker than almost everything else on the market, and the open-weight, EU-hosted story is one no American rival can replicate. We rate it 3.9 out of 5. The deduction is earned, not arbitrary: on the hardest reasoning, the most polished English prose, and the deepest custom-assistant ecosystem, the US frontier still leads, and the consumer app picked up rough edges after its 2026 rebrand. None of that stops Le Chat from being the smart default for EU and privacy-minded users, for budget buyers who want a paid plan without the $20 tax, and for developers who would rather self-host or fine-tune than rent a black box. If your work lives at the absolute frontier of difficulty, pair it with or switch to one of the leaders. For everyone else, it is hard to beat for the price.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Mistral's Le Chat is the European, EU-hosted answer to ChatGPT, and it is worth using if you want a genuinely generous free tier, fast responses, self-hostable open-weight models, and data that stays inside EU jurisdiction. It trails the US frontier on the hardest reasoning and on polished English creative writing, and its ecosystem is thinner, but at $14.99 for Pro it undercuts every American rival on price while holding its own on speed and privacy.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is Mistral and Le Chat?</dt><dd>Mistral AI is a Paris-based lab that builds open-weight large language models; Le Chat is its consumer assistant, the European counterpart to ChatGPT. It runs Mistral's own models, including the Mistral Large flagship, the Medium and Small tiers, the Pixtral vision model, the Magistral reasoning line, and Codestral for code, and it wraps them in chat with web search, document analysis, image generation via a partner model, a code interpreter, and a growing set of enterprise connectors.</dd></div>
         <div class="qa"><dt>Is Le Chat free?</dt><dd>Yes, and unlike most rivals the free tier is a real workspace rather than a teaser. As of late 2026 it includes access to current Mistral models, image generation, limited coding sessions, more than 100 connectors, and a monthly slice of API credits for testing, with usage limits on messages and web searches rather than a hard feature lock. Mistral no longer publishes a clean daily message number, so treat any specific figure you see quoted elsewhere as unsourced. Verified students get the Pro plan at $5.99 a month.</dd></div>
         <div class="qa"><dt>What is Le Chat good at?</dt><dd>Four things recur across every review we read: speed, price, European data sovereignty, and open weights. Its Flash Answers feature streams at roughly 1,000 words per second, well ahead of ChatGPT in head-to-head timing tests. The Pro plan sits at $14.99, below the $20 norm at OpenAI, Google and Anthropic. And because Mistral is French and EU-hosted, its no-telemetry option and data-residency story are a genuine draw for regulated buyers.</dd></div>
@@ -273,7 +290,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>How does Le Chat compare to ChatGPT?</dt><dd>Le Chat wins on cost, raw response speed, EU data residency, and the ability to self-host or fine-tune open weights. ChatGPT wins on top-end reasoning, the breadth of its plugin and Custom GPT marketplace, native image and voice quality, and brand familiarity outside Europe. For most everyday work the two are close enough that the deciding factor is often who sees your prompt and where it rests, not which one is smarter.</dd></div>
         <div class="qa"><dt>What do hands-on users actually report?</dt><dd>The field splits. Independent reviewers and multilingual users praise the speed, the clean interface, the EU-privacy angle, and natural French, German and Spanish output. Developer reports on Codestral are favorable for single-turn code and fill-in-the-middle completion but more mixed on multi-file refactors and ambiguous prompts. On the consumer app, a recurring thread of user complaints points to occasional slowness, scroll and freeze glitches after a mid-2026 rebrand, and sporadic 429 rate-limit errors that interrupt longer sessions. Most people who stay do so for price and sovereignty, not because it out-reasons the frontier.</dd></div>
         <div class="qa"><dt>What score does PickWorth give Mistral?</dt><dd>3.9 out of 5, a good score. It earns the rating on a generous free tier, class-leading speed, aggressive pricing, open weights you can run yourself, and a credible European privacy stance. It is held just below the top tier by models that trail the US frontier on the hardest tasks, a smaller ecosystem, and rough edges in the newer app.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -313,14 +330,14 @@ gtag('config', 'G-WV775YD52J');
 <h2 id="pricing">Plans and what each unlocks</h2>
 <p>Pricing below is read from Mistral's official plans page and verified against multiple third-party trackers as of late 2026. Vendor prices move, so confirm before you commit. The pattern is consistent: Mistral prices its paid tier below the $20 norm and makes the free tier genuinely useful.</p>
 <table class="compare">
-<thead><tr><th>Plan</th><th>Price</th><th>What you get</th><th>Best for</th></tr></thead>
+<thead><tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">What you get</th><th scope="col">Best for</th></tr></thead>
 <tbody>
-<tr><td>Free</td><td>$0</td><td>Current models, image generation, limited coding, 100+ connectors, monthly API credit slice, usage limits on messages and searches</td><td>Casual users, testing Mistral</td></tr>
-<tr><td>Student</td><td>$5.99/mo</td><td>Pro features for verified students, up to 12 months</td><td>Students at accredited institutions</td></tr>
-<tr><td>Pro</td><td>$14.99/mo</td><td>Higher message and search ceilings, all-day CLI/IDE coding, personal library, No Telemetry Mode, larger API credits</td><td>Power users, privacy-minded professionals</td></tr>
-<tr><td>Team</td><td>$24.99/user/mo ($19.99 annual)</td><td>Shared workspace, storage per user, domain verification, data export</td><td>Small teams</td></tr>
-<tr><td>Enterprise</td><td>Custom</td><td>Private deployment, custom models, SAML SSO, audit logs</td><td>Larger organisations</td></tr>
-<tr><td>API</td><td>Per million tokens</td><td>Mistral Large about $0.50 in / $1.50 out, among the cheapest on the market</td><td>Developers, high-volume automation</td></tr>
+<tr><th scope="row">Free</th><td>$0</td><td>Current models, image generation, limited coding, 100+ connectors, monthly API credit slice, usage limits on messages and searches</td><td>Casual users, testing Mistral</td></tr>
+<tr><th scope="row">Student</th><td>$5.99/mo</td><td>Pro features for verified students, up to 12 months</td><td>Students at accredited institutions</td></tr>
+<tr><th scope="row">Pro</th><td>$14.99/mo</td><td>Higher message and search ceilings, all-day CLI/IDE coding, personal library, No Telemetry Mode, larger API credits</td><td>Power users, privacy-minded professionals</td></tr>
+<tr><th scope="row">Team</th><td>$24.99/user/mo ($19.99 annual)</td><td>Shared workspace, storage per user, domain verification, data export</td><td>Small teams</td></tr>
+<tr><th scope="row">Enterprise</th><td>Custom</td><td>Private deployment, custom models, SAML SSO, audit logs</td><td>Larger organisations</td></tr>
+<tr><th scope="row">API</th><td>Per million tokens</td><td>Mistral Large about $0.50 in / $1.50 out, among the cheapest on the market</td><td>Developers, high-volume automation</td></tr>
 </tbody>
 </table>
 <p>The developer API deserves its own line. Priced per million tokens and far below OpenAI and Anthropic on comparable models, it is one of the best value-per-token deals available, and the open-weight option means you can drop to self-hosted inference entirely if your volume justifies the GPUs. Free weights are not free inference, but the escape hatch exists, and that matters for cost-sensitive builders.</p>

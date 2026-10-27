@@ -164,12 +164,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -241,14 +258,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.1</strong><span>Category score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>If you do research regularly, start with Perplexity's free tier — it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable rather than merely confident. Add a general assistant when the job turns from finding out to producing. Add a long-context reader when the input is a pile of documents rather than a question. Most people need the first two; almost nobody needs all three at the paid tier.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> If you do research regularly, start with Perplexity's free tier — it is the only tool in the category whose free level is a complete research instrument, and the citations are what make an answer checkable. The general assistants with search are the runner-up; document tools are for when you are reading a lot at once.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best AI research tools in 2026?</dt><dd>Perplexity (cited research) as the lead, the general assistants with search as the runner-up, and document tools for reading a lot at once. Picked by how you research.</dd></div>
         <div class="qa"><dt>Is Perplexity worth it for research?</dt><dd>Yes: it is the only tool in the category whose free tier is a complete research instrument, and the citations are what make an answer checkable.</dd></div>
         <div class="qa"><dt>When is a general assistant better for research?</dt><dd>When the work is light and mixed (not deep research): a general assistant with search is enough. For cited, checkable research, Perplexity is the lead.</dd></div>
@@ -256,7 +273,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for the category?</dt><dd>Good (3.8-4.5 band): a clear leader (Perplexity for cited research) but the right pick depends on how you research.</dd></div>
         <div class="qa"><dt>Which should I pick first?</dt><dd>Start with Perplexity's free tier. Add a general assistant only when the specific work (not deep research) starts hurting.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from Perplexity or OpenAI?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -325,7 +342,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

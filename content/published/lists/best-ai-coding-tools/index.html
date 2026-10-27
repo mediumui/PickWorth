@@ -169,12 +169,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -246,14 +263,14 @@ gtag('config', 'G-WV775YD52J');
     <div class="verdict-grid">
       <div class="score good"><strong>4.2</strong><span>Category score</span></div>
       <div class="verdict">
-        <h3>The short version</h3>
+        <h2>The short version</h2>
         <p>Most developers should start with one $20 subscription — either ChatGPT Plus or Claude Pro — and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, the dedicated agents (Claude Code, Codex) are the tier that earns a real subscription. If the model has to run inside your own perimeter for compliance, the open-source tools (Cline, Zed, OpenHands) are the answer and the operational weight is the price. And if you are metering by token, DeepSeek's open weights keep the floor an order of magnitude below the frontier. Pick by the job, not by the leaderboard.</p>
       </div>
     </div>
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> Most developers should start with one $20 subscription — either ChatGPT Plus or Claude Pro — and only add a second tool when a specific kind of work starts hurting. If that work is repository-scale refactors, that is where a dedicated agent earns its cost; for open-weights cost, DeepSeek is the move.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What are the best AI coding tools in 2026?</dt><dd>A $20 assistant (ChatGPT Plus or Claude Pro) for most work; a dedicated agent for real refactors; an open-weights option (DeepSeek) when cost or data rules.</dd></div>
         <div class="qa"><dt>Is a dedicated coding agent worth it?</dt><dd>Only for repository-scale refactors: a dedicated agent earns its cost there. For everyday work, the $20 general assistant is enough.</dd></div>
         <div class="qa"><dt>Which open-weights tool should I pick?</dt><dd>DeepSeek: open-weights, an order of magnitude cheaper at the API, and the cost move when you are routing high-volume calls.</dd></div>
@@ -261,7 +278,7 @@ gtag('config', 'G-WV775YD52J');
         <div class="qa"><dt>What is PickWorth's overall score for the category?</dt><dd>Good (3.8-4.5 band): strong tools exist, but most people should start with one $20 subscription and add on, not buy a stack.</dd></div>
         <div class="qa"><dt>Which should I pick first?</dt><dd>Start with one $20 assistant. Add a dedicated agent for repository-scale refactors, or DeepSeek for cost-sensitive routing.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from OpenAI, Anthropic, or DeepSeek?</dt><dd>No. Reviews are written by a single editorial team; pricing is verified from each vendor's official pages.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <nav class="toc" aria-label="On this page">
@@ -281,16 +298,16 @@ gtag('config', 'G-WV775YD52J');
     <table class="compare">
       <thead>
         <tr>
-          <th>Tier</th>
-          <th>What it costs</th>
-          <th>Best at</th>
+          <th scope="col">Tier</th>
+          <th scope="col">What it costs</th>
+          <th scope="col">Best at</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>General assistants</strong></td><td>$20 / month</td><td>Questions, snippets, reviews, docs</td></tr>
-        <tr><td><strong>Dedicated agents</strong></td><td>$20–200 / month</td><td>Repo-scale refactors, multi-file work</td></tr>
-        <tr><td><strong>Open-source editors / agents</strong></td><td>$0 + your own model bill</td><td>Self-hosted, auditable workflows</td></tr>
-        <tr><td><strong>Open-weights API</strong></td><td>~$0.27 / M tokens</td><td>Building product features at margin</td></tr>
+        <tr><th scope="row"><strong>General assistants</strong></th><td>$20 / month</td><td>Questions, snippets, reviews, docs</td></tr>
+        <tr><th scope="row"><strong>Dedicated agents</strong></th><td>$20–200 / month</td><td>Repo-scale refactors, multi-file work</td></tr>
+        <tr><th scope="row"><strong>Open-source editors / agents</strong></th><td>$0 + your own model bill</td><td>Self-hosted, auditable workflows</td></tr>
+        <tr><th scope="row"><strong>Open-weights API</strong></th><td>~$0.27 / M tokens</td><td>Building product features at margin</td></tr>
       </tbody>
     </table>
 
@@ -349,7 +366,7 @@ gtag('config', 'G-WV775YD52J');
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
+    <p class="fineprint">© 2026 PickWorth · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a> · <a href="https://www.prismarcade.top" rel="noopener" target="_blank">Prism Arcade</a></p>
   </div>
 </footer>
 <nav class="mtab" aria-label="Primary">

@@ -147,12 +147,29 @@
 <link rel="stylesheet" href="../../assets/css/site.css" />
 <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
 <script src="../../assets/js/device-ui.js" defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-WV775YD52J');
+/* Deferred GA4 load: fetch + parse gtag.js only when the browser is idle,
+   so it never competes with first paint or input for main-thread time.
+   This is the single largest Total-Blocking-Time contributor on these
+   pages. Page views are queued on dataLayer and flushed when gtag.js
+   arrives, so nothing is lost — only delayed by up to ~2s. */
+(function(){
+  function load(){
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WV775YD52J';
+    document.head.appendChild(s);
+    gtag('config', 'G-WV775YD52J');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(load, {timeout: 2000});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(load, 1500); });
+  }
+})();
 </script>
 </head>
 <body>
@@ -229,13 +246,13 @@ gtag('config', 'G-WV775YD52J');
 
     <section class="key-answers" aria-label="Key answers">
       <p class="key-answer"><strong>The short answer.</strong> One $20 subscription covers most people's AI needs, a second earns its place only when it does a job the first one cannot, and anything beyond that needs a reason you can write in one sentence. The rule is the filter that stops the stack from turning into a subscription you never use.</p>
-    <div class="qa-list">
+    <dl class="qa-list">
         <div class="qa"><dt>What is the $20 rule?</dt><dd>One $20 subscription covers most people's AI needs. A second earns its place only when it does a job the first one cannot. Anything beyond that needs a reason you can write in one sentence.</dd></div>
         <div class="qa"><dt>How many AI subscriptions do I actually need?</dt><dd>For most people: one. A second only when a specific kind of work starts hurting — not a habit, a job you cannot do with the first one.</dd></div>
         <div class="qa"><dt>When does a second subscription earn its place?</dt><dd>When it does a job the first one cannot: a dedicated coding agent for refactors, a dedicated research tool for cited work, a dedicated image tool for styled work. Not a duplicate.</dd></div>
         <div class="qa"><dt>What should I do if I already have three?</dt><dd>Audit them: if two of them do the same job, drop the one you use less. The third should only stay if it does a job the other two cannot.</dd></div>
         <div class="qa"><dt>Does PickWorth take money from any vendor?</dt><dd>No. Reviews are written by a single editorial team; the rule is a filter, not a recommendation for a specific stack.</dd></div>
-    </div>
+    </dl>
     </section>
 
     <h2 id="the-rule">The rule, stated plainly</h2>
