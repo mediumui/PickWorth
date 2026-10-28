@@ -1,0 +1,49 @@
+<!-- =======================================================================
+  _tested-block.html — "What we ran" experience layer (reference only).
+
+  E-E-A-T Experience signal: a compact block between BODY and SOURCES that
+  carries the *tested, not just read* evidence behind a review / compare /
+  list. This is the part of a page an answer engine is most likely to
+  quote because it contains specific numbers and concrete observations.
+
+  NOTE: l4_render.py builds the section inline (see _tested_block_html),
+  so the actual markup is generated from the draft's `tested_block` field
+  and this file is kept only as a human-readable reference of the shape.
+
+  Draft field (optional; the section is omitted when absent):
+
+    "tested_block": {
+      "label": "What we ran",
+      "ran": ["fixed prompt set", "long-context edge at 200K"],
+      "reps": 12,
+      "results": [
+        "4/5 succeeded on the reasoning task",
+        "failures clustered on outputs over 4K tokens"
+      ],
+      "limits_hit": [
+        {"limit": "RPM cap under peak load",
+         "observed": "512K context throttled at peak",
+         "as_of": "2026-10-22",
+         "source_url": "https://..."},
+        {"limit": "Free-tier chat limit",
+         "observed": "approx 50 chats/day",
+         "as_of": "2026-10-22",
+         "source_url": "https://..."}
+      ],
+      "community_signals": [
+        {"signal": "rate-limit errors reported at the free tier",
+         "source_url": "https://..."}
+      ]
+    }
+
+  Hard gate (enforced by _validate_tested_block in l4_render.py):
+    * every limits_hit / community_signals entry MUST carry a valid
+      absolute source_url (http/https) — no fabricated data is allowed.
+    * `ran` / `results` items are prose strings and may stand without a
+      URL, but each should point to something concrete.
+    * `reps` (optional) must be a positive integer.
+
+  The rendered section maps every URL to a running footnote [1]..[n] and
+  emits a small <ol class="tested-footnotes"> block so the reader (or an
+  answer engine) can click each observation back to its source.
+======================================================================= -->

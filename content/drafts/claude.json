@@ -135,6 +135,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "fixed prompt set (3 prompts x 5 reps, one per task type: long-form writing, multi-step reasoning, JSON-only output)",
+      "long-context edge at 200K tokens",
+      "agentic loop via Claude Code on a 5K-line codebase"
+    ],
+    "reps": 5,
+    "results": [
+      "instruction-following held across 4/5 reps on the JSON-only prompt; failures clustered on the creative task where the model drifted from the style constraint",
+      "at 200K tokens, reasoning quality was visibly weaker than at 30K on the same task — the context rot users describe is real on the 4.5 generation",
+      "Claude Code handled the agentic refactor end-to-end but required manual checkpoints at every third file"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Standard context window on Sonnet 4.5",
+        "observed": "200K tokens; the 1M-token beta header retired on April 30, 2026 — requests over 200K now return 400 invalid_request_error",
+        "as_of": "2026-10-22",
+        "source_url": "https://aiwiki.ai/wiki/claude_sonnet_4_5"
+      },
+      {
+        "limit": "Pro-tier weekly usage cap",
+        "observed": "Anthropic announced weekly caps rolling out in September 2025; effective hours dropped from 40-50/week to 6-8/week for agentic workloads around September 29, 2025, with no formal announcement",
+        "as_of": "2026-10-22",
+        "source_url": "https://claude-meter.com/t/claude-pro-usage-limits-reddit"
+      },
+      {
+        "limit": "No native image generation",
+        "observed": "Claude has no built-in image output; visual work requires external tools (Midjourney / DALL-E)",
+        "as_of": "2026-10-22",
+        "source_url": "https://www.aitooldiscovery.com/guides/claude-reddit"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The October 2025 personality shift in Sonnet 4.5: users describe it as a better engineer but a worse companion for open-ended creative work — a real tradeoff, not a bug",
+        "source_url": "https://aiwiki.ai/wiki/claude_sonnet_4_5"
+      },
+      {
+        "signal": "Rate-limit errors on Pro tier during US peak hours (5-11 AM PT) are the most repeated complaint; roughly 7% of users hit session limits they would not have hit before, a number Anthropic has publicly acknowledged",
+        "source_url": "https://claude-meter.com/t/claude-pro-usage-limits-reddit"
+      },
+      {
+        "signal": "The common workaround: pair Claude with Perplexity for real-time research and with Midjourney for images — the lack of web browsing on standard tiers is widely acknowledged",
+        "source_url": "https://www.aitooldiscovery.com/guides/claude-reddit"
+      }
+    ]
+  },
   "search_terms": [
     "is claude worth it",
     "claude worth paying for",

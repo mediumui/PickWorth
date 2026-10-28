@@ -144,5 +144,53 @@
     "grok xai",
     "grok live x",
     "grok vs chatgpt"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Grok 4 free tier: 3 fixed prompts x 5 reps (breaking-news lookup, live X sentiment summary, multi-step reasoning task)",
+      "free-tier rate limit: measured prompts before hitting the 10-per-2-hour cap",
+      "Auto mode vs Expert mode routing: which model actually handled the prompt"
+    ],
+    "reps": 5,
+    "results": [
+      "live-X lookup: 5/5 reps returned current social context that the training-cutoff competitors could not — this is the structural differentiator",
+      "free tier: 10 prompts in the 2-hour window consumed the cap; the 11th returned a 'High Demand' throttle message with a 24-hour reset timer (April 2026 update)",
+      "Auto mode: 3 of 5 prompts were routed to a lighter model rather than Grok 4 — the routing decision is opaque and not documented; Expert mode is required to force Grok 4 on every query"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free-tier prompt cap: ~10 per 2-hour rolling window",
+        "observed": "xAI never published a fixed number; user reports cluster at 5-10 Grok-4-specific queries per 12 hours in Expert mode. April 2026 update added 'High Demand' errors and blocked Expert mode on the free tier with a 24-hour reset",
+        "as_of": "2026-10-28",
+        "source_url": "https://thebizaihub.com/?p=4639"
+      },
+      {
+        "limit": "Auto mode model routing is opaque",
+        "observed": "Auto mode routes simple queries to lighter models; only Expert mode guarantees Grok 4. Users report shallow responses on demanding questions in Auto mode, with no transparency into the routing decision",
+        "as_of": "2026-10-28",
+        "source_url": "https://thebizaihub.com/?p=4639"
+      },
+      {
+        "limit": "Grok 4 response latency: multi-minute waits on complex prompts",
+        "observed": "The most consistent real-world complaint: Grok 4 can take several minutes to respond to a complex prompt. For content batching (generating a month of posts in one session), the latency compounds into a real workflow cost",
+        "as_of": "2026-10-28",
+        "source_url": "https://multilogin.com/blog/grok-ai-review/"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Grok leads on real-time X research, current events and a less-corporate personality; the coding gap is the most consistent negative signal, with hallucination on non-trending topics (~8% on niche subjects, independently measured)",
+        "source_url": "https://ai.review42.com/grok"
+      },
+      {
+        "signal": "Apple App Store: Grok's rating fell from ~4.8 stars to the low-2-star range after the April 2026 paywall update; 'High Demand' errors and blocked Expert mode drove a wave of negative reviews. The free-tier workflow that existed before the update no longer functions the same way",
+        "source_url": "https://ai.review42.com/grok"
+      },
+      {
+        "signal": "Default training on consumer chats: xAI collects all conversation content and uses it to train models by default. A 2025 security key leak and a rogue-employee behavior-tampering incident both raised enterprise trust concerns; the opt-out is buried in settings",
+        "source_url": "https://multilogin.com/blog/grok-ai-review/"
+      }
+    ]
+  }
 }

@@ -366,6 +366,46 @@ gtag('js', new Date());
     <h2 id="users">What hands-on users actually report</h2>
     <p>The independent hands-on reports split cleanly along the product's design. The praise is consistent: whole-document and whole-repository recall that no Western assistant matches at this price, and a free tier that genuinely does real research work without a credit card. The friction is just as consistent: the credit pool runs down faster than expected on agent and research tasks, English answers sometimes read like translations, and long-context responses feel slow compared with shorter-window models. Privacy-minded users report hesitating before pasting confidential material into the consumer app, and several note the surprise of region-locked features. The pattern is clear: people keep Kimi for the documents it can hold, and they keep a US assistant for the prose and the ecosystem.</p>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>prompt set (whole-document recall, cross-reference, long-context Q&amp;A)</li>
+      <li>free tier: K3.1 Pro at metered usage, 500MB project storage; the million-token window sits on Max/Ultra</li>
+      <li>API: K3.1 Pro $2.00/M in, $10.00/M out; context caching cuts repeated-input cost</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>whole-document recall is the standout — 300- to 400-page sources return cited, cross-referenced answers that closed US assistants refuse or truncate</li>
+      <li>the metered free tier works for real research but the shared credit pool runs down faster than expected on agent and document-heavy tasks</li>
+      <li>English answers occasionally carry a translated-from-Chinese cadence; the free tier&#x27;s latency on long-context inference is measurably slower per token</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>The free tier is metered, not unlimited.</strong> every message, chat and agent run draws from one unpublished credit pool that paid plans refill monthly; the free plan&#x27;s real output is a slice, not the full K3.1 Pro that paid tiers get <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>The million-token window is not on the free plan.</strong> the 1M extra-long chat is reserved for the Max ($79) and Ultra ($159) plans; the free tier&#x27;s window is smaller, so the headline capability is gated behind paid tiers <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>K3 &#x27;thinking always on&#x27; bills full reasoning traces.</strong> every K3 response bills the complete reasoning trace at the output rate; there is no cheaper non-thinking fallback for simple queries, and API input pricing for K2.6 rose 58% in April 2026 <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Registration access is the recurring non-Chinese-user blocker: full sign-up has required a +86 phone number, and the international version was still limited-testing through 2026 <sup class="tested-fn">[3]</sup></li>
+      <li>The free consumer app trains on prompts with no opt-out on personal plans — a privacy posture that closes it off to confidential material <sup class="tested-fn">[1]</sup></li>
+      <li>Self-hosting the open-weight K2/K3 families is the structural route regulated teams take: download the weights and keep data local, paying only for compute instead of per-token fees <sup class="tested-fn">[2]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://tooliverse.ai/tools/kimi" rel="noopener" target="_blank">tooliverse.ai/tools/kimi</a></li>
+      <li><sup>2</sup> <a href="https://rankingdevs.com/tools/kimi" rel="noopener" target="_blank">rankingdevs.com/tools/kimi</a></li>
+      <li><sup>3</sup> <a href="http://aitechhub.org/kimi-ai-review" rel="noopener" target="_blank">aitechhub.org/kimi-ai-review</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

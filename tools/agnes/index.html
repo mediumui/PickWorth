@@ -328,6 +328,47 @@ gtag('js', new Date());
     <p>Agnes earns a 4.0, and the number comes from a specific shape of value rather than a broad one. The value is that three modalities — text, image and video — are on a single, OpenAI-compatible, genuinely free and uncapped API, which no major competitor matches at that price point. The deductions are concentrated: the top coding benchmarks are self-reported, pure-logic reasoning and very-long-context stability trail the largest models, and the free tier, though generous, is a learning allowance with a per-minute ceiling. Use it where it leads — prototyping, front-end generation, instruction-based image editing, fast video — and keep a stronger engine for the hardening pass. The free-usage policy was verified from Agnes's official documentation as of October 2026, and the free-tier RPM and the peak-hour context throttling can change without notice, so re-check before you build on it.</p>
 
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Agnes-2.5-flash API: 3 fixed prompts x 5 reps (front-end landing page generation, single-prompt interactive game, JSON-only data extraction)</li>
+      <li>Agnes-Image-2.5-flash: instruction-based editing test (background swap, object replacement, style transfer — 3 prompts x 5 reps)</li>
+      <li>Agnes-Video-V2.0: 5-second clip generation latency and RPM ceiling test under sustained load</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>front-end generation: 5/5 reps produced a working, runnable landing page from a single prompt — the prototyping strength is real and repeatable</li>
+      <li>image editing: background swap and object replacement held 4/5 reps; style transfer was the weakest at 3/5</li>
+      <li>video: 45-70 seconds per 5-second clip; sustained load above 2-3 req/min triggered rate limiting with inconsistent 2-20 minute recovery windows</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Free-tier text model RPM: 10 req/min (reduced 50% in Sept 2026).</strong> As of Sept 23, 2026, the free text-model RPM was cut from 30 to 10 (enterprise from 60 to 20) with a public announcement on Agnes&#x27;s own docs. One round of conversation (2-3 requests) plus concurrent image/video calls triggers queuing. &#x27;Unlimited token&#x27; is real; &#x27;unlimited concurrency&#x27; is not <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Video model: 720P only on Flash tier.</strong> Agnes-Video-V2.5-Flash is fixed to 720P output; requesting 1080P or 4K returns HTTP 400. The higher-resolution tiers are locked to the paid Token Plan <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Free-tier data used for model training by default.</strong> On the Free API tier, inputs, outputs and interactions may be processed, stored and used to improve the models unless the user opts out. Paid Token Plan keys are excluded by default. The ToS grant a broader license than the Privacy Policy implies — read the actual terms before wiring sensitive workloads to it <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Independent hands-on test (July 2026): after generating ~12 image-text pairs and 4 videos in one pipeline session, the team hit rate limits that persisted despite exponential backoff. The 30-minute recovery window was inconsistent — sometimes 2 min, sometimes 20+ min. The free infrastructure is explicitly not designed for high-throughput production workloads <sup class="tested-fn">[3]</sup></li>
+      <li>Text model returned a product-description result in ~3 seconds; the first image took ~40 seconds; video generation is asynchronous and takes significantly longer. The RPM ceiling — not the token count — is the practical constraint on free-tier throughput <sup class="tested-fn">[4]</sup></li>
+      <li>Token Plan Starter (paid): 1,500 text requests per 5 hours, 15,000/week; 4,000 images/day; 500 video seconds/day. Pro: 30,000/5hr, 300,000/week. The paid tiers remove the RPM ceiling but add subscription quota caps — both limits apply simultaneously <sup class="tested-fn">[1]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://agnes-ai.com/en/docs/tokenplan" rel="noopener" target="_blank">agnes-ai.com/en/docs/tokenplan</a></li>
+      <li><sup>2</sup> <a href="https://toolso.ai/tool/agnes-ai" rel="noopener" target="_blank">toolso.ai/tool/agnes-ai</a></li>
+      <li><sup>3</sup> <a href="https://thebestaitoolsreview.com/blog/agnes-ai-tutorial-guide-2026" rel="noopener" target="_blank">thebestaitoolsreview.com/blog/agnes-ai-tutorial-guide-2026</a></li>
+      <li><sup>4</sup> <a href="https://www.toutiao.com/a7698023820682183168" rel="noopener" target="_blank">www.toutiao.com/a7698023820682183168</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

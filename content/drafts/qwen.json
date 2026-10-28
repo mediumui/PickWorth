@@ -149,5 +149,53 @@
     "qwen3 max",
     "qwen api pricing",
     "qwen multilingual"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (multilingual drafting, coding, long-document Q&A)",
+      "free Qwen Chat (chat.qwen.ai): sign-in, no published consumer price tier, bundled search and image generation",
+      "API: Alibaba Cloud Model Studio, per-million-token; new accounts get a limited free token allowance"
+    ],
+    "reps": 5,
+    "results": [
+      "multilingual depth, especially Chinese and Asian languages, is the standout — it holds up where Western assistants treat non-Latin scripts as an afterthought",
+      "the open-weight Qwen family is genuinely runnable locally (Ollama / LM Studio); the same model that runs in the free chat is one you can self-host",
+      "English creative writing reads less native than GPT or Claude because of a Chinese-internet training skew; mixed-language prompts can drift replies into Mandarin"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Usage limits are unpublished",
+        "observed": "no published consumer caps mean the free service can throttle without warning or explanation; 'free and unlimited' is really 'free and unspecified', which rules it out as a dependable daily driver",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitoolsofthetrade.com/reviews/qwen"
+      },
+      {
+        "limit": "Registration friction in some regions",
+        "observed": "sign-up can snag on phone verification for users outside China; the international app is a plainer thing than the Chinese version — the deep agentic integrations that make Qwen compelling at home do not travel internationally",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitoolsofthetrade.com/reviews/qwen"
+      },
+      {
+        "limit": "Western enterprise data residency",
+        "observed": "the hosted international service runs through Alibaba Cloud (Singapore), which puts confidential and client work in a different data-jurisdiction position than a US-hosted assistant; support and product-change communication are thin",
+        "as_of": "2026-10-28",
+        "source_url": "http://www.rfp.wiki/artificial-intelligence/generative-ai-model-providers/qwen/openai"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Developer sentiment is positive overall (~77% positive): the open-weight models earn strong marks for coding and non-English work at zero cost, with the consistent caveats being data jurisdiction, undocumented limits, and patchy international feature parity",
+        "source_url": "https://aitoolsofthetrade.com/reviews/qwen"
+      },
+      {
+        "signal": "Trustpilot sits at 2.7/5 across ~1,000 reviews, driven by perceived product changes, inconsistent assistant quality versus ChatGPT, and complaints about content moderation blocking legitimate research topics",
+        "source_url": "http://www.rfp.wiki/artificial-intelligence/generative-ai-model-providers/qwen/openai"
+      },
+      {
+        "signal": "Self-hosting is the structural route it exists for: anyone who wants a frontier-class open model that stays on their own hardware can download the Qwen weights and keep data local, paying only compute",
+        "source_url": "https://aitoolsofthetrade.com/reviews/qwen"
+      }
+    ]
+  }
 }

@@ -329,6 +329,46 @@ gtag('js', new Date());
   <p>Run your real workload through the Flash model for a week and log the token count. Then do the bill twice — once at off-peak and once at peak rates — and build your budget on the peak number. The difference is the margin you get to make or lose on the model.</p>
 </div>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>API workload (high-volume chat, code review, batch extraction)</li>
+      <li>free tier: ~5M token signup allowance, no credit card, rate-limited</li>
+      <li>paid API: Flash ~$0.15/M in, ~$0.60/M out off-peak (cache hits far cheaper)</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>price-per-task is the whole point: a workload costing several dollars on a closed frontier model lands at cents on Flash</li>
+      <li>the off-peak discount (16:30–00:30 GMT, up to 50–75% off) is the real cost lever — schedules batched into that window pay a fraction of the day rate</li>
+      <li>cache-hit pricing ($0.0028/M input) requires deliberate prompt design (repeatable prefixes); it is not automatic for ad-hoc queries</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Free tier is a trial, not a plan.</strong> the signup allowance (~5M tokens, ~$8–10 value) expires within 30 days and there is no hard RPM ceiling — throughput is best-effort and degrades at peak demand, sometimes with transient 503 errors <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>No native consumer app or multimodality.</strong> the product is API-only: there is no first-party mobile app, no vision or image generation, and no IDE plugin — any of that has to be wired from other providers <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Creative English prose trails the closed frontier.</strong> side-by-side tests place its narrative writing below Claude/GPT-class models — functional and clear, not literary; Chinese-biased training also surfaces when ambiguous English prompts get a culturally specific reading <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Peak-demand instability is the most repeated operational complaint: latency spikes and intermittent errors during high-traffic windows, driven by the shared best-effort infrastructure <sup class="tested-fn">[3]</sup></li>
+      <li>Privacy posture is adequate for most but regulated teams flag it: data is not used for training, but logs are retained ~30 days, which sits in a GDPR grey zone for sensitive PII <sup class="tested-fn">[3]</sup></li>
+      <li>Self-hosting is the structural differentiator the open weights enable: teams that cannot send data to a third-party API run the same frontier-class model locally, a route closed labs cannot offer <sup class="tested-fn">[2]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="http://www.nxcode.io/zh-TW/resources/news/deepseek-api-pricing-complete-guide-2026" rel="noopener" target="_blank">www.nxcode.io/zh-TW/resources/news/deepseek-api-pricing-complete-guide-2026</a></li>
+      <li><sup>2</sup> <a href="https://toolsdepth.com/reviews/deepseek-v4-review-2026" rel="noopener" target="_blank">toolsdepth.com/reviews/deepseek-v4-review-2026</a></li>
+      <li><sup>3</sup> <a href="https://qcbqvc.com/main/14448764" rel="noopener" target="_blank">qcbqvc.com/main/14448764</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

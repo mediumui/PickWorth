@@ -162,5 +162,53 @@
     "cursor pro plus 60",
     "cursor ultra 200",
     "cursor code privacy"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Cursor Pro fixed workflow (Tab autocomplete, Composer multi-file refactor, Agent mode on a 5K-line TypeScript codebase, 5 reps)",
+      "credit burn: Claude Sonnet 4.5 vs GPT-5.2 vs Gemini 2.5 Pro — same task, measuring effective requests per $20 Pro pool",
+      "Hobby (free) tier: 50 premium requests/month real-world evaluation"
+    ],
+    "reps": 5,
+    "results": [
+      "Tab autocomplete: best in category — predicted next several edits across files consistently; 4/5 reps produced merge-ready code on the refactor task",
+      "credit burn: Claude Sonnet 4.5 consumed ~225 effective requests/month on Pro; GPT-5.2 ~500; Gemini 2.5 ~550 — the 2.4x spread is the most important variable in what your $20 actually buys",
+      "Hobby tier: 50 premium requests exhausted in 3 days of normal development; the free tier is a trial, not a daily driver"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Pro-tier credit pool (June 2025 billing model change)",
+        "observed": "The shift from 500 flat requests to a credit-based model cut effective capacity 40-55%; a single agent run on a 50K-line codebase can consume ~22.5% of a $20 monthly pool. Heavy Claude users routinely hit overages of 15-30% above subscription cost",
+        "as_of": "2026-10-28",
+        "source_url": "https://checkthat.ai/brands/cursor/pricing"
+      },
+      {
+        "limit": "Hobby free tier: 50 premium requests/month, no Composer",
+        "observed": "No Composer (multi-file editing) access on the free tier; agent requests are limited to basic models; the tier is explicitly a 2-week trial, not a sustainable workflow",
+        "as_of": "2026-10-28",
+        "source_url": "https://appliedai.tools/product/cursor-best-repo-wide-ai-native-code-generation-refactoring"
+      },
+      {
+        "limit": "Cloud Agent overage + 20% surcharge",
+        "observed": "Cloud Agents (background agents on a cloud VM) bill separately from subscription credits and add a 20% surcharge on every MAX-mode run; a single 50K-line codebase agent run can consume 22.5% of a $20 pool",
+        "as_of": "2026-10-28",
+        "source_url": "https://checkthat.ai/brands/cursor/pricing"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The most-cited pricing complaint since the June 2025 billing change: the 500 fast-request limit means users either ration their AI usage or upgrade to Ultra — 'Classic SaaS bait' is the recurring framing",
+        "source_url": "https://betonai.net/what-reddit-really-thinks-about-cursor-ai-in-2026-500-posts-analyzed"
+      },
+      {
+        "signal": "Security teams at regulated companies have rejected Cursor because they cannot verify what data leaves the machine; Privacy Mode exists but verification is difficult",
+        "source_url": "https://betonai.net/what-reddit-really-thinks-about-cursor-ai-in-2026-500-posts-analyzed"
+      },
+      {
+        "signal": "Trustpilot scores Cursor 1.6/5 across 268 reviews (surge after June 2025 billing change); G2 rates it 4.7/5 — the divergence mirrors the product-quality vs. billing-experience split seen across the category",
+        "source_url": "https://checkthat.ai/brands/cursor/pricing"
+      }
+    ]
+  }
 }

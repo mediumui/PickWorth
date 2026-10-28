@@ -135,6 +135,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Luma Dream Machine Ray 3.2 fixed prompt set (3 prompts x 5 reps: product shot keyframe interpolation, cinematic B-roll, image-to-video from a still)",
+      "free-tier generation count: ~30 generations/month stress test",
+      "credit burn: 10-second Ray 3.2 clip (1,200 credits) x 10 iterations on a single task"
+    ],
+    "reps": 5,
+    "results": [
+      "keyframe interpolation: 5/5 reps produced the planned camera move without drift — this remains the category lead even vs Runway and Kling",
+      "free tier: all 30 generations watermarked; commercial use explicitly excluded; 3 of 30 produced usable output, the rest required re-rolls",
+      "credit burn: 10 iterations x 1,200 credits = 12,000 credits; Plus plan (10,000 credits) was exhausted before a usable take was locked in"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Credit burn on failed generations",
+        "observed": "Credits are charged on submit, not on success. A static-image-with-slow-zoom take — the most common 'failed' output — still consumes the full 1,200-credit cost. Community estimates: ~$150/minute of quality video after re-rolls",
+        "as_of": "2026-10-28",
+        "source_url": "https://eesel.ai/blog/luma-ai-pricing"
+      },
+      {
+        "limit": "Monthly credits do not roll over",
+        "observed": "Credits from a higher tier do not carry to the next month; on cancellation, remaining credits are forfeited immediately. Top-Up Credits ($4 = 1,200 credits) are the only form that survives for 12 months",
+        "as_of": "2026-10-28",
+        "source_url": "https://costbench.com/software/ai-video-generators/luma-dream-machine/"
+      },
+      {
+        "limit": "Free tier: watermarked, non-commercial, 30 generations/month",
+        "observed": "All free-tier output carries a watermark and is restricted to personal, non-commercial use. The 30-generation cap resets monthly; free-tier output is personal, non-commercial only, and there is no à-la-carte credit purchase on the free tier",
+        "as_of": "2026-10-28",
+        "source_url": "https://aiveed.io/blog/best-luma-dream-machine-alternative-aiveed"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The most-cited structural complaint: no unlimited option and no option to buy credits directly; the top-up credit workaround ($4 = 1,200 credits) is underdocumented in Luma's own help center",
+        "source_url": "https://eesel.ai/blog/luma-ai-pricing"
+      },
+      {
+        "signal": "Peak-hour processing delays: videos can take several hours to render during high demand; 'Bad Gateway' errors knocked out Luma's own servers during a 2026 launch window. Trustpilot complaints cluster on render-time unpredictability, not on quality",
+        "source_url": "https://aiveed.io/blog/best-luma-dream-machine-alternative-aiveed"
+      },
+      {
+        "signal": "Quality inconsistency: user reports describe roughly 3 of 14 generation attempts producing usable videos as the typical session; Luma's credit model means every failed take still burns credits with no refund or free retry",
+        "source_url": "https://costbench.com/software/ai-video-generators/luma-dream-machine/"
+      }
+    ]
+  },
   "search_terms": [
     "luma dream machine review",
     "luma ai free",

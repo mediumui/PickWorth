@@ -135,6 +135,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (image-to-video, motion realism, long-clip generation)",
+      "free tier: 66 daily credits on 360-540p watermarked output",
+      "paid tier: Standard $6.99/mo (660 credits, 1080p, no watermark, commercial rights)"
+    ],
+    "reps": 5,
+    "results": [
+      "motion realism is the standout — multiple head-to-head tests place it ahead of Runway on raw motion quality and close to Luma on physics",
+      "failed generations still consume credits; a 30-40% failure rate was documented on the free tier during peak hours",
+      "intro price ($6.99 Standard) jumps to $8.80 at renewal — a 30%+ increase that is the most-cited billing complaint in community reviews"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free tier caps",
+        "observed": "66 daily credits, 360-540p watermarked, personal-use license only; queue times during peak hours regularly exceed 30 minutes",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.renderforest.com/blog/kling-ai-video-generator-review"
+      },
+      {
+        "limit": "Failed generation credits",
+        "observed": "credits are consumed even when a video fails to render completely; no automatic refund for a generation that fails or produces unusable output",
+        "as_of": "2026-10-28",
+        "source_url": "https://max-productive.ai/ai-tools/kling-ai/"
+      },
+      {
+        "limit": "Chinese data jurisdiction",
+        "observed": "content is processed under Chinese law; Kuaishou's terms of service grant them rights to use your content for model training; content moderation blocks politically sensitive topics",
+        "as_of": "2026-10-28",
+        "source_url": "https://max-productive.ai/ai-tools/kling-ai/"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Trustpilot sits at 1.2-1.3/5 across 318-380 reviews, driven by billing disputes, cancellation difficulty, and slow support",
+        "source_url": "https://www.renderforest.com/blog/kling-ai-video-generator-review"
+      },
+      {
+        "signal": "Credit burn on failed generations is the most repeated operational complaint; the default workflow is to test prompts on free credits before committing paid ones",
+        "source_url": "https://vidwave.ai/best-ai-video-generator-reddit-recommends-1-pick-shocked-me"
+      },
+      {
+        "signal": "No built-in editor — generate, download, edit elsewhere; Runway offers inpainting, outpainting, camera path control, and color grading within the same platform",
+        "source_url": "https://max-productive.ai/ai-tools/kling-ai/"
+      }
+    ]
+  },
   "search_terms": [
     "kling ai review",
     "kling ai free",

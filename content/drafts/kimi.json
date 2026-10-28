@@ -149,5 +149,53 @@
     "kimi api pricing",
     "kimi open weights",
     "kimi document analysis"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (whole-document recall, cross-reference, long-context Q&A)",
+      "free tier: K3.1 Pro at metered usage, 500MB project storage; the million-token window sits on Max/Ultra",
+      "API: K3.1 Pro $2.00/M in, $10.00/M out; context caching cuts repeated-input cost"
+    ],
+    "reps": 5,
+    "results": [
+      "whole-document recall is the standout — 300- to 400-page sources return cited, cross-referenced answers that closed US assistants refuse or truncate",
+      "the metered free tier works for real research but the shared credit pool runs down faster than expected on agent and document-heavy tasks",
+      "English answers occasionally carry a translated-from-Chinese cadence; the free tier's latency on long-context inference is measurably slower per token"
+    ],
+    "limits_hit": [
+      {
+        "limit": "The free tier is metered, not unlimited",
+        "observed": "every message, chat and agent run draws from one unpublished credit pool that paid plans refill monthly; the free plan's real output is a slice, not the full K3.1 Pro that paid tiers get",
+        "as_of": "2026-10-28",
+        "source_url": "https://tooliverse.ai/tools/kimi"
+      },
+      {
+        "limit": "The million-token window is not on the free plan",
+        "observed": "the 1M extra-long chat is reserved for the Max ($79) and Ultra ($159) plans; the free tier's window is smaller, so the headline capability is gated behind paid tiers",
+        "as_of": "2026-10-28",
+        "source_url": "https://rankingdevs.com/tools/kimi"
+      },
+      {
+        "limit": "K3 'thinking always on' bills full reasoning traces",
+        "observed": "every K3 response bills the complete reasoning trace at the output rate; there is no cheaper non-thinking fallback for simple queries, and API input pricing for K2.6 rose 58% in April 2026",
+        "as_of": "2026-10-28",
+        "source_url": "https://rankingdevs.com/tools/kimi"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Registration access is the recurring non-Chinese-user blocker: full sign-up has required a +86 phone number, and the international version was still limited-testing through 2026",
+        "source_url": "http://aitechhub.org/kimi-ai-review"
+      },
+      {
+        "signal": "The free consumer app trains on prompts with no opt-out on personal plans — a privacy posture that closes it off to confidential material",
+        "source_url": "https://tooliverse.ai/tools/kimi"
+      },
+      {
+        "signal": "Self-hosting the open-weight K2/K3 families is the structural route regulated teams take: download the weights and keep data local, paying only for compute instead of per-token fees",
+        "source_url": "https://rankingdevs.com/tools/kimi"
+      }
+    ]
+  }
 }

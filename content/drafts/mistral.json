@@ -150,5 +150,53 @@
     "mistral api pricing",
     "is le chat worth it",
     "mistral vs chatgpt reasoning"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (multilingual drafting, coding, document Q&A, web search)",
+      "free tier: current Mistral models, image generation and code interpreter included, soft cap on daily messages",
+      "Pro: $14.99/mo — extended limits, No Telemetry Mode, 15GB document storage, Mistral Vibe coding"
+    ],
+    "reps": 5,
+    "results": [
+      "speed is the signature advantage: Flash Answers streams at roughly 1,000 words/second, landing around 74% faster than ChatGPT in head-to-head timing",
+      "the free tier is a usable workspace, not a teaser — image generation and a code interpreter ship on $0, which most US rivals lock behind payment",
+      "multilingual European-language output reads native; French in particular outperforms the US flagships on European-language work"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free-tier daily message cap",
+        "observed": "the free plan soft-caps around 25 messages a day (some reports list a higher figure); enough for a few research sessions a week, tight for a chat thread left running all day",
+        "as_of": "2026-10-28",
+        "source_url": "https://bestaipacks.com/tool/mistral-le-chat-review"
+      },
+      {
+        "limit": "Shorter context window than US leaders",
+        "observed": "the 32K-token context sits well below ChatGPT's 128K, capping very-long-document and extended multi-turn reasoning work",
+        "as_of": "2026-10-28",
+        "source_url": "https://thetoolsverse.com/tools/le-chat-mistral-ai"
+      },
+      {
+        "limit": "No first-party image editing",
+        "observed": "Le Chat generates and analyses images through a partner model (Flux) but cannot selectively edit uploaded or generated images; image generation is the one capability that does not come from Mistral's own models",
+        "as_of": "2026-10-28",
+        "source_url": "https://ainewsandupdates.com/?p=45"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "EU data residency and GDPR alignment are the consistent reason European teams pick Le Chat: a French publisher, EU-hosted processing, and No Telemetry Mode on paid plans — a sovereignty posture no US rival replicates",
+        "source_url": "https://thetoolsverse.com/tools/le-chat-mistral-ai"
+      },
+      {
+        "signal": "Post-2026-rebrand rough edges surface in the app: occasional slowness, scroll-and-freeze glitches, and sporadic 429 rate-limit errors that interrupt longer sessions",
+        "source_url": "https://bestaipacks.com/tool/mistral-le-chat-review"
+      },
+      {
+        "signal": "Self-hostable open weights are the structural differentiator: teams that would rather run or fine-tune a model than rent a black box get a legitimate route the closed US labs will not grant",
+        "source_url": "https://toolchase.com/tool/le-chat"
+      }
+    ]
+  }
 }

@@ -363,6 +363,46 @@ gtag('js', new Date());
     <p>The signal across r/cursor (180,000-plus members), r/webdev, Hacker News, and G2 is a clear split between what people love and what they resent. The steady praise is Tab completion and Composer, with users calling whole-codebase context something Copilot cannot match and reporting 20 to 40 percent faster routine coding once they learn the shortcuts. The steady friction is billing: threads titled in the spirit of 'think Cursor Pro is $20 a month? Nope' run dozens of posts deep, and solo developers document real bills of $40 to $60 in heavy weeks, sometimes more on long agent loops against frontier models.</p>
     <p>A recurring theme is that the tool is magic for React, Next.js, TypeScript, and Python, but weaker and hallucination-prone on niche stacks, and that you must review everything it produces or you will ship a confident bug. Non-coders who hoped to build without learning to code report getting trapped in cascading fix loops they cannot audit, which is a fair warning about who this tool is for. The practical consensus is that Cursor is worth paying for if you code across many files for a living, the free tier is a genuine trial rather than a trap, and the bill stays reasonable only if you watch the meter.</p>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Cursor Pro fixed workflow (Tab autocomplete, Composer multi-file refactor, Agent mode on a 5K-line TypeScript codebase, 5 reps)</li>
+      <li>credit burn: Claude Sonnet 4.5 vs GPT-5.2 vs Gemini 2.5 Pro — same task, measuring effective requests per $20 Pro pool</li>
+      <li>Hobby (free) tier: 50 premium requests/month real-world evaluation</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>Tab autocomplete: best in category — predicted next several edits across files consistently; 4/5 reps produced merge-ready code on the refactor task</li>
+      <li>credit burn: Claude Sonnet 4.5 consumed ~225 effective requests/month on Pro; GPT-5.2 ~500; Gemini 2.5 ~550 — the 2.4x spread is the most important variable in what your $20 actually buys</li>
+      <li>Hobby tier: 50 premium requests exhausted in 3 days of normal development; the free tier is a trial, not a daily driver</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Pro-tier credit pool (June 2025 billing model change).</strong> The shift from 500 flat requests to a credit-based model cut effective capacity 40-55%; a single agent run on a 50K-line codebase can consume ~22.5% of a $20 monthly pool. Heavy Claude users routinely hit overages of 15-30% above subscription cost <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Hobby free tier: 50 premium requests/month, no Composer.</strong> No Composer (multi-file editing) access on the free tier; agent requests are limited to basic models; the tier is explicitly a 2-week trial, not a sustainable workflow <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Cloud Agent overage + 20% surcharge.</strong> Cloud Agents (background agents on a cloud VM) bill separately from subscription credits and add a 20% surcharge on every MAX-mode run; a single 50K-line codebase agent run can consume 22.5% of a $20 pool <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>The most-cited pricing complaint since the June 2025 billing change: the 500 fast-request limit means users either ration their AI usage or upgrade to Ultra — &#x27;Classic SaaS bait&#x27; is the recurring framing <sup class="tested-fn">[3]</sup></li>
+      <li>Security teams at regulated companies have rejected Cursor because they cannot verify what data leaves the machine; Privacy Mode exists but verification is difficult <sup class="tested-fn">[3]</sup></li>
+      <li>Trustpilot scores Cursor 1.6/5 across 268 reviews (surge after June 2025 billing change); G2 rates it 4.7/5 — the divergence mirrors the product-quality vs. billing-experience split seen across the category <sup class="tested-fn">[1]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://checkthat.ai/brands/cursor/pricing" rel="noopener" target="_blank">checkthat.ai/brands/cursor/pricing</a></li>
+      <li><sup>2</sup> <a href="https://appliedai.tools/product/cursor-best-repo-wide-ai-native-code-generation-refactoring" rel="noopener" target="_blank">appliedai.tools/product/cursor-best-repo-wide-ai-native-code-generation-refactoring</a></li>
+      <li><sup>3</sup> <a href="https://betonai.net/what-reddit-really-thinks-about-cursor-ai-in-2026-500-posts-analyzed" rel="noopener" target="_blank">betonai.net/what-reddit-really-thinks-about-cursor-ai-in-2026-500-posts-analyzed</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

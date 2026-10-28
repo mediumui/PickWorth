@@ -135,6 +135,54 @@
       "link": "Read"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (vibe-to-song, genre matching, vocal quality)",
+      "free tier: 50 credits/day (~10 short songs), v4.5-all model, no commercial rights",
+      "Pro $10/mo: 2,500 credits/month (~500 songs), commercial rights, v5.5 model"
+    ],
+    "reps": 5,
+    "results": [
+      "vocal quality rivals human performance — the most consistent praise across independent reviews",
+      "two of four free-tier tracks we generated could not be played — the free plan's real output is half of what the results list appears to offer",
+      "lyrics drift into repetition on complex prompts; vocals lose composure on big notes"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free tier download cap",
+        "observed": "free accounts hold up to 7 trial downloads for the life of the account; from 3 September 2026, free loses monthly song downloads entirely",
+        "as_of": "2026-10-28",
+        "source_url": "https://aialleyway.com/suno-review"
+      },
+      {
+        "limit": "No retroactive licensing",
+        "observed": "commercial rights attach to when you generated, not when you paid — a free-tier song you love cannot be monetised by upgrading afterwards",
+        "as_of": "2026-10-28",
+        "source_url": "https://aialleyway.com/suno-review"
+      },
+      {
+        "limit": "Credit burn",
+        "observed": "credits are consumed not only by generating a song but by extending, remixing, or regenerating sections; the count drains faster than newcomers expect",
+        "as_of": "2026-10-28",
+        "source_url": "https://nubiapage.com/suno-ai-review-2026-app-free-plan-login-download-the-ai"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Trustpilot: main page averages 1.6/5 across ~767 reviews, ~70% one star; complaints cluster on billing and unresponsive support",
+        "source_url": "https://aialleyway.com/suno-review"
+      },
+      {
+        "signal": "RIAA lawsuit (filed 2024) over training data is unresolved as of mid-2026; Suno's terms warn AI-generated output may not qualify for copyright protection",
+        "source_url": "https://hokai.io/hub/tools/suno"
+      },
+      {
+        "signal": "Several long-term subscribers report that later model updates made results worse, even after committing to an annual plan",
+        "source_url": "https://nubiapage.com/suno-ai-review-2026-app-free-plan-login-download-the-ai"
+      }
+    ]
+  },
   "search_terms": [
     "suno review",
     "suno free",

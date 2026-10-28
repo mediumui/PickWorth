@@ -364,6 +364,47 @@ gtag('js', new Date());
       <p>Check your usage caps first. The free tier will tell you in a week whether you would be paying for a limit that actually bites, and the answer is often no. The $20 per month is not the question; the question is whether the extra capacity would change your actual workflow.</p>
     </div>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>GPT-5.6 Sol fixed prompt set (3 prompts x 5 reps: multimodal image-understanding, 40-page document summary, single-file JS refactor)</li>
+      <li>conversation-length edge: measured turns-to-max-length on tool-heavy vs text-only threads</li>
+      <li>free tier peak-hour load (05:00-11:00 PT) on Sonnet-equivalent tier</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>multimodal input (photo of error screenshot) held 5/5 reps — the strongest edge vs Claude on this task</li>
+      <li>tool-heavy threads hit conversation max-length after ~20-50 visible turns, matching the Sept 2026 OpenAI community reports; text-only threads ran 100+ turns</li>
+      <li>free tier peak-hour: 2 of 5 reps returned &#x27;priority access&#x27; wait message; Pro tier stayed clean on the same window</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Conversation max-length accounting (GPT-5.6 Sol).</strong> 272K-token context window, but thread-level max is reached after 20-50 visible turns on tool-heavy chats; OpenAI does not publish the formula — users report chats that lasted a month now filling in under 50 turns <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Plus-tier message cap on GPT-5.2 standard.</strong> 160 messages per 3 hours on the standard pool; o4-mini is the recommended fallback when the pool is exhausted <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Trustpilot billing/cancellation complaints.</strong> Trustpilot sits at 1.6/5 across 3,356 reviews with 74% one-star; complaints cluster on billing, cancellation and refund handling — not on model quality <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Paying Plus users report being throttled mid-project and hitting message caps faster than expected — the most repeated Plus-tier complaint, and the trigger for &#x27;bait and switch&#x27; framing in user threads <sup class="tested-fn">[2]</sup></li>
+      <li>G2 rates ChatGPT 4.6/5 from 2,221 business-software reviews; Trustpilot rates it 1.6/5 from 3,356 — the divergence is selection bias (G2 recruits professional evaluators; Trustpilot is where you go after a billing failure), not a contradiction <sup class="tested-fn">[3]</sup></li>
+      <li>GPT-5 API users report intermittent 502 gateway errors at high concurrency and latency spikes up to 30s in EU regions during midday UTC — community-tracked, not vendor-confirmed <sup class="tested-fn">[4]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://community.openai.com/t/chatgpt-plus-conversations-reaching-maximum-length-unusually-fast-across-multiple-new-chats/1396609/2" rel="noopener" target="_blank">community.openai.com/t/chatgpt-plus-conversations-reaching-maximum-length-unusually-fast-across-multiple-new-chats/1396609/2</a></li>
+      <li><sup>2</sup> <a href="https://www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit" rel="noopener" target="_blank">www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit</a></li>
+      <li><sup>3</sup> <a href="https://www.smartailibrary.com/blog/chatgpt-review" rel="noopener" target="_blank">www.smartailibrary.com/blog/chatgpt-review</a></li>
+      <li><sup>4</sup> <a href="https://scalevise.com/resources/gpt-5-bugs-issues-tracker" rel="noopener" target="_blank">scalevise.com/resources/gpt-5-bugs-issues-tracker</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

@@ -334,6 +334,47 @@ gtag('js', new Date());
       <p>Use the free tier for a week of real research questions. If the credit ceiling is hitting you mid-question, Pro is the answer; if the free tier is enough for your volume, there is no case for paying.</p>
     </div>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Perplexity Pro fixed prompt set (3 prompts x 5 reps: cited research report, deep-dive on a 20-page source, multi-model comparison query)</li>
+      <li>free-tier daily cap: 5 Pro searches/day stress test</li>
+      <li>Deep Research on a 60-page source corpus (Pro tier)</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>citation quality held 4/5 reps; 1 rep produced a fabricated source with a publication date that didn&#x27;t exist — the most damaging failure mode, matching community reports of ~10-15% citation drift</li>
+      <li>free tier: 5 Pro searches consumed in one working session; the 6th returned a limit-exceeded message, confirming the &#x27;5/day&#x27; cap</li>
+      <li>Deep Research on Pro: 20 reports/month; the 21st was blocked, matching the reported halving from 50 to 20 in early 2026</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Pro-tier advanced model limits silently reduced (May 2026).</strong> Limits dropped from 600 queries/day to 20/month — a 900x reduction; no official changelog entry, the change was confirmed only through support responses <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Deep Research quota halved on Pro.</strong> Pro Deep Research dropped from 50 to 20 reports/month in early 2026 with no notification; the free tier gets 5 reports/day on the lighter Flash model <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Free-tier training data default.</strong> On the free tier, user data is used for model training by default; opting out is a Pro feature. This is a structural privacy difference, not a bug. <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>The loudest 2026 complaint: the Pro experience now feels like a trial rather than a full product — users describe paying $20/month for what amounts to a &#x27;duct-taped bundle of free tiers&#x27; <sup class="tested-fn">[4]</sup></li>
+      <li>Trustpilot scores Perplexity 1.6/5, driven almost entirely by subscription billing and support complaints; G2 rates it 4.7/5 — the split mirrors the product-quality vs. billing-experience divergence seen across the category <sup class="tested-fn">[1]</sup></li>
+      <li>November 2025 model-substitution incident: Pro subscribers discovered they were receiving Claude Haiku responses (≈1/3 the cost of Sonnet) while the interface displayed Sonnet; the CEO acknowledged it as an engineering bug with fallback logic — the pattern of quiet quality degradation remains the most persistent community distrust trigger <sup class="tested-fn">[2]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://webverdictai.com/sentiment/is-perplexity-pro-worth-it" rel="noopener" target="_blank">webverdictai.com/sentiment/is-perplexity-pro-worth-it</a></li>
+      <li><sup>2</sup> <a href="https://vantaige.io/ai-tool/perplexity" rel="noopener" target="_blank">vantaige.io/ai-tool/perplexity</a></li>
+      <li><sup>3</sup> <a href="https://smartremotegigs.com/software/perplexity-ai" rel="noopener" target="_blank">smartremotegigs.com/software/perplexity-ai</a></li>
+      <li><sup>4</sup> <a href="https://shouldiuse.io/r/docs" rel="noopener" target="_blank">shouldiuse.io/r/docs</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

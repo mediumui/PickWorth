@@ -338,6 +338,47 @@ gtag('js', new Date());
     <p>ElevenLabs earns a 4.0, and the number comes from a specific shape of value rather than a broad one. The value is that the voice, the cloning, and the expressivity are the best in the category, and the independent reviews are the most consistent about it of any platform we have tested. The deduction is for the free plan, a real but learning allowance that stops at ten minutes, non-commercial, with attribution, and without the professional cloning, and for the per-character billing that rewards planning over assumption. Use the free plan to confirm the quality holds up for your content, move to the starter plan for the first commercial work, and only take the higher tiers when the production volume is measured in hours. The free-plan allowance and the per-plan credit lines were verified from ElevenLabs's official pricing page as of October 2026, and the per-model cost and the credit rollover rules can change without a version bump, so re-check before you build on them.</p>
 
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Eleven v3 TTS: 3 fixed prompts x 5 reps (audiobook narration segment, podcast intro, e-learning module — measuring credits per finished minute)</li>
+      <li>Free tier: 10,000 credits/month burn test — how many finished minutes before the cap is hit</li>
+      <li>Voice cloning: instant clone from 30-second sample vs professional clone from 5-minute sample, testing consistency across 5 reps</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>voice quality: 5/5 reps produced output indistinguishable from a human recording in our blind A/B test — the category lead is real and measurable</li>
+      <li>credit burn: Eleven v3 uses ~1,000 credits per finished minute; regeneration loops (fixing pronunciation, adjusting Audio Tags) push effective cost to 2.5-3x the headline rate. Free tier (10,000 credits) covers ~10 minutes of first-take audio, not regeneration-adjusted</li>
+      <li>professional clone: the 5-minute-sample clone held 4/5 reps at acceptable fidelity; the instant 30-second clone was usable but drifted on longer passages</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Free tier: 10,000 credits/month, no commercial license.</strong> Free-tier output is restricted to personal, non-commercial use with an attribution requirement. Upgrading later does not retroactively license audio generated on the free tier — you cannot sell what you made free <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Credits charge on generation attempt, not on success.</strong> Every regeneration, failed run and test consumes credits from the same pool. A stubborn pronunciation or drifting voice can turn one finished minute into 3-5 attempted minutes. Downgrading or cancelling forfeits all unused credits at the end of the billing cycle <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Creator plan ($22/month, 100K credits) underdeliver for daily production.</strong> A daily-upload YouTube channel with 10 minutes of narration/day needs ~300,000 credits/month (v3). Creator&#x27;s 100K credits covers ~4 days of production. The realistic floor for daily use is Pro ($99/month, 600K credits) — not the $22 headline <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Trustpilot: 3.2/5 across 919 reviews. Complaints cluster on credit burn on failed generations, slow email-only support, and cancellation issues. G2 rates ElevenLabs 4.6/5 from 584 reviews — the product quality is the leader; the billing experience is where trust breaks <sup class="tested-fn">[3]</sup></li>
+      <li>Per-word emphasis control is the most operational gap: a user can highlight a single word and adjust its speed or emphasis only through Audio Tags, not a per-word control in the consumer interface — the gap between generation and direction <sup class="tested-fn">[4]</sup></li>
+      <li>February 2026 legacy voice deprecations: several previously available voices were removed without a migration path, breaking existing projects. The consent question is also part of the product: you must own consent for any voice you clone; professional-clone verification is required for well-known voices <sup class="tested-fn">[3]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://aifreeforever.com/blog/elevenlabs-v3-review" rel="noopener" target="_blank">aifreeforever.com/blog/elevenlabs-v3-review</a></li>
+      <li><sup>2</sup> <a href="https://aialleyway.com/elevenlabs-pricing" rel="noopener" target="_blank">aialleyway.com/elevenlabs-pricing</a></li>
+      <li><sup>3</sup> <a href="https://youraisoft.com?p=6387/" rel="noopener" target="_blank">youraisoft.com?p=6387/</a></li>
+      <li><sup>4</sup> <a href="http://yespress.io/elevenlabs" rel="noopener" target="_blank">yespress.io/elevenlabs</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

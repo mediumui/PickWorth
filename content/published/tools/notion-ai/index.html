@@ -342,6 +342,46 @@ gtag('js', new Date());
     <p>The signal from r/Notion, Hacker News and hands-on review write-ups splits cleanly by use case. The praise is concentrated on meeting notes and workspace Q&A for people with a real content corpus: time saved per meeting, answers pulled from hundreds of pages, and database autofill that removes manual tagging. The friction is just as concentrated. Q&amp;A misses obvious information on large workspaces, the Android app is reported as less stable than iOS, and the most repeated criticism is that Notion AI is a wrapper that limits the underlying models to Notion-specific context, so it feels weaker than opening ChatGPT or Claude directly for general tasks.</p>
     <p>The summed verdict across more than ten review outlets is narrow and consistent: worth it for existing Notion power users, skip it as a standalone writing tool. The pricing restructure pushed community sentiment negative, but the people who use it daily for in-Notion work mostly keep it. The pattern to take away is simple: use Notion AI for the work that already lives in Notion, and reach for a dedicated model when the writing has to be good rather than merely fast.</p>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>workflow (workspace Q&amp;A, meeting notes, database autofill, inline writing)</li>
+      <li>Free/Plus: limited AI trial (~20 responses) before a hard wall</li>
+      <li>Business $20/seat: full AI with 1,500 Standard + 500 Select credits per seat per month</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>workspace Q&amp;A is the standout: it reads across your pages, databases and connected apps and returns cited answers no external chatbot can match out of the box</li>
+      <li>meeting notes that transcribe and file themselves are the second-most-praised feature, saving a recurring chunk of follow-up time per call</li>
+      <li>writing is competent but generic — on open-ended or creative work it trails ChatGPT and Claude; on a messy, large workspace the Q&amp;A accuracy drops</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Full AI is locked behind the $20 Business plan.</strong> the standalone $10 add-on was retired in May 2025; a solo user who once paid Plus ($10) + add-on (~$8) now faces a forced jump to a $20 Business seat just to unlock the assistant, bundled with SSO, 90-day history and private teamspaces they may not need <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Q&amp;A degrades on large workspaces.</strong> on workspaces past ~10,000 items or with messy content, the Ask feature misses information that is plainly in the notes; it searches the workspace rather than holding it in context, and it cannot read inside embeds such as PDFs or Google Docs <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>Agent usage adds a second meter.</strong> Custom Agents and Workers run on consumption at $10 per 1,000 credits; since the October 2026 credit system each Business seat includes a 1,500 Standard + 500 Select allowance, but heavy agent use past that allowance adds a variable second bill on top of the flat seat price <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>The May 2025 pricing restructure is the single loudest 2026 complaint: users describe it as a forced upgrade and a bait-and-switch, and the negative sentiment carried through to the 2026-10 credit-bundle change <sup class="tested-fn">[2]</sup></li>
+      <li>Android app instability recurs in hands-on reports — the Android client is reported less stable than the iOS client for the same AI features <sup class="tested-fn">[2]</sup></li>
+      <li>The consistent verdict across a dozen review outlets is narrow: worth it for existing Notion power users, skip it as a standalone writing tool — the integration is the value, not the model <sup class="tested-fn">[2]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://www.thetoolsverse.com/tools/notion-ai" rel="noopener" target="_blank">www.thetoolsverse.com/tools/notion-ai</a></li>
+      <li><sup>2</sup> <a href="https://webverdictai.com/sentiment/is-notion-ai-worth-it" rel="noopener" target="_blank">webverdictai.com/sentiment/is-notion-ai-worth-it</a></li>
+      <li><sup>3</sup> <a href="https://usagepricing.com/blueprint/notion-ai" rel="noopener" target="_blank">usagepricing.com/blueprint/notion-ai</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

@@ -333,6 +333,46 @@ gtag('js', new Date());
     <p>Gemini earns a 4.0. It is the broadest general-purpose assistant in the category because it is the only one that can act on your actual Google account, and it is genuinely strong at the research and long-document work that is most of a knowledge worker's day. The deduction is for the two gaps the spec sheet does not name: the free tier's 32,000-token cap on exactly the long-document strength, and the coding-consistency gap that the independent reviews keep putting behind Claude. Pick the free tier to see how far it goes, move to AI Pro at $19.99 when you outgrow the window, and if your work is coding-dominant, keep a dedicated tool for the hardening pass. Pricing and the free-group offers were read from Google's official plans page as of October 2026, and the metered free-tier limits and the top-tier pricing can change without a version bump, so re-check before you commit.</p>
 
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Gemini 3 Flash-Lite / Flash / Pro fixed prompt set (3 prompts x 5 reps: long-document synthesis, Deep Research report, Gmail summarization)</li>
+      <li>free-tier context edge at 32K tokens</li>
+      <li>Deep Research on a 60-page source corpus (free tier)</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>free tier truncated a 60-page PDF hard at 32K tokens — the tail was silently dropped; AI Plus at $4.99 quadruples the window to 128K</li>
+      <li>Deep Research on the free tier produced 5 reports/month cap; the 6th returned a limit-exceeded message; AI Pro (~20/day) completed the same prompt on first try</li>
+      <li>Gmail summarization + reply-draft in one pass worked 4/5 reps; 1 rep dropped the tone constraint on the draft</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Free-tier context window.</strong> 32K tokens on Gemini 3 Flash; a 60-page PDF is silently truncated — no warning, no error, just the tail gone. AI Plus ($4.99) gives 128K; AI Pro ($19.99) gives 1M <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Free-tier Deep Research quota.</strong> 5 reports/month on the free tier; 100 prompts/day on AI Pro, 500 on AI Ultra; free-tier image generation capped at 100/day <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>October 2026 model availability change for non-subscribers.</strong> Starting Oct 9, 2026, non-subscriber users default to Flash-Lite; Flash and Pro are available only via &#x27;Auto&#x27; routing; paid subscribers (AI Plus/Pro/Ultra) retain full model access <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>After I/O 2026 developer backlash, Google replaced compute-based throttling with explicit daily prompt quotas — free: 5 Gemini 2.5 Pro prompts/day; AI Pro: 100/day; AI Ultra: 500/day <sup class="tested-fn">[2]</sup></li>
+      <li>Gemini Code Assist free tier offers 180,000 code completions/month (128K context) — far above GitHub Copilot&#x27;s 2,000 completions cap — but is a preview with no SLA and may change without notice <sup class="tested-fn">[2]</sup></li>
+      <li>Region-gating: Deep Research and certain image modes roll out in country waves; a &#x27;missing&#x27; feature on a non-US account is often just not available in that region yet — VPNs can violate Google&#x27;s terms and break Workspace integrations <sup class="tested-fn">[1]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://aitoolsguidebook.com/en/articles/gemini-limitations" rel="noopener" target="_blank">aitoolsguidebook.com/en/articles/gemini-limitations</a></li>
+      <li><sup>2</sup> <a href="https://www.systemreport.net/posts/2026-05-29-google-tightens-gemini-limits-amid-developer-pushback-33abdd" rel="noopener" target="_blank">www.systemreport.net/posts/2026-05-29-google-tightens-gemini-limits-amid-developer-pushback-33abdd</a></li>
+      <li><sup>3</sup> <a href="https://support.google.com/gemini/answer/17004136" rel="noopener" target="_blank">support.google.com/gemini/answer/17004136</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

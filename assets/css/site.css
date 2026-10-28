@@ -586,6 +586,51 @@ body.is-desktop .mtab{display:none}        /* desktop: bottom tabs off, top menu
   margin:0;color:var(--ink-2);font-size:.92rem;line-height:1.5;
 }
 
+/* tested-block: E-E-A-T experience layer (what we ran / limits / community).
+   Sits between the article body and the Sources list. Two-column on
+   desktop, single-column on mobile. Footnotes [n] at the bottom map every
+   observation back to its source_url. */
+.tested-block{margin:30px 0 8px}
+.tested-block h2{font-size:1.3rem;margin:0 0 14px}
+.tested-grid{
+  display:grid;grid-template-columns:1fr;gap:18px;
+}
+.tested-col{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px 20px;
+}
+.tested-sub{
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);font-weight:600;
+  margin:0 0 8px;
+}
+.tested-block ul{margin:0;padding-left:18px}
+.tested-block li{font-size:.92rem;line-height:1.55;margin:.35em 0;color:var(--ink-2)}
+.tested-ran li,.tested-results li{color:var(--ink-2)}
+.tested-limits li strong{color:var(--ink);font-weight:600}
+.tested-asof{
+  color:var(--faint);font-family:var(--font-mono);font-size:.76rem;
+  letter-spacing:.04em;margin-left:4px;
+}
+.tested-reps{
+  margin:10px 0 4px;font-size:.88rem;color:var(--muted);
+}
+.tested-reps strong{font-family:var(--font-serif);font-size:1.2rem;color:var(--ink);margin-right:6px}
+.tested-fn{color:var(--accent);font-weight:600;font-size:.82em}
+.tested-footnotes{
+  margin:14px 0 0;padding:0;list-style:none;
+  font-size:.82rem;color:var(--muted);
+  border-top:1px solid var(--line);padding-top:12px;
+}
+.tested-footnotes li{margin:0 0 4px;padding-left:0}
+.tested-footnotes sup{
+  font-family:var(--font-mono);color:var(--accent-2);font-weight:600;
+  margin-right:6px;font-size:.9em;
+}
+.tested-footnotes a{color:var(--accent-2)}
+
+body.is-desktop .tested-grid{grid-template-columns:1fr 1fr;gap:20px}
+
 /* 404 */
 .notfound{text-align:center;padding:90px 0 70px}
 .notfound h1{font-size:5rem;margin:0 0 .1em;color:var(--accent)}

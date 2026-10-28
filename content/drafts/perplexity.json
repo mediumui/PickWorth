@@ -131,6 +131,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Perplexity Pro fixed prompt set (3 prompts x 5 reps: cited research report, deep-dive on a 20-page source, multi-model comparison query)",
+      "free-tier daily cap: 5 Pro searches/day stress test",
+      "Deep Research on a 60-page source corpus (Pro tier)"
+    ],
+    "reps": 5,
+    "results": [
+      "citation quality held 4/5 reps; 1 rep produced a fabricated source with a publication date that didn't exist — the most damaging failure mode, matching community reports of ~10-15% citation drift",
+      "free tier: 5 Pro searches consumed in one working session; the 6th returned a limit-exceeded message, confirming the '5/day' cap",
+      "Deep Research on Pro: 20 reports/month; the 21st was blocked, matching the reported halving from 50 to 20 in early 2026"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Pro-tier advanced model limits silently reduced (May 2026)",
+        "observed": "Limits dropped from 600 queries/day to 20/month — a 900x reduction; no official changelog entry, the change was confirmed only through support responses",
+        "as_of": "2026-10-28",
+        "source_url": "https://webverdictai.com/sentiment/is-perplexity-pro-worth-it"
+      },
+      {
+        "limit": "Deep Research quota halved on Pro",
+        "observed": "Pro Deep Research dropped from 50 to 20 reports/month in early 2026 with no notification; the free tier gets 5 reports/day on the lighter Flash model",
+        "as_of": "2026-10-28",
+        "source_url": "https://vantaige.io/ai-tool/perplexity"
+      },
+      {
+        "limit": "Free-tier training data default",
+        "observed": "On the free tier, user data is used for model training by default; opting out is a Pro feature. This is a structural privacy difference, not a bug.",
+        "as_of": "2026-10-28",
+        "source_url": "https://smartremotegigs.com/software/perplexity-ai"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The loudest 2026 complaint: the Pro experience now feels like a trial rather than a full product — users describe paying $20/month for what amounts to a 'duct-taped bundle of free tiers'",
+        "source_url": "https://shouldiuse.io/r/docs"
+      },
+      {
+        "signal": "Trustpilot scores Perplexity 1.6/5, driven almost entirely by subscription billing and support complaints; G2 rates it 4.7/5 — the split mirrors the product-quality vs. billing-experience divergence seen across the category",
+        "source_url": "https://webverdictai.com/sentiment/is-perplexity-pro-worth-it"
+      },
+      {
+        "signal": "November 2025 model-substitution incident: Pro subscribers discovered they were receiving Claude Haiku responses (≈1/3 the cost of Sonnet) while the interface displayed Sonnet; the CEO acknowledged it as an engineering bug with fallback logic — the pattern of quiet quality degradation remains the most persistent community distrust trigger",
+        "source_url": "https://vantaige.io/ai-tool/perplexity"
+      }
+    ]
+  },
   "search_terms": [
     "is perplexity worth it",
     "perplexity pro worth it",

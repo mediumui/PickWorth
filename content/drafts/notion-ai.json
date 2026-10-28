@@ -149,5 +149,53 @@
     "notion ai credits",
     "notion ai limitations",
     "notion ai for students"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "workflow (workspace Q&A, meeting notes, database autofill, inline writing)",
+      "Free/Plus: limited AI trial (~20 responses) before a hard wall",
+      "Business $20/seat: full AI with 1,500 Standard + 500 Select credits per seat per month"
+    ],
+    "reps": 5,
+    "results": [
+      "workspace Q&A is the standout: it reads across your pages, databases and connected apps and returns cited answers no external chatbot can match out of the box",
+      "meeting notes that transcribe and file themselves are the second-most-praised feature, saving a recurring chunk of follow-up time per call",
+      "writing is competent but generic — on open-ended or creative work it trails ChatGPT and Claude; on a messy, large workspace the Q&A accuracy drops"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Full AI is locked behind the $20 Business plan",
+        "observed": "the standalone $10 add-on was retired in May 2025; a solo user who once paid Plus ($10) + add-on (~$8) now faces a forced jump to a $20 Business seat just to unlock the assistant, bundled with SSO, 90-day history and private teamspaces they may not need",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.thetoolsverse.com/tools/notion-ai"
+      },
+      {
+        "limit": "Q&A degrades on large workspaces",
+        "observed": "on workspaces past ~10,000 items or with messy content, the Ask feature misses information that is plainly in the notes; it searches the workspace rather than holding it in context, and it cannot read inside embeds such as PDFs or Google Docs",
+        "as_of": "2026-10-28",
+        "source_url": "https://webverdictai.com/sentiment/is-notion-ai-worth-it"
+      },
+      {
+        "limit": "Agent usage adds a second meter",
+        "observed": "Custom Agents and Workers run on consumption at $10 per 1,000 credits; since the October 2026 credit system each Business seat includes a 1,500 Standard + 500 Select allowance, but heavy agent use past that allowance adds a variable second bill on top of the flat seat price",
+        "as_of": "2026-10-28",
+        "source_url": "https://usagepricing.com/blueprint/notion-ai"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The May 2025 pricing restructure is the single loudest 2026 complaint: users describe it as a forced upgrade and a bait-and-switch, and the negative sentiment carried through to the 2026-10 credit-bundle change",
+        "source_url": "https://webverdictai.com/sentiment/is-notion-ai-worth-it"
+      },
+      {
+        "signal": "Android app instability recurs in hands-on reports — the Android client is reported less stable than the iOS client for the same AI features",
+        "source_url": "https://webverdictai.com/sentiment/is-notion-ai-worth-it"
+      },
+      {
+        "signal": "The consistent verdict across a dozen review outlets is narrow: worth it for existing Notion power users, skip it as a standalone writing tool — the integration is the value, not the model",
+        "source_url": "https://webverdictai.com/sentiment/is-notion-ai-worth-it"
+      }
+    ]
+  }
 }

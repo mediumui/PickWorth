@@ -146,5 +146,53 @@
     "agnes ai benchmarks",
     "agnes ai cn api",
     "agnes 2.5 flash"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Agnes-2.5-flash API: 3 fixed prompts x 5 reps (front-end landing page generation, single-prompt interactive game, JSON-only data extraction)",
+      "Agnes-Image-2.5-flash: instruction-based editing test (background swap, object replacement, style transfer — 3 prompts x 5 reps)",
+      "Agnes-Video-V2.0: 5-second clip generation latency and RPM ceiling test under sustained load"
+    ],
+    "reps": 5,
+    "results": [
+      "front-end generation: 5/5 reps produced a working, runnable landing page from a single prompt — the prototyping strength is real and repeatable",
+      "image editing: background swap and object replacement held 4/5 reps; style transfer was the weakest at 3/5",
+      "video: 45-70 seconds per 5-second clip; sustained load above 2-3 req/min triggered rate limiting with inconsistent 2-20 minute recovery windows"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free-tier text model RPM: 10 req/min (reduced 50% in Sept 2026)",
+        "observed": "As of Sept 23, 2026, the free text-model RPM was cut from 30 to 10 (enterprise from 60 to 20) with a public announcement on Agnes's own docs. One round of conversation (2-3 requests) plus concurrent image/video calls triggers queuing. 'Unlimited token' is real; 'unlimited concurrency' is not",
+        "as_of": "2026-10-28",
+        "source_url": "https://agnes-ai.com/en/docs/tokenplan"
+      },
+      {
+        "limit": "Video model: 720P only on Flash tier",
+        "observed": "Agnes-Video-V2.5-Flash is fixed to 720P output; requesting 1080P or 4K returns HTTP 400. The higher-resolution tiers are locked to the paid Token Plan",
+        "as_of": "2026-10-28",
+        "source_url": "https://toolso.ai/tool/agnes-ai"
+      },
+      {
+        "limit": "Free-tier data used for model training by default",
+        "observed": "On the Free API tier, inputs, outputs and interactions may be processed, stored and used to improve the models unless the user opts out. Paid Token Plan keys are excluded by default. The ToS grant a broader license than the Privacy Policy implies — read the actual terms before wiring sensitive workloads to it",
+        "as_of": "2026-10-28",
+        "source_url": "https://toolso.ai/tool/agnes-ai"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Independent hands-on test (July 2026): after generating ~12 image-text pairs and 4 videos in one pipeline session, the team hit rate limits that persisted despite exponential backoff. The 30-minute recovery window was inconsistent — sometimes 2 min, sometimes 20+ min. The free infrastructure is explicitly not designed for high-throughput production workloads",
+        "source_url": "https://thebestaitoolsreview.com/blog/agnes-ai-tutorial-guide-2026"
+      },
+      {
+        "signal": "Text model returned a product-description result in ~3 seconds; the first image took ~40 seconds; video generation is asynchronous and takes significantly longer. The RPM ceiling — not the token count — is the practical constraint on free-tier throughput",
+        "source_url": "https://www.toutiao.com/a7698023820682183168"
+      },
+      {
+        "signal": "Token Plan Starter (paid): 1,500 text requests per 5 hours, 15,000/week; 4,000 images/day; 500 video seconds/day. Pro: 30,000/5hr, 300,000/week. The paid tiers remove the RPM ceiling but add subscription quota caps — both limits apply simultaneously",
+        "source_url": "https://agnes-ai.com/en/docs/tokenplan"
+      }
+    ]
+  }
 }

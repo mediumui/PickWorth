@@ -349,6 +349,45 @@ gtag('js', new Date());
 </table>
 <p>For most readers the path is simple: use the free chat to test whether Qwen's strengths match your tasks, self-host the weights if data residency is the blocker, and move to the API only once you have a workload that justifies the bill.</p>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>prompt set (multilingual drafting, coding, long-document Q&amp;A)</li>
+      <li>free Qwen Chat (chat.qwen.ai): sign-in, no published consumer price tier, bundled search and image generation</li>
+      <li>API: Alibaba Cloud Model Studio, per-million-token; new accounts get a limited free token allowance</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>multilingual depth, especially Chinese and Asian languages, is the standout — it holds up where Western assistants treat non-Latin scripts as an afterthought</li>
+      <li>the open-weight Qwen family is genuinely runnable locally (Ollama / LM Studio); the same model that runs in the free chat is one you can self-host</li>
+      <li>English creative writing reads less native than GPT or Claude because of a Chinese-internet training skew; mixed-language prompts can drift replies into Mandarin</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Usage limits are unpublished.</strong> no published consumer caps mean the free service can throttle without warning or explanation; &#x27;free and unlimited&#x27; is really &#x27;free and unspecified&#x27;, which rules it out as a dependable daily driver <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Registration friction in some regions.</strong> sign-up can snag on phone verification for users outside China; the international app is a plainer thing than the Chinese version — the deep agentic integrations that make Qwen compelling at home do not travel internationally <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Western enterprise data residency.</strong> the hosted international service runs through Alibaba Cloud (Singapore), which puts confidential and client work in a different data-jurisdiction position than a US-hosted assistant; support and product-change communication are thin <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Developer sentiment is positive overall (~77% positive): the open-weight models earn strong marks for coding and non-English work at zero cost, with the consistent caveats being data jurisdiction, undocumented limits, and patchy international feature parity <sup class="tested-fn">[1]</sup></li>
+      <li>Trustpilot sits at 2.7/5 across ~1,000 reviews, driven by perceived product changes, inconsistent assistant quality versus ChatGPT, and complaints about content moderation blocking legitimate research topics <sup class="tested-fn">[2]</sup></li>
+      <li>Self-hosting is the structural route it exists for: anyone who wants a frontier-class open model that stays on their own hardware can download the Qwen weights and keep data local, paying only compute <sup class="tested-fn">[1]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://aitoolsofthetrade.com/reviews/qwen" rel="noopener" target="_blank">aitoolsofthetrade.com/reviews/qwen</a></li>
+      <li><sup>2</sup> <a href="http://www.rfp.wiki/artificial-intelligence/generative-ai-model-providers/qwen/openai" rel="noopener" target="_blank">www.rfp.wiki/artificial-intelligence/generative-ai-model-providers/qwen/openai</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

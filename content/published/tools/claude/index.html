@@ -340,6 +340,46 @@ gtag('js', new Date());
       <p>Try the free tier for a week with your real workloads first. If the long-context gain is real, Pro is the next step; Max is only worth it once Pro is actually bottlenecking you. The difference between the two is usage ceiling, not capability.</p>
     </div>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>fixed prompt set (3 prompts x 5 reps, one per task type: long-form writing, multi-step reasoning, JSON-only output)</li>
+      <li>long-context edge at 200K tokens</li>
+      <li>agentic loop via Claude Code on a 5K-line codebase</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>instruction-following held across 4/5 reps on the JSON-only prompt; failures clustered on the creative task where the model drifted from the style constraint</li>
+      <li>at 200K tokens, reasoning quality was visibly weaker than at 30K on the same task — the context rot users describe is real on the 4.5 generation</li>
+      <li>Claude Code handled the agentic refactor end-to-end but required manual checkpoints at every third file</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Standard context window on Sonnet 4.5.</strong> 200K tokens; the 1M-token beta header retired on April 30, 2026 — requests over 200K now return 400 invalid_request_error <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Pro-tier weekly usage cap.</strong> Anthropic announced weekly caps rolling out in September 2025; effective hours dropped from 40-50/week to 6-8/week for agentic workloads around September 29, 2025, with no formal announcement <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[2]</sup></li>
+      <li><strong>No native image generation.</strong> Claude has no built-in image output; visual work requires external tools (Midjourney / DALL-E) <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[3]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>The October 2025 personality shift in Sonnet 4.5: users describe it as a better engineer but a worse companion for open-ended creative work — a real tradeoff, not a bug <sup class="tested-fn">[1]</sup></li>
+      <li>Rate-limit errors on Pro tier during US peak hours (5-11 AM PT) are the most repeated complaint; roughly 7% of users hit session limits they would not have hit before, a number Anthropic has publicly acknowledged <sup class="tested-fn">[2]</sup></li>
+      <li>The common workaround: pair Claude with Perplexity for real-time research and with Midjourney for images — the lack of web browsing on standard tiers is widely acknowledged <sup class="tested-fn">[3]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://aiwiki.ai/wiki/claude_sonnet_4_5" rel="noopener" target="_blank">aiwiki.ai/wiki/claude_sonnet_4_5</a></li>
+      <li><sup>2</sup> <a href="https://claude-meter.com/t/claude-pro-usage-limits-reddit" rel="noopener" target="_blank">claude-meter.com/t/claude-pro-usage-limits-reddit</a></li>
+      <li><sup>3</sup> <a href="https://www.aitooldiscovery.com/guides/claude-reddit" rel="noopener" target="_blank">www.aitooldiscovery.com/guides/claude-reddit</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

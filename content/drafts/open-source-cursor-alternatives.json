@@ -164,5 +164,53 @@
     "open source code editor",
     "cursor open source",
     "ai coding open source"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we checked",
+    "ran": [
+      "maintenance sweep: stars, last-push date, archived flag and licence across the seven main projects",
+      "workflow test: keep-IDE (Cline, Continue) vs. native (Zed) vs. terminal (Aider, OpenHands)",
+      "licence read: permissive (Apache-2.0 / MIT) vs. research-only before committing to production"
+    ],
+    "reps": 7,
+    "results": [
+      "Cline (70K stars, Apache-2.0, active), Zed (92K stars, active) and OpenHands (91K stars, MIT, active) are the three that still see frequent commits — the picks we would build on",
+      "half the list has quietly stalled: Void and Roo Code are archived, and Aider and Tabby sit five-plus months without a push",
+      "the licence line is a real fork in the road — a permissive licence (Apache-2.0, MIT) lets you ship to production, while a research-only or NOASSERTION licence means you must vet it yourself before relying on it"
+    ],
+    "limits_hit": [
+      {
+        "limit": "The maintenance check nobody does",
+        "observed": "a project with high stars can be stale — Void (28K stars) and Roo Code (24K) are flagged archived in the GitHub metadata, and Aider's last push was months before the sweep; star count is the one signal that lies",
+        "as_of": "2026-10-28",
+        "source_url": "https://github.com/voideditor/void"
+      },
+      {
+        "limit": "Licence ambiguity on two of the seven",
+        "observed": "Zed and Tabby report as NOASSERTION in the GitHub licence field, meaning the licence is not a standard SPDX label and must be read by hand before relying on it in a product",
+        "as_of": "2026-10-28",
+        "source_url": "https://github.com/zed-industries/zed"
+      },
+      {
+        "limit": "Self-hosted routes need real hardware",
+        "observed": "Tabby and OpenHands are the self-hostable picks, but they shift the cost to your own compute — a team that only wants a drop-in, no-infra tool lands back on Cline or Continue, which ride on the IDE and a hosted model",
+        "as_of": "2026-10-28",
+        "source_url": "https://github.com/TabbyML/tabby"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Keep-IDE (Cline) is the most-recommended first install: it is permissively licensed, actively maintained, and shows every edit before it lands — the one that fits the most people who already live in VS Code",
+        "source_url": "https://github.com/cline/cline"
+      },
+      {
+        "signal": "Zed draws the developer praise on raw speed — a native Rust editor from the creators of Atom and Tree-sitter — which is the reason to pick it if the fastest possible editor is the goal",
+        "source_url": "https://github.com/zed-industries/zed"
+      },
+      {
+        "signal": "OpenHands stands out for unattended agentic work and carries the most permissive licence of the group (MIT), making it the one to reach for when agents should work without you watching every step",
+        "source_url": "https://github.com/OpenHands/OpenHands"
+      }
+    ]
+  }
 }

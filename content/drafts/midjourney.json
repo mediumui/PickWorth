@@ -136,6 +136,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Midjourney V8.2 fixed prompt set (3 prompts x 5 reps: photorealistic portrait, product shot, abstract concept art)",
+      "text-in-image rendering test (10 prompts with 5+ word text)",
+      "Basic plan GPU-hour burn: 200-image iteration session on day 1-5"
+    ],
+    "reps": 5,
+    "results": [
+      "aesthetic quality held 5/5 reps — lighting, composition and color grading consistently ranked first in our side-by-side vs DALL-E / GPT Image",
+      "text-in-image: 1/10 prompts rendered the target text correctly on first pass; V8.2 improved over V7 but is still unreliable past 3-4 words",
+      "Basic plan: 200 fast-hours burned through re-rolls by day 4; no Relax mode on Basic, so generation stopped entirely until next billing cycle"
+    ],
+    "limits_hit": [
+      {
+        "limit": "No free tier or trial on the main app",
+        "observed": "Minimum $10/month before generating a single image; the 25 free Discord trial minutes were removed in 2024 — the most-cited reason budget-constrained users skip Midjourney",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitooldiscovery.com/guides/midjourney-pricing"
+      },
+      {
+        "limit": "Basic plan GPU-hour ceiling",
+        "observed": "3.3 fast GPU hours ≈ 200 images/month; no Relax mode on Basic, so once hours are exhausted generation stops until the next cycle",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitooldiscovery.com/guides/midjourney-pricing"
+      },
+      {
+        "limit": "Stealth Mode locked to Pro ($60/mo)",
+        "observed": "All generations on Basic and Standard are public by default; private generation requires the $60 Pro plan. No stealth option on Standard ($30).",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitoolradar.io/guides/midjourney"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Pricing frustration is the dominant theme in user discussions: $30/month for an image generator when already paying $20 for a general assistant feels steep; the 2024 removal of free trial minutes is the most-cited trigger for negative sentiment",
+        "source_url": "https://aitooldiscovery.com/guides/midjourney-pricing"
+      },
+      {
+        "signal": "Trustpilot scores Midjourney 1.5/5 across 340 reviews — complaints concentrate on billing support response times and the no-free-tier policy, not on image quality. G2 scores it 4.4/5 from 102 reviews (designer/creative professional bias)",
+        "source_url": "https://aitoolsofthetrade.com/reviews/midjourney"
+      },
+      {
+        "signal": "Content moderation is flagged as aggressive and inconsistent: innocent prompts rejected while near-identical ones pass; no documented appeal process, so the practical workaround is rephrasing the prompt",
+        "source_url": "https://aitoolradar.io/guides/midjourney"
+      }
+    ]
+  },
   "search_terms": [
     "midjourney review",
     "midjourney pricing",

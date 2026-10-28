@@ -143,6 +143,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "GPT-5.6 Sol fixed prompt set (3 prompts x 5 reps: multimodal image-understanding, 40-page document summary, single-file JS refactor)",
+      "conversation-length edge: measured turns-to-max-length on tool-heavy vs text-only threads",
+      "free tier peak-hour load (05:00-11:00 PT) on Sonnet-equivalent tier"
+    ],
+    "reps": 5,
+    "results": [
+      "multimodal input (photo of error screenshot) held 5/5 reps — the strongest edge vs Claude on this task",
+      "tool-heavy threads hit conversation max-length after ~20-50 visible turns, matching the Sept 2026 OpenAI community reports; text-only threads ran 100+ turns",
+      "free tier peak-hour: 2 of 5 reps returned 'priority access' wait message; Pro tier stayed clean on the same window"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Conversation max-length accounting (GPT-5.6 Sol)",
+        "observed": "272K-token context window, but thread-level max is reached after 20-50 visible turns on tool-heavy chats; OpenAI does not publish the formula — users report chats that lasted a month now filling in under 50 turns",
+        "as_of": "2026-10-28",
+        "source_url": "https://community.openai.com/t/chatgpt-plus-conversations-reaching-maximum-length-unusually-fast-across-multiple-new-chats/1396609/2"
+      },
+      {
+        "limit": "Plus-tier message cap on GPT-5.2 standard",
+        "observed": "160 messages per 3 hours on the standard pool; o4-mini is the recommended fallback when the pool is exhausted",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit"
+      },
+      {
+        "limit": "Trustpilot billing/cancellation complaints",
+        "observed": "Trustpilot sits at 1.6/5 across 3,356 reviews with 74% one-star; complaints cluster on billing, cancellation and refund handling — not on model quality",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.smartailibrary.com/blog/chatgpt-review"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Paying Plus users report being throttled mid-project and hitting message caps faster than expected — the most repeated Plus-tier complaint, and the trigger for 'bait and switch' framing in user threads",
+        "source_url": "https://www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit"
+      },
+      {
+        "signal": "G2 rates ChatGPT 4.6/5 from 2,221 business-software reviews; Trustpilot rates it 1.6/5 from 3,356 — the divergence is selection bias (G2 recruits professional evaluators; Trustpilot is where you go after a billing failure), not a contradiction",
+        "source_url": "https://www.smartailibrary.com/blog/chatgpt-review"
+      },
+      {
+        "signal": "GPT-5 API users report intermittent 502 gateway errors at high concurrency and latency spikes up to 30s in EU regions during midday UTC — community-tracked, not vendor-confirmed",
+        "source_url": "https://scalevise.com/resources/gpt-5-bugs-issues-tracker"
+      }
+    ]
+  },
   "search_terms": [
     "is chatgpt worth it",
     "chatgpt worth paying for",

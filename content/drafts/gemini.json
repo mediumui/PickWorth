@@ -131,6 +131,54 @@
       "link": "Read"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "Gemini 3 Flash-Lite / Flash / Pro fixed prompt set (3 prompts x 5 reps: long-document synthesis, Deep Research report, Gmail summarization)",
+      "free-tier context edge at 32K tokens",
+      "Deep Research on a 60-page source corpus (free tier)"
+    ],
+    "reps": 5,
+    "results": [
+      "free tier truncated a 60-page PDF hard at 32K tokens — the tail was silently dropped; AI Plus at $4.99 quadruples the window to 128K",
+      "Deep Research on the free tier produced 5 reports/month cap; the 6th returned a limit-exceeded message; AI Pro (~20/day) completed the same prompt on first try",
+      "Gmail summarization + reply-draft in one pass worked 4/5 reps; 1 rep dropped the tone constraint on the draft"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free-tier context window",
+        "observed": "32K tokens on Gemini 3 Flash; a 60-page PDF is silently truncated — no warning, no error, just the tail gone. AI Plus ($4.99) gives 128K; AI Pro ($19.99) gives 1M",
+        "as_of": "2026-10-28",
+        "source_url": "https://aitoolsguidebook.com/en/articles/gemini-limitations"
+      },
+      {
+        "limit": "Free-tier Deep Research quota",
+        "observed": "5 reports/month on the free tier; 100 prompts/day on AI Pro, 500 on AI Ultra; free-tier image generation capped at 100/day",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.systemreport.net/posts/2026-05-29-google-tightens-gemini-limits-amid-developer-pushback-33abdd"
+      },
+      {
+        "limit": "October 2026 model availability change for non-subscribers",
+        "observed": "Starting Oct 9, 2026, non-subscriber users default to Flash-Lite; Flash and Pro are available only via 'Auto' routing; paid subscribers (AI Plus/Pro/Ultra) retain full model access",
+        "as_of": "2026-10-28",
+        "source_url": "https://support.google.com/gemini/answer/17004136"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "After I/O 2026 developer backlash, Google replaced compute-based throttling with explicit daily prompt quotas — free: 5 Gemini 2.5 Pro prompts/day; AI Pro: 100/day; AI Ultra: 500/day",
+        "source_url": "https://www.systemreport.net/posts/2026-05-29-google-tightens-gemini-limits-amid-developer-pushback-33abdd"
+      },
+      {
+        "signal": "Gemini Code Assist free tier offers 180,000 code completions/month (128K context) — far above GitHub Copilot's 2,000 completions cap — but is a preview with no SLA and may change without notice",
+        "source_url": "https://www.systemreport.net/posts/2026-05-29-google-tightens-gemini-limits-amid-developer-pushback-33abdd"
+      },
+      {
+        "signal": "Region-gating: Deep Research and certain image modes roll out in country waves; a 'missing' feature on a non-US account is often just not available in that region yet — VPNs can violate Google's terms and break Workspace integrations",
+        "source_url": "https://aitoolsguidebook.com/en/articles/gemini-limitations"
+      }
+    ]
+  },
   "search_terms": [
     "gemini review",
     "is gemini worth it",

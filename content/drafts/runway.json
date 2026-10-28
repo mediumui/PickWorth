@@ -139,6 +139,54 @@
       "link": "Browse"
     }
   ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set (text-to-video, image-to-video, character consistency across scenes)",
+      "free tier: 125 one-time credits with watermark",
+      "Standard $12/mo: 625 credits (~125 seconds of 4K video)"
+    ],
+    "reps": 5,
+    "results": [
+      "Gen-4 consistency is the standout — character and scene identity hold across clips better than rivals; Motion Brush 3.0 gives creative control no competitor matches",
+      "10-second ceiling means anything longer requires chaining clips; 16-second max is the most restrictive among major competitors",
+      "no native audio — requires a separate sound-design workflow"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Credit burn",
+        "observed": "a 10-clip project burns 600-1,200 credits; Standard's 625 credits are gone in one afternoon of retries",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.gotoolradar.com/2026/06/is-runway-gen-4-best-ai-video-tool-of.html"
+      },
+      {
+        "limit": "No rollover, no refunds",
+        "observed": "unused credits expire at the end of each billing cycle; Trustpilot reviews report refund requests frequently denied even for failed renders",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.gotoolradar.com/2026/06/is-runway-gen-4-best-ai-video-tool-of.html"
+      },
+      {
+        "limit": "Prompt accuracy",
+        "observed": "Gen-4 ignores parts of prompts, adds unrequested motion, or shifts details that should stay consistent; the control-tooling layer (Motion Brush, Director mode) helps but does not eliminate the problem",
+        "as_of": "2026-10-28",
+        "source_url": "https://www.gotoolradar.com/2026/06/is-runway-gen-4-best-ai-video-tool-of.html"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "The 'Unlimited' plan is in practice capped at 2,250 credits/month; billing-complaint reviews describe $200+ spend with no usable output — 'credit scam' is the recurring Trustpilot label",
+        "source_url": "https://www.gotoolradar.com/2026/06/is-runway-gen-4-best-ai-video-tool-of.html"
+      },
+      {
+        "signal": "Motion Brush earns the most specific praise (e.g. 'make the water flow but keep the mountains static'), but character consistency still fails on long sequences",
+        "source_url": "https://vidwave.ai/best-ai-video-generator-reddit-recommends-1-pick-shocked-me"
+      },
+      {
+        "signal": "The full toolkit (Aleph + Motion Brush + camera control) is the strongest reason to pick Runway over pure generation tools; the persistent caveat is that credit costs compound quickly at enterprise scale",
+        "source_url": "https://www.gotoolradar.com/2026/06/is-runway-gen-4-best-ai-video-tool-of.html"
+      }
+    ]
+  },
   "search_terms": [
     "runway review",
     "runway ml pricing",

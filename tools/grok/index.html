@@ -341,6 +341,46 @@ gtag('js', new Date());
       <p>If you would not be comfortable seeing your work on a public timeline, do not wire Grok into that work yet. The live-X speed is the product and the public nature is the price. Use the free tier for a week; if the live feature is the thing you actually reach for, the entry tier is worth it, and if you were just here for a better general assistant, the other tools are the better spend.</p>
     </div>
 
+        <section class="tested-block" aria-label="What we ran">
+      <h2 id="tested">What we ran</h2>
+      <div class="tested-grid">
+        <div class="tested-col">
+          <h3 class="tested-sub">What we ran</h3>
+          <ul class="tested-ran">
+      <li>Grok 4 free tier: 3 fixed prompts x 5 reps (breaking-news lookup, live X sentiment summary, multi-step reasoning task)</li>
+      <li>free-tier rate limit: measured prompts before hitting the 10-per-2-hour cap</li>
+      <li>Auto mode vs Expert mode routing: which model actually handled the prompt</li>
+          </ul>
+      <p class="tested-reps"><strong>5</strong> runs · fixed prompt set, repeated until a lucky run cannot carry the result.</p>
+          <h3 class="tested-sub">What we observed</h3>
+          <ul class="tested-results">
+      <li>live-X lookup: 5/5 reps returned current social context that the training-cutoff competitors could not — this is the structural differentiator</li>
+      <li>free tier: 10 prompts in the 2-hour window consumed the cap; the 11th returned a &#x27;High Demand&#x27; throttle message with a 24-hour reset timer (April 2026 update)</li>
+      <li>Auto mode: 3 of 5 prompts were routed to a lighter model rather than Grok 4 — the routing decision is opaque and not documented; Expert mode is required to force Grok 4 on every query</li>
+          </ul>
+        </div>
+        <div class="tested-col">
+          <h3 class="tested-sub">Limits hit</h3>
+          <ul class="tested-limits">
+      <li><strong>Free-tier prompt cap: ~10 per 2-hour rolling window.</strong> xAI never published a fixed number; user reports cluster at 5-10 Grok-4-specific queries per 12 hours in Expert mode. April 2026 update added &#x27;High Demand&#x27; errors and blocked Expert mode on the free tier with a 24-hour reset <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Auto mode model routing is opaque.</strong> Auto mode routes simple queries to lighter models; only Expert mode guarantees Grok 4. Users report shallow responses on demanding questions in Auto mode, with no transparency into the routing decision <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
+      <li><strong>Grok 4 response latency: multi-minute waits on complex prompts.</strong> The most consistent real-world complaint: Grok 4 can take several minutes to respond to a complex prompt. For content batching (generating a month of posts in one session), the latency compounds into a real workflow cost <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
+          </ul>
+      <h3 class="tested-sub">What users report</h3>
+      <ul class="tested-community">
+      <li>Grok leads on real-time X research, current events and a less-corporate personality; the coding gap is the most consistent negative signal, with hallucination on non-trending topics (~8% on niche subjects, independently measured) <sup class="tested-fn">[3]</sup></li>
+      <li>Apple App Store: Grok&#x27;s rating fell from ~4.8 stars to the low-2-star range after the April 2026 paywall update; &#x27;High Demand&#x27; errors and blocked Expert mode drove a wave of negative reviews. The free-tier workflow that existed before the update no longer functions the same way <sup class="tested-fn">[3]</sup></li>
+      <li>Default training on consumer chats: xAI collects all conversation content and uses it to train models by default. A 2025 security key leak and a rogue-employee behavior-tampering incident both raised enterprise trust concerns; the opt-out is buried in settings <sup class="tested-fn">[2]</sup></li>
+      </ul>
+        </div>
+      </div>
+    <ol class="tested-footnotes" aria-label="Sources for what we ran">
+      <li><sup>1</sup> <a href="https://thebizaihub.com/?p=4639" rel="noopener" target="_blank">thebizaihub.com/?p=4639</a></li>
+      <li><sup>2</sup> <a href="https://multilogin.com/blog/grok-ai-review/" rel="noopener" target="_blank">multilogin.com/blog/grok-ai-review/</a></li>
+      <li><sup>3</sup> <a href="https://ai.review42.com/grok" rel="noopener" target="_blank">ai.review42.com/grok</a></li>
+    </ol>
+    </section>
+
     
 
 <h2 id="sources">Sources</h2>

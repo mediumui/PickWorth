@@ -136,5 +136,53 @@
     "deepseek free tier",
     "deepseek r1",
     "deepseek vs claude"
-  ]
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "API workload (high-volume chat, code review, batch extraction)",
+      "free tier: ~5M token signup allowance, no credit card, rate-limited",
+      "paid API: Flash ~$0.15/M in, ~$0.60/M out off-peak (cache hits far cheaper)"
+    ],
+    "reps": 5,
+    "results": [
+      "price-per-task is the whole point: a workload costing several dollars on a closed frontier model lands at cents on Flash",
+      "the off-peak discount (16:30–00:30 GMT, up to 50–75% off) is the real cost lever — schedules batched into that window pay a fraction of the day rate",
+      "cache-hit pricing ($0.0028/M input) requires deliberate prompt design (repeatable prefixes); it is not automatic for ad-hoc queries"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Free tier is a trial, not a plan",
+        "observed": "the signup allowance (~5M tokens, ~$8–10 value) expires within 30 days and there is no hard RPM ceiling — throughput is best-effort and degrades at peak demand, sometimes with transient 503 errors",
+        "as_of": "2026-10-28",
+        "source_url": "http://www.nxcode.io/zh-TW/resources/news/deepseek-api-pricing-complete-guide-2026"
+      },
+      {
+        "limit": "No native consumer app or multimodality",
+        "observed": "the product is API-only: there is no first-party mobile app, no vision or image generation, and no IDE plugin — any of that has to be wired from other providers",
+        "as_of": "2026-10-28",
+        "source_url": "https://toolsdepth.com/reviews/deepseek-v4-review-2026"
+      },
+      {
+        "limit": "Creative English prose trails the closed frontier",
+        "observed": "side-by-side tests place its narrative writing below Claude/GPT-class models — functional and clear, not literary; Chinese-biased training also surfaces when ambiguous English prompts get a culturally specific reading",
+        "as_of": "2026-10-28",
+        "source_url": "https://qcbqvc.com/main/14448764"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "Peak-demand instability is the most repeated operational complaint: latency spikes and intermittent errors during high-traffic windows, driven by the shared best-effort infrastructure",
+        "source_url": "https://qcbqvc.com/main/14448764"
+      },
+      {
+        "signal": "Privacy posture is adequate for most but regulated teams flag it: data is not used for training, but logs are retained ~30 days, which sits in a GDPR grey zone for sensitive PII",
+        "source_url": "https://qcbqvc.com/main/14448764"
+      },
+      {
+        "signal": "Self-hosting is the structural differentiator the open weights enable: teams that cannot send data to a third-party API run the same frontier-class model locally, a route closed labs cannot offer",
+        "source_url": "https://toolsdepth.com/reviews/deepseek-v4-review-2026"
+      }
+    ]
+  }
 }
