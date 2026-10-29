@@ -1,0 +1,149 @@
+{
+ "slug": "firefly",
+ "type": "review",
+ "section": "tools",
+ "answer": "Adobe Firefly is the commercially-safe option in AI generation: it trains on licensed and public-domain material, gives you content credentials and IP indemnification on enterprise plans, and plugs straight into Photoshop and the Creative Cloud. It is the right call for business and client work where copyright matters, and a step behind Midjourney on pure artistic range.",
+ "key_answers": [
+  [
+   "What is Firefly?",
+   "Firefly is Adobe's generative platform for images, video, audio and vectors, available as a standalone web app and baked into Photoshop, Illustrator and the rest of Creative Cloud. It also bundles third-party models, so you can pick the right one per job from one login."
+  ],
+  [
+   "What makes it different from Midjourney?",
+   "Commercial safety. Firefly is trained on licensed and public-domain content, attaches content credentials to outputs, and offers IP indemnification on enterprise plans. That is the whole pitch: if a generated image ever lands in a real product or ad, Adobe's posture is the one a business can defend."
+  ],
+  [
+   "What is it good at?",
+   "Business imagery: product shots, marketing assets, brand-consistent content, and Generative Fill and Expand inside Photoshop. For teams already in Creative Cloud it is effectively free, and the credit system is shared across the Adobe apps rather than locked to one."
+  ],
+  [
+   "Where does it slip?",
+   "Artistic range. Firefly's output is clean, well-composed and conservative, where Midjourney reaches further and stranger. The free tier is thin (a small one-time credit pool, watermarked), and generation is slower than the standalone rivals. Text inside images can still come out garbled, and its video work trails the dedicated video tools."
+  ],
+  [
+   "What does it cost?",
+   "Free, then a ladder of tiers: a cheap entry plan with a few thousand generative credits, a mid plan that bundles web and mobile Photoshop, a higher plan with ten thousand credits, and a premium plan with fifty thousand and unlimited video-model access. Standard image and vector generation is unlimited on every paid tier; the credits cover video, audio and partner models."
+  ],
+  [
+   "Is it free?",
+   "Yes, with a limited free tier of daily generations and a small starter credit pool, watermarked. It is enough to test whether the style fits your work before you pay. Regular or commercial use needs a paid plan."
+  ],
+  [
+   "Does PickWorth take money from Adobe?",
+   "No. This review is written by a single editorial team; tier and credit details were verified against Adobe's own pages. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "Adobe Firefly Review: The Commercially Safe Pick, Not the Most Creative One",
+  "desc": "Adobe Firefly review: the commercially-safe option in AI generation. Where it leads for business and client work, what the credit system actually covers, and how it stacks against Midjourney.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Review",
+   "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "Adobe Firefly",
+    "applicationCategory": "MultimediaApplication",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Adobe"
+    }
+   },
+   "url": "https://www.pickworth.top/tools/firefly/",
+   "datePublished": "2026-10-29",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.0",
+    "bestRating": "5"
+   },
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   }
+  }
+ },
+ "head": {
+  "kicker": "Tool review",
+  "h1": "Firefly review: safe for the client, not the artist",
+  "lead": "<p class=\"lead\">Adobe's generative platform leads on commercial safety, with licensed training data, content credentials and IP indemnification, and it is free for anyone already in Creative Cloud. Where it is the right tool for business work, and where it trails Midjourney on creative range.</p>",
+  "date": "29 October 2026",
+  "name": "Adobe Firefly",
+  "score": "4.0",
+  "score_class": "good",
+  "score_label": "Our score"
+ },
+ "toc": [
+  [
+   "what",
+   "What it is"
+  ],
+  [
+   "good",
+   "What it is good at"
+  ],
+  [
+   "limits",
+   "Where it slips"
+  ],
+  [
+   "pricing",
+   "Plans and what each unlocks"
+  ],
+  [
+   "verdict",
+   "Verdict"
+  ]
+ ],
+ "verdict": "<p>Firefly is the right answer when the output is going somewhere a lawyer would look. Trained on licensed and public-domain material, with content credentials on the results and IP indemnification on enterprise plans, it is the only option in this category a business can defend if a generated asset ever lands in a real campaign. It is also the free move for anyone already paying for Creative Cloud, and the cleanest integration in the Adobe apps. The deduction is creative ceiling: it is cleaner, more conservative and safer than the best at artistic range, and its free tier is thin enough that a regular creator will be paying quickly. Pick it for commercial work, pick Midjourney for the work that needs to be striking.</p>",
+ "body": "<h2 id=\"what\">What it is</h2>\n    <p>Firefly is Adobe's generative platform for images, video, audio and vectors. It lives as a standalone web app and is the engine behind the AI features inside Photoshop, Illustrator and Express, so you can use it without opening a single Creative Cloud app, or from the ones you already use. A single login also reaches partner models, so you can choose which one fits the job rather than being locked to Adobe's own.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <p>The whole product is built around one idea that matters for business: safety. Firefly is trained on licensed and public-domain content, and it attaches content credentials to its outputs, which is the provenance layer that matters when a generated asset goes to a client or into an ad. Enterprise plans add IP indemnification, where Adobe takes legal responsibility for generated commercial content, a feature no rival in the standalone category offers. For the Adobe ecosystem it is the natural tool: Generative Fill and Expand inside Photoshop, vector generation in Illustrator, and a credit pool that works across the apps instead of being stranded in one. For teams already on Creative Cloud, Firefly is effectively a free feature on top of what they already pay for.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>Where it slips is range, not reliability. Independent comparisons are consistent that Firefly is cleaner, more conservative and more predictable, where Midjourney reaches further on painterly and highly stylized work. If your job is a brand-safe marketing image, that conservatism is a feature; if your job is a striking piece of art, it is a ceiling. The free tier is also thin, a small one-time credit pool that does not refresh, with watermarked output, so it is an evaluation, not a studio. Generation is slower than the dedicated rivals, text inside images can still come out garbled, and its video work, while present, does not match the tool built specifically for video. Credits also reset each month and do not roll over, so a heavy month can leave you waiting on the next cycle.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>What it gives you</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>Limited daily generations and a small starter credit pool; watermarked output</td></tr>\n        <tr><td>Standard</td><td>~$10 / month</td><td>Unlimited standard image and vector generation, plus a few thousand generative credits for video, audio and partner models</td></tr>\n        <tr><td>Pro</td><td>~$20 / month</td><td>Double the credits, plus web and mobile Photoshop and Adobe Express Premium</td></tr>\n        <tr><td>Pro Plus</td><td>~$50 / month</td><td>Ten thousand credits and the same app bundle</td></tr>\n        <tr><td>Premium</td><td>~$200 / month</td><td>Fifty thousand credits and unlimited video-model access, aimed at teams producing at volume</td></tr>\n      </tbody>\n    </table>\n    <p>Verified against Adobe's Firefly pages on 29 October 2026. The structure is worth keeping straight: every paid plan includes unlimited standard image and vector generation, and the credits you buy are spent on the premium features, video, audio and partner models. If you are already paying for a Creative Cloud subscription, your credits are bundled in, which changes the whole cost picture.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Firefly is the call for work that has to be defensible. The commercial safety, the content credentials and the enterprise indemnification make it the only option in the category a business can put in front of a client without a second thought, and for the Adobe user it is free on top of the subscription. It is not the tool for the work that has to be striking or artistically unusual, and its free tier is not a real studio. Pick it on the licensing question, not the style question: if safety is the requirement, it wins, and if range is the requirement, it is the second tool behind the one that goes further.</p>",
+ "sources": [
+  "Adobe, Firefly plans — https://www.adobe.com/cc-shared/fragments/products/firefly/plans/faq"
+ ],
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/midjourney/",
+   "title": "Midjourney review",
+   "blurb": "The artist's pick, where Firefly trails.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/gemini/",
+   "title": "Gemini review",
+   "blurb": "A partner model you can reach inside Firefly.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Guide",
+   "tag_class": "",
+   "href": "lists/best-image-generation-tools/",
+   "title": "Best AI image generation tools in 2026",
+   "blurb": "Where Firefly sits in the image field.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "tools/",
+   "title": "All tool reviews",
+   "blurb": "Every tool we have tested, alone.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "adobe firefly review",
+  "firefly pricing",
+  "is firefly free",
+  "firefly vs midjourney",
+  "firefly commercial use safe",
+  "firefly generative credits",
+  "firefly ip indemnification",
+  "adobe firefly 2026"
+ ]
+}

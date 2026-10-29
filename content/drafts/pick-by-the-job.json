@@ -1,0 +1,60 @@
+{
+  "slug": "pick-by-the-job",
+  "type": "blog",
+  "section": "blog",
+  "answer": "A leaderboard of AI tools is almost always wrong, because the tools at the top are solving different problems. The right ordering is by the specific job you are doing — a general question, a refactor, a citation, a styled image — and the tool that wins that job is often not the one that wins the others. The ranking that is true for one job is false for every other job on the same list.",
+  "key_answers": [
+    [
+      "Why are 'best AI tool' leaderboards misleading?",
+      "Because they put tools doing different jobs on one scale and force a single winner. The tool that wins research with citations loses the refactor that a dedicated coding agent does better. A ranking that is true for one job is false for the others."
+    ],
+    [
+      "How should I actually choose between two strong tools?",
+      "Name the specific, recurring job first, then ask which tool is built for that shape of work and what its hard limit is. The limit you will never hit is what the choice should be built around."
+    ],
+    [
+      "Does 'higher rated' mean 'better for me'?",
+      "No. A rating is an average over the reviewers' jobs. If the job you care about is a minority of what those reviewers did, your experience of the tool is likely the outlier, not the average."
+    ]
+  ],
+  "meta": {
+    "title": "Why No 'Best AI Tool' List Is Ever Wrong About You",
+    "desc": "Leaderboards put tools doing different jobs on one scale and force a winner. How to pick by the job you actually do, not by a number that averages away your use case.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Pick by the Job, Not the Leaderboard",
+      "url": "https://www.pickworth.top/blog/pick-by-the-job/",
+      "datePublished": "2026-10-29",
+      "author": {"@type": "Organization", "name": "PickWorth Editorial"}
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "Pick by the job, not the leaderboard",
+    "lead": "<p class=\"lead\">A single ranking of AI tools is a single number averaged over jobs you do not do. The pick that wins your actual task is usually not the one that tops the list.</p>",
+    "date": "29 October 2026",
+    "name": "Pick by the job"
+  },
+  "toc": [
+    ["the-fault", "What the leaderboard gets wrong"],
+    ["the-move", "Name the job first"],
+    ["the-limit", "The limit you will never hit"],
+    ["the-average", "Why a rating is not your rating"]
+  ],
+  "verdict": "<p>The leaderboard is not wrong about the tools; it is wrong about you, because it cannot know the job you are doing. The fix is to invert the question. Stop asking which tool is best and start asking which tool is built for this specific, recurring shape of work — and which one has the hard limit you will never reach. Pick around that limit, and the ranking that looked false in one column becomes true in the one that matters to you.</p>",
+  "body": "<h2 id=\"the-fault\">What the leaderboard gets wrong</h2>\n<p>A leaderboard has to put tools on one scale, and to do that it has to pretend they are doing the same job. They are not. A research answer engine that cites its sources and a coding agent that refactors a repository are solving two different problems, and the ranking that orders them is ordering two different questions into one answer. Whatever tool the list puts first is the winner of some blend of jobs, and that blend is almost never the blend you actually work in. The number is a compromise that satisfies no one's specific case, including yours.</p>\n\n<h2 id=\"the-move\">Name the job first</h2>\n<p>The move is to put the tool out of the question for a moment and name the task that keeps coming back. Not \"I need a good AI,\" but \"every week I draft four client emails from a call transcript,\" or \"I maintain two repositories and the rename-and-update work eats a morning.\" The recurring shape of the job is the only input the choice needs. Two people can be right and opposite at the same time — one picking the research tool, the other the coding agent — because they named different jobs, not because one of them is mistaken about the leaderboard.</p>\n\n<h2 id=\"the-limit\">The limit you will never hit</h2>\n<p>Once the job is named, the decision is usually about the limit, not the capability. Capabilities blur between strong tools; limits do not. A 30-minute meeting cap, a 400-minute storage ceiling, a watermark on export, a 1024-pixel resolution — one of these is the wall you will or will not walk into. The right tool is the one whose wall is farther from your job than any competitor's. If your job never approaches the 30-minute meeting cap, that cap is irrelevant, and a cheaper tool with it is the better buy.</p>\n\n<h2 id=\"the-average\">Why a rating is not your rating</h2>\n<p>A star rating is an average over the jobs the reviewers did, not the job you do. If the review panel mostly tested the tool for long-form writing and your job is short, technical edits, you are living in the tail of their distribution and the average says nothing about you. The rating is a useful tie-breaker between two tools that both fit your job; it is not a substitute for checking that the job fits. Invert the question, and the leaderboard stops being a verdict about you and becomes what it was all along — someone else's compromise.</p>",
+  "related": [
+    {"icon": "i-method", "tag": "Method", "tag_class": "teal", "href": "blog/how-we-test-ai-tools/", "title": "How we test AI tools", "blurb": "Three prompts, repeated until a lucky run cannot win.", "link": "Read"},
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "", "href": "lists/best-ai-coding-tools/", "title": "Best AI coding tools", "blurb": "Four jobs, not one list — the split made concrete.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "blog/", "title": "The Journal", "blurb": "Every note from the desk.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "how to choose ai tool",
+    "best ai tool ranking wrong",
+    "pick ai tool by use case",
+    "ai leaderboard misleading",
+    "which ai tool for my job",
+    "ai tool rating not accurate"
+  ]
+}

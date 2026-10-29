@@ -1,0 +1,149 @@
+{
+ "slug": "codex",
+ "type": "review",
+ "section": "tools",
+ "answer": "Codex is OpenAI's software engineering agent that runs tasks in cloud sandboxes and opens pull requests, and it is bundled into every ChatGPT plan, so most people already have it. For a developer who codes a few evenings a week it is the right first tool; for all-day coding the standalone Claude Code is still the stronger agent.",
+ "key_answers": [
+  [
+   "What is Codex?",
+   "Codex is OpenAI's coding agent. It reads your repo, runs commands, and makes changes in a cloud sandbox or your terminal, then opens a pull request when the task is done. It is not a chatbot that pastes code — it is a program that works a task across several steps."
+  ],
+  [
+   "Do I have to pay separately for it?",
+   "No, and that is its biggest practical point. Codex usage ships inside every ChatGPT plan: limited on Free, more on the $8 Go tier, a useful amount on $20 Plus, and the most on Pro. Teams can also buy Codex-only seats that bill by token use instead of a fixed seat."
+  ],
+  [
+   "What is it actually good at?",
+   "The distribution story: queue several well-scoped tasks in parallel, collect pull requests as they finish, and stay inside the OpenAI stack you already use. For a developer who already pays for ChatGPT, it is the lowest-friction way to delegate a batch of small-to-medium coding jobs without adding a second subscription."
+  ],
+  [
+   "Where does it fall short?",
+   "Headroom. Plan limits hit quickly on Plus and below, so a long agentic session can stall mid-work, and the per-plan allowance is an estimate, not a promise. It is also less terminal-heavy than Claude Code for developers who want to live in the CLI, and it is locked to OpenAI's own models with no self-hosted or third-party option."
+  ],
+  [
+   "How does it compare to Claude Code?",
+   "On the public agent leaderboards Claude Code with its top model leads the board; Codex sits a few points behind, which is a real gap but not a chasm. For most Plus subscribers the sensible move is to use the Codex that is already in the plan, and only add a dedicated agent when daily coding starts hitting that ceiling."
+  ],
+  [
+   "What is the pricing, really?",
+   "There is no separate Codex price on OpenAI's consumer page — it is a usage allowance inside the plan you already buy. For teams, a Codex-only seat has no fixed seat fee and bills by token consumption, which is the clearer cost model when a few people use it hard and most do not."
+  ],
+  [
+   "Does PickWorth take money from OpenAI?",
+   "No. This review is written by a single editorial team; limits and pricing were verified against OpenAI's own pages. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "OpenAI Codex Review: It Ships With the ChatGPT You Already Pay For",
+  "desc": "OpenAI Codex review: the coding agent bundled into every ChatGPT plan. What it does well, why the limits bite on Plus, and when to reach for a dedicated agent instead.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Review",
+   "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "OpenAI Codex",
+    "applicationCategory": "DeveloperApplication",
+    "publisher": {
+     "@type": "Organization",
+     "name": "OpenAI"
+    }
+   },
+   "url": "https://www.pickworth.top/tools/codex/",
+   "datePublished": "2026-10-29",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.2",
+    "bestRating": "5"
+   },
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   }
+  }
+ },
+ "head": {
+  "kicker": "Tool review",
+  "h1": "Codex review: it is already in your plan",
+  "lead": "<p class=\"lead\">OpenAI's coding agent runs a task across several steps in a cloud sandbox and hands you a pull request. The reason most developers have never heard of it: it is bundled into every ChatGPT tier, so the thing you are deciding to buy may already be sitting in the account you pay for.</p>",
+  "date": "29 October 2026",
+  "name": "OpenAI Codex",
+  "score": "4.2",
+  "score_class": "good",
+  "score_label": "Our score"
+ },
+ "toc": [
+  [
+   "what",
+   "What it is"
+  ],
+  [
+   "good",
+   "What it is good at"
+  ],
+  [
+   "limits",
+   "Where it slips"
+  ],
+  [
+   "pricing",
+   "Plans and what each unlocks"
+  ],
+  [
+   "verdict",
+   "Verdict"
+  ]
+ ],
+ "verdict": "<p>Codex earns its score almost entirely on distribution: it is a serious coding agent, but the thing that decides whether you use it is not capability, it is that it is already inside the ChatGPT plan most developers subscribe to. For a developer who codes a few evenings a week, it is the right first tool, and the cost is effectively zero. The deduction is headroom: the usage allowance on Plus and below is an estimate that a long agentic session can outgrow, and for all-day professional coding the standalone Claude Code is the stronger agent on the public boards. The honest call: use what is in your plan first, and only buy a second tool when a specific kind of work starts hurting.</p>",
+ "body": "<h2 id=\"what\">What it is</h2>\n    <p>Codex is OpenAI's software engineering agent. Point it at a task and it reads the relevant code, runs commands in a network-isolated cloud sandbox or your own terminal, edits files across steps, and opens a pull request when it is done. You can hand it a batch of independent jobs and collect the results as each one finishes, which suits a queue of well-scoped changes better than a single deep refactor. It ships as a CLI, an IDE extension, and a desktop app, and it pairs with the rest of the OpenAI ecosystem that its users tend to already run.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <p>The reason to care is that it does not cost anything extra for most people. Codex is bundled into every consumer ChatGPT plan, so the millions who already pay for the assistant get a coding agent without a second bill. Inside that, the strength is throughput: queue several tasks in parallel, let the cloud sandboxes work through them, and open the pull requests as they land. It handles prototyping, small-to-medium refactors, test writing and debugging well, and its context-aware reasoning across multiple files is what reviewers consistently praise. For a team standardized on the OpenAI stack, it is the low-friction way to add coding automation without a new tool to manage.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>The limits are the story, and they are about headroom rather than quality. On Plus and the tiers below it, the usage allowance is a rolling estimate, and heavy agentic sessions reach it quickly, which interrupts work at exactly the moment you least want it. The allowance is not a fixed message count — a long task with lots of context and tool calls burns it faster than a short one, so the same plan covers a wide range of real work. It is also less hands-on-terminal than Claude Code for developers who live in the CLI, and it runs only on OpenAI's own models, so you cannot plug in a third-party or self-hosted model the way the dedicated agents let you. On the public agent leaderboards it trails the leading agent by a few points, a gap that shows up on the hardest tasks and not at all on everyday work.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>What Codex gives you</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>Limited Codex access, enough for the occasional task</td></tr>\n        <tr><td>Go</td><td>$8 / month</td><td>Lightweight coding tasks, more usage than Free</td></tr>\n        <tr><td>Plus</td><td>$20 / month</td><td>A few focused coding sessions a week; the tier OpenAI pitches for most people</td></tr>\n        <tr><td>Pro</td><td>From $100 / month</td><td>Multiple-usage tiers, the most headroom, no five-hour limit on the top tiers</td></tr>\n        <tr><td>Business</td><td>$20 / user / month annual</td><td>Codex-only seats that bill by token use instead of a fixed seat; admin controls, no training on your data</td></tr>\n        <tr><td>Enterprise</td><td>Custom</td><td>Everything above plus shared credit pools and no fixed rate limits</td></tr>\n      </tbody>\n    </table>\n    <p>Verified against OpenAI's pricing page on 29 October 2026. The one line that matters most: there is no standalone Codex subscription on the consumer side. You buy the plan, and the coding allowance comes with it. OpenAI has also offered temporary usage credits to businesses that add a Codex-only seat, which is a promotion to re-check rather than a standing price.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>For the majority of developers the answer is the boring one: do not buy anything new. If you already pay for ChatGPT Plus, you own a legitimate coding agent, and the right move is to actually use it on a real task before you spend a dollar on a second tool. The deduction is for the heavy end of the market, where the allowance on the consumer tiers is a ceiling and the dedicated agent, Claude Code with its top model, is measurably stronger on the hardest boards. That is a $20-plus decision, not a $40 one, and it is the only scenario where adding a second tool is worth it.</p>",
+ "sources": [
+  "OpenAI, Codex pricing for teams — https://openai.com/index/codex-flexible-pricing-for-teams/"
+ ],
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/chatgpt/",
+   "title": "ChatGPT review",
+   "blurb": "The assistant Codex is bundled into.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/claude/",
+   "title": "Claude review",
+   "blurb": "The home of Claude Code, the rival agent.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/github-copilot/",
+   "title": "GitHub Copilot review",
+   "blurb": "The other coding agent most teams already have.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "tools/",
+   "title": "All tool reviews",
+   "blurb": "Every tool we have tested, alone.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "openai codex review",
+  "codex vs claude code",
+  "is codex included in chatgpt plus",
+  "codex pricing",
+  "codex coding agent limits",
+  "codex cli",
+  "codex cloud sandbox",
+  "openai codex 2026"
+ ]
+}

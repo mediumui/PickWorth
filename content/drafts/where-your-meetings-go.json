@@ -1,0 +1,61 @@
+{
+  "slug": "where-your-meetings-go",
+  "type": "blog",
+  "section": "blog",
+  "answer": "An AI meeting assistant is a data decision wearing a productivity costume. The two questions that matter are not 'is it accurate' but 'does a bot that visibly joins the call break your clients' trust' and 'where does the recording live after I cancel'. The tool that best answers those two questions is the one to pay for, even if its transcription is a step behind a rival's.",
+  "key_answers": [
+    [
+      "Do AI meeting bots break client trust?",
+      "A bot that joins a call as a visible participant is a trust and etiquette problem, especially in client-facing work. The capture tools that record from your own device instead of joining the call remove that problem — and that difference is often the deciding factor over raw accuracy."
+    ],
+    [
+      "Where does my recording actually live?",
+      "On the vendor's cloud, usually with retention and deletion settings on the paid tiers and fewer guarantees on free ones. Before you rely on it, read the retention policy and whether you can delete or export your own recordings. The data is more durable — and more exposed — than most people assume."
+    ],
+    [
+      "What do the security certifications mean?",
+      "SOC 2 and HIPAA flags mark tiers that meet specific audit and compliance standards. They are the difference between 'the vendor is careful' and 'the vendor is contractually accountable.' For regulated work, the tier that carries the certification is the one to buy, regardless of the sticker."
+    ]
+  ],
+  "meta": {
+    "title": "Your Meetings Are a Data Decision, Not a Productivity One",
+    "desc": "The two questions an AI meeting assistant actually raises: does the bot break client trust, and where does the recording live after you cancel? Why privacy can outrank accuracy in the pick.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Where Your Meetings Go",
+      "url": "https://www.pickworth.top/blog/where-your-meetings-go/",
+      "datePublished": "2026-10-29",
+      "author": {"@type": "Organization", "name": "PickWorth Editorial"}
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "Where your meetings go",
+    "lead": "<p class=\"lead\">Every AI notetaker you adopt is a data decision in disguise. The accuracy is the least important line on the sheet. Two other lines are what you actually signed up for.</p>",
+    "date": "29 October 2026",
+    "name": "Where your meetings go"
+  },
+  "toc": [
+    ["the-costume", "Productivity costume, data decision"],
+    ["the-bot", "The bot question"],
+    ["the-cloud", "The cloud question"],
+    ["the-tick", "The certification tick"]
+  ],
+  "verdict": "<p>Accuracy is the line that sells the tool; trust and retention are the lines you actually live with. A bot that visibly joins a client call is an etiquette problem no accuracy rating fixes, and a recording that lives on the vendor's cloud long after you cancel is an exposure you agreed to by subscribing. Read the retention policy and the deletion rights before you buy, and buy the tier that carries the certification when your work is regulated. The tool that best answers the trust and the data questions is the one to pay for — sometimes even when its transcription trails a rival's.</p>",
+  "body": "<h2 id=\"the-costume\">Productivity costume, data decision</h2>\n<p>The marketing for meeting assistants is about time saved: the summary that writes itself, the action items that populate before you finish the sentence. But the decision you are actually making is a data one. The tool is collecting the most sensitive content you produce — the conversations that describe deals, disputes and people — and storing it somewhere, under terms you have to read to understand. The productivity is the benefit; the data handling is the cost. Most buyers weigh only the first of the two.</p>\n\n<h2 id=\"the-bot\">The bot question</h2>\n<p>Many notetakers join your call as a named participant — a visible bot in the video grid, sometimes announcing itself at the start of the meeting. In an internal team that is a small thing. In client-facing or legal-adjacent work it is the whole objection: a recorder everyone can see, in a room where not everyone has consented to one. The alternative is the bot-free tool that captures from your own device audio instead of joining the call, which removes the visible participant and most of the etiquette problem. When the meetings are client work, that single difference can outweigh a rival's more accurate transcript, because a more accurate transcript of a call nobody wanted recorded is still a call nobody wanted recorded.</p>\n\n<h2 id=\"the-cloud\">The cloud question</h2>\n<p>The recording does not end when the meeting does. It lands on the vendor's cloud, and from there the questions are retention and exit. How long does the vendor keep it? Can you delete it, or export it, or both? Free tiers usually offer the least control — limited storage, limited history, deletion tied to the account. Paid tiers add retention settings and deletion rights, and the enterprise tiers add audit controls and custom data-retention periods. The honest default assumption is that the data outlives the meeting and is more exposed than the demo suggests. Read the policy that governs that afterlife before you build a workflow that depends on it.</p>\n\n<h2 id=\"the-tick\">The certification tick</h2>\n<p>For regulated work — health, legal, enterprise procurement — the markers that matter are the certifications: SOC 2 for audited controls, HIPAA compliance where applicable. They are not marketing; they are the tier where the vendor is contractually accountable rather than merely careful. The practical test is to find which tiers carry the certification and buy the one that does, even if the sticker is higher. A cheaper tier that cannot meet your compliance bar is not a saving; it is a disqualification. The two data questions — the bot and the cloud — plus the certification tick, are the whole decision, and accuracy is the least of them.</p>",
+  "related": [
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "", "href": "lists/best-ai-meeting-assistants/", "title": "Best AI meeting assistants", "blurb": "The meeting tools, ranked — and where the privacy line sits.", "link": "Read"},
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "teal", "href": "lists/best-ai-note-taking-apps/", "title": "Best AI note-taking apps", "blurb": "The knowledge side, with the same data questions behind it.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "blog/", "title": "The Journal", "blurb": "Every note from the desk.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "ai meeting notes privacy",
+    "is ai notetaker safe",
+    "meeting bot consent",
+    "where does fireflies store data",
+    "otter data retention",
+    "hipaa compliant meeting notes",
+    "ai notetaker data security"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "the-free-tier-you-ignore",
+  "type": "blog",
+  "section": "blog",
+  "answer": "The most common overpay in AI tools is paying for a paid tier of the very tool whose free plan already does the job. Before you upgrade a subscription, run the free tier for two real weeks and write down the exact limit that blocked you — if you cannot name it, you were paying for comfort, not for work.",
+  "key_answers": [
+    [
+      "When should I actually upgrade from a free plan?",
+      "Only when you can name the specific limit that blocked a real task — a credit cap, a resolution, a commercial-rights clause, a length limit. If the limit is 'I would like it to be easier,' that is comfort, not a reason."
+    ],
+    [
+      "Is the free tier good enough?",
+      "For most people, yes, on most days. The free tiers of the major tools refill monthly and cover the everyday mix. Paid tiers exist for the moments the free cap genuinely bites: volume, commercial use, or a feature only the paid tier ships."
+    ],
+    [
+      "Which limits are real and which are imagined?",
+      "Real: a hard ceiling on minutes, credits, or characters that you demonstrably hit. Imagined: 'the paid one has better models,' which only matters when you are doing the kind of work that actually reaches for the ceiling."
+    ]
+  ],
+  "meta": {
+    "title": "You Are Already Paying for the Tool You Keep Using for Free",
+    "desc": "The quiet overpay in AI tool spending: upgrading a subscription when the free tier already does the job. How to test whether a paid tier is actually buying you anything before you renew.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Free Tier You Ignore",
+      "url": "https://www.pickworth.top/blog/the-free-tier-you-ignore/",
+      "datePublished": "2026-10-29",
+      "author": {"@type": "Organization", "name": "PickWorth Editorial"}
+    }
+  },
+  "head": {
+    "kicker": "Method",
+    "h1": "The free tier you ignore",
+    "lead": "<p class=\"lead\">Before a renewal, run the free tier of the tool you are about to pay for — and write down the one limit that stopped a real task. Most of the time you will not be able to.</p>",
+    "date": "29 October 2026",
+    "name": "The free tier you ignore"
+  },
+  "toc": [
+    ["the-slip", "How the slip happens"],
+    ["the-test", "The two-week limit test"],
+    ["real-vs-imagined", "Real limits and imagined ones"],
+    ["the-exception", "When paying is the right call"]
+  ],
+  "verdict": "<p>The upgrade you do not need is the one you cannot defend. Run the free tier for two real weeks, and write the blocking limit in a single sentence — \"my free credits ran out on week three,\" not \"I like the paid one better.\" If the sentence names a number you hit, the paid tier is worth it. If it names a feeling, you were paying for comfort. Most people are one honest sentence away from canceling a subscription they did not need.</p>",
+  "body": "<h2 id=\"the-slip\">How the slip happens</h2>\n<p>The overpay is subtle because the tool is genuinely good. You start on the free tier, it does the daily mix, and one bad week — a credit cap, a watermarked export, a queue during a spike — lands at exactly the moment you needed it. The memory of that one bad week outlives the fact that it is one week a month, not a week a day. Two or three of those moments and the renewal feels like the obvious answer, when it is usually a rounding error in your actual usage.</p>\n\n<h2 id=\"the-test\">The two-week limit test</h2>\n<p>The test is one sentence, and it has to name a number. For two weeks before a renewal, work on the free tier and, every time you hit a wall, write down the exact limit — how many credits you have left, what resolution you got, which export failed. At the end of the fortnight, read the list back. If the sentence is \"I hit the monthly character cap on day nineteen,\" the paid tier is buying you something real. If the sentence is \"I would just like it to be faster,\" you are paying for comfort, and the free tier is the tool you actually use.</p>\n\n<h2 id=\"real-vs-imagined\">Real limits and imagined ones</h2>\n<p>Real limits are ceilings you demonstrably reach: a hard cap on minutes or characters, a watermark on an export, a resolution too low for the deliverable, or a commercial-rights clause that blocks monetized use. Imagined limits are the rest — the \"paid has better models\" reasoning only matters when the work genuinely reaches for the top of the free ceiling, which for most people it does not, most days. The tell is time: an imagined limit is something you say once and never measure; a real one is something you can point to in your own notes.</p>\n\n<h2 id=\"the-exception\">When paying is the right call</h2>\n<p>Paying is right when the sentence is concrete and recurring. A creator who renders a narration a day and hits the free TTS ceiling every second day is not paying for comfort; the cap is doing real work against them. A team producing on-brand content at scale whose free tier will not hold the volume is the same story. The filter is the sentence, not the brand. When the blocking limit is named, dated, and repeated, the renewal is the cheaper option against the cost of not having it.</p>",
+  "related": [
+    {"icon": "i-method", "tag": "Method", "tag_class": "teal", "href": "blog/why-prices-move/", "title": "Why AI tool prices move", "blurb": "The repricing arc behind every price change.", "link": "Read"},
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "", "href": "lists/best-ai-text-to-speech/", "title": "Best AI text-to-speech", "blurb": "Where the free ceiling actually is, tool by tool.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "blog/", "title": "The Journal", "blurb": "Every note from the desk.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "free ai tier worth it",
+    "when to upgrade ai subscription",
+    "ai free plan limits",
+    "cancel ai subscription",
+    "is paid ai worth it",
+    "ai tool free tier enough"
+  ]
+}

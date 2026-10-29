@@ -1,0 +1,142 @@
+{
+ "slug": "claude-code-vs-deepseek",
+ "type": "compare",
+ "section": "comparisons",
+ "answer": "They answer the question from opposite ends. Claude Code is the deeper closed agent, better at the hard, multi-step work, with the richest configuration surface. DeepSeek is the open, self-hostable model, a fraction of the cost per token, and the one you can run inside your own perimeter. For the hard job, Claude Code; for the cost line or the compliance one, DeepSeek.",
+ "key_answers": [
+  [
+   "Claude Code or DeepSeek, which should I pick?",
+   "Claude Code for the complex, high-value task where getting it right matters more than the bill. DeepSeek when cost per token is the constraint, or when the model has to run inside your own network."
+  ],
+  [
+   "Which one is better at hard coding?",
+   "Claude Code, and the gap is the gap between a managed agent and a raw model. It is the deeper reasoning across many files, the most programmable harness anyone ships, and the piece that turns a vague task into a working one."
+  ],
+  [
+   "Which one is cheaper?",
+   "DeepSeek, by an order of magnitude, and that is the entire argument. At the API level it costs a small fraction of the equivalent call on the other side, which is the reason it is the move for high-volume work or a product that makes many calls a day."
+  ],
+  [
+   "Can I self-host it?",
+   "DeepSeek, yes, that is its defining feature, the open weights, a permissive license, and you can run it on your own infrastructure. Claude Code's model is not, you buy access to it, you do not own it."
+  ],
+  [
+   "Which one is safer on privacy?",
+   "The one you can self-host, which is the reason DeepSeek is the answer when the code cannot leave the building. The other one runs on a vendor's service, which is fine for most work and a hard no for a compliance rule."
+  ],
+  [
+   "Does PickWorth take money from Anthropic or DeepSeek?",
+   "No. Reviews are written by a single editorial team, and pricing is verified from each vendor's official pages. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "Claude Code vs DeepSeek: The Deep Agent Against the Cheap Model",
+  "desc": "Claude Code vs DeepSeek in 2026: the deeper closed agent that handles the hard work, against the open model that costs a fraction and runs on your own hardware. Where each one wins, and how to route between them.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Article",
+   "headline": "Claude Code vs DeepSeek (2026): Managed Against Open",
+   "url": "https://www.pickworth.top/comparisons/claude-code-vs-deepseek/",
+   "datePublished": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   },
+   "mainEntity": {
+    "@type": "ItemList",
+    "name": "Claude Code vs DeepSeek",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Claude Code"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "DeepSeek"
+     }
+    ]
+   }
+  }
+ },
+ "head": {
+  "kicker": "Head-to-head",
+  "h1": "Claude Code vs DeepSeek",
+  "lead": "<p class=\"lead\">One is the deepest agent you can buy, the other is the cheapest one you can run on your own hardware. The comparison is not between two products doing the same job, it is between a managed capability and an open lever, and the answer is almost entirely about which constraint is the hard one.</p>",
+  "date": "29 October 2026",
+  "name": "Claude Code vs DeepSeek",
+  "score": "4.5",
+  "score_class": "good",
+  "score_label": "Claude Code score"
+ },
+ "toc": [
+  [
+   "compare",
+   "Side-by-side"
+  ],
+  [
+   "win",
+   "Where Claude Code wins"
+  ],
+  [
+   "lose",
+   "Where DeepSeek wins"
+  ],
+  [
+   "cost",
+   "The cost question"
+  ],
+  [
+   "scenarios",
+   "Pick by constraint"
+  ]
+ ],
+ "verdict": "<p>These two are at opposite ends of the category, and the comparison only makes sense once you stop looking for a single winner. Claude Code is the deeper tool, it reasons across more of your codebase at once, it follows a multi-step constraint more literally, and it is the most programmable agent anyone ships, which is the reason it is the pick for the genuinely hard task. DeepSeek is the cheaper and more flexible one, open weights, a permissive license, self-hostable, and a fraction of the cost per token, which is the reason it is the pick for the high-volume work or the one that has to stay inside the building. The answer is the constraint, not the leaderboard.</p>",
+ "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>Claude Code</th>\n          <th>DeepSeek</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>What it is</td><td>A managed coding agent on a closed model</td><td>An open-weights model you can run anywhere</td></tr>\n        <tr><td>Reasoning depth</td><td class=\"good\">Deeper on the hard, multi-file work</td><td>Strong, competitive on well-defined tasks</td></tr>\n        <tr><td>Model ownership</td><td>You rent it</td><td class=\"good\">It is open, you can self-host it</td></tr>\n        <tr><td>Cost per token</td><td class=\"good\">The reference price</td><td class=\"good\">A fraction of it, an order of magnitude lower</td></tr>\n        <tr><td>Agentic harness</td><td class=\"good\">The deepest: hooks, subagents, dynamic workflows</td><td>The model, plus a growing open harness</td></tr>\n        <tr><td>Privacy</td><td>Runs on the vendor's service</td><td class=\"good\">Self-hostable inside your own perimeter</td></tr>\n        <tr><td>Best for</td><td>The hard, high-value task</td><td class=\"good\">The cost line and the compliance one</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where Claude Code wins</h2>\n    <p>Claude Code wins on the task where getting it right matters more than the bill, and that is the value of a managed agent. It reasons across more of your codebase at once, which is the specific reason it is the tool for a large-codebase refactor or an ambiguous bug, and its harness is the most programmable in the set, with a deep hook system, subagents and a workflow feature that fans a single task out across many parallel agents. It follows a long, multi-step constraint more literally than a raw model does, which is the difference on the work that has to come out right the first time. If the task is the hard one and the cost is not the constraint, this is the tool, and the cost of that is a subscription to a capability you do not own.</p>\n\n    <h2 id=\"lose\">Where DeepSeek wins</h2>\n    <p>DeepSeek wins on the two things that decide most of the enterprise conversation, cost and control. The cost is the headline, at the API level it is a small fraction of the equivalent call on the other side, which is the reason it is the move for a product that makes hundreds or thousands of calls a day, or for a team whose bill has to stay under a line. The control is the second win, and it is the one that matters for the compliance rule. The model is open weights under a permissive license, so it can run on your own infrastructure, inside your own network, and the code never leaves the building, which is the answer the other one cannot give you. The trade is that you get the model, and the agent layer around it is younger and less complete than the mature managed one.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>The whole comparison is the meter, and the meter is the argument. Claude Code is priced as a subscription to a managed capability, and the cost is a fixed monthly line against a reference token price. DeepSeek is priced as a commodity, and the cost is a fraction of that reference per token, so the gap compounds with volume. For a developer who does a handful of tasks a week, the subscription is the simpler math. For a product that makes many calls a day, the per-token math flips, and the cheaper model pays for itself against the volume. The one cost that is not on either invoice is the control cost, which is the reason the self-hostable option is the answer when a contract clause or a compliance officer decides the model has to stay in the perimeter.</p>\n\n    <h2 id=\"scenarios\">Pick by constraint</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>If the constraint is…</th><th>Pick</th><th>Why</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>The task is the hard, high-value one</td><td><strong>Claude Code</strong></td><td>The deeper agent is worth it here</td></tr>\n        <tr><td>Cost per token is the constraint</td><td><strong>DeepSeek</strong></td><td>The order-of-magnitude gap compounds with volume</td></tr>\n        <tr><td>The code cannot leave the building</td><td><strong>DeepSeek</strong></td><td>The self-hostable, open-weights answer</td></tr>\n        <tr><td>You need the richest agent behavior</td><td><strong>Claude Code</strong></td><td>The most programmable harness in the set</td></tr>\n        <tr><td>You are routing high-volume calls</td><td><strong>DeepSeek</strong></td><td>The cheaper engine for the routine work</td></tr>\n        <tr><td>Not sure yet</td><td><strong>Run the cheap one on the volume</strong></td><td>Let DeepSeek handle the routine, spend the hard one on what it stumbles on</td></tr>\n      </tbody>\n    </table>\n\n    <div class=\"callout\">\n      <h3>Two ends of the same stack</h3>\n      <p>The setup the cost-conscious and the compliance-driven teams describe is not a choice, it is a split. DeepSeek handles the high-volume routine work and the work that has to stay in the perimeter, and the managed agent handles the hard task where the quality of the result justifies the bill. The route is the decision, and the route is free to set.</p>\n    </div>",
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/claude/",
+   "title": "Claude review",
+   "blurb": "The home of the managed agent.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/deepseek/",
+   "title": "DeepSeek review",
+   "blurb": "The open model, on its own.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Comparison",
+   "tag_class": "",
+   "href": "comparisons/claude-code-vs-codex/",
+   "title": "Claude Code vs Codex",
+   "blurb": "The two managed agents against each other.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "comparisons/",
+   "title": "All comparisons",
+   "blurb": "Every head-to-head we have published.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "claude code vs deepseek",
+  "deepseek vs claude for coding",
+  "deepseek coding cheaper",
+  "self hosted coding model",
+  "claude code or deepseek"
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "slug": "grok-vs-gemini",
+ "type": "compare",
+ "section": "comparisons",
+ "answer": "They are not the same product and the comparison hides that. Grok is a specialist: real-time social context from the X firehose and a less filtered personality, at a lower price. Gemini is the broader productivity assistant, stronger on long documents, the bigger context window and the deep Google Workspace integration. For most professional work, Gemini is the wider tool; Grok is the pick for the specific job that needs live social signal.",
+ "key_answers": [
+  [
+   "Grok or Gemini, which should I pick?",
+   "Gemini for the work that lives in Google, research, long documents and multimodal tasks. Grok for the specific job that needs live social context and real-time signal, or for the less filtered tone."
+  ],
+  [
+   "Which has the real-time advantage?",
+   "Grok, decisively, and it is a structural advantage. It sits on the live firehose of a social platform, so it is the only one of the two that can tell you what is happening on it right now. That is a moat no rival has, and the reason social teams and journalists pick it."
+  ],
+  [
+   "Which has the bigger context window?",
+   "Gemini, by a wide margin, and it is the reason the tool is the one to reach for on a very long document, a large codebase or a multi-file research task."
+  ],
+  [
+   "Which one is safer to deploy in a business?",
+   "Gemini, and the gap is more than a preference. The other one carries a public record of content-safety concerns and active regulatory scrutiny across multiple jurisdictions, which is a real procurement risk for a regulated team, not a footnote."
+  ],
+  [
+   "Which is cheaper?",
+   "Grok, clearly, at the token level and on the subscription, and it also uses fewer tokens per task. That is its second advantage next to the real-time one, and it is the reason it is the pick for high-volume agentic work on a budget."
+  ],
+  [
+   "Does PickWorth take money from xAI or Google?",
+   "No. Reviews are written by a single editorial team, and pricing is verified against each vendor's own pages. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "Grok vs Gemini: The Live Signal Against the Whole Toolkit",
+  "desc": "Grok vs Gemini in 2026: Grok is the real-time social specialist and the cheaper per-token pick, Gemini is the broader assistant with the bigger context and the Google Workspace integration. Where each one actually wins.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Article",
+   "headline": "Grok vs Gemini (2026): Specialist Against Generalist",
+   "url": "https://www.pickworth.top/comparisons/grok-vs-gemini/",
+   "datePublished": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   },
+   "mainEntity": {
+    "@type": "ItemList",
+    "name": "Grok vs Gemini",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Grok"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gemini"
+     }
+    ]
+   }
+  }
+ },
+ "head": {
+  "kicker": "Head-to-head",
+  "h1": "Grok vs Gemini",
+  "lead": "<p class=\"lead\">One is a specialist with a live feed nobody else has. The other is the generalist with the bigger context and the deeper integration. The comparison is not a fight for the same job, it is a fight for two different ones, and the choice is about which job you have.</p>",
+  "date": "29 October 2026",
+  "name": "Grok vs Gemini",
+  "score": "4.0",
+  "score_class": "good",
+  "score_label": "Gemini score"
+ },
+ "toc": [
+  [
+   "compare",
+   "Side-by-side"
+  ],
+  [
+   "win",
+   "Where Grok wins"
+  ],
+  [
+   "lose",
+   "Where Gemini wins"
+  ],
+  [
+   "cost",
+   "The cost question"
+  ],
+  [
+   "scenarios",
+   "Pick by job"
+  ]
+ ],
+ "verdict": "<p>The reason these two keep getting compared is that they are not the same kind of tool, and pricing them against each other hides that. Grok is a specialist, its whole case is that it sits on a live social feed and moves fast on the current, and it is also the cheaper one to run. Gemini is the broader assistant, stronger on long documents, the larger context window, the multimodal depth and the Google Workspace integration, and it is the lower-risk choice for a business that has to deploy it somewhere. The answer is the job, not the leaderboard. If the job needs the live signal, Grok. If the job is the wider work, Gemini.</p>",
+ "body": "<h2 id=\"compare\">Side-by-side</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr>\n          <th></th>\n          <th>Grok</th>\n          <th>Gemini</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr><td>What it is</td><td>A real-time social specialist</td><td>The broader productivity assistant</td></tr>\n        <tr><td>Real-time context</td><td class=\"good\">Live social firehose, the structural moat</td><td>Web search, but not the live social feed</td></tr>\n        <tr><td>Context window</td><td class=\"good\">Large</td><td class=\"good\">Larger: the longest in class</td></tr>\n        <tr><td>Multimodal depth</td><td>Strong</td><td class=\"good\">Deeper across image, audio and video</td></tr>\n        <tr><td>Ecosystem integration</td><td>Only social</td><td class=\"good\">The whole workspace, mail, docs, sheets and video calls</td></tr>\n        <tr><td>Tone</td><td class=\"good\">More direct, fewer filters</td><td>Measured, more safety caveats</td></tr>\n        <tr><td>Cost per task</td><td class=\"good\">Cheaper, and fewer tokens</td><td>Higher per token</td></tr>\n        <tr><td>Business safety posture</td><td>Active regulatory scrutiny, a real risk</td><td class=\"good\">The lower-risk choice for a regulated team</td></tr>\n        <tr><td>Best for</td><td>The job that needs the live signal</td><td class=\"good\">The wider professional work</td></tr>\n      </tbody>\n    </table>\n\n    <h2 id=\"win\">Where Grok wins</h2>\n    <p>Grok wins on two things, and one of them is the one no one else can give you. The live feed is the structural advantage, a tool that sits on the real-time social stream can tell you what is happening on it right now, which is the exact reason a social team, a journalist or a news-adjacent business picks it. The information lag is the cost of not having that feed, and it is the moat. The second win is economy, where Grok is cheaper on the token bill and uses fewer tokens per task at the same level of intelligence, which is the reason it is the pick for high-volume agentic work on a budget. The third is the tone, a more direct, less filtered conversation that is a deliberate design choice and the reason it is the pick for the user who finds the rival too guarded.</p>\n\n    <h2 id=\"lose\">Where Gemini wins</h2>\n    <p>Gemini wins on the work that is not the live feed, and that is most of it. It has the larger context window, which is the specific reason it is the tool to reach for on a very long document, a large codebase or a research task that spans a lot of material. Its multimodal depth is broader across image, audio and video, and its integration is the one that matters for most professional work, running inside the mail, the docs, the sheets and the video calls, which is the killer feature for anyone whose life is in that workspace. The last and quietest advantage is risk. Grok carries a public record of content-safety concerns and active regulatory scrutiny across several jurisdictions, which is not a footnote for a team that has to deploy a tool in a regulated setting. On the broader, safer, more capable job, Gemini is the wider tool.</p>\n\n    <h2 id=\"cost\">The cost question</h2>\n    <p>The cost story is Grok's, and it is worth stating plainly because it is the reason the budget-conscious and the high-volume users land on it. On the token price, Grok is cheaper, and it uses fewer tokens per task at the same level of intelligence, which means the real bill for a heavy run is even lower than the per-token gap suggests. Gemini is the wider tool, and the wider tool is the pricier one. The subscription gap is smaller than it looks, and the free tier on the generalist is more generous, which is the reason most people start there. The one cost that is not on the invoice, and the one that matters for a business, is the procurement risk, where the other tool's content-safety record is a real item on the risk register.</p>\n\n    <h2 id=\"scenarios\">Pick by job</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>If your work is…</th><th>Pick</th><th>Why</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Monitoring a live social conversation in real time</td><td><strong>Grok</strong></td><td>The only one of the two on the live feed</td></tr>\n        <tr><td>Journalism, PR or news-adjacent work</td><td><strong>Grok</strong></td><td>The real-time signal is the whole job</td></tr>\n        <tr><td>High-volume agentic work on a budget</td><td><strong>Grok</strong></td><td>Cheaper per token and fewer tokens per task</td></tr>\n        <tr><td>A very long document or a large codebase</td><td><strong>Gemini</strong></td><td>The larger context window holds it</td></tr>\n        <tr><td>Work that lives in the Google workspace</td><td><strong>Gemini</strong></td><td>The integration is the reason to pick it</td></tr>\n        <tr><td>A deployment a regulated team has to defend</td><td><strong>Gemini</strong></td><td>The lower-risk posture</td></tr>\n      </tbody>\n    </table>\n\n    <div class=\"callout\">\n      <h3>The two are not the same job</h3>\n      <p>Buying one to replace the other is the mistake. Grok is the specialist on the live signal and the cheaper engine, and Gemini is the broader, safer, more capable generalist. If you only have the one, the answer is the job you do most. If the two jobs are both real, the setup is to route the live-signal work to the specialist and the wider work to the generalist, which is the split the people who run both describe.</p>\n    </div>",
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/grok/",
+   "title": "Grok review",
+   "blurb": "The specialist, on its own.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/gemini/",
+   "title": "Gemini review",
+   "blurb": "The generalist, on its own.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Comparison",
+   "tag_class": "",
+   "href": "comparisons/chatgpt-vs-gemini/",
+   "title": "ChatGPT vs Gemini",
+   "blurb": "The wider assistant against the Google one.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "comparisons/",
+   "title": "All comparisons",
+   "blurb": "Every head-to-head we have published.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "grok vs gemini",
+  "grok or gemini",
+  "which is better grok gemini",
+  "grok vs gemini coding",
+  "grok real time vs gemini"
+ ]
+}

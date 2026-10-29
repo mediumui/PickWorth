@@ -1,0 +1,150 @@
+{
+ "slug": "v0",
+ "type": "review",
+ "section": "tools",
+ "answer": "v0 is Vercel's prompt-to-UI builder: describe an interface or upload a screenshot and it generates production-ready React and Next.js with TypeScript, Tailwind and shadcn/ui, and deploys to Vercel in one click. It is the fastest 0-to-1 path for frontend work, but it is not a full-stack builder — database, auth and backend logic come from elsewhere.",
+ "key_answers": [
+  [
+   "What is v0?",
+   "v0 is Vercel's chat-based app builder. Give it a description, a screenshot, or a Figma frame and it plans the task, generates React and Next.js code (TypeScript by default, shadcn/ui and Tailwind for styling), and can connect to a database and deploy to Vercel. It works in the browser and has an iOS app."
+  ],
+  [
+   "What is it good at?",
+   "Frontend scaffolding. It produces some of the cleanest component code in the builder category — proper types, accessible markup, modern Tailwind — and the Vercel integration makes deploy a single click. For a landing page, a dashboard, a prototype, or design-to-code from a mockup, it is the fastest route to something that runs."
+  ],
+  [
+   "Where does it fall short?",
+   "It is frontend-first. It will not hand you a working database, authentication or backend logic out of the box, so anything beyond static UI needs Supabase or Neon or your own API layer. The generated code leans hard on the Vercel and Next.js stack, so a non-Next project fights the tool, and the credit meter burns fast on iterative sessions."
+  ],
+  [
+   "What does it cost?",
+   "Free gives you $5 of credits a month plus a small daily allowance, enough to build a real demo. Paid tiers are credit-based: a ~$20 personal plan, a ~$30 team plan, and a ~$100 business plan, each with a monthly credit pool you can top up. Unused monthly credits do not roll over indefinitely, so match the tier to real usage."
+  ],
+  [
+   "v0 or Lovable / Bolt?",
+   "v0 when the job is clean frontend React on the Vercel stack and you want one-click deploy. Lovable or Bolt when you need a complete app — database, auth and backend — from a single prompt. Many teams use v0 for the front end and pair it with a backend service."
+  ],
+  [
+   "Is it free?",
+   "Yes, with a usable free tier: $5 in monthly credits and a daily credit on login, no card needed. That is enough to evaluate it on a real feature before paying. The paid tiers are where it becomes a daily driver."
+  ],
+  [
+   "Does PickWorth take money from Vercel?",
+   "No. This review is written by a single editorial team; plan and credit details were verified against Vercel's own pricing and docs pages. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "Vercel v0 Review: Cleanest React in the Category, Until You Need a Database",
+  "desc": "Vercel v0 review: the fastest 0-to-1 path from a prompt or screenshot to deployable React and Next.js. Where it wins on clean frontend, where it needs a backend, and what the credit system really costs.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Review",
+   "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "Vercel v0",
+    "applicationCategory": "DeveloperApplication",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Vercel"
+    }
+   },
+   "url": "https://www.pickworth.top/tools/v0/",
+   "datePublished": "2026-10-29",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.0",
+    "bestRating": "5"
+   },
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   }
+  }
+ },
+ "head": {
+  "kicker": "Tool review",
+  "h1": "v0 review: clean React, no database",
+  "lead": "<p class=\"lead\">Vercel's builder turns a description or a screenshot into React and Next.js that actually ships, with TypeScript, accessible markup and a one-click deploy. Where it leads with the cleanest frontend code in the category, and where it stops being a full-stack tool the moment you need a database.</p>",
+  "date": "29 October 2026",
+  "name": "Vercel v0",
+  "score": "4.0",
+  "score_class": "good",
+  "score_label": "Our score"
+ },
+ "toc": [
+  [
+   "what",
+   "What it is"
+  ],
+  [
+   "good",
+   "What it is good at"
+  ],
+  [
+   "limits",
+   "Where it slips"
+  ],
+  [
+   "pricing",
+   "Plans and what each unlocks"
+  ],
+  [
+   "verdict",
+   "Verdict"
+  ]
+ ],
+ "verdict": "<p>v0 is the strongest answer in the AI-builder category if your job is frontend: it produces some of the cleanest React and Next.js code available, the Vercel deploy is genuinely one click, and the free tier is real enough to build a working demo before you pay. The deduction is scope, not quality. It will not give you a database, an auth flow or backend logic for free, and its output leans so heavily on the Next.js and Vercel stack that a different project will fight it. Pair it with a backend service and it is an excellent daily driver; buy it expecting a full app from a single prompt and it is the wrong tool.</p>",
+ "body": "<h2 id=\"what\">What it is</h2>\n    <p>v0 is Vercel's prompt-to-app builder. Describe what you want, or drop in a screenshot or a Figma frame, and it plans the work, generates React and Next.js with TypeScript by default and shadcn/ui and Tailwind for the visual layer, and can wire up a database and deploy to Vercel without you touching a terminal. It runs in the browser and has an iOS app, so you can prompt, preview and iterate on a phone. It is not a general coding editor; it is a purpose-built path from idea or design to a deployable web front end.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <p>The cleanest output in the builder set is v0's defining trait. Independent reviews keep landing on the same point: the generated code is standards-compliant, properly typed, and accessible in a way that the flashier competitors are not, which means the thing it hands you is a codebase you are not embarrassed to keep. The Vercel integration is the second strength: a single publish puts the app live on enterprise-grade infrastructure, with no setup. For landing pages, dashboards, internal tools, prototypes and design-to-code from a mockup, that combination is the fastest 0-to-1 path available, and the free tier is enough to prove a real feature before you spend anything.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>The limits are about scope. v0 is frontend-first: it will scaffold the data layer, but it will not stand up your database, your authentication or your backend logic. For anything past a static UI you bring in Supabase, Neon or your own API, and the moment you do, the clean-React advantage stops being a complete product. The code also assumes a Vercel-and-Next.js stack, so a project built on another framework or another component library will find the output needs rework. And the meter matters: generations are billed against a credit pool, and iterative sessions that keep regenerating a screen burn it fast, so a plan that looks affordable at purchase can run out mid-project. Vercel also notes that a ChatGPT subscription can cover some of the underlying model calls, but image work and agent steps still draw on v0's own credits.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>What it unlocks</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>$5 of monthly credits plus a small daily allowance; enough to build a working demo</td></tr>\n        <tr><td>Premium</td><td>~$20 / month</td><td>A personal power-user tier with a monthly credit pool and no daily message cap; being wound down for new signups in favour of Plus</td></tr>\n        <tr><td>Plus</td><td>~$30 / user / month</td><td>Team collaboration, shared projects and a shared credit pool, with a per-user monthly allowance</td></tr>\n        <tr><td>Business</td><td>~$100 / user / month</td><td>Privacy-focused: data is not used for training, centralized billing and priority access</td></tr>\n        <tr><td>Enterprise</td><td>Custom</td><td>SAML SSO, RBAC, centralized billing and advanced data controls</td></tr>\n      </tbody>\n    </table>\n    <p>Verified against Vercel's pricing and docs on 29 October 2026; v0 revises tiers, and the docs mark the standalone Premium tier as sunset, so re-check the live page before you commit. The number that matters for most people is the free $5 a month: it is a genuine evaluation, not a teaser.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>v0 is the tool to reach for when the job is a clean front end on the Vercel stack and you want it live fast. The free tier earns its place by being usable, the code quality is the category's best, and the deploy story is real. The call it forces on you is honest scoping: if you are building a page, a dashboard or a prototype, it is the strongest choice; if you are building a full application that needs a database and auth from one prompt, that is the job for a complete builder, and v0 is the layer that does the interface part of it.</p>",
+ "sources": [
+  "Vercel, v0 pricing — https://vercel.com/docs/v0/pricing"
+ ],
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/cursor/",
+   "title": "Cursor review",
+   "blurb": "The editor you move to after v0 scaffolds.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/chatgpt/",
+   "title": "ChatGPT review",
+   "blurb": "The assistant whose plan can cover v0's model calls.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Guide",
+   "tag_class": "",
+   "href": "lists/best-ai-coding-tools/",
+   "title": "Best AI coding tools in 2026",
+   "blurb": "Where v0 sits among the builders and editors.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "tools/",
+   "title": "All tool reviews",
+   "blurb": "Every tool we have tested, alone.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "vercel v0 review",
+  "v0 pricing",
+  "is v0 free",
+  "v0 vs cursor",
+  "v0 vs lovable",
+  "v0 vs bolt",
+  "v0 ai ui generator",
+  "v0 react next js",
+  "v0 credit limits"
+ ]
+}

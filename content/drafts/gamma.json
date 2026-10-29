@@ -1,0 +1,140 @@
+{
+ "slug": "gamma",
+ "type": "review",
+ "section": "tools",
+ "answer": "Gamma is the fastest way from a blank page to a polished presentation, and it also makes websites, documents and social posts from the same prompt. It is the right tool for people who ship decks in minutes and would otherwise not ship them at all, and the wrong tool for anyone who needs pixel-perfect PowerPoint, offline editing or strict brand control.",
+ "key_answers": [
+  [
+   "What is Gamma?",
+   "Gamma is an AI design platform that turns a prompt into a presentation, a website, a document or a social post, in a card-based scrollable format. It routes between a panel of image and text models from several vendors behind one subscription, and it exports to PowerPoint, PDF, PNG and Google Slides."
+  ],
+  [
+   "What is it good at?",
+   "Speed-to-output. A polished deck in under a minute, with data visualizations and a clean card layout that looks designed without anyone touching a template. The agent that turns an uploaded document or a URL into a structured deck is the single most cited reason to switch, and it also makes a simple website or a social carousel from the same prompt, so it is a broader tool than a slide deck."
+  ],
+  [
+   "Where does it slip?",
+   "Pixel-level control. Gamma is engineered for speed, not precision: it does not let you set exact type scales or reposition elements freely, the card format does not map to 16:9 slides, and PowerPoint exports have a well-documented habit of breaking text and images out of position, which means manual cleanup before anything client-facing. The AI text also defaults to formulaic phrasing and occasionally presents outdated facts as current, so every number needs a check."
+  ],
+  [
+   "What does it cost?",
+   "A free plan with a one-time credit pool, roughly eight to ten presentations, then a paid ladder from about $8 a month on annual billing up to a $90 tier. The numbers move with billing cycle, so re-check the live page; the structure is free, one tier that removes the watermark, a tier that adds custom branding and the API, and a top tier for the biggest model access."
+  ],
+  [
+   "Is it free?",
+   "Yes, but the free plan is a one-time starter credit pool that does not refresh. It is enough to make a handful of real decks before you decide to pay, and you can earn extra credits by inviting people to sign up. It is not a free studio, it is a generous trial."
+  ],
+  [
+   "Can I use it in PowerPoint?",
+   "You can import an existing deck and export back to PowerPoint or Google Slides. The export is where the formatting risk lives: the card format is web-native, so a file headed into a boardroom often needs a pass of manual fixes."
+  ],
+  [
+   "Does PickWorth take money from Gamma?",
+   "No. This review is written by a single editorial team; plan and credit details were verified against Gamma's own pricing page, with third-party reviews used for the export and control signals. Nothing on this page is sponsored."
+  ]
+ ],
+ "meta": {
+  "title": "Gamma Review: The Fastest Deck in Sixty Seconds, Not the Last Word",
+  "desc": "Gamma review: the fastest way from a blank page to a polished presentation, website or document. Where it wins on speed, where the card format and PowerPoint export cost you, and what the free tier really covers.",
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Review",
+   "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "Gamma",
+    "applicationCategory": "BusinessApplication",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Gamma"
+    }
+   },
+   "url": "https://www.pickworth.top/tools/gamma/",
+   "datePublished": "2026-10-29",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.0",
+    "bestRating": "5"
+   },
+   "author": {
+    "@type": "Organization",
+    "name": "PickWorth Editorial"
+   }
+  }
+ },
+ "head": {
+  "kicker": "Tool review",
+  "h1": "Gamma review: a deck in a minute, not the last word",
+  "lead": "<p class=\"lead\">The fastest path from a blank page to a polished presentation, and it also makes websites, documents and social posts from the same prompt. Where it earns its keep in speed, and where the card format and the PowerPoint export make it a draft you have to finish by hand.</p>",
+  "date": "29 October 2026",
+  "name": "Gamma",
+  "score": "4.0",
+  "score_class": "good",
+  "score_label": "Our score"
+ },
+ "toc": [
+  [
+   "what",
+   "What it is"
+  ],
+  [
+   "good",
+   "What it is good at"
+  ],
+  [
+   "limits",
+   "Where it slips"
+  ],
+  [
+   "pricing",
+   "Plans and what each unlocks"
+  ],
+  [
+   "verdict",
+   "Verdict"
+  ]
+ ],
+ "verdict": "<p>Gamma is the tool for people who ship decks, and it is a better tool than it gets credit for, because it is not only a slide deck. It also builds a simple website, a document and a social post from the same prompt, which is more of a tool than a presentation maker. The deduction is that it is a speed machine, not a control machine: no pixel-level type, no free repositioning, a card format that does not map to 16:9, and a PowerPoint export that will need a manual pass before it faces a boardroom. It is the right answer for the first draft and for anything that has to exist today, and it is not the tool for the client-facing final file.</p>",
+ "body": "<h2 id=\"what\">What it is</h2>\n    <p>Gamma is an AI design platform that takes a prompt and returns a finished, designed presentation. It works in a card-based scrollable format rather than a fixed slide grid, and the same engine can also produce a website, a document or a social post from a single prompt, which is what makes it broader than a slide tool. Behind the scenes it routes between a panel of image and text models from several vendors, so you pick the output style and it picks the model. It exports to PowerPoint, PDF, PNG and Google Slides, and on the higher plans it exposes a public API for automation.</p>\n\n    <h2 id=\"good\">What it is good at</h2>\n    <p>Speed is the entire pitch, and it delivers. A polished deck from a blank prompt in under a minute, with data visualizations, a clean layout and a design that reads as intentional even when nobody has touched a template. The agent that converts an uploaded document or a web page into a structured, designed deck is the most-cited reason people switch, because it deletes the manual extraction step that makes the competing tools slow. The same prompt can also produce a one-page website, a visual report or a social carousel, which makes it a legitimate general-purpose design tool rather than a niche slide generator. For a non-designer who would otherwise ship a deck that looks typed, the jump to a designed one is the value.</p>\n\n    <h2 id=\"limits\">Where it slips</h2>\n    <p>It slips on control, on the export, and on the facts. Gamma is engineered for speed, not precision: you cannot set exact type scales or reposition elements freely, the card format does not map to the 16:9 slides a boardroom or an investor expects, and it is cloud-only with no offline mode or native app. The PowerPoint export is the most reported failure: the card format is web-native, so a file headed into a client often has text and images knocked out of position, and users report spending a meaningful chunk of manual time fixing it. The AI text defaults to generic phrasing and has been caught presenting outdated statistics as current data, so every number needs a check before it ships. And the free plan is a one-time pool of credits that does not refresh, which is enough for a handful of decks and then stops.</p>\n\n    <h2 id=\"pricing\">Plans and what each unlocks</h2>\n    <table class=\"compare\">\n      <thead>\n        <tr><th>Tier</th><th>Price</th><th>What it gives you</th></tr>\n      </thead>\n      <tbody>\n        <tr><td>Free</td><td>$0</td><td>A one-time starter credit pool, roughly eight to ten presentations; Gamma branding on exports; no refresh</td></tr>\n        <tr><td>Plus</td><td>~$8 / user / month on annual</td><td>Removes the Gamma branding, monthly credits and a higher card limit; the tier that removes the watermark</td></tr>\n        <tr><td>Pro</td><td>~$15 / user / month on annual</td><td>Custom branding and fonts, detailed analytics, API access and up to ten custom domains</td></tr>\n        <tr><td>Ultra</td><td>~$90 / user / month on annual</td><td>The largest credit pool, the most advanced models including video, and up to a hundred custom domains</td></tr>\n      </tbody>\n    </table>\n    <p>Verified against Gamma's pricing page on 29 October 2026; the exact monthly figures shift with the billing cycle and promotions, so confirm the live page before you commit. The one decision that matters: the free plan is a one-time pool that does not refresh, so its value is in evaluating the tool on a real deck, not in a free forever plan.</p>\n\n    <h2 id=\"verdict\">Verdict</h2>\n    <p>Gamma is the pick for the draft that has to exist today. It is the fastest way to go from a blank page to something that looks designed, it does more than slides, and the free pool is enough to prove that on your own work. It is not the tool for the final, client-facing PowerPoint, for strict brand control or for any workflow that needs offline editing. Use it to get to eighty percent fast, and budget the last twenty percent, the export fixes and the fact-check, as the real cost of using it.</p>",
+ "sources": [
+  "Gamma, Plans and pricing — https://gamma.app/pricing"
+ ],
+ "related": [
+  {
+   "icon": "i-sources",
+   "tag": "Review",
+   "tag_class": "",
+   "href": "tools/notion-ai/",
+   "title": "Notion AI review",
+   "blurb": "The other way to turn content into documents.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Guide",
+   "tag_class": "",
+   "href": "lists/ai-writing-tools/",
+   "title": "Best AI writing tools in 2026",
+   "blurb": "Where the writing and design tools meet.",
+   "link": "Read"
+  },
+  {
+   "icon": "i-sources",
+   "tag": "Index",
+   "tag_class": "plain",
+   "href": "tools/",
+   "title": "All tool reviews",
+   "blurb": "Every tool we have tested, alone.",
+   "link": "Browse"
+  }
+ ],
+ "search_terms": [
+  "gamma review",
+  "gamma pricing",
+  "is gamma free",
+  "gamma ai presentations",
+  "gamma vs powerpoint",
+  "gamma export pptx problems",
+  "gamma credits",
+  "gamma ai website builder"
+ ]
+}

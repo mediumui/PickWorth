@@ -1,0 +1,82 @@
+{
+  "slug": "best-ai-text-to-speech",
+  "type": "list",
+  "section": "lists",
+  "answer": "For the most natural voice at any price, ElevenLabs is the pick — but its free tier is capped, attribution-required and non-commercial, so it earns a paid seat the moment you monetize. For unlimited free volume, Google Cloud TTS is the pick: a recurring free tier of up to 4 million Standard characters a month that never expires. Pick ElevenLabs for quality, Google for volume; the deciding factor is whether the sound or the cost is the constraint.",
+  "key_answers": [
+    [
+      "What are the best AI text-to-speech tools in 2026?",
+      "ElevenLabs for the most natural voice (paid, or free with limits), Google Cloud TTS for the largest recurring free volume, and OpenAI TTS for adding speech to an app that already calls OpenAI."
+    ],
+    [
+      "What is the best free AI text-to-speech?",
+      "On raw quality, ElevenLabs' free tier (about 10,000 characters a month). On volume, Google Cloud TTS gives up to 4 million Standard characters a month, free and recurring — the closest thing to permanently free at scale."
+    ],
+    [
+      "Can I use the free tier commercially?",
+      "No, not on ElevenLabs — the free plan requires attribution and excludes commercial use. Commercial rights start at the paid Starter tier. On Google, commercial use is allowed within the free-quota terms."
+    ],
+    [
+      "How much does ElevenLabs cost?",
+      "Starter is roughly $6 a month, Creator about $22 a month, Pro about $99 a month, all on monthly billing; annual quotes are lower. Free is 10,000 credits a month."
+    ],
+    [
+      "Which is cheapest for high volume?",
+      "Google Cloud TTS Standard at $4 per million characters after the free tier — an order of magnitude below ElevenLabs' per-credit pricing once you are past the free allowance."
+    ]
+  ],
+  "meta": {
+    "title": "ElevenLabs for the Sound, Google for the Volume — 2026 Voice Decided",
+    "desc": "AI text-to-speech ranked by job in 2026: ElevenLabs for natural voices, Google Cloud TTS for free volume, OpenAI TTS for developer convenience. Free tiers, real prices, and the commercial-rights fine print.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Text-to-Speech Tools, 2026",
+      "url": "https://www.pickworth.top/lists/best-ai-text-to-speech/",
+      "datePublished": "2026-10-29",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "ElevenLabs (best natural voice)"},
+        {"@type": "ListItem", "position": 2, "name": "Google Cloud TTS (largest free volume)"},
+        {"@type": "ListItem", "position": 3, "name": "OpenAI TTS (developer convenience)"},
+        {"@type": "ListItem", "position": 4, "name": "Native platform voices (free, for faceless content)"}
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "Best AI text-to-speech in 2026",
+    "lead": "The category splits on one question: is the constraint the sound or the cost? ElevenLabs wins the sound — the most natural prosody and the only major tool where voice cloning is self-serve — but its free tier is small and non-commercial. Google Cloud TTS wins the cost — a recurring free tier of millions of characters a month that never expires. Pick by which of the two is the one that actually bites.",
+    "date": "29 October 2026",
+    "name": "AI text-to-speech",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["landscape", "Sound versus volume"],
+    ["ranking", "The ranking at a glance"],
+    ["elevenlabs", "ElevenLabs: the quality ceiling"],
+    ["google", "Google Cloud TTS: the free volume floor"],
+    ["openai", "OpenAI TTS: the developer convenience"],
+    ["picks", "The picks, by scenario"]
+  ],
+  "verdict": "<p>Pick by the constraint. If the sound is the constraint — narration that should sound like a person, emotional range, or a cloned voice for a personal brand — ElevenLabs is the pick, and it is the pick that earns a paid seat the moment you monetize, because the free tier is attribution-required and non-commercial. If the constraint is cost at volume — a pipeline that needs millions of characters a month — Google Cloud TTS is the pick, with a recurring free tier of up to 4 million Standard characters that never expires and paid rates an order of magnitude below ElevenLabs' per-credit pricing. OpenAI TTS is the convenience pick when the app already calls OpenAI: good-enough voice at near-free prices, no free tier. The two expensive mistakes in this category are treating ElevenLabs' free tier as commercial-safe and paying for volume when a free recurring quota already covers it.</p>",
+  "body": "<h2 id=\"landscape\">Sound versus volume</h2>\n<p>Most of the names in this search are one of two shapes. ElevenLabs is the quality tool: the most natural prosody in the category, a 1,000-voice library, and the only major provider where instant voice cloning is self-serve. Google Cloud TTS is the volume tool: a free tier that resets every month and never expires, millions of characters, and 380+ voices across 50+ languages. OpenAI TTS sits in between — cleaner than the volume tools, clearly below ElevenLabs — and its real value is that it is an API you add to an app that already calls OpenAI. The decision is which constraint actually bites: a sound that has to perform, or a number of characters that has to be cheap.</p>\n\n<h2 id=\"ranking\">The ranking at a glance</h2>\n<p>Free allowances and paid rates from vendor pricing pages as of late 2026. ElevenLabs' paid tiers quote first-month promos; the standard monthly rate is what a steady subscription costs.</p>\n<table class=\"compare\">\n<thead><tr><th>Tool</th><th>Free tier</th><th>Paid from</th><th>Best at</th><th>Hard limit</th></tr></thead>\n<tbody>\n<tr><td><strong>ElevenLabs</strong></td><td>10k credits/mo</td><td>~$6/mo Starter</td><td>Natural voice, cloning</td><td>Free tier non-commercial</td></tr>\n<tr><td><strong>Google Cloud TTS</strong></td><td>Up to 4M std chars/mo</td><td>$4 / 1M chars</td><td>Free volume at scale</td><td>API, not an app</td></tr>\n<tr><td><strong>OpenAI TTS</strong></td><td>No free tier</td><td>~$15 / 1M chars</td><td>Developer convenience</td><td>Pay-as-you-go only</td></tr>\n<tr><td><strong>Native platform voices</strong></td><td>Free</td><td>—</td><td>Faceless TikTok/CapCut</td><td>Obvious synthetic sound</td></tr>\n</tbody>\n</table>\n\n<h2 id=\"elevenlabs\">ElevenLabs: the quality ceiling</h2>\n<p>ElevenLabs is the default when the sound has to read as a person: its pacing, breaths and emphasis are the most human-sounding in the category, and it is the only major tool with self-serve instant voice cloning and a large public voice library. The free tier gives about 10,000 credits a month, no card, enough for a handful of short narrations. Two things govern the free tier and are the whole decision: it requires attribution on public content and it does not include commercial rights. A monetized channel, a sponsored video or client work is outside the free licence. Paid tiers start around $6 a month for Starter (with a commercial licence and 30,000 credits), about $22 for Creator (121,000 credits) and about $99 for Pro (600,000 credits). For anyone earning from the audio, the free tier is not the real decision.</p>\n\n<h2 id=\"google\">Google Cloud TTS: the free volume floor</h2>\n<p>Google Cloud Text-to-Speech is the closest thing to permanently free TTS at scale: the free tier renews every month and never expires, and the Standard class alone gives up to 4 million characters a month free — roughly 66 hours of audio, enough for a daily news-reader bot or a blog-to-audio pipeline. Premium WaveNet/Neural2 voices get up to 1 million characters a month free. After the free tier, Standard is $4 per million characters and WaveNet $16 — an order of magnitude below ElevenLabs' per-credit pricing at volume. The trade is friction: it is an API, not an app, and it requires a GCP account with a card on file (you are not charged inside the free tier).</p>\n\n<h2 id=\"openai\">OpenAI TTS: the developer convenience</h2>\n<p>OpenAI TTS has no free tier — it is pay-as-you-go, around $15 per million characters on its standard model — and its voice quality is clearly below ElevenLabs. It earns its place on one thing: if your app already calls OpenAI, adding speech is a one-line API call with no new subscription. It is the pick for developers who need basic TTS alongside existing OpenAI usage, not for a standalone narration tool where the sound has to perform.</p>\n\n<h2 id=\"picks\">The picks, by scenario</h2>\n<ul>\n<li><strong>Personal brand that earns from the audio:</strong> ElevenLabs paid, cloned to your own voice — around $6 a month.</li>\n<li><strong>High-volume, plain narration:</strong> Google Cloud TTS — free recurring tier, cheapest paid rate at scale.</li>\n<li><strong>App already on OpenAI:</strong> OpenAI TTS — one-line API, no new subscription.</li>\n<li><strong>Faceless TikTok / listicle content:</strong> the native platform voice — free, and it fits the format.</li>\n</ul>",
+  "related": [
+    {"icon": "i-pick", "tag": "Review", "tag_class": "", "href": "tools/elevenlabs/", "title": "ElevenLabs review", "blurb": "The voice-quality leader, scored on free tier and commercial rights.", "link": "Read"},
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "teal", "href": "lists/best-ai-music-generators/", "title": "Best AI music generators", "blurb": "The audio neighbour: when the deliverable is a track, not a voice.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "lists/", "title": "All buying guides", "blurb": "Every list we have published.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "best ai text to speech",
+    "ai voice generator 2026",
+    "elevenlabs free tier",
+    "free ai voiceover",
+    "google cloud tts free",
+    "best free text to speech",
+    "ai narration tool",
+    "ai voiceover for youtube",
+    "ai voice cloning free"
+  ]
+}

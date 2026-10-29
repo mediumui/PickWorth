@@ -1,0 +1,81 @@
+{
+  "slug": "best-ai-note-taking-apps",
+  "type": "list",
+  "section": "lists",
+  "answer": "For meetings, start free on Fathom and pay for Granola Business only if the no-bot capture matters. For knowledge and documents, NotebookLM is the free default. The rule: if you spend four hours a week in calls, the meeting tools earn a seat; if you mostly read PDFs and research, the knowledge tools do, and Notion AI is the one to skip unless your team is already on Notion.",
+  "key_answers": [
+    [
+      "What are the best AI note-taking apps in 2026?",
+      "Split into two jobs: meeting-first tools (Granola, Otter, Fathom) that listen to calls and produce summaries, and knowledge-first tools (NotebookLM, Notion, Obsidian, Mem) that organize and answer questions over your own documents."
+    ],
+    [
+      "Which is the best free AI note-taking app?",
+      "For meetings, Fathom — unlimited recording with no time cap. For research and documents, NotebookLM — a fully free, source-grounded answer engine. Together they cover most of what people pay for."
+    ],
+    [
+      "What is Granola's main advantage?",
+      "It captures calls from device audio without a bot joining the meeting — the privacy and visibility advantage for client work — and its summaries are editable. Business is $14 a user a month."
+    ],
+    [
+      "Is Notion AI worth it as a note-taking tool on its own?",
+      "Only if your team is already on Notion. Its full AI layer needs the $20-a-user Business plan, so for a solo user chasing AI note-taking it is not competitive with free NotebookLM or $12-a-month Mem."
+    ]
+  ],
+  "meta": {
+    "title": "Meetings Want Granola, Documents Want NotebookLM — Pick the Job First",
+    "desc": "AI note-taking apps ranked by job in 2026: meeting-first tools like Granola, Otter and Fathom, and knowledge-first tools like NotebookLM and Notion. With the free tier each one actually ships.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Note-Taking Apps, 2026",
+      "url": "https://www.pickworth.top/lists/best-ai-note-taking-apps/",
+      "datePublished": "2026-10-29",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Granola (bot-free meeting capture)"},
+        {"@type": "ListItem", "position": 2, "name": "NotebookLM (free, source-grounded knowledge)"},
+        {"@type": "ListItem", "position": 3, "name": "Otter (live transcription, value)"},
+        {"@type": "ListItem", "position": 4, "name": "Fathom (most generous free meeting tier)"},
+        {"@type": "ListItem", "position": 5, "name": "Notion AI (the one to skip unless already on Notion)"}
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "Best AI note-taking apps in 2026",
+    "lead": "The category is not one list — it is two jobs at two price points. Meeting-first tools listen to your calls and turn them into editable summaries. Knowledge-first tools answer questions across the documents and notes you already keep. Ask which pile is costing you: four hours a week in calls earns a meeting tool, a shelf of unread PDFs earns a knowledge tool.",
+    "date": "29 October 2026",
+    "name": "AI note-taking apps",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["landscape", "Two jobs, not one app"],
+    ["ranking", "The ranking at a glance"],
+    ["granola", "Granola: capture without the bot"],
+    ["notebooklm", "NotebookLM: the free knowledge default"],
+    ["otter", "Otter: live transcription and value"],
+    ["fathom", "Fathom: the free tier that gives the most"],
+    ["notion", "Notion AI: the one to skip"],
+    ["picks", "The picks, by scenario"]
+  ],
+  "verdict": "<p>Name the pile before you buy. If four or more hours a week of meetings are currently being noted by hand — or not at all — the meeting tools earn a seat: start free on Fathom for unlimited recording, and pay for Granola Business at $14 a user only if the no-bot capture matters for client work. If the pile is documents, lecture slides and research you read but rarely revisit, NotebookLM is the free default — a source-grounded answer engine that costs nothing to start. Skip Notion AI as a standalone note-taking tool: its useful layer sits behind the $20-a-user Business plan, so a solo user is better off with free NotebookLM or a $12-a-month capture app. The real value of any of these is the recall, not the writing — pick the tool that surfaces what you already captured.</p>",
+  "body": "<h2 id=\"landscape\">Two jobs, not one app</h2>\n<p>Most of the names in this search are one of two things. Meeting-first tools — Granola, Otter, Fathom — join or capture a call and hand back a clean, editable summary with speaker labels and action items. Knowledge-first tools — NotebookLM, Notion, Obsidian, Mem — let you ask questions in plain English and get answers pulled from your own documents, with sources. A few try to do both, but each is clearly stronger at one job, and the price points are different enough that mixing them up wastes a subscription.</p>\n\n<h2 id=\"ranking\">The ranking at a glance</h2>\n<p>Prices are per user per month, from each vendor's own pricing page as of late 2026; annual billing quotes a lower rate where shown. Free tiers are recurring.</p>\n<table class=\"compare\">\n<thead><tr><th>Tool</th><th>Job</th><th>From (paid)</th><th>Free tier</th><th>Hard limit</th></tr></thead>\n<tbody>\n<tr><td><strong>Granola</strong></td><td>Meeting</td><td>$14/user/mo</td><td>Limited 30-day history</td><td>Bot-free capture only</td></tr>\n<tr><td><strong>NotebookLM</strong></td><td>Knowledge</td><td>~$8/mo Plus</td><td>Free, 100 notebooks</td><td>No native flashcard export</td></tr>\n<tr><td><strong>Otter</strong></td><td>Meeting</td><td>$8.33/user/mo</td><td>300 min/mo, 30 min/meeting</td><td>Paid caps at 90 min</td></tr>\n<tr><td><strong>Fathom</strong></td><td>Meeting</td><td>~$20/mo</td><td>Unlimited recording</td><td>Team features on paid</td></tr>\n<tr><td><strong>Notion AI</strong></td><td>Knowledge</td><td>$20/user/mo</td><td>None standalone</td><td>Needs Business plan</td></tr>\n</tbody>\n</table>\n\n<h2 id=\"granola\">Granola: capture without the bot</h2>\n<p>Granola's signature is the bot-free capture: it records from your device audio rather than joining the call as a visible robot, which is the privacy and courtesy advantage for client-facing work. The summaries it produces are editable, it remembers meeting history so you can search or ask questions across past calls, and it ships pre-meeting briefs and follow-up emails on paid tiers. The free Basic plan caps meeting history at 30 days; Business at $14 a user a month removes the cap and adds advanced integrations and MCP access. It is the pick when the no-bot behaviour is the whole reason you are buying.</p>\n\n<h2 id=\"notebooklm\">NotebookLM: the free knowledge default</h2>\n<p>NotebookLM is the most underrated entry in the category and it is free: upload lecture slides, PDFs, web links or your own notes, and it answers only from your sources with citations — no hallucinated facts pulled from the open internet. The free tier includes 100 notebooks, 50 sources each, and 50 chats a day with no card. It is the knowledge-tool default for students and researchers, and the reason a dedicated $15-a-month knowledge app rarely earns its price for solo users.</p>\n\n<h2 id=\"otter\">Otter: live transcription and value</h2>\n<p>Otter is the value pick for live transcription: the most accurate real-time captions in the meeting-tools group, with speaker identification and a searchable transcript. The free plan is 300 minutes a month, capped at 30 minutes per meeting. Pro runs $8.33 a user a month on annual billing (1,200 minutes, 90 minutes per meeting) and Business $19.99 with unlimited meeting length and concurrent calls. It is the cleaner tool for someone who records short English calls and wants a transcript to skim, not a CRM layer.</p>\n\n<h2 id=\"fathom\">Fathom: the free tier that gives the most</h2>\n<p>Fathom is the recurring recommendation when budget is the deciding factor: unlimited recording with no time cap on the free plan, which Granola, Otter and the others do not match. Start free on it; pay for a seat only when the team features and a searchable archive actually matter. It is the floor of the meeting category, not the ceiling.</p>\n\n<h2 id=\"notion\">Notion AI: the one to skip</h2>\n<p>Notion AI is the complete workspace — docs, databases, and an AI that searches and writes across it — but it is not a standalone note-taking tool you should buy for the notes. Its full AI layer requires the $20-a-user Business plan, so for a solo user chasing AI note-taking it is not competitive with free NotebookLM or a $12-a-month capture app. It earns the price only when the team is already running on Notion and AI is a feature of the workspace rather than the reason for the subscription.</p>\n\n<h2 id=\"picks\">The picks, by scenario</h2>\n<ul>\n<li><strong>Four+ hours a week in calls:</strong> start free on Fathom, pay for Granola Business only if bot-free capture matters.</li>\n<li><strong>Reading PDFs, slides and research:</strong> NotebookLM — free and source-grounded.</li>\n<li><strong>Short English calls, live captions:</strong> Otter — cheapest Pro, most accurate real-time transcription.</li>\n<li><strong>Already on Notion as a team:</strong> add Notion AI — the workspace, not just the notes.</li>\n</ul>",
+  "related": [
+    {"icon": "i-pick", "tag": "Review", "tag_class": "", "href": "tools/notion-ai/", "title": "Notion AI review", "blurb": "The full workspace whose AI layer sits behind the Business plan.", "link": "Read"},
+    {"icon": "i-pick", "tag": "Guide", "tag_class": "teal", "href": "lists/best-ai-meeting-assistants/", "title": "Best AI meeting assistants", "blurb": "The meeting-first tools, ranked on free tiers and CRMs.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "lists/", "title": "All buying guides", "blurb": "Every list we have published.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "best ai note taking app",
+    "ai notes 2026",
+    "granola vs notion",
+    "notebooklm free",
+    "ai meeting notes app",
+    "best ai note taking free",
+    "granola pricing",
+    "otter vs granola",
+    "best student ai notes tool"
+  ]
+}

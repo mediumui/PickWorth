@@ -1,0 +1,83 @@
+{
+  "slug": "best-ai-meeting-assistants",
+  "type": "list",
+  "section": "lists",
+  "answer": "Fireflies is the team default — unlimited transcription on every plan and the broadest CRM integrations. Otter is the value pick for individuals who meet mostly in English and want the most accurate live captions. Pick on language needs and team size first; both free plans let you judge accuracy on your own meetings before you pay.",
+  "key_answers": [
+    [
+      "What are the best AI meeting assistants in 2026?",
+      "Fireflies for teams that need CRM-connected notes, Otter for individuals who want the most accurate live captions, and Fathom for the most generous free plan. Fireflies and Otter are the two that matter most for paid use."
+    ],
+    [
+      "Which has the better free plan, Fireflies or Otter?",
+      "Fireflies, on balance: unlimited transcription with 400 minutes of storage per team, while Otter's free plan caps you at 300 minutes a month and 30 minutes per meeting."
+    ],
+    [
+      "How much do they cost?",
+      "Fireflies runs $10 a seat per month on Pro (annual billing), $19 on Business. Otter runs $8.33 a user on Pro (annual), $19.99 on Business. Both quote a lower rate when you pay yearly."
+    ],
+    [
+      "Which is better for sales teams?",
+      "Fireflies. Its wider CRM integration list and the AskFred assistant for querying past meetings make it the team reporting layer; Otter is the cleaner personal reading tool."
+    ],
+    [
+      "What is the most generous free plan?",
+      "Fathom, which records unlimited calls with no time cap. Fireflies is the better default when you will pay for an archive you can search."
+    ]
+  ],
+  "meta": {
+    "title": "Fireflies for Teams, Otter for Individuals — 2026 Meeting Notes Decided",
+    "desc": "Fireflies, Otter and Fathom ranked by job in 2026: unlimited transcription, the accuracy of live captions, free-plan storage caps, and which one connects to your CRM.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI Meeting Assistants, 2026",
+      "url": "https://www.pickworth.top/lists/best-ai-meeting-assistants/",
+      "datePublished": "2026-10-29",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Fireflies.ai (team default, CRM-connected)"},
+        {"@type": "ListItem", "position": 2, "name": "Otter.ai (live captions, value for individuals)"},
+        {"@type": "ListItem", "position": 3, "name": "Fathom (most generous free plan)"},
+        {"@type": "ListItem", "position": 4, "name": "Notta (multilingual, with caveats)"}
+      ]
+    }
+  },
+  "head": {
+    "kicker": "Buyer's guide",
+    "h1": "Best AI meeting assistants in 2026",
+    "lead": "Every one of these records, transcribes and summarises your calls. The difference is what sits on top of the transcript: Fireflies adds a conversation-intelligence layer built to feed a CRM, Otter bets on the accuracy of live captions, and Fathom gives away the most. Pick on language needs and team size first, then on whether you need the notes to flow into a sales workflow.",
+    "date": "29 October 2026",
+    "name": "AI meeting assistants",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["landscape", "The job, split three ways"],
+    ["ranking", "The ranking at a glance"],
+    ["fireflies", "Fireflies: the team default"],
+    ["otter", "Otter: live captions and value"],
+    ["fathom", "Fathom: the free plan that gives away the most"],
+    ["notta", "Notta: multilingual, with a warning"],
+    ["picks", "The picks, by scenario"]
+  ],
+  "verdict": "<p>Pick on the limit you will hit. Fireflies is the team default: it transcribes in 100+ languages, stores unlimited recordings on Business, and plugs into Salesforce, HubSpot and dialers — that is the tool when your notes have to become a CRM record. Otter is the value pick for individuals who meet mostly in English: its live captions are the most accurate in the group and its Pro plan is the cheapest per seat. Fathom wins the free tier with unlimited recording and no time cap, and earns a paid seat only when you outgrow it. Notta is the multilingual workhorse if your calls span 58 languages, but its review history for non-native English makes the free trial non-negotiable. Start free, run both finalists on the same three meetings — one clean, one with crosstalk, one heavy on jargon — and compare the output line by line before you buy.</p>",
+  "body": "<h2 id=\"landscape\">The job, split three ways</h2>\n<p>The category is not one tool. A note-taker joins your calendar meetings and transcribes them. A capture tool records on your device, with or without a bot. A CRM layer adds the question layer — talk-time, sentiment, topics — on top of the transcript. Asking which is best without naming the job produces a ranking that fits nobody.</p>\n<p>The two names everyone searches are Fireflies and Otter, and the honest split between them is the whole decision: Fireflies treats a meeting as a data source feeding a CRM record, Otter treats it as text to be captured accurately and read later. Both ship free plans that let you judge transcript accuracy on your own meetings.</p>\n\n<h2 id=\"ranking\">The ranking at a glance</h2>\n<p>Prices are per seat or per user, monthly, from each vendor's own pricing page as of late 2026; annual billing quotes a lower rate. Free tiers are recurring.</p>\n<table class=\"compare\">\n<thead><tr><th>Tool</th><th>From (paid)</th><th>Free tier</th><th>Best at</th><th>Hard limit</th></tr></thead>\n<tbody>\n<tr><td><strong>Fireflies</strong></td><td>$10/seat/mo</td><td>Unlimited transcripts, 400 min storage/team</td><td>CRM-connected notes, 100+ languages</td><td>Free AI summaries limited</td></tr>\n<tr><td><strong>Otter</strong></td><td>$8.33/user/mo</td><td>300 min/mo, 30 min per meeting</td><td>Live captions, individual value</td><td>Paid meetings cap at 90 min</td></tr>\n<tr><td><strong>Fathom</strong></td><td>~$20/mo</td><td>Unlimited recording, no time cap</td><td>Most generous free plan</td><td>Team features on paid</td></tr>\n<tr><td><strong>Notta</strong></td><td>~$8.17/mo</td><td>120 min/mo, 58 languages</td><td>Multilingual transcription</td><td>1-star review pattern</td></tr>\n</tbody>\n</table>\n\n<h2 id=\"fireflies\">Fireflies: the team default</h2>\n<p>Fireflies is the integration-heavy tool: it joins Zoom, Google Meet and Teams calls, transcribes in 100+ languages, and routes the output into Salesforce, HubSpot, Zapier and Slack with little setup. On top of the transcript it adds a conversation-intelligence layer — talk-time ratio, sentiment, topic detection — that turns a stack of calls into something a manager can review in minutes. The free plan is the more permissive of the two majors: unlimited transcription with 400 minutes of storage per team and a limited pool of AI credits. Paid Pro starts at $10 a seat a month on annual billing; Business at $19 adds multi-language mode and team analytics. The trade: the free tier caps AI summaries, and the auto-joining bot can feel intrusive in a small, informal call where nobody expects a visible recorder.</p>\n\n<h2 id=\"otter\">Otter: live captions and value</h2>\n<p>Otter is built around the accuracy of its live, real-time transcription: captions appear in-call on web and mobile, with word-level speaker highlighting. That makes it the pick when you read along with a call or want the cleanest spoken-word capture. The free Basic plan gives 300 transcription minutes a month but caps every individual meeting at 30 minutes — that shows up fast in longer workshops. Pro runs $8.33 a user a month on annual billing (1,200 minutes a month, 90 minutes per meeting) and Business $19.99, with unlimited meeting length and concurrent calls. It is the value play for someone recording four or five short English calls a week who wants a searchable transcript and nothing more.</p>\n\n<h2 id=\"fathom\">Fathom: the free plan that gives away the most</h2>\n<p>Fathom is the recurring recommendation when budget is the deciding factor: it records unlimited calls with no time cap on the free tier, which the two majors do not match. It is the right starting point for anyone new to AI meeting notes — start free, and only pay when the team features and a searchable archive matter. The honest framing is that it is the floor of the category, not the ceiling: if you will pay, Fireflies or Otter usually earns the seat.</p>\n\n<h2 id=\"notta\">Notta: multilingual, with a warning</h2>\n<p>Notta is the multilingual workhorse — real-time transcription in 58 languages plus translation across 42 — and its free plan (120 minutes a month) is a fair trial. But treat the trial as a hard gate: a large share of its public reviews are one star, with consistent complaints about cancellation and weaker accuracy on non-native English. If your calls are mostly English, Otter is the cleaner choice; pick Notta only when language spread is the actual reason you are buying.</p>\n\n<h2 id=\"picks\">The picks, by scenario</h2>\n<ul>\n<li><strong>Team notes that feed a CRM:</strong> Fireflies — unlimited transcription on every plan and the broadest integration list.</li>\n<li><strong>Individual, mostly English, live captions:</strong> Otter — cheapest Pro and the most accurate real-time captions.</li>\n<li><strong>Trying the category for free:</strong> Fathom — unlimited recording, no time cap.</li>\n<li><strong>Multilingual calls across 50+ languages:</strong> Notta — but run a free trial first.</li>\n</ul>",
+  "related": [
+    {"icon": "i-pick", "tag": "Review", "tag_class": "", "href": "tools/notion-ai/", "title": "Notion AI review", "blurb": "The workspace whose AI summaries sit a step behind the dedicated notetakers.", "link": "Read"},
+    {"icon": "i-sources", "tag": "Comparison", "tag_class": "teal", "href": "comparisons/notion-ai-vs-chatgpt/", "title": "Notion AI vs ChatGPT", "blurb": "When a full workspace beats a general assistant.", "link": "Compare"},
+    {"icon": "i-sources", "tag": "Index", "tag_class": "plain", "href": "lists/", "title": "All buying guides", "blurb": "Every list we have published.", "link": "Browse"}
+  ],
+  "search_terms": [
+    "best ai meeting assistant",
+    "ai meeting notes 2026",
+    "fireflies vs otter",
+    "best ai notetaker free",
+    "fireflies pricing",
+    "otter ai pricing",
+    "ai meeting recorder free",
+    "notta vs granola",
+    "best meeting transcription tool"
+  ]
+}
