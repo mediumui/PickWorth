@@ -118,6 +118,12 @@ Answer: Mistral's Le Chat is the European, EU-hosted answer to ChatGPT, and it i
 Citation: Le Chat is the assistant to pick when jurisdiction, speed and price sit at the top of your list, and that is a real, defensible position rather than a consolation prize. The free tier is a workspace you can actually do work in, Pro is the cheapest premium plan from any major lab at $14.99, Flash Answers make the thing feel quicker than almost everything else on the market, and the open-weight, EU-hosted story is one no American rival can replicate. We rate it 3.9 out of 5. The deduction is earned, not arbitrary: on the hardest reasoning, the most polished English prose, and the deepest custom-assistant ecosystem, the US frontier still leads, and the consumer app picked up rough edges after its 2026 rebrand. None of that stops Le Chat from being the smart default for EU and privacy-minded users, for budget buyers who want a paid plan without the $20 tax, and for developers who would rather self-host or fine-tune than rent a black box. If your work lives at the absolute frontier of difficulty, pair it with or switch to one of the leaders. For everyone else, it is hard to beat for the price.
 Key numbers: $14.99; $20
 
+### Nano Banana Review 2026: Free, Exact on Text, and the One to Beat
+URL: https://www.pickworth.top/tools/nano-banana/
+Updated: 4 November 2026
+Answer: Nano Banana is Google's Gemini image model, formally Gemini 2.5 Flash Image, free to start inside the Gemini app, unusually accurate at text and photo editing, and available through a pay-as-you-go API. It leads for practical image work, text, and real-photo edits, but trails Midjourney on pure artistic style and the free tier's daily cap is dynamic enough that you cannot plan production around it.
+Citation: Nano Banana is the image model to reach for first in 2026 because it is free to start, exact on text, and edits your own photos by talking, the three things that actually stop most people using AI images. It is not the artistic pick, Midjourney still owns mood and style, and the free daily cap is dynamic enough that you cannot treat it as a pipeline. But for product shots, real-photo edits, anything with words, and anyone who will not pay to find out, it is the one to beat.
+
 ### Notion AI Review 2026: Best in Notion, Weak Everywhere Else
 URL: https://www.pickworth.top/tools/notion-ai/
 Updated: 26 October 2026
@@ -230,6 +236,12 @@ Updated: 29 October 2026
 Answer: Pick by the one job that matters in your image: Midjourney when the image has to look striking, DALL-E when it has to be precise. The gap is widest on text in the image and on literal prompt adherence, where DALL-E wins cleanly, and on pure aesthetic quality, where Midjourney still leads.
 Citation: These two are not competing for the same image. Midjourney is the better artist, its output has more of the look that makes a person stop scrolling, and on a hero image or a piece of concept art that gap is the reason to pay for it. DALL-E is the more precise executor, it follows the spec literally, and it is the one that gets the text in the image right, which is the task Midjourney still fails on the first pass. The cost story is straightforward: if you already pay for the assistant that runs DALL-E, the image is free on top of it, and Midjourney is a separate line. The honest answer is the one the comparison reviewers all land on, pick by the image, not by the leaderboard.
 
+### Nano Banana vs Midjourney in 2026: Free Precision or Paid Style
+URL: https://www.pickworth.top/comparisons/nano-banana-vs-midjourney/
+Updated: 4 November 2026
+Answer: For AI image generation, Nano Banana is the practical pick and Midjourney the artistic one: choose Nano Banana when the image has text, is a real photo you are editing, or needs to be free, and choose Midjourney when the image is judged on mood, style, and a signature look. They are complements, not rivals.
+Citation: They are not replacements for each other. Nano Banana is the more practical tool: free to start, exact on text where Midjourney guesses, and able to edit your own photo by conversation. Midjourney is the better artist: it wins on mood, texture, and a signature style that no instruction-following model reliably replicates, and its reference and community tooling keep studios loyal. If the image has words, is a real photo you are touching up, or must cost nothing to try, Nano Banana is the faster path. If the image is judged on how it feels, Midjourney is still the one to beat. Our rating leans to Nano Banana for accessibility and text, but the honest answer is that plenty of people end up using both.
+
 ### Notion AI vs ChatGPT: The $10 Add-On Everyone Still Compares Is Gone
 URL: https://www.pickworth.top/comparisons/notion-ai-vs-chatgpt/
 Updated: 29 October 2026
@@ -297,6 +309,12 @@ Updated: 26 October 2026
 Answer: Start with Google Veo 3.1 if you need the best-looking clip with sound, Runway if the video has to be edited into something finished, and Kling if you want the most video per dollar including a generous free tier; Sora is retired, so migrate elsewhere.
 Citation: Pick by the job, not by the leaderboard. Google Veo 3.1 is the quality default and the only model that ships lip-synced audio in the same pass, so it wins for talking-head and product footage. Runway is the pick when the deliverable is a finished, edited video rather than one clip, because its timeline, motion brush, and masking are unmatched here. Kling is the value and free-tier winner: 66 credits refill daily, physics and on-screen text hold up, and cost per second is the lowest in the group. Luma is the image-to-video and long-clip specialist with the best lighting realism but no native audio. Pika is the cheap, playful effects option for social shorts. Sora is gone, and its disappearance is the real lesson: a model's quality is a snapshot, a platform's survival is the investment. Start free on Kling or Veo, then pay only when watermark, commercial rights, or resolution force the upgrade.
 
+### Best Free AI Video Generators 2026: Five That Cost $0 to Start
+URL: https://www.pickworth.top/lists/best-free-ai-video-generators/
+Updated: 4 November 2026
+Answer: If you only want free clips, start with Kling: it refills around 60-66 credits every day, enough for several short videos with no card and no time limit. Pika and PixVerse are the next-best free doors, Luma gives a smaller monthly pool but at 1080p, and Hailuo trades daily caps for a clean watermark-free-on-free feel. None beats Kling on raw free volume.
+Citation: Start free, and start with Kling. Its roughly 60-66 daily credits - recurring, no card, no expiry timer - hand you several short clips every day, which is more than Pika's 30, PixVerse's 60-once-plus-30-daily, Hailuo's 3-5-a-day, or Luma's ~30-a-month pool. Pika is the gentlest first step if you just want one stylized clip fast, PixVerse gives the most generous one-time starter, Luma is the only free door near 1080p, and Hailuo feels the cleanest but caps you hardest per day. The real rule: none of these free allowances is permanent, so build on the clip quality, not on the credit number - and only pay when a watermark, commercial right, or resolution actually blocks the work.
+
 ### The Free Assistant Tier Does 90% of What You Think You Need
 URL: https://www.pickworth.top/lists/best-image-generation-tools/
 Updated: 22 October 2026
@@ -356,6 +374,13 @@ URL: https://www.pickworth.top/blog/pick-by-the-job/
 Updated: 29 October 2026
 Answer: A leaderboard of AI tools is almost always wrong, because the tools at the top are solving different problems. The right ordering is by the specific job you are doing a general question, a refactor, a citation, a styled image and the tool that wins that job is often not the one that wins the others. The ranking that is true for one job is false for every other job on the same list.
 Citation: The leaderboard is not wrong about the tools; it is wrong about you, because it cannot know the job you are doing. The fix is to invert the question. Stop asking which tool is best and start asking which tool is built for this specific, recurring shape of work and which one has the hard limit you will never reach. Pick around that limit, and the ranking that looked false in one column becomes true in the one that matters to you.
+
+### Students Get These AI Tools Free in 2026: The Real List
+URL: https://www.pickworth.top/blog/students-get-these-ai-tools-free/
+Updated: 4 November 2026
+Answer: Three AI tools are genuinely free for students with no catch: Google AI Pro (a full year free for eligible college students, $19.99/mo value in the US), GitHub Copilot (full Pro free for verified students, teachers, and open-source maintainers), and Notion's Education Plus plan (free, and it now bundles Notion AI). Perplexity is the big name that is NOT free - it is half price at $10/mo. Claim the free ones with a school email before you pay a cent.
+Citation: Most "free for students" lists mix $0 plans with 50%-off plans and call both free. They are not the same: one expires into a bill, the other does not. Here is the honest split - three tools that are genuinely free for eligible students, and the famous one that is only cheap.
+Key numbers: $0
 
 ### One Subscription Covers Most People. Here Is the Test
 URL: https://www.pickworth.top/blog/the-20-dollar-rule/

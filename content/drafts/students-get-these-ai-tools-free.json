@@ -1,0 +1,135 @@
+{
+  "slug": "students-get-these-ai-tools-free",
+  "type": "blog",
+  "section": "blog",
+  "answer": "Three AI tools are genuinely free for students with no catch: Google AI Pro (a full year free for eligible college students, $19.99/mo value in the US), GitHub Copilot (full Pro free for verified students, teachers, and open-source maintainers), and Notion's Education Plus plan (free, and it now bundles Notion AI). Perplexity is the big name that is NOT free - it is half price at $10/mo. Claim the free ones with a school email before you pay a cent.",
+  "key_answers": [
+    [
+      "Which AI tools are actually free for students?",
+      "Three, with no payment required: Google AI Pro for a full year (US students get the Pro plan worth $19.99/mo; students outside the US get AI Plus), GitHub Copilot's full Pro plan for verified students, teachers, and open-source maintainers, and Notion's Education Plus plan, which now includes Notion AI at no extra cost."
+    ],
+    [
+      "Is Perplexity free for students?",
+      "No. Perplexity's Education Pro is half price - $10 a month instead of $20 - after SheerID verification, plus one free month. It is a real discount, not a free plan, so budget the $10 if you want it past the first month."
+    ],
+    [
+      "How do I claim the free Google AI Pro year?",
+      "Go to gemini.google.com/students while signed in with a Google account tied to an eligible college. Eligible US students get one year of Google AI Pro free (5TB storage, higher Gemini limits); students outside the US get one year of Google AI Plus free. It is Google's official back-to-school offer, claimed in the student hub."
+    ],
+    [
+      "How do I get GitHub Copilot free as a student?",
+      "Verify through GitHub Education / Global Campus with a school email or student ID; verified students, teachers, and maintainers of popular open-source projects get the full Pro tier at $0. It is a standing benefit, not a trial, and it re-checks eligibility while you stay enrolled."
+    ],
+    [
+      "What about ChatGPT and Claude for students?",
+      "ChatGPT Edu is provided by your institution, so it is free only if your school has rolled it out to you - check with your university, do not assume. Claude has no public student discount, so you are on its free tier or your school's plan."
+    ],
+    [
+      "What are the catches?",
+      "Every free offer needs verification (a school email or SheerID), regional terms vary, and the free period is time-limited: Google's year, Perplexity's first month. Re-verify annually, and never enter card details on a 'free forever' generator site - those are scams."
+    ]
+  ],
+  "meta": {
+    "title": "Students Get These AI Tools Free in 2026: The Real List",
+    "desc": "Genuinely free AI for students in 2026: Google AI Pro (1 year), GitHub Copilot (full Pro), Notion Education (with AI). Only discounted: Perplexity.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Students Get These AI Tools Free in 2026: The Real List",
+      "url": "https://www.pickworth.top/blog/students-get-these-ai-tools-free/",
+      "datePublished": "2026-11-04",
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Student guide",
+    "h1": "The AI tools students actually get free in 2026",
+    "lead": "<p class=\"lead\">Most \"free for students\" lists mix $0 plans with 50%-off plans and call both free. They are not the same: one expires into a bill, the other does not. Here is the honest split - three tools that are genuinely free for eligible students, and the famous one that is only cheap.</p>",
+    "date": "4 November 2026",
+    "name": "Students get these AI tools free"
+  },
+  "toc": [
+    [
+      "free-now",
+      "The three that are genuinely free"
+    ],
+    [
+      "google",
+      "Google AI Pro: a full year, free"
+    ],
+    [
+      "copilot",
+      "GitHub Copilot: full Pro, $0"
+    ],
+    [
+      "notion",
+      "Notion Education: free, with AI"
+    ],
+    [
+      "discounted",
+      "The one that is only cheap: Perplexity"
+    ],
+    [
+      "chatgpt-claude",
+      "ChatGPT Edu and Claude: read the fine print"
+    ],
+    [
+      "catches",
+      "The catches that cost you"
+    ]
+  ],
+  "body": "<h2 id=\"free-now\">The three that are genuinely free</h2>\n<p>Before the list, a rule: \"free\" here means no card and no recurring bill as long as you stay eligible. By that bar, three AI tools clear it for students in 2026 - Google AI Pro, GitHub Copilot, and Notion's Education plan. Everything else in this space is a discount, a trial, or an institution-handout. Knowing the difference stops you from \"claiming free\" something that quietly starts billing next month.</p>\n\n<h2 id=\"google\">Google AI Pro: a full year, free</h2>\n<p>Google's official back-to-school offer gives eligible college students one year of a premium AI plan at no charge. In the US that is Google AI Pro - the $19.99-a-month plan with 5TB of storage and higher Gemini usage limits - free for 12 months. Outside the US, eligible students get one year of Google AI Plus free instead (lower limits, 400GB storage). Claim it at <strong>gemini.google.com/students</strong>, where Google built a student hub with study notebooks, flashcards, and practice quizzes. The catch is the clock: it is one year, not forever, and regional terms vary, so confirm the exact plan for your country before you rely on it.</p>\n\n<h2 id=\"copilot\">GitHub Copilot: full Pro, $0</h2>\n<p>If you write code, this is the biggest free win. Verified students, teachers, and maintainers of popular open-source projects get the full Copilot Pro tier at $0 through GitHub Education - unlimited completions, monthly AI credits, and the coding agents - not a trimmed free clone. It is a standing benefit, not a 30-day trial, and it stays active while you remain enrolled or verified. The first step is the eligibility link in your Copilot settings, not the checkout; if you see a price instead of a free button, your account is not yet verified. (We wrote a full claim walkthrough separately - see the related guide.)</p>\n\n<h2 id=\"notion\">Notion Education: free, with AI</h2>\n<p>Notion's Education plan gives students and teachers the Plus plan for free with an accredited institution email. As of 2026, Notion AI is bundled into all paid plans at no extra cost, so the free Education Plus plan includes AI writing, Q&A across your workspace, and summaries - the same $10-a-month value, at $0. It is a one-member workspace with unlimited uploads and 30-day page history, which is plenty for coursework, assignment tracking, and lecture notes. Sign in with your school email, open Settings, and hit \"Get free Education plan.\" If your school is in the WHED database, it upgrades automatically.</p>\n\n<h2 id=\"discounted\">The one that is only cheap: Perplexity</h2>\n<p>Perplexity is the name that shows up on every \"free for students\" list, and it is the one that is not free. Verified students and educators get Education Pro at $10 a month - half the standard $20 Pro price - through SheerID, plus one free month. That is a genuine, permanent discount and worth taking if you do research heavy lifting, but it is a $10 bill after month one, not $0. Skip any site promising \"Perplexity Pro free forever\" with a code or generator; those are account-theft scams. Verify through Perplexity's own Education tab and pay the honest $10 if you want it.</p>\n\n<h2 id=\"chatgpt-claude\">ChatGPT Edu and Claude: read the fine print</h2>\n<p>ChatGPT Edu is real but institution-provided: your university licenses it, and you get it free only if your school has rolled it out to you. Do not assume - check your school's IT or onboarding portal. Claude, for its part, has no public student discount at all, so students use the standard free tier or whatever their institution provides. Neither is a \"sign up with a .edu and get Pro free\" offer, which is exactly why they are easy to misreport.</p>\n\n<h2 id=\"catches\">The catches that cost you</h2>\n<p>Four things trip students up. First, verification: every free offer needs a school email or a SheerID check, and a personal Gmail will not pass. Second, regional terms: Google's plan differs by country, so read the local offer page. Third, the clock: Google's free year and Perplexity's free month both expire and then bill - set a reminder. Fourth, scams: the only safe claim path is the vendor's own student page; never enter card details on a third-party \"free activator.\" Do those four right and you walk away with a year of Pro-grade AI, a free coding assistant, and a free AI workspace - none of which should cost a cent.</p>",
+  "related": [
+    {
+      "icon": "i-sources",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/github-copilot/",
+      "title": "GitHub Copilot review",
+      "blurb": "What it is good at, where it slips, and which plan is worth paying for.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Guide",
+      "tag_class": "teal",
+      "href": "blog/get-github-copilot-pro-free/",
+      "title": "Getting GitHub Copilot Pro for free",
+      "blurb": "The student, teacher, and open-source route to full Pro at $0, step by step.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/gemini/",
+      "title": "Gemini review",
+      "blurb": "Google's model family, scored on free tier and the AI Pro plan.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-sources",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "blog/",
+      "title": "The Journal",
+      "blurb": "Every note from the desk.",
+      "link": "Browse"
+    }
+  ],
+  "search_terms": [
+    "students get ai tools free",
+    "free ai tools for students 2026",
+    "google ai pro free for students",
+    "github copilot free for students",
+    "notion education free ai",
+    "perplexity student discount",
+    "chatgpt edu free for students",
+    "claude student discount",
+    "best free ai for college students",
+    "ai tools free with student email"
+  ]
+}

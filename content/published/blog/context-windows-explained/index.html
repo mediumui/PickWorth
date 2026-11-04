@@ -258,6 +258,16 @@ gtag('js', new Date());
     </dl>
     </section>
 
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>
+                <li><a href="#what-it-is">What a context window is</a></li>
+        <li><a href="#why-bigger">Why bigger is not automatically better</a></li>
+        <li><a href="#two-questions">The two questions that decide it</a></li>
+        <li><a href="#what-to-do">What to actually do about it</a></li>
+      </ol>
+    </nav>
+
     <h2 id="what-it-is">What a context window is</h2>
     <p>A language model has no memory between conversations. Everything it knows about what you are doing right now — your question, the document you pasted, the answer it gave three turns ago, the system instructions — all of it lives in a single buffer for the duration of that conversation. That buffer is the context window, measured in tokens, which are roughly three-quarters of a word each. When the conversation exceeds the window, something has to go: either the oldest content is dropped or compressed, or the tool refuses to continue. There is no third option, and no model is exempt.</p>
 
