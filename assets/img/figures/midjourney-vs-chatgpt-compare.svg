@@ -1,0 +1,27 @@
+<!-- figtype:COMPARE -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 312" width="100%" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#2b2b2b" text-anchor="start" font-weight="700">Image quality &amp; features — Midjourney vs ChatGPT (GPT Image)</text>
+<rect x="24" y="56" width="712" height="40" rx="6" fill="#f3e7e2"/>
+<text x="36" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#2b2b2b" text-anchor="start" font-weight="700">Feature</text>
+<text x="352.0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b8503a" text-anchor="middle" font-weight="700">Midjourney</text>
+<text x="608.0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b8503a" text-anchor="middle" font-weight="700">ChatGPT (GPT Image)</text>
+<rect x="24" y="96" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Text in image</text>
+<text x="352.0" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Weak; Thinking mode (alpha) aims to fix</text>
+<text x="608.0" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Strong; legible text, roughly 85–90%</text>
+<text x="36" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Free tier</text>
+<text x="352.0" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">No free plan; trial only in niji mobile app</text>
+<text x="608.0" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Yes — Free tier creates images, capped</text>
+<rect x="24" y="176" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Editing</text>
+<text x="352.0" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Vary / pan / zoom / inpaint, web app + Discord</text>
+<text x="608.0" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Conversational in-chat edits, upload to edit</text>
+<text x="36" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Style across a set</text>
+<text x="352.0" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Drifts between renders</text>
+<text x="608.0" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Holds a consistent visual language</text>
+<rect x="24" y="256" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Commercial use</text>
+<text x="352.0" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">All plans; over $1M revenue needs Pro/Mega</text>
+<text x="608.0" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">Bundled into ChatGPT subscription</text>
+<rect x="24" y="56" width="712" height="240" rx="6" fill="none" stroke="#d8d1c1" stroke-width="1.3"/>
+</svg>

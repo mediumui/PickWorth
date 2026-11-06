@@ -234,12 +234,58 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 3. `tools/index.html` 加 "Covered so far" 入口行（Journal 篇改 `blog/index.html` 加 "Latest notes" 行）。**排序约定：栏目"Covered/Latest"列表一律最新在前**——新页插在列表最顶端（`tools/index.html` 是 `div.rowlist` 第一个 `<a>`，`blog/index.html` 同理）。新会话加页时把入口行放到最上面，不要追加到底部。
 4. `sitemap.xml` 加 `<url>` 条目
 5. `python site/scripts/sync_chrome.py`（`--check` 归 0 漂移）
-6. `python site/scripts/verify_refs.py`（0 断链）
+6. `python site/scripts/verify_refs.py`（0 断链）；**配图校验**：`python site/scripts/verify_figures.py`（tools/comparisons 零图页须清零、模板化预警须处理，详见 §9.5）
 7. `python site/scripts/gen_llms_txt.py --full`（默认只写 llms.txt，**必须带 `--full`** 才写 llms-full.txt）
 
 ### 9.5 标题与配图
-- 标题**逐篇手写**，不套公式、不夸大、保持站调性（带判断的陈述 + 反转钩子），核心词只进 H1 一次不堆砌。
-- 配图**按需不硬塞**：数据 / 文字 / 排版图（额度表、能力阶梯）→ 本地 SVG/HTML 手绘（与 `hero-*.svg` 同风格，数字可控）；纯氛围 og 图才用 AI 生图（帧刻 `site/scripts/vidshell_image_gen.py`，Bearer 走 `VIDSHELL_VK` 运行时注入，不落盘）。
+
+**设计北极星：谷歌 + 用户优先**
+可视化（含标题）不为模板服务，而为**搜索意图满足（谷歌排名）**与**读者一眼看懂（用户体验）**服务。每张图的存在理由应当是「这里表格/文字不够直观」，而不是「每篇都得塞一张图」。
+
+**标题**：逐篇手写，不套公式、不夸大、保持站调性（带判断的陈述 + 反转钩子），核心词只进 H1 一次不堆砌。
+
+**可视化形态：表格为底座，SVG 图为补强（非替代，也非可省）**
+- 本站真实可视化以 **HTML 表格**（价格表 `<table class="compare">`、功能对比矩阵）+ **评分徽章**（`class="score good"`）为底座——文字可被 Google 索引，已验证可行，是默认形态。
+- **SVG 图表（`make_figure.py`）是补强，但「补强」≠「可省」**：凡正文存在「用图比用表更直观」的信息，**必须出图**，不能因为「已经有表了」就跳过。典型图优于表的场景见下方「评估准则」。
+
+**内容驱动的动态设计（非固定模板）**
+- 配图由**内容决定，不由模板决定**。L3 写稿时，AI 必须先审视该篇文章实际承载的**结构化/量化信息**，据此决定画什么、用表还是用图；**禁止每篇都套同一张图**。
+- `make_figure.py` 的 4 个 helper（`pricing` / `compare` / `bars` / `scorecard`）只是**起手工具箱，不是默认套路**：契合内容才用；需要别的形态（时间线、流程图、占比环、阶梯图、标注式架构图等）就 hand-author bespoke SVG。
+- 纯观点文**可不出可视化**，但 draft 须**显式写明理由**（如 `"figures": []` + 注释「本文无可量化数据」）；**禁止以「懒得画」或「表已满足」空手交稿**。
+
+**图 vs 表的评估准则（L3 必读的硬清单，判断权不在 AI 自洽）**
+- **图优于表（必须出 SVG / bespoke 图）**：
+  1. 性能 / 基准对比（响应速度、延迟、准确率 %）——横条让人一眼看出谁快谁准，读数字反而累；
+  2. 多维度评分拆解——scorecard 一眼见强弱项分布；
+  3. 测评数据多维度对比（A vs B 在准确率 / 速度 / 价格等维度的并排）——图比表更直观；
+  4. 流程 / 时间线 / 步骤——顺序图胜过散文；
+  5. 占比 / 份额 / 关系——环图 / 堆叠条；
+  6. 组件 / 架构——标注式结构图。
+- **表优于图（用表即达标）**：纯精确值查表（精确价格、规格参数），用户要的是「准数」，表可索引、对 SEO 更友好；超长矩阵（10+ 行）也用表。
+- **费用 / 纯价格 = 表格领地，不画图**：定价是纯精确值查表场景，正文已有 `<table class="compare">` 即达标；额外画套餐卡属重复，且只标年付价易引「只标低价」之嫌——**删除定价图**。图的重心放在**测评数据**（准确率 / 性能 / 对比基准等读者一眼比数字更直观的信息）。
+- **「表已满足」不是跳过图的理由**：凡落在上述「图优于表」任一条，就必须出图，除非在 `figures_plan` 写清**强理由**（如「此精确价格查表场景，表已完整服务搜索意图，加卡会重复」）并经 L3.5 子 agent 复核认可。
+
+**防偷懒护栏（硬规则，L3.5 审查闸门拦截）**
+1. **强制评估，不强制套图**：每篇 L3 必须产出 `figures_plan`，对正文每个量化/可对比/结构化候选逐条给出：位置 + 推荐形态（table / svg / bespoke / none）+ 依据 + 优先级（must / should / optional）。**空手或「全 none 无理由」= 退回重写**。
+2. **子 agent 独立复核一轮（关键防自洽）**：L3.5 起一个**独立审查 agent**，不看主 agent 结论，自己通读草稿、枚举所有量化/对比/结构信息点，对照 `figures_plan` 逐项质询——若主 agent 在「图优于表」任一场景跳过且无强理由，子 agent **直接责令补图**；主 agent 须执行，或写出被复核认可的强理由，**严禁以「不强制」为由默认不画**。
+3. **内容派生校验**：每个数字（无论表还是图）都须能在正文找到来源；禁画正文没有的「占位 / 编造」图。
+4. **设计多样性校验**：跨页统计，若 >60% 正文页用同一 helper 类型（如全是 `compare` SVG），审查 agent 标「模板化预警」，要求补差异化图型。
+5. **类型自标注**：每张内联 SVG 图须带 `<!-- figtype:XXX -->` 注释（`make_figure.py` 自动加；bespoke 手绘由 AI 手填，如 `<!-- figtype:TIMELINE -->`），供 `verify_figures.py` 识别雷同。
+6. **落点**：L3 写稿 → 跑 `figure_audit.py` 抽候选出 `figures_plan` 草稿 → 主 agent 定稿计划 → 生成图/表 → 内联 `body` → L3.5 **子 agent 复核**（可责令补图）→ 通过才 `l4_render`。
+
+**图生成后强制两阶段审图（有图 ≠ 过关）**
+生成图 ≠ 合格。每图产出后必须过三道闸，任一不过不准 `l4_render`：
+1. **Stage 1 机械闸门 `site/scripts/figure_review.py`**：headless Chrome 渲染 PNG + PIL 逐像素扫描**文字越界/溢出**（出卡、出画布、卡间隙）、占位符/禁词扫描、可选 required/forbidden token 校验。不通过直接打回。
+2. **Stage 1.5 主 agent 目视自审**：看渲染 PNG，核对图内每个数字/标签与正文一致、无溢出、配色与呈现不刺眼。
+3. **Stage 2 独立子 agent 复核（关键）**：另起一个**不看主 agent 结论**的审查 agent，从三维度独立判定——**内容正确性**（数字标签与正文/规格一致、无编造）、**越界/溢出**（文字出卡/出画布/卡间隙）、**是否让人不适/误导**（如把正文给的**区间**画成**单点精确值**冒充测量值 = 实质误导，须返工改画范围带）。子 agent 可责令返工，**严禁橡皮图章式 PASS**。
+4. **区间源必画范围带**：若数据来源是范围（如「90–95%」），`fig_bars` 传 `low`/`high` 画**范围带 + 区间标签**，禁止把区间压成单点精确条。
+5. **落点更新**：生成图 → `figure_review.py` 闸门 → 主 agent 自审 → 子 agent 复核（可责令返工）→ 通过才 `l4_render`。
+
+**图表生成器 `site/scripts/make_figure.py`**（2026-11 新增，定位 = 补强工具，非默认套路）：把草稿里已核实的结构化数据画成站风格 SVG——4 个 helper：`pricing`(套餐卡) / `compare`(功能矩阵 ✓✗) / `bars`(性能横条，可设 `better:low`；传 `low`/`high` 即画**范围带**，用于来源是区间的数据) / `scorecard`(评分拆解)。**生成后必须过 `figure_review.py` 两阶段审图闸门**（见上）才 `l4_render`。命令：
+  `python site/scripts/make_figure.py --spec figs/{slug}.json --out assets/img/figures/{slug}.svg`（或 `--data '{...}'` 直接传、`--inline` 打到 stdout 便于内联；输出自动带 `<!-- figtype:XXX -->` 标注）。
+  **SEO 要点**：价格/对比/评分类带文字的图，渲染后**内联进草稿 `body`**（或 `<figure><img src=...><figcaption>来源/日期</figcaption></figure>`），数字即成页内可索引文本；不要截图厂商页（Cloudflare 墙 + 文字不可索引）。
+  - 设计 token 对齐 `hero-*.svg`（强调 `#b8503a`、描边 `#d8d1c1`、等宽数字、米色网格）；易变数字标 `as of 2026-11` 并写前复查。
+  - 配图校验：`python site/scripts/verify_figures.py` 扫描 `content/published/` 正文页（表格 / 评分 / `figure` / `figtype` 均算真实可视化，图标不计），输出「零可视化 must-have 页清单（FAIL）」+「模板化预警」，接入 §9.4 验证阶段。
 
 ### 9.6 平台免费政策快照（2026-10-22 官网核实，易变，写前复查）
 - **Agnes**（agnes-ai.cn / agnes-ai.com）：**需 API key**（注册后 dashboard 生成 Bearer key，OpenAI 兼容）；三大核心模型（agnes-2.0-flash 文本 / agnes-image-2.0+flash 图像 / agnes-video-v2.0 视频）**API 无限期免费、无 Token/配额上限，仅限 RPM**；1M 上下文高峰限速至 512K；Pro 模型（Agnes-2.5-Pro-Alpha）付费（$0.45/$0.90 每百万 Token）。国内站 2026-07-29 启用 `agnes-ai.cn`，端点 `api.agnes-ai.cn/v1`；国际站 `apihub.agnes-ai.com/v1`。免费本身即卖点，**不拆 Journal**。

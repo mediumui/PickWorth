@@ -1,0 +1,33 @@
+<!-- figtype:COMPARE -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 312" width="100%" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#2b2b2b" text-anchor="start" font-weight="700">Gemini vs ChatGPT vs Claude</text>
+<rect x="24" y="56" width="712" height="40" rx="6" fill="#f3e7e2"/>
+<text x="36" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#2b2b2b" text-anchor="start" font-weight="700">Feature</text>
+<text x="309.3333333333333" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b8503a" text-anchor="middle" font-weight="700">Gemini</text>
+<text x="479.99999999999994" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b8503a" text-anchor="middle" font-weight="700">ChatGPT</text>
+<text x="650.6666666666666" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b8503a" text-anchor="middle" font-weight="700">Claude</text>
+<rect x="24" y="96" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Free tier</text>
+<path d="M302.3333333333333 117 L307.3333333333333 122 L317.3333333333333 111" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M472.99999999999994 117 L477.99999999999994 122 L487.99999999999994 111" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M644.6666666666666 116 L656.6666666666666 116" stroke="#b8503a" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+<text x="36" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Max context</text>
+<text x="309.3333333333333" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">1M</text>
+<text x="479.99999999999994" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">128K</text>
+<text x="650.6666666666666" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="middle" font-weight="400">200K</text>
+<rect x="24" y="176" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Image generation</text>
+<path d="M302.3333333333333 197 L307.3333333333333 202 L317.3333333333333 191" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M472.99999999999994 197 L477.99999999999994 202 L487.99999999999994 191" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M644.6666666666666 196 L656.6666666666666 196" stroke="#b8503a" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+<text x="36" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">Coding agent</text>
+<path d="M302.3333333333333 237 L307.3333333333333 242 L317.3333333333333 231" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M472.99999999999994 237 L477.99999999999994 242 L487.99999999999994 231" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M643.6666666666666 237 L648.6666666666666 242 L658.6666666666666 231" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="24" y="256" width="712" height="40" fill="#efeade" opacity=".5"/>
+<text x="36" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#2b2b2b" text-anchor="start" font-weight="400">API access</text>
+<path d="M302.3333333333333 277 L307.3333333333333 282 L317.3333333333333 271" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M472.99999999999994 277 L477.99999999999994 282 L487.99999999999994 271" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M643.6666666666666 277 L648.6666666666666 282 L658.6666666666666 271" fill="none" stroke="#3f7d5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="24" y="56" width="712" height="240" rx="6" fill="none" stroke="#d8d1c1" stroke-width="1.3"/>
+</svg>

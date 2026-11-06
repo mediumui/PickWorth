@@ -1,0 +1,17 @@
+<!-- figtype:BARS -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 194" width="100%" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#2b2b2b" text-anchor="start" font-weight="700">Max single-clip length, by tool (reported ranges)</text>
+<text x="24" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" fill="#7a7468" text-anchor="start" font-weight="400">Reported clip-length ceilings from the drafts; en dash = a reported range, not an exact measurement</text>
+<text x="24" y="88.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#2b2b2b" text-anchor="start" font-weight="600">Runway</text>
+<rect x="154.0" y="74.0" width="512" height="18" rx="9" fill="#efeade"/>
+<rect x="196.7" y="74.0" width="25.6" height="18" rx="9" fill="#e4ded1"/>
+<text x="230.26666666666665" y="88.0" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="12.5" fill="#7a7468" text-anchor="start" font-weight="700">10–16 s</text>
+<text x="24" y="126.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#2b2b2b" text-anchor="start" font-weight="600">Kling</text>
+<rect x="154.0" y="112.0" width="512" height="18" rx="9" fill="#efeade"/>
+<rect x="154.0" y="112.0" width="512.0" height="18" rx="9" fill="#b8503a"/>
+<text x="674.0" y="126.0" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="12.5" fill="#b8503a" text-anchor="start" font-weight="700">120 s</text>
+<text x="24" y="164.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#2b2b2b" text-anchor="start" font-weight="600">Luma</text>
+<rect x="154.0" y="150.0" width="512" height="18" rx="9" fill="#efeade"/>
+<rect x="175.3" y="150.0" width="106.7" height="18" rx="9" fill="#e4ded1"/>
+<text x="290.0" y="164.0" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="12.5" fill="#7a7468" text-anchor="start" font-weight="700">5–30 s</text>
+</svg>
