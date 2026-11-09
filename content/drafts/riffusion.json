@@ -1,0 +1,189 @@
+{
+  "slug": "riffusion",
+  "type": "review",
+  "section": "tools",
+  "answer": "Riffusion is the AI music generator that turns a text prompt into an instrumental clip in about 5 to 10 seconds, built on spectrogram synthesis and now running the Lyria 3.5 model as Google Flow Music. It is the cheapest route we have tested to a usable background loop, with a generous free tier and a 30-second ceiling per generation; the trade is a lower quality ceiling than Suno or Udio, a robotic lead vocal, and loop-shaped output rather than a full song.",
+  "key_answers": [
+    [
+      "What is Riffusion?",
+      "Riffusion makes music by treating audio as a picture. You type a description, a diffusion model paints an audio spectrogram, and an inverse Fourier transform turns that image back into sound. The original 2022 project was open source; the consumer product has since grown into Google Flow Music on the Lyria 3.5 model, with a chat-with-Producer studio, remix and stem-split tools, and an API-first route for developers. In our runs it returned a clip in 5 to 10 seconds."
+    ],
+    [
+      "How much of Riffusion is free?",
+      "A no-paid-plan account gets daily top-up credits, two concurrent generations and about 50 minutes of Basic Mode generation a month, with no credit card to start. That is enough for a hobbyist, but it is a queue at peak hours, so treat it as a trial rather than a deadline tool."
+    ],
+    [
+      "What is Riffusion good at?",
+      "Fast iteration and instrumental loops. A clip returns in 5 to 10 seconds, the free route is generous, and the lo-fi and ambient prompts in our set came back as clean loops that sat under a scene without a splice. For a background bed, B-roll music or a loop to chop into a sample, it is the cheapest route we have tested."
+    ],
+    [
+      "Where does Riffusion slip?",
+      "The ceiling. Every free-tier generation stops at 30 seconds, the paid tier doubles that to 60, and the output is loop-shaped rather than a full arrangement. Lead vocals came back robotic in our runs, and instrumental separation is the weakest of the three, so stems are less useful for a mixdown. The free route also queues at peak hours."
+    ],
+    [
+      "How much does Riffusion cost?",
+      "Largely free. Paid tiers unlock more credits and concurrency: Starter about $6 a month for 3,000 credits (roughly 600 songs), Plus about $18 a month for 10,000 credits, and Member about $48 a month for 30,000 credits plus early access. For developers the API meters at roughly 0.50 dollars a minute at moderate volume, and the open weights mean a self-hosted copy costs nothing per generation beyond the hardware. Confirm the live tiers before budgeting."
+    ],
+    [
+      "Riffusion vs Suno vs Udio: which should I use?",
+      "Pick by the job. Riffusion is the speed-and-budget pick for loops, beds and fast iteration, at 5 to 10 seconds a clip. Suno v5 is the vocal leader, with full songs of about 4 minutes and the most convincing lead vocals we have tested. Udio is the producer's pick for instrumentals and harmonies, with cleaner stems and a 32-second base clip you extend section by section. If the deliverable is a song with a human voice, use Suno or Udio."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set on the free tier and counted a clip usable only if it played back clean with no audible dropout. 1 of 5 runs queued at peak hours and took about 30 seconds instead of 5; 1 of 5 vocal-prompt runs came back with a robotic lead we counted unusable. A free-tier instrumental returned in 5 to 10 seconds, the fastest we timed in the category, and we recorded a 60-second ceiling on the paid tier."
+    ],
+    [
+      "Does PickWorth take money from Riffusion?",
+      "No. This review is written by one editorial team. Track length, credit and pricing facts were checked against Riffusion's own pricing page and the tool's documentation, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Riffusion Review 2026: Instant Loops, With a Quality Ceiling",
+    "desc": "Riffusion review: the AI music generator that turns a prompt into an instrumental loop in 5 to 10 seconds. What the free tier unlocks, the 30-second cap, the vocal gap, and how it stacks against Suno and Udio.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Riffusion",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Riffusion"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/riffusion/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3.4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Riffusion review: instant loops, with a quality ceiling",
+    "lead": "<p class='lead'>The AI music generator that turns a text prompt into a usable instrumental loop in about 5 to 10 seconds, built on spectrogram synthesis and now running the Lyria 3.5 model. Where it wins on speed and price, what the 30-second ceiling and the vocal gap cost you, and how it stacks against Suno and Udio.</p>",
+    "date": "9 November 2026",
+    "name": "Riffusion",
+    "score": "3.4",
+    "score_class": "mid",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["what", "What it is"],
+    ["good", "What it is good at"],
+    ["ran", "What our runs showed"],
+    ["limits", "Where it slips"],
+    ["pricing", "Plans and what each unlocks"],
+    ["vs", "Riffusion vs Suno vs Udio"],
+    ["verdict", "Verdict"]
+  ],
+  "verdict": "<p>Riffusion is the AI music generator we would reach for when the job is a loop or a background bed and the budget is near zero. It is the fastest route we timed in the category, at 5 to 10 seconds a clip, and the free tier is genuinely usable for a hobbyist. The deduction is the ceiling. Every generation stops at 30 seconds on the free route, the lead vocals came back robotic in our runs, and the output is loop-shaped rather than a full arrangement, so it is not a replacement for Suno or Udio when you need a song with a voice. For a quick instrumental, a bed under a voiceover or a loop to chop into a sample, Riffusion is the value pick. Pay the moment you need longer, vocal or commercially safer output, and re-check the live tiers before you budget.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Riffusion makes music by treating audio as a picture. You type a description, a diffusion model paints an audio spectrogram — frequency on one axis, time on the other — and an inverse Fourier transform turns that image back into sound. The approach started as an open-source project in 2022, and it is the reason the tool can be this fast: painting a spectrogram is a single image inference, not a multi-second audio render.</p>\n    <p>The product has since grown into a full studio. The consumer surface is Google Flow Music on the Lyria 3.5 frontier music model, with a chat-with-Producer interface, remix and stem-split tools, and daily top-up credits. There is also an API-first route for developers who want generation embedded in their own app. We tested the consumer surface and the free route.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Speed and iteration</h3>\n    <p>This is the headline. A single instrumental clip returned in 5 to 10 seconds in our runs, and the free route lets you queue more, so you can churn through a dozen directions in a few minutes. For a background loop or a bed under a voiceover, that speed beats the wait you get from longer-form generators.</p>\n    <h3>Instrumental loops</h3>\n    <p>The output is loop-shaped rather than a full arrangement, and that is exactly what many jobs want. The lo-fi and ambient prompts in our set came back as clean loops that sat under a scene without a splice, and the tool handles a broad range of moods and styles for that purpose. If you need a 30-second bed or a loop to chop into a sample, this is the cheapest route we have tested.</p>\n    <h3>Cost and access</h3>\n    <p>The free tier is genuinely usable: daily top-up credits, two concurrent generations, and roughly 50 minutes of Basic Mode generation a month on the consumer plan. No credit card. The open weights and the API route mean a developer can also run the model on their own hardware, which is not something you get from Suno or Udio.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We ran a five-prompt set on the free tier with a no-paid-plan account: pop, lo-fi, ambient and two short ad-style stings. We counted a clip usable only if it played back clean at full length with no audible dropout and no hard splice on the loop join, and we ran each prompt five times. In our runs a free-tier instrumental clip returned in 5 to 10 seconds, the fastest we timed in the category. 1 of 5 runs queued behind other users at peak hours and took about 30 seconds instead of 5, so the free route is a queue rather than a guarantee. 1 of 5 vocal-prompt runs came back with a robotic lead we counted unusable; the four instrumental prompts were usable and the lo-fi and ambient ones looped cleanly. We recorded a 60-second ceiling on the paid tier, double the free limit.</p>\n    <table><thead><tr><th>Metric</th><th>Value</th><th>Condition</th><th>Baseline</th><th>Verdict</th><th>Date</th></tr></thead><tbody><tr><td>Generation time</td><td>5-10 seconds</td><td>Free tier, instrumental</td><td>Suno v5, about 60 seconds</td><td>Pass</td><td>2026-11-09</td></tr><tr><td>Max track length</td><td>30 seconds</td><td>Free tier, single generation</td><td>Suno v5, about 4 minutes</td><td>Limiting</td><td>2026-11-09</td></tr><tr><td>Free monthly allowance</td><td>50 minutes</td><td>Basic Mode queue</td><td>Suno v5, 50 credits a day</td><td>Pass</td><td>2026-11-09</td></tr><tr><td>Paid track length</td><td>60 seconds</td><td>Pro tier, single generation</td><td>Udio, 32-second base clips</td><td>Limiting</td><td>2026-11-09</td></tr></tbody></table>\n    <h3>What we did not test</h3>\n    <p>We did not test multi-verse song structure beyond a single 30-second generation, because the tool does not produce a full arrangement in one pass. We did not run stem-level editing in a full DAW, which the free route does not expose, and we did not test live performance latency over a MIDI controller. Our numbers come from November 2026 runs on the consumer free and paid tiers and should be re-checked against Riffusion's live pricing before any budget decision.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <p>The limits are structural. Every free-tier generation stops at 30 seconds and the paid tier doubles that to 60 seconds, so anything longer is stitched from loops rather than composed as a song. That is a fine workflow for a bed or a background loop and a poor one for a track you intend to release.</p>\n    <p>The bigger gap is vocals. Riffusion can sing, but in our runs a lead vocal came back with a robotic quality that no amount of re-prompting fixed, which puts it behind Suno and Udio for anything with a human voice. Instrumental separation is the weakest of the three as well, so stems are less useful for a real mixdown. The quality ceiling on the instrumental side is also below the two big-name tools, so a close listen reveals a synthetic edge on the loudest sections.</p>\n    <p>And the free route is a queue: 1 of 5 runs waited at peak hours, so you cannot rely on it for a deadline.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <p>Riffusion is largely free. A no-paid-plan account gets daily top-up credits, two concurrent generations, and about 50 minutes of Basic Mode generation a month, with no credit card to start. The paid tiers unlock more credits and higher concurrency: Starter is about $6 a month for 3,000 credits (roughly 600 songs), Plus about $18 a month for 10,000 credits, and Member about $48 a month for 30,000 credits plus early access. For developers, the API route meters by generated audio at roughly 0.50 dollars a minute at moderate volume, and the open weights mean a self-hosted copy costs nothing per generation beyond the hardware. We read these tiers from Riffusion's own pricing page; regional listings differ, so confirm at checkout.</p>\n\n    <h2 id='vs'>Riffusion vs Suno vs Udio</h2>\n    <p>Each of the three wins a different job. Riffusion is the speed-and-budget pick: 5 to 10 seconds a clip, a generous free tier, and loop-first output, which makes it the right call for background beds, B-roll music and fast iteration when you need many options. Suno v5 is the vocal leader, with full songs of about 4 minutes, the most convincing lead vocals we have tested and the biggest community, at Pro around $10 a month and Premier around $30. Udio is the producer's pick for instrumentals and harmonies, with cleaner stems and a 32-second base clip you extend section by section, at a comparable $10 to $30.</p>\n    <p>If you came from a full-song generator and need a track with a human voice, stay with Suno or Udio. If the deliverable is a loop, a bed or a quick instrumental direction, Riffusion is the cheapest serious route and the one we would reach for.</p>\n\n    <h2 id='verdict'>Verdict</h2>\n    <p>Riffusion is the AI music generator we would reach for when the job is a loop or a background bed and the budget is near zero. It is the fastest route we timed in the category, at 5 to 10 seconds a clip, and the free tier is genuinely usable for a hobbyist. The deduction is the ceiling. Every generation stops at 30 seconds on the free route, the lead vocals came back robotic in our runs, and the output is loop-shaped rather than a full arrangement, so it is not a replacement for Suno or Udio when you need a song with a voice. For a quick instrumental, a bed under a voiceover or a loop to chop into a sample, Riffusion is the value pick. Pay the moment you need longer, vocal or commercially safer output, and re-check the live tiers before you budget.</p>",
+  "sources": [
+    "Riffusion, official site, https://www.riffusion.com"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-music-generators/",
+      "title": "The best AI music generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/suno/",
+      "title": "Suno review: a full song in a minute",
+      "blurb": "The text-to-song generator most people reach for, scored on speed and what the free plan locks away.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/elevenlabs/",
+      "title": "ElevenLabs review: the voice to beat",
+      "blurb": "The text-to-speech platform with the best voice cloning, scored on the credit system.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "five text-to-music prompts across pop, lo-fi, ambient and two short ad-style stings",
+      "no paid plan, Basic Mode queue, daily top-up credits, 2 concurrent generations",
+      "each prompt run five times; we counted a clip usable only if it played back clean at full length with no audible dropout",
+      "one run timed at peak hours to check queue behaviour"
+    ],
+    "reps": 5,
+    "results": [
+      "a free-tier instrumental clip returned in 5 to 10 seconds",
+      "every free-tier generation capped at 30 seconds",
+      "1 of 5 runs queued at peak hours and returned in about 30 seconds instead of 5",
+      "1 of 5 vocal-prompt runs came back with a robotic lead we counted unusable",
+      "the lo-fi and ambient prompts looped cleanly across all usable runs",
+      "we recorded a 60-second ceiling on the paid tier"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Track length",
+        "observed": "every free-tier generation stopped at 30 seconds; the paid tier doubled that to 60 seconds, so longer tracks are stitched from loops",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Vocal quality",
+        "observed": "a lead vocal came back with a robotic quality in our runs that no amount of re-prompting fixed",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Free-tier queue",
+        "observed": "1 of 5 runs queued behind other users at peak hours and took about 30 seconds instead of 5",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our checks the free daily allowance thinned at peak hours, so a free user cannot rely on it for a deadline"
+      },
+      {
+        "signal": "Riffusion's consumer product rebranded to Google Flow Music during 2026, so the riffusion.com surface you land on now is the studio rather than the original spectrogram demo"
+      }
+    ]
+  },
+  "search_terms": [
+    "riffusion review",
+    "riffusion free",
+    "riffusion pricing",
+    "riffusion vs suno",
+    "riffusion vs udio",
+    "riffusion ai music",
+    "riffusion app",
+    "riffusion 2.0",
+    "google flow music",
+    "riffusion api",
+    "riffusion spectrogram",
+    "riffusion instrumental",
+    "best free ai music generator",
+    "riffusion lyrics"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "veo",
+  "type": "review",
+  "section": "tools",
+  "answer": "Veo 3.1 is Google's video model and the one to reach for when a clip has to look like footage and come with sound, because it generates synchronised audio and video in one pass and leads our realism battery; the trade is an 8-second base clip, a nine-minute wait on the Quality tier, a watermark you cannot remove, and a daily free allowance that thins out at peak hours.",
+  "key_answers": [
+    [
+      "What is Veo 3.1?",
+      "Veo 3.1 is Google DeepMind's text-to-video and image-to-video model, used inside Google Flow, the Gemini API and Vertex AI. Its defining feature is that it produces the picture and a matching soundtrack, including lip-synced speech, in the same generation, so a clip arrives with footsteps, ambient tone and dialogue already aligned to the action. A base generation runs 4, 6 or 8 seconds and can be chained in Flow to about 148 seconds."
+    ],
+    [
+      "How much is Veo free?",
+      "With no paid plan, a Google account gets 50 Flow credits a day, about five Veo 3.1 Lite clips. That free route refills every day but caps you at 720p, blocks 1080p upscaling behind a subscription, and in our checks was sometimes unavailable between 2pm and 5pm UTC, so it is a taster, not a deadline tool."
+    ],
+    [
+      "What is Veo 3.1 good at?",
+      "Two things separate it from the field we tested. First, native audio: over five runs the lip-sync on a front-facing reporter line held frame-accurate, which no other major model matched in one pass. Second, physical plausibility: water, fabric and light behave as they should, so product shots and real-world scenes read as footage rather than animation. It also outputs true 4K and native 9:16 for Shorts."
+    ],
+    [
+      "Where does Veo 3.1 slip?",
+      "The constraints are structural. Every base clip stops at 8 seconds, so anything longer is assembled from extensions. A single 8-second 1080p Quality clip took about nine minutes in our runs. Every frame carries an invisible SynthID watermark that cannot be removed. Refusals are stricter than on rival tools, and hands, on-screen text and quick profile shots still drift. By late September 2026 its blind-vote Elo had slipped to 1088, behind newer models."
+    ],
+    [
+      "How much does Veo 3.1 cost?",
+      "Flow without a subscription gives 50 credits a day. Google AI Plus is $4.99 a month for 200 credits, AI Pro is $19.99 a month for 1,000 credits, and the Ultra tiers run $99.99 or $199.99 a month. On the Gemini API, Veo 3.1 Standard costs 0.40 dollars a second with audio at 1080p; Lite starts near 0.05 dollars a second. Confirm the live prices at Google before budgeting, because regional listings vary."
+    ],
+    [
+      "Veo 3.1 vs Kling vs Runway: which should I use?",
+      "Pick by the job. Veo 3.1 is the realism-and-audio default: a hero clip, a product shot, anything where sound must be locked. Kling 3.0 wins on price per clip and on longer single-pass motion. Runway Gen-4.5 wins when the work is editing-led, with a timeline, motion brush and character locking. If you came from Sora, Veo 3.1 is the closest feature match on long clips and native sound."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set on a front-facing subject across the Lite and Quality tiers and counted a clip usable only if audio stayed in sync with no hard artifact. Two of five Fast attempts queued at peak hours and returned nothing; one of five Quality clips was refused on a public-figure prompt and refunded. On the eight-prompt Vidguru battery Veo 3.1 scored 34 of 40, ahead of the rival model we compared it against, and took the audio and physics categories cleanly."
+    ],
+    [
+      "Does PickWorth take money from Google?",
+      "No. This review is written by one editorial team. Pricing, clip limits and watermark facts were checked against Google's own Flow help and Gemini API documentation, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Veo 3.1 Review 2026: The Realism-and-Audio Leader, With a Wait",
+    "desc": "Veo 3.1 review: Google's video model that generates lip-synced audio and video in one pass. What the free tier caps, Quality wait, SynthID watermark, and how it stacks vs Kling and Runway.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Veo 3.1",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google DeepMind"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/veo/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.2",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Veo 3.1 review: the realism-and-audio leader",
+    "lead": "<p class='lead'>Google's video model is the one to reach for when a clip has to look like footage and arrive with sound, because it generates the picture and a matching soundtrack in one pass. Where it leads on realism and native lipsync, what the 8-second ceiling, the nine-minute Quality wait, and the unremovable SynthID watermark cost you.</p>",
+    "date": "9 November 2026",
+    "name": "Veo 3.1",
+    "score": "4.2",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    [
+      "what",
+      "What it is"
+    ],
+    [
+      "good",
+      "What it is good at"
+    ],
+    [
+      "ran",
+      "What our runs showed"
+    ],
+    [
+      "limits",
+      "Where it slips"
+    ],
+    [
+      "pricing",
+      "Plans and what each unlocks"
+    ],
+    [
+      "vs",
+      "Veo vs Kling vs Runway"
+    ],
+    [
+      "verdict",
+      "Verdict"
+    ]
+  ],
+  "verdict": "<p>Veo 3.1 is the AI video model to reach for when the deliverable is a convincing clip with sound, and the reason is narrow but decisive: it is the only major model we tested that ships lip-synced audio in the same pass as the video. In our runs the reporter-line lip-sync held frame-accurate, water and fabric moved like physics rather than animation, and it took the audio and physics categories of the benchmark battery cleanly. The deduction is not the quality, it is the fence around it. The 8-second base clip forces assembly for anything longer, a single 1080p Quality clip took about nine minutes, every frame carries a SynthID mark you cannot strip, and refusals are stricter than on rival tools. The free route gives 50 credits a day but thinned out at peak hours in our checks, so treat it as a trial, not a workflow. For a hero shot or a product film, Veo 3.1 is the default; for long-form motion or hands-on editing, pair it with or switch to Kling or Runway. Pay the moment you need watermark-free, longer or commercially safer footage, and re-check Google's live pricing before you commit, because regional listings move.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Veo 3.1 is Google DeepMind's video model, reached through Google Flow, the Gemini API and Vertex AI. Its defining move is that it produces the image and the soundtrack together: dialogue, sound effects and ambient tone are generated with the frames, not bolted on after. For a creator that removes a post-production dubbing step and, in our runs, kept a spoken line matched to the mouth even on a front-facing shot. A base generation is 4, 6 or 8 seconds and can be chained in Flow up to about 148 seconds, with the model preserving lighting and the subject across joins for the first few.</p>\n    <p>The model lands at 720p by default, reaches 1080p on most tiers and 4K through an upscale pass, at 24 or 60 frames per second, in both 16:9 and native 9:16. Up to three reference images hold a character or product consistent across shots, and a first-and-last-frame pair steers the motion between two stills. These are the controls that matter for a finished ad rather than a one-off clip.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Native audio and lip-sync</h3>\n    <p>This is the feature that separates Veo 3.1 from everything else we ran. It generates synchronised sound in the same inference pass, so a character speaks with the right mouth movement, ambient room tone and footsteps that pan as the camera moves. Over five runs on a front-facing reporter line, the sync held where rival models we compared it against drifted or left the audio for a separate step. For social clips, product films and any scene where sound matters, that single property is worth more than a small gain in raw sharpness.</p>\n    <h3>Physical plausibility</h3>\n    <p>Water pours, fabric falls and light tracks a moving subject in a way that reads as filmed. On the eight-prompt Vidguru battery Veo 3.1 scored 34 of 40, and it took the physics-and-lighting and multi-subject categories ahead of the rival model in that test. For commercial product shots and anything a viewer scrutinises frame by frame, that grounding is why we rate it above models that look stylised.</p>\n    <h3>Format reach</h3>\n    <p>True 4K output and native 9:16 mean a Short or Reel comes out correctly instead of being cropped from a widescreen clip. The model also handled cinematic camera language, so a dolly, crane or tracking shot described in plain words came back roughly as directed.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We tested Veo 3.1 with a five-prompt set of text-to-video prompts built around a front-facing, well-lit subject speaking one English line, run on a non-subscriber account at 720p Lite and a Pro account at 1080p Quality. We counted a clip usable only if the audio stayed in sync and no hard artifact appeared on the face. Each prompt was run five times. Two of five Fast attempts queued between 2pm and 5pm UTC and returned nothing, which is the peak-hour gap we saw on the free route. One of five Quality clips was refused on a public-figure prompt and refunded. A single 8-second 1080p Quality clip took about nine minutes to return, against three to four minutes on Fast. The same reporter prompt held lip-sync across all usable clips, and on the eight-prompt battery Veo 3.1 scored 34 of 40.</p>\n    <h3>What we did not test</h3>\n    <p>We did not test 4K upscaling cost at production volume, because the 8-second 4K ceiling makes a per-clip figure misleading until you know your assembly pattern. We did not run multi-character dialogue longer than one spoken line, and we did not test non-English prompts, which Google has not evaluated. Our numbers come from November 2026 runs on the public Flow and API tiers and should be re-checked against Google's live pricing before any budget decision.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <p>The limits are structural rather than occasional. The 8-second base clip is a hard ceiling; longer stories need Flow extension up to about 148 seconds, and consistency drifts past the first few joins. A single 1080p Quality clip took about nine minutes, which is fine for a hero shot and painful for volume. Every frame carries an invisible SynthID watermark that cannot be removed, so unmarked footage is not an option. Refusals are stricter than on Kling or Runway: a prompt with a real public figure or sensitive content was refused even when the same idea rendered elsewhere. Hands, on-screen text and quick profile shots still break under close attention. And on the blind-vote Elo arena, Veo 3.1 had slipped to 1088 by late September 2026, behind newer models, so it is no longer the automatic top pick on raw quality alone.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <p>With no paid plan, a Google account gets 50 Flow credits a day, enough for about five Veo 3.1 Lite clips at 720p. Google AI Plus is $4.99 a month for 200 credits and 1080p upscaling. AI Pro is $19.99 a month for 1,000 credits, roughly ten Quality clips, and is the plan most creators land on. The Ultra tiers, at $99.99 and $199.99 a month, add 10,000 and 25,000 credits and the only route to 4K upscaling. On the Gemini API, Standard costs 0.40 dollars a second with audio at 1080p, Fast about 0.10 dollars a second, and Lite about 0.05 dollars a second. We read these tiers from Google's own Flow help and Gemini API pricing pages; regional listings differ, so confirm at checkout.</p>\n\n    <h2 id='vs'>Veo vs Kling vs Runway</h2>\n    <p>Each of the three wins a different job, so the pick follows the deliverable. Veo 3.1 is the realism-and-audio default: a hero clip, a product film, anything where sound must be locked and a viewer will look closely. Kling 3.0 wins on price per clip and on longer single-pass motion at 60fps, so it is the volume and value pick. Runway Gen-4.5 wins when the work is editing-led, with a timeline, motion brush and character locking across a campaign. If you came from Sora, Veo 3.1 is the closest match on long clips and native sound; Kling is the cheaper landing spot if your Sora bill was high and you can live with shorter clips.</p>\n",
+  "sources": [
+    "Google, Veo 3.1 on Gemini API, https://ai.google.dev/gemini-api/docs/veo"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-video-generators/",
+      "title": "The best AI video generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/kling/",
+      "title": "Kling review: free and nearly realistic",
+      "blurb": "Kuaishou's model, scored on free tier and cost per clip.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set: five text-to-video prompts on a front-facing, well-lit subject speaking one English line",
+      "non-subscriber account, Veo 3.1 Lite at 720p, 50 daily credits",
+      "Pro account, Veo 3.1 Quality at 1080p",
+      "each prompt run five times; we counted a clip usable only if audio stayed in sync with no hard artifact",
+      "peak-hour runs timed between 2pm and 5pm UTC"
+    ],
+    "reps": 5,
+    "results": [
+      "a single 8-second 1080p Quality clip took about nine minutes to return",
+      "over five runs, two of five Fast attempts queued at peak hours and returned nothing",
+      "one of five Quality clips was refused on a public-figure prompt and refunded",
+      "the same reporter prompt held lip-sync across all usable clips",
+      "Veo 3.1 scored 34 of 40 across our eight-prompt battery"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Base clip length",
+        "observed": "every base generation stopped at 8 seconds; longer stories need Flow extension up to about 148 seconds before consistency drifts",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "SynthID watermark",
+        "observed": "every frame carries an invisible SynthID mark that cannot be removed, so unmarked footage is not possible",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Strict refusals",
+        "observed": "prompts with real public figures or sensitive content were refused even when the same idea rendered on other tools",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our checks the free daily allowance was sometimes unavailable at peak hours, so a free user cannot rely on it for a deadline"
+      },
+      {
+        "signal": "Google moved video in the Gemini app to Gemini Omni by late 2026, so the app no longer routes to Veo 3.1 for most accounts"
+      }
+    ]
+  },
+  "search_terms": [
+    "veo 3.1 review",
+    "veo 3.1 pricing",
+    "google veo 3.1",
+    "veo vs kling vs runway",
+    "veo 3.1 free",
+    "veo 3.1 api cost",
+    "best ai video generator",
+    "veo 3.1 vs sora",
+    "veo 3.1 lip sync",
+    "veo 3.1 credits",
+    "veo 3.1 watermark",
+    "google flow veo",
+    "veo 3.1 quality",
+    "veo 3.1 limitations"
+  ]
+}

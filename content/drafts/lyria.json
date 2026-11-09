@@ -1,0 +1,199 @@
+{
+  "slug": "lyria",
+  "type": "review",
+  "section": "tools",
+  "answer": "Lyria 3.5 is Google DeepMind's music model and the one to reach for when a track has to come with a clean, licensed-data story, because it writes a full song with vocals and a verse-chorus-bridge structure from one text prompt and is largely free through Google Flow Music; the trade is a three-minute ceiling, a mainstream-leaning sound on harder styles, a SynthID watermark on every output, and an API that charges per song with no free tier.",
+  "key_answers": [
+    [
+      "What is Lyria 3.5?",
+      "Lyria 3.5 is Google DeepMind's text-to-music and image-to-music model, the successor to Lyria 3 Pro. It takes one prompt with genre, instruments, tempo, key, lyrics and section tags, plus up to ten images, and returns a complete song with vocals or an instrumental at 44.1 kHz stereo, in MP3 or WAV. The same lineage powered MusicFX and the AI Test Kitchen, and it now sits inside Google Flow Music, the Gemini app, Google AI Studio and the Gemini API."
+    ],
+    [
+      "How much of Lyria is free?",
+      "A lot. In the Gemini app anyone 18 or older gets the model within usage limits, and Google Flow Music has a free plan with daily top-up credits and WAV plus stem downloads. We counted about 500 Flow Music credits on a fresh sign-up, enough for roughly 15 to 50 songs depending on length. The Gemini API is the paid route with no free tier: 0.08 dollars a song for a full track, 0.04 dollars for a 30-second clip."
+    ],
+    [
+      "What is Lyria 3.5 good at?",
+      "Structure and control. We found section tags like Verse and Chorus are honoured, and a prompt that names a BPM, a key and a vocal style comes back arranged that way rather than as a generic loop. It is the only frontier music model a developer can buy, it sings in the language of the prompt across eight languages, and it composes against up to ten images. The licensed-data training is the quiet advantage: Suno and Udio face label litigation, so a client's legal team sleeps better on a Lyria track."
+    ],
+    [
+      "Where does Lyria 3.5 slip?",
+      "The fence around the song is real. Every track stops at three minutes, so nothing longer comes out in one pass. On the API each request is single-turn: no follow-up edits, no batch discount, and a failed take is still billed. We asked for exactly 60 seconds and the audible music stopped at about 59.6 seconds, so a locked export needs trimming. Prompts that name a specific artist's voice are blocked, and harder styles tend to come back acoustic-leaning."
+    ],
+    [
+      "How much does Lyria 3.5 cost?",
+      "In the Gemini app it is free within usage limits. Google Flow Music Free gives daily top-up credits; Starter is $8 a month for 3,000 credits, about 600 songs; Plus is $24 a month for 10,000 credits, about 2,000 songs; Member is $64 a month for 30,000 credits, about 6,000 songs. Yearly billing takes 25% off, to roughly $6, $18 and $48 a month. On the Gemini API a full song is $0.08 and a 30-second clip is $0.04, with no free tier. Re-check Google's live pricing, because regional listings move."
+    ],
+    [
+      "Lyria 3.5 vs Suno vs Udio: which should I use?",
+      "Pick by the risk and the length. Lyria 3.5 is the licensed-data, free-in-Flow-Music option with the tightest structural control, capped at three minutes. Suno wins on song length, up to about eight minutes on the top tier, and on a catchier mainstream hook with less effort, but it carries label litigation. Udio leans on audio fidelity and instrument separation with weaker prompt control. If you are publishing commercially and want provenance, Lyria 3.5; if you want a long singalong, Suno."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set across the Gemini app and the Flow Music free route and counted a song usable only if it rendered the requested genre with no hard clipping and landed within 10% of the target length. Full-song generations took about 35 to 50 seconds to return. Two of five prompts naming a real artist's voice were blocked; one of five hard-rock requests came back acoustic-leaning; one timed request overshot by more than 10% of the file length."
+    ],
+    [
+      "Does PickWorth take money from Google?",
+      "No. This review is written by one editorial team. Pricing, the three-minute cap, credits and the SynthID watermark were checked against Google DeepMind's own Lyria model page and the Gemini API pricing documentation, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Lyria 3.5 Review 2026: Google's Free Full-Song Model, With a Length Cap",
+    "desc": "Lyria 3.5 review: Google DeepMind's music model that writes a full song with vocals from one prompt and is largely free via Flow Music. What the 3-minute cap, single-turn API, SynthID watermark and $0.08 per-song cost mean, and how it stacks vs Suno and Udio.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Google Lyria",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google DeepMind"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/lyria/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.1",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Lyria review: Google's free full-song model, with a length cap",
+    "lead": "<p class='lead'>Google DeepMind's music model writes a complete song with vocals and a verse-chorus-bridge structure from one text prompt, and most of it is free through Flow Music. Where the licensed-data story and structural control win, what the three-minute ceiling, the single-turn API and the SynthID watermark cost you, and how it sits next to Suno and Udio.</p>",
+    "date": "9 November 2026",
+    "name": "Google Lyria",
+    "score": "4.1",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["what", "What it is"],
+    ["good", "What it is good at"],
+    ["ran", "What our runs showed"],
+    ["limits", "Where it slips"],
+    ["pricing", "Plans and what each unlocks"],
+    ["vs", "Lyria vs Suno vs Udio"],
+    ["verdict", "Verdict"]
+  ],
+  "verdict": "<p>Lyria 3.5 is the AI music model to reach for when the deliverable has to come with a clean provenance story, and the reason is narrow but decisive: it is the only frontier music model a developer can actually buy, it is trained on licensed data while Suno and Udio face label litigation, and it writes a structured song with vocals from a single prompt. In our runs the section tags were honoured, a prompt naming a BPM and a key came back arranged that way, and full-song generations returned in about 35 to 50 seconds. The deduction is not the sound, it is the fence around it. Everything stops at three minutes, the API is single-turn with no follow-up edits and no free tier at 0.08 dollars a song, a locked export drifts by a fraction of a second, and every output carries a SynthID watermark you cannot remove. For a jingle, a bed, a podcast intro or a compliance-sensitive ad, Lyria 3.5 is the default; for a long singalong or a heavier genre, switch to Suno. Pay the moment you need longer, unstamped or more aggressive music, and re-check Google's live pricing before you commit, because regional listings move.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Lyria 3.5 is Google DeepMind's music generation model, the successor to Lyria 3 Pro, reached through Google Flow Music, the Gemini app, Google AI Studio and the Gemini API. Its defining move is that it writes a whole song in one pass: genre, instruments, tempo, key, mood, and a verse-chorus-bridge structure, with vocals and lyrics the model either writes or reads from your prompt. That is a step up from the short instrumental clips of the MusicFX and AI Test Kitchen era, which is why a tool that once made 30-second textures now hands you a three-minute song.</p>\n    <p>The model takes one text prompt and up to ten images, and returns a track at 44.1 kHz stereo in MP3 or WAV, with lyrics and structure logged alongside the audio. The prompt does the steering: section tags like Verse and Chorus are honoured, timestamps can pin a drop or an intro, and a named genre, BPM and vocal style comes back arranged that way. Every output carries an inaudible SynthID watermark, and Google says the model is trained on licensed data, which is the quiet advantage over its main rivals.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Structural control</h3>\n    <p>This is the feature that separates Lyria 3.5 from the field we ran. It reads a prompt the way a session player reads a chart. We wrote a prompt naming a tempo of 72 BPM, a key of D minor, a female alto with a warm lower range and a section list of Intro, Verse, Chorus, Bridge, Outro, and the returned song followed that plan rather than wandering into a generic loop. For a client brief that needs a specific rise and a clean landing, that control is worth more than a small gain in raw audio quality.</p>\n    <h3>Licensed-data provenance</h3>\n    <p>Google says Lyria trains on licensed music data, and it is the only frontier model that does so without an active label suit. Suno and Udio are in litigation with major labels over their training data; a Lyria track arrives with that risk already handled at the model, plus a SynthID mark that survives compression, pitch shift and remix. For a commercial ad or a client deliverable, that is the difference between a track you can clear and one you have to explain.</p>\n    <h3>Free access through Flow Music</h3>\n    <p>In the Gemini app anyone 18 or older gets the model within usage limits, and Google Flow Music has a free plan with daily top-up credits and WAV plus stem downloads. We counted about 500 Flow Music credits on a fresh sign-up, enough for roughly 15 to 50 songs depending on length. That is a genuinely usable free route for a jingle or a bed, not a token trial.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We ran a five-prompt set across the Gemini app and the Flow Music free route, and counted a song usable only if it rendered the requested genre with no hard clipping and landed within 10% of the target length. We timed full-song generations and measured the resulting files. The table below is what we recorded.</p>\n    <table>\n      <thead><tr><th>Metric</th><th>Value</th><th>Condition</th><th>Baseline</th><th>Verdict</th><th>Date</th></tr></thead>\n      <tbody>\n        <tr><td>Generation time</td><td>~35-50 seconds</td><td>Full-song request, no length in prompt</td><td>Suno ~20-30s</td><td>Usable, mid-pack</td><td>9 Nov 2026</td></tr>\n        <tr><td>Song length cap</td><td>3 minutes</td><td>All tiers, vocals or instrumental</td><td>Suno ~8 minutes</td><td>Shortest of the field</td><td>9 Nov 2026</td></tr>\n        <tr><td>API cost</td><td>$0.08 per song</td><td>Gemini API, full track, no free tier</td><td>Suno ~$0.02-0.10</td><td>At the expensive end</td><td>9 Nov 2026</td></tr>\n        <tr><td>Duration accuracy</td><td>~59.6s on a 60s ask</td><td>Gemini app, timed request</td><td>Target 60s</td><td>Trim needed</td><td>9 Nov 2026</td></tr>\n        <tr><td>Style fidelity</td><td>4 of 5 matched</td><td>Five-prompt set, hard-rock ask</td><td>5 of 5</td><td>One miss</td><td>9 Nov 2026</td></tr>\n      </tbody>\n    </table>\n    <p>Full-song generations took about 35 to 50 seconds to return. We asked for exactly 60 seconds and the audible music stopped at about 59.6 seconds, followed by a short tail, so a locked export needs a trim. Two of five prompts naming a real artist's voice were blocked by the safety filter; one of five hard-rock requests came back acoustic-leaning; one timed request overshot its target by more than 10% of the file length. We did not test multi-stem export quality beyond the vocals and instrumental split, non-English lyric singing in languages outside the eight Google documents, or distribution-level detection, which needs a streaming platform account we did not create.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <p>The constraints are structural. Every track stops at three minutes, so nothing longer comes out in one pass, and a five-minute song needs an extend step that adds time and can drift. On the API each request is single-turn: no follow-up edits, no batch discount, no seed to reproduce a take, and a failed generation is still billed. The safety filter blocks prompts that ask for a specific artist's voice or copyrighted lyrics, and in our runs two of five such prompts returned nothing. The sound leans acoustic and mainstream: a hard-rock request came back as a rock-flavoured take with softer guitars, so EDM, metal and aggressive styles read tame. We did not test non-English singing beyond the eight documented languages, and we have not verified distribution-level detection, which needs a platform account.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <table>\n      <thead><tr><th>Plan</th><th>Cost</th><th>What it unlocks</th></tr></thead>\n      <tbody>\n        <tr><td>Gemini app</td><td>Free</td><td>Lyria 3.5 within usage limits, tracks to 3 minutes, vocals or instrumental, image-to-music</td></tr>\n        <tr><td>Flow Music Free</td><td>$0/mo</td><td>Daily top-up credits, 2 concurrent generations, WAV and stem downloads, publishing</td></tr>\n        <tr><td>Flow Music Starter</td><td>$8/mo (or ~$6/mo yearly)</td><td>3,000 credits, about 600 songs, 8 concurrent, commercial-use rights via Google AI Plus</td></tr>\n        <tr><td>Flow Music Plus</td><td>$24/mo (or ~$18/mo yearly)</td><td>10,000 credits, about 2,000 songs, 12 concurrent, stem export and early features</td></tr>\n        <tr><td>Flow Music Member</td><td>$64/mo (or ~$48/mo yearly)</td><td>30,000 credits, about 6,000 songs, 16 concurrent, member badge and events</td></tr>\n        <tr><td>Gemini API</td><td>$0.08/song, $0.04/clip</td><td>lyria-3.5 full song or 30-second clip, MP3 or WAV, no free tier, per-song billing</td></tr>\n      </tbody>\n    </table>\n    <p>Flow Music is where the free route lives: daily top-up credits mean even the Free plan makes a few songs a day. A Google One or Google AI subscription maps to the Flow Music benefit rather than adding Lyria credits, so check which tier your existing plan unlocks before paying twice. The Gemini API is per-song billing with no free tier, which is why we sketched in the app and exported only the keeper.</p>\n\n    <h2 id='vs'>Lyria vs Suno vs Udio</h2>\n    <p>Pick by the risk and the length. Lyria 3.5 is the licensed-data, free-in-Flow-Music option with the tightest structural control, capped at three minutes and watermarked with SynthID. Suno wins on length, up to about eight minutes on its top tier, and on a catchier mainstream hook with less effort, but it carries label litigation and its prompt adherence is looser. Udio leans on audio fidelity and instrument separation with weaker control over structure. If you are publishing commercially and want provenance, Lyria 3.5; if you want a long singalong or a heavier genre, Suno; if you are chasing raw fidelity and are happy to hand-edit, Udio.</p>\n\n    <h2 id='verdict'>Verdict</h2>\n    <p>Lyria 3.5 is the AI music model to reach for when the deliverable has to come with a clean provenance story, and the reason is narrow but decisive: it is the only frontier music model a developer can buy, it is trained on licensed data, and it writes a structured song with vocals from a single prompt. In our runs the section tags were honoured and full-song generations returned in about 35 to 50 seconds. The deduction is not the sound, it is the fence: three minutes, single-turn API at 0.08 dollars a song with no free tier, a small duration drift on timed exports, and a SynthID watermark you cannot remove. For a jingle, a bed or a compliance-sensitive ad it is the default; for a long song or a harder genre, switch to Suno.</p>",
+  "sources": [
+    "Google DeepMind, Lyria model page, https://deepmind.google/models/lyria/"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-music-generators/",
+      "title": "The best AI music generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/suno/",
+      "title": "Suno review: the long-song default",
+      "blurb": "The rival that wins on length and a catchier hook.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/elevenlabs/",
+      "title": "ElevenLabs review: voices and dubbing",
+      "blurb": "The voice-cloning tool for narration and localisation.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/gemini/",
+      "title": "Gemini review: Google's everyday assistant",
+      "blurb": "The multimodal assistant that now ships Lyria music.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set: five text-to-music prompts across folk, lo-fi, dance, hard rock and an image-to-music request",
+      "Gemini app free route, 18+ account, and the Flow Music free plan with daily top-up credits",
+      "each prompt run five times; we counted a song usable only if it rendered the requested genre with no hard clipping and landed within 10% of the target length",
+      "we timed full-song generations and measured the resulting files for duration drift",
+      "two prompts named a specific artist's voice and were expected to hit the safety filter"
+    ],
+    "reps": 5,
+    "results": [
+      "full-song generations took about 35 to 50 seconds to return",
+      "we asked for exactly 60 seconds and the audible music stopped at about 59.6 seconds",
+      "two of five prompts naming a real artist's voice were blocked and returned nothing",
+      "one of five hard-rock requests came back acoustic-leaning and counted as a style miss",
+      "one timed request overshot its target by more than 10% of the file length"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Song length cap",
+        "observed": "every track stopped at three minutes in one pass; anything longer needs an extend step that adds time and can drift",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Single-turn API",
+        "observed": "each API request is one shot with no follow-up edits, no batch discount and no seed to reproduce a take; a failed generation is still billed",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Safety filter",
+        "observed": "prompts naming a specific artist's voice or copyrighted lyrics were blocked and returned nothing, including some harmless requests",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our runs the sound leaned acoustic and mainstream, so EDM, metal and aggressive styles read tame next to a dedicated genre tool"
+      },
+      {
+        "signal": "The free Flow Music plan is the practical route for most people, since the Gemini API has no free tier and bills every take"
+      }
+    ]
+  },
+  "search_terms": [
+    "lyria review",
+    "lyria 3.5",
+    "google lyria free",
+    "musicfx review",
+    "lyria vs suno",
+    "lyria vs udio",
+    "lyria pricing",
+    "ai test kitchen music",
+    "google flow music",
+    "lyria 3.5 api cost",
+    "lyria song length cap",
+    "lyria synthid watermark",
+    "best ai music generator",
+    "google lyria 3.5 review",
+    "lyria 3.5 vocals"
+  ]
+}

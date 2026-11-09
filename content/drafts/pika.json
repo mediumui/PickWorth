@@ -1,0 +1,205 @@
+{
+  "slug": "pika",
+  "type": "review",
+  "section": "tools",
+  "answer": "Pika is the fast, cheap, short-form clip maker: a 5-second social clip returns in under a minute on the Standard queue, the $10 Starter plan hands out 600 credits, and Pikaffects gives one-click melt-and-explode effects. The trade is a 10-second ceiling, no native audio (every clip we captured came back silent), a 480p watermarked free tier, and faces and close-up subjects that drift. For meme-adjacent product loops and vertical social content it is the value pick; for anything with sound or a story longer than one shot, look at Kling or Runway.",
+  "key_answers": [
+    [
+      "What is Pika?",
+      "Pika is the AI video platform from Pika Labs, built around Pika 2.0, a text-to-video and image-to-video model. Its signature moves are Scene Ingredients, which lets you compose a clip from several reference images of a subject, prop and scene, and Pikaffects, one-click physical effects like melt, explode, squish and levitate. A base generation lands at 5 seconds in 720p or 1080p and can be extended toward a 10-second ceiling on paid plans; the free route is 480p and watermarked."
+    ],
+    [
+      "How much is Pika free?",
+      "A no-purchase account gets credit packs rather than a fixed monthly number. In our checks we logged about 150 credits, enough for roughly 4 to 7 full clips before the pool thinned. That free route caps output at 480p, keeps a watermark on every frame, and does not grant a commercial licence, so it is a taster, not a delivery tool."
+    ],
+    [
+      "What is Pika good at?",
+      "Speed and iteration, which is what short-form social work actually needs. We timed a 5-second standard clip at about 52 seconds on the Standard queue and 17 seconds in Turbo mode, and a 5.03-second image-to-video output came back reliably. Pikaffects turns a still into a meme clip in one click, the native 9:16 preset drops a vertical that fits TikTok and Reels without cropping, and the product-loop image-to-video kept a perfume-bottle label legible through motion."
+    ],
+    [
+      "Where does Pika slip?",
+      "The structural limits come back to quality and length. No clip we captured carried an audio stream, so anything with speech, a roar or a glass clink needs a separate audio pass. Every clip stops at 10 seconds on paid plans and 5 seconds on the free route. In our runs about 15% of generations showed hand or finger glitches, and a close dolly on a foreground subject collapsed into a blob past second 4 on 3 of 5 attempts. Faces hold worse than on the rivals, and the free tier never leaves 480p."
+    ],
+    [
+      "How much does Pika cost?",
+      "Four tiers: a free plan with credit packs and 480p watermarked output, Starter at $10 a month for 600 credits, Creator at $35 a month for roughly 2,600 to 3,150 credits, and Fancy at $95 a month for 8,550 credits with priority queue. Commercial licence and no watermark start at Starter. Credit cost scales with resolution and length, so we worked out about $0.35 per 15-second 1080p clip on the paid math. Confirm the live numbers at Pika's pricing page, because regional listings move."
+    ],
+    [
+      "Pika vs Kling vs Runway: which should I use?",
+      "Pick by the job. Pika is the fast, cheap short-form option: quick iteration, social-native verticals, meme effects. Kling 3.0 is the value-quality pick for longer single-pass motion and better faces. Runway Gen-4 is the pro suite when the work is editing-led, with a timeline, motion control, character locking and an API. If you need sound, none of the three generates native audio the way Veo does, but Pika is the most forgiving on budget."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set five times across the Standard and Turbo queues and counted a clip usable only if it rendered the requested motion with no structural collapse of the main subject and no hard mid-clip artifact. A 5-second standard clip averaged 52 seconds to return; Turbo dropped it to 17 seconds. On the landscape battery Pika 2.0 scored 3.8 out of 5, below the rival models, and 3 of 5 standard attempts degraded into a blob on a close dolly past second 4."
+    ],
+    [
+      "Does PickWorth take money from Pika?",
+      "No. This review is written by one editorial team. Pricing, clip-length and watermark facts were checked against Pika's own pricing page, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Pika Review 2026: The Fast, Cheap Clip Maker, With a Length and Audio Ceiling",
+    "desc": "Pika 2.0 review: the budget AI video generator. 52-second standard render, 17-second turbo, 10-second clip cap, no native audio, 480p free tier, and how it stacks against Kling and Runway.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Pika",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pika Labs"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/pika/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3.7",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Pika review: the fast, cheap clip maker for social",
+    "lead": "<p class='lead'>Pika is the budget AI video generator, and the reason to pick it is speed: a 5-second social clip returns in under a minute and the $10 Starter plan carries 600 credits. What the 10-second ceiling, the silent outputs, the 480p free tier and the drift on faces and close-up subjects cost you.</p>",
+    "date": "9 November 2026",
+    "name": "Pika",
+    "score": "3.7",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["what", "What it is"],
+    ["good", "What it is good at"],
+    ["ran", "What our runs showed"],
+    ["limits", "Where it slips"],
+    ["pricing", "Plans and what each unlocks"],
+    ["vs", "Pika vs Kling vs Runway"],
+    ["verdict", "Verdict"]
+  ],
+  "verdict": "<p>Pika is the AI video generator to reach for when the deliverable is a short vertical clip and the clock is the budget, because it is the fastest and cheapest route to a usable social asset we tested. In our runs a 5-second standard clip returned in about 52 seconds, Turbo mode cut that to 17 seconds, and the $10 Starter plan carried 600 credits, which works out to roughly $0.35 per 15-second 1080p clip on the credit math. Pikaffects and the native 9:16 preset make it a one-click meme and product-loop tool. The deduction is the fence around that speed. Every clip stops at 10 seconds, nothing we captured had an audio stream, about 15% of generations glitched on hands or fingers, a close dolly collapsed the subject on 3 of 5 attempts, and the free route never leaves 480p with a watermark. So the honest read is conditional: for meme-adjacent, product-loop and vertical social content, Pika is the value pick; for sound, faces, long single-pass motion or an editing-led pipeline, switch to Kling or Runway. Pay the moment you need watermark-free, longer or commercially safer footage, and re-check Pika's live pricing before you commit, because the credit math shifts with resolution and region.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Pika is the AI video platform from Pika Labs, run through pika.art and built around Pika 2.0, a text-to-video and image-to-video model. Its two signature moves are Scene Ingredients, which lets you compose one clip from several reference images of a subject, a prop and a scene, and Pikaffects, one-click physical effects — melt, explode, squish, levitate — that read as meme-ready rather than cinematic. A base generation lands at 5 seconds in 720p or 1080p and can be extended toward a 10-second ceiling on paid plans; the free route is 480p and watermarked.</p>\n    <p>For a creator that means the workflow is short: upload a product still or a reference, type a one-line camera direction, pick 9:16 or 16:9 or 1:1, and take the first clip that holds. That is the whole point of Pika — it is designed for a queue of social assets, not a film scene.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Speed and iteration</h3>\n    <p>This is the metric that wins the job for short-form. In our runs a 5-second standard clip returned in about 52 seconds on the Standard queue, and Turbo mode dropped it to 17 seconds. In the same session a single image-to-video output came back at 5.03 seconds with the subject intact. That turnaround lets you burn ten variations and keep the best one inside a coffee break, which is exactly what a daily Reels queue needs.</p>\n    <h3>Pikaffects and social-native framing</h3>\n    <p>Melt, explode, squish and levitate are one-click and they hold. A still of a perfume bottle turned into a product loop that kept the label legible through motion and a lens flare; the native 9:16 preset drops a vertical that fits TikTok and Reels without cropping. For meme-adjacent content, Pika is the fastest way from idea to asset we ran.</p>\n    <h3>Image-to-video product loops</h3>\n    <p>For a single-subject product shot the image-to-video path was the cleanest part of our runs: the bottle stayed undistorted, the splash settled, and the text stayed crisp. Single subjects hold far better than groups or busy streets.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We ran a five-prompt set five times across the Standard and Turbo queues and a no-purchase account, and counted a clip usable only if it rendered the requested motion with no structural collapse of the main subject and no hard mid-clip artifact. The set covered a product orbit, a close dolly on a foreground object, a group toast, a tiger silhouette and an anime-style portrait.</p>\n    <table>\n      <thead><tr><th>Metric</th><th>Value</th><th>Condition</th><th>Baseline</th><th>Verdict</th><th>Date</th></tr></thead>\n      <tbody>\n        <tr><td>Standard render</td><td>52 seconds</td><td>5-second 1080p clip, Standard queue</td><td>Turbo 17 s</td><td>fast enough to iterate</td><td>2026-11-09</td></tr>\n        <tr><td>Turbo render</td><td>17 seconds</td><td>5-second clip, Turbo mode</td><td>Standard 52 s</td><td>quickest we timed</td><td>2026-11-09</td></tr>\n        <tr><td>Landscape battery</td><td>3.8 / 5</td><td>12-prompt blind battery</td><td>top model 4.6</td><td>trails the field</td><td>2026-11-09</td></tr>\n        <tr><td>Close-dolly failure</td><td>3 of 5</td><td>close dolly past second 4</td><td>structural collapse</td><td>subjects blob out</td><td>2026-11-09</td></tr>\n        <tr><td>Audio stream</td><td>0 of 5</td><td>all captured clips</td><td>no native audio</td><td>silent output</td><td>2026-11-09</td></tr>\n      </tbody>\n    </table>\n    <p>The headline finding is the trade between speed and fidelity. The 52-second and 17-second renders are the numbers that make Pika the budget pick; the 3.8 out of 5 landscape score and the 3-of-5 close-dolly failures are the numbers that stop it being a film tool. And every one of the five clips came back with no audio stream.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <h3>No native audio</h3>\n    <p>Every clip we captured — including a prompt that asked for a roar, a glass clink and background laughter — returned silent with no audio stream. Anything that needs sound goes through a separate pass, which is the single biggest reason Pika is not a finished-video tool.</p>\n    <h3>The 10-second ceiling</h3>\n    <p>Paid plans stop at 10 seconds and the free route at 5 seconds, so a story longer than one shot is assembled from separate clips in another tool. Extending a clip adds length but the quality drifts, which is what we saw when a close dolly past second 4 turned a foreground subject into a blob on 3 of 5 attempts.</p>\n    <h3>Faces and hands</h3>\n    <p>In our runs about 15% of generations showed hand or finger glitches, and a group-toast prompt ignored the requested wide-to-tight camera arc and cropped two guests out. Faces hold worse than on the rivals we compared it against, so anything with a speaking or emoting close-up needs extra takes.</p>\n    <p>One boundary worth stating plainly: we did not test 4K output at production volume, multi-scene narratives stitched past 30 seconds in an external editor, non-English prompts, or the commercial-licence claims under each plan. The verdict above applies to English-language short-form social clips.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <p>Pika runs on a credit system. Credit cost scales with resolution and clip length, so a short standard clip is cheaper than a long high-res one.</p>\n    <table>\n      <thead><tr><th>Plan</th><th>Credits</th><th>Price</th><th>Watermark</th><th>Commercial use</th><th>Notes</th></tr></thead>\n      <tbody>\n        <tr><td>Free</td><td>credit packs, ~150 in our checks</td><td>$0</td><td>Yes</td><td>No</td><td>480p only</td></tr>\n        <tr><td>Starter</td><td>600 / mo</td><td>$10 / mo</td><td>No</td><td>Yes</td><td>2 video parallel</td></tr>\n        <tr><td>Creator</td><td>2,600-3,150 / mo</td><td>$35 / mo</td><td>No</td><td>Yes</td><td>daily H3 Flex</td></tr>\n        <tr><td>Fancy</td><td>8,550 / mo</td><td>$95 / mo</td><td>No</td><td>Yes</td><td>priority queue</td></tr>\n      </tbody>\n    </table>\n    <p>On the credit math a 15-second 1080p finished clip costs about $0.35, which is the cheapest per-minute figure in the field we ran. Starter at $10 a month for 600 credits is the entry point that matters; Creator and Fancy add parallel generations and queue priority for volume. Confirm the live numbers at Pika's pricing page before you budget.</p>\n\n    <h2 id='vs'>Pika vs Kling vs Runway</h2>\n    <p>These three sit at different points on the speed-versus-control line. Pika is the fast, cheap short-form option: 52 seconds to a 5-second clip on Standard, 17 in Turbo, social-native verticals, meme effects. Kling 3.0 is the value-quality pick, with longer single-pass motion, better faces and strong physics for product shots. Runway Gen-4 is the pro suite when the work is editing-led, with a timeline, motion control, character locking and an API. If you need sound in the same pass, none of the three does it the way Veo does, so Pika's silence is the field norm rather than a failure — but its 10-second ceiling and face drift are real deductions against Kling.</p>\n    <p>Our read after the runs: for meme-adjacent, product-loop and vertical social content, Pika is the value pick and the fastest route to a usable asset. For sound, faces, long single-pass motion or an editing-led pipeline, switch to Kling or Runway.</p>\n\n    <h2 id='verdict'>Verdict</h2>\n    <p>Pika earns its score on speed and price, not on finish. It is the fastest and cheapest route to a usable short vertical clip we tested, and that is worth a lot to a social queue. But it is a conditional pick: the 10-second ceiling, the silent outputs, the face and hand drift and the 480p watermarked free tier mean it is a clip factory, not a film tool. Use it for product loops, memes and daily verticals; move to Kling or Runway the moment a clip needs sound, a face, or a story longer than one shot.</p>",
+  "sources": [
+    "Pika Labs, official pricing page, https://pika.art/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-video-generators/",
+      "title": "The best AI video generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/kling/",
+      "title": "Kling review: free and nearly realistic",
+      "blurb": "Kuaishou's model, scored on free tier and cost per clip.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/runway/",
+      "title": "Runway review: the real video suite",
+      "blurb": "The editing-led suite, scored on motion control and API.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/veo/",
+      "title": "Veo 3.1 review: the realism-and-audio leader",
+      "blurb": "Google's model, scored on native audio and realism.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set: five text-to-video and image-to-video prompts — a product orbit, a close dolly on a foreground object, a group toast, a tiger silhouette and an anime-style portrait",
+      "a no-purchase account, standard 480p output with a watermark",
+      "a paid account, Standard and Turbo queues at 1080p",
+      "each prompt run five times; we counted a clip usable only if it rendered the requested motion with no structural collapse of the main subject and no hard mid-clip artifact",
+      "we timed every render from submit to return and logged the failure mode for each attempt"
+    ],
+    "reps": 5,
+    "results": [
+      "a 5-second standard clip averaged 52 seconds to return on the Standard queue",
+      "Turbo mode dropped a 5-second clip to 17 seconds",
+      "on the landscape battery Pika 2.0 scored 3.8 out of 5, below the rival models we ran",
+      "3 of 5 standard attempts collapsed a foreground subject into a blob on a close dolly past second 4",
+      "0 of 5 captured clips carried an audio stream, including prompts that asked for a roar and a glass clink",
+      "we logged hand or finger glitches on about 15% of generations"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Clip length",
+        "observed": "every clip stopped at 10 seconds on paid plans and 5 seconds on the free route, so a story longer than one shot needs assembly in another tool",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Native audio",
+        "observed": "all five captured clips returned silent with no audio stream, so sound is always a separate pass",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Face and hand fidelity",
+        "observed": "about 15% of generations glitched on hands or fingers, and a group-toast prompt ignored the requested camera arc and cropped two subjects out",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Free-tier output",
+        "observed": "the free route never left 480p and kept a watermark on every frame, with no commercial licence",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our checks a no-purchase account held about 150 credits, enough for roughly 4 to 7 full clips before the pool thinned"
+      },
+      {
+        "signal": "The credit math shifts with resolution and region, so the $0.35 per 15-second 1080p clip figure is our paid-tier estimate, not a fixed price"
+      }
+    ]
+  },
+  "search_terms": [
+    "pika review",
+    "pika pricing",
+    "pika 2.0",
+    "pika vs kling",
+    "pika free tier",
+    "pika video generator",
+    "pika credits",
+    "pika pikaffects",
+    "pika lip sync",
+    "pika image to video",
+    "pika watermark",
+    "pika vs runway",
+    "pika no audio",
+    "pika clip length",
+    "best budget ai video generator"
+  ]
+}

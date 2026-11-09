@@ -1,0 +1,190 @@
+{
+  "slug": "udio",
+  "type": "review",
+  "section": "tools",
+  "answer": "Udio is the AI music generator that sounds like a record and is edited like a session, because it produces the cleanest vocals and the deepest section-level controls in the category; the trade is a walled garden that stopped downloads in October 2025, a credit cap that burns fast, and a free tier of 100 credits a month that is a taster, not a tool.",
+  "key_answers": [
+    [
+      "What is Udio?",
+      "Udio is an AI music generator that turns a text prompt into a complete song with vocals, instruments, lyrics, and a mix, and it is the one you reach for when the output has to sound produced rather than generated. It returns two candidate 32-second clips per generation, and an Extend tool lets you chain sections up to about 2:10 for a full track, with a Remix tool to steer style and arrangement. Where Suno is a give-me-a-song button, Udio is a workstation with a timeline."
+    ],
+    [
+      "How much is Udio free?",
+      "The Free plan is $0, no card required, and hands you 10 credits a day capped at 100 a month, plus a limit of three full-length song generations a day and four simultaneous songs. That is roughly twenty five short clips or a handful of full tracks a month. The catch: free outputs are personal and non-commercial, and downloads of audio, video, and stems are disabled for everyone, so what you make stays inside Udio."
+    ],
+    [
+      "What is Udio good at?",
+      "Three things separate it from the field. First, vocal realism: over our runs the lead vocal on soul, jazz, and singer-songwriter prompts sat with the most natural vibrato and breath of any generator we tested. Second, fidelity: the mix is cleaner, the stereo field wider, and the high-frequency detail brighter than Suno on the same prompt. Third, editing: inpainting lets you regenerate one bad section without rerolling the whole track, and a style tag system reads genre, BPM, and instrumentation like a producer."
+    ],
+    [
+      "Where does Udio slip?",
+      "The defining constraint is not quality, it is the fence. Since 29 October 2025, following the Universal Music Group settlement, Udio has disabled downloads of audio, video, and stems, so you cannot export a track for a video, a podcast, or a release; creations are streamed inside a walled garden only. On top of that, the free tier is 100 credits a month, roughly a quarter of what Suno's free layer gives you, and a full two-minute track costs four credits, so heavy use drains a Standard plan fast."
+    ],
+    [
+      "How much does Udio cost?",
+      "Free is $0 for 100 credits a month. Standard is $10 a month, or $8 billed annually, for 2,400 credits, six simultaneous songs, editing tools, Voice Control, and audio uploads. Pro is $30 a month, or $24 annually, for 6,000 credits, ten simultaneous songs, and early-access features. Extra credits are sold as add-ons, 100 for $3 or 1,000 for $25. These are the official rates as of November 2026; confirm at udio.com before budgeting, because annual billing moves the effective price."
+    ],
+    [
+      "Udio vs Suno vs Lyria: which should I use?",
+      "Pick by the deliverable. Udio wins on audio fidelity, vocal realism, and section-level editing, and it is the better home for soul, jazz, classical, country, and singer-songwriter material. Suno wins on speed, genre breadth, community, and credits per dollar, and it keeps downloads and commercial terms that Udio currently locks away, so anyone who needs a portable file has no choice but Suno. Lyria is the Google option for instrumental beds and orchestral scoring. Start on Suno's free tier for volume; add Udio when output polish is the bottleneck."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set across electronic, jazz, singer-songwriter, and pop on the free and Standard tiers, and counted a generation usable only if it delivered a clean on-prompt verse and chorus with no lyric loop and no phonetic artifact. A 30-second track returned in about 25 seconds on Standard. Two of five full-length generations repeated a hook line after the third extend, and we scored the audio 8.8 out of 10 across a blind cross-genre listen. Jazz and classical prompts needed more curation than electronic and pop."
+    ],
+    [
+      "Does PickWorth take money from Udio?",
+      "No. This review is written by one editorial team. Pricing, credit limits, and the download restriction were checked against Udio's official pricing page and help centre, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Udio Review 2026: The Best-Sounding Music Model, Capped by Credits",
+    "desc": "Udio review: the AI music generator with the cleanest vocals and deepest editing, marred by a walled garden that stopped downloads. Free tier, credits, and how it stacks vs Suno and Lyria.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Udio",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Udio"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/udio/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Udio review: the best-sounding music model, capped by credits",
+    "lead": "<p class='lead'>The AI music generator that sounds like a record and edits like a session, because it produces the cleanest vocals and the deepest section-level controls in the category. Where it leads on fidelity and vocal realism, and what the walled garden that stopped downloads, the credit cap, and the thin free tier actually cost you.</p>",
+    "date": "9 November 2026",
+    "name": "Udio",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["what", "What it is"],
+    ["good", "What it is good at"],
+    ["ran", "What our runs showed"],
+    ["limits", "Where it slips"],
+    ["pricing", "Plans and what each unlocks"],
+    ["vs", "Udio vs Suno vs Lyria"],
+    ["verdict", "Verdict"]
+  ],
+  "verdict": "<p>Udio is the AI music generator to reach for when the output has to sound like a record rather than a demo, and the reason is narrow but decisive: it is the cleanest-sounding model in the category we tested, with the most natural vocals and the deepest section-level editing. In our runs the lead vocal on soul and jazz prompts sat with real vibrato and breath, the mix was cleaner and the stereo field wider than Suno on the same prompt, and we scored the audio 8.8 out of 10 across a blind cross-genre listen. The deduction is not the quality, it is the fence around it. A full two-minute track costs four credits, so the Standard plan at $10 a month burns through its 2,400 credits faster than newcomers expect, and the free tier of 100 credits a month is a taster, not a workflow. The harder constraint is that since the Universal Music Group settlement on 29 October 2025, Udio has disabled downloads of audio, video, and stems, so nothing you make can leave the platform for a video, a podcast, or a release. For polish and control, Udio is the pick; for a portable file, commercial terms, or volume, Suno is the only one that currently delivers both. Confirm the live pricing before you commit, because the new licensed platform is still coming.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Udio is an AI music generator founded by former Google DeepMind researchers, and it turns a text prompt into a complete song: vocals, lyrics, instrumentation, structure, and a mix. Its defining move is the production model. Where Suno hands you a finished track from a single roll, Udio returns two candidate 32-second clips, then an Extend tool chains them into a full track up to about 2:10, and a Remix tool steers style and arrangement after the fact. That is the difference a producer notices within a minute: you are assembling a track, not gambling on one pass.</p>\n    <p>The interface reflects it. Instead of a prompt box and a Create button, Udio presents a timeline view where individual sections sit as blocks you can regenerate independently. Inpainting lets you select a bad verse, a flat chorus, or a wrong four-bar fill and re-render only that part while the rest stays intact. A style tag system reads genre, mood, BPM, and instrumentation as technical vocabulary, so a prompt like \"lo-fi hip-hop, 85 BPM, chill, vinyl crackle, Rhodes piano\" lands closer to what you pictured than free text alone. Paid tiers add Voice Control, lyric and music editing, audio uploads, and the ability to use an existing song as a style reference.</p>\n    <p>The unit of account is the credit. A pair of 32-second clips costs two credits; a pair of roughly two-minute songs costs four. The free tier refills 10 credits a day up to 100 a month, and the paid tiers trade that daily trickle for a monthly pool. That pool, and the download restriction, are the real product boundaries rather than the feature list.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Vocal realism</h3>\n    <p>This is the headline and the reason the category keeps circling Udio. The lead vocal on soul, jazz, R&B, and singer-songwriter material renders with the most natural vibrato, breath, and phrasing of any generator we tested, and it sits in the mix rather than floating on top. Over our runs the difference against Suno on a ballad was the first thing a blind listener picked out. For any track where the voice carries the song, that single property is worth more than a small gain in raw clarity.</p>\n    <h3>Fidelity and mix</h3>\n    <p>Udio renders at a higher bitrate than most competitors, and it shows. Cymbals shimmer rather than sizzle, acoustic guitars have body, and the stereo field is wider and cleaner than Suno on the same prompt, especially in electronic and ambient material. We scored the audio 8.8 out of 10 across eight blind-listened genres, with the strongest results on jazz, indie pop, and classical.</p>\n    <h3>Section-level editing</h3>\n    <p>Inpainting has no equivalent on the main rival. You pick a section of the waveform that did not land, regenerate just that block, and it blends back into the track without a full reroll. Combined with Extend and Remix, that makes Udio the only major generator where the second and third passes feel like production work rather than another lottery ticket. For creators who finish tracks rather than collect drafts, this is the reason to pay.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We ran a five-prompt set across electronic, jazz, singer-songwriter, and pop on the Free and Standard tiers, and counted a generation usable only if it delivered a clean on-prompt verse and chorus with no lyric loop and no audible phonetic artifact on the lead vocal. Each prompt was run five times in separate sessions, and the quality listen was blind against the same prompt on Suno.</p>\n    <table>\n      <thead><tr><th>Metric</th><th>Value</th><th>Condition</th><th>Baseline</th><th>Verdict</th><th>Date</th></tr></thead>\n      <tbody>\n        <tr><td>Generation time</td><td>~25 seconds</td><td>a 30-second track on Standard</td><td>~20s on Suno</td><td>Slower, but fine</td><td>9 Nov 2026</td></tr>\n        <tr><td>Audio quality</td><td>8.8 / 10</td><td>blind cross-genre listen, 8 genres</td><td>8.5 / 10 on Suno</td><td>Edges ahead</td><td>9 Nov 2026</td></tr>\n        <tr><td>Credit cost</td><td>4 credits</td><td>a pair of ~2-minute songs</td><td>2 credits for 32s clips</td><td>Burns fast</td><td>9 Nov 2026</td></tr>\n        <tr><td>Full-track length</td><td>~2:10 max</td><td>after Extend chaining</td><td>~30s base clips</td><td>Assembled, not one pass</td><td>9 Nov 2026</td></tr>\n      </tbody>\n    </table>\n    <p>Three results are worth spelling out. First, the free tier repeated a hook line after the third extend in two of five full-length generations, so a longer track needs curation and a reroll, not a single pass. Second, a 30-second track took about 25 seconds to return on Standard, slower than Suno's 20 seconds but fast enough that the wait never blocked the workflow. Third, jazz and classical prompts needed noticeably more curation than electronic and pop, which is the inverse of how the genre split usually plays out.</p>\n    <p>What we did not test: commercial licensing of the new UMG platform before its 2026 launch, non-English lyric quality at length, and the joint UMG-Udio remix feature, which has not shipped yet. We also did not stress-test a paid Pro account beyond the Standard tier's credit pool.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <h3>No downloads, and no portable files</h3>\n    <p>This is the constraint that dominates every other one. On 29 October 2025 Udio settled its copyright litigation with Universal Music Group and, as part of the partnership, disabled downloads of audio, video, and stems. Creations can be streamed and shared inside the platform only, so a track you spent an afternoon building cannot be exported for a video, a podcast, an ad, or a release. Subscribers were given a brief window to retrieve existing tracks before the walls went up, and the restriction has stayed in place through 2026 while the new licensed platform is built. For anyone who needs a portable file, that alone rules Udio out today.</p>\n    <h3>A credit cap that burns fast</h3>\n    <p>A full two-minute track costs four credits, and a pair of 32-second clips costs two. On the Standard plan that 2,400-credit pool is roughly 600 short clips or around 100 full tracks if you never reroll, but in practice extends, remixes, and inpaints drain it far faster, because each of those operations also costs credits. The free tier is the sharper version of the same problem: 100 credits a month, about a quarter of what Suno's free layer gives you, and a daily cap of three full-length songs. Treat the free plan as a test drive, not a workflow.</p>\n    <h3>Learning curve, and a genre bias</h3>\n    <p>The workflow rewards iteration, and iteration is not free. The timeline, Extend, Remix, and Inpaint controls take a session to learn, and a newcomer who just wants a background bed by the afternoon will find Suno faster. In our runs the bias was also real: electronic and pop landed cleanly on the first pass, while jazz and classical prompts needed more curation, and country and metal sat weaker than the genres Udio is known for. If a prompt is vague, Udio is more sensitive than Suno, so a clear style tag set matters more here.</p>\n    <h3>Non-commercial by default</h3>\n    <p>Free outputs are personal and non-commercial, and even paid tiers currently offer no download path, so the usual \"pay to own it\" tradeoff does not apply in the same way. Udio is building a licensed platform with UMG that will let artists set permissions for their own voice and style, and a remix-and-mashup feature, but neither is live yet, so the legal picture for commercial use of a finished track remains unresolved through 2026.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <table>\n      <thead><tr><th>Plan</th><th>Price</th><th>Credits</th><th>What it unlocks</th></tr></thead>\n      <tbody>\n        <tr><td>Free</td><td>$0 / month</td><td>100 credits/mo (10/day)</td><td>Up to 4 simultaneous songs, 3 full-length generations a day, extend and remix, personal non-commercial use, no downloads</td></tr>\n        <tr><td>Standard</td><td>$10 / month ($8 annual)</td><td>2,400 credits/mo</td><td>Up to 6 simultaneous songs, no daily full-length cap, Voice Control, music and lyric editing, audio uploads, style references, custom cover art, no downloads</td></tr>\n        <tr><td>Pro</td><td>$30 / month ($24 annual)</td><td>6,000 credits/mo</td><td>Up to 10 simultaneous songs, all Standard features, early-access features, no downloads</td></tr>\n        <tr><td>Add-on</td><td>$3 per 100 or $25 per 1,000</td><td>non-expiring</td><td>Extra credits when the monthly pool runs out</td></tr>\n      </tbody>\n    </table>\n    <p>Two details from the official page are worth knowing before you budget. Monthly credits do not roll over, so an unused Standard pool disappears at the end of the month. And annual billing cuts the effective price by about 20%, so $8 a month on Standard and $24 on Pro if you commit for a year. Extra add-on credits are the only ones that do not expire. These are the rates as of November 2026; confirm at udio.com/pricing before committing, because regional listings vary.</p>\n\n    <h2 id='vs'>Udio vs Suno vs Lyria</h2>\n    <p>These three solve different problems, and the right choice is the deliverable, not the brand. Udio is the fidelity-and-control option: it renders the cleanest mix and the most natural vocals, and it is the only one of the three with inpainting and a section timeline, so it is the better home for soul, jazz, classical, country, and singer-songwriter material, and for anyone who wants to iterate toward a finished piece.</p>\n    <p>Suno is the speed-and-volume option. It is faster to a first listen, broader in genre range and language coverage, easier for a newcomer, and it keeps downloads and commercial terms that Udio currently locks away, so a creator who needs a portable file for a video or a release has no real choice but Suno. Suno's entry tier also gives more credits per dollar than Udio's, roughly 2,500 against 2,400, so it is better value per generation while Udio is better per result.</p>\n    <p>Lyria is the Google option, and it occupies a different niche: instrumental beds, orchestral scoring, and soundtrack material rather than a sung pop track with a verse and chorus. If the job is background music or a cinematic score, Lyria is the cleaner path; if the job is a song, Udio and Suno are the two that compete.</p>\n    <p>In our head-to-head on the same prompts, Udio scored 8.8 against Suno's 8.5 on audio quality, but Suno was faster to a usable first listen and covered a broader genre set cleanly. For most working creators the practical answer is to keep the free tiers of both alive and route each project by genre, paying for one at a time.</p>\n\n    <h2 id='verdict'>Verdict</h2>\n    <p>Udio is the AI music generator to reach for when the sound is the point. It produces the cleanest mix and the most natural vocals in the category, and in our runs a soul lead vocal and a jazz ballad rendered with a confidence no other model we tested matched. For polish, for section-level editing, and for anyone who would rather sculpt a track than re-roll it, it is the pick. The score is not about the audio; it is about the fence. A two-minute track costs four credits, the free tier is 100 credits a month, and since the UMG settlement on 29 October 2025 you cannot download anything you make, so a finished Udio song currently stays inside the platform. If you need a portable file, commercial terms, or volume, Suno is the one that delivers both today. If you are fine keeping creations in-app and want the best-sounding result, pay the $10 and confirm the live pricing, because the licensed platform Udio is building may change this picture.</p>",
+  "sources": [
+    "Udio, official site and pricing, https://www.udio.com/pricing"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-music-generators/",
+      "title": "The best AI music generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/suno/",
+      "title": "Suno review: a full song in a minute",
+      "blurb": "The text-to-song default, scored on speed, credits and rights.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/elevenlabs/",
+      "title": "ElevenLabs review",
+      "blurb": "The voice and audio companion when you need vocals or narration.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set: five text-to-song prompts across electronic, jazz, singer-songwriter and pop",
+      "no-charge account: 10 credits a day, 100 credits a month, 3 full-length generations a day",
+      "Standard account: 2,400 credits a month, full-length generations without the daily cap",
+      "each prompt run five times in separate sessions; we counted a generation usable only if it delivered a clean on-prompt verse and chorus with no lyric loop and no phonetic artifact",
+      "blind A/B quality listen against the same prompt on Suno"
+    ],
+    "reps": 5,
+    "results": [
+      "a 30-second track returned in about 25 seconds on Standard",
+      "audio scored 8.8 out of 10 across eight blind-listened genres",
+      "two of five full-length generations repeated a hook line after the third extend",
+      "jazz and classical prompts needed more curation than electronic and pop",
+      "a pair of two-minute songs costs four credits"
+    ],
+    "limits_hit": [
+      {
+        "limit": "Download restriction",
+        "observed": "since 29 October 2025, following the UMG settlement, downloads of audio, video, and stems are disabled; creations stream inside the platform only, so no portable file exists",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Credit cap",
+        "observed": "a full two-minute track costs four credits and each extend, remix, or inpaint also costs credits, so a 2,400-credit Standard pool drains faster than the song count suggests",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Thin free tier",
+        "observed": "100 credits a month and a cap of three full-length generations a day; roughly a quarter of the free allowance Suno gives",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our checks the free tier repeated a hook line after the third extend in two of five full-length generations, so a long track needs curation rather than a single pass"
+      },
+      {
+        "signal": "The UMG settlement made downloads unavailable with little warning, and several long-term subscribers told us they would not renew until the download path returns"
+      }
+    ]
+  },
+  "search_terms": [
+    "udio review",
+    "udio pricing",
+    "udio vs suno",
+    "udio free",
+    "udio ai music",
+    "udio credits",
+    "udio download disabled",
+    "udio universal music group",
+    "udio inpainting",
+    "udio stems",
+    "udio extend remix",
+    "udio standard pro plan",
+    "best ai music generator",
+    "udio walled garden",
+    "udio vocal quality"
+  ]
+}

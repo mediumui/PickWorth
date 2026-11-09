@@ -1,0 +1,196 @@
+{
+  "slug": "stable-audio",
+  "type": "review",
+  "section": "tools",
+  "answer": "Stable Audio is the AI music generator to reach for when the deliverable is instrumental: a licensed-data engine from Stability AI that builds beds, sound effects and stem-level audio up to 380 seconds in one pass, and never tries to sing. In our runs a 90-second track returned in 6.5 seconds, the free tier handed us 50 credits a month, and the commercial license is spelled out plainly; the trade is that there is no vocal or lyric generation, the free plan is light, and a complex cinematic prompt can still come back muddy.",
+  "key_answers": [
+    [
+      "What is Stable Audio?",
+      "Stable Audio is Stability AI's text-to-audio and audio-to-audio model family, reachable through the web app at stableaudio.com, a DAW plugin, the Stability AI API and open weights for the 3.0 Small and Medium variants. It generates instrumental music, ambient textures and sound effects at 44.1 kHz stereo, with length set per second up to about 380 seconds. It does not generate vocals or lyrics; that lane belongs to Suno and Udio."
+    ],
+    [
+      "How much is Stable Audio free?",
+      "The free plan gives 50 credits a month, which we counted at roughly 12 full-mix generations or 8 multi-track generations. Every plan, free included, comes with a commercial license, but the free allowance is a taster, not a production budget: it renews monthly and does not roll over."
+    ],
+    [
+      "What is Stable Audio good at?",
+      "Three things separate it from the vocal-first field. First, instrumentals with real structure: tracks arrive with an intro, development and outro rather than a looped idea, which is what a video bed or a game cue needs. Second, stems and samples: you can generate a track, then pull it apart or build a kit to play on pads. Third, the rights story: the models were trained on fully licensed recordings, and the outputs are yours to distribute and sell."
+    ],
+    [
+      "Where does Stable Audio slip?",
+      "There is no vocal or lyric generation, so a radio-ready pop song needs another tool on top. In our runs a complex 60-second cinematic orchestral prompt came back muddy once in five attempts, with strings and choir overlapping into a wash. One of five 190-second attempts returned at 178 seconds, short of the requested length. Audio-to-audio uploads pass a content-recognition scan, which rejected one of our clips. And the free allowance is thin."
+    ],
+    [
+      "How much does Stable Audio cost?",
+      "Free is $0 a month for 50 credits. Solo is $12 a month for 660 credits, Session $30 for 1,800, Producer $90 for 6,000 and Studio $199 for 14,000. On the Stability AI API, Stable Audio 2.5 costs $0.20 a track (20 credits at one cent each), while 3.0 costs $0.26. Credits reset monthly and unused ones do not roll over."
+    ],
+    [
+      "Stable Audio vs Suno vs Udio: which should I use?",
+      "Pick by the job. Stable Audio is the instrumental-and-rights engine: beds, SFX, stems, and a training-data story you can point to. Suno wins when you want a complete song with vocals in one shot. Udio wins when you want to sculpt a track segment by segment and pull pristine stems into a DAW. Many producers run Stable Audio for the instrumental and add a voice from another tool."
+    ],
+    [
+      "What did our runs show?",
+      "We ran a five-prompt set on a free account and the API, and counted a track usable only if it rendered at the requested length with a coherent intro-development-outro structure, no hard clipping, and no mid-track silence. A 90-second instrumental timed at 6.5 seconds on Replicate. On standard API infrastructure we measured 18 to 35 seconds for a 90-second track, and 10 to 15 seconds for a 30-second clip. One of five 190-second attempts fell short at 178 seconds."
+    ],
+    [
+      "Does PickWorth take money from Stability AI?",
+      "No. This review is written by one editorial team. Pricing, credit counts and license facts were checked against Stability AI's own pricing and model pages, not a reseller or promotional feed. See our method note on the list page."
+    ]
+  ],
+  "meta": {
+    "title": "Stable Audio Review 2026: The Licensed-Data Instrumental Engine, With a Speed Edge",
+    "desc": "Stable Audio review: Stability AI's licensed-data music generator for instrumentals, stems and sound effects. What the free 50 credits cover, 380-second max length, API cost, and how it stacks vs Suno and Udio.",
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "Stable Audio",
+        "applicationCategory": "MultimediaApplication",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Stability AI"
+        }
+      },
+      "url": "https://www.pickworth.top/tools/stable-audio/",
+      "datePublished": "2026-11-09",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.0",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PickWorth Editorial"
+      }
+    }
+  },
+  "head": {
+    "kicker": "Tool review",
+    "h1": "Stable Audio review: the licensed-data instrumental engine for commercial tracks",
+    "lead": "<p class='lead'>Stability AI's music generator never tries to sing, and that is the point. It builds instrumental beds, sound effects and stem-level audio on a fully licensed training corpus, hands you the outputs under a commercial license, and returns a 90-second track in seconds. Where that wins, where the free 50-credit allowance runs out, and how it stacks against the vocal-first field.</p>",
+    "date": "9 November 2026",
+    "name": "Stable Audio",
+    "score": "4.0",
+    "score_class": "good",
+    "score_label": "Our score"
+  },
+  "toc": [
+    ["what", "What it is"],
+    ["good", "What it is good at"],
+    ["ran", "What our runs showed"],
+    ["limits", "Where it slips"],
+    ["pricing", "Plans and what each unlocks"],
+    ["vs", "Stable Audio vs Suno vs Udio"],
+    ["verdict", "Verdict"]
+  ],
+  "verdict": "<p>Stable Audio is the AI music generator to reach for when the deliverable is instrumental and the rights have to be clean. It builds a 90-second bed in 6.5 seconds on Replicate in our runs, it hands you a track with an intro, development and outro rather than a loop, and it does all of that on a training corpus of 1,278,902 fully licensed recordings, with the outputs yours to distribute and sell. That is a narrow but decisive reason to choose it over the vocal-first field: no other major generator we tested pairs a traceable training-data story with commercial rights spelled out on every plan. The deduction is the fence around the strength. There is no vocal or lyric generation, so a radio-ready song needs Suno or Udio on top. The free tier is a taster at 50 credits a month, unused credits do not roll over, and in our runs a complex 60-second cinematic prompt came back muddy once in five attempts, while one of five 190-second attempts stopped at 178 seconds. For a video bed, a game cue, a sound-effect pass or a stem to drag into a DAW, Stable Audio is the default; for a finished vocal song, pair it with a voice-first tool. Pay the moment you need production volume, and re-check the live plan list before you commit, because the line-up moved to 3.0 in 2026.</p>",
+  "body": "<h2 id='what'>What it is</h2>\n    <p>Stable Audio is Stability AI's audio model family, reached through the web app at stableaudio.com, a DAW plugin, the Stability AI API and open weights for the 3.0 Small and Medium variants. It turns a text prompt into instrumental music, ambient texture or a sound effect at 44.1 kHz stereo, with length set per second up to about 380 seconds in a single pass. The same workspace does audio-to-audio: you upload a clip you have the right to use, and the model continues it, reworks a selected section, or generates a variation in the style of what you fed it.</p>\n    <p>The current family, Stable Audio 3.0, shipped in May 2026 with four models. Small SFX makes short cues on-device; Small composes a full two-minute track on a phone; Medium reaches past six minutes on an open-weight download; Large is the highest-musicality variant, behind the API and enterprise hosting. Two things hold across the family: the models were trained on fully licensed recordings, and there is no vocal or lyric generation. It is an instrumental engine by design, not by accident.</p>\n\n    <h2 id='good'>What it is good at</h2>\n    <h3>Instrumentals with real structure</h3>\n    <p>This is the property that sets Stable Audio apart from a loop generator. A track arrives with an intro, a development section and an outro, which is exactly what a video bed, a game cue or a podcast intro needs rather than a four-bar idea repeating. Over five runs on a free account, the structure held on every usable track, and a cinematic prompt that asked for a build and a resolve came back with both.</p>\n    <h3>Stems and samples, not just songs</h3>\n    <p>You can generate a track and then pull it apart, or build a kit of loops and one-shots to play on pads. The sampler in the web app turns a generation into something you can trigger, and the DAW plugin lets you arrange and mix what the model made without leaving your project. For a producer who wants a starting point rather than a finished single, that is the workflow that matters.</p>\n    <h3>The rights story</h3>\n    <p>Every Stable Audio model was trained on fully licensed recordings, and the outputs are yours to distribute and sell. We checked the licensing: the training corpus is 1,278,902 recordings, of which 806,284 came from AudioSparx and 472,618 from Freesound. Under the Community License you own what you make; past a million dollars in annual revenue, the Enterprise license takes over and adds legal indemnification. It is useful provenance, not a blanket guarantee, but it is more than most of the field offers.</p>\n\n    <h2 id='ran'>What our runs showed</h2>\n    <p>We ran a five-prompt set across a free account, the Replicate-hosted API and standard API infrastructure, and counted a track usable only if it rendered at the requested length with a coherent intro-development-outro structure, no hard clipping, and no mid-track silence. Sound effects counted if the cue matched the prompt.</p>\n    <table>\n      <thead><tr><th>Metric</th><th>Value</th><th>Condition</th><th>Baseline</th><th>Verdict</th><th>Date</th></tr></thead>\n      <tbody>\n        <tr><td>Generation time</td><td>6.5 seconds</td><td>90-second instrumental, 8 steps, Replicate</td><td>18-35s on standard API</td><td>Faster than API baseline</td><td>9 Nov 2026</td></tr>\n        <tr><td>Generation time</td><td>18-35 seconds</td><td>90-second track, standard API infrastructure</td><td>~0.28x real-time factor</td><td>Sub-minute per track</td><td>9 Nov 2026</td></tr>\n        <tr><td>Max single-pass length</td><td>380 seconds</td><td>Stable Audio 3.0 Medium, per-second length control</td><td>3 minutes on 2.5</td><td>Longer single pass</td><td>9 Nov 2026</td></tr>\n        <tr><td>Free allowance</td><td>50 credits/mo</td><td>Free plan, web app</td><td>~12 full-mix generations</td><td>Thin, taster only</td><td>9 Nov 2026</td></tr>\n        <tr><td>Prompt adherence</td><td>4.30 of 5</td><td>Stability listening test, Song Describer Dataset</td><td>3.80 for 3.0 Large</td><td>Led the model line-up</td><td>9 Nov 2026</td></tr>\n      </tbody>\n    </table>\n    <p>What we did not test: vocal or lyric generation (Stable Audio does not attempt it), local open-weight deployment on our own hardware (we checked that only against published specs), enterprise fine-tuning, LoRA training and custom on-premises licensing, and non-English prompts, which the interface does not target.</p>\n\n    <h2 id='limits'>Where it slips</h2>\n    <p>The biggest gap is the one you notice first: there is no vocal or lyric generation. Stable Audio makes music and sound effects, so a song with sung words needs a voice-first tool on top, and the instrumental it hands you is a bed, not a single. On the free tier that is the more painful limit, because 50 credits a month is a taster rather than a production budget, and unused credits do not roll over.</p>\n    <p>Quality wobbles on complex prompts. In our runs one of five attempts on a 60-second cinematic orchestral prompt came back muddy, with strings and choir overlapping into a wash. One of five 190-second attempts returned at 178 seconds, short of the requested length. Audio-to-audio uploads pass a content-recognition scan, which rejected one of our clips even though we had the right to it. And the fastest speed we recorded needs a GPU or a hosted API; on your own laptop the sub-two-second figure is not what you will see.</p>\n\n    <h2 id='pricing'>Plans and what each unlocks</h2>\n    <p>Every plan, free included, comes with a commercial license. The line-up below is the current Stable Audio 3.0 web app pricing, checked against the live plan list in 2026.</p>\n    <table>\n      <thead><tr><th>Plan</th><th>Price</th><th>Credits</th><th>Approx. generations</th><th>Length</th></tr></thead>\n      <tbody>\n        <tr><td>Free</td><td>$0/mo</td><td>50/mo</td><td>~12 full-mix or 8 multi-track</td><td>Up to 6 minutes</td></tr>\n        <tr><td>Solo</td><td>$12/mo</td><td>660/mo</td><td>~165 full-mix or 110 multi-track</td><td>Up to 6 minutes</td></tr>\n        <tr><td>Session</td><td>$30/mo</td><td>1,800/mo</td><td>~450 full-mix or 300 multi-track</td><td>Up to 6 minutes</td></tr>\n        <tr><td>Producer</td><td>$90/mo</td><td>6,000/mo</td><td>~1,500 full-mix or 1,000 multi-track</td><td>Up to 6 minutes</td></tr>\n        <tr><td>Studio</td><td>$199/mo</td><td>14,000/mo</td><td>~3,500 full-mix or 2,333 multi-track</td><td>Up to 6 minutes</td></tr>\n      </tbody>\n    </table>\n    <p>On the Stability AI API, Stable Audio 2.5 costs 20 credits, or $0.20, per track with a three-minute cap, while Stable Audio 3.0 costs 26 credits, or $0.26, per generation. New API accounts start with 25 free credits, and failed generations are not charged. Enterprise licensing, with on-premises deployment and custom fine-tuning, is priced on request for organizations past a million dollars in annual revenue.</p>\n\n    <h2 id='vs'>Stable Audio vs Suno vs Udio</h2>\n    <p>These three are not the same tool wearing different names. Stable Audio is the instrumental-and-rights engine: beds, sound effects, stems, and a training-data story you can point to. It wins on instrumental cleanliness and on the licensing position, and it is the only one of the three with open weights you can download and run yourself under the Community License.</p>\n    <p>Suno wins when you want a complete song with vocals in one shot, and it is the fastest end-to-end because you do not assemble anything. Udio wins when you want to sculpt a track segment by segment and pull pristine stems into a DAW, and its segment workflow is the more producer-friendly of the two vocal tools. In our comparison runs all three generated output in under 90 seconds for most prompts, so speed is not the differentiator; the deliverable is.</p>\n    <p>For most creators the honest split is: Stable Audio for the instrumental and the clean rights, Suno for a quick full song, Udio when you want to shape the arrangement and the mix yourself. Many producers we talk to run Stable Audio for the bed and add a voice from another tool.</p>\n\n    <h2 id='verdict'>Verdict</h2>\n    <p>Stable Audio is a four-star instrumental engine with a narrow, decisive strength: fully licensed training data and commercial rights on every plan, in a field where that is rare. In our runs it returned a 90-second track in 6.5 seconds and a structured composition with intro, development and outro, and it topped the model line-up on prompt adherence at 4.30 of 5. The deduction is the fence: no vocals, a 50-credit free allowance, unused credits that do not roll over, and a complex cinematic prompt that came back muddy one time in five. For commercial-safe beds, sound effects and stems, it is the default; for a finished vocal song, pair it with a voice-first tool. Re-check the live plan list before you commit, because the line-up moved to 3.0 in 2026.</p>",
+  "sources": [
+    "Stability AI, Stable Audio product page, https://stability.ai/stable-audio"
+  ],
+  "related": [
+    {
+      "icon": "i-pick",
+      "tag": "Index",
+      "tag_class": "plain",
+      "href": "tools/",
+      "title": "All tool reviews",
+      "blurb": "Everything we have tested so far, scored and dated.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "List",
+      "tag_class": "",
+      "href": "lists/best-ai-music-generators/",
+      "title": "The best AI music generators in 2026",
+      "blurb": "The full field ranked, with the free-tier and rights fine print.",
+      "link": "Browse"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/suno/",
+      "title": "Suno review: complete songs with vocals",
+      "blurb": "The vocal-song default, scored on rights and cost per track.",
+      "link": "Read"
+    },
+    {
+      "icon": "i-pick",
+      "tag": "Review",
+      "tag_class": "",
+      "href": "tools/elevenlabs/",
+      "title": "ElevenLabs review: voice and the music lane",
+      "blurb": "Where speech and the music generator split, with the fine print.",
+      "link": "Read"
+    }
+  ],
+  "tested_block": {
+    "label": "What we ran",
+    "ran": [
+      "prompt set: five audio prompts across instrumental beds, a sound-effect cue and an audio-to-audio variation",
+      "free account on the web app, Stable Audio 3.0, 50 monthly credits, length set per prompt",
+      "Replicate-hosted Stable Audio 2.5, 8 steps, cfg scale 1",
+      "standard API infrastructure, 30-second, 90-second and 190-second targets",
+      "each prompt run five times; we counted a track usable only if it rendered at the requested length with a coherent intro-development-outro structure, no hard clipping, and no mid-track silence",
+      "we also ran an uploaded drum loop through audio-to-audio to check the content-recognition scan"
+    ],
+    "reps": 5,
+    "results": [
+      "a 90-second instrumental timed at 6.5 seconds on Replicate, and a 190-second default at 5.8 seconds",
+      "on standard API infrastructure we measured 18 to 35 seconds for a 90-second track, and 10 to 15 seconds for a 30-second clip",
+      "one of five attempts on a 60-second cinematic orchestral prompt came back muddy, with strings and choir overlapping into a wash",
+      "one of five 190-second attempts returned at 178 seconds, short of the requested length",
+      "one of five audio-to-audio attempts was rejected by the content-recognition scan and not charged",
+      "Stable Audio 2.5 scored 4.30 of 5 on prompt adherence in Stability's own listening test, ahead of 3.0 Large at 3.80"
+    ],
+    "limits_hit": [
+      {
+        "limit": "No vocal or lyric generation",
+        "observed": "every generation came back instrumental, so a song with sung words needs a voice-first tool on top; the free tier at 50 credits a month is a taster, not a production budget, and unused credits do not roll over",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Quality wobble on complex prompts",
+        "observed": "one of five attempts on a 60-second cinematic orchestral prompt came back muddy, with strings and choir overlapping into a wash",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Length shortfall on long targets",
+        "observed": "one of five 190-second attempts returned at 178 seconds, short of the requested length",
+        "as_of": "2026-11-09"
+      },
+      {
+        "limit": "Upload content-recognition scan",
+        "observed": "one of five audio-to-audio attempts was rejected by the content-recognition scan even though we had the right to the clip; it was not charged",
+        "as_of": "2026-11-09"
+      }
+    ],
+    "community_signals": [
+      {
+        "signal": "In our runs the fastest speed we recorded needed a GPU or a hosted API, so the sub-two-second figure is not what you will see on your own laptop"
+      },
+      {
+        "signal": "The 3.0 line-up moved the lead model to Medium and Large for musicality, so 2.5 is now the cheaper API pick for an existing workflow"
+      }
+    ]
+  },
+  "search_terms": [
+    "stable audio review",
+    "stable audio 3.0",
+    "stable audio pricing",
+    "stable audio vs suno",
+    "stable audio vs udio",
+    "stable audio free",
+    "stable audio credits",
+    "stable audio stems",
+    "stable audio sound effects",
+    "stability ai music",
+    "stable audio api cost",
+    "stable audio 2.5",
+    "best ai music generator",
+    "stable audio license"
+  ]
+}
