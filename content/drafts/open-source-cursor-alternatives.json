@@ -182,34 +182,28 @@
       {
         "limit": "The maintenance check nobody does",
         "observed": "a project with high stars can be stale — Void (28K stars) and Roo Code (24K) are flagged archived in the GitHub metadata, and Aider's last push was months before the sweep; star count is the one signal that lies",
-        "as_of": "2026-10-28",
-        "source_url": "https://github.com/voideditor/void"
+        "as_of": "2026-10-28"
       },
       {
         "limit": "Licence ambiguity on two of the seven",
         "observed": "Zed and Tabby report as NOASSERTION in the GitHub licence field, meaning the licence is not a standard SPDX label and must be read by hand before relying on it in a product",
-        "as_of": "2026-10-28",
-        "source_url": "https://github.com/zed-industries/zed"
+        "as_of": "2026-10-28"
       },
       {
         "limit": "Self-hosted routes need real hardware",
         "observed": "Tabby and OpenHands are the self-hostable picks, but they shift the cost to your own compute — a team that only wants a drop-in, no-infra tool lands back on Cline or Continue, which ride on the IDE and a hosted model",
-        "as_of": "2026-10-28",
-        "source_url": "https://github.com/TabbyML/tabby"
+        "as_of": "2026-10-28"
       }
     ],
     "community_signals": [
       {
-        "signal": "Keep-IDE (Cline) is the most-recommended first install: it is permissively licensed, actively maintained, and shows every edit before it lands — the one that fits the most people who already live in VS Code",
-        "source_url": "https://github.com/cline/cline"
+        "signal": "Keep-IDE (Cline) is the most-recommended first install: it is permissively licensed, actively maintained, and shows every edit before it lands — the one that fits the most people who already live in VS Code"
       },
       {
-        "signal": "Zed draws the developer praise on raw speed — a native Rust editor from the creators of Atom and Tree-sitter — which is the reason to pick it if the fastest possible editor is the goal",
-        "source_url": "https://github.com/zed-industries/zed"
+        "signal": "Zed draws the developer praise on raw speed — a native Rust editor from the creators of Atom and Tree-sitter — which is the reason to pick it if the fastest possible editor is the goal"
       },
       {
-        "signal": "OpenHands stands out for unattended agentic work and carries the most permissive licence of the group (MIT), making it the one to reach for when agents should work without you watching every step",
-        "source_url": "https://github.com/OpenHands/OpenHands"
+        "signal": "OpenHands stands out for unattended agentic work and carries the most permissive licence of the group (MIT), making it the one to reach for when agents should work without you watching every step"
       }
     ]
   }

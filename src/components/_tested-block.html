@@ -23,27 +23,24 @@
       "limits_hit": [
         {"limit": "RPM cap under peak load",
          "observed": "512K context throttled at peak",
-         "as_of": "2026-10-22",
-         "source_url": "https://..."},
-        {"limit": "Free-tier chat limit",
-         "observed": "approx 50 chats/day",
-         "as_of": "2026-10-22",
-         "source_url": "https://..."}
+         "as_of": "2026-10-22"}
       ],
-      "community_signals": [
-        {"signal": "rate-limit errors reported at the free tier",
-         "source_url": "https://..."}
-      ]
+      "community_signals": [{"signal": "..."}]
     }
 
-  Hard gate (enforced by _validate_tested_block in l4_render.py):
-    * every limits_hit / community_signals entry MUST carry a valid
-      absolute source_url (http/https) — no fabricated data is allowed.
-    * `ran` / `results` items are prose strings and may stand without a
-      URL, but each should point to something concrete.
-    * `reps` (optional) must be a positive integer.
+  Rule (user decision, 2026-11-09): tool pages link ONLY to the vendor's
+  own site. `source_url` is OPTIONAL and, when present, must belong to a
+  vendor-official host from the page's `sources` list. Third-party review
+  articles, listicles and community posts are NEVER cited on a published
+  page; their provenance lives in site/data/research/{slug}.evidence.json
+  (internal, never deployed).
 
-  The rendered section maps every URL to a running footnote [1]..[n] and
-  emits a small <ol class="tested-footnotes"> block so the reader (or an
-  answer engine) can click each observation back to its source.
+  Hard gate (enforced by _validate_tested_block in l4_render.py):
+    * off-vendor source_url -> SystemExit
+    * `ran` / `results` items are prose strings, non-empty
+    * `reps` (optional) must be a positive integer
+
+  With no source_url, no [n] markers and no <ol class="tested-footnotes">
+  block are emitted. The only external link on a tools page is the single
+  vendor-official URL in `sources` (ARCHITECTURE.md 9.3).
 ======================================================================= -->

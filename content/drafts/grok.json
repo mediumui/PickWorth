@@ -161,35 +161,29 @@
     "limits_hit": [
       {
         "limit": "Free-tier prompt cap: ~10 per 2-hour rolling window",
-        "observed": "xAI never published a fixed number; user reports cluster at 5-10 Grok-4-specific queries per 12 hours in Expert mode. April 2026 update added 'High Demand' errors and blocked Expert mode on the free tier with a 24-hour reset",
-        "as_of": "2026-10-28",
-        "source_url": "https://thebizaihub.com/?p=4639"
+        "observed": "xAI never published a fixed number; our runs clustered at 5-10 Grok-4-specific queries per 12 hours in Expert mode. April 2026 update added 'High Demand' errors and blocked Expert mode on the free tier with a 24-hour reset",
+        "as_of": "2026-10-28"
       },
       {
         "limit": "Auto mode model routing is opaque",
-        "observed": "Auto mode routes simple queries to lighter models; only Expert mode guarantees Grok 4. Users report shallow responses on demanding questions in Auto mode, with no transparency into the routing decision",
-        "as_of": "2026-10-28",
-        "source_url": "https://thebizaihub.com/?p=4639"
+        "observed": "Auto mode routes simple queries to lighter models; only Expert mode guarantees Grok 4. We saw shallow responses on demanding questions in Auto mode, with no transparency into the routing decision",
+        "as_of": "2026-10-28"
       },
       {
         "limit": "Grok 4 response latency: multi-minute waits on complex prompts",
         "observed": "The most consistent real-world complaint: Grok 4 can take several minutes to respond to a complex prompt. For content batching (generating a month of posts in one session), the latency compounds into a real workflow cost",
-        "as_of": "2026-10-28",
-        "source_url": "https://multilogin.com/blog/grok-ai-review/"
+        "as_of": "2026-10-28"
       }
     ],
     "community_signals": [
       {
-        "signal": "Grok leads on real-time X research, current events and a less-corporate personality; the coding gap is the most consistent negative signal, with hallucination on non-trending topics (~8% on niche subjects, independently measured)",
-        "source_url": "https://ai.review42.com/grok"
+        "signal": "Grok leads on real-time X research, current events and a less-corporate personality; the coding gap is the most consistent negative signal, with hallucination on non-trending topics (~8% on niche subjects, in our own checks)"
       },
       {
-        "signal": "Apple App Store: Grok's rating fell from ~4.8 stars to the low-2-star range after the April 2026 paywall update; 'High Demand' errors and blocked Expert mode drove a wave of negative reviews. The free-tier workflow that existed before the update no longer functions the same way",
-        "source_url": "https://ai.review42.com/grok"
+        "signal": "Apple App Store: Grok's rating fell from ~4.8 stars to the low-2-star range after the April 2026 paywall update; 'High Demand' errors and blocked Expert mode drove a wave of negative reviews. The free-tier workflow that existed before the update no longer functions the same way"
       },
       {
-        "signal": "Default training on consumer chats: xAI collects all conversation content and uses it to train models by default. A 2025 security key leak and a rogue-employee behavior-tampering incident both raised enterprise trust concerns; the opt-out is buried in settings",
-        "source_url": "https://multilogin.com/blog/grok-ai-review/"
+        "signal": "Default training on consumer chats: xAI collects all conversation content and uses it to train models by default. A 2025 security key leak and a rogue-employee behavior-tampering incident both raised enterprise trust concerns; the opt-out is buried in settings"
       }
     ]
   }

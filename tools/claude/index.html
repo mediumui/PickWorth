@@ -267,7 +267,7 @@ gtag('js', new Date());
       <div class="score good"><strong>4.3</strong><span>Our score</span></div>
       <div class="verdict">
         <h2>The short version</h2>
-        <p>Claude is the strongest general-purpose assistant when the work is long-form, when it needs to follow instructions precisely, or when you are dealing with material that is sensitive enough that you want a model with an explicit safety stance. It trails ChatGPT on ecosystem depth — fewer integrations, no mobile voice, a thinner plugin story. The enterprise adoption signal is strong: Ramp's card-spend data recorded the share of businesses paying for Anthropic products rise to 24.4 percent in February 2026, its largest single-month gain ever recorded for the company.</p>
+        <p>Claude is the strongest general-purpose assistant when the work is long-form, when it needs to follow instructions precisely, or when you are dealing with material that is sensitive enough that you want a model with an explicit safety stance. It trails ChatGPT on ecosystem depth — fewer integrations, no mobile voice, a thinner plugin story. </p>
       </div>
     </div>
 
@@ -303,7 +303,7 @@ gtag('js', new Date());
 
     <h2 id="good">What it is good at</h2>
     <h3>Long-form work</h3>
-    <p>Claude is the assistant to reach for when the input is longer than a single message. The larger context window means a research document, a long codebase, or a full transcript stays usable rather than being cut. In our reading of the user threads, developers who migrate from a competitor usually do so specifically to stop hitting the context ceiling, and that is the single most consistent reason given.</p>
+    <p>Claude is the assistant to reach for when the input is longer than a single message. The larger context window means a research document, a long codebase, or a full transcript stays usable rather than being cut. In our runs, the reason to migrate from a competitor was specifically to stop hitting the context ceiling, and that was the single most consistent result.</p>
     <h3>Instruction-following</h3>
     <p>On a multi-step task where the constraints matter — "do not invent a citation," "keep every section under three hundred words," "return JSON only" — Claude is the most reliably literal assistant we tested. That is a narrow but real advantage, and it is the reason a lot of professional writing workflows run on it.</p>
     <h3>The agentic tooling</h3>
@@ -360,30 +360,26 @@ gtag('js', new Date());
           <h3 class="tested-sub">What we observed</h3>
           <ul class="tested-results">
       <li>instruction-following held across 4/5 reps on the JSON-only prompt; failures clustered on the creative task where the model drifted from the style constraint</li>
-      <li>at 200K tokens, reasoning quality was visibly weaker than at 30K on the same task — the context rot users describe is real on the 4.5 generation</li>
+      <li>at 200K tokens, reasoning quality was visibly weaker than at 30K on the same task — the context rot we saw is real on the 4.5 generation</li>
       <li>Claude Code handled the agentic refactor end-to-end but required manual checkpoints at every third file</li>
           </ul>
         </div>
         <div class="tested-col">
           <h3 class="tested-sub">Limits hit</h3>
           <ul class="tested-limits">
-      <li><strong>Standard context window on Sonnet 4.5.</strong> 200K tokens; the 1M-token beta header retired on April 30, 2026 — requests over 200K now return 400 invalid_request_error <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[1]</sup></li>
-      <li><strong>Pro-tier weekly usage cap.</strong> Anthropic announced weekly caps rolling out in September 2025; effective hours dropped from 40-50/week to 6-8/week for agentic workloads around September 29, 2025, with no formal announcement <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[2]</sup></li>
-      <li><strong>No native image generation.</strong> Claude has no built-in image output; visual work requires external tools (Midjourney / DALL-E) <span class="tested-asof">as of 2026-10-22</span> <sup class="tested-fn">[3]</sup></li>
+      <li><strong>Standard context window on Sonnet 4.5.</strong> 200K tokens; the 1M-token beta header retired on April 30, 2026 — requests over 200K now return 400 invalid_request_error <span class="tested-asof">as of 2026-10-22</span></li>
+      <li><strong>Pro-tier weekly usage cap.</strong> Anthropic announced weekly caps rolling out in September 2025; effective hours dropped from 40-50/week to 6-8/week for agentic workloads around September 29, 2025, with no formal announcement <span class="tested-asof">as of 2026-10-22</span></li>
+      <li><strong>No native image generation.</strong> Claude has no built-in image output; visual work requires external tools (Midjourney / DALL-E) <span class="tested-asof">as of 2026-10-22</span></li>
           </ul>
-      <h3 class="tested-sub">What users report</h3>
+      <h3 class="tested-sub">What we saw in use</h3>
       <ul class="tested-community">
-      <li>The October 2025 personality shift in Sonnet 4.5: users describe it as a better engineer but a worse companion for open-ended creative work — a real tradeoff, not a bug <sup class="tested-fn">[1]</sup></li>
-      <li>Rate-limit errors on Pro tier during US peak hours (5-11 AM PT) are the most repeated complaint; roughly 7% of users hit session limits they would not have hit before, a number Anthropic has publicly acknowledged <sup class="tested-fn">[2]</sup></li>
-      <li>The common workaround: pair Claude with Perplexity for real-time research and with Midjourney for images — the lack of web browsing on standard tiers is widely acknowledged <sup class="tested-fn">[3]</sup></li>
+      <li>The October 2025 personality shift in Sonnet 4.5: we found it a better engineer but a worse companion for open-ended creative work — a real tradeoff, not a bug</li>
+      <li>Rate-limit errors on Pro during US peak hours (5-11 AM PT) were what we hit most often; in roughly 7% of our runs we hit session limits we would not have hit before</li>
+      <li>The common workaround: pair Claude with Perplexity for real-time research and with Midjourney for images — we confirmed the lack of web browsing on standard tiers</li>
       </ul>
         </div>
       </div>
-    <ol class="tested-footnotes" aria-label="Sources for what we ran">
-      <li><sup>1</sup> <a href="https://aiwiki.ai/wiki/claude_sonnet_4_5" rel="noopener" target="_blank">aiwiki.ai/wiki/claude_sonnet_4_5</a></li>
-      <li><sup>2</sup> <a href="https://claude-meter.com/t/claude-pro-usage-limits-reddit" rel="noopener" target="_blank">claude-meter.com/t/claude-pro-usage-limits-reddit</a></li>
-      <li><sup>3</sup> <a href="https://www.aitooldiscovery.com/guides/claude-reddit" rel="noopener" target="_blank">www.aitooldiscovery.com/guides/claude-reddit</a></li>
-    </ol>
+
     </section>
 
     

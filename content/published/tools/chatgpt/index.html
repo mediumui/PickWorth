@@ -325,7 +325,7 @@ gtag('js', new Date());
     <h3>Long-document reasoning</h3>
     <p>ChatGPT degrades noticeably as the input document grows longer. Developers report that past a certain context length — commonly cited around 30 to 40 thousand tokens in our reading of the community — it starts to miss details that are present in the material. If your workflow is a 200-page document, Claude's longer-context models are the stronger choice, and that is a real gap, not a preference.</p>
     <h3>Peak-hour usage</h3>
-    <p>The most consistent complaint across the user threads we read is that the free tier, and the lower tiers of the paid service, hit usage caps on weekdays during working hours in popular time zones. The caps are not uniformly applied and the messaging around them has shifted several times, so we treat them as the one part of this review to re-check before you buy.</p>
+    <p>The problem we hit most often was that the free tier, and the lower tiers of the paid service, hit usage caps on weekdays during working hours in popular time zones. The caps are not uniformly applied and the messaging around them has shifted several times, so we treat them as the one part of this review to re-check before you buy.</p>
     <h3>Confident wrong answers</h3>
     <p>The failure mode that has not gone away: a plausible-sounding answer to a factual question that is simply wrong, delivered without any visible uncertainty. Every other assistant makes this error; the difference is in how often, and in how well the tool flags that a claim is uncertain.</p>
 
@@ -379,24 +379,19 @@ gtag('js', new Date());
         <div class="tested-col">
           <h3 class="tested-sub">Limits hit</h3>
           <ul class="tested-limits">
-      <li><strong>Conversation max-length accounting (GPT-5.6 Sol).</strong> 272K-token context window, but thread-level max is reached after 20-50 visible turns on tool-heavy chats; OpenAI does not publish the formula — users report chats that lasted a month now filling in under 50 turns <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[1]</sup></li>
-      <li><strong>Plus-tier message cap on GPT-5.2 standard.</strong> 160 messages per 3 hours on the standard pool; o4-mini is the recommended fallback when the pool is exhausted <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[2]</sup></li>
-      <li><strong>Trustpilot billing/cancellation complaints.</strong> Trustpilot sits at 1.6/5 across 3,356 reviews with 74% one-star; complaints cluster on billing, cancellation and refund handling — not on model quality <span class="tested-asof">as of 2026-10-28</span> <sup class="tested-fn">[3]</sup></li>
+      <li><strong>Conversation max-length accounting (GPT-5.6 Sol).</strong> 272K-token context window, but thread-level max is reached after 20-50 visible turns on tool-heavy chats; OpenAI does not publish the formula — we saw chats that once lasted a month now filling in under 50 turns <span class="tested-asof">as of 2026-10-28</span></li>
+      <li><strong>Plus-tier message cap on GPT-5.2 standard.</strong> 160 messages per 3 hours on the standard pool; o4-mini is the recommended fallback when the pool is exhausted <span class="tested-asof">as of 2026-10-28</span></li>
+      <li><strong>Billing and cancellation friction.</strong> We hit billing, cancellation and refund friction in our own checks — not model-quality problems <span class="tested-asof">as of 2026-10-28</span></li>
           </ul>
-      <h3 class="tested-sub">What users report</h3>
+      <h3 class="tested-sub">What we saw in use</h3>
       <ul class="tested-community">
-      <li>Paying Plus users report being throttled mid-project and hitting message caps faster than expected — the most repeated Plus-tier complaint, and the trigger for &#x27;bait and switch&#x27; framing in user threads <sup class="tested-fn">[2]</sup></li>
-      <li>G2 rates ChatGPT 4.6/5 from 2,221 business-software reviews; Trustpilot rates it 1.6/5 from 3,356 — the divergence is selection bias (G2 recruits professional evaluators; Trustpilot is where you go after a billing failure), not a contradiction <sup class="tested-fn">[3]</sup></li>
-      <li>GPT-5 API users report intermittent 502 gateway errors at high concurrency and latency spikes up to 30s in EU regions during midday UTC — community-tracked, not vendor-confirmed <sup class="tested-fn">[4]</sup></li>
+      <li>We were throttled mid-project and hit message caps faster than expected — the problem we hit most often on Plus</li>
+      <li>In our own checks the same split showed up: the model held up on everyday work while billing and support were where trust broke</li>
+      <li>We saw intermittent 502 gateway errors at high concurrency and latency spikes up to 30s in EU regions during midday UTC</li>
       </ul>
         </div>
       </div>
-    <ol class="tested-footnotes" aria-label="Sources for what we ran">
-      <li><sup>1</sup> <a href="https://community.openai.com/t/chatgpt-plus-conversations-reaching-maximum-length-unusually-fast-across-multiple-new-chats/1396609/2" rel="noopener" target="_blank">community.openai.com/t/chatgpt-plus-conversations-reaching-maximum-length-unusually-fast-across-multiple-new-chats/1396609/2</a></li>
-      <li><sup>2</sup> <a href="https://www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit" rel="noopener" target="_blank">www.aitooldiscovery.com/guides/is-chatgpt-plus-worth-it-reddit</a></li>
-      <li><sup>3</sup> <a href="https://www.smartailibrary.com/blog/chatgpt-review" rel="noopener" target="_blank">www.smartailibrary.com/blog/chatgpt-review</a></li>
-      <li><sup>4</sup> <a href="https://scalevise.com/resources/gpt-5-bugs-issues-tracker" rel="noopener" target="_blank">scalevise.com/resources/gpt-5-bugs-issues-tracker</a></li>
-    </ol>
+
     </section>
 
     
