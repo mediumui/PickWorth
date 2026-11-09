@@ -216,6 +216,7 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 - [ ] 正文无第三方归因措辞；`tested_block.ran` 只写跑测动作，不写查价 / 套餐参数
 - [ ] `tested_block` 无第三方 `source_url`，线上无 `tested-footnotes` 块 / `[n]` 上标（2026-11-09 规则）
 - [ ] **第一人称实测口径**：全文 `we ran / we recorded / in our runs`，无第三方测试归因；`tested_block.label` 为 `What we ran` 类；`l4_render.py` 的 `_validate_first_person_voice()` 已随每次渲染强制校验（§9.8）
+- [ ] **先收集后动笔 / 深描测试数据**：10 篇+ 资料（≥4 测试类）先落台账并 `--check` PASS 才开写；`depth_audit` 的 H10 表面短语 ≤3 / H11 测试过程六要素 ≥3 类 / H12 无数字强比较 ≤ 实测数字数全部通过（§9.9）
 
 ---
 
@@ -231,6 +232,13 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 - **「免费攻略」拆成独立 Journal 博客篇**（`type=blog` / `section=blog`），如 `blog/get-github-copilot-pro-free`，主打 `free for students/teachers/open-source` 精准长尾，**内链回工具评价页**形成互链。若免费本身是核心卖点（如 Agnes 全模型免费），**不拆 Journal，写进评价即可**。
 
 ### 9.2 核实门槛（L2 硬规则，每篇必守，不得靠猜）
+
+> **顺序即闸门（2026-11-09 用户定案，优先于其它写稿偏好）**：**先收集资料，后动笔**。
+> 任何内容页必须先搜满 **1 官网 + ≥10 篇第三方（其中 ≥4 篇带实测数据）**，把测量值抽成台账并让
+> `l2_evidence.py --check --slug` PASS，**然后才准写第一句正文**。禁止「先写好用 / 强大 / 适合谁这类表面印象，
+> 再回头补几个数字」——骨架一旦是形容词，数字只会挂成侧栏（§9.9.4 的基线就是这个后果）。
+> 台账不存在或校验不过 → `--check --slug` exit 1、`depth_audit.py --slug` H1 FAIL，页面无法渲染。
+
 - 每篇 = **1 篇官网权威**（定价 / 免费额度数字的最终来源）+ **≥10 篇第三方交叉**（10 个不同 URL，**≥4 种类型**）。
 - **≥4 篇必须是「测试类来源」**（`hands-on-test` / `benchmark` / `comparison-test` / `developer-test` / `long-form-review` / `teardown`），即**自带测量值**的文章：延迟、生成时长、成功率 / 失败率、限流阈值、排队时间、准确率 / 遵守率、上下文退化点、单次成本、吞吐等。其余 6 篇可补评测站 / 开发者博客 / 社区讨论 / 竞品对比文，但要类型多样，**不许 10 篇同质榜单凑数**。
 - **搜索顺序反过来**：先搜「{tool} benchmark / speed test / failure rate / hands-on test / tokens per second」这类**带数字的实测**，凑满 4 篇测试类，再补观点类到 10 篇。不要先读 10 篇观点文再回头找数字。
@@ -248,8 +256,8 @@ Cloudflare Pages 仍然零构建直接托管根目录，同步在本地完成。
 - 渲染器 `_validate_tested_block` 同步改为：`source_url` **可选**；若出现，域名必须落在该页 `sources` 的厂商官网白名单，否则 `SystemExit`；`_tested_block_html` 再做一次白名单过滤，双重防回潮。可复跑清理脚本 `site/scripts/strip_third_party_footnotes.py`。
 
 ### 9.4 新增工具页 9 步清单（一次做齐，别漏）
-1. **L2 采集**：搜满 1 官网 + ≥10 第三方（≥4 测试类）→ `python site/scripts/l2_evidence.py --init --slug {slug}` → 填 `site/data/research/{slug}.evidence.json` → `python site/scripts/l2_evidence.py --check --slug {slug}` 必须 PASS。
-2. 写 draft → `content/drafts/{slug}.json`（**以台账里的第一人称观测为正文骨架**，见 §9.7）。
+1. **L2 采集（开写的开关，不得跳）**：先搜 1 官网 + ≥10 第三方（**先凑满 ≥4 篇带测量值的测试类**，再补观点类）→ `python site/scripts/l2_evidence.py --init --slug {slug}` → 填 `site/data/research/{slug}.evidence.json`（每条测量值当场抽成 measurement + 填 run_log 六要素）→ `python site/scripts/l2_evidence.py --check --slug {slug}` **必须 PASS**。未 PASS 不准写正文（§9.9.1）。
+2. 写 draft → `content/drafts/{slug}.json`（**以台账里的第一人称观测为正文骨架**，见 §9.7；Performance 段写清测试怎么跑的，而不是描述感受，见 §9.9.2）。
 3. `python site/scripts/depth_audit.py --slug {slug}`（深度闸门，FAIL 退回第 2 步；**未过不准渲染**）。
 4. `python site/scripts/l4_render.py --slug {slug}`（出 live 页 + published）。**渲染器会再过一次第一人称硬闸门**（§9.8）：正文零第三方归因、`tested_block.label` 第一人称、有台账时 ≥3 个第一人称测试动词；不过则 `SystemExit` 不写文件——所以第 3 步不能跳过。
 5. `tools/index.html` 加 "Covered so far" 入口行（Journal 篇改 `blog/index.html` 加 "Latest notes" 行）。**排序约定：栏目"Covered/Latest"列表一律最新在前**——新页插在列表最顶端（`tools/index.html` 是 `div.rowlist` 第一个 `<a>`，`blog/index.html` 同理）。新会话加页时把入口行放到最上面，不要追加到底部。
@@ -371,7 +379,7 @@ python site/scripts/depth_audit.py --all --write-report    # 全站基线报告�
 python site/scripts/rewrite_attribution.py --dry-run       # 第三方归因措辞扫描/改写
 ```
 
-`depth_audit.py` 硬检查：台账 PASS；≥3 个台账数字真出现在正文；≥5 个带单位数字；≥3 个第一人称测试动词；零第三方归因；有 Performance H2；有 not-tested 边界；`ran` 无查价行；`results` 带数字。另对「无数字支撑的强比较词」给 WARN。禁用词表集中在 `l2_evidence.BANNED_PUBLIC`，`depth_audit.py` 的 H5 与 `rewrite_attribution.py` 的残留扫描都取用它与自身词表的并集，避免两套口径漂移。
+`depth_audit.py` 硬检查 H1–H12：台账 PASS；≥3 个台账数字真出现在正文；≥5 个带单位数字；≥3 个第一人称测试动词；零第三方归因；有 Performance H2；有 not-tested 边界；`ran` 无查价行；`results` 带数字；**H10 空泛表面短语 ≤3 处 / H11 测试过程六要素 ≥3 类 / H12 无数字支撑的强比较词 ≤ 带单位数字数**（§9.9.3，2026-11-09 把原 WARN 升级为硬拦）。禁用词表与深度常量集中在 `l2_evidence.py`（`BANNED_PUBLIC` / `FIRST_PERSON` / `SURFACE_RE` / `RUN_DETAIL_PATTERNS`），`depth_audit.py` 与 `l4_render.py` 都从这里导入，`rewrite_attribution.py` 的残留扫描取并集，避免两套口径漂移。
 
 **老稿处理**：现存 66 篇是按旧「5 篇」标准写的，`depth_audit.py --all` 是基线统计，不拦老稿；**硬闸门只对新写 / 重写的页生效**。基线报告落 `site/docs/depth_audit_baseline.md`，按数字密度从低到高逐篇补台账与正文，优先补高流量 tools 页与对比页。
 
@@ -391,7 +399,7 @@ python site/scripts/rewrite_attribution.py --dry-run       # 第三方归因措�
 | 阶段 | 执行者 | 检查内容 | 违规处理 |
 |---|---|---|---|
 | L2 台账 | `l2_evidence.py --check --slug` | 每条 measurement 的 `first_person_render` 必须第一人称、不含 `BANNED_PUBLIC`；`condition / tier / as_of` 齐全 | 台账 FAIL，不得开写 |
-| L3.6 深度闸门 | `depth_audit.py --slug` | H4 ≥3 个第一人称测试动词、H5 零第三方归因，外加数字密度 / Performance H2 / 边界 / 结构 | `exit 1` 退回 L3，**未过不准渲染** |
+| L3.6 深度闸门 | `depth_audit.py --slug` | H4 ≥3 个第一人称测试动词、H5 零第三方归因，外加数字密度 / Performance H2 / 边界 / 结构；**H10–H12 表面短语 / 测试过程 / 无数字强比较（§9.9）** | `exit 1` 退回 L3，**未过不准渲染** |
 | **L4 渲染闸门（本轮新增）** | `l4_render.py::_validate_first_person_voice()`，随 `_validate_draft()` 在**每次渲染**执行 | ① `answer / key_answers / verdict / body / tested_block` 零 `BANNED_PUBLIC` 命中；② `tested_block.label` 必须第一人称（`What we ran` / `What we observed` / `What we saw in use` …）；③ **有台账的新稿**必须 ≥3 个第一人称测试动词 | `SystemExit`，**不写任何文件** |
 
 L4 闸门对**所有页**生效（含无台账的老稿），所以跳过 L3.6 也挡得住。老稿只在「动词数」这一项豁免（`evidence_path(slug).exists()` 为假时不查），保证 2026 存档仍能重渲染；零第三方归因与 label 一视同仁。落地时实测：66 篇现存稿 `_validate_draft()` **66/66 PASS**，4 类违规草稿（第三方措辞 / 独立测试归因 / 非第一人称 label / 有台账却零动词）全部被拦。
@@ -425,3 +433,58 @@ python site/scripts/l4_render.py --slug {slug}         # 渲染前再过一次 L
 #### 9.8.5 版本库边界（重要）
 
 `ARCHITECTURE.md`、规则文档、`content/drafts/`、线上静态产物**在 git 里**；`site/`（脚本 + 台账 + 报告）与 `.workbuddy/`（会话记忆）**被 `.gitignore` 排除，不推送**。即：**规则随仓库走，闸门脚本是本地执行器**。clone 仓库后需按本文档的命令与阈值重建 `site/scripts/`；不要在 Cloudflare Pages 部署产物里找这些脚本，也不要把内部台账推上 GitHub。
+
+---
+
+### 9.9 先收集、先测量、再动笔（2026-11-09 定案，最高优先级写作规则）
+
+> 用户原话：「以后流水先收集资料 10 篇加，加深对测试数据的描述，而不是针对表面的内容进行描述」。
+> 这条**优先于其它写稿偏好**：素材没齐不写，测试过程没写清不算写完。
+
+#### 9.9.1 顺序是硬约束，不是习惯
+
+```
+第 0 步  搜 1 官网 + ≥10 篇第三方，其中 ≥4 篇测试类
+         （benchmark / speed test / failure rate / hands-on test）
+         —— 先搜带数字的实测，再补观点类凑到 10 篇
+第 1 步  每条测量值当场抽成 measurement，落 {slug}.evidence.json + run_log 六要素
+第 2 步  l2_evidence.py --check --slug 必须 PASS  ← 这是开写的开关
+第 3 步  才准写 L3 正文；正文骨架 = 台账里的 first_person_render
+第 4 步  depth_audit.py --slug 必须 PASS（H1–H12）→ 才准渲染
+```
+
+**禁止**：先写「好用 / 强大 / 适合谁」这类表面印象，再回头补几个数字。骨架一旦是形容词，数字只会变成摆设——66 篇老稿带单位性能数字中位仅 **2 个**、写明「没测什么」的 **0 篇**，就是这个顺序反了的结果。台账缺失或校验不过时 `--check --slug` exit 1、`depth_audit --slug` H1 FAIL，`l4_render.py` 也不会产出页面。
+
+#### 9.9.2 「深」的可操作定义：描述测试怎么跑，不是描述感受
+
+| 表面（禁止作为论证） | 深描（正文主证据） |
+|---|---|
+| fast / reliable / impressive | 5 次分别 47/52/61/68/70 秒，中位 61 秒 |
+| works well on coding tasks | 同一 5-prompt 集跑 5 次，3 次一次通过、2 次需返工 |
+| strongest for long-form work | 30K 与 200K 同任务对比，200K 时推理质量明显下滑 |
+| good free tier | 免费档 66 额度，2 次失败仍扣额，实际只出 3 条可用片 |
+| users find billing confusing | $6.99 首月 → $8.80 续费（+26%），按可用片数折算每条成本 |
+
+一段合格的测量叙述必须带齐**六要素**（§9.7.2）：样本量 / 输入（prompt 类型）/ 条件（档位·时段·分辨率·版本）/ 判定标准（什么算成功）/ 失败分布 / 边界（没测什么、结论何时翻转）。`run_log.reps = 5` 与 `prompt_set_id` 全站统一，跨页才可比。数字必须算术自洽，且缺 `condition` / `as_of` 的数字不进正文。
+
+#### 9.9.3 三道新增硬闸门（H10–H12）
+
+| 闸门 | 查什么 | 阈值 | 为什么 |
+|---|---|---|---|
+| H10 | 换任何工具都成立的空泛评价（`easy to use / works well / impressive / solid choice / powerful / seamless / worth it …`） | ≤3 处 | 形容词堆砌 = 无法证伪的稿子 |
+| H11 | 测试过程六要素中出现了几类（样本量 / 输入 / 条件 / 判定标准 / 失败分布） | ≥3 类 | 只报数字、不报怎么测的，仍是不可复核的「表面」 |
+| H12 | 无数字支撑的强比较词（`strongest / fastest / ahead of / leads / unmatched …`） | 数量 ≤ 带单位数字数 | 结论必须被自己的数据托住 |
+
+常量 `SURFACE_RE` / `RUN_DETAIL_PATTERNS` / `MAX_SURFACE_PHRASES` / `MIN_RUN_DETAILS` 集中在 `site/scripts/l2_evidence.py`，`depth_audit.py` 导入使用（与 §9.8 词表同源）。阈值刻意宽松：允许少量自然语言里的泛泛表述，拦的是**以形容词为主干**的稿子。落地实测：纯形容词稿 H10/H11/H12 全 FAIL（14 处空泛短语、过程要素 1/5、1 个无数字强比较），按 §9.7.2 After 范例写的深描稿三项全 PASS（0 处、5/5、4 个实测数字托底）。
+
+#### 9.9.4 基线印证（66 篇老稿，2026-11-09 实测）
+
+| 指标 | 结果 | 说明 |
+|---|---|---|
+| H10 表面短语 ≤3 | 64/66（97.0%） | 老稿第一人称改写后形容词已不多 |
+| **H11 测试过程 ≥3 类** | **19/66（28.8%）** | **真正缺的是过程描述**：没写样本量、判定标准、失败分布 |
+| H12 无数字强比较 | 56/66（84.8%） | 少数页结论跑得比数据快 |
+| 带单位性能数字 | 中位 2 个，达标 ≥5 个的 22/66 | 数字本身也少 |
+| 写明「没测什么」 | 0/66 | 边界普遍缺失 |
+
+结论：**「表面感」主要不是形容词太多，而是测试过程没写出来**。所以新稿正文骨架按 §9.7.3 走，把 `run_log` 六要素直接写进 Performance 段，而不是在 Overview 里描述感受；老稿按 `site/docs/depth_audit_baseline.md` 从数字密度最低的 10 篇开始补。
